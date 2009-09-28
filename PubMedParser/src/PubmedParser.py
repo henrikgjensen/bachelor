@@ -65,6 +65,14 @@ def getMedlineList(pmids):
     print 'Returned',len(cleaned_records),'MedLine articles containing an abstract.'
     return cleaned_records
 
+def writeOut(list):
+    count=0
+    out=file('data.txt','w')
+    for i in list:
+        out.write(str(i)+'\n')
+        count+=1
+        print 'Wrote out liste element ',str(count)
+        
 """
 def printRecords(records):
 
