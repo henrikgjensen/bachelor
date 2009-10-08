@@ -1,5 +1,107 @@
 from Bio import Entrez
 from Bio import Medline
+import urllib
+
+def getArticles(diseaseDictionary):
+
+    """
+    Takes a dictionary of the form: {'disease xx': {'terms' : [xx, yy], 'uid' : nnnnnn }, etc}}
+    And returns a dictionary containing:
+    {'disease a': [pmid1, pmid2, pmid3...], 'disease b' : [pmidx, pmidy,...], ...}
+
+    Duplicate are currently not considered, but should be.
+    """
+
+    diseaseArticleIDlist = {}
+
+    for disease in diseaseDictionary:
+        diseaseArticleIDlist[disease]=[]
+
+        if (diseaseDictionary[disease]['terms'] != []):
+            for searchterm in diseaseDictionary[disease]['terms']:
+                diseaseArticleIDlist[disease].extend(getArticleIDlist(searchterm,0))
+
+        if (diseaseDictionary[disease]['uid'] != ''):
+            print 'Downloading from uid', diseaseDictionary[disease]['uid']
+            diseaseArticleIDlist[disease].extend(getArticleIDsFromLink(diseaseDictionary[disease]['uid']))
+
+    return diseaseArticleIDlist
+
+def removeDuplicates(listOfIDs):
+
+    d = {}
+
+    for x in listOfIDs: d[x] = x
+
+    listOfIDs = d.values()
+
+    return listOfIDs
+
+def getArticlesFromSearchTerm(searchTermList):
+
+    """
+    Recieves a list of search term, and returns the list of pubmed
+    references containing an abstract.
+    """
+
+    Entrez.email = 'michael@diku.dk'
+
+    articleList = []
+    
+    for searchTerm in searchTermList:
+        print 'search term: ', searchTerm
+        unquotedURL = urllib.unquote_plus(searchTerm + ' AND hasabstract[text]') # Replace %xx and '+' from search term
+        print 'unquoted search term', unquotedURL
+        pmids = getArticleIDlist(unquotedURL, 0)
+        articleList.extend(getMedlineList(pmids))
+        print 'article list size:', len(articleList)
+
+    print 'total number of articles return from search term list:', len(articleList)
+
+    return articleList
+
+def getArticlesFromLink(from_uidList):
+
+    """
+    Helper function that is able to handle the special type of links
+    that are sometimes returned by rarediseasesdatabase.com, it
+    recieves a list of "from_uid" and returns all the pubmed articles
+    containing an abtract.
+    """
+
+    Entrez.email = 'michael@diku.dk'
+
+    results = []
+    ids=[]
+
+    for uid in from_uidList:
+        handle=Entrez.elink(db='omim', LinkName='omim_pubmed_calculated', from_uid=uid)
+        results.extend(Entrez.read(handle))
+
+    for i in range(len(results)):
+       ids.extend([link['Id'] for link in results[i]['LinkSetDb'][0]['Link']])
+
+    articleList = getMedlineList(ids)
+
+    return articleList
+
+def getArticleIDsFromLink(uid):
+
+    """
+    Helper function that is able to handle the special type of links
+    that are sometimes returned by rarediseasesdatabase.com, it
+    recieves a "uid" and returns all the pubmed IDs containing
+    an abtract.
+    """
+
+    Entrez.email = 'michael@diku.dk'
+
+    handle=Entrez.elink(db='omim', LinkName='omim_pubmed_calculated', from_uid=uid)
+    results = Entrez.read(handle)
+
+    ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
+
+    return ids
 
 
 def getArticleCount(search_term):
@@ -20,10 +122,10 @@ def getArticleCount(search_term):
 def getArticleIDlist(search_term,number_of_articles=20):
 
     """
-    This function takes search terms and an integer representing how many
-    articles that should be searched for. A list of article-ids is returned.
-    If no number is given, 20 articles will be returned. If 0 is given, all
-    articles found will be returned.
+    This function takes search terms and an integer representing how
+    many articles that should be searched for. A list of article-ids
+    is returned.  If no number is given, 20 articles will be
+    returned. If 0 is given, all articles found will be returned.
     """
 
     Entrez.email = 'henrikgjensen@gmail.com'
@@ -38,6 +140,7 @@ def getArticleIDlist(search_term,number_of_articles=20):
         pmids.extend(record['IdList'])
         print 'Downloaded',len(pmids),'PMIDs.',str(number_of_articles-len(pmids)),'remaining...'
     return pmids
+
 
 def getMedlineList(pmids):
 
