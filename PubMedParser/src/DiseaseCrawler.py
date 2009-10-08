@@ -35,41 +35,28 @@ def fetchPubmedDiseaseURLs():
     return diseaseURLs
 
 
-def fetchPubmedFromNLM(href='http://gateway.nlm.nih.gov/gw/Cmd'):
+# Compile regexps
+removeTags=re.compile(r'<.*?>')
+removeNBSPs=re.compile(r'&nbsp;')
 
-    try:
-        c=urllib2.urlopen(href)
-        print 'Opened',href
-    except:
-        print "Could not open %s" % href
+def cleanString(desc):
+    # Removes selected html tags and expressions
 
+    desc=removeTags.sub('',desc)
+    desc=removeNBSPs.sub(' ',desc)
 
-    #soup=BeautifulSoup(c.read())
-
-
-    #links=soup('a')
-    
-    values={'UserSearchText':'Acrofacial dysostosis atypical postaxial'}
-
-    data = urllib.urlencode(values)
-    req = urllib2.Request(href, data)
-    response = urllib2.urlopen(req)
-    the_page = response.read()
-
-    
-    print the_page
+    return desc
 
 
 def fetchPubmedDiseaseTerms(pages):
     # Go through the URL list and fetch PubMed related search terms
 
     pubmedURLs={}
-    pubmedURLs['uid']=[]
-    pubmedURLs['terms']=[]
-    pubmedURLs['desc']=[]
 
     printvar=0
     for page in pages:
+
+        # Open the page
         try:
             c=urllib2.urlopen(page)
         except:
@@ -80,6 +67,13 @@ def fetchPubmedDiseaseTerms(pages):
         # Get disease name
         title=soup.html.head.title.string
 
+        # Allocate dictionary
+        pubmedURLs[title]={}
+        pubmedURLs[title]['terms']=[]
+        pubmedURLs[title]['uid']=''
+        pubmedURLs[title]['desc']=''
+
+        # Check for Pubmed direct links
         found=False
         links=soup('a')
         for link in links:
@@ -89,7 +83,7 @@ def fetchPubmedDiseaseTerms(pages):
                 if ((('pubmed') in urlString) & (('uid=') in urlString)):
                     strIndex=urlString.find('uid=')+4
                     urlString=urlString[strIndex:]
-                    pubmedURLs['uid'].append(urlString)
+                    pubmedURLs[title]['uid']=urlString
                     printvar+=1
                     found=True
                     print 'Found',str(printvar),'PubMed terms/uids.',title
@@ -97,41 +91,34 @@ def fetchPubmedDiseaseTerms(pages):
                 if ((('pubmed') in urlString) & (('term=') in urlString)):
                     strIndex=urlString.find('term=')+5
                     urlString=urlString[strIndex:]
-                    pubmedURLs['terms'].append(urlString)
+                    pubmedURLs[title]['terms'].append(urlString)
                     printvar+=1
                     found=True
                     print 'Found',str(printvar),'PubMed terms/uids.',title
 
         # If no direct pubmed link was found, replace with title
         if (not found):
-            title=title+' AND hasabstract[text]'
-            pubmedURLs['terms'].append(title)
+            titleTerm=title+' AND hasabstract[text]'
+            pubmedURLs[title]['terms'].append(titleTerm)
 
         # Disease synonyms are also added to the term list
         lis=soup('li')
         for li in lis:
             if ('synonym' in str(li.parent)):
                 synonym=li.contents[0]+' AND hasabstract[text]'
-                pubmedURLs['terms'].append(synonym)
+                pubmedURLs[title]['terms'].append(synonym)
                 print '   ' + synonym
 
-        # Look for a optional disease description
+        # Look for a optional disease description on rarediseases.info.nih.gov
         descs=soup('span')
         for desc in descs:
             if ('id' in dict(desc.attrs)):
                 idString=desc['id'].lower()
                 if (('descriptionquestion' in idString) & ('#003366' not in str(desc))):
-                    pubmedURLs['desc'].append(desc)
+                    desc=cleanString(str(desc))
+                    pubmedURLs[title]['desc']=desc
                     print '*Found optional disease description'
 
         print ''
 
     print 'Total pages looked in:',len(pages),'\nPages found:',str(printvar),'\nMissing:',(len(pages)-printvar),'\nDescriptions found:',len(pubmedURLs['desc'])
-
-        
-        
-
-
-        #print soup.prettify()
-
-    
