@@ -1,9 +1,9 @@
 import re
-import time
 import urllib
 import urllib2
 from BeautifulSoup import *
 from urlparse import urljoin
+import TextCleaner
 
 
 def fetchPubmedDiseaseURLs():
@@ -35,15 +35,19 @@ def fetchPubmedDiseaseURLs():
     return diseaseURLs
 
 
-# Compile regexps
-removeTags=re.compile(r'<.*?>')
-removeNBSPs=re.compile(r'&nbsp;')
+# Get compiled regexps
+removeTags=TextCleaner.removeHTMLTags()
+removeNBSPs=TextCleaner.removeNPSBs()
+removeRefs=TextCleaner.removeReferences()
 
 def cleanString(desc):
-    # Removes selected html tags and expressions
+    """
+    Removes html tags, selected expressions and references.
+    """
 
     desc=removeTags.sub('',desc)
     desc=removeNBSPs.sub(' ',desc)
+    desc=removeRefs.sub('',desc)
 
     return desc
 
@@ -98,14 +102,14 @@ def fetchPubmedDiseaseTerms(pages):
 
         # If no direct pubmed link was found, replace with title
         if (not found):
-            titleTerm=title+' AND hasabstract[text]'
+            titleTerm=title
             pubmedURLs[title]['terms'].append(titleTerm)
 
         # Disease synonyms are also added to the term list
         lis=soup('li')
         for li in lis:
             if ('synonym' in str(li.parent)):
-                synonym=li.contents[0]+' AND hasabstract[text]'
+                synonym=li.contents[0]
                 pubmedURLs[title]['terms'].append(synonym)
                 print '   ' + synonym
 
@@ -118,7 +122,8 @@ def fetchPubmedDiseaseTerms(pages):
                     desc=cleanString(str(desc))
                     pubmedURLs[title]['desc']=desc
                     print '*Found optional disease description'
-
+            
+        print pubmedURLs[title]
         print ''
 
     print 'Total pages looked in:',len(pages),'\nPages found:',str(printvar),'\nMissing:',(len(pages)-printvar),'\nDescriptions found:',len(pubmedURLs['desc'])
