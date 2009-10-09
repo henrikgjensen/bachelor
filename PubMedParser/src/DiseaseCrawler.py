@@ -1,16 +1,32 @@
-import re
-import urllib
 import urllib2
 from BeautifulSoup import *
 from urlparse import urljoin
 import TextCleaner
 
+# Get compiled regexps
+removeTags=TextCleaner.removeHTMLTags()
+removeNBSPs=TextCleaner.removeNPSBs()
+removeRefs=TextCleaner.removeReferences()
 
-def fetchPubmedDiseaseURLs():
+# Pages to be crawled (by default)
+defaultPages=['A']#,'B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Z','0-49']
+
+def fetchPubmedDiseaseURLs(pages=defaultPages):
+
+    """
+    Takes a list of letters representing the pages to be crawled for rare
+    diseases on http://rarediseases.info.nih.gov.
+    
+    Returns a list of URLs to be crawled for pubmed terms, uids and optional
+    describtions.
+
+    The default list is:
+    ['A','B','C','D','E','F','G','H','I','J','K','L','M',
+    'N','O','P','Q','R','S','T','U','V','W','Z','0-49']
+    """
 
     diseaseURLs=[]
-    pages=['A']#,'B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Z','0-49']
-
+    
     # Get a list of rare-disease URLs
     for index in pages:
         page='http://rarediseases.info.nih.gov/RareDiseaseList.aspx?StartsWith=%s' % index
@@ -34,15 +50,12 @@ def fetchPubmedDiseaseURLs():
 
     return diseaseURLs
 
-
-# Get compiled regexps
-removeTags=TextCleaner.removeHTMLTags()
-removeNBSPs=TextCleaner.removeNPSBs()
-removeRefs=TextCleaner.removeReferences()
-
 def cleanString(desc):
+
     """
-    Removes html tags, selected expressions and references.
+    Takes a string and removes html tags, selected expressions and references.
+
+    Returns the 'cleaned' string.
     """
 
     desc=removeTags.sub('',desc)
@@ -51,9 +64,14 @@ def cleanString(desc):
 
     return desc
 
-
 def fetchPubmedDiseaseTerms(pages):
-    # Go through the URL list and fetch PubMed related search terms
+
+    """
+    Takes a URL-list of pages to crawl for pubmed terms, uids and optional
+    describtions.
+
+    Returns a dictionary on the form {DiseaseName:{uid:'',term:[],desc:''}}
+    """
 
     pubmedURLs={}
 
@@ -104,6 +122,8 @@ def fetchPubmedDiseaseTerms(pages):
         if (not found):
             titleTerm=title
             pubmedURLs[title]['terms'].append(titleTerm)
+            printvar+=1
+            print 'Found',str(printvar),'PubMed terms/uids.',title
 
         # Disease synonyms are also added to the term list
         lis=soup('li')
@@ -111,7 +131,7 @@ def fetchPubmedDiseaseTerms(pages):
             if ('synonym' in str(li.parent)):
                 synonym=li.contents[0]
                 pubmedURLs[title]['terms'].append(synonym)
-                print '   ' + synonym
+                print '  ' + synonym
 
         # Look for a optional disease description on rarediseases.info.nih.gov
         descs=soup('span')
@@ -121,9 +141,8 @@ def fetchPubmedDiseaseTerms(pages):
                 if (('descriptionquestion' in idString) & ('#003366' not in str(desc))):
                     desc=cleanString(str(desc))
                     pubmedURLs[title]['desc']=desc
-                    print '*Found optional disease description'
-            
-        print pubmedURLs[title]
+                    print '    *Found optional disease description'
         print ''
-
+        
+    # Print status report
     print 'Total pages looked in:',len(pages),'\nPages found:',str(printvar),'\nMissing:',(len(pages)-printvar),'\nDescriptions found:',len(pubmedURLs['desc'])
