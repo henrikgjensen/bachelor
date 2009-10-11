@@ -5,11 +5,12 @@ import urllib
 def getArticles(diseaseDictionary):
 
     """
-    Takes a dictionary of the form: {'disease xx': {'terms' : [xx, yy], 'uid' : nnnnnn }, etc}}
+    Takes a dictionary of the form:
+    {'disease xx': {'terms' : [xx, yy], 'uid' : string, 'description' : string }, etc}}
     And returns a dictionary containing:
     {'disease a': [pmid1, pmid2, pmid3...], 'disease b' : [pmidx, pmidy,...], ...}
 
-    Duplicate are currently not considered, but should be.
+    Duplicate PMIDs are removed.
     """
 
     diseaseArticleIDlist = {}
@@ -22,12 +23,44 @@ def getArticles(diseaseDictionary):
                 diseaseArticleIDlist[disease].extend(getArticleIDlist(searchterm,0))
 
         if (diseaseDictionary[disease]['uid'] != ''):
-            print 'Downloading from uid', diseaseDictionary[disease]['uid']
+            print 'Downloading from %s uid' % disease, diseaseDictionary[disease]['uid']
             diseaseArticleIDlist[disease].extend(getArticleIDsFromLink(diseaseDictionary[disease]['uid']))
+
+        diseaseArticleIDlist[disease]['description'] = diseaseDictionary[disease]['desc']
+        # Removing the duplicate PMIDs from the return list.
+        diseaseDictionary[disease]=removeDuplicates(diseaseDictionary[disease])
 
     return diseaseArticleIDlist
 
+def getLeastSearchResults(listOfSearchTerms):
+
+    """
+    We want to minimize the number of articles return, so we try alot
+    of different search terms, from the synonym list. Do not want to
+    get 0 articles back either, we want to find the golden middle way.
+    """
+
+    listOfresults = []
+
+    for terms in listOfSearchTerms:
+        listOfresults.append(getArticleCount(term))
+
+    return listOfSearchTerms[min(map(_addabunch, listOfresults))]
+
+# Helper function that adds 10000000 to x if x equals 0. Used to weed
+# out search terms resulting in zero articles.
+def _addbunch(x):
+    if x == 0:
+        return 10000000
+    else:
+        return x    
+
 def removeDuplicates(listOfIDs):
+    """
+    Quick and dirty hack to remove duplicates from list using
+    dictionary, this should be pretty fast. But it does not preserve
+    the ordering. Which is of no use anyways.
+    """
 
     d = {}
 
@@ -50,13 +83,13 @@ def getArticlesFromSearchTerm(searchTermList):
     
     for searchTerm in searchTermList:
         print 'search term: ', searchTerm
-        unquotedURL = urllib.unquote_plus(searchTerm + ' AND hasabstract[text]') # Replace %xx and '+' from search term
-        print 'unquoted search term', unquotedURL
+        unquotedURL = urllib.unquote_plus(searchTerm + ' AND hasabstract[text]') # Replace '%xx' and '+' from search term, removes URL encoding of string. E.g. %2F get replaced with '/' and '+' with ' '
+        print 'unquoted search term: ', unquotedURL
         pmids = getArticleIDlist(unquotedURL, 0)
         articleList.extend(getMedlineList(pmids))
         print 'article list size:', len(articleList)
 
-    print 'total number of articles return from search term list:', len(articleList)
+    print 'total number of articles return from search term list: ', len(articleList)
 
     return articleList
 
