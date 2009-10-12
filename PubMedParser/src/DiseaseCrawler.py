@@ -9,7 +9,7 @@ removeNBSPs=TextCleaner.removeNPSBs()
 removeRefs=TextCleaner.removeReferences()
 
 # Pages to be crawled (by default)
-defaultPages=['A']#,'B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Z','0-49']
+defaultPages=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Z','0-49']
 
 def fetchPubmedDiseaseURLs(pages=defaultPages):
 
