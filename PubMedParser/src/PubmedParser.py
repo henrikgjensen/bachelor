@@ -2,7 +2,7 @@ from Bio import Entrez
 from Bio import Medline
 import urllib
 
-def getArticles(diseaseDictionary):
+def getArticleIDs(diseaseDictionary):
 
     """
     Takes a dictionary of the form:
@@ -42,18 +42,25 @@ def getLeastSearchResults(listOfSearchTerms):
 
     listOfresults = []
 
-    for terms in listOfSearchTerms:
-        listOfresults.append(getArticleCount(term))
+    for term in listOfSearchTerms:
+        count = getArticleCount(term)
+        print 'Search term: ' + term + ' resulted in ' + count + ' number of articles'
+        listOfresults.append(int(getArticleCount(term)))
+
+    returnThese = []
+    articleCount = 0
+    while articleCount <= 250:
+        
 
     return listOfSearchTerms[min(map(_addabunch, listOfresults))]
 
-# Helper function that adds 10000000 to x if x equals 0. Used to weed
+# Helper function that returns 35000000 to x if x equals 0. Used to weed
 # out search terms resulting in zero articles.
-def _addbunch(x):
+def _addabunch(x):
     if x == 0:
-        return 10000000
+        return 35000000
     else:
-        return x    
+        return x
 
 def removeDuplicates(listOfIDs):
     """
