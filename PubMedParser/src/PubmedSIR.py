@@ -133,54 +133,6 @@ def removeDuplicates(listOfIDs):
 
     return listOfIDs
 
-def getArticlesFromSearchTerm(searchTermList):
-
-    """
-    Recieves a list of search term, and returns the list of pubmed
-    references containing an abstract.
-    """
-
-    Entrez.email = 'michael@diku.dk'
-
-    articleList = []
-    
-    for searchTerm in searchTermList:
-        print 'search term: ', searchTerm
-        unquotedURL = urllib.unquote_plus(searchTerm + ' AND hasabstract[text]') # Replace '%xx' and '+' from search term, removes URL encoding of string. E.g. %2F get replaced with '/' and '+' with ' '
-        print 'unquoted search term: ', unquotedURL
-        pmids = getArticleIDlist(unquotedURL, 0)
-        articleList.extend(getMedlineList(pmids))
-        print 'article list size:', len(articleList)
-
-    print 'total number of articles return from search term list: ', len(articleList)
-
-    return articleList
-
-def getArticlesFromLink(from_uidList):
-
-    """
-    Helper function that is able to handle the special type of links
-    that are sometimes returned by rarediseasesdatabase.com, it
-    recieves a list of "from_uid" and returns all the pubmed articles
-    containing an abtract.
-    """
-
-    Entrez.email = 'michael@diku.dk'
-
-    results = []
-    ids=[]
-
-    for uid in from_uidList:
-        handle=Entrez.elink(db='omim', LinkName='omim_pubmed_calculated', from_uid=uid)
-        results.extend(Entrez.read(handle))
-
-    for i in range(len(results)):
-       ids.extend([link['Id'] for link in results[i]['LinkSetDb'][0]['Link']])
-
-    articleList = getMedlineList(ids)
-
-    return articleList
-
 def getArticleIDsFromLink(uid, number_of_articles=20):
 
     """
