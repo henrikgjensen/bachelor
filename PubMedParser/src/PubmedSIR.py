@@ -1,6 +1,8 @@
 from Bio import Entrez
 from Bio import Medline
 import urllib
+import SearchTermCombiner as STC
+
 
 def getArticleIDs(diseaseDictionary):
 
@@ -32,6 +34,65 @@ def getArticleIDs(diseaseDictionary):
 
     return diseaseArticleIDlist
 
+def getTheCorrectNumberOfArticles(diseaseDictionary):
+
+    """
+    Takes a dictionary of the form:
+    {'disease xx': {'syn' : [xx, yy], 'term' : string, 'uid' : string, 'description' : string }, etc}}
+    And returns a dictionary containing:
+    {'disease a': [pmid1, pmid2, pmid3...], 'disease b' : [pmidx, pmidy,...], ...}
+
+    Where disease xx is the name of the disease, syn is a list of
+    synonyms, term is a hand crafted search term (if it exists),
+    description is the description from the rarediseases.info (if it
+    exists).
+
+    Duplicate PMIDs are removed.
+    """
+
+    # Iterates through the diseaseDictionary and searches for uid,
+    # term, diseasename, and combinations of synonyms
+    for disease in diseaseDictionary:
+        articleCount=250
+        diseaseArticleIDlist[disease]=[]
+
+        if (diseaseDictionary[disease]['terms'] != ''):
+            diseaseArticleIDlist[disease].extend(getArticleIDlist(diseaseDictionary[disease]['term'],articleCount))
+        elif (diseaseDictionary[disease]['uid'] != ''):
+            diseaseArticleIDlist[disease].extend(getArticleIDsFromLink(diseaseDictionary[disease]['uid'],articleCount))
+
+        articleCount-=len(diseaseArticleIDlist[disease])
+
+        if (articleCount > 0):
+            diseaseArticleIDlist[disease].extend(getArticleIDlist(disease),articleCount)
+
+        # Remove duplicates
+
+        # diseaseArticleIDlist, should contain about 250 PMIDs by now
+        articleCount = 500 - len(diseaseArticleIDlist[disease])
+
+        # Call SearchTermCombiner to combine search terms and adds hasabstract[text] behind it.
+        diseaseDictionary['syn'] = STC.searchTermCombiner(diseaseDictionary['syn'])
+
+        synonymArticleIDlist={}
+        for synonym in diseaseDictionary[disease]['syn']:
+            synonymArticleIDlist[synonym]=[]
+
+            synonymArticleIDlist[synonym] = getArticleIDlist(diseaseDictionary[disease][synonym])
+
+        for synonym in sorted(synonymArticleIDlist.values())
+
+        if (diseaseDictionary[disease]['uid'] != ''):
+            print 'Downloading from %s uid' % disease, diseaseDictionary[disease]['uid']
+            diseaseArticleIDlist[disease].extend(getArticleIDsFromLink(diseaseDictionary[disease]['uid']))
+
+        diseaseArticleIDlist[disease]['description'] = diseaseDictionary[disease]['desc']
+        # Removing the duplicate PMIDs from the return list.
+        diseaseDictionary[disease]=removeDuplicates(diseaseDictionary[disease])
+
+
+
+
 def getLeastSearchResults(listOfSearchTerms):
 
     """
@@ -46,11 +107,6 @@ def getLeastSearchResults(listOfSearchTerms):
         count = getArticleCount(term)
         print 'Search term: ' + term + ' resulted in ' + count + ' number of articles'
         listOfresults.append(int(getArticleCount(term)))
-
-    returnThese = []
-    articleCount = 0
-    while articleCount <= 250:
-        
 
     return listOfSearchTerms[min(map(_addabunch, listOfresults))]
 
@@ -125,7 +181,7 @@ def getArticlesFromLink(from_uidList):
 
     return articleList
 
-def getArticleIDsFromLink(uid):
+def getArticleIDsFromLink(uid, number_of_articles=20):
 
     """
     Helper function that is able to handle the special type of links
@@ -136,7 +192,9 @@ def getArticleIDsFromLink(uid):
 
     Entrez.email = 'michael@diku.dk'
 
-    handle=Entrez.elink(db='omim', LinkName='omim_pubmed_calculated', from_uid=uid)
+    if number_of_articles==0 : number_of_articles=int(getArticleCount(search_term))
+
+    handle=Entrez.elink(db='omim', LinkName='omim_pubmed_calculated', from_uid=uid, retmax=number_of_articles)
     results = Entrez.read(handle)
 
     ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
