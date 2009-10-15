@@ -50,7 +50,7 @@ def fetchPubmedDiseaseURLs(pages=defaultPages):
 
     return diseaseURLs
 
-def cleanString(desc):
+def _cleanString(desc):
 
     """
     Takes a string and removes html tags, selected expressions and references.
