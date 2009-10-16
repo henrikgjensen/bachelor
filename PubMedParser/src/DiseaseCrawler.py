@@ -64,6 +64,23 @@ def _cleanString(desc):
 
     return desc
 
+def _parseURL(url):
+    dict={}
+
+    shortenedURL=url[(url.find('?')+1):]
+    tokenizedURL=shortenedURL.split('&')
+    for token in tokenizedURL:
+        i=token.find('=')
+        key=token[:i]
+        if 'term' in key:
+            key='term'
+        if 'uid' in key:
+            key='from_uid'
+        value=token[i+1:]
+        dict[key]=value
+
+    return dict
+
 def fetchPubmedDiseaseTerms(pages):
 
     """
@@ -91,46 +108,40 @@ def fetchPubmedDiseaseTerms(pages):
 
         # Allocate dictionary
         pubmedURLs[title]={}
-        pubmedURLs[title]['terms']=[]
-        pubmedURLs[title]['uid']=''
-        pubmedURLs[title]['desc']=''
+        pubmedURLs[title]['db']=''      # ..database to search in
+        pubmedURLs[title]['terms']=''   # ..handcrafted search term
+        pubmedURLs[title]['syn']=[]     # ..disease synonyms
+        pubmedURLs[title]['uid']=''     # ..search id
+        pubmedURLs[title]['desc']=''    # ..optional disease description
 
         # Check for Pubmed direct links
-        found=False
         links=soup('a')
         for link in links:
             if ('href' in dict(link.attrs)):
                 urlString=link['href'].lower()
                 # If there is a PubMed direct link and it's an id:
                 if ((('pubmed') in urlString) & (('uid=') in urlString)):
-                    strIndex=urlString.find('uid=')+4
-                    urlString=urlString[strIndex:]
-                    pubmedURLs[title]['uid']=urlString
+                    tokens=_parseURL(urlString)
+                    uid=tokens['from_uid']
+                    pubmedURLs[title]['uid']=uid
+                    pubmedURLs[title]['db']=tokens['db']
                     printvar+=1
-                    found=True
                     print 'Found',str(printvar),'PubMed terms/uids.',title
-                # If there is a PubMed direct link and it's a term:
+                # If there is a PubMed direct link and it's a handcrafted term:
                 if ((('pubmed') in urlString) & (('term=') in urlString)):
-                    strIndex=urlString.find('term=')+5
-                    urlString=urlString[strIndex:]
-                    pubmedURLs[title]['terms'].append(urlString)
+                    tokens=_parseURL(urlString)
+                    terms=tokens['term']
+                    pubmedURLs[title]['terms']=terms
+                    pubmedURLs[title]['db']=tokens['db']
                     printvar+=1
-                    found=True
                     print 'Found',str(printvar),'PubMed terms/uids.',title
-
-        # If no direct pubmed link was found, replace with title
-        if (not found):
-            titleTerm=title
-            pubmedURLs[title]['terms'].append(titleTerm)
-            printvar+=1
-            print 'Found',str(printvar),'PubMed terms/uids.',title
 
         # Disease synonyms are also added to the term list
         lis=soup('li')
         for li in lis:
             if ('synonym' in str(li.parent)):
                 synonym=li.contents[0]
-                pubmedURLs[title]['terms'].append(synonym)
+                pubmedURLs[title]['syn'].append(synonym)
                 print '  ' + synonym
 
         # Look for a optional disease description on rarediseases.info.nih.gov
@@ -139,10 +150,14 @@ def fetchPubmedDiseaseTerms(pages):
             if ('id' in dict(desc.attrs)):
                 idString=desc['id'].lower()
                 if (('descriptionquestion' in idString) & ('#003366' not in str(desc))):
-                    desc=cleanString(str(desc))
+                    desc=_cleanString(str(desc))
                     pubmedURLs[title]['desc']=desc
                     print '    *Found optional disease description'
+
+        print pubmedURLs[title]
+
         print ''
         
     # Print status report
     print 'Total pages looked in:',len(pages),'\nPages found:',str(printvar),'\nMissing:',(len(pages)-printvar),'\nDescriptions found:',len(pubmedURLs['desc'])
+

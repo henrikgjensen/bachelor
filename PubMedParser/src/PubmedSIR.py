@@ -4,7 +4,6 @@ import urllib
 import SearchTermCombiner as STC
 import TextCleaner as TC
 
-
 def getArticleIDs(diseaseDictionary):
 
     """
@@ -200,29 +199,6 @@ def removeDuplicates(listOfIDs):
 
     return listOfIDs
 
-def getArticlesFromSearchTerm(searchTermList):
-
-    """
-    Recieves a list of search term, and returns the list of pubmed
-    references containing an abstract.
-    """
-
-    Entrez.email = 'michael@diku.dk'
-
-    articleList = []
-    
-    for searchTerm in searchTermList:
-        print 'search term: ', searchTerm
-        
-        print 'unquoted search term: ', unquotedURL
-        pmids = getArticleIDlist(unquotedURL, 0)
-        articleList.extend(getMedlineList(pmids))
-        print 'article list size:', len(articleList)
-
-    print 'total number of articles return from search term list: ', len(articleList)
-
-    return articleList
-
 def getArticleIDsFromLink(uid, number_of_articles=20):
 
     """
@@ -280,7 +256,6 @@ def getArticleIDlist(search_term,number_of_articles=20):
         print 'Downloaded',len(pmids),'PMIDs.',str(number_of_articles-len(pmids)),'remaining...'
     return pmids
 
-
 def getMedlineList(pmids):
 
     """
@@ -314,28 +289,3 @@ def writeOut(list):
         out.write(str(i)+'\n')
         count+=1
         print 'Wrote out liste element ',str(count)
-        
-"""
-def printRecords(records):
-
-    # Recieves a list of records and prints title, author (if it
-    # exists) and source (if it exists)
-
-    for record in records:
-        print 'title:', record['TI'].lower()
-        if 'AU' in record:
-            print 'author:', record['AU']
-        if 'SO' in record:
-            print 'source:', record['SO']
-        print
-
-def print_abstracts(records):
-
-    # Recives a list of records and prints title and abstract (if it
-    # exists)
-
-    for record in records:
-        print 'title:', record['TI']
-        if 'AB' in record:
-            print 'abstract:', record['AB']
-"""
