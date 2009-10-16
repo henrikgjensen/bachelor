@@ -19,7 +19,7 @@ def removeReferences():
     """
     return re.compile(r'[\[0-9\]]')
 
-def unquoteURL(url):
+def unquoteString(string):
     # Replace '%xx' and '+' from search term, removes URL encoding of
     # string. E.g. %2F get replaced with '/' and '+' with ' '
-    return urllib.unquote_plus(searchTerm + ' AND hasabstract[text]')
+    return urllib.unquote_plus(string + ' AND hasabstract[text]')

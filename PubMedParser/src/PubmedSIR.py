@@ -2,6 +2,7 @@ from Bio import Entrez
 from Bio import Medline
 import urllib
 import SearchTermCombiner as STC
+import TextCleaner as TC
 
 
 def getArticleIDs(diseaseDictionary):
@@ -34,7 +35,7 @@ def getArticleIDs(diseaseDictionary):
 
     return diseaseArticleIDlist
 
-def getTheCorrectNumberOfArticles(diseaseDictionary):
+def work(diseaseDictionary):
 
     """
     Takes a dictionary of the form:
@@ -52,45 +53,111 @@ def getTheCorrectNumberOfArticles(diseaseDictionary):
 
     # Iterates through the diseaseDictionary and searches for uid,
     # term, diseasename, and combinations of synonyms
+    diseaseArticleIDlist={}
+
     for disease in diseaseDictionary:
         articleCount=250
         diseaseArticleIDlist[disease]=[]
-
         if (diseaseDictionary[disease]['terms'] != ''):
-            diseaseArticleIDlist[disease].extend(getArticleIDlist(diseaseDictionary[disease]['term'],articleCount))
+            diseaseArticleIDlist[disease].extend(getArticleIDlist(TC.unquoteString(diseaseDictionary[disease]['terms']),articleCount))
+            print 'TEST TEST TEST TEST TEST TEST TEST TEST '
         elif (diseaseDictionary[disease]['uid'] != ''):
             diseaseArticleIDlist[disease].extend(getArticleIDsFromLink(diseaseDictionary[disease]['uid'],articleCount))
 
         articleCount-=len(diseaseArticleIDlist[disease])
 
+        # If we still have qouta left
         if (articleCount > 0):
-            diseaseArticleIDlist[disease].extend(getArticleIDlist(disease),articleCount)
+            # Search for the disease name on pubmed/medline
+            diseaseArticleIDlist[disease].extend(getArticleIDlist(disease,articleCount))
 
         # Remove duplicates
+        diseaseArticleIDlist[disease] = removeDuplicates(diseaseArticleIDlist[disease])
 
         # diseaseArticleIDlist, should contain about 250 PMIDs by now
         articleCount = 500 - len(diseaseArticleIDlist[disease])
 
         # Call SearchTermCombiner to combine search terms and adds hasabstract[text] behind it.
-        diseaseDictionary['syn'] = STC.searchTermCombiner(diseaseDictionary['syn'])
+        diseaseDictionary[disease]['syn'] = STC.searchTermCombiner(diseaseDictionary[disease]['syn'])
 
+        print 'Downloading into synonym list:'
         synonymArticleIDlist={}
         for synonym in diseaseDictionary[disease]['syn']:
             synonymArticleIDlist[synonym]=[]
 
-            synonymArticleIDlist[synonym] = getArticleIDlist(diseaseDictionary[disease][synonym])
+            synonymArticleIDlist[synonym].extend(getArticleIDlist(TC.unquote(synonym),0))
 
-        for synonym in sorted(synonymArticleIDlist.values())
+#        if debug == True : print 'Completed download from synonym list'
 
-        if (diseaseDictionary[disease]['uid'] != ''):
-            print 'Downloading from %s uid' % disease, diseaseDictionary[disease]['uid']
-            diseaseArticleIDlist[disease].extend(getArticleIDsFromLink(diseaseDictionary[disease]['uid']))
+        print synonymArticleIDlist
 
-        diseaseArticleIDlist[disease]['description'] = diseaseDictionary[disease]['desc']
+        print 'Sorting items accoring to their count by values()'
+        # Needs to get the list sorted on the amount of return IDs.
+        items = [(len(v),v,k) for k,v in synonymArticleIDlist.items()]
+
+        items.sort()
+        items.reverse()
+        listIsEmpty = False
+
+        print 'AC: ', articleCount
+        print 'Adding additional PMIDs to list'
+        while ((articleCount > 0) or (not listIsEmpty)):
+            # Is the list empty, then break.
+
+            print items
+            if( items == [] ):
+                print 'list is empty test???'
+                listIsEmpty = True
+                break
+            # Test whether the next items makes articleCount
+            # underflow, then we need to break
+            elif ((articleCount - items[len(items)-1][0]) < 0):
+                print 'underflow test???'
+                break
+
+            # items is sort largest to smallest, so pop the last one.
+            resultTuple=items.pop()
+            if(resultTuple[0] == 0):
+                print 'Choose to contiue, because resulting tuple did not contain any results'
+                continue
+
+            print 'resultTuple', resultTuple
+            # decrement articleCount with the number of PMIDs in the resulting tuple
+            articleCount-=resultTuple[0]
+            print 'Article count from while loop: ', articleCount
+            # add the articleID to the total list.
+            print 'Numbers added', resultTuple[0]
+            print 'Added', resultTuple[1]
+            print 'From syn', resultTuple[2]
+            diseaseArticleIDlist[disease].extend(synonymArticleIDlist[resultTuple[2]])
+            
+            print 'THE WHILE LOOP THE WHILE LOOP THE WHILE LOOP '
+            print disease + ': ', diseaseArticleIDlist[disease]
+            print 'Length: ', len(diseaseArticleIDlist[disease])
+
+#            print diseaseArticleIDlist[disease]
+
+        # Special treatment for the last entry in synonymArticleIDlist
+        # that made articleCount underflow and making sure the list is
+        # not empty
+        if (articleCount > 0) and not listIsEmpty:
+            # From synonymArticleIDlist select the last element of
+            # items (the one that made it underflow), look up the
+            # term, and select the PMIDs from 0 to articleCount to
+            # fill up the rest of the qouta
+            diseaseArticleIDlist[disease].extend(synonymArticleIDlist[items[len(items)-1][2]][0:articleCount])
+            print '========================================'
+            print 'ArticleCount: ', articleCount
+            print disease + ': ', diseaseArticleIDlist[disease]
+            print 'Length: ', len(diseaseArticleIDlist[disease])
+
+#        diseaseArticleIDlist[disease]['description'] = diseaseDictionary[disease]['desc']
         # Removing the duplicate PMIDs from the return list.
-        diseaseDictionary[disease]=removeDuplicates(diseaseDictionary[disease])
+#        diseaseDictionary[disease]=removeDuplicates(diseaseDictionary[disease])
 
+        return diseaseArticleIDlist
 
+# From getArticlesFromSearchTerms(list of search terms)
 
 
 def getLeastSearchResults(listOfSearchTerms):
@@ -146,38 +213,13 @@ def getArticlesFromSearchTerm(searchTermList):
     
     for searchTerm in searchTermList:
         print 'search term: ', searchTerm
-        unquotedURL = urllib.unquote_plus(searchTerm + ' AND hasabstract[text]') # Replace '%xx' and '+' from search term, removes URL encoding of string. E.g. %2F get replaced with '/' and '+' with ' '
+        
         print 'unquoted search term: ', unquotedURL
         pmids = getArticleIDlist(unquotedURL, 0)
         articleList.extend(getMedlineList(pmids))
         print 'article list size:', len(articleList)
 
     print 'total number of articles return from search term list: ', len(articleList)
-
-    return articleList
-
-def getArticlesFromLink(from_uidList):
-
-    """
-    Helper function that is able to handle the special type of links
-    that are sometimes returned by rarediseasesdatabase.com, it
-    recieves a list of "from_uid" and returns all the pubmed articles
-    containing an abtract.
-    """
-
-    Entrez.email = 'michael@diku.dk'
-
-    results = []
-    ids=[]
-
-    for uid in from_uidList:
-        handle=Entrez.elink(db='omim', LinkName='omim_pubmed_calculated', from_uid=uid)
-        results.extend(Entrez.read(handle))
-
-    for i in range(len(results)):
-       ids.extend([link['Id'] for link in results[i]['LinkSetDb'][0]['Link']])
-
-    articleList = getMedlineList(ids)
 
     return articleList
 
@@ -200,7 +242,6 @@ def getArticleIDsFromLink(uid, number_of_articles=20):
     ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
 
     return ids
-
 
 def getArticleCount(search_term):
 
