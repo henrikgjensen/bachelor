@@ -2,11 +2,14 @@ import urllib2
 from BeautifulSoup import *
 from urlparse import urljoin
 import TextCleaner
+import writeOut
 
 # Get compiled regexps
 removeTags=TextCleaner.removeHTMLTags()
 removeNBSPs=TextCleaner.removeNPSBs()
 removeRefs=TextCleaner.removeReferences()
+removeSlashes=TextCleaner.removeSlashes()
+removeCommas=TextCleaner.removeCommas()
 
 # Pages to be crawled (by default)
 defaultPages=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Z','0-49']
@@ -65,6 +68,12 @@ def _cleanString(desc):
     return desc
 
 def _parseURL(url):
+
+    """
+    Takes a url and breakes it up into tokens.
+
+    Returns dictionary on the form {'term'|'from_uid':term|uid}
+    """
     dict={}
 
     shortenedURL=url[(url.find('?')+1):]
@@ -93,8 +102,11 @@ def fetchPubmedDiseaseTerms(pages):
     pubmedURLs={}
 
     printvar=0
+    pagenumber=0
+    desccounter=0
     for page in pages:
-
+        pagenumber+=1
+        
         # Open the page
         try:
             c=urllib2.urlopen(page)
@@ -136,13 +148,22 @@ def fetchPubmedDiseaseTerms(pages):
                     printvar+=1
                     print 'Found',str(printvar),'PubMed terms/uids.',title
 
+        if ((pubmedURLs[title]['db']!='')&(pubmedURLs[title]['db']!='omim')&(pubmedURLs[title]['db']!='pubmed')):
+            print "*****Found different db:",pubmedURLs[title]['db']
+
         # Disease synonyms are also added to the term list
         lis=soup('li')
         for li in lis:
             if ('synonym' in str(li.parent)):
                 synonym=li.contents[0]
-                pubmedURLs[title]['syn'].append(synonym)
-                print '  ' + synonym
+                if (',') in str(synonym):
+                    aditionalSynonyms=synonym.split(',')
+                    for syn in aditionalSynonyms:
+                        pubmedURLs[title]['syn'].append(syn)
+                        print '  ' + syn
+                else:
+                    pubmedURLs[title]['syn'].append(synonym)
+                    print '  ' + synonym
 
         # Look for a optional disease description on rarediseases.info.nih.gov
         descs=soup('span')
@@ -152,12 +173,22 @@ def fetchPubmedDiseaseTerms(pages):
                 if (('descriptionquestion' in idString) & ('#003366' not in str(desc))):
                     desc=_cleanString(str(desc))
                     pubmedURLs[title]['desc']=desc
+                    desccounter+=1
                     print '    *Found optional disease description'
-
-        print pubmedURLs[title]
-
         print ''
         
-    # Print status report
-    print 'Total pages looked in:',len(pages),'\nPages found:',str(printvar),'\nMissing:',(len(pages)-printvar),'\nDescriptions found:',len(pubmedURLs['desc'])
-
+        if ((pagenumber%20)==0):
+            # Print status report
+            print '*****************************************************'
+            print 'Total pages looked in:',str(pagenumber),'\nPages found:',str(printvar),'\nMissing for current letter:',(len(pages)-printvar),'\nDescriptions found:',str(desccounter)
+            print '*****************************************************'
+            print 'Writing to files...'
+            # Write out and flush dictionary
+            for disease in pubmedURLs:
+                # Remove some problematic tokens from the file name
+                disease=removeSlashes.sub(' ',disease)
+                disease=removeCommas.sub(' ',disease)
+                # Write out
+                writeOut.writeOut("BA_DiseaseCrawler",disease,pubmedURLs[disease])
+            pubmedURLs={}
+            print 'Wrote successfully. Dictionary flushed.'

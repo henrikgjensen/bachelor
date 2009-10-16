@@ -19,6 +19,18 @@ def removeReferences():
     """
     return re.compile(r'[\[0-9\]]')
 
+def removeSlashes():
+    """
+    Returns a regular expression for removing /
+    """
+    return re.compile(r'/')
+
+def removeCommas():
+    """
+    Returns a regular expression for removing ,
+    """
+    return re.compile(r',')
+
 def unquoteString(string):
     # Replace '%xx' and '+' from search term, removes URL encoding of
     # string. E.g. %2F get replaced with '/' and '+' with ' '
