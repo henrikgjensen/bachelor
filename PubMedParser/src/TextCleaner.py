@@ -22,4 +22,4 @@ def removeReferences():
 def unquoteString(string):
     # Replace '%xx' and '+' from search term, removes URL encoding of
     # string. E.g. %2F get replaced with '/' and '+' with ' '
-    return urllib.unquote_plus(string + ' AND hasabstract[text]')
+    return urllib.unquote_plus(string)
