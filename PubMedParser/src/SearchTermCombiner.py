@@ -15,7 +15,7 @@ def searchTermCombiner(listOfSearchTerms):
     # We need to get the last term containing all search terms,
     # stopping with len(lOST) results in one missing combination
     for i in range(1, len(listOfSearchTerms) + 1): 
-        for uc in xuniqueCombinations(listOfSearchTerms, i):
+        for uc in _xuniqueCombinations(listOfSearchTerms, i):
             combinedSearchTermList.append(' '.join(uc))
         
 
@@ -27,9 +27,9 @@ def searchTermCombiner(listOfSearchTerms):
     # Myostoma (Or do they?) <-- These are fictious names.
 
 # This is stolen code.
-def xuniqueCombinations(items, n):
+def _xuniqueCombinations(items, n):
     if n==0: yield []
     else:
         for i in xrange(len(items)):
-            for cc in xuniqueCombinations(items[i+1:],n-1):
+            for cc in _xuniqueCombinations(items[i+1:],n-1):
                 yield [items[i]]+cc
