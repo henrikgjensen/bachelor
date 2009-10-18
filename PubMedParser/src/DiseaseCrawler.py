@@ -1,6 +1,7 @@
 import urllib2
 from BeautifulSoup import *
 from urlparse import urljoin
+from time import strftime, sleep
 import TextCleaner
 import writeOut
 
@@ -10,6 +11,7 @@ removeNBSPs=TextCleaner.removeNPSBs()
 removeRefs=TextCleaner.removeReferences()
 removeSlashes=TextCleaner.removeSlashes()
 removeCommas=TextCleaner.removeCommas()
+removeWhitespaces=TextCleaner.removeWhitespaces()
 
 # Pages to be crawled (by default)
 defaultPages=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Z','0-49']
@@ -83,9 +85,15 @@ def _parseURL(url):
         key=token[:i]
         if 'term' in key:
             key='term'
-        if 'uid' in key:
+        if ('uid' in key) | ('idsfromresult' in key) | ('list_uids' in key):
             key='from_uid'
+        if 'dbfrom' in key:
+            key='db'
         value=token[i+1:]
+        # Whitespaces sometimes occur in the urls and to avoid later confusion
+        # these are removed.
+        if '%20' in value:
+            value=removeWhitespaces.sub('',value)
         dict[key]=value
 
     return dict
@@ -100,6 +108,7 @@ def fetchPubmedDiseaseTerms(pages):
     """
 
     pubmedURLs={}
+    problematicURLs=[]
 
     printvar=0
     pagenumber=0
@@ -108,48 +117,97 @@ def fetchPubmedDiseaseTerms(pages):
         pagenumber+=1
         
         # Open the page
+        for i in range(3):
+            try:
+                c=urllib2.urlopen(page)
+            except:
+                print "Could not open %s" % page
+                print "Attempt",str(i+1),"out of 3"
+                sleep(5)
+                if i==2:
+                    print "Could not open page. Terminating.."
+                    raise StopIteration()
+
         try:
-            c=urllib2.urlopen(page)
-        except:
-            print "Could not open %s" % page
+            soup=BeautifulSoup(c.read())
+        except HTMLParseError:
+            print 'Experienced difficulties opening %s' % page
+            writeOut.writeOut("BA_DiseaseCrawler/URL_error_log",strftime('%H%M%S'),page)
             continue
-        soup=BeautifulSoup(c.read())
 
         # Get disease name
         title=soup.html.head.title.string
 
         # Allocate dictionary
         pubmedURLs[title]={}
-        pubmedURLs[title]['db']=''      # ..database to search in
-        pubmedURLs[title]['terms']=''   # ..handcrafted search term
-        pubmedURLs[title]['syn']=[]     # ..disease synonyms
-        pubmedURLs[title]['uid']=''     # ..search id
-        pubmedURLs[title]['desc']=''    # ..optional disease description
+        pubmedURLs[title]['db']='pubmed'    # ..database to search in (pubmed by default)
+        pubmedURLs[title]['terms']=''       # ..handcrafted search term
+        pubmedURLs[title]['syn']=[]         # ..disease synonyms
+        pubmedURLs[title]['uid']=''         # ..search id
+        pubmedURLs[title]['desc']=''        # ..optional disease description
 
         # Check for Pubmed direct links
         links=soup('a')
+        found=False
         for link in links:
-            if ('href' in dict(link.attrs)):
-                urlString=link['href'].lower()
-                # If there is a PubMed direct link and it's an id:
-                if ((('pubmed') in urlString) & (('uid=') in urlString)):
-                    tokens=_parseURL(urlString)
-                    uid=tokens['from_uid']
-                    pubmedURLs[title]['uid']=uid
-                    pubmedURLs[title]['db']=tokens['db']
-                    printvar+=1
-                    print 'Found',str(printvar),'PubMed terms/uids.',title
-                # If there is a PubMed direct link and it's a handcrafted term:
-                if ((('pubmed') in urlString) & (('term=') in urlString)):
-                    tokens=_parseURL(urlString)
-                    terms=tokens['term']
-                    pubmedURLs[title]['terms']=terms
-                    pubmedURLs[title]['db']=tokens['db']
-                    printvar+=1
-                    print 'Found',str(printvar),'PubMed terms/uids.',title
+            if (link.contents):
+                if ((link.contents[0] == 'PubMed')) & ('href' in dict(link.attrs)):
+                    urlString = link['href'].lower()
+                    # If there is a PubMed direct link and it's an id:
+                    if ('uid=' in urlString) | ('uids=' in urlString) | ('idsfromresult=' in urlString):
+                        tokens = _parseURL(urlString)
+                        uid = tokens['from_uid']
+                        pubmedURLs[title]['uid'] = uid
+                        pubmedURLs[title]['db'] = tokens['db']
+                        printvar += 1
+                        found = True
+                        print 'Found', str(printvar), 'PubMed terms/uids.', title
+                        continue
+                    # If there is a PubMed direct link and it's a handcrafted term:
+                    elif ('term=' in urlString):
+                        tokens = _parseURL(urlString)
+                        terms = tokens['term']
+                        pubmedURLs[title]['terms'] = terms
+                        pubmedURLs[title]['db'] = tokens['db']
+                        printvar += 1
+                        found = True
+                        print 'Found', str(printvar), 'PubMed terms/uids.', title
+                        continue
+                    # Special case 1: If there is a PubMed direct link but the uid is not part of the tokens
+                    elif ('/entrez/' not in urlString):
+                        start = urlString.find('/pubmed/') + 8
+                        if '?' in urlString:
+                            end = urlString.find('?')
+                            uid = urlString[start:end]
+                        else:
+                            uid = urlString[start:]
+                        print uid
+                        pubmedURLs[title]['uid'] = uid
+                        printvar += 1
+                        found = True
+                        print 'Found', str(printvar), 'PubMed terms/uids.', title, '. (Special case 1: No tokens)'
+                    # Special case 2: If there is a webenv the url is (by experience) not working but the disease name is still valuable for a pbumed search
+                    elif '&webenv=' in urlString:
+                        printvar += 1
+                        found = True
+                        print 'Found', str(printvar), 'PubMed terms/uids.', title, '. (Special case 2: WebEnv)'
 
+                # Terminate if an unexpected url shows up
+                if link.contents:
+                    if (not found) & (link.contents[0]=='PubMed'):
+                        print 'Could not fetch url'
+                        raise StopIteration()
+
+        # A simple addition to the printouts
+        if not found:
+            printvar+=1
+            print 'Found',str(printvar),'Diseases.',title,'(no uid or term).'
+
+        # Notify if an unexpected database shows up
         if ((pubmedURLs[title]['db']!='')&(pubmedURLs[title]['db']!='omim')&(pubmedURLs[title]['db']!='pubmed')):
             print "*****Found different db:",pubmedURLs[title]['db']
+            print 'Could not fetch url'
+            raise StopIteration()
 
         # Disease synonyms are also added to the term list
         lis=soup('li')
@@ -180,15 +238,16 @@ def fetchPubmedDiseaseTerms(pages):
         if ((pagenumber%20)==0):
             # Print status report
             print '*****************************************************'
-            print 'Total pages looked in:',str(pagenumber),'\nPages found:',str(printvar),'\nMissing for current letter:',(len(pages)-printvar),'\nDescriptions found:',str(desccounter)
+            print 'Total pages looked in:',str(pagenumber),'\nPages found:',str(printvar),'\nMissing in total:',(len(pages)-printvar),'\nDescriptions found:',str(desccounter)
             print '*****************************************************'
             print 'Writing to files...'
             # Write out and flush dictionary
             for disease in pubmedURLs:
                 # Remove some problematic tokens from the file name
+                content=pubmedURLs[disease]
                 disease=removeSlashes.sub(' ',disease)
                 disease=removeCommas.sub(' ',disease)
                 # Write out
-                writeOut.writeOut("BA_DiseaseCrawler",disease,pubmedURLs[disease])
+                writeOut.writeOut("BA_DiseaseCrawler",disease,content)
             pubmedURLs={}
             print 'Wrote successfully. Dictionary flushed.'
