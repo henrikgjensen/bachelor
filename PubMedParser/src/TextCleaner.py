@@ -31,6 +31,12 @@ def removeCommas():
     """
     return re.compile(r',')
 
+def removeWhitespaces():
+    """
+    Returns a regular expression for removing whitespaces
+    """
+    return re.compile(r'%20')
+
 def unquoteString(string):
     # Replace '%xx' and '+' from search term, removes URL encoding of
     # string. E.g. %2F get replaced with '/' and '+' with ' '
