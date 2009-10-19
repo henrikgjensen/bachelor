@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDB1', u'Corneal dystrophy Reis Bucklers type', u'CDRB', u'Reis Bucklers corneal dystrophy', u'RBCD', u'Corneal dystrophy geographic', u'Reis Bucklers dystrophy'], 'uid': u'608470'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acrocephalo-syndactyly type 1', u'ACS 1', u'Syndactylic oxycephaly', u'Apert-Crouzon disease'], 'uid': u'101200'}

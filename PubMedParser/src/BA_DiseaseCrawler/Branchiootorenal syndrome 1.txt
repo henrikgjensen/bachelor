@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Branchiootorenal dysplasia', u'Melnick-Fraser syndrome', u'BOR1'], 'uid': u'113650'}

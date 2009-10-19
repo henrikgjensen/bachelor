@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Longchain 3 hydroxyacyl CoA dehydrogenase deficiency', u'3 hydroxy acyl CoA dehydrogenase deficiency'], 'uid': ''}

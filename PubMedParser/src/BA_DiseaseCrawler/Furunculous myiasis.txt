@@ -1,0 +1,1 @@
+{'terms': u'furuncular%5btitle%5dandmyiasis%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Furuncular myiasis'], 'uid': ''}

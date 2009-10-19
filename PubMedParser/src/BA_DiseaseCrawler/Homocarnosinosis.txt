@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Homocarnosinase deficiency'], 'uid': u'236130'}

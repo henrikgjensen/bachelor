@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Coloboma', u' Heart anomaly', u' choanal Atresia', u' Retardation', u' Genital and Ear anomalies', u'CHARGE association', u'Hall-Hittner syndrome', u'HHS', u'Familial CHARGE syndrome &#40;subtype&#41;'], 'uid': u'214800'}

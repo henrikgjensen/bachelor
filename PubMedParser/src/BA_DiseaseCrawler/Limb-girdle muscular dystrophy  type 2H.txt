@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Muscular dystrophy', u' limb-girdle type 2H', u'Muscular dystrophy Hutterite type', u'LGMD2H', u'Sarcotubular myopathy'], 'uid': u'254110'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gaucher disease', u' noncerebral juvenile', u'GD 1', u'Glucocerebrosidase deficiency', u'Acid beta-glucosidase deficiency', u'GBA DEFICIENCY'], 'uid': u'230800'}

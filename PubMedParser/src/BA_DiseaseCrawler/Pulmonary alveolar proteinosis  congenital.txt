@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital pulmonary alveolar proteinosis', u'Congenital PAP'], 'uid': u'265120'}

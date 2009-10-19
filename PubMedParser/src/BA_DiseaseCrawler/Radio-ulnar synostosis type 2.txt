@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Fusion just distal to the proximal radial epiphysis in association with congenital dislocation of the radial head'], 'uid': u'179300'}

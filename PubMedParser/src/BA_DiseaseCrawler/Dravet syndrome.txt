@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Severe Myoclonic Epilepsy of Infancy', u'SMEI', u'Myoclonic epilepsy', u' severe', u' of infancy', u'SME'], 'uid': u'607208'}

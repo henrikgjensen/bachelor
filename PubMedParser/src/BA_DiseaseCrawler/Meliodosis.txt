@@ -1,0 +1,1 @@
+{'terms': u'%28burkholderia%5btitle%5d+and+mallei%5btitle%5d%29+and+%22loattrfree+full+text%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Burkholderia pseudomallei infection', u'B pseudomallei infection'], 'uid': ''}

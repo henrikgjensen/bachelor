@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Atrophia bulborum hereditaria', u'Pseudoglioma', u'Episkopi blindness', u'Norrie syndrome', u'Norrie-Warburg syndrome'], 'uid': u'310600'}

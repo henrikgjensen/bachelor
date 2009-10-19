@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short rib-polydactyly syndrome type 1', u'SRPS', u' type 1', u'Polydactyly with neonatal chondrodystrophy', u' type 1'], 'uid': u'263530'}

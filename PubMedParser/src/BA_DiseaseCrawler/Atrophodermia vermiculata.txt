@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Atrophodermia reticulata', u'Folliculitis ulerythematosa', u'Folliculitis ulerythematosa reticulata', u'Honeycomb atrophy'], 'uid': u'209700'}

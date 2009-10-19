@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'IBD deficiency', u'ACAD8 deficiency', u'Acyl-CoaA dehydrogenase family', u' member 8', u' deficiency of'], 'uid': u'611283'}

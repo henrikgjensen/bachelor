@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Klippel-Feil syndrome with laryngeal malformation', u'SGM1'], 'uid': u'148900'}

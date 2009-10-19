@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pseudoachondroplastic dysplasia', u'PSACH', u'Pseudoachondroplastic spondyloepiphyseal dysplasia'], 'uid': u'177170'}

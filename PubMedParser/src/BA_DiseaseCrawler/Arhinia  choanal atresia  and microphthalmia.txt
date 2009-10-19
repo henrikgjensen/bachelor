@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bosma arhinia microphthalmia syndrome'], 'uid': u'603457'}

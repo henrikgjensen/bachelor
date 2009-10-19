@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypoplasia of sacrum', u'Agenesis of sacrum', u'Lumbosacral agenesis'], 'uid': u'312800'}

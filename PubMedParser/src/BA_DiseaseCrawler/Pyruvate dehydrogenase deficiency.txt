@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pyruvate dehydrogenase complex deficiency', u'PDHC'], 'uid': u'312170'}

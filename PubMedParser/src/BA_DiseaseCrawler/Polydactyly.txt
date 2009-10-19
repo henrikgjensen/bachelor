@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Extra digits', u'Supernumerary digits', u'Polydactylia', u'Hyperdactyly', u'Polydactylism'], 'uid': u'603596'}

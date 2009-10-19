@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GPS', u'Platelet alpha-granule deficiency', u'Marked decrease or absence of alpha-granules and of platelet-specific alpha-granule proteins'], 'uid': u'139090'}

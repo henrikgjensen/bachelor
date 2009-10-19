@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HP', u'HPC', u'Chronic pancreatitis', u'PCTT'], 'uid': u'167800'}

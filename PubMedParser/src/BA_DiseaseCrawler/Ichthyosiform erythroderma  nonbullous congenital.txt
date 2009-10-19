@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NCIE', u'IECN1', u'Ichthyosiform erythroderma', u' Brocq congenital', u' nonbullous form', u'Nonbullous congenital ichthyosiform erythroderma 1', u'CIE'], 'uid': u'242100'}

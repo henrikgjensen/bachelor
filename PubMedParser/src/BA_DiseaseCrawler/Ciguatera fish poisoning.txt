@@ -1,0 +1,1 @@
+{'terms': u'%28%28%22ciguaterapoisoning%22%5bmesh%5dandenglish%5blang%5d%29and%28%28%22human%22%5bmeshterms%5dor%22hominidae%22%5bmeshterms%5d%29or%22human%22%5bmeshterms%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Ciguatera poisoning'], 'uid': ''}

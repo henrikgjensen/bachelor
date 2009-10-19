@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bernard-Soulier syndrome', u'BSS', u'Platelet glycoprotein 1b', u' deficiency of', u'Deficiency of platelet glycoprotein 1b', u'Von Willebrand factor receptor deficiency', u'Macrothrombocytopenia', u' familial Bernard-Soulier type', u'Hemorrhagiparous thrombocytic dystrophy', u'Giant platelet disease'], 'uid': u'231200'}

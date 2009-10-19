@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'3 alpha methylcrotonylglycinuria 2', u'MCC 2 deficiency', u'Methylcrotonylglycinuria type 2'], 'uid': u'210210'}

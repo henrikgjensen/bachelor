@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Tongue carcinoma'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sensorineural deafness with Pituitary dwarfism', u'WBP syndrome'], 'uid': u'221750'}

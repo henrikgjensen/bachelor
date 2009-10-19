@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Oto-Spondylo-Mega-Epiphyseal Dysplasia', u'OSMED', u'Otospondylomegaepiphyseal dysplasia', u'Nance-Insley syndrome', u'Nance Sweeney chondrodysplasia', u'Chondrodystrophy with sensorineural deafness', u'Insley-Astley syndrome', u'Mega-epiphyseal dwarfism', u'Chondrodystrophy with sensorineural deafness'], 'uid': u'215150'}

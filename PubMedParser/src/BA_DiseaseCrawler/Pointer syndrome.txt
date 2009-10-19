@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Skeletal abnormalities', u' camptodactyly', u' facial anomalies', u' and feeding difficulties'], 'uid': u'9028464'}

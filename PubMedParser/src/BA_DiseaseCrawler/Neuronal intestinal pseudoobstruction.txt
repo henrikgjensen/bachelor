@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Intestinal pseudoobstruction due to neuronal disease', u'Argyrophil myenteric plexus', u' deficiency of', u'Pseudoobstruction', u' chronic idiopathic intestinal', u' neuronal type', u'Neuronal intestinal dysplasia', u' type A', u'NID A'], 'uid': u'243180'}

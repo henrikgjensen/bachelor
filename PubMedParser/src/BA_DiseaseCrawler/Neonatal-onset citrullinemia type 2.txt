@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neonatal-onset citrullinemia type II', u'Neonatal intrahepatic cholestasis caused by citrin deficiency', u'NICCD'], 'uid': u'605814'}

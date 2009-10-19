@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Idiopathic membranous nephropathy', u'MGN', u'Membranous glomerulonephritis', u'Membranous GN', u'Glomerulonephritis', u' membranous', u'Extramembranous glomerulonephritis'], 'uid': ''}

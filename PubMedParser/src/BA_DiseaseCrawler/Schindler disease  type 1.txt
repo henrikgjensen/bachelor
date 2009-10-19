@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neuroaxonal dystrophy', u' Schindler type', u'Alpha-N-acetylgalactosaminidase deficiency', u' type 1', u'NAGA deficiency', u' type 1'], 'uid': u'104170'}

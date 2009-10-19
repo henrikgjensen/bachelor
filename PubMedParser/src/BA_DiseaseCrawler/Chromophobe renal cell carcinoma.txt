@@ -1,0 +1,1 @@
+{'terms': u'%28chromophobe%5btitle%5dandrenal%5btitle%5dandcell%5btitle%5dandcarcinoma%5btitle%5d%29andhasabstract%5btext%5dandenglish%5blang%5dand%22humans%22%5bmeshterms%5dand%222000/09/0110.16%22%5bedat%5d%3a%222005/08/3110.16%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'CRCC'], 'uid': ''}

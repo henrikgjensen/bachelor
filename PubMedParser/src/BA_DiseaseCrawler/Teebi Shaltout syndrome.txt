@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Craniofacial anomalies', u' abnormal hair', u' camptodactyly', u' and caudal appendage'], 'uid': u'272950'}

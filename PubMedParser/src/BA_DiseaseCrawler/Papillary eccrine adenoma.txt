@@ -1,0 +1,1 @@
+{'terms': u'%28papillary%5ball+fields%5d+and+eccrine%5ball+fields%5d+and+%28%22adenoma%22%5bmesh+terms%5d+or+%22adenoma%22%5ball+fields%5d%29%29+and+%28hasabstract%5btext%5d+and+%22humans%22%5bmesh+terms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

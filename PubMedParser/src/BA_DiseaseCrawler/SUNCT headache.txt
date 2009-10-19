@@ -1,0 +1,1 @@
+{'terms': u'sunct%5ballfields%5dand%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29andhasabstract%5btext%5dandenglish%5blang%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Short-lasting', u' Unilateral', u' Neuralgiform headache attacks with Conjunctival injection and Tearing', u'SUNCT syndrome'], 'uid': ''}

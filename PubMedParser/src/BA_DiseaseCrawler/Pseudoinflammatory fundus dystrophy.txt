@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Fundus dystrophy', u' pseudoinflammatory recessive form', u'PFD Lavia type', u'PFD', u' Finnish type'], 'uid': u'264420'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Hamann Zanki schimrigk syndrome', u'Multiple exostoses with spastic tetraparesis'], 'uid': ''}

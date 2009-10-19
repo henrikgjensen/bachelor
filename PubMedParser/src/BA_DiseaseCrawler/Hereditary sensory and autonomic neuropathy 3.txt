@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dysautonomia', u' familial', u'FD', u'Hereditary sensory neuropathy type 3', u'Familial dysautonomia', u'Riley Day syndrome', u'HSAN 3', u'HSN 3'], 'uid': u'223900'}

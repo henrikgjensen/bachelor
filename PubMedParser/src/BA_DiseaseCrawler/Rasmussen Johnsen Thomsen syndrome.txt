@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Inherited congenital bilateral atresia of the external auditory canal', u' congenital bilateral vertical talus and increased interocular distance', u'Rasmussen syndrome'], 'uid': u'133705'}

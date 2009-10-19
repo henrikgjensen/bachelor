@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Isotretinoin embryopathy', u'Accutane-exposed pregnancies', u'Isotretinoin &#40;RoAccutane&#41; embryopathy', u'Accutane', u' fetal effects of', u'Acutane embryopathy', u'Isotretinoin', u' fetal effects of', u'Isotretinoin teratogen syndrome'], 'uid': u'243440'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Amyotrophic lateral sclerosis 5', u'ALS5'], 'uid': ''}

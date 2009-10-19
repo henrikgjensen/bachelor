@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neonatally lethal short-limb skeletal dysplasia', u' glasgow type'], 'uid': u'273680'}

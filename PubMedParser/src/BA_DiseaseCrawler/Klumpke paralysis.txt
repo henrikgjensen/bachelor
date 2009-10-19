@@ -1,0 +1,1 @@
+{'terms': u'%28%28klumpke%5ballfields%5dandhasabstract%5btext%5d%29andenglish%5blang%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Paralysis of the lower brachial plexus', u'Dejerine-Klumpke palsy', u'Klumpke&#39;s palsy', u'Lower brachial plexus palsy'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spondyloepiphseal dysplasia', u' retinal dystrophy', u' and antibody deficiency'], 'uid': u'300258'}

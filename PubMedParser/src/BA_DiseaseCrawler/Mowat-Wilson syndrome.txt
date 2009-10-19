@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' microcephaly', u' and distinct facial features with or without Hirschsprung disease', u'Hirschsprung disease mental retardation syndrome'], 'uid': u'235730'}

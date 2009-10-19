@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GSD 4', u'Andersen disease', u'Brancher deficiency', u'Amylopectinosis', u'Glycogen branching enzyme deficiency', u'Cirrhosis', u' familial', u' with deposition of abnormal glycogen', u'Glycogenosis 4'], 'uid': u'232500'}

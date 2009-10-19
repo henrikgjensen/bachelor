@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial temporal lobe epilepsy', u'FTLE', u'Epilepsy', u' familial temporal lobe'], 'uid': u'608096'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial rhizomelic dysplasia', u'Rhizomelic dysplasia', u' familial'], 'uid': u'268250'}

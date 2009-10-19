@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Caudal dysgenesis familial type', u'Familial caudal dysgenesis'], 'uid': u'2225526'}

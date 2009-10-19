@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lethal osteosclerotic bone dysplasia', u'Combination of microcephaly', u' exophthalmos', u' hypoplastic nose and midface', u' gum hyperplasia', u' cleft palate', u' apparently low-set ears', u' and osteosclerosis'], 'uid': u'259775'}

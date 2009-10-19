@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Rutledge lethal multiple congenital anomaly syndrome', u'Polydactyly', u' sex reversal', u' renal hypoplasia', u' and unilobular lung', u'Lethal acrodysgenital syndrome', u'Rutledge Friedman Harrod syndrome', u'SLO syndrome', u' type 2'], 'uid': u'270400'}

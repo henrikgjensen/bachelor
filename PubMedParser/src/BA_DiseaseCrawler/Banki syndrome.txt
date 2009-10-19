@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Fusion of the lunate and cuneiform bones of the wrist', u' clinodactyly', u' clinometacarpy', u' brachymetacarpy and leptometacarpy &#40;thin diaphysis&#41;'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': u'6132448'}

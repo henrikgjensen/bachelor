@@ -1,0 +1,1 @@
+{'terms': u'reye%5btitle%5dandsyndrome%5btitle%5dandhasabstract%5btext%5dandenglish%5blang%5dand%28%22hominidae%22%5bmeshterms%5dor%22human%22%5bmeshterms%5d%29and%221994/04/2909.47%22%5bedat%5d%3a%222004/04/2609.47%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Fatty Liver with Encephalopathy', u'RS', u'Reye&#39;s Syndrome'], 'uid': ''}

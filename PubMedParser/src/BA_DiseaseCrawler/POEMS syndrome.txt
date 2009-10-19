@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Polyneuropathy organomegaly', u'Polyneuropathy', u' Organomegaly', u' Endocrinopathy', u' M protein', u' and Skin changes syndrome', u'Crow-Fukase syndrome'], 'uid': u'192240'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anterior polar cataracts 1', u'CTAA1', u'Cataract anterior polar', u'CAP'], 'uid': u'115650'}

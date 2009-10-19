@@ -1,0 +1,1 @@
+{'terms': u'%28granulosa%5btitle%5dandcell%5btitle%5dandtumor%5btitle%5dandovary%5btitle%5d%29andhasabstract%5btext%5dand%22humans%22%5bmeshterms%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'GCT of the ovary', u'Granulosa theca cell tumor', u'GTCT', u'Adult granulosa cell tumor of the ovary', u'Granulosa theca cell tumor of the ovary'], 'uid': ''}

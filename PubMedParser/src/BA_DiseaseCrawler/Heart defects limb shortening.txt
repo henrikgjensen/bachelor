@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital heart disease and skeletal malformations', u'Cardioskeletal syndrome', u' Kuwaiti type'], 'uid': u'212135'}

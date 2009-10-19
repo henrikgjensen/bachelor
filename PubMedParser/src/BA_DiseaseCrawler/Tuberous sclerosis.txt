@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Tuberous sclerosis complex', u'TSC', u'TS'], 'uid': u'191100'}

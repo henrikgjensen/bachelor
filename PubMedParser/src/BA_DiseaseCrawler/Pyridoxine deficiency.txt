@@ -1,0 +1,1 @@
+{'terms': u'%22vitaminb6deficiency%22%5bmesh%5dandenglish%5blang%5dand%28%22human%22%5bmeshterms%5dor%22hominidae%22%5bmeshterms%5d%29and%221999/10/1612.49%22%5bedat%5d%3a%222004/10/1412.49%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Vitamin B6 deficiency', u'Vitamin deficiency', u' B6'], 'uid': ''}

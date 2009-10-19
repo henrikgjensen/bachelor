@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microphthalmos', u' microcornea', u' and sclerocornea with short stature and hair and dental abnormalities'], 'uid': u'268320'}

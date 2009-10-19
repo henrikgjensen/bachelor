@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Guadalajara camptodactyly syndrome type II'], 'uid': u'211920'}

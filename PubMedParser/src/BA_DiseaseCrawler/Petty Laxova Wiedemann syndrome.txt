@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Growth retardation', u' wrinkled skin', u' scanty hair', u' hypoplastic distal phalanges', u' umbilical hernia', u' large open anterior fontanelle'], 'uid': u'2309786'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DA2B', u'Arthrogryposis multiplex congenita distal type 2B', u'Sheldon Hall syndrome', u'SHS', u'Freeman Sheldon syndrome', u' variant', u'FSSV', u'Arthrogryposis multiplex congenita distal type II with craniofacial abnormalities'], 'uid': u'601680'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'IFAP syndrome'], 'uid': u'308205'}

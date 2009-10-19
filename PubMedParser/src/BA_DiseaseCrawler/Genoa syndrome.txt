@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Holoprosencephaly craniosynostosis', u'Camera Lituania Cohen syndrome', u'Semilobar holoprosencephaly and primary craniosynostosis'], 'uid': u'601370'}

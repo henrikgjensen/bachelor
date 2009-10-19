@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lung adenocarcinoma'], 'uid': u'211980'}

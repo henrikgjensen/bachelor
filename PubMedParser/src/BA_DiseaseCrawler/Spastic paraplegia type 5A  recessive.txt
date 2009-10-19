@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SPG5A', u'Autosomal recessive spastic paraplegia'], 'uid': u'270800'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Giant cell arteritis', u'GCA', u'Cranial arteritis'], 'uid': u'187360'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'VBCH2', u'Osteosclerosis of the skull and enlarged mandible'], 'uid': u'607636'}

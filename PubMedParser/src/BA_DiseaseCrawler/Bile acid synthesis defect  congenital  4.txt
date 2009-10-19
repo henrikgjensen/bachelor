@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CBAS4', u'Cholestasis', u' intrahepatic', u' with defective conversion of', u'Trihydroxycoprostanic acid to cholic acid', u'Trihydroxycoprostanic acid in bile'], 'uid': u'214950'}

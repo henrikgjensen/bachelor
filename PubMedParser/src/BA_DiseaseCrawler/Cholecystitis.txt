@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Gallstone cholecystitis', u'Acalculous cholecystitis'], 'uid': ''}

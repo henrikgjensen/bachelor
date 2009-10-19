@@ -1,0 +1,1 @@
+{'terms': u'acquired+ichthyosis%5bti%5d+and+hasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Ichthyosis acquisita', u'Fish scale disease', u' acquired', u'Acquired ichthyosis'], 'uid': ''}

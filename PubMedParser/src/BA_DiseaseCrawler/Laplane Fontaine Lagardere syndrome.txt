@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Familial syndesmodysplasic dwarfism'], 'uid': u'4657332'}

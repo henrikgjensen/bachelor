@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Isolated polycystic liver disease', u'Isolated autosomal dominant polycystic liver disease', u'PCLD'], 'uid': u'174050'}

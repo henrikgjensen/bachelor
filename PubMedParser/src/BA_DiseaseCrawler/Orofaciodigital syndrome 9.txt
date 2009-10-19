@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'OFD9', u'Oral-facial-digital syndrome type 9', u'OFD syndrome 9', u'Orofaciodigital syndrome with retinal abnormalities', u'Oral-facial-digital syndrome with retinal abnormalities'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alves syndrome', u'Trichooculodermovertebral syndrome', u'TODV syndrome'], 'uid': u'601701'}

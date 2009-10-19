@@ -1,0 +1,1 @@
+{'terms': u'gerstmann%5btitle%5dandsyndrome%5btitle%5dnotstraussler%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'GS', u'Developmental Gerstmann syndrome', u'Gerstmann Badal syndrome', u'Gerstmann tetrad'], 'uid': ''}

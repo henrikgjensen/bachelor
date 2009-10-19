@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Corneal cerebellar syndrome', u'Spinocerebellar degeneration corneal dystrophy', u'Der kaloustian Jarudi Khoury syndrome'], 'uid': u'271310'}

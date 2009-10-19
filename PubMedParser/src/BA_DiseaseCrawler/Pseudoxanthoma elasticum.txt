@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PXE', u'Gronblad Strandberg syndrome'], 'uid': u'264800'}

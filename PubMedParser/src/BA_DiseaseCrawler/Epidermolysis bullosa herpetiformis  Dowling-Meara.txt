@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epidermolysis bullosa simplex', u' Dowling-Meara type'], 'uid': u'131760'}

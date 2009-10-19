@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Primary pulmonary hypertension', u'PPH', u'Pulmonary arterial hypertension', u'PAH', u'Idiopathic pulmonary arterial hypertension'], 'uid': u'178600'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial insulin resistance with acanthosis nigricans', u' acral hypertrophy and muscle cramps'], 'uid': u'200170'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sagittal craniosynostosis', u' Dandy-Walker malformation', u' and hydrocephalus'], 'uid': u'123155'}

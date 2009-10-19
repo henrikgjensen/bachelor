@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Enamel renal syndrome', u'ERS', u'Absent enamel', u' nephrocalcinosis and apparently normal calcium metabolism', u'Generalized enamel hypoplasia and renal dysfunction'], 'uid': u'204690'}

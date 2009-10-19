@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GAN1', u'Giant axonal neuropathy 1', u'Neuropathy', u' giant axonal', u'GAN'], 'uid': u'256850'}

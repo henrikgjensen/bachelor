@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LCFS2', u'Cancer family syndrome'], 'uid': u'114400'}

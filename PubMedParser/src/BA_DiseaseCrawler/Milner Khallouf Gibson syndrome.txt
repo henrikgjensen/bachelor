@@ -1,0 +1,1 @@
+{'terms': u'milner%5ball+fields%5d+and+khallouf%5ball+fields%5d+and+gibson%5ball+fields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Microcephaly', u' short stature', u' slow growth', u' beak nose', u' micrognathia', u' skin dyspigmentation and forearm and thumb dysplasia'], 'uid': ''}

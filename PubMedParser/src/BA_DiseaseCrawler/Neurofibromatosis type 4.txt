@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neurofibromatosis type 4 of Riccardi', u'Neurofibromatosis', u' atypical'], 'uid': u'162270'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Encephalopathy', u' familial', u' with Collins bodies', u'FENIB'], 'uid': u'604218'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ocular nonnephropathic cystinosis', u'Cystinosis', u' adult', u' nonnephropathic', u'Cystinosis', u' benign', u' nonnephropathic'], 'uid': u'219750'}

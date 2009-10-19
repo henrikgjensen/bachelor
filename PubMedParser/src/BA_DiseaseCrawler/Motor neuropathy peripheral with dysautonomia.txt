@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Peripheral motor neuropathy associated with autonomic dysfunction', u'Lisker Garcia Ramos syndrome'], 'uid': u'252320'}

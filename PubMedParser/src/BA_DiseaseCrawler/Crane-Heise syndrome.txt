@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cleft lip&#47;palate', u' agenesis of clavicles and cervical vertebrae', u' and talipes equinovarus'], 'uid': u'218090'}

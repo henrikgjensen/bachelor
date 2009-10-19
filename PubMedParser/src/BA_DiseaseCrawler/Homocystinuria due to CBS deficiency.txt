@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Homocystinuria due to cystathionine beta-synthase deficiency', u'Cystathionine beta-synthase deficiency', u'CBS deficiency'], 'uid': u'236200'}

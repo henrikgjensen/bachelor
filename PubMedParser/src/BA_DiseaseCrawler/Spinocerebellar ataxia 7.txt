@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCA7', u'Olivopontocerebellar atrophy 3', u'OPCA3', u'ADCA', u' type 2', u'OPCA with macular degeneration and external ophthalmoplegia', u'Autosomal dominant cerebellar ataxia', u' type 2', u'OPCA with retinal degeneration'], 'uid': u'164500'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Digitotalar dysmorphism', u'Hereditary ulnar drift'], 'uid': ''}

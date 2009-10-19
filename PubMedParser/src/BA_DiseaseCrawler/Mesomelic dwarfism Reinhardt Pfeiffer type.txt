@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypoplasia of Ulna and Fibula', u'Mesomelic dwarfism of hypoplastic ulna and fibula type', u'Reinhardt Pfeiffer syndrome', u'Reinhardt-Pfeiffer mesomelic dysplasia', u'Reinhardt-Pfeiffer mesomelic skeletal dysplasia'], 'uid': u'191400'}

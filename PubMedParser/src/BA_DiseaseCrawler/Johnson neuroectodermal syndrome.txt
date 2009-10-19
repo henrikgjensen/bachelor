@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Johnson-Mcmillin syndrome', u'Alopecia anosmia deafness hypogonadism syndrome', u'AADH syndrome'], 'uid': u'147770'}

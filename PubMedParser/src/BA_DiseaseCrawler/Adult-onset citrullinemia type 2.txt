@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Adult-onset citrullinemia type II', u'CTLN2'], 'uid': u'603471'}

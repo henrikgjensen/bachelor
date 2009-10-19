@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Schnyder crystalline corneal dystrophy', u'SCCD', u'Schnyder corneal dystrophy'], 'uid': u'121800'}

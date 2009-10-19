@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Werdnig-Hoffmann disease', u'Werdnig Hoffmann disease', u'Muscular atrophy', u' infantile', u'SMA1', u'SMA', u' infantile acute form', u'Proximal spinal muscular atrophy', u' type 1'], 'uid': u'253300'}

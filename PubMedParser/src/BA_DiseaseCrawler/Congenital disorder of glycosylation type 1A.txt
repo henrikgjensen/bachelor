@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDG1A', u'CDG 1A', u'Carbohydrate deficient glycoprotein syndrome', u'CDGS1A', u'CDG syndrome', u'Carbohydrate-deficient glycoprotein syndrome type 1A', u'Jaeken syndrome', u'Phosphomannomutase 2 deficiency', u'PMM2 deficiency'], 'uid': u'212065'}

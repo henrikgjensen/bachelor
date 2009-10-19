@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kyrle&#39;s disease', u'Hyperkeratosis follicularis et parafollicularis in cutem penetrans'], 'uid': u'149500'}

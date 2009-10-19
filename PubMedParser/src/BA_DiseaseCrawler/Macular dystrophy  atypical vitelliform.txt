@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'VMD1', u'Vitelliform macular dystrophy', u' atypical'], 'uid': u'153840'}

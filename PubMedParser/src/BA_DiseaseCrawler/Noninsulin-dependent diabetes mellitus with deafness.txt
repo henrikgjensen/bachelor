@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Diabetes-deafness syndrome', u' maternally transmitted', u'Diabetes and deafness', u' maternally inherited', u'Ballinger-Wallace Syndrome', u'Diabetes mellitus', u' type 2', u' with deafness', u'NIDDM with deafness'], 'uid': u'520000'}

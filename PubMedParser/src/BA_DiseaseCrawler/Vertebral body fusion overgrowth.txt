@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Progressive anterior vertebral body fusion', u' overgrowth and distinct craniofacial appearance'], 'uid': u'8267935'}

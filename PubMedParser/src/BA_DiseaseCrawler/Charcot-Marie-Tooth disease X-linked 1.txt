@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMTX', u'CMTX 1', u'Charcot-Marie-Tooth peroneal muscular atrophy', u' X-linked', u'Hereditary motor and sensory neuropathy', u' X-linked', u'HMSN', u' X-linked', u'Charcot-Marie-Tooth disease', u' X-linked', u' 1', u'Charcot Marie Tooth disease X-linked 1'], 'uid': u'302800'}

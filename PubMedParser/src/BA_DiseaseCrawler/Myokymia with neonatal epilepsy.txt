@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epilepsy', u' benign neonatal', u' with Myokymia', u'Convulsions', u' benign familial neonatal with Myokymia', u'BFNC&#47;Myokymia syndrome'], 'uid': u'606437'}

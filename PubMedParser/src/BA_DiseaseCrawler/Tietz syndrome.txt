@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Albinism-deafness of Tietz', u'Hypopigmentation&#47;deafness of Tietz', u'Tietz albinism-deafness syndrome', u'Albinism and complete nerve deafness'], 'uid': u'103500'}

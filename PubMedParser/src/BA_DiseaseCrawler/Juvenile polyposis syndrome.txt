@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'JPS', u'Polyposis juvenile intestinal', u'PJI', u'Juvenile intestinal polyposis', u'JIP', u'Polyposis familial of entire gastrointestinal tract'], 'uid': u'174900'}

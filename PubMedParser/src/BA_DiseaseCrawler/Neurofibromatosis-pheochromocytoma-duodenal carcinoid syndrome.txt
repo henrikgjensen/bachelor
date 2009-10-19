@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NPDC syndrome', u'Duodenal carcinoid syndrome'], 'uid': u'162240'}

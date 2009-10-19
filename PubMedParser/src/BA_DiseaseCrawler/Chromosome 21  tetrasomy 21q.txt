@@ -1,0 +1,1 @@
+{'terms': u'%28tetrasomy%5ballfields%5dand21q%5ballfields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Tetrasomy 21q'], 'uid': ''}

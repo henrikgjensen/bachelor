@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'African iron overload', u'Hereditary iron overload and African Americans', u'Iron overload in Africa'], 'uid': u'601195'}

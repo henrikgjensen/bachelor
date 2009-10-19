@@ -1,0 +1,1 @@
+{'terms': u'%28atresia%5btitle%5dandsmall%5btitle%5dandintestine%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Small intestine atresia', u'Congenital atresia of the small intestine'], 'uid': ''}

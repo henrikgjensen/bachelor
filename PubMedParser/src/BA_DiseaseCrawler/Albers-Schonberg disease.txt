@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Osteopetrosis autosomal dominant type 2', u'Osteosclerosis fragilis generalisata', u'Albers-Schonberg disease', u' autosomal dominant', u'Marble bones', u' autosomal dominant', u'Autosomal dominant osteopetrosis type 2', u'OPTA2'], 'uid': u'166600'}

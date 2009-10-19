@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cushing syndrome', u'Hypercortisolism', u'Nodular primary adrenocortical dysplasia', u'Adrenal cortex adenoma', u'Adrenal hyperfunction resulting from pituitary acth excess', u'Ectopic ACTH syndrome', u'Ectopic adrenocorticotropic hormone syndrome', u'Hyperadrenocorticism'], 'uid': u'219080'}

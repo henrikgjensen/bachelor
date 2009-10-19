@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Unilateral radio-ulnar synostosis', u' generalized hypotonia', u' developmental retardation', u' and a characteristic facial appearance'], 'uid': u'266255'}

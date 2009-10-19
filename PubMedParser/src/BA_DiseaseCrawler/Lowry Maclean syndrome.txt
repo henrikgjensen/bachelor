@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' cleft palate', u' eventration of diaphragm', u' congenital heart defect', u' glaucoma', u' craniosynostosis and growth failure'], 'uid': u'600252'}

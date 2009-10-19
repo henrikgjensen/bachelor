@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EBR2A', u'Junctional epidermolysis bullosa inversa', u'JEB-I'], 'uid': u'226450'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Primary carnitine deficiency', u'Carnitine uptake defect', u'Carnitine deficiency', u' systemic', u' due to defect in renal reabsorption of carnitine', u'Carnitine plasma-membrane transporter deficiency'], 'uid': u'212140'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cicatricial pemphigoid', u' ocular', u'Pemphigoid', u' ocular cicatricial'], 'uid': u'164185'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypoplasia of the right ventricle', u'Right ventricular hypoplasia', u'Isolated right ventricular hypoplasia', u'Isolated hypoplasia of the right ventricle'], 'uid': u'277200'}

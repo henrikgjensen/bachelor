@@ -1,0 +1,1 @@
+{'terms': u'graham%5ballfields%5dandboyle%5ballfields%5dandtroxell%5ballfields%5dand%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Cystic hamartomata of lung and kidney'], 'uid': ''}

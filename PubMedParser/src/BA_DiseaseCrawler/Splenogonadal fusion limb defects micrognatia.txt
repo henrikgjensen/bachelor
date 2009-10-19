@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Splenogonadal fusion limb defects syndrome', u'SGFLD syndrome'], 'uid': u'183300'}

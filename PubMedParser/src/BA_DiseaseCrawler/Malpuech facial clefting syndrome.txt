@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Facial clefting syndrome Gypsy type', u'Malpuech syndrome'], 'uid': u'248340'}

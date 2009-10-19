@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cataract-Dental Syndrome', u'Cataract', u' X-linked', u' with Hutchinsonian Teeth', u'Mesiodens-Cataract Syndrome'], 'uid': u'302350'}

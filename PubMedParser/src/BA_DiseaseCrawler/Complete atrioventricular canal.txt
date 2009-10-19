@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'CAVC', u'Common atrioventricular canal', u'Complete atrioventricular septal defect'], 'uid': u'www.pubmedcentral.gov/articlerender.fcgi'}

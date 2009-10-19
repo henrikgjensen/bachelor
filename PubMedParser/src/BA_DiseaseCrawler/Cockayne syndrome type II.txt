@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'COFS syndrome 1', u'COFS 1', u'Pena Shokeir syndrome type 2', u'Pena-Shokeir syndrome type 2', u'Cerebrooculofacio-skeletal syndrome 1', u'Cockayne syndrome type B', u'CSB'], 'uid': u'214150'}

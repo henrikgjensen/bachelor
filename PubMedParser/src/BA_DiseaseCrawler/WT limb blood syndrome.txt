@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'WTsyndrome', u'Radial-ulnar hypoplasia with bone marrow failure and&#47;or leukemia'], 'uid': u'890097'}

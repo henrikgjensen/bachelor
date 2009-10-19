@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Platelet storage pool disease', u'Familial platelet storage pool disease &#40;type&#41;', u'Acquired storage pool disease &#40;type&#41;', u'Platelet storage pool deficiencies', u'SPD'], 'uid': u'185050'}

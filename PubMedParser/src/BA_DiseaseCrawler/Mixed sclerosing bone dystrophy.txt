@@ -1,0 +1,1 @@
+{'terms': u'mixed%5btitle%5d+and+sclerosing%5btitle%5d+and+bone%5btitle%5d+and+dystrophy%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

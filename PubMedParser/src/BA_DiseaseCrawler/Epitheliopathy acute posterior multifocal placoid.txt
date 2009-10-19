@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Acute multifocal placoid pigment epitheliopathy', u'Acute placoid pigment epitheliopathy', u'AMPPE', u'APMPPE', u'Multifocal placoid pigment epitheliopathy'], 'uid': ''}

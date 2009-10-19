@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Walker-Warburg syndrome', u'Warburg syndrome', u'Chemke syndrome', u'Hard &#43;&#47;- E syndrome', u'COD &#40;cerebroocular dysgenesis&#41;'], 'uid': u'236670'}

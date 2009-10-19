@@ -1,0 +1,1 @@
+{'terms': u'(hemoglobin%5btitle%5d+and+c%5btitle%5d+and+disease%5btitle%5d)+and+hasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Hb C disease', u'Hemoglobin-C disease'], 'uid': ''}

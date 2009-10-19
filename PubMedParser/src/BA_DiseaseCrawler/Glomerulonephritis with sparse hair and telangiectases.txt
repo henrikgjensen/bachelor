@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Telangiectatic membranoproliferative glomerulonephritis'], 'uid': u'137940'}

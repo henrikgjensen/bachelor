@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AHDS', u'Allan-Herndon syndrome', u'Monocarboxylate transporter-8 deficiency', u'Triiodothyronine resistence', u'T3 resisitence', u'X-linked mental retardation with hypotonia', u'Mental retardation and muscular atrophy'], 'uid': u'309600'}

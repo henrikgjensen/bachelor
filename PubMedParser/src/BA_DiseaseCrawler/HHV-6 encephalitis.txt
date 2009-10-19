@@ -1,0 +1,1 @@
+{'terms': u'%28hhv-6%5btitle%5dandencephalitis%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Human Herpesvirus 6 encephalitis', u'Variant A or HHV-6A', u'Variant B or HHV-6B'], 'uid': ''}

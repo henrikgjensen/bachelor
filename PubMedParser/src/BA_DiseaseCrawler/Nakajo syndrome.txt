@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Nodular erythema digital changes'], 'uid': u'256040'}

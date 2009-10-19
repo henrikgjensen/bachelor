@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MOCOD', u'Combined deficiency of sulfite oxidase', u' xanthine dehydrogenase', u' and aldehyde oxidase'], 'uid': u'252150'}

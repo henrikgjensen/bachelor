@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial vasovagal syncope', u'VVS'], 'uid': u'609289'}

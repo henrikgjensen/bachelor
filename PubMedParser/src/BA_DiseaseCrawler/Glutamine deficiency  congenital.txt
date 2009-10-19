@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Glutamine synthetase deficiency', u' congenital systemic'], 'uid': u'610015'}

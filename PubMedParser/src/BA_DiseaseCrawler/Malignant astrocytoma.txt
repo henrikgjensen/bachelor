@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Anaplastic astrocytoma', u'Astrocytoma', u' grades 3-4', u'Giant cell glioblastoma', u' astrocytoma', u'Spongioblastoma multiforme', u'Glioblastoma multiforme &#40;also called grade IV astrocytoma&#41;'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': u'bednar%27s%5ballfields%5dand%28tumor%5btextword%5dortumour%5btextword%5dor%28%22neoplasms%22%5btiab%5dnotmedline%5bsb%5d%29or%22neoplasms%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Pigmented dermatofibrosarcoma protuberans'], 'uid': ''}

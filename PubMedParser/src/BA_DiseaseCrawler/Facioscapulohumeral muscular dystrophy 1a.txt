@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FSHMD1A', u'Muscular dystrophy', u' facioscapulohumeral', u'FSHD', u'Facioscapulohumeral muscular dystrophy', u'FMD', u'Muscular dystrophy', u' facioscapulohumeral', u' type 1a', u'FSHD1A', u'Landouzy-dejerine muscular dystrophy'], 'uid': u'158900'}

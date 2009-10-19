@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Metaphyseal chondrodysplasia', u' McKusick type', u'CHH'], 'uid': u'250250'}

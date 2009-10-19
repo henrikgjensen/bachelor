@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Vitamin b1 deficiency', u'Thiamine deficiency'], 'uid': ''}

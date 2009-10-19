@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Acromegaloid facial appearance syndrome and hypertrichosis'], 'uid': u'15127769'}

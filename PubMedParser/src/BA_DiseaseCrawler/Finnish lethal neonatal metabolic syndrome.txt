@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FLNMS', u'Finnish', u'lactic acidosis with hepatic hemosiderosis', u'Fellman syndrome', u'Growth Retardation', u' Aminoaciduria', u' Cholestasis', u' Iron overload', u' Lactic acidosis', u' and Early death', u'GRACILE syndrome'], 'uid': u'603358'}

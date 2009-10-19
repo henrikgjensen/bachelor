@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDGG1', u'Corneal dystrophy granular type', u'Corneal dystrophy punctate or nodular'], 'uid': u'121900'}

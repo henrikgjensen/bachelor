@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MCDR1', u'Foveal dystrophy', u' progressive', u'Retinal pigment epithelial dystrophy', u' central', u'North carolina macular dystrophy', u'Central areolar pigment epithelial dystrophy', u'NCMD', u'CAPED', u'Macular dystrophy', u' retinal subtype', u' 1'], 'uid': u'136550'}

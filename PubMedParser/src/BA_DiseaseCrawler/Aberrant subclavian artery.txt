@@ -1,0 +1,1 @@
+{'terms': u'%22aberrantsubclavianartery%22%5btiab%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Aberrant right subclavian artery', u'Aberrant left subclavian artery'], 'uid': ''}

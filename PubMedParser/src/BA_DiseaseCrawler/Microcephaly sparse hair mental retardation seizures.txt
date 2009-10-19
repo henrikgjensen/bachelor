@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [], 'uid': u'www.ncbi.nlm.nih.gov/sites/entrez'}

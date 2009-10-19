@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Persistent wormian bones', u' blue sclerae', u' mandibular hypoplasia', u' shallow glenoid fossae and campomelia'], 'uid': u'138930'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Patterson-Lowry rhizomelic dysplasia', u'Patterson Lowry syndrome'], 'uid': u'601438'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SPG11', u'Autosomal recessive hereditary spastic paraplegia', u' mental impairment', u' and thin corpus callosum', u'Autosomal recessive hereditary spastic paraplegia', u' complicated with a thin corpus callosum', u'HSP-TCC'], 'uid': u'604360'}

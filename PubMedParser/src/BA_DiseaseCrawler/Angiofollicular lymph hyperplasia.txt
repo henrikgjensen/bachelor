@@ -1,0 +1,1 @@
+{'terms': u'angiofollicular%5btitle%5dandlymph%5btitle%5dandhyperplasia%5btitle%5dandhasabstract%5btext%5dandenglish%5blang%5dand%28%22human%22%5bmeshterms%5dor%22hominidae%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Angiofollicular lymph node hyperplasia', u'ALNH'], 'uid': ''}

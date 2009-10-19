@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital deformity of the thumb and congenital alopecia', u'Hypotrichosis associated with congenital hypoplasia of the thumb', u'Sparse hair', u' short stature', u' hypoplastic thumbs', u' single upper central incisor and abnormal skin pigmentation'], 'uid': u'188150'}

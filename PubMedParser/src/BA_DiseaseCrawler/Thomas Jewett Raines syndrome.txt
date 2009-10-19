@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Fetal akinesia with characteristic facial appearance', u' severe microphthalmia', u' microtia', u' and truncus arteriosus'], 'uid': u'8484406'}

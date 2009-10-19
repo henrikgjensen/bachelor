@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microtia meatal atresia deafness dominant', u'Microtia with meatal atresia and conductive deafness'], 'uid': u'251800'}

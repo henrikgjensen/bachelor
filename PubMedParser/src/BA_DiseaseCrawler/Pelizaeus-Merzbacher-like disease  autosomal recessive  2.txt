@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Perinatal Sudanophilic leukodystrophy', u'PMLD2', u'PMLDAR2'], 'uid': u'260600'}

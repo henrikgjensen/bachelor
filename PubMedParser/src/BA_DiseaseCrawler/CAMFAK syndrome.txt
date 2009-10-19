@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cataract-microcephaly-failure to thrive-kyphoscoliosis'], 'uid': u'212540'}

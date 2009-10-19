@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Gestational trophoblastic tumors'], 'uid': ''}

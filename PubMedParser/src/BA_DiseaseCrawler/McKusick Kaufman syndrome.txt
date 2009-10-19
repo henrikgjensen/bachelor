@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kaufman McKusick syndrome', u'MKKS', u'Hydrometrocolpos syndrome', u'Hydrometrocolpos', u' postaxial polydactyly', u' and congenital heart malformation', u'HMCS'], 'uid': u'236700'}

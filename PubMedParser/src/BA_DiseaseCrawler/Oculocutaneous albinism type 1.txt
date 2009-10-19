@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OCA1', u'Oculocutaneous albinism type 1A', u'OCA1A', u'Oculocutaneous albinism', u' tyrosinase negative', u'ATN', u'Albinism 1'], 'uid': u'203100'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Tylosis with esophageal cancer', u'TOC', u'Howell Evans syndrome'], 'uid': u'148500'}

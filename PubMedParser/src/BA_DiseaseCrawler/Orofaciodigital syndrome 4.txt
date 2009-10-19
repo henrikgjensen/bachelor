@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OFD4', u'Orofaciodigital syndrome with tibial dysplasia', u'Baraitser-Burn syndrome', u'OFD syndrome with tibial defects', u'OFD syndrome 4', u'Oral-facial-digital syndrome type 4'], 'uid': u'258860'}

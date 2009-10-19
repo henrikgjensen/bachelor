@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HMSNO', u'HEREDITARY MOTOR AND SENSORY NEUROPATHY', u' PROXIMAL TYPE', u'HMSNP'], 'uid': u'604484'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Short stature', u' mental retardation', u' type I preaxial polydactyly with colobomatous abnormalities'], 'uid': u'3441111'}

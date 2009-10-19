@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lymphedema hypoparathyroidism syndrome', u'Hypoparathyroidism lymphedema syndrome'], 'uid': u'247410'}

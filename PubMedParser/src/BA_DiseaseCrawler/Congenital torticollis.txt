@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital muscular torticollis', u'Torticollis', u' congenital'], 'uid': u'189600'}

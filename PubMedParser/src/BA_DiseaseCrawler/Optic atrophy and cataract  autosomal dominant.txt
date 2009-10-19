@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Optic atrophy', u' cataract', u' and neurologic disorder', u'Optic atrophy 3', u'OPA3'], 'uid': u'165300'}

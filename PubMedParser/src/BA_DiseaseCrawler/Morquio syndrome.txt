@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mucopolysaccharidosis type IVA &#40;subtype&#41;', u'Mucopolysaccharidosis type IVB &#40;subtype&#41;'], 'uid': u'253000'}

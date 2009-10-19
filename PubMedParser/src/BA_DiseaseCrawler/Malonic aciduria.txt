@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Malonyl-CoA decarboxylase deficiency', u'Malonicaciduria', u'Malonic acidemia'], 'uid': u'248360'}

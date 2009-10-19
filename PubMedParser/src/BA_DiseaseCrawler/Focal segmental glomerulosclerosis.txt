@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FSGS', u'Glomerulosclerosis', u' focal', u'Segmental glomerulosclerosis', u'Focal sclerosis with hyalinosis', u'FSGS1', u'Focal segmental glomerulosclerosis 1'], 'uid': u'603278'}

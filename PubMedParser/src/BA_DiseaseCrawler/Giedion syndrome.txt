@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Trichorhinophalangeal &#40;TRP&#41; syndrome 1', u'TRPS1', u'Trichorhinophalangeal dysplasia 1'], 'uid': u'190350'}

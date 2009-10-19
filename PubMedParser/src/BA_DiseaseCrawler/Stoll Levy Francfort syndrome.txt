@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Phocomelia-ectrodactyly', u' ear malformation', u' deafness and sinus arrhythmia', u'Facioauriculoradial dysplasia'], 'uid': u'171480'}

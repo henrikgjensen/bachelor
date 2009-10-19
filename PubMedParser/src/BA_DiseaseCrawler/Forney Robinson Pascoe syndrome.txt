@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mitral regurgitation', u' conductive deafness', u' and fusion of cervical vertebrae and of carpal and tarsal bones', u'Congenital heart disease', u' deafness', u' and skeletal malformations'], 'uid': u'157800'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Female genital ducts in otherwise normal male', u'Persistent mullerian duct syndrome', u' types 1 and 2', u'Pseudohermaphroditism', u' male internal', u'Hernia uteri inguinale', u'Persistent oviduct syndrome', u'PMDS'], 'uid': u'261550'}

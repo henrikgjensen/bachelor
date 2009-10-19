@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Short stature', u' congenital optic atrophy', u' and hypoplasia of the cervical vertebral bodies and distal phalanges', u'Congenital optic atrophy and brachytelephalangy'], 'uid': u'3128111'}

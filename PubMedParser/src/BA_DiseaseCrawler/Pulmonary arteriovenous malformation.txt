@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'PAVM', u'Pulmonary arteriovenous fistula', u'Pulmonary AVM', u'Arteriovenous malformation', u' pulmonary'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Tetra-amelia', u' ectodermal dysplasia', u' and lacrimal duct abnormality'], 'uid': u'273390'}

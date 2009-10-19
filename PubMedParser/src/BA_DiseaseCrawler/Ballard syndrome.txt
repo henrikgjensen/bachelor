@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Hepatomegaly', u' splenomegaly', u' and pathologic fractures'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary mucoepithelial dysplasia', u'HMD', u'Mucoepithelial dysplasia', u' Hereditary'], 'uid': u'158310'}

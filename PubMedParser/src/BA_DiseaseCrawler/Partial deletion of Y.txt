@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Y-chromosome microdeletions', u'Partial deletion of chromosome Y', u'Partial deletion of Y chromosome short arm', u'Partial deletion of the long arm of the Y chromosome'], 'uid': u'480000'}

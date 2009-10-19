@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Genetic craniotubular bone dysplasias and hyperostoses', u'Craniometaphyseal dysplasia'], 'uid': u'269300'}

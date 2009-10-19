@@ -1,0 +1,1 @@
+{'terms': u'%28hearttumor%5btitle%5dandhasabstract%5btext%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Myocardial tumors &#40;rhabdomyomas and fibromas&#41;', u'Intracavitary tumors', u'Primary cardiac tumors', u' childhood'], 'uid': ''}

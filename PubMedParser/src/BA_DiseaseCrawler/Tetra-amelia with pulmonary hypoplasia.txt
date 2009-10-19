@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Syndrome of tetraamelia with pulmonary hypoplasia', u'Absence of upper and lower limbs with pulmonary hypoplasia'], 'uid': u'273395'}

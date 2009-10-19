@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SPG15', u'Spastic paraplegia and retinal degeneration', u'Kjellin syndrome', u'Recessive spastic paraplegia with retinal degeneration'], 'uid': u'270700'}

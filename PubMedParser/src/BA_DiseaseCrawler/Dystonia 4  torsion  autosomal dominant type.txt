@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT4', u'Dystonia musculorum deformans 4'], 'uid': u'128101'}

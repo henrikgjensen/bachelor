@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCA5', u'Spinocerebellar ataxia type 5'], 'uid': u'600224'}

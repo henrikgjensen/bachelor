@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cacchi Ricci disease', u'Precalyceal canalicular ectasia', u'Cacchi-Ricci syndrome', u'Sponge kidney', u'Cystic dilatation of renal collecting tubes'], 'uid': u'174000'}

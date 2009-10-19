@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Aortic-pulmonary window', u'Aortopulmonary Septal Defect', u'Aortopulmonary window'], 'uid': ''}

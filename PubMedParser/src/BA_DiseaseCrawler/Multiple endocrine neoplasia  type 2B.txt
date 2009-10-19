@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MEN2B', u'Mucosal neuroma syndrome', u'Multiple endocrine neoplasia', u' type 3 &#40;formerly&#41;', u'Wagenmann-froboese syndrome'], 'uid': u'162300'}

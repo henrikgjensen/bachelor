@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28%28chromosome%5btitle%5dand14q%5btitle%5d%29anddeletion%5btitle%5d%29andhasabstract%5btext%5d%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Deletion 14q11', u'Deletion 14q31', u'Monosomy 14q11', u'Monosomy 14q31'], 'uid': ''}

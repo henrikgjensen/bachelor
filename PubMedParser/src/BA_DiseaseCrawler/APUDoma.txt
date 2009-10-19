@@ -1,0 +1,1 @@
+{'terms': u'apudoma%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'APUD &#40;amine precursor uptake and decarboxylation&#41;'], 'uid': ''}

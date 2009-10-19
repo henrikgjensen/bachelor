@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'VDWS', u'VWS', u'Lip pit syndrome', u'LPS', u'Cleft lip and&#47;or palate with mucous cysts of lower lip'], 'uid': u'119300'}

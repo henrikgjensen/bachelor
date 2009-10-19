@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bilharzia', u'Blood fluke', u'Schistosoma mansoni infection', u'Katayama fever'], 'uid': u'181460'}

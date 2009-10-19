@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Viral hepatitis non-A', u'-B', u'-C', u'-D', u'-E'], 'uid': ''}

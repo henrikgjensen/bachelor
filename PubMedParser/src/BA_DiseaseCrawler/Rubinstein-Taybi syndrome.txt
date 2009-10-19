@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Rubinstein syndrome', u'Broad thumbs and great toes', u' characteristic facies', u' and mental retardation', u'RSTS', u'RTS', u'Broad thumb-hallux syndrome'], 'uid': u'180849'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cleft palate large ears small head', u'Cleft palate', u' microcephaly', u' large ears', u' and short stature', u'Say Barber Hobbs syndrome'], 'uid': u'181180'}

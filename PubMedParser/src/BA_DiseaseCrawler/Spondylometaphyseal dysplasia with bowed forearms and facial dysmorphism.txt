@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SMD with with bowed forearms and facial dysmorphism'], 'uid': u'607543'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'ALL', u'Acute lymphocytic leukemia'], 'uid': ''}

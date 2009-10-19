@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lactate dehydrogenase-A deficiency'], 'uid': u'150000'}

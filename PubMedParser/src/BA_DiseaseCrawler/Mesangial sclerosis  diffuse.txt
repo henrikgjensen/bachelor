@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial mesangial sclerosis', u'Diffuse mesangial sclerosis', u'Diffuse isolated mesangial sclerosis', u'Isolated diffuse mesangial sclerosis', u'Nephrotic syndrome', u' early onset with diffuse mesangial sclerosis', u'DMS'], 'uid': u'256370'}

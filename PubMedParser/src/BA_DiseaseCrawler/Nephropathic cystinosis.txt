@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CTNS', u'Lysosomal cystine transport protein', u' defect of', u'Cystinosin', u' defect of'], 'uid': u'219800'}

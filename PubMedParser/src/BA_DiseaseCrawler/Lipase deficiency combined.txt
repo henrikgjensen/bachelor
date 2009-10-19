@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lipoprotein lipase deficiency with hepatic triglyceride lipase deficiency', u'LPL and HTGL deficiency', u'LPL and HL deficiency'], 'uid': u'246650'}

@@ -1,0 +1,1 @@
+{'terms': u'(developmental%5ball+fields%5d+and+dysplasia%5ball+fields%5d+and+(%22hip%22%5bmesh+terms%5d+or+%22hip%22%5ball+fields%5d))+and+(%222008%2f11%2f21%22%5bpdat%5d+%3a+%222009%2f05%2f19%22%5bpdat%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Congenital dysplasia of hip'], 'uid': ''}

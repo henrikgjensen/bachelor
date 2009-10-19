@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mikaelian syndrome', u'Hidrotic ectodermal dysplasia', u' sensorineural hearing loss and contracture of the fifth fingers'], 'uid': u'224800'}

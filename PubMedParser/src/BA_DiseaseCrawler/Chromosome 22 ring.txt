@@ -1,0 +1,1 @@
+{'terms': u'%28chromosome22%5btitle%5dandring%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Ring 22', u'Ring 22', u' Chromosome', u'R 22'], 'uid': ''}

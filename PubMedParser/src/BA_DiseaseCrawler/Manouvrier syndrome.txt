@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Lung agenesis heart defect thumb anomalies', u'Pulmonary aplasia and triphalangia of the thumb'], 'uid': u'6888102'}

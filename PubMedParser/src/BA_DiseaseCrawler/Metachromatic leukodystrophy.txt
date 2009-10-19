@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Leukodystrophy', u' metachromatic', u'Metachromatic leukoencephalopathy', u'MLD', u'Sulfatide lipidosis', u'Arylsulfatase A deficiency', u'Cerebral sclerosis', u' diffuse', u' metachromatic form', u'Cerebroside sulfatase deficiency', u'ARSA deficiency'], 'uid': u'250100'}

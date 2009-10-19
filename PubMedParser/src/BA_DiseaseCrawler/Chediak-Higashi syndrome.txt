@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neutropenia and hyperlymphocytosis with large granular lymphocytes', u'CHS', u'Chediak-Steinbrinck-Higashi', u' syndrome'], 'uid': u'214500'}

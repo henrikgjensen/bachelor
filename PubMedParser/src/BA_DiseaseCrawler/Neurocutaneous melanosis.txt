@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Melanosis', u' neurocutaneous', u'Neurocutaneous melanosis syndrome'], 'uid': u'249400'}

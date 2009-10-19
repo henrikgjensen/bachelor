@@ -1,0 +1,1 @@
+{'terms': u'typhus%5btitle%5d+and+(hasabstract%5btext%5d+and+%222005%2f11%2f09%22%5bpdat%5d+%3a+%222007%2f11%2f08%22%5bpdat%5d+and+%22humans%22%5bmesh+terms%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Jail fever', u'Brill-Zinsser disease', u'Endemic typhus', u'Epidemic typhus', u'Murine typhus'], 'uid': ''}

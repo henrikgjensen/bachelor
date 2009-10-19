@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Joubert syndrome with bilateral chorioretinal coloboma', u'Cerebro-oculo-hepato-renal syndrome', u'Dekaban Arima syndrome', u'Chorioretinal coloboma with cerebellar vermis aplasia'], 'uid': u'243910'}

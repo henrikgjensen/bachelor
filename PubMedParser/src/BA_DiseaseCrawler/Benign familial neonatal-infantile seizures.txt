@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BFNIS', u'Convulsions benign familial neonatal', u'Epilepsy', u' benign neonatal-infantile', u'Benign familial infantile convulsions'], 'uid': u'607745'}

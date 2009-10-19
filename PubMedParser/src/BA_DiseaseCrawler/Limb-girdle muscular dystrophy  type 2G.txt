@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Muscular dystrophy', u' limb-girdle', u' type 2G', u'LGMD2G'], 'uid': u'601954'}

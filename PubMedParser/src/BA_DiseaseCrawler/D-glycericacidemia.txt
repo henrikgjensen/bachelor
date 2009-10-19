@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'D-Glycerate kinase deficiency', u'Non ketotic hyperglycinemia syndrome'], 'uid': u'220120'}

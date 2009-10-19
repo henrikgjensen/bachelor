@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Syndactyly mesoaxial synostotic with phalangeal reduction', u'MSSD', u'Syndactyly Malik-Percin type'], 'uid': u'609432'}

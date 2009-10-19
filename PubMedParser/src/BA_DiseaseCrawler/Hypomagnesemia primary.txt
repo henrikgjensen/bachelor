@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Magnesium', u' defect in renal tubular transport of', u'Hypomagnesemia', u' isolated renal', u'Hypomagnesemia', u' familial', u' with hypercalciuria and nephrocalcinosis'], 'uid': u'248250'}

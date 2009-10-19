@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' X-linked nonspecific', u' type 1', u'Atkin Flaitz Patil Smith syndrome', u'Mental retardation', u' X-linked', u' 21', u'Mental retardation X-linked', u'  Atkin type', u'MRX', u'MRX21', u'MRX1'], 'uid': u'309530'}

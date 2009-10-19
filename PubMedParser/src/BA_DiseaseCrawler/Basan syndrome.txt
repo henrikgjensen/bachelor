@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ectodermal dysplasia absent dermatoglyphics', u'Ectodermal dysplasia', u' absent dermatoglyphic pattern', u' with change in nails and simian crease'], 'uid': u'129200'}

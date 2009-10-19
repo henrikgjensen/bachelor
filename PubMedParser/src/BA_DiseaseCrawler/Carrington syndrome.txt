@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Eosinophilic idiopathic chronic pneumopathy', u'Chronic idiopathic eosinophilic pneumonia', u'Carrington&#39;s pulmonary eosinophilia', u'Chronic eosinophilic pneumonia &#40;CEP&#41;', u'Carrington&#39;s Disease'], 'uid': u'8122016'}

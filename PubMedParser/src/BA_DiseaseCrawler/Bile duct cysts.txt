@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Choledochocele', u'Choledochal cyst', u'Congenital choledochal cyst'], 'uid': u'603003'}

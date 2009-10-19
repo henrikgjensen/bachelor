@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypoparathyroidism', u' idiopathic &#40;subtype&#41;'], 'uid': u'146200'}

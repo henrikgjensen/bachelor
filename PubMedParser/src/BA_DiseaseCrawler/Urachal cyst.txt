@@ -1,0 +1,1 @@
+{'terms': u'(urachal%5btitle%2fabstract%5d+and+cyst%5btitle%2fabstract%5d+and+treatment%5btitle%2fabstract%5d)+and+(%22loattrfree+full+text%22%5bsb%5d+and+english%5blang%5d)', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

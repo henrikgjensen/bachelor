@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Agammaglobulinaemia and achondroplasia'], 'uid': u'200900'}

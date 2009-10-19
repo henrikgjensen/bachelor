@@ -1,0 +1,1 @@
+{'terms': u'%28madelung%27s%5btitle%5danddisease%5btitle%5d%29andhasabstract%5btext%5dandenglish%5blang%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Benign symmetrical lipomatosis', u'Launois-Bensaude syndrome', u'MSL', u'Multiple symmetric lipomatosis', u'Madelung disease'], 'uid': ''}

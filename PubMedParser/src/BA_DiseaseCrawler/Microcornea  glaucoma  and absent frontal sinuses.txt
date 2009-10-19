@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary microcornea', u' glaucoma', u' and absent frontal sinuses'], 'uid': u'156700'}

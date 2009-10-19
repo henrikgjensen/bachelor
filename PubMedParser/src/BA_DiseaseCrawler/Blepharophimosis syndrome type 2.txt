@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BPES type 2', u'Blepharophimosis', u' ptosis', u' and epicanthus inversus type 2', u'Blepharophimosis', u' ptosis', u' and epicanthus inversus without premature ovarian failure', u'Bpes without premature ovarian failure'], 'uid': u'110100'}

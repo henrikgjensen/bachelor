@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CHM', u'Progressive tapetochoroidal dystrophy', u'TCD'], 'uid': u'303100'}

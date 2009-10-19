@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Syndrome of dwarfism', u' mental retardation', u' lens opacities', u' nystagmus', u' strabismus', u' cryptorchidism and absent patellae'], 'uid': u'4397433'}

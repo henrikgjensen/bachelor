@@ -1,0 +1,1 @@
+{'terms': u'dermatofibroma%5btitle%5dandhasabstract%5btext%5dand%222001/05/1911.50%22%5bpdat%5d%3a%222006/05/1911.50%22%5bpdat%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Retroperitoneal cystic lymphangioma', u'RCL', u'Abdominal retroperitoneal lymphangioma'], 'uid': u'11819071'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Wagner syndrome type 1', u'Wagner vitreoretinal degeneration', u'WGN1', u'Erosive vitreoretinopathy', u'ERVR'], 'uid': u'143200'}

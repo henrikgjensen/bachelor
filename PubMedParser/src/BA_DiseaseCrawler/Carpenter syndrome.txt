@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acrocephalopolysyndactyly type 2', u'ACPS 2'], 'uid': u'201000'}

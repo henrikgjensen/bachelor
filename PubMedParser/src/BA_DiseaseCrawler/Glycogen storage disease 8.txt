@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Glycogenosis type 8', u'Glycogen storage disease VIII', u'Hepatic phosphorylase kinase deficiency', u'Phosphorylase kinase deficiency of liver', u'PYKL'], 'uid': ''}

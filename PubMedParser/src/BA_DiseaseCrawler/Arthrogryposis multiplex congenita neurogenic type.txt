@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AMCN', u'AMC', u' neurogenic type', u'Neurogenic type of AMC'], 'uid': u'208100'}

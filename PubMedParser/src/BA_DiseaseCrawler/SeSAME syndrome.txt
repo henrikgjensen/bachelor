@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Seizures', u' sensorineural deafness', u' ataxia', u' mental retardation and electrolyte imbalance', u'Epilepsy', u' ataxia', u' sensorineural deafness and tubulopathy', u'EAST syndrome'], 'uid': u'612780'}

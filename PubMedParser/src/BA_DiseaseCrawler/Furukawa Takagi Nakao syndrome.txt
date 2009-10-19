@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary muscular atrophy with ataxia', u' retinitis pigmentosa', u' and diabetes mellitus'], 'uid': u'158500'}

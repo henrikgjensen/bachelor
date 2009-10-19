@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hemophilia', u' classic', u'HEM A', u'Classic hemophilia', u'Factor 8 deficiency', u' congenital', u'Factor VIII deficiency', u' congenital'], 'uid': u'306700'}

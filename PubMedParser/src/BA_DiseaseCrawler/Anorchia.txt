@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Absence of testes', u'Empty scrotum', u'Testicular regression syndrome', u'TRS', u'XY gonadal dysgenesis syndrome', u'Vanishing testes', u'Congenital absence of testes'], 'uid': u'273250'}

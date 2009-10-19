@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Non-opposable triphalangeal thumb', u'TPT'], 'uid': u'190600'}

@@ -1,0 +1,1 @@
+{'terms': u'hair-an%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Hyperandrogenism &#40;HA&#41;', u' insulin resistance &#40;IR&#41;', u' and acanthosis nigricans &#40;AN&#41;', u'Hyperandrogenic', u' insulin-resistant acanthosis nigricans syndrome'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': u'eales%5btitle%5danddisease%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Idiopathic obliterative vasculopathy', u'Idiopathic recurrent vitreal hemorrhage'], 'uid': ''}

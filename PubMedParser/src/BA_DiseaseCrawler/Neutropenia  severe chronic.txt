@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neutropenia', u' chronic familial', u'Leukopenia', u' benign familial'], 'uid': u'162700'}

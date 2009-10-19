@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Branchio-Oto-Renal Duane hydrocephalus contiguous gene syndrome'], 'uid': u'600257'}

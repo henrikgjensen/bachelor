@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Glaucoma', u' Ectopia', u' Microspherophakia', u' Stiff joints', u' Short stature syndrome'], 'uid': u'137765'}

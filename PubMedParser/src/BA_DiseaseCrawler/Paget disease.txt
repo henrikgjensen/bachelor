@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Paget disease of bone', u'Osteitis deformans', u'Pagets disease'], 'uid': u'602080'}

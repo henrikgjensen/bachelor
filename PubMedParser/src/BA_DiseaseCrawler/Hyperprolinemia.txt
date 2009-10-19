@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Proline oxidase deficiency', u'Proline hydrogenase deficiency', u'Hyperprolinemia type 1'], 'uid': u'239500'}

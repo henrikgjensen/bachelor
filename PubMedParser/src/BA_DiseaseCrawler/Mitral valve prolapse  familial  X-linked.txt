@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MVP', u'Prolapsed mitral valve', u'Mitral regurgitation', u' familial', u'Barlow syndrome', u'Myxomatous valvular disease', u' familial', u'PMV'], 'uid': u'157700'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Chronic Epstein Barr virus', u'CEBV', u'Chronic active Epstein-Barr virus infection', u'CAEBV infection', u'Chronic active Epstein-Barr disease', u'Chronic Epstein Barr virus infection'], 'uid': u'226990'}

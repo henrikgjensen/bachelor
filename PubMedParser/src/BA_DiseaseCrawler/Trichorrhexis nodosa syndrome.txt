@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pollitt syndrome', u'Trichothiodystrophy-neurocutaneous syndrome', u'Trichothiodystrophy-neurotrichocutaneous syndrome of Pollitt'], 'uid': u'275550'}

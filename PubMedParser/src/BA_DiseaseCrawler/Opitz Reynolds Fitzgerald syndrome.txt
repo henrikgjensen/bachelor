@@ -1,0 +1,1 @@
+{'terms': u'opitz%5ballfields%5dandreynolds%5ballfields%5dandfitzgerald%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Bilateral hemifacial microsomia with hearing loss', u' telecanthus', u' tetramelic postaxial hexadactyly', u' congenital hypotonia and lymphedema with joint hyper'], 'uid': ''}

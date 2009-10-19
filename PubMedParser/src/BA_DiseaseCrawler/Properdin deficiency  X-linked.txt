@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Properdin P factor deficiency', u'PFD', u'Properdin deficiency', u' type 1'], 'uid': u'312060'}

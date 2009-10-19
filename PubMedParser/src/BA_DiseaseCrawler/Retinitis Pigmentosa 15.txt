@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RP 15', u'Cone-rod degeneration', u' x-linked'], 'uid': u'300029'}

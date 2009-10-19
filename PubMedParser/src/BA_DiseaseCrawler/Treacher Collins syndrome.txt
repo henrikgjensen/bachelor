@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Treacher Collins-Franceschetti syndrome', u'Mandibulofacial dysostosis', u'TCOF', u'TCS', u'MFD1'], 'uid': u'154500'}

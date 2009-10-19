@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Myotonic chondrodystrophy', u'SJA syndrome', u'Schwartz Jampel Aberfeld syndrome', u'Myotonic myopathy', u'dwarfism', u' chondrodystrophy', u' and ocular and facial abnormalities', u'Spondylo-epimetaphyseal dysplasia with myotonia', u'SJS'], 'uid': u'255800'}

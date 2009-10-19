@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Retinitis pigmentosa', u' ataxia', u' and short stature'], 'uid': ''}

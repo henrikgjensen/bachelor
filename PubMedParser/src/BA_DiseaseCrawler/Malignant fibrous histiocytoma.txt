@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Malignant fibrohistiocytic tumors'], 'uid': u'605352'}

@@ -1,0 +1,1 @@
+{'terms': u'rhabdomyomatous%5ball+fields%5d+and+mesenchymal%5ball+fields%5d+and+%28%22hamartoma%22%5bmesh+terms%5d+or+%22hamartoma%22%5ball+fields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'RMH'], 'uid': ''}

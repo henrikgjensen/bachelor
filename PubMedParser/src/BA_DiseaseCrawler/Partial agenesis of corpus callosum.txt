@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Severe intellectual retardation and intractable seizures', u'PACC'], 'uid': u'304100'}

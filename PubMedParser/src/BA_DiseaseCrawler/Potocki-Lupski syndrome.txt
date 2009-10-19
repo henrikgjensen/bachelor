@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PTLS', u'Duplication 17p11.2 syndrome', u'Potocki-Lupski syndrome &#40;dup&#40;17&#41;&#40;p11.2p11.2&#41;&#41;'], 'uid': u'610883'}

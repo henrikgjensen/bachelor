@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EBS1', u'Epidermolysis bullosa simplex 1', u'EBSO'], 'uid': u'131950'}

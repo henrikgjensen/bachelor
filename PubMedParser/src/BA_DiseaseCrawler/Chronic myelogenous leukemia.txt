@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Chronic granulocytic leukemia', u'Chronic myeloid leukemia', u'CML'], 'uid': u'608232'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Welander distal myopathy', u'WDM', u'Distal myopathy', u' Swedish type'], 'uid': u'604454'}

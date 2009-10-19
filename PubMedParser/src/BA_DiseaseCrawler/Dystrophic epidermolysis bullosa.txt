@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epidermolysis bullosa dystrophica', u' Hallopeau-Siemens type', u'EBR1', u'RDEB'], 'uid': u'226600'}

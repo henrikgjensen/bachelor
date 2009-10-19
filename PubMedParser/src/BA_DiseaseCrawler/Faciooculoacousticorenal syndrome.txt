@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FOAR syndrome', u'Facio-Oculo-Acoustico-Renal syndrome'], 'uid': u'227290'}

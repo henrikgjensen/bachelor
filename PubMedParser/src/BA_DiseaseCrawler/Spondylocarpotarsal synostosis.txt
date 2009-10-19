@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Synspondylism', u' congenital', u'Spondylocarpotarsal synostosis syndrome', u'Vertebral fusion with carpal coalition', u'Scoliosis', u' congenital', u' with unilateral unsegmented bar'], 'uid': u'272460'}

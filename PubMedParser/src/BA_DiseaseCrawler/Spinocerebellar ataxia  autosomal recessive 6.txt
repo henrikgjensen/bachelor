@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCAR6', u'Cerebellar ataxia', u' infantile nonprogressive', u' autosomal recessive', u'Norwegian infantile onset ataxia'], 'uid': u'608029'}

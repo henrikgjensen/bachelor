@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Rufous OCA', u'ROCA', u'Xanthism'], 'uid': u'278400'}

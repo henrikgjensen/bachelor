@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Westphal variant of Huntington&#39;s disease', u'HD- Westphal variant'], 'uid': u'143100'}

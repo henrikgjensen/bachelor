@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LIH', u'Leucine-sensitive hypoglycemia of infancy'], 'uid': u'240800'}

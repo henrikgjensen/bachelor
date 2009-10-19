@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mild growth retardation and developmental delay', u' microcephaly', u' and a distinctive facial appearance'], 'uid': u'260555'}

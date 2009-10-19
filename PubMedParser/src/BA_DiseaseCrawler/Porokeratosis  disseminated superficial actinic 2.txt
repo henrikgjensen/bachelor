@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Disseminated superficial actinic porokeratosis', u'DSAP2'], 'uid': u'607728'}

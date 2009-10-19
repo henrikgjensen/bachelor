@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Adnexal sweat gland spiradenoma&#47;cylindroma'], 'uid': ''}

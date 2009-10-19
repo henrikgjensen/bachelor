@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT7', u'Torsion dystonia', u' focal adult-onset'], 'uid': u'602124'}

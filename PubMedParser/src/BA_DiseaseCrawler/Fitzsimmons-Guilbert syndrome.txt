@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spastic paraplegia associated with brachydactyly type E', u'Fitzsimmons syndrome'], 'uid': u'270710'}

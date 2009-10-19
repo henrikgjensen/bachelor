@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PDS', u'Deafness with goiter', u'Goiter-deafness syndrome'], 'uid': u'274600'}

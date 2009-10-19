@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MRXSAB', u'Mental retardation x-linked Abidi type', u'Short stature', u' small head circumference', u' sloping forehead', u' hearing loss', u' cupped ears and small testes'], 'uid': u'300262'}

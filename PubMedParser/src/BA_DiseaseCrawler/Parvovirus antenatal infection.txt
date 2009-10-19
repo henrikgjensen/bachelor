@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28parvovirus%5btitle%5dandantenatal%5btitle%5d%29andinfection%5btitle%5d%29andhasabstract%5btext%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Parvovirus B19 antenatal infection', u'Fifth Disease', u'Maternofetal infection by parvovirus'], 'uid': ''}

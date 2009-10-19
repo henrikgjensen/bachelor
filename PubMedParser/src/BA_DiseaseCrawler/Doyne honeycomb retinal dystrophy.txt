@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DHRD', u'Doyne honeycomb degeneration of retina', u'DHD'], 'uid': u'126600'}

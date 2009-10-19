@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Severe growth retardation', u' developmental delay with hypotonia', u' hypotrophy of the distal extremities', u' dental anomalies', u' and eczematous skin'], 'uid': u'233810'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Idiopathic juvenile osteoporosis', u'Osteoporosis', u' juvenile', u'IJO'], 'uid': u'259750'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Childhood ataxia with diffuse central nervous system hypomyelination', u'Leukoencephalopathy with vanishing white matter', u'Myelinosis centralis diffusa', u'CACH&#47;VWM syndrome', u'Cree leukoencehalopathy', u'CLE'], 'uid': u'603896'}

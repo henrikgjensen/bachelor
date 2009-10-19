@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pitt Williams brachydactyly', u'Brachydactyly Ballard type', u'Brachydactyly', u' combined B and E types'], 'uid': u'112440'}

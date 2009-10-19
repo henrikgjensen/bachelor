@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Ectodermal dysplasia hypohidrotic hypothyroidism ciliary diskinesia'], 'uid': ''}

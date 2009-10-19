@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'X-linked alpha thalassemia mental retardation syndrome', u'Alpha thalassemia mental retardation syndrome', u' non deletion type', u' X-linked', u'ATRX', u'ATR non deletion type', u'Alpha-thalassemia X-linked mental retardation syndrome'], 'uid': u'301040'}

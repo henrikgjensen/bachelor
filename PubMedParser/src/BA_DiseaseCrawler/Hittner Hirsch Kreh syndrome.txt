@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Colobomatous microphthalmia', u' heart disease', u' hearing loss', u' and mental retardation--'], 'uid': u'214800'}

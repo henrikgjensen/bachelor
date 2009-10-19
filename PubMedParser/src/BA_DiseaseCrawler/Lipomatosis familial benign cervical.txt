@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lipodystrophy', u' cephalothoracic', u'Lipomatosis', u' multiple symmetric', u'LMS', u'MSL', u'Multiple symmetric lipomatosis'], 'uid': u'151800'}

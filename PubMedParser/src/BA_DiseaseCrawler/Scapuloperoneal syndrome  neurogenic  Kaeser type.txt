@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kaeser syndrome', u'Stark-Kaeser syndrome', u'Scapuloperoneal syndrome', u' neurogenic type', u' of Kaeser'], 'uid': u'181400'}

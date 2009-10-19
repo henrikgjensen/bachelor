@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ectrodactyly-ectodermal dysplasia-clefting &#40;EEC&#41; syndrome', u'Rudiger syndrome 1', u'Walker-Clodius syndrome', u'Cleft lip-cleft palate-lobster claw deformity syndrome', u'Ectrodactyly-cleft lip&#47;palate syndrome'], 'uid': u'268650'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Joint contractures', u' right acetabular dysplasia', u' ulno-fibular dysostosis', u' and bilateral talipes equinovarus with calcaneocuboid fusion'], 'uid': u'3970070'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Beemer lethal malformation syndrome', u'Hydrocephalus', u' cardiac malformation', u' dense bones', u' etc', u'Peculiar facial appearance', u' hydrocephalus', u' double-outlet right ventricle', u' genital anomalies and dense bones with lethal outcome'], 'uid': u'209970'}

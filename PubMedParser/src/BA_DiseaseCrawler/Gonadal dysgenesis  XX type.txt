@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gonadal dysgenesis XX type deafness', u'Perrault syndrome', u'Ovarian dysgenesis with sensorineural deafness'], 'uid': u'233400'}

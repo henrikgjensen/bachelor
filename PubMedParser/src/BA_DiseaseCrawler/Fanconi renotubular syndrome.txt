@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FRTS', u'Renal Fanconi syndrome', u'RFS', u'Adult Fanconi syndrome', u'Fanconi syndrome without cystinosis'], 'uid': u'134600'}

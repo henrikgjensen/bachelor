@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NF 3B', u'Neurofibromatosis', u' familial intestinal', u'Familial intestinal neurofibromatosis'], 'uid': u'162220'}

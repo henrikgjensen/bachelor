@@ -1,0 +1,1 @@
+{'terms': u'%28%28pfeiffer%5ballfields%5dandkapferer%5ballfields%5d%29and%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Short stature', u' mental retardation and multiple dysmorphisms', u'Sensorineural deafness', u' hypospadias', u' and synostosis of metacarpals and metatarsals 4 and 5'], 'uid': ''}

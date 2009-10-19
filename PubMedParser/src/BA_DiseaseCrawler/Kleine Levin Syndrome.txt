@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kleine-Levin hibernation syndrome', u'Familial Kleine-Levin syndrome', u'Familial hibernation &#40;Kleine-Levin&#41; syndrome'], 'uid': u'148840'}

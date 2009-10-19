@@ -1,0 +1,1 @@
+{'terms': u'%22aagenaes+syndrome%22%5ball+fields%5d+or+%22cholestasis%2dlymphedema+syndrome%22%5ball+fields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Cholestasis lymphedema syndrome', u'CHLS', u'LCS', u'LCS1', u'Lymphedema cholestasis syndrome'], 'uid': ''}

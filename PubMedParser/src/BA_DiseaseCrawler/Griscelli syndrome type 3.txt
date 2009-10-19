@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GS3', u'Hypomelanosis with no immunologic or neurologic manifestations'], 'uid': u'609227'}

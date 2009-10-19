@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GWC', u'Gollop-Wolfgang complex'], 'uid': u'228250'}

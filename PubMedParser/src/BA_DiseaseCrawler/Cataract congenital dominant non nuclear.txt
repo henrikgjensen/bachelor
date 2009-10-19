@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal dominant nonnuclear polymorphic congenital cataract', u'Cataract', u' polymorphic congenital', u'CCP', u'PCC'], 'uid': u'601286'}

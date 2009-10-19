@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Renal oncocytoma', u'Oncocytoma kidney'], 'uid': u'553000'}

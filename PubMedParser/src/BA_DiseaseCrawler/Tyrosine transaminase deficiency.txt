@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Keratosis palmoplantaris with corneal dystrophy', u'Tyrosine aminotransferase deficiency', u'Richner-Hanhart syndrome', u' tyrosinosis', u' oculocutaneous type', u'Tyrosinemia', u' type 2', u'Oregon type tyrosinemia'], 'uid': u'276600'}

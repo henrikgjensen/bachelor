@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LABD', u'Laryngeal abductor paralysis', u'Gerhardt syndrome', u'Plott syndrome', u'Familial vocal cord dysfunction'], 'uid': u'150260'}

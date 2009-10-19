@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microspherophakia-metaphyseal dysplasia', u'Dominantly inherited bone dysplasia with severe eye involvement'], 'uid': u'157151'}

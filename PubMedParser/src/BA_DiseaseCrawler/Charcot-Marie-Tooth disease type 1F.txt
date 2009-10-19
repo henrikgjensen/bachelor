@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT 1F', u'Charcot-Marie-Tooth disease', u' demyelinating', u' Type 1F', u'Charcot Marie Tooth disease type 1F'], 'uid': u'607734'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial ankylosing vertebral hyperostosis with tylosis'], 'uid': u'106400'}

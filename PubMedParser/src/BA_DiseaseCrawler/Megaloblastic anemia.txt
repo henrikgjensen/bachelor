@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MGA1', u'Imerslund-Grasbeck syndrome', u'Pernicious anemia', u' juvenile', u' due to selective intestinal malabsorption of vitamin b12', u' with proteinuria', u'Enterocyte cobalamin malabsorption', u'Enterocyte intrinsic factor receptor', u' defect of'], 'uid': u'261100'}

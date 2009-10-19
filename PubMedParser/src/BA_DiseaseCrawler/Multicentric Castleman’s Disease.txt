@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'MCD', u'Plasmablastic multicentric Castleman disease', u'PMCD', u'Multicentric plasma cell variant of Castleman&#39;s disease', u'Idiopathic multicentric Castleman&#39;s disease'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'N acetyltransferase 1 deficiency', u'NAT1 deficiency', u'Arylamine n-acetyltransferase 1', u'Acetyl-CoA&#58;arylamine n-acetyltransferase'], 'uid': u'108345'}

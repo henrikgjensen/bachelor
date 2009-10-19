@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' distal limb deficiencies', u' oral involvement', u' and possible renal defect'], 'uid': u'246560'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Biotin-responsive basal ganglia disease', u'BBGD'], 'uid': u'607483'}

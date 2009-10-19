@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RS-SCID', u'SCID', u' autosomal recessive', u' T cell-negative', u' B cell-negative', u' NK cell-positive', u' with sensitivity to ionizing radiation'], 'uid': u'602450'}

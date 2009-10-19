@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NBS', u'Ataxia-telangiectasia variant  6', u'Microcephaly with normal intelligence', u' immunodeficiency', u' and lymphoreticular malignancies', u'Seemanova syndrome 2', u'Nonsyndromal microcephaly', u' autosomal recessive', u' with normal intelligence'], 'uid': u'251260'}

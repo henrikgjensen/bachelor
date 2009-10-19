@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Face blindness', u'Prosopagnosia', u' developmental', u'Prosopagnosia', u' congenital'], 'uid': u'610382'}

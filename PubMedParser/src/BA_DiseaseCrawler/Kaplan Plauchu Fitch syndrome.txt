@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acrocraniofacial dysostosis'], 'uid': u'201050'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDG 2A', u'CDG2A', u'Carbohydrate-deficient glycoprotein syndrome type 2', u'CDGS2'], 'uid': u'212066'}

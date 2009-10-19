@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Childhood bladder cancer', u'Bladder cancer childhood', u'Bladder carcinoma', u' childhood', u'Childhood bladder carcinoma'], 'uid': ''}

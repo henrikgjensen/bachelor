@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pyramidal molars', u' glaucoma', u' abnormal upper lip', u'Juvenile glaucoma with unusual upper lip and dental roots'], 'uid': u'200970'}

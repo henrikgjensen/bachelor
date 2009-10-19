@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GD 2', u'Gaucher disease', u' infantile cerebral', u'Gaucher disease', u' acute neuronopathic type'], 'uid': u'230900'}

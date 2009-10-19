@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Melanoma of the Uvea'], 'uid': u'155720'}

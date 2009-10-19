@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DEFN', u'Balkan endemic nephropathy', u'BEN', u'Nephropathia epidemica'], 'uid': u'124100'}

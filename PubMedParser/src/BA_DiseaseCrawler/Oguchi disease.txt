@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Stationary night blindness', u' Oguchi type'], 'uid': u'258100'}

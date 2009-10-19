@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcephaly', u' microphthalmia', u' ectrodactyly of lower limbs', u' and prognathism', u'MMEP', u'Microphthalmia', u' syndromic 8', u'MCOPS8'], 'uid': u'601349'}

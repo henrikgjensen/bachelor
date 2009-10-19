@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pyroglutamic aciduria', u'5-oxoprolinuria', u'5-&#64;oxoprolinuria', u'5-oxoprolinemia'], 'uid': u'266130'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Craniosynostosis with radial defects', u'Baller-Gerold syndrome', u'BGS'], 'uid': u'218600'}

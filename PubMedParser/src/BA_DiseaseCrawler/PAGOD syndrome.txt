@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pulmonary hypoplasia', u' hypaoplasia of the pulmonary artery', u' agonadism', u' omphalocele-diaphragmatic defect', u' and dextrocardia', u'Kennerknecht Sorgo Oberhoffer syndrome', u'Agonadism with multiple internal malformations'], 'uid': u'202660'}

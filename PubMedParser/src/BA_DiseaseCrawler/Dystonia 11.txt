@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT11', u'Dystonia', u' alcohol responsive', u'Hereditary essential myoclonus', u'Myoclonus', u' hereditary essential', u'Myoclonic dystonia', u'Myoclonus-dystonia syndrome', u'Myoclonus-dystonia'], 'uid': u'159900'}

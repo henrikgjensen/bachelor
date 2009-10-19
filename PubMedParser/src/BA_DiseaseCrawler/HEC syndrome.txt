@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hydrocephalus', u' endocardial fibroelastosis', u' and cataracts', u'Communicating hydrocephalus', u' endocardial fibroelastosis &#40;EFE&#41; and congenital cataracts'], 'uid': u'600559'}

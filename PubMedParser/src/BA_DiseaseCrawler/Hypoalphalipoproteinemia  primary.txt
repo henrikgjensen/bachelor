@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypoalphalipoproteinemia', u' familial', u'FHA', u'High density lipoprotein deficiency', u'HDLD', u'Familial HDL deficiency', u'FHD'], 'uid': u'604091'}

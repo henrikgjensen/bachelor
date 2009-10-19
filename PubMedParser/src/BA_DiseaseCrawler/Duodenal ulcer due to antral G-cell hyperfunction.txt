@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypergastrinemic', u' hyperpepsinogenemic duodenal ulcer'], 'uid': u'126840'}

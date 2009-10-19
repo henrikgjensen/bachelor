@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Adrenal hyperplasia', u' congenital due to 17-alpha-hydroxylase deficiency', u'17-alpha-hydroxylase deficiency'], 'uid': u'202110'}

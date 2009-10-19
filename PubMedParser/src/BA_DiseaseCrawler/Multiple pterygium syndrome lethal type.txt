@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pterygium syndrome multiple', u' lethal type'], 'uid': u'253290'}

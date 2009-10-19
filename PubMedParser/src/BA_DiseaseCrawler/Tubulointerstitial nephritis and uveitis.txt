@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TINU', u'TINU syndrome'], 'uid': u'607665'}

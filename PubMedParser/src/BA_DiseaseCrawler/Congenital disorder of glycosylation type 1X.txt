@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'CDG 1X', u'CDG1X', u'Carbohydrate-deficient glycoprotein syndrome type 1 with profound thrombocytopenia and normal phosphomannomutase and phosphomannose isomerase'], 'uid': ''}

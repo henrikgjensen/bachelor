@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PPSH', u'Male pseudohermaphroditism due to 5-alpha-reductase deficiency', u'Familial incomplete male pseudohermaphroditism', u' type 2', u'5-alpha reductase deficiency'], 'uid': u'264600'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'A Familial form of acro-osteolysis associated with a mild mental retardation', u' skin atrophy', u' facial dysmorphism', u' and ocular defects', u'Hozay&#8217;s syndrome', u'Acro-osteolysis-facial dysplasia syndrome'], 'uid': u'277150'}

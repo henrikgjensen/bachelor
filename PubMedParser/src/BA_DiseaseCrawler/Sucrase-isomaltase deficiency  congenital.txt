@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CSID', u'Congenital sucrose-isomaltase malabsorption', u'Sucrose-isomaltase malabsorption', u' congenital', u'Disaccharide intolerance', u' 1', u'Sucrose intolerance congenital', u'SI deficiency'], 'uid': u'222900'}

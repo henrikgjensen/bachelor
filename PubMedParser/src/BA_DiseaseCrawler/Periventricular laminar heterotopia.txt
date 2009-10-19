@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Heterotopia', u' periventricular', u'Heterotopia', u' familial nodular', u'BPNH', u'NHBP', u'Nodular heterotopia', u' bilateral periventricular'], 'uid': u'300049'}

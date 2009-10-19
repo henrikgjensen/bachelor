@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperkeratosis-contracture syndrome', u'Restrictive dermopathy', u' lethal', u'Fetal hypokinesia sequence due to restrictive dermopathy'], 'uid': u'275210'}

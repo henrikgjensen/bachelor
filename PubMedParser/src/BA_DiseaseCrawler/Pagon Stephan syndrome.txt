@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Septo-optic dysplasia with digital anomalies'], 'uid': u'6502352'}

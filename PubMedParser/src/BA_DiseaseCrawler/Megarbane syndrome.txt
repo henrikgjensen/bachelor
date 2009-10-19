@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short stature', u' abnormal face', u' joint laxity', u' hernias', u' delayed bone age', u' and severe psychomotor retardation'], 'uid': u'606527'}

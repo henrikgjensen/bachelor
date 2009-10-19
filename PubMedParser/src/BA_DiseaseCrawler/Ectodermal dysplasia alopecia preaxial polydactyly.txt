@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Absence of body &#38; scalp hair', u' rounded nails', u' thin dental enamel', u' preaxial polydactyly of the feet', u' and unusual facial appearance'], 'uid': u'129540'}

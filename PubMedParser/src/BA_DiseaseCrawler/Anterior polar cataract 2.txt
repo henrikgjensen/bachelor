@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cataract', u' anterior polar 2', u'CTAA2'], 'uid': u'601202'}

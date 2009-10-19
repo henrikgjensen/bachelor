@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebelloparenchymal disorder 4', u'Cerebellar vermis agenesis', u'Joubert-Boltshauser syndrome', u'JBTS1', u'CPD4', u'Cerebellooculorenal syndrome 1', u'CORS1'], 'uid': u'213300'}

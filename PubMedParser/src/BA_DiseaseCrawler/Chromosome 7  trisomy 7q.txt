@@ -1,0 +1,1 @@
+{'terms': u'%28trisomy%5btitle%5dand7q%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy 7q', u'Duplication 7q'], 'uid': ''}

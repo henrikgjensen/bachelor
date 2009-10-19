@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MSD', u'Juvenile sulfatidosis', u'Mucosulfatidosis', u'Sulfatidosis juvenile', u' Austin type'], 'uid': u'272200'}

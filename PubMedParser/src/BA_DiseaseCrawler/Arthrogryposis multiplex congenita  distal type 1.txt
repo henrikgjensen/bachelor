@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AMCD1', u'Distal arthrogryposis', u' type 1', u'DA 1', u'Arthrogryposis', u' distal', u' type 1'], 'uid': u'108120'}

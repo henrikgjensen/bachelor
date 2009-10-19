@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pachyonychia congenita Jadassohn Lewandowsky type', u'Pachyonychia congenita type 1', u'PC1'], 'uid': u'167200'}

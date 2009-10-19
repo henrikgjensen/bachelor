@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cystic hygroma', u' fetal', u'FCH', u'Fetal cystic hygroma', u'Familial nuchal bleb'], 'uid': u'257350'}

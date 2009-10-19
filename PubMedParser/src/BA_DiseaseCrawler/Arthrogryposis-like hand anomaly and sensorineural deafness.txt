@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arthrogryposis', u' distal', u' type 6', u'DA6', u'Familial hand abnormality and sensori-neural deafness'], 'uid': u'108200'}

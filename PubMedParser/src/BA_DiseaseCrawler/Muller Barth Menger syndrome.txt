@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebral malformation', u' seizures', u' hypertrichosis', u' and overlapping fingers'], 'uid': u'213820'}

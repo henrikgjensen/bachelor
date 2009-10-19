@@ -1,0 +1,1 @@
+{'terms': u'acute%5btitle%5dandarticular%5btitle%5dandrheumatism%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Acute rheumatism'], 'uid': ''}

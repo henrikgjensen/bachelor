@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Genee-Wiedemann acrofacial dysostosis', u'GWAFD', u'Miller syndrome', u'Wildervanck-Smith syndrome', u'Postaxial acrofacial dysostosis &#40;POADS&#41; syndrome', u'POADS syndrome'], 'uid': u'263750'}

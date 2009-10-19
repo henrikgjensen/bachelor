@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital oculomotor apraxia', u'Cogan&#39;s syndrome type 2', u'Saccade initiation failure congenital', u'COMA'], 'uid': u'257550'}

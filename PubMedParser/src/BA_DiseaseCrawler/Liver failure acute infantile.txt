@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acute infantile liver failure'], 'uid': u'613070'}

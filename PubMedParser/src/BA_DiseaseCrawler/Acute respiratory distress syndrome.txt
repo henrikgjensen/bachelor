@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'ARDS', u'Acute lung injury', u'ALI', u'Adult respiratory distress syndrome', u'Respiratory distress syndrome', u' adult', u'Increased-permeability pulmonary edema', u'Non-cardiogenic pulmonary edema', u'Shock lung', u'Stiff lung'], 'uid': ''}

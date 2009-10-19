@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Porphyria variegate', u'VP', u'Porphyria', u' South African type', u'Protoporphyrinogen oxidase deficiency', u'PPOX deficiency'], 'uid': u'176200'}

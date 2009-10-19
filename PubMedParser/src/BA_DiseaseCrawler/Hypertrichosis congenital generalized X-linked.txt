@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HTC2', u'CGH', u'HCG', u'Macias-Flores Garcia-Cruz Rivera syndrome'], 'uid': u'307150'}

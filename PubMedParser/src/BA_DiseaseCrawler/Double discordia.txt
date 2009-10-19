@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Atrio-ventricular and ventriculo-arterial double discordia', u'Corrected transposition'], 'uid': ''}

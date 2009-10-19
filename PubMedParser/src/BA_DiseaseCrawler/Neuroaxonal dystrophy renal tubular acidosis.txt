@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Maccario Mena Weir syndrome', u'CNS disorder characterized by severe behavioral retardation', u' hypotonia', u' inability to talk', u' marked tremors', u' gait disturbances and inability to concentr'], 'uid': u'6881924'}

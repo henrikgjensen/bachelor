@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Complex malformation syndrome with brachymesomelia'], 'uid': u'6660805'}

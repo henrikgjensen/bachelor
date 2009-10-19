@@ -1,0 +1,1 @@
+{'terms': u'%28%28%22tabesdorsalis%22%5bmajr%5dand%28%28%22human%22%5bmeshterms%5dor%22hominidae%22%5bmeshterms%5d%29or%22human%22%5bmeshterms%5d%29%29and%28%221993/04/0611.17%22%5bedat%5d%3a%222003/04/0411.17%22%5bedat%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Tabes dorsalis'], 'uid': ''}

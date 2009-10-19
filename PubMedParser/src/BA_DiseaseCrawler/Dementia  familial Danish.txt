@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FDD', u'Familial Danish dementia', u'Cerebellar ataxia', u' cataract', u' deafness', u' and dementia or psychosis', u'Heredopathia ophthalmootoencephalica', u'HOOE'], 'uid': u'117300'}

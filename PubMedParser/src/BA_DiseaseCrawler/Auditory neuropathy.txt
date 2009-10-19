@@ -1,0 +1,1 @@
+{'terms': u'auditory%5btitle%5dandneuropathy%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Auditory dys-synchrony', u'Progressive auditory neuropathy &#40;subtype&#41;', u'Familial auditory neuropathy &#40;subtype&#41;'], 'uid': ''}

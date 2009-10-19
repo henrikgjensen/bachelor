@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Familial oto-facio-cervical dysmorphia'], 'uid': u'5585518'}

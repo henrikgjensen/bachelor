@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ulna and fibula absence of with severe limb deficiency', u'Limb&#47;Pelvis Hypoplasia&#47;Aplasia syndrome', u'LPHAS', u'Al Awadi Rass Rothschild syndrome', u'Schinzel phocomelia syndrome', u'AARRS'], 'uid': u'276820'}

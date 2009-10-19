@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Merosin-negative congenital muscular dystrophy', u'Merosin-deficient congenital muscular dystrophy', u'Muscular dystrophy', u' congenital', u' merosin-deficient 1A', u'MDC1A'], 'uid': u'607855'}

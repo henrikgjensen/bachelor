@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT 1D', u'Charcot-Marie-Tooth disease', u' demyelinating', u' Type 1D', u'Hereditary motor and sensory neuropathy 1D', u'HMSN 1D', u'Charcot Marie Tooth disease type 1D'], 'uid': u'607678'}

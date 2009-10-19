@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Immunodeficiency', u' isolated', u'Immunodeficiency', u' pure'], 'uid': u'300584'}

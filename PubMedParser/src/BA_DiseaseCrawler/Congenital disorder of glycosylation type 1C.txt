@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDG 1C', u'CDG1C', u'Carbohydrate-deficient glycoprotein syndrome', u' type 1 with deficient glycosylation of dolichol-linked oligosaccharide', u'Carbohydrate-deficient glycoprotein syndrome type V', u'CDGS5'], 'uid': u'603147'}

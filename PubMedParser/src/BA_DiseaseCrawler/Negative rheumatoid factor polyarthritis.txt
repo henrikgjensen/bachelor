@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Rheumatoid factor negative erosive chronic polyarthritis', u'Rheumatoid factor-negative polyarthritis', u'RF-ve CP'], 'uid': u'109100'}

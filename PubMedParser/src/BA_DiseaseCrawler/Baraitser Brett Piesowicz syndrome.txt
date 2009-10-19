@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcephaly intracranial calcification'], 'uid': u'251290'}

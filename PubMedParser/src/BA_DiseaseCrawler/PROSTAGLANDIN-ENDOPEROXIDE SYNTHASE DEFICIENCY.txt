@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'PTGS DEFICIENCY', u'PLATELET CYCLOOXYGENASE DEFICIENCY', u'CYCLOOXYGENASE 1 DEFICIENCY', u'COX1 DEFICIENCY'], 'uid': ''}

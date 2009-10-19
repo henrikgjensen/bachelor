@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial opposable triphalangeal thumbs associated with duplication of the big toes'], 'uid': u'174500'}

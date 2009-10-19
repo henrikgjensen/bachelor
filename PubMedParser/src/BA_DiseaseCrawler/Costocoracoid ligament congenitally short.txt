@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital shortness of the costocoracoid ligament', u'Fixation of the scapula to the first rib by a congenitally short costocoracoid ligament'], 'uid': u'122580'}

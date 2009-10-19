@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aphalangy with Hemivertebrae', u'Aphalangy of the hands and feet', u' hemivertebrae', u' and visceral malformations'], 'uid': u'207620'}

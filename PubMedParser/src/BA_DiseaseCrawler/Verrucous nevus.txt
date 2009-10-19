@@ -1,0 +1,1 @@
+{'terms': u'inflammatory+linear+verrucose+epidermal+nevus', 'desc': '', 'db': u'pubmed', 'syn': [u'Linear verrucous epidermal nevus', u'ILVEN', u'Inflammatory linear verrucose epidermal nevus', u'Verrucous epidermal nevus', u'Inflammatory linear verrucous epidermal naevus', u'Inflammatory linear verrucous epidermal nevus'], 'uid': ''}

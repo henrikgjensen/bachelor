@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Anterior ischemic optic neuropathy', u'AION', u'Ischemic optic neuropathy'], 'uid': ''}

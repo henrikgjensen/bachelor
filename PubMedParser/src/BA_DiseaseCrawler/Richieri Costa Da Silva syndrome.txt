@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Tibial hemimelia-split hand&#47;foot syndrome'], 'uid': u'275220'}

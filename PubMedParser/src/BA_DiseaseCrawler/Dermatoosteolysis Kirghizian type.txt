@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kirghizian Dermatoosteolysis', u'Autosomal recessive syndrome of skin ulceration', u' arthroosteolysis with pseudoacromegaly', u' keratitis', u' and oligodontia'], 'uid': u'221810'}

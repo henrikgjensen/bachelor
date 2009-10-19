@@ -1,0 +1,1 @@
+{'terms': u'%28wandering%5btitle%5dandspleen%5btitle%5d%29andhasabstract%5btext%5dand%222000/09/1508.23%22%5bedat%5d%3a%222005/09/1408.23%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Displaced spleen', u'Drifting spleen', u'Splenoptosis', u'Floating spleen', u'Splenic ptosis'], 'uid': ''}

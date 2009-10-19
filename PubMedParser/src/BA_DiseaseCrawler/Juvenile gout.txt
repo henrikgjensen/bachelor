@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial juvenile hyperuricaemic nephropathy', u'FJHN', u'Gouty nephropathy', u' familial juvenile', u'Nephropathy', u' familial', u' with gout'], 'uid': u'162000'}

@@ -1,0 +1,1 @@
+{'terms': u'%28diffuse%5btitle%5dandsystemic%5btitle%5dandsclerosis%5btitle%5d%29andhasabstract%5btext%5dand%222001/03/1506.54%22%5bedat%5d%3a%222006/03/1506.54%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Diffuse cutaneous systemic sclerosis', u'DcSSc'], 'uid': ''}

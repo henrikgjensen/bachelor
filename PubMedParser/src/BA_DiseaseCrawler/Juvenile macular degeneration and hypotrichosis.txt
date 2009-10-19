@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypotrichosis', u' congenital', u' with juvenile macular dystrophy', u'HJMD', u'Juvenile macular dystrophy and congenital hypotrichosis'], 'uid': u'601553'}

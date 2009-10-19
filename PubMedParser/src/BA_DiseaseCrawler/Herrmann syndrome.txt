@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary photomyoclonus associated with diabetes mellitus', u' deafness', u' nephropathy', u' and cerebral dysfunction'], 'uid': u'172500'}

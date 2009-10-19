@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Supernumerary der&#40;22&#41;', u't&#40;11&#59;22&#41; syndrome', u'Caused by a t&#40;11&#59;22&#41;&#40;q23&#59;q11.2&#41; translocation'], 'uid': u'609029'}

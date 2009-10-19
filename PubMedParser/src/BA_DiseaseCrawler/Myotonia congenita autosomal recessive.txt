@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Becker disease', u'Myotonia generalized', u'Generalized myotonia', u'Becker&#39;s disease'], 'uid': u'255700'}

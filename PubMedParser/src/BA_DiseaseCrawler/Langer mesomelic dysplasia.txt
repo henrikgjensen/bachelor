@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dyschondrosteosis', u' homozygous', u'Langer mesomelic dyspalsia', u'Mesomelic dwarfism of the hypoplastic ulna', u' fibula', u' and mandible type'], 'uid': u'249700'}

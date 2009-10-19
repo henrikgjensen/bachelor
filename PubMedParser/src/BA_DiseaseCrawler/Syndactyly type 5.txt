@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Syndactyly with associated metacarpal and metatarsal fusion'], 'uid': u'186300'}

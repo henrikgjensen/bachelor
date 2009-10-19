@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arthrogryposis distal type 3', u'Arthrogryposis multiplex congenita distal type 2a', u'Distal arthrogryposis type 3', u'DA3', u'Camptodactyly', u' cleft palate', u' and clubfoot'], 'uid': u'114300'}

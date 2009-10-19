@@ -1,0 +1,1 @@
+{'terms': u'%28%22arnold-chiarimalformation%22%5bmajr%5dand%22typeii%22%5btiab%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Arnold Chiari malformation type 2'], 'uid': ''}

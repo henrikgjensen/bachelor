@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HMS', u'Keratosis palmoplantaris with periodontopathia and onychogryposis', u'Cochin Jewish disorder'], 'uid': u'245010'}

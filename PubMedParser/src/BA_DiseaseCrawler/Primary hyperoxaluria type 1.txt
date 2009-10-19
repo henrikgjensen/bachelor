@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HP1', u'Oxalosis 1', u'Glycolic aciduria', u'Alanine-glyoxylate aminotransferase deficiency', u'Peroxisomal alanine glyoxylate aminotransferase deficiency', u'Hepatic AGT deficiency', u'Serine pyruvate aminotransferase deficiency'], 'uid': u'259900'}

@@ -1,0 +1,1 @@
+{'terms': u'%28%22osteogenesisimperfecta%22%5bmajr%5dand%22typev%22%5btiab%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'OI', u' type 5'], 'uid': ''}

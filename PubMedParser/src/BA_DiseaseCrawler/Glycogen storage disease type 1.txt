@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Glucose-6-phosphatase deficiency glycogen storage disease', u'Glycogenosis type 1', u'Von Gierke disease', u'GSD1'], 'uid': u'232200'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MTS', u'Deafness dystonia syndrome', u'DDS', u'Deafness syndrome', u' progressive', u' with blindness', u' dystonia', u' fractures', u' and mental deficiency', u'Deafness-dystonia-optic atrophy syndrome', u'DDP', u'Deafness-dystonia-optic neuronopathy &#40;DDON&#41; syndrome', u'DDON syndrome'], 'uid': u'304700'}

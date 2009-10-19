@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MRXS7', u'Mental retardation', u' obesity', u' hypogonadism', u' and tapering fingers', u'Ahmad X-linked Mental retardation syndrome'], 'uid': u'300218'}

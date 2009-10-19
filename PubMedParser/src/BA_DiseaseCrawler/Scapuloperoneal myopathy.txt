@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SPM', u'Scapuloperoneal muscular dystrophy', u'Scapuloperoneal syndrome', u' myopathic type', u'Myopathy', u' scapuloperoneal', u'SPMD'], 'uid': u'181430'}

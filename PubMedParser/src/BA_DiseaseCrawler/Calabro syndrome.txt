@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Craniosynostosis', u' limb abnormalities', u' brevicollis', u' micrognathia', u' pulmonary stenosis', u' and genital defects'], 'uid': ''}

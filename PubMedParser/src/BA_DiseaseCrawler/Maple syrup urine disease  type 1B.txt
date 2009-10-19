@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MSUD', u' type IB', u'MSUD', u' type 3 &#40;formerly&#41;', u'MSUD due to deficiency of e1-beta subunit of branched-chain alpha-keto acid dehydrogenase complex'], 'uid': u'248600'}

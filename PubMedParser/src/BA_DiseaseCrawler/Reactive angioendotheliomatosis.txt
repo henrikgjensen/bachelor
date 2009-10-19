@@ -1,0 +1,1 @@
+{'terms': u'%28reactive%5ballfields%5dandangioendotheliomatosis%5ballfields%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'RAE'], 'uid': ''}

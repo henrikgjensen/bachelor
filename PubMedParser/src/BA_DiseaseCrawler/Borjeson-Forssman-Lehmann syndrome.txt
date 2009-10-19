@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Borjeson Syndrome', u'BFLS', u'BORJ', u'Mental deficiency', u' epilepsy and endocrine disorders'], 'uid': u'301900'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypertrichosis', u' congenital anterior cervical', u' with peripheral sensory and motor neuropathy', u'Familial congenital anterior cervical hypertrichosis associated with peripheral sensory and motor neuropathy'], 'uid': u'239840'}

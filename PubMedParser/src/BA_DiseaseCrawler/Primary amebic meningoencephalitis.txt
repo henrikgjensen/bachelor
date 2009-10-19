@@ -1,0 +1,1 @@
+{'terms': u'%28primary%5btitle%5dandamebic%5btitle%5dandmeningoencephalitis%5btitle%5d%29andhasabstract%5btext%5dand%222001/03/1309.29%22%5bedat%5d%3a%222006/03/1309.29%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'PAM', u'Meningoencephalitis caused by Naegleria fowleri'], 'uid': ''}

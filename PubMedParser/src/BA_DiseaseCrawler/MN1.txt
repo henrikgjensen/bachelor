@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Meningioma 1 gene'], 'uid': u'156100'}

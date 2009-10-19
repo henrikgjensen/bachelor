@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Corneal clouding cutis laxa mental retardation', u'Progeroid syndrome of De Barsy', u'De Barsy Moens Diercks syndrome'], 'uid': u'219150'}

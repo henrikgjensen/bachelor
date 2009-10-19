@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial benign copper deficiency', u'Familial benign hypocupremia'], 'uid': u'121270'}

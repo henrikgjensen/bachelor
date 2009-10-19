@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Buruli ulcer disease', u'BUD'], 'uid': u'610446'}

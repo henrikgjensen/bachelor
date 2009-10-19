@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CBAS1', u'3-&#64;beta-hydroxy-delta-5-c27-steroid oxidoreductase', u' deficiency of'], 'uid': u'607765'}

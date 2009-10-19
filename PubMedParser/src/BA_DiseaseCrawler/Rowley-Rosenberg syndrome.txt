@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Growth retardation', u' pulmonary hypertension', u' and aminoaciduria'], 'uid': u'268500'}

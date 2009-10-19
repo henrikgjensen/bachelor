@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Faciocutaneoskeletal syndrome', u'FCS syndrome'], 'uid': u'218040'}

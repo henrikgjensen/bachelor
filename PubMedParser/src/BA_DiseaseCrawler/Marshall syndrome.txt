@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deafness', u' myopia', u' cataract', u' saddle nose-Marshall type'], 'uid': u'154780'}

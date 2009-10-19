@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MCOPS2', u'Oculofaciocardiodental syndrome', u'OFCD syndrome', u'Microphthalmia', u' cataracts', u' radiculomegaly', u' and septal heart defects'], 'uid': u'300166'}

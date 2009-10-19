@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCN', u'Autosomal dominant or sporadic congenital neutropenia', u'Agranulocytosis', u' infantile genetic', u'Kostmann syndrome', u'Kostmann disease', u'Infantile genetic agranulocytosis'], 'uid': u'202700'}

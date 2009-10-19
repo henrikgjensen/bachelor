@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GALK deficiency', u'Galactosemia 2', u'Hereditary galactokinase deficiency'], 'uid': u'230200'}

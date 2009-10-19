@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spondylar and nasal alterations with striated metaphyses', u'Sponastrime dysplasia', u'Short limb dwarfism with saddle nose', u' spinal alterations', u' and metaphyseal striation'], 'uid': u'271510'}

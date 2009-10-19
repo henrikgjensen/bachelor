@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MDS', u'Miller-Dieker lissencephaly syndrome', u'MDLS'], 'uid': u'247200'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dyschromatosis symmetrica hereditaria', u'DSH1', u'DSH', u'Familial reticulate acropigmentation of Dohi', u'Reticulate acropigmentation of Dohi', u'Symmetric dyschromatosis of the extremities'], 'uid': u'127400'}

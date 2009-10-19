@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebral gigantism', u'Distinctive facial appearance', u' overgrowth in childhood', u' and learning disabilities or delayed development'], 'uid': u'117550'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Twisted hair with nail dysplasias'], 'uid': u'602032'}

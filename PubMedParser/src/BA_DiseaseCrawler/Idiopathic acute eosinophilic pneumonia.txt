@@ -1,0 +1,1 @@
+{'terms': u'idiopathic%5btitle%5d+and+acute%5btitle%5d+and+eosinophilic%5btitle%5d+and+pneumonia%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

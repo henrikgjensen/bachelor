@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cortisol 11-beta-ketoreductase deficiency', u'AME 1', u'AME'], 'uid': u'218030'}

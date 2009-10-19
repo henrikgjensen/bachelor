@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mal de Meleda', u'Keratosis palmoplantaris transgradiens of Siemens', u'MDM'], 'uid': u'248300'}

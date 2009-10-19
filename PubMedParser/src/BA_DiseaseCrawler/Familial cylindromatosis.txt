@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cylindromatosis', u' familial', u'CYLD', u'Turban tumors', u'Turban tumor syndrome'], 'uid': u'132700'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCAR5', u'Cerebellar ataxia with mental retardation', u' optic atrophy', u' and skin abnormalities', u'CAMOS'], 'uid': u'606937'}

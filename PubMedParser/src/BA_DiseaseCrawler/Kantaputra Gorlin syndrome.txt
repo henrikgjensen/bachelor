@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mesomelic dysplasia', u' Thai type', u'Mesomelic dysplasia with ankle', u' carpal', u' and tarsal synostosis', u'Mesomelic dysplasia', u' Kantaputra type', u'MDK', u'MMDK'], 'uid': u'156232'}

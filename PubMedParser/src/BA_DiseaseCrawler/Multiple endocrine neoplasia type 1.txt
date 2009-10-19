@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Endocrine adenomatosis', u' multiple', u'MEN 1', u'Wermer syndrome'], 'uid': u'131100'}

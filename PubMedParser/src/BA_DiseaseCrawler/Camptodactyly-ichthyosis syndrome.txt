@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Camptodactyly ichthyosis syndrome'], 'uid': u'211965'}

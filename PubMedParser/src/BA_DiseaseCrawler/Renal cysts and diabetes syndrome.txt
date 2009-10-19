@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RCAD', u'Maturity-onset diabetes of the young', u' type 5', u'MODY5', u'Hyperuricemic nephropathy', u' familial juvenile', u' atypical', u'FJHN', u' atypical', u'Glomerulocystic kidney disease', u' hypoplastic type', u'Glomerulocystic kidney', u' familial hypoplastic'], 'uid': u'137920'}

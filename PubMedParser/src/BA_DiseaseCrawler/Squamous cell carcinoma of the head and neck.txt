@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Head and neck squamous cell carcinoma', u'HNSCC', u'Carcinoma', u' squamous cell of head and neck'], 'uid': u'10866301'}

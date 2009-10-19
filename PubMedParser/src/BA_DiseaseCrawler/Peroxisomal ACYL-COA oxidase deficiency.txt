@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pseudoneonatal adrenoleukodystrophy', u'Straight-chain ACYL-COA oxidase deficiency'], 'uid': u'264470'}

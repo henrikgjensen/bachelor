@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital glaucoma', u' flexion contracture of fingers and facial dysmorphism without peroxisomal abnormalities', u'Bowen syndrome of multiple malformations'], 'uid': u'211200'}

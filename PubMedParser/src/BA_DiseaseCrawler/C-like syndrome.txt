@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Opitz trigonocephaly-like syndrome', u'Bohring-Opitz syndrome', u'Bohring syndrome'], 'uid': u'605039'}

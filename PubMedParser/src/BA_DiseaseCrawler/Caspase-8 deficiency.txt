@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autoimmune lymphoproliferative syndrome type 2B', u'ALPS2B', u'Caspase 8 deficiency'], 'uid': u'607271'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Port-wine stain familial multiple'], 'uid': u'163000'}

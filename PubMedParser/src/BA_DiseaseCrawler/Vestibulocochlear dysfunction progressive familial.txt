@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial progressive vestibulo-cochlear dysfunction', u'Familial progressive vestibulocochlear dysfunction'], 'uid': u'193005'}

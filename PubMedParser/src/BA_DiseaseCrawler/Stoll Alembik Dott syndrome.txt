@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ventricular extrasystoles with syncope', u' perodactyly', u' and robin sequence'], 'uid': u'192445'}

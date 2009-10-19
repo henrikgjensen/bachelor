@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Mixed sclerosing bone dysplasia and mental retardation', u'MSBD with MR'], 'uid': u'7645600'}

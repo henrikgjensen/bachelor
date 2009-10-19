@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCAX2', u'Cerebellar ataxia with extrapyramidal involvement', u' early-onset'], 'uid': u'302600'}

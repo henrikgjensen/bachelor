@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Onset of senility in the early teens', u' atrophic skin', u' hypogonadism', u' retinal and vascular sclerosis'], 'uid': u'837628'}

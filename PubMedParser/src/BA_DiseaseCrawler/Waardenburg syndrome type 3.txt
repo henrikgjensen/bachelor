@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Klein-Waardenburg syndrome', u'Waardenburg syndrome', u' type 3', u'Waardenburg syndrome with upper limb anomalies', u'White forelock &#40;poliosis&#41; syndrome with multiple congenital malformations', u'WS3'], 'uid': u'148820'}

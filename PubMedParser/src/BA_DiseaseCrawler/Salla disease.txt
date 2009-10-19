@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sialuria', u' Finnish type', u'Free sialic acid storage disease', u'N-acetylneuraminic acid &#40;NANA&#41; storage disease &#40;NSD&#41;', u'Sialic acid storage disease', u'Infantile sialic acid storage disorder &#40;ISSD&#41;', u'NANA storage disease'], 'uid': u'604369'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Foveal hypoplasia', u' presenile cataract', u'Foveal hypoplasia', u' congenital nystagmus', u' corneal pannus', u' and presenile cataracts'], 'uid': u'136520'}

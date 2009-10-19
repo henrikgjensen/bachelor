@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Absent middle phalanges of digits 2-5 with nail dysplasia', u'Brachydactyly with absence of middle phalanges and hypoplastic nails', u'Brachydactyly type A5 nail dysplasia'], 'uid': u'112900'}

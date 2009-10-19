@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Eunuchoidism with spermatogenesis', u' normal FSH and low or normal interstitial cell-stimulating hormone &#40;ICSH&#41;'], 'uid': u'228300'}

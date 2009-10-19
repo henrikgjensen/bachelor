@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Zimmerman Laband syndrome', u'ZLS', u'Gingival fibromatosis', u' abnormal fingers', u' fingernails', u' nose and ears', u' and splenomegaly', u'Fibromatosis gingival', u' hepatosplenomegaly other anomalies'], 'uid': u'135500'}

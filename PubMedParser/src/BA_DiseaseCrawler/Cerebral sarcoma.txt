@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial cerebral sarcomas'], 'uid': u'117600'}

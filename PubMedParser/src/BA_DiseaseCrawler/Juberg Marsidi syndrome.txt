@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental Retradation', u' X-linked with Growth Delay', u' Deafness', u' Microgenitalism', u'Juberg-Marsidi Mental Retardation Syndrome', u'JMS', u'X-linked hypogonadism gynecomastia mental retardation'], 'uid': u'309580'}

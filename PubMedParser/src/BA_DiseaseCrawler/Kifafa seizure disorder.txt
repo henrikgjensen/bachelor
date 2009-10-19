@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Parkinsonian features and neurologic abnormalities', u' mental retardation and transient psychotic episodes', u'Complex familial seizure disorder', u'Vitsala'], 'uid': u'245180'}

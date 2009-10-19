@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dincsoy syndrome', u'Midline malformations', u' multiple', u' with limb abnormalities and hypopituitarism'], 'uid': u'601016'}

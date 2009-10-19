@@ -1,0 +1,1 @@
+{'terms': u'%28%28uniparental%5btitle%5danddisomy%5btitle%5d%29and21%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Uniparental disomy of 21', u'Mosaic trisomy 21'], 'uid': ''}

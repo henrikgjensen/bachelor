@@ -1,0 +1,1 @@
+{'terms': u'%28congenital%5btitle%5danddislocation%5btitle%5dandpatella%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Congenital patellar dislocation'], 'uid': ''}

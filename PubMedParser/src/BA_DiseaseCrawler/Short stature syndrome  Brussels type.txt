@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial short stature with facial dysmorphism and osteochondrodysplastic lesions', u'Mievis Verellen-Dumoulin syndrome'], 'uid': u'601350'}

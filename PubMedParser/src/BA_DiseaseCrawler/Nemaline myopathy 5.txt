@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Amish Nemaline Myopathy', u'ANM', u'NEM5', u'Nemaline Myopathy', u' Amish Type', u'Nemaline myopathy', u' caused by mutation in the troponin t1 gene'], 'uid': u'605355'}

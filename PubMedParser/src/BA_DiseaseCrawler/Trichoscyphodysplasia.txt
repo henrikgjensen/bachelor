@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Metaphyseal chondrodysplasia with cone-shaped epiphyses and alopecia', u'Metaphyseal chondrodysplasia with ectodermal dysplasia', u'Cupped metaphyses and cone-shaped epiphyses with alopecia'], 'uid': u'609990'}

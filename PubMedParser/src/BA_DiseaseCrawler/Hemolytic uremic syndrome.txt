@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HUS', u'Acute renal failure', u' thrombocytopenia', u' and microangiopathic hemolytic anemia associated with distorted erythrocytes &#40;&#39;burr cells&#39;&#41;'], 'uid': u'235400'}

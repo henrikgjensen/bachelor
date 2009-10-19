@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'MCOPCR', u'Microphthalmia and corectopia', u'Microphthalmia with myopia and corectopia'], 'uid': ''}

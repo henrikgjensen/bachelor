@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CAPOS', u'CAPOS syndrome'], 'uid': u'601338'}

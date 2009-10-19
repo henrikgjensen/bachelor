@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ebstein&#39;s malformation', u'Ebstein anomaly'], 'uid': u'224700'}

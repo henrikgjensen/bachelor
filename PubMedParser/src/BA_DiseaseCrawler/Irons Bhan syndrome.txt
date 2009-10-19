@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lymphedema', u' atrial septal defect', u' and characteristic facial changes', u'Autosomal recessive syndrome of lymphedema', u' hydroceles', u' atrial septal defect', u' and characteristic facial changes'], 'uid': u'601927'}

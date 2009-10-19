@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DHOF', u'FODH', u'FDH', u'Goltz Syndrome', u'Goltz Gorlin Syndrome'], 'uid': u'305600'}

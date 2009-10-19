@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dermatitis herpetiformis', u'DH'], 'uid': u'601230'}

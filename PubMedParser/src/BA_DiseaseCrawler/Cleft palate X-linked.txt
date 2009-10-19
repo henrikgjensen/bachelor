@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CPX', u'X-linked cleft palate'], 'uid': u'303400'}

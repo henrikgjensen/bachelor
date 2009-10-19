@@ -1,0 +1,1 @@
+{'terms': u'neonatal%5btitle%5dandsystemic%5btitle%5dandlupus%5btitle%5danderythematosus%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Neonatal SLE', u'Neonatal lupus syndrome', u'Neonatal lupus', u'Congenital lupus erythematosus', u'Congenital lupus'], 'uid': ''}

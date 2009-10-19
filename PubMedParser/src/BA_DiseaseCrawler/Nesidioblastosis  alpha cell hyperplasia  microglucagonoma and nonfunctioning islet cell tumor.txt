@@ -1,0 +1,1 @@
+{'terms': u'nesidioblastosis%5btitle%5d+and+hyperplasia%5btitle%5d+and+alpha%5btitle%5d+and+cells%5btitle%5d+and+microglucagonoma%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Nesidioblastosis', u' alpha cell hyperplasia', u' microglucagonoma', u' and nonfunctioning islet cell tumor'], 'uid': ''}

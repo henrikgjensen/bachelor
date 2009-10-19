@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Stickler syndrome', u' vitreous type 2', u'Stickler syndrome', u' beaded vitreous type', u'STL 2'], 'uid': u'604841'}

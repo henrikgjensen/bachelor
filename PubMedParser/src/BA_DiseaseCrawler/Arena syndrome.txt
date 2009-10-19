@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Spastic paraplegia with iron deposits in basal ganglia'], 'uid': u'1605230'}

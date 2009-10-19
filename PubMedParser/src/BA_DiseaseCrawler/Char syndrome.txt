@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CHAR', u'Patent ductus arteriosus with facial dysmorphism and abnormal fifth digits'], 'uid': u'169100'}

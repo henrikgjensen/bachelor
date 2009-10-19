@@ -1,0 +1,1 @@
+{'terms': u'%22paraquat%22%5bmesh%5dand%22lungdiseases%22%5bmesh%5dandenglish%5blang%5dand%28%22hominidae%22%5bmeshterms%5dor%22human%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Paraquat induced lung disease'], 'uid': ''}

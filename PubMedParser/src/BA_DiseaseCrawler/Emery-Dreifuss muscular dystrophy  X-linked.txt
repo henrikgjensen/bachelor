@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EDMD', u'Muscular dystrophy', u' tardive Emery-Dreifuss type', u' with contractures', u'EDMD1'], 'uid': u'310300'}

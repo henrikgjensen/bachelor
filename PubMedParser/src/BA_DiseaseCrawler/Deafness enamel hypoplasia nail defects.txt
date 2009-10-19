@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bilateral sensorineural hearing loss', u' enamel hypoplasia and nail defects', u'Heimler syndrome', u'Sensorineural hearing loss', u' enamel hypoplasia', u' and nail abnormalities'], 'uid': u'234580'}

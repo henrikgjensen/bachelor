@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'X-linked cone dystrophy characterized by a peculiar greenish-golden tapetal-like sheen of large areas of the retina'], 'uid': u'304030'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Khalifa Graham syndrome'], 'uid': u'600159'}

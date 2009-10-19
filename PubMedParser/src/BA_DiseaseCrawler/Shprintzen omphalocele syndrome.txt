@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Shprintzen-Goldberg omphalocele syndrome', u'Omphalocele', u' laryngeal and pharyngeal hypoplasia', u' learning disabilities', u' dysmorphic facies and spinal anomalies', u'Laryngeal and pharyngeal hypoplasia with omphalocele'], 'uid': u'182210'}

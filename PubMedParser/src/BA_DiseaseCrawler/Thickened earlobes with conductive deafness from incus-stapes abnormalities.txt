@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Conductive hearing loss', u' middle ear ossicular anomalies', u' malformed thickened lop auricles', u' and micrognathia', u'Schweitzer Kemink Graham syndrome'], 'uid': u'128980'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MAD', u'Early-onset regressive form of metaphyseal dysplasia'], 'uid': u'309645'}

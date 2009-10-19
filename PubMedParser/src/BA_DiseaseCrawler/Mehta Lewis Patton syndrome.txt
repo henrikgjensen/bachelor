@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Congenital heart disease', u' ptosis', u' hypodontia', u' and craniosynostosis'], 'uid': u'2585465'}

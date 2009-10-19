@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EPS', u'Microtia', u' absent patellae', u' micrognathia syndrome', u'Meier-Gorlin syndrome'], 'uid': u'224690'}

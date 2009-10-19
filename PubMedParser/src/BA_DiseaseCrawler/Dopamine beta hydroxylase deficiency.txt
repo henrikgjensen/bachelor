@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital dopamine beta hydroxylase deficiency', u'DBH deficiency', u'Noepinephrine deficiency', u'Noradrenaline deficiency'], 'uid': u'223360'}

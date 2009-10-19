@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anterior cervical hypertrichosis', u'Hairy throat', u'Hairy throat syndrome'], 'uid': u'600457'}

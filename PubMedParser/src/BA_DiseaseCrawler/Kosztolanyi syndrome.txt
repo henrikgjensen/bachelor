@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Arachnodactyly', u' abnormal ossification and mental retardation', u'Syndrome of arachnodactyly', u' disturbance of cranial ossification', u' protruding eyes', u' feeding difficulties', u' and mental retardation'], 'uid': u'8533819'}

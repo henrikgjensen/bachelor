@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BCHE deficiency', u'CHE1 deficiency', u'Acylcholine acylhydrolase deficiency', u'Pseudocholinesterase E1 deficiency'], 'uid': u'177400'}

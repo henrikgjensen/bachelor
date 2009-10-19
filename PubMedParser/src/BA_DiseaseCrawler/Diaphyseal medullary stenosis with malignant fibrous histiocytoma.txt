@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DMSMFH', u'Bone dysplasia with medullary fibrosarcoma', u'BDMF', u'Bone dysplasia with malignant fibrous histiocytoma'], 'uid': u'112250'}

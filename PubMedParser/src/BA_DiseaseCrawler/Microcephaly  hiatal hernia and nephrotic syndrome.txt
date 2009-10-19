@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Galloway Mowat syndrome', u'Galloway syndrome', u'Microcephaly nephrosis syndrome', u'Nephrosis neuronal dysmigration syndrome', u'Hiatal Hernia-Microcephaly-Nephrosis', u' Galloway Type'], 'uid': u'251300'}

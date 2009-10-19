@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Tibia', u' absence or hypoplasia of', u' with polydactyly', u' retrocerebellar arachnoid cyst', u' and other anomalies', u'Absence&#47;hypoplasia of tibia', u' polydactyly', u' retrocerebellar arachnoid cyst', u' and other anomalies'], 'uid': u'601027'}

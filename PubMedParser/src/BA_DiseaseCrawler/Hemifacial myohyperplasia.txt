@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypertrophy and asymmetry of the facial muscles'], 'uid': u'606773'}

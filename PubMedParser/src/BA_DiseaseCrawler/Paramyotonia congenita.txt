@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PMC', u'Paramyotonia congenita of Von Eulenburg', u'Paralysis periodica paramyotonica', u'Eulenburg disease', u'Myotonia congenita intermittens', u'Von Eulenburg paramyotonia congenita'], 'uid': u'168300'}

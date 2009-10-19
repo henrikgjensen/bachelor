@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EPPK', u'Epidermolytic palmoplantar keratoderma Vorner type', u'Keratoderma', u' epidermolytic palmoplantar', u'Hyperkeratosis', u' localized epidermolytic', u'Unna-Thost disease', u' epidermolytic', u'Keratosis palmaris et plantaris familiaris', u'Keratosis of Greither'], 'uid': u'144200'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'New X-linked syndrome with seizures', u' acquired micrencephaly', u' and agenesis of the corpus callosum', u'Corpus callosum', u' agenesis of', u' with abnormal genitalia', u'ACC with abnormal genitalia', u'Proud syndrome'], 'uid': u'300004'}

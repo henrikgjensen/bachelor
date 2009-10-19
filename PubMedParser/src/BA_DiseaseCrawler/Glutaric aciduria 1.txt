@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Glutaric acidemia 1', u'GA 1', u'Glutaryl-CoA dehydrogenase deficiency'], 'uid': u'231670'}

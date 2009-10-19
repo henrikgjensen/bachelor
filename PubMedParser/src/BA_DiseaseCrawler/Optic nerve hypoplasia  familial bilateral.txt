@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial bilateral optic nerve hypoplasia'], 'uid': u'165550'}

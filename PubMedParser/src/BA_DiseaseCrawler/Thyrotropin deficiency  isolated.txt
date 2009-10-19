@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thyroid-stimulating hormone', u' deficiency of', u'TSH deficiency', u'Pituitary cretinism'], 'uid': u'275100'}

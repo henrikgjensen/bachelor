@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cataract', u' mental retardation', u' hypogonadism'], 'uid': u'212720'}

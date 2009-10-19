@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperkeratosis palmoplantaris with periodontosis', u'Keratoris palmoplantaris with periodontopathia', u'Palmar-plantar hyperkeratosis and concomitant periodontal destruction', u'Keratosis palmoplantaris with periodontopathia', u'Palmoplantar keratoderma with periodontosis'], 'uid': u'245000'}

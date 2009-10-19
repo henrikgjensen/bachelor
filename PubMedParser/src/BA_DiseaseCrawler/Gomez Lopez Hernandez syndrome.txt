@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebellotrigeminal-dermal dysplasia', u'Cerebellotrigeminal dermal dysplasia'], 'uid': u'601853'}

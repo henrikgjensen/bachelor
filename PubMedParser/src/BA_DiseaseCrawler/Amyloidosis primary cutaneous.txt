@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Primary localized cutaneous amyloidosis', u'PLCA', u'Lichen amyloidosis familial', u'Amyloidosis familial cutaneous lichen', u'Amyloidosis 9', u'Amyloidosis IX'], 'uid': u'105250'}

@@ -1,0 +1,1 @@
+{'terms': u'(glomus%5btitle%5d+and+vagale%5btitle%5d+and+tumors%5btitle%5d)+and+(hasabstract%5btext%5d+and+%22humans%22%5bmesh+terms%5d+and+english%5blang%5d)', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

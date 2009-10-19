@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Trochlear nerve palsy', u' familial congenital', u'Superior oblique oculomotor palsy', u' familial congenital', u'Strabismus from superior oblique palsy'], 'uid': u'136480'}

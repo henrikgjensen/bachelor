@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperferritinemia cataract syndrome', u'Dominant hyperferritinemia and cataract', u'Hereditary hyperferritinemia-cataract syndrome'], 'uid': u'600886'}

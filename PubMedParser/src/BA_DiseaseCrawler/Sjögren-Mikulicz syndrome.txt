@@ -1,0 +1,1 @@
+{'terms': u'(sjogren%5ball+fields%5d+and+mikulicz%5ball+fields%5d)+and+(%22syndrome%22%5bmesh+terms%5d+or+syndrome%5btext+word%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Sjogren-Mikulicz syndrome'], 'uid': ''}

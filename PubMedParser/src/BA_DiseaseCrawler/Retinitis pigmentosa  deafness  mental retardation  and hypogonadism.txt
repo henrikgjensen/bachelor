@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Insulin-resistant diabetes with acanthosis nigricans', u' hypogonadism', u' pigmentary retinopathy', u' deafness', u' and mental retardation'], 'uid': u'268020'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Panbronchiolitis', u' diffuse', u'PBLT'], 'uid': u'604809'}

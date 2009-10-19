@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Mosaic variegated aneuplody microcephaly syndrome'], 'uid': u'1809239'}

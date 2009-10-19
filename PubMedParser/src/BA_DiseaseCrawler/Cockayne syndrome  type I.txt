@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cockayne syndrome type A', u'CSA', u'Cockayne syndrome', u' classical'], 'uid': u'216400'}

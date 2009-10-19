@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cupped metaphyses and cone-shaped epiphyses of knees with brachydactyly', u'Wedge-shaped  epiphyses of knees'], 'uid': u'250215'}

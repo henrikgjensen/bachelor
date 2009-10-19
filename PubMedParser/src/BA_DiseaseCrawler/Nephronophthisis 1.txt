@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NPHP1', u'NPH1', u'Nephronophthisis familial juvenile'], 'uid': u'256100'}

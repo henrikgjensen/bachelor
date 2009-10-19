@@ -1,0 +1,1 @@
+{'terms': u'%28symmastia%5btitle%5dandhasabstract%5btext%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Medial confluence of the breasts'], 'uid': ''}

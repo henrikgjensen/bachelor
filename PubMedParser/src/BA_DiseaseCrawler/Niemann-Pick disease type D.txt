@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Niemann-pick disease without sphingomyelinase deficiency', u'Niemann-Pick disease', u' Nova Scotian type', u'Nova Scotia &#40;type D&#41; form of Niemann-Pick disease', u'Nova Scotia Niemann-Pick disease &#40;type D&#41;'], 'uid': u'257220'}

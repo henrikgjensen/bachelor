@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Chondrodysplasia', u' situs inversus totalis', u' cleft epiglottis and larynx', u' hexadactyly of hands and feet', u' pancreatic cystic dysplasia', u' renal dysplasia&#47;abs'], 'uid': u'2596528'}

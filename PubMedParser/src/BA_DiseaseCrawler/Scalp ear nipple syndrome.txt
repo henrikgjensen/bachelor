@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary syndrome of lumpy scalp', u' odd ears and rudimentary nipples', u'Sen Syndrome', u'Finlay-Marks Syndrome'], 'uid': u'181270'}

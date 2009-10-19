@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal recessive pachyonychia congenita'], 'uid': u'260130'}

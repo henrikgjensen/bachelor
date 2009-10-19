@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Long-chain acyl-CoA dehydrogenase deficiency', u'ACADL deficiency'], 'uid': u'201460'}

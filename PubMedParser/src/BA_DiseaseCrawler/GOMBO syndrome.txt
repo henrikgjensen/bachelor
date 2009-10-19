@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Growth retardation', u' ocular abnormalities', u' microcephaly', u' brachydactyly', u' and oligophrenia'], 'uid': u'233270'}

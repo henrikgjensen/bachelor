@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Metabolic syndrome X', u'AOMS1'], 'uid': u'605552'}

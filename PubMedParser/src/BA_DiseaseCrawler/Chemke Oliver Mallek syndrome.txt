@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Multiple ophthalmic anomalies and digital hypoplasia'], 'uid': u'97363'}

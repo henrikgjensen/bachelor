@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Renal adenocarcinoma', u'Hypernephroma', u'Renal cell cancer', u'Renal cell carcinoma 1'], 'uid': u'144700'}

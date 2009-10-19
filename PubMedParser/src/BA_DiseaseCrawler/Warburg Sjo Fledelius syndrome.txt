@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Warburg micro syndrome', u'WARBM1'], 'uid': u'600118'}

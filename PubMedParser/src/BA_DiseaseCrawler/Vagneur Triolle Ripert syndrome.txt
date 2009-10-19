@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Hypertelorism', u' short midface', u' arachnodactyly', u' coloboma of Iris and delayed bone age'], 'uid': ''}

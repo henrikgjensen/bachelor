@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Twisted hair', u'Coarse', u' dry', u' lusterless hair which breaks off easily'], 'uid': ''}

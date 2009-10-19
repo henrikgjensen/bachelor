@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Acrobrachycephaly', u' ventriculomegaly', u' pulmonary stenosis', u' ectopic anus and mental retardation'], 'uid': u'8835329'}

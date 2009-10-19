@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mesomelic dwarfism Nievergelt type', u'Radioulnar synostosis and a typical rhomboid shape of the tibia and fibula'], 'uid': u'163400'}

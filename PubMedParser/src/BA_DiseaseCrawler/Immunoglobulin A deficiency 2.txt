@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'IGAD2', u'Immunoglobulin A', u' selective deficiency of', u' TACI related', u'IgA', u' selective deficiency of', u' TACI related'], 'uid': u'609529'}

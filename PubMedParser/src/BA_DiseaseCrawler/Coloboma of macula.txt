@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Agenesis of macula', u'Macular coloboma', u'Hereditary macular coloboma &#40;subtype&#41;'], 'uid': u'120300'}

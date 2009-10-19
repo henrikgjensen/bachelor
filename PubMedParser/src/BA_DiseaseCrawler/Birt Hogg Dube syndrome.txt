@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BHD syndrome', u'Fibrofolliculomas with trichodiscomas and acrochordons', u'BHD', u'Hornstein-Knickenberg syndrome'], 'uid': u'135150'}

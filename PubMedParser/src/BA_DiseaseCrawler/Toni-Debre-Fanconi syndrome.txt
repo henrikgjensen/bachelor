@@ -1,0 +1,1 @@
+{'terms': u'%28toni-debre-fanconi%5btitle/abstract%5dandsyndrome%5btitle/abstract%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Primary Toni-Debre-Fanconi syndrome', u'Idiopathic De Toni-Debre-Fanconi syndrome', u'Neonatal De Toni-Debre-Fanconi syndrome'], 'uid': ''}

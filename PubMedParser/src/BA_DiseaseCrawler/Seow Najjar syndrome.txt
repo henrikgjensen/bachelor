@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Enamel hypoplasia', u' capsular cataracts', u' and ductal stenosis'], 'uid': u'600907'}

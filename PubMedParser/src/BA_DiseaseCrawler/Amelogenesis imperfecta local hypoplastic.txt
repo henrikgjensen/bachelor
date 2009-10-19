@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Local hypoplastic amelogenesis imperfecta'], 'uid': u'104530'}

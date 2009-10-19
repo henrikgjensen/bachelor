@@ -1,0 +1,1 @@
+{'terms': u'%28melanoma%5btitle%5dandcervix%5btitle%5d%29andhasabstract%5btext%5dand%222000/10/1312.34%22%5bedat%5d%3a%222005/10/1212.34%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Primary malignant melanoma of the cervix uteri', u'Primary malignant melanoma of the uterine cervix', u'Radiation induced malignant melanoma of the cervix'], 'uid': ''}

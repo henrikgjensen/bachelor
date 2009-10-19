@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Digestive tract &#38; renal small vessel hyalinosis', u' idiopathic nonarteriosclerotic intracerebral calcifications', u' retinal ischemic syndrome'], 'uid': u'277175'}

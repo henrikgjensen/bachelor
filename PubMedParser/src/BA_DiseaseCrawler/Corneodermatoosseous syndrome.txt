@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDO syndrome', u'Corneal dystrophy', u' epithelial', u' with skin and skeletal changes', u'Corneal dystrophy epithelial and short stature'], 'uid': u'122440'}

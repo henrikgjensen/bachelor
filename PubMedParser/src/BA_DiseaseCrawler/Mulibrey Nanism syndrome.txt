@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Perheentupa syndrome', u'Muscle-liver-brain-eye nanism', u'Mulibrey nanism', u'Pericardial constriction with growth failure'], 'uid': u'253250'}

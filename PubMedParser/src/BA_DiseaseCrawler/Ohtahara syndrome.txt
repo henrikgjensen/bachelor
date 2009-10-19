@@ -1,0 +1,1 @@
+{'terms': u'ohtaharasyndromeandhuman%5bmh%5dandenglish%5bla%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

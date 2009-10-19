@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deafness and onychodystrophy', u' dominant form', u'Familial ectodermal dysplasia with sensori-neural deafness and other anomalies'], 'uid': u'124480'}

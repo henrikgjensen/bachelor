@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AOI', u'Giant cell chondrodysplasia', u'Spondylohumerofemoral hypoplasia'], 'uid': u'108720'}

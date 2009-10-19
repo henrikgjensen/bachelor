@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bartter syndrome with sensorineural deafness', u'BSND'], 'uid': u'602522'}

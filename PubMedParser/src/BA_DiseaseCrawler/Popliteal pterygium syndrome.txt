@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PPS', u'Cleft lip&#47;palate', u' paramedian mucous cysts of the lower lip', u' popliteal pterygium', u' digital and genital anomalies', u'Faciogenitopopliteal syndrome'], 'uid': u'119500'}

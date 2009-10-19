@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NF 3A', u'Neurofibromatosis', u' Type 3', u' mixed central and peripheral', u'Neurofibromatosis', u' Type 3', u' Riccardi type'], 'uid': u'162260'}

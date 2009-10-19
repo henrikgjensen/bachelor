@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28deletion%5btitle%5dand9p%5btitle%5d%29andsyndrome%5btitle%5d%29or%28monosomy%5btitle%5dand9p%5btitle%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Partial deletion of short arm of chromosome 9', u'Deletion 9p syndrome', u' partial', u'9p- syndrome', u' partial', u'9p Partial Monosomy', u'Distal Monosomy 9p'], 'uid': ''}

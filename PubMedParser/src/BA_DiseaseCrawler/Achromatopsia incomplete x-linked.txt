@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Incomplete achromatopsia x-linked', u'X-linked achromatopsia incomplete'], 'uid': u'304020'}

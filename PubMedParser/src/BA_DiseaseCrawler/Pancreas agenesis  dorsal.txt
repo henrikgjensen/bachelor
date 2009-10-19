@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pancreas', u' dorsal', u' agenesis of', u'Agenesis of the dorsal pancreas', u'Complete agenesis of the dorsal pancreas'], 'uid': u'167755'}

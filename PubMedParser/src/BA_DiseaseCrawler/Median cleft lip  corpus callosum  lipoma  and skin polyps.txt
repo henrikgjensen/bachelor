@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pai syndrome', u'Cleft', u' median', u' of upper lip with polyps of facial skin and nasal mucosa', u'Pai Levkoff syndrome'], 'uid': u'155145'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital absence of insulin-producing beta cells with diabetes mellitus'], 'uid': u'600089'}

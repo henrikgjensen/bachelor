@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Perlman Syndrome', u'Renal hamartomas', u' nephroblastomatosis', u' and fetal gigantism'], 'uid': u'267000'}

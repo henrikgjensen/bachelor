@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Tracheopathia osteoplastica', u'Cartilaginous or bony projections into the tracheobronchial lumen'], 'uid': u'189961'}

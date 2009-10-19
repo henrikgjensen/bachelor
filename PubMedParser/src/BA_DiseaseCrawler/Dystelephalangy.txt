@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kirner deformity', u'Congenital bilateral metadiaphyseal acrodysplasia of the little finger'], 'uid': u'128000'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Shprintzen Golberg craniosynostosis syndrome', u'SGS', u'Craniosynostosis and Marfanoid disorder', u' type 1', u'Marfanoid craniosynostosis syndrome', u'Craniosynostosis with arachnodactyly and abdominal hernias'], 'uid': u'182212'}

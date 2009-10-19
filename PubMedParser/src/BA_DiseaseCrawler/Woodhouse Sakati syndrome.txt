@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypogonadism', u' diabetes mellitus', u' alopecia', u' mental retardation', u' and electrocardiographic abnormalities'], 'uid': u'241080'}

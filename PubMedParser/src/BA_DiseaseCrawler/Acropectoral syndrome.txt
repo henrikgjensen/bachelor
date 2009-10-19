@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ACRPS', u'Syndactyly', u' preaxial polydactyly', u' and sternal deformity', u'ACRP syndrome'], 'uid': u'605967'}

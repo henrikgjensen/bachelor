@@ -1,0 +1,1 @@
+{'terms': u'%22acitretin%22%5bmesh%5d+and+(%22pregnancy%22%5bmesh+terms%5d+or+pregnancy%5btext+word%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Acitretin embryofetopathy', u'Fetal acitretin syndrome'], 'uid': ''}

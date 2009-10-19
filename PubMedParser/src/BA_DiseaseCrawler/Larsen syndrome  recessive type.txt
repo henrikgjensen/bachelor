@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Multiple congenital dislocations associated with characteristic facial abnormality'], 'uid': u'245600'}

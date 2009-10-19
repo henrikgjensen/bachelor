@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EBS with mottled pigmentation', u'EBS-MP', u'Speckled hyperpigmentation', u' palmo-plantar punctate keratoses and childhood blistering'], 'uid': u'131960'}

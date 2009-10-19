@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hemosiderosis', u' pulmonary', u' with deficiency of gamma-a globulin', u'Alveolar hypoventilation syndrome', u'Pulmonary hemosiderosis'], 'uid': u'235500'}

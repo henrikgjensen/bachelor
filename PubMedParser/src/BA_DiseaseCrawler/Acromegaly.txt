@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Somatotroph adenoma', u'Growth hormone excess', u'Pituitary giant'], 'uid': u'102200'}

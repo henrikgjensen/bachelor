@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Growth-mental deficiency syndrome of Myhre'], 'uid': u'139210'}

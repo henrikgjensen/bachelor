@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MNK', u'Kinky hair disease', u'Steely hair disease', u'Menkes disease', u'MK', u'Menkea syndrome', u'Copper transport disease'], 'uid': u'309400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'KS', u'Kabuki make up syndrome', u'KMS', u'Niikawa-Kuroki syndrome', u'NKS'], 'uid': u'147920'}

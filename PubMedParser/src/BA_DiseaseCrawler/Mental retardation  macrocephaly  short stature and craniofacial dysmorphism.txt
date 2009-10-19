@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Fryns Dereymaeker Haegeman syndrome'], 'uid': u'3359686'}

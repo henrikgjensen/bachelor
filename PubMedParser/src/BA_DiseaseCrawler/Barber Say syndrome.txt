@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypertrichosis', u' atrophic skin', u' ectropion', u' and macrostomia'], 'uid': u'209885'}

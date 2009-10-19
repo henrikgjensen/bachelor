@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'1p36 deletion syndrome', u'Monosomy 1p36 syndrome'], 'uid': u'607872'}

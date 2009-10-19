@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Marfan like connective tissue disorder', u'MFS 2'], 'uid': u'154705'}

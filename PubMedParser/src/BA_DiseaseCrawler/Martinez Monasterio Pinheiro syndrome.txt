@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cleft lip&#47;palate oligodontia syndactyly hair alterations'], 'uid': u'119580'}

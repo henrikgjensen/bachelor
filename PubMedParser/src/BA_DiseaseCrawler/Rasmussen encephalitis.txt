@@ -1,0 +1,1 @@
+{'terms': u'rasmussen%5btitle%5dandencephalitis%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'RE'], 'uid': ''}

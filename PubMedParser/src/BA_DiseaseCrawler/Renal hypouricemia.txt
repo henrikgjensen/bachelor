@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dalmatian hypouricemia', u'Hypouricemia', u' renal'], 'uid': u'220150'}

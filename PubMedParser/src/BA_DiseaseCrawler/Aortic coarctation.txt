@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Coarctation of the aorta'], 'uid': u'120000'}

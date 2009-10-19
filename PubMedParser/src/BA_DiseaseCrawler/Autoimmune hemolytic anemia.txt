@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anemia', u' hemolytic', u' autoimmune', u'Acquired autoimmune hemolytic anemia', u'Idiopathic autoimmune hemolytic anemia', u'Familial auto-immune hemolytic anemia &#40;subtype&#41;', u'Immuno-hemolytic anemia'], 'uid': u'205700'}

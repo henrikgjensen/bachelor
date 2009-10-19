@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spastic paraplegia', u'  mental retardation and thin corpus callosum', u'Autosomal recessive hereditary spastic paraplegia', u' mental impairment', u' and thin corpus callosum'], 'uid': u'604360'}

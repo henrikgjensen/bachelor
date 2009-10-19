@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OASD', u'Ocular albinism with sensorineural deafness', u'Deafness and ocular albinism'], 'uid': u'300650'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kraepelin disease', u'Catatonia of Kraepelin'], 'uid': u'176600'}

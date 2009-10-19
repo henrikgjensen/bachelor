@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Urticaria', u' cold', u'Primary idiopathic cold urticaria', u'Urticaria idiopathic cold'], 'uid': ''}

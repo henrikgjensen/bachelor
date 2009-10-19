@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Small benign fibrovascular tumor of the dermal part of the hair disk', u'Hereditary multiple trichodiscomas'], 'uid': u'190340'}

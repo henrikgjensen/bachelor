@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Mixed tumor', u' Mullerian', u'Mixed Mullerian tumor'], 'uid': ''}

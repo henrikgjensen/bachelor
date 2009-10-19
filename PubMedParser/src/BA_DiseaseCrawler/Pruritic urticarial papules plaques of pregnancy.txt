@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Polymorphic eruption of pregnancy', u'PUPPP', u'Pruritic urticarial papules and plaques of pregnancy', u' familial &#40;subtype&#41;'], 'uid': u'178995'}

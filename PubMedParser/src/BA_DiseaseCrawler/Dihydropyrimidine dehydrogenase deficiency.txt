@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DPD', u'Dihydropyrimidinuria', u'5 alpha Fluorouracil toxicity', u'Familial pyrimidinemia', u'Hereditary thymine-uraciluria'], 'uid': u'274270'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Chromosomal mosaicism due to mitotic instability', u'Nondisjunction', u'MVA syndrome', u'Instability mitotic non disjunction syndrome'], 'uid': u'257300'}

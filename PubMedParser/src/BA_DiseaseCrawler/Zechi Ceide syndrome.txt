@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Occipital atretic cephalocele', u' unusual facies and large feet'], 'uid': u'612916'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cervical lymphocele with bowed long bones', u'Cumming syndrome', u'Campomelia', u' cervical lymphocele', u' polysplenia', u' and multicystic dysplastic kidneys'], 'uid': u'211890'}

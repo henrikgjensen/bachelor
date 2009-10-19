@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Fibula ulna duplication tibia radius absence', u'Sandrow syndrome', u'Mirror hands and feet with nasal defects', u'Tetramelic mirror-image polydactyly', u'Laurin Sandrow syndrome'], 'uid': u'135750'}

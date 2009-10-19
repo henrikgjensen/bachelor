@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Optic atrophy', u' deafness and peripheral neuropathy', u'Optic atrophy', u' hearing loss and peripheral neuropathy'], 'uid': u'165199'}

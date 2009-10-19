@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spinal arachnoiditis'], 'uid': u'182950'}

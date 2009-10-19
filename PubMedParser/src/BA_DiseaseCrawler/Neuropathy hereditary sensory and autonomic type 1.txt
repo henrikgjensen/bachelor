@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HSAN 1', u'Neuropathy hereditary sensory radicular', u' autosomal dominant', u'Hereditary sensory neuropathy type 1', u'HSN1'], 'uid': u'162400'}

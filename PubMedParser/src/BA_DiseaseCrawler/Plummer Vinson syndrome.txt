@@ -1,0 +1,1 @@
+{'terms': u'%22plummer-vinsonsyndrome%22%5bmesh%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Kelly&#39;s syndrome', u'Paterson-Kelly syndrome', u'Paterson-Brown-Kelly syndrome', u'Dysphagia sideropenica', u'Paterson&#8217;s syndrome'], 'uid': ''}

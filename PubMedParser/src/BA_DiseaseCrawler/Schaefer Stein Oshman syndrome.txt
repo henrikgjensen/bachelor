@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dominantly inherited craniodiaphyseal dysplasia', u'Craniodiaphyseal dysplasia', u' dominant'], 'uid': u'122860'}

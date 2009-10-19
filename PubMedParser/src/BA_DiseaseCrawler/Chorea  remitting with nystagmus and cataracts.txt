@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial remitting chorea', u' nystagmus and cataracts'], 'uid': u'601372'}

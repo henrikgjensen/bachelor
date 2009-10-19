@@ -1,0 +1,1 @@
+{'terms': u'%28anterior%5btitle/abstract%5dandspinal%5btitle/abstract%5dandartery%5btitle/abstract%5dandstroke%5btitle/abstract%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

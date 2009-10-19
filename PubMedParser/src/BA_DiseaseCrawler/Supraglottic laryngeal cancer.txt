@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Cancers of the supraglottic larynx region', u'Supraglottic laryngeal carcinoma'], 'uid': ''}

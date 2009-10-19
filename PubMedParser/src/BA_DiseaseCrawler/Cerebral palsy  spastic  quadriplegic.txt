@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Spastic quadriplegia cerebral palsy', u'Spastic tetraplegia cerebral palsy'], 'uid': ''}

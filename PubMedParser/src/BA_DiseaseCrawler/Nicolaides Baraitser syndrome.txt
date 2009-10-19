@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sparse hair and mental retardation'], 'uid': u'601358'}

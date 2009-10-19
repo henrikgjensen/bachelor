@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lissencephaly syndrome', u' Norman-Roberts type'], 'uid': u'257320'}

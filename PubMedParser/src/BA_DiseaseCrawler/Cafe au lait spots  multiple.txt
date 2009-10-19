@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Multiple cafe-au-lait spots'], 'uid': u'114030'}

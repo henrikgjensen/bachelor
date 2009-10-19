@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ESS', u'Primary ESS &#40;subtype&#41;', u'Secondary ESS &#40;subtype&#41;', u'Empty sella turcica'], 'uid': u'130720'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thrombocytopenia', u' cyclic'], 'uid': u'188020'}

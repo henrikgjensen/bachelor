@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Charcot-Marie-Tooth Disease', u' Type 4D', u'NMSL', u'Hereditary motor and sensory neuropathy', u' LOM type', u'HMSNL', u'CMT4D'], 'uid': u'601455'}

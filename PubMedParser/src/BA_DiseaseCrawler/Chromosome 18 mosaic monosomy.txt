@@ -1,0 +1,1 @@
+{'terms': u'%28%28monosomy%5btitle%5dand18%5btitle%5d%29andmosaicism%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Monosomy 18 mosaicism'], 'uid': ''}

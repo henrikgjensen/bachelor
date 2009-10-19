@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arthrogryposis multiplex congenita', u' distal', u' type ii', u' with craniofacial abnormalities', u'Moore Weaver syndrome'], 'uid': u'601680'}

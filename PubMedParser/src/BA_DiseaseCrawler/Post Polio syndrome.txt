@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Post-poliomyelitic syndrome', u'Postpoliomyelitis syndrome', u'Post-polio muscular atrophy', u'Post-polio sequelae', u'Polio late effects'], 'uid': ''}

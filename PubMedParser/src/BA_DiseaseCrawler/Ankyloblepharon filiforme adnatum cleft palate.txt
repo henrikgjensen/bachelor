@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital filiform fusion of the eyelids with cleft palate and&#47;or cleft lip', u'Ankyloblepharon filiforme adnatum', u'Ankyloblepharon filiforme congenitum'], 'uid': u'106250'}

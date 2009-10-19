@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Oral and digital anomalies with ichthyosis', u'Unusual facies', u' digital abnormalities', u' and ichthyosis'], 'uid': u'258840'}

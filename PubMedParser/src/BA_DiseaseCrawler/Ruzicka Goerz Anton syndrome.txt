@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Ichthyosis deafness mental retardation skeletal anomalies', u'Ichthyosis congenita', u' neurosensory deafness', u' oligophrenia', u' dental aplasia', u' brachydactyly', u' clinodactyly', u' accessory cervical ribs and thyroid carcinoma'], 'uid': u'7250456'}

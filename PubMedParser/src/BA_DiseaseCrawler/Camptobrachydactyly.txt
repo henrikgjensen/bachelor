@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short foot&#47;brachydactyly of toes', u' camptodactyly ', u' brachydactyly'], 'uid': u'114150'}

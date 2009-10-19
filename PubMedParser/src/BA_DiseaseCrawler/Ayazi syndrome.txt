@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Choroideremia deafness obesity', u'Choroideremia', u' obesity', u' and congenital deafness'], 'uid': u'303110'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'KMS', u'KAL 1', u'Kallmann syndrome 1', u'Dysplasia olfactogenitalis of De Morsier', u'Anosmic hypogonadism'], 'uid': u'308700'}

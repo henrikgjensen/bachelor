@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cataracts', u' retinitis pigmentosa', u' sensorineural hearing loss', u' ataxia', u' peripheral neuritis', u' epilepsy', u' dementia', u' skin atrophy', u' chronic ulceration', u' dental'], 'uid': u'136300'}

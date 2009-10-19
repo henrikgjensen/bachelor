@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Orotidylic pyrophosphorylase and orotidylic decarboxylase deficiency', u'UMPS deficiency', u'Uridine monophosphate synthase deficiency', u'UMP synthtase deficiency', u'Orotate phosphoribosyltransferase and omp decarboxylase deficiency', u'UMPS', u'Uridine monophosphate synthetase deficiency'], 'uid': u'258900'}

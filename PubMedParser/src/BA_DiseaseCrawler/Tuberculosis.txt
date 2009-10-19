@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TB', u'Kochs disease'], 'uid': u'607948'}

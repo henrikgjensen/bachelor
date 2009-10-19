@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Agammaglobulinemia', u' Bruton tyrosine kinase', u'Agammaglobulinemia', u' BTK', u'B cell progenitor kinase', u'Bruton-type &#40;congenital X-linked&#41; agammaglobulinemia'], 'uid': u'300300'}

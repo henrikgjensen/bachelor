@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cleft palate', u' ankyloblepharon', u' alveolar synechiae', u' and ectodermal defects'], 'uid': u'106260'}

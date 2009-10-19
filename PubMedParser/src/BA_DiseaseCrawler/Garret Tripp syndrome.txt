@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Mental retardation with postaxial polydactyly', u' congenital absence of hair', u' severe seborrhoeic dermatitis', u' and Perthes&#39; disease of the hip'], 'uid': u'2966861'}

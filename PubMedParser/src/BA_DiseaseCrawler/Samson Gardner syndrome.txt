@@ -1,0 +1,1 @@
+{'terms': u'samson%5ballfields%5dandgardner%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Craniosynostosis', u' microcephaly', u' hydrancephaly', u' humero-radial synostosis', u' and thumb aplasia'], 'uid': ''}

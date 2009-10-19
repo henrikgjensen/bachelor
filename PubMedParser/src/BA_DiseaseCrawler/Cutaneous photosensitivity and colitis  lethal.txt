@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Early cutaneous photosensitivity and severe colitis'], 'uid': u'219095'}

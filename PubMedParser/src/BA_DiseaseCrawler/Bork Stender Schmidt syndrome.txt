@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bork syndrome', u'Uncombable hair', u' retinal pigmentary dystrophy', u' dental anomalies', u' and brachydactyly'], 'uid': u'191482'}

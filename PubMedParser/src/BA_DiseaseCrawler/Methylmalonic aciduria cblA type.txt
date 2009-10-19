@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Methylmalonic aciduria', u' vitamin b12-responsive', u' due to defect in synthesis of adenosylcobalamin', u' cbla complementation type', u'MMA cbl A type', u'Methylmalonic acidemia cblA type'], 'uid': u'251100'}

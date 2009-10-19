@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial proportionate short stature', u' intrauterine growth retardation', u' and recurrent locking of the fingers', u'Recurrent finger locking with intrsuterine growth retardation and proportionate short stature'], 'uid': u'135950'}

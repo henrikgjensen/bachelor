@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OEIS complex', u'Omphalocele', u' exstrophy of the cloaca', u' imperforate anus', u' and spinal defects'], 'uid': u'258040'}

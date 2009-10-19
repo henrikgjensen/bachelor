@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mullerian duct aplasia', u' unilateral renal agenesis', u' and cervicothoracic somite anomalies', u'Klippel-feil deformity', u' conductive deafness', u' and absent vagina'], 'uid': u'223340'}

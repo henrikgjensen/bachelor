@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'3-hydroxylacyl-CoA dehydrogenase deficiency', u'Medium and short chain 3-hydroxyacyl-CoA dehydrogenase deficiency', u'M&#47;SCHAD', u'HADH deficiency'], 'uid': u'231530'}

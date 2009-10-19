@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cleft palate-omphalocele syndrome', u' lethal', u'Lethal omphalocele-cleft palate syndrome'], 'uid': u'258320'}

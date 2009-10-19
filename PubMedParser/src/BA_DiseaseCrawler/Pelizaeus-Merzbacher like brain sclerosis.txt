@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebral sclerosis similar to Pelizaeus-Merzbacher disease'], 'uid': u'213900'}

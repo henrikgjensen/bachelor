@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Triphalangeal thumb and brachyectrodactyly syndrome', u'Triphalangeal thumb and brachy-ectrodactyly syndrome'], 'uid': u'190680'}

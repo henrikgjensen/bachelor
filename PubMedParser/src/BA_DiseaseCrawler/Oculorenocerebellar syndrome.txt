@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ORC syndrome', u'Absence of the cerebellar granular layer', u' mental retardation', u' tapetoretinal degeneration and progressive glomerulopathy'], 'uid': u'257970'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Absence of all four limbs with ectodermal dysplasia and lacrimal duct abnormalities'], 'uid': u'273390'}

@@ -1,0 +1,1 @@
+{'terms': u'astley%5ballfields%5dandkendall%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Short limbed dwarfism with extensive stippling', u'Astley-Kendall dysplasia'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT1', u'Early onset torsion dystonia', u'EOTD', u'Dystonia musculorum deformans 1', u'Early-onset primary dystonia', u'Oppenheim&#39;s dystonia', u'Idiopathic dystonia DYT1', u'Idiopathic torsion dystonia', u'Dystonia 1', u' torsion', u' autosomal dominant'], 'uid': u'128100'}

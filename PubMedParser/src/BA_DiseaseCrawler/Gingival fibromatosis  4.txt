@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GINGF4', u'GGF4', u'HGF4', u'Hereditary gingival fibromatosis', u' 4', u'Fibromatosis gingival', u' hereditary', u' 4'], 'uid': u'611010'}

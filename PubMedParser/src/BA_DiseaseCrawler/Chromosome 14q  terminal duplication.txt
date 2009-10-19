@@ -1,0 +1,1 @@
+{'terms': u'%28%28%22trisomy%22%5bmeshterms%5dortrisomy%5btextword%5d%29and14qter%5ballfields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy 14qter', u'Duplication 14qter'], 'uid': ''}

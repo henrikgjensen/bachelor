@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'IBM 2', u'Inclusion body myopathy autosomal recessive', u'Inclusion body myopathy quadriceps sparing', u'QSM'], 'uid': u'600737'}

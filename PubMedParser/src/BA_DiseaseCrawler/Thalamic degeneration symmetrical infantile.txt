@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Symmetrical infantile thalamic degeneration'], 'uid': u'273490'}

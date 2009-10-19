@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Erythema multiforme major', u'SJS'], 'uid': u'608579'}

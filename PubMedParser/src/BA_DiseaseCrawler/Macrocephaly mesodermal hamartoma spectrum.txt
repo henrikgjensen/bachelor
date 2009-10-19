@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gigantism', u' partial', u' of hands and feet', u' nevi', u' hemihypertrophy', u' and macrocephaly', u'Elattoproteus syndrome'], 'uid': u'176920'}

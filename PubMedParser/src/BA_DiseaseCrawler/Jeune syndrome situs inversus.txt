@@ -1,0 +1,1 @@
+{'terms': u'%28%28jeune%5ballfields%5dand%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29%29and%28%22situsinversus%22%5bmeshterms%5dorsitusinversus%5btextword%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

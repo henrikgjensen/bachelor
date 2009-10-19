@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mainzer-Saldino Disease', u'Saldino-Mainzer disease', u'Renal dysplasia', u' retinal pigmentary dystrophy', u' cerebellar ataxia', u' and skeletal dysplasia'], 'uid': u'266920'}

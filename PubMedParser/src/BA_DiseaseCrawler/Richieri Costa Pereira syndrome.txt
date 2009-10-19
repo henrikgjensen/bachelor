@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Robin sequence with cleft mandible and limb anomalies', u'Richieri-Costa and Pereira form of acrofacial dysostosis', u'Short stature', u' Robin sequence', u' cleft mandible', u' pre&#47;postaxial hand anomalies', u' and clubfoot'], 'uid': u'268305'}

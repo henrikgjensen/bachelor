@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EPM1', u'PME', u'Epilepsy', u' progressive myoclonus 1', u'Progressive myoclonus epilepsybaltic myoclonic epilepsy', u'Myoclonic epilepsy of Unverricht and Lundborg', u'Epilepsy', u' progressive myoclonic type 1'], 'uid': u'254800'}

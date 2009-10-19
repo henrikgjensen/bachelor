@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DFNA3', u'Neurosensory nonsyndromic dominant deafness 1', u'NSRD1'], 'uid': u'601544'}

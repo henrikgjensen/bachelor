@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Incomplete lissencephaly', u'Focal agyria pachygyria'], 'uid': u'607432'}

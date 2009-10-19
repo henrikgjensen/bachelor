@@ -1,0 +1,1 @@
+{'terms': u'asbestosis%5btitle%5dandhasabstract%5btext%5dand%28%22human%22%5bmeshterms%5dor%22hominidae%22%5bmeshterms%5d%29and%221999/10/0811.39%22%5bedat%5d%3a%222004/10/0611.39%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Pulmonary fibrosis - from asbestos exposure', u'Idiopathic interstitial pneumonitis - from asbestos exposure'], 'uid': ''}

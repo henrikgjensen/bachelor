@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT18', u'Paroxysmal exertion-induced dyskinesia', u'PED', u'Paroxysmal exercise-induced dystonia'], 'uid': u'612126'}

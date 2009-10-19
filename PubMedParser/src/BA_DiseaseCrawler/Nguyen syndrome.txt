@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MCA&#47;MR syndrome with hypocholesterolemia due to familial hypobetalipoproteinemia'], 'uid': u'609643'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ohdo  Blepharophimosis syndrome', u'Mental retardation', u' congenital heart disease', u' blepharophimosis', u' blepharoptosis and hypoplastic teeth', u'Ohdo Madokoro Sonoda syndrome'], 'uid': u'249620'}

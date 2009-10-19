@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Jaffe Campanacci syndrome', u'Disseminated nonossifying fibromas in association with cafe-au-lait spots'], 'uid': ''}

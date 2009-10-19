@@ -1,0 +1,1 @@
+{'terms': u'(dejerine%5btitle%5d+and+roussy%5btitle%5d+and+syndrome%5btitle%5d)+and+hasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Dejerine Roussy syndrome'], 'uid': ''}

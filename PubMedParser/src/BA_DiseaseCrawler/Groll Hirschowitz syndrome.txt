@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Nerve type deafness with mesenteric diverticula of small bowel and progressive sensory neuropathy'], 'uid': u'221400'}

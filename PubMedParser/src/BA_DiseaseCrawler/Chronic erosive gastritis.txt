@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Idiopathic chronic', u' erosive gastritis', u'Varioliform gastritis'], 'uid': ''}

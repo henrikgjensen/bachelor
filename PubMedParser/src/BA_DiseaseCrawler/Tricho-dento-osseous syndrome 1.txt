@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TDO syndrome 1', u'Kinky or curly hair', u' dolichocephaly', u' enamel hypoplasia', u' increased dental caries', u' radial dense bones', u' and brittle nails'], 'uid': u'190320'}

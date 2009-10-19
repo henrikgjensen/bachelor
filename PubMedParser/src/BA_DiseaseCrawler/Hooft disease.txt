@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Retarded physical development', u' erythematosquamous eruption', u' opaque leukonychia', u' mental retardation', u' and low serum lipids'], 'uid': u'236300'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Renal and anogenital malformations with syndactyly', u'Anal anomalies', u' renal tract abnormalities', u' genital malformations', u' and syndactyly'], 'uid': u'601446'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OI', u' type 2A', u'OI2A', u'Osteogenesis imperfecta congenita', u' perinatal lethal form', u'Osteogenesis imperfecta congenita', u'Vrolik type of osteogenesis imperfecta'], 'uid': u'166210'}

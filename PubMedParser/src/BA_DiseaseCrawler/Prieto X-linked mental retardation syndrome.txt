@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'X-linked dysmorphic syndrome with mental retardation', u'Mental retardation', u' X-linked with dysmorphism and cerebral atrophy', u'PRS', u'MRXS2', u'Mental retardation', u' X-linked', u' syndromic 2', u'Prieto syndrome'], 'uid': u'309610'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TDO syndrome', u'Enamel hypoplasia and hypocalcification with associated strikingly curly hair'], 'uid': u'190320'}

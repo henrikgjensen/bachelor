@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neuropathy', u' congenital sensory', u' with anhidrosis', u'CIPA', u'Hereditary sensory and autonomic neuropathy 4', u'HSAN 4', u'Familial dysautonomia', u' type 2'], 'uid': u'256800'}

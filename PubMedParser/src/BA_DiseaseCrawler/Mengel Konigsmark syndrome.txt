@@ -1,0 +1,1 @@
+{'terms': u'mengel%5ballfields%5dandkonigsmark%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Ear deformity and conductive hearing loss', u'Familial congenital moderate neural hearing loss', u'Conductive hearing loss and malformed low-set ears'], 'uid': ''}

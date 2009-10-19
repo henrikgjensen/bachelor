@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Blepharo-cheilo-dontic syndrome', u'Blepharocheilodontic syndrome', u'BCD syndrome', u'Elschnig syndrome', u'Clefting', u' ectropion', u' and conical teeth', u'Lagophthalmia with bilateral cleft lip and palate'], 'uid': u'119580'}

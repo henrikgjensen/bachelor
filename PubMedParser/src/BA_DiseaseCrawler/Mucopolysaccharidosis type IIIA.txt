@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mucopoly-saccharidosis type 3A', u'Sanfilippo syndrome A', u'Heparan sulfate sulfatase deficiency', u'MPS IIIA', u'MPS 3A'], 'uid': u'252900'}

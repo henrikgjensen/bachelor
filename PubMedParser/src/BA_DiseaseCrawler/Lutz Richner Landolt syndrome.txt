@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Biliary malformation with renal tubular insufficiency', u'Cholestatic jaundice and renal tubular insufficiency', u'Renal tubular insufficiency', u' cholestatic jaundice', u' and multiple congenital anomalies'], 'uid': u'210550'}

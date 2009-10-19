@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deafness', u' cataract', u' muscular atrophy', u' skeletal abnormalities', u' growth retardation', u' underdeveloped secondary sexual characteristics'], 'uid': u'255990'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Septooptic dysplasia', u'De morsier syndrome', u'Septo-optic dysplasia with growth hormone deficiency', u'Hypopituitarism and septooptic &#39;dysplasia&#39;'], 'uid': u'182230'}

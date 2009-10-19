@@ -1,0 +1,1 @@
+{'terms': u'%28auriculo%5ballfields%5dandosteodysplasia%5ballfields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Multiple osseous dysplasia', u' characteristic ear shape', u' and short stature', u'Auriculo-osteodysplasia'], 'uid': ''}

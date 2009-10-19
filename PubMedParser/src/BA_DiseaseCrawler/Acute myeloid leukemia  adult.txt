@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AML adult', u'Adult acute myeloid leukemia', u'Leukemia acute myelogenous', u'Acute myelogenous leukemia', u'Acute non-lymphocytic leukemia', u'Acute granulocytic leukemia'], 'uid': u'601626'}

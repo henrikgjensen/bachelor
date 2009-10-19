@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Muscle phosphofructokinase deficiency', u'Tarui disease', u'GSD7', u'PFKM deficiency'], 'uid': u'232800'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Short umbilical cord syndrome', u'Umbilical cord', u' short', u'Body stalk anomaly', u'Aplasia of the cord', u'Cyllosomas'], 'uid': ''}

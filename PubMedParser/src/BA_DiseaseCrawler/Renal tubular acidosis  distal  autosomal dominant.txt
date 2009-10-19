@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal dominant distal renal tubular acidosis', u'RTA', u' classic type', u'RTA', u' gradient type', u'Renal tubular acidosis 1', u'RTA', u' distal type', u' autosomal dominant'], 'uid': u'179800'}

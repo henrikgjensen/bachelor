@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Agammaglobulinemia due to early proB cell defect', u'Agammaglobulinemia', u' autosomal recessive'], 'uid': u'601495'}

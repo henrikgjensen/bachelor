@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ichthyosis', u'KFSD', u'Keratosis follicularis spinulosa decalvans cum ophiasi'], 'uid': u'308800'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital koilonychia', u'Familial koilonychia'], 'uid': u'149300'}

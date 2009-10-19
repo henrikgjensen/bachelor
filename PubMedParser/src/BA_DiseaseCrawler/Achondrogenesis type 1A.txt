@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ACG1A', u'Achondrogenesis', u' Houston-Harris type', u'Houston-Harris achondrogenesis'], 'uid': u'200600'}

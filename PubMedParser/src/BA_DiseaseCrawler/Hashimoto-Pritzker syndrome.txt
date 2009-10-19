@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28hashimoto%5ballfields%5dandpritzker%5ballfields%5d%29and%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29%29andhasabstract%5btext%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Hashimoto-Pritzker histiocytosis', u'Hashimoto-Pritzker disease'], 'uid': ''}

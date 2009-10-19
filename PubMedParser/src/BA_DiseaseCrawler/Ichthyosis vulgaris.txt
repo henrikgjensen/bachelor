@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ichthyosis simplex'], 'uid': u'146700'}

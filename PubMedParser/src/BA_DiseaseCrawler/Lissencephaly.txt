@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lissencephaly', u' X-linked', u'Lissencephaly and agenesis of corpus callosum', u'LISX', u'XLIS', u'Subcortical laminar heterotopia', u' X-linked', u''], 'uid': u'300067'}

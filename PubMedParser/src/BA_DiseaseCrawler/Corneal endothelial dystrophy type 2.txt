@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CHED2', u'Corneal dystrophy', u' congenital hereditary endothelial', u'Congenital hereditary endothelial dystrophy of the cornea', u'Maumenee corneal dystrophy'], 'uid': u'217700'}

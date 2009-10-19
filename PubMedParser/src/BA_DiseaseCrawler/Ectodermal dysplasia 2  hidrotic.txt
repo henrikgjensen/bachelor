@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ED2', u'Ectodermal dysplasia', u' hidrotic', u'HED', u'Autosomal dominant hidrotic ectodermal dysplasia', u'Hidrotic ectodermal dysplasia', u' autosomal dominant', u'Clouston syndrome', u'Clouston&#39;s hidrotic ectodermal dysplasia'], 'uid': u'129500'}

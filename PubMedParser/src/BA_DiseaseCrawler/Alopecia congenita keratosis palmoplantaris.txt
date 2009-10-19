@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alopecia congenita with hyperkeratosis of the palms and soles'], 'uid': u'104100'}

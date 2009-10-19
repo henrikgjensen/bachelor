@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Skin anthrax', u'Anthrax', u' skin type'], 'uid': ''}

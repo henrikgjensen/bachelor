@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Scaly or thickened patch on the skin that may turn into squamous cell skin cancer'], 'uid': ''}

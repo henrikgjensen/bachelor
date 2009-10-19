@@ -1,0 +1,1 @@
+{'terms': u'verner-morrison%5btitle%5dandsyndrome%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Watery diarrhea', u' hypokalemia', u' and achlorhydria syndrome', u'Verner-Morrison syndrome', u'Pancreatic cholera'], 'uid': ''}

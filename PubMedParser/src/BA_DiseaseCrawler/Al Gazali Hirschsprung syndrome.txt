@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hirschsprung&#39;s disease', u' hypoplastic nails', u' and dysmorphic facial features'], 'uid': u'235760'}

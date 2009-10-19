@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Currarino syndrome', u'Partial sacral agenesis with intact first sacral vertebra', u' presacral mass and anorectal malformation'], 'uid': u'176450'}

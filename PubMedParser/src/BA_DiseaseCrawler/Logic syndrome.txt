@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Laryngeal and ocular granulation in indian children', u'Laryngo onycho cutaneous syndrome'], 'uid': u'245660'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lysosomal alpha-D-mannosidase deficiency', u'Alpha mannosidase B deficiency', u'Mannosidosis', u' alpha B lysosomal'], 'uid': u'248500'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CTPP4', u'CPP4', u'Posterior polar cataract', u' 4'], 'uid': u'610623'}

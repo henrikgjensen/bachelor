@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'A syndrome of abnormal facies', u' short stature', u' and psychomotor retardation'], 'uid': u'605130'}

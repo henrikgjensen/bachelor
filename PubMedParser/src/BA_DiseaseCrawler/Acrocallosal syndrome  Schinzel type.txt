@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Schinzel syndrome 1', u'Acrocallosal syndrome', u'ACS', u'Schinzel acrocallosal syndrome', u'Absence of corpus callosum with unusual facial appearance', u' mental deficiency', u' duplication of the halluces and polydactyly', u'ACLS'], 'uid': u'200990'}

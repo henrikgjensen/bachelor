@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Profound limb deficiency', u' thoracic dystrophy', u' unusual facies', u' and normal intelligence', u'Al Awadi Teebi Farag syndrome'], 'uid': u'276820'}

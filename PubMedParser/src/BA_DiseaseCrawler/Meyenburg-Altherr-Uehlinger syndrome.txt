@@ -1,0 +1,1 @@
+{'terms': u'%28meyenburg-altherr-uehlinger%5ballfields%5dand%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Atrophic polychondritis', u' cartilagenous arthritic deafness syndrome', u'Ashkenazi syndrome', u'Jaksch&#8217; syndrome', u'Jaksch Wartenhorst&#39;s syndrome', u'Von Jaksch Wartenhorst&#39;s syndrome'], 'uid': ''}

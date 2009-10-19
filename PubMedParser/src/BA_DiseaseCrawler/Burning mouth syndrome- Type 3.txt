@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Type 3 burning mouth syndrome', u'Psychiatric disorders coexisting with burning mouth syndrome', u'BMS-3'], 'uid': u'8046659'}

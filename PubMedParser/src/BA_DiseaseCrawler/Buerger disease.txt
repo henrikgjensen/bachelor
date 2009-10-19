@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Buerger&#39;s disease', u'Thromboangiitis obliterans', u'TAO', u'Inflammatory occlusive peripheral vascular disease', u'Occlusive peripheral vascular disease'], 'uid': u'211480'}

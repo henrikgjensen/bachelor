@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Uehlinger&#39;s syndrome', u'Roy-Jutras syndrome', u'Audry&#8217;s syndrome 1', u'Friedreich-Erb-Arnold syndrome'], 'uid': ''}

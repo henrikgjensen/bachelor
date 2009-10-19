@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acro-dermato-ungual-lacrimal-tooth syndrome', u'Pigment anomaly ectrodactyly hypodontia', u'Propping Zerres syndrome'], 'uid': u'103285'}

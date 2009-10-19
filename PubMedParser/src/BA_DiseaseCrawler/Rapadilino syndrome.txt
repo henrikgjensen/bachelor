@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Radial and patellar aplasia', u'Radial and patellar hypoplasia', u'Absent thumbs', u' dislocated joints', u' long face with narrow palpebral fissures', u' long slender nose', u' arched palate'], 'uid': u'266280'}

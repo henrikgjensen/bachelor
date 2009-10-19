@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BFIC1', u'BFIC', u'BFIS1', u'Seizures', u' benign familial infantile', u' 1', u'Benign infantile familial convulsions', u'Benign familial infantile convulsions syndrome'], 'uid': u'601764'}

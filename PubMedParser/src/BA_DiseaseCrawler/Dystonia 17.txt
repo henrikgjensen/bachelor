@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT17', u'Dystonia 17', u' torsion', u' autosomal recessive'], 'uid': u'612406'}

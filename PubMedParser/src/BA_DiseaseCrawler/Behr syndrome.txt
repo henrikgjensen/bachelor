@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Optic atrophy', u' infantile hereditary', u' Behr complicated form of', u'Optic atrophy in early childhood', u' associated with ataxia', u' spasticity', u' mental retardation', u' and posterior column sensory loss'], 'uid': u'210000'}

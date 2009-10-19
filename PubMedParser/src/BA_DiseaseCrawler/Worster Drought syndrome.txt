@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Suprabulbar paresis congenital', u'Congenital suprabulbar paresis'], 'uid': u'185480'}

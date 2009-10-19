@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Agammaglobulinemia and isolated growth hormone deficiency', u' X-linked', u'Fleisher syndrome', u'Isolated growth hormone deficiency', u' type 3', u'Nanism due to growth hormone isolated deficiency with X-linked hypogammaglobulinemia'], 'uid': u'307200'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Type 3 Von Willebrand&#39;s disease', u'Type 3 VWD', u'Von Willebrand disease', u' severe form', u'V WD3'], 'uid': u'277480'}

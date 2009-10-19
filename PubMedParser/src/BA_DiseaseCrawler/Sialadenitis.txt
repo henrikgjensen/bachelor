@@ -1,0 +1,1 @@
+{'terms': u'sialadenitis%5btitle%5dandhasabstract%5btext%5dand%22humans%22%5bmeshterms%5dand%222004/03/0317.23%22%5bedat%5d%3a%222006/03/0317.23%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Sialoadenitis', u'Adenitis', u' salivary gland', u'Salivary gland inflammation'], 'uid': ''}

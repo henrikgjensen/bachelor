@@ -1,0 +1,1 @@
+{'terms': u'(%22congenital%22%5bsubheading%5d+or+congenital%5btext+word%5d)+and+clasped+thumbs%5bti%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Adducted thumbs syndrome'], 'uid': ''}

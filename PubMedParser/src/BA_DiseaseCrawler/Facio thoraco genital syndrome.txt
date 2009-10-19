@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital anomalies', u' involving mainly the face', u' thorax', u' and genitalia'], 'uid': u'227320'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachydactyly type E with short stature and hypertension', u'HTNB', u'Bilginturan syndrome'], 'uid': u'112410'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Glastre Cochat Bouvier syndrome', u'Familial infantile nephrotic syndrome with ocular abnormalities'], 'uid': u'609049'}

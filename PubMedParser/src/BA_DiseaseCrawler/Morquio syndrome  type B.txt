@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mucopoly-saccharidosis 4B', u'Beta galactosidase deficiency', u'Morquio&#39;s disease type B', u'MPS IVB', u'MPS4B', u'Morquio syndrome B', u'Morquio B syndrome', u'Morquio-B disease'], 'uid': u'253010'}

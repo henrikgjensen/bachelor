@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Amenorrhea-galactorrhea', u' nonpuerperal', u'Galactorrhea-amenorrhea syndrome', u'Nonpuerperal galactorrhea'], 'uid': u'104600'}

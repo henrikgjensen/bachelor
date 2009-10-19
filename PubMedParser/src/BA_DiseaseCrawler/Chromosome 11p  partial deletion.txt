@@ -1,0 +1,1 @@
+{'terms': u'%28deletion%5btitle%5dand11p%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Monosomy 11 p11 p12', u'Deletion 11p 11p12', u'Deletion 11p13', u'Partial deletion 11p'], 'uid': ''}

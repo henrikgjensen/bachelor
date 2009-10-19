@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bird-headed dwarfism with features of premature senility', u'Premature senility', u' premature graying and loss of scalp hair', u' wrinkled skin of the palms'], 'uid': u'210700'}

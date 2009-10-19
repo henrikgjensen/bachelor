@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'&#40;19&#41;r syndrome', u'R&#40;19&#41; syndrome', u'Ring chromosome 19 syndrome'], 'uid': ''}

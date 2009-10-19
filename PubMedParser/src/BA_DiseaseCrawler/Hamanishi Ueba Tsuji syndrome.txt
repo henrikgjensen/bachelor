@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital aplasia of the extensor muscles of the fingers and thumb associated with generalized polyneuropathy'], 'uid': u'207740'}

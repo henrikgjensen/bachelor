@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Polydactyly with absent tibia'], 'uid': u'188740'}

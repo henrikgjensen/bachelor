@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Malignant tumors of the central nervous system associated with familial polyposis of the colon', u'CNS tumors with Familial polyposis of the colon'], 'uid': u'276300'}

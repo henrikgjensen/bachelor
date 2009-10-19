@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cataract congenital  X-linked'], 'uid': u'302300'}

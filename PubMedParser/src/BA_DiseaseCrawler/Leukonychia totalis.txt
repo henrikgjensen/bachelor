@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary white nails', u'Porcelain nails'], 'uid': u'151600'}

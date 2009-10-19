@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dandy Walker malformation', u'Dandy Walker cyst', u'DWS', u'DWM'], 'uid': u'220200'}

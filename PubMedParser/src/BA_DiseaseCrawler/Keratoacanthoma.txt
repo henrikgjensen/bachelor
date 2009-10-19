@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Muir-Torre syndrome', u'Cutaneous sebaceous neoplasms and keratoacanthomas', u' multiple', u' with gastrointestinal and other carcinomas'], 'uid': u'158320'}

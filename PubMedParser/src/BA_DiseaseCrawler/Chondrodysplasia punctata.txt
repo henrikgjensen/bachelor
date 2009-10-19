@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Rhizomelic chondrodysplasia punctata', u' type 1', u'RCDP1', u'Chondrodysplasia punctata', u' rhizomelic form', u'Chondrodystrophia calcificans punctata', u'CDPR'], 'uid': u'215100'}

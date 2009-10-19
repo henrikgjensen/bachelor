@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dermatosparaxis', u'Ehlers-Danlos syndrome type 7C &#40;formerly&#41;'], 'uid': u'225410'}

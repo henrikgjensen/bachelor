@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Benign pseudohypertrophic muscular dystrophy', u'Becker&#39;s muscular dystrophy', u'Muscular dystrophy', u' Becker type', u'Muscular dystrophy pseudohypertrophic progressive', u' Becker type'], 'uid': u'300376'}

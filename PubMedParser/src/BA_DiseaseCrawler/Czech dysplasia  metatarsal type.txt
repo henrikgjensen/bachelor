@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pseudorheumatoid dysplasia', u' progressive', u' with hypoplastic toes'], 'uid': u'609162'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DRPLA', u'Myoclonic epilepsy with choreoathetosis', u'Naito Oyanagi disease', u'NOD', u'Haw River syndrome', u'HRS', u'Ataxia', u' chorea', u' seizures', u' and dementia'], 'uid': u'125370'}

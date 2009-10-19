@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epiphyseal dysplasia', u' multiple', u' with early-onset diabetes mellitus', u'MED-IDDM syndrome', u'IDDM-MED syndrome'], 'uid': u'226980'}

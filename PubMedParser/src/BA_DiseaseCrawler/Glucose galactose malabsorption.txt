@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Glucose galactose malabsorption deficiency', u'Carbohydrate intolerance of glucose galactose', u'Complex carbohydrate intolerance', u'Monosaccharide malabsorption', u'GGM'], 'uid': u'606824'}

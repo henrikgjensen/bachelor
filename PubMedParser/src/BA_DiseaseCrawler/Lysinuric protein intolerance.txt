@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LPI', u'Dibasicamino aciduria II'], 'uid': u'222700'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gluteal muscle', u' absence of', u'Congenital absence of gluteal muscles'], 'uid': u'231970'}

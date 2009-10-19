@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AKU', u'Alcaptonuria'], 'uid': u'203500'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hirschsprung disease with ulnar polydactyly', u' polysyndactyly of big toes', u' and ventricular septal defect'], 'uid': u'235750'}

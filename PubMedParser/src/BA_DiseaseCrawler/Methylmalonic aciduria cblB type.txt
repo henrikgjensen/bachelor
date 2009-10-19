@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Methylmalonic acidemia cblB type'], 'uid': u'251110'}

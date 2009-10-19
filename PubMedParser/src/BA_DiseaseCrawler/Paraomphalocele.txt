@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Type - Epigastric - defect in the cephalic fold', u'Type - Hypogastric - defect in the caudal fold'], 'uid': u'164750'}

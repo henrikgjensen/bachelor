@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Toluene embryopathy', u'Microcephaly', u' central nervous system dysfunction', u' minor craniofacial and limb anomalies', u' and variable growth deficiency'], 'uid': u'4039753'}

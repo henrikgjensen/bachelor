@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital absence of skin on the upper or lower limbs', u'Recessive aplasia cutis congenita of the limbs'], 'uid': u'600360'}

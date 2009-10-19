@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ectodermal dysplasia 1', u' anhidrotic', u'EDA1', u'EDA', u'ED1', u'Christ-Siemans-Touraine syndrome', u'CST syndrome'], 'uid': u'305100'}

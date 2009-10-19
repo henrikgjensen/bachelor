@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDLS2', u'Cornelia de Lange syndrome', u' X-linked', u'CdLS', u' X-linked'], 'uid': u'300590'}

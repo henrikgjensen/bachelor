@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Deficiency of the interleukin-1 receptor antagonist'], 'uid': ''}

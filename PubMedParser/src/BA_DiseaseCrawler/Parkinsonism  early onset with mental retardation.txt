@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'X-linked recessive basal ganglia disorder with mental retardation', u'Laxova Brown Hogan syndrome', u'Waisman syndrome', u'WSN', u'Basal ganglia disorder with mental retardation', u'BGMR'], 'uid': u'311510'}

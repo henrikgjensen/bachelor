@@ -1,0 +1,1 @@
+{'terms': u'%28amyopathic%5ballfields%5dand%28%22dermatomyositis%22%5bmeshterms%5dordermatomyositis%5btextword%5d%29%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Adm'], 'uid': ''}

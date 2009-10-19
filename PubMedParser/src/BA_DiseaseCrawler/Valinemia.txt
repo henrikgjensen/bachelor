@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Valine transaminase deficiency', u'Hypervalinemia'], 'uid': u'277100'}

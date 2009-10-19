@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arthromyodysplasia', u' dyscephaly', u' sacral agenesis', u' and hypoplastic digits', u'Cerebroarthrodigital syndrome'], 'uid': u'256520'}

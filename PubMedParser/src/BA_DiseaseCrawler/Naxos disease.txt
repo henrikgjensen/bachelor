@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mal de Naxos', u'Keratosis palmoplantaris with arrhythmogenic cardiomyopathy', u'Woolly hair', u' palmoplantar keratoderma', u' and cardiac abnormalities', u'Palmoplantar keratoderma with arrhythmogenic right ventricular cardiomyopathy and woolly hair'], 'uid': u'601214'}

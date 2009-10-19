@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Microcephaly', u' short stature', u' brachydactyly type D', u' flattened occiput', u' low-set large ears', u' prominent nose', u' kyphoscoliosis and mental retardation'], 'uid': u'1884519'}

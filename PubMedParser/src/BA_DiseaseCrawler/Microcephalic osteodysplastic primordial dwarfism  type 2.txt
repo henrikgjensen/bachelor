@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MOPD 2', u'MOPD2', u'Osteodysplastic primordial dwarfism', u' type 2'], 'uid': u'210720'}

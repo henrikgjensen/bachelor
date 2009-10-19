@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kaposi&#39;s sarcoma', u'Mediterranean Kaposi sarcoma', u'Non AIDS related Kaposi sarcoma', u'Human herpesvirus 8', u'HHV8', u'Kaposi sarcoma herpesvirus', u'KSHV'], 'uid': u'148000'}

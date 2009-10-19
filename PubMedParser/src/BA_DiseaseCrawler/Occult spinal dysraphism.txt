@@ -1,0 +1,1 @@
+{'terms': u'occult%5btitle%5dandspinal%5btitle%5danddysraphism%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Occult spinal dysraphism sequence', u'Tethered spinal cord syndrome'], 'uid': ''}

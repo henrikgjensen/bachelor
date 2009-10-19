@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Bowed tibiae', u' radial anomalies', u' osteopenia', u' multiple fractures and developmental delay'], 'uid': u'7506966'}

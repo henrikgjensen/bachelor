@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Transposition of the great arteries', u' congenitally corrected', u'Transposition of the great vessels', u' congenitally corrected', u'Congenitally corrected transposition of the great vessels'], 'uid': u'217095'}

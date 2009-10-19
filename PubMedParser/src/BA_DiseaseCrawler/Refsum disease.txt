@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Disorder of cornification 11 &#40;phytanic acid type&#41;', u'Herditary sensory and motor neuropathy type 4', u'HMSN 4', u'Heredopathia atactica polyneuritiformis', u'Doc 11 &#40;phytanic acid type&#41;', u'Hypertrophic neuropathy of Refsum', u'Phytanic acid oxidase deficiency'], 'uid': u'266500'}

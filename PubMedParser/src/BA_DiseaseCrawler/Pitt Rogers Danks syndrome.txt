@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PRDS', u'Mental retardation', u' unusual facies', u' and intrauterine growth retardation', u'Pitt syndrome'], 'uid': u'262350'}

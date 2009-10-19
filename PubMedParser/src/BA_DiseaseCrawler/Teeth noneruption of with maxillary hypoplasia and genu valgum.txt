@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Multiple none-erupting teeth', u' maxillo-zygomatical hypoplasia and other congenital defects'], 'uid': u'273050'}

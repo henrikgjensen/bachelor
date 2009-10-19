@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Asymmetry in the pigmentation of the irides', u'Pigmentary abnormality of the anterior segment of the eye'], 'uid': u'142500'}

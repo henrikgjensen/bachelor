@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Thrombocytopenia multiple congenital anomaly'], 'uid': u'6834197'}

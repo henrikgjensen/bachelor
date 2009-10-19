@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Caudal appendage', u' short terminal phalanges', u' deafness', u' cryptorchidism and mental retardation'], 'uid': u'7894739'}

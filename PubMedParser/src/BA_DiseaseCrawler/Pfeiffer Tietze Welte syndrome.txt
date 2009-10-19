@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Sagittal craniostenosis', u' bilateral coloboma of the iris', u' craniofacial dysmorphy', u' asymmetrical split hand malformation', u' bilateral syndactyly of 2nd-4th'], 'uid': u'3034618'}

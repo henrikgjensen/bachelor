@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcephaly with spastic diplegia'], 'uid': u'311400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Isovaleric acid CoA dehydrogenase deficiency', u'Isovaleric acidemia', u'IVA', u'Isovaleryl CoA carboxylase deficiency', u'IVD deficiency'], 'uid': u'243500'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperammonemia due to carbamoyl phosphate synthetase 1 deficiency', u'CPS 1 deficiency', u'Carbamyl Phosphate Synthetase &#40;CPS&#41; Deficiency'], 'uid': u'237300'}

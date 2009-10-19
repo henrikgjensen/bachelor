@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hydrocephalus with associated malformations', u'Retarded growth', u' hydrocephalus', u' micrognathia', u' intestinal malrotation', u' omphalocele', u' short lower limbs and foot deformities'], 'uid': u'236640'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CLD', u'Diarrhea 1', u' secretory chloride', u' congenital', u'DIAR1', u'Chloridorrhea', u' congenital', u'Congenital chloridorrhea', u'Darrow-Gamble disease'], 'uid': u'214700'}

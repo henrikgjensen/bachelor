@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Waardenburg-Shah syndrome', u'WS4', u'Waardenburg-Hirschsprung disease', u'Shah-Waardenburg syndrome', u'Hirschsprung disease with pigmentary anomaly'], 'uid': u'277580'}

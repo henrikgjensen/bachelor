@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Potassium and magnesium depletion', u'Hypomagnesemia-hypokalemia', u' primary renotubular', u' with hypocalciuria'], 'uid': u'263800'}

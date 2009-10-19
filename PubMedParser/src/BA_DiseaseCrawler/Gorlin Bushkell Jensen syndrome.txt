@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Leukonychia totalis multiple sebaceous cysts renal calculi'], 'uid': u'151600'}

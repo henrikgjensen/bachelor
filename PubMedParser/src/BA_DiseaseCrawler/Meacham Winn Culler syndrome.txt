@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Double vagina', u' cardiac', u' pulmonary', u' and other genital malformations with 46', u'XY karyotype'], 'uid': u'1844355'}

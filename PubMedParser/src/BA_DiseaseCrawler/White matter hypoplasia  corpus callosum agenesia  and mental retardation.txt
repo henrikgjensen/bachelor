@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Curatolo Cilio Pessagno syndrome', u'Familial white matter hypoplasia', u' agenesis of the corpus callosum', u' mental retardation and growth deficiency'], 'uid': u'8327066'}

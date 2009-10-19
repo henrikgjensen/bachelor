@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Rambam Hasharon syndrome', u'CDG 2C', u'Leukocyte adhesion deficiency type 2', u'LAD2', u'RHS'], 'uid': u'266265'}

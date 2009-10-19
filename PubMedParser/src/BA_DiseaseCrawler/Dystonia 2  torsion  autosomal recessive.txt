@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT2', u'Torsion dystonia 2', u'Torsion dystonia 2', u' autosomal recessive type', u'Dystonia musculorum deformans type 2'], 'uid': u'224500'}

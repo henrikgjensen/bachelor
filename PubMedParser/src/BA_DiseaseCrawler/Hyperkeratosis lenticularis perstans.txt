@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HLP', u'Flegel disease', u'Flegel&#39;s disease', u'Hyperkeratosis lenticularis perstans of Flegel'], 'uid': u'144150'}

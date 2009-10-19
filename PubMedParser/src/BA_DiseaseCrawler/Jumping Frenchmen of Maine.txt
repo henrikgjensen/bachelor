@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Exaggerated startle reflex', u'Startle disease', u'&#39;jumpers&#39; of Maine'], 'uid': u'244100'}

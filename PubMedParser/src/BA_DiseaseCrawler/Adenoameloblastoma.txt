@@ -1,0 +1,1 @@
+{'terms': u'adenoameloblastoma%5ballfields%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Ameloblastoma', u'Adenomatoid odontogenic tumor', u'Adenomatoid ameloblastoma', u'Pleomorphic adenomatoid tumor'], 'uid': ''}

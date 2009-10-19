@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Geroderma osteodysplastica', u'GO', u'Walt Disney dwarfism', u'Geroderma osteodysplastica hereditaria', u'GOH'], 'uid': u'231070'}

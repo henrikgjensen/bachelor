@@ -1,0 +1,1 @@
+{'terms': u'%28%28katsantoni%5ballfields%5dandpapadakoulagoyanni%5bauthor%5d%29and%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trichodermal syndrome and mental retardation'], 'uid': ''}

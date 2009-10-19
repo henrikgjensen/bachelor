@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LDS1A', u'Furlong syndrome', u'Loeys-Dietz aortic aneurysm syndrome', u'Aortic aneurysm syndrome', u' Loeys-Dietz type'], 'uid': u'609192'}

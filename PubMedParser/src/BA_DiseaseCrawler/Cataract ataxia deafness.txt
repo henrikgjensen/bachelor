@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cataract ataxia deafness syndrome', u'Polyneuropathy', u' cataract', u' deafness syndrome', u'Begeer syndrome', u'Cataract-ataxia-deafness-retardation syndrome'], 'uid': u'212710'}

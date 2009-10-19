@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NPHL2', u'Nephrolithiasis', u' hypercalciuria', u' x-linked', u'Nephrolithiasis 2'], 'uid': u'300009'}

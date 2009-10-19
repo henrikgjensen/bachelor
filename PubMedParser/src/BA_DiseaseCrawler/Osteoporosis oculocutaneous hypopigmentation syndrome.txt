@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OOCHS', u'OOCH syndrome', u'OOCH', u'Hernandez Fragoso syndrome'], 'uid': u'601220'}

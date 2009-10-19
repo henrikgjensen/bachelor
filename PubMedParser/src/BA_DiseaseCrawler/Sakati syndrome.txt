@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sakati-Nyhan syndrome', u'Acrocephalopolysyndactyly type 3', u'ACPS with leg hypoplasia', u'ACPS 3'], 'uid': u'101120'}

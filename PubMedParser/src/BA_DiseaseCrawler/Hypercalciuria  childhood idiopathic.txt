@@ -1,0 +1,1 @@
+{'terms': u'childhood%5ballfields%5dandidiopathic%5ballfields%5dandhypercalciuria%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Childhood idiopathic hypercalciuria'], 'uid': ''}

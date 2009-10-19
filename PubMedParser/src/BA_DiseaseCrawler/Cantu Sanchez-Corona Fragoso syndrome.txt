@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28%28cantu%5ballfields%5dandsanchezcorona%5bauthor%5d%29andfragoso%5ballfields%5d%29and%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29%29andhasabstract%5btext%5d%29andenglish%5blang%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Severe mental deficiency', u' proportionate dwarfism', u' and delayed sexual maturation'], 'uid': ''}

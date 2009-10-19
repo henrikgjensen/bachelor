@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Omodysplasia generalized form', u'Omodysplasia autosomal recessive form', u'Omodysplasia &#40;Maroteaux&#41;'], 'uid': u'164745'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MNDJ', u'Hereditary motor neuropathy', u'  Jerash type', u'HMNJ', u'Motor neuropathy', u' distal', u' Jerash type', u'Spinal muscular atrophy', u' Jerash type'], 'uid': u'605726'}

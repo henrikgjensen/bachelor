@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pfeiffer syndrome 2', u'Pfeiffer cardiocranial syndrome', u'Craniostenosis', u' sagittal', u' with congenital heart disease', u' mental deficiency', u' and mandibular ankylosis', u'Pfeiffer-type cardiocranial syndrome', u'Pfeiffer Singer Zschiesche syndrome'], 'uid': u'218450'}

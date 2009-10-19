@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Renal failure', u' and sensorineural hearing loss', u'Nephropathy and deafness'], 'uid': u'104200'}

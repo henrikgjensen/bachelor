@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Familial juvenile gouty nephropathy', u'Familial juvenile hyperuricemic nephropathy', u'Familial nephropathy associated with hyperuricemia', u'Familial nephropathy with gout', u'Juvenile gouty nephropathy'], 'uid': ''}

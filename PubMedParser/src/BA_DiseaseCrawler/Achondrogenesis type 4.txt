@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Type 4 Achondrogenesis'], 'uid': u'200720'}

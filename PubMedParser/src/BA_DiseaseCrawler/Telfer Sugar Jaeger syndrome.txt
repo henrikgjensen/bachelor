@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Piebald trait neurologic defects', u'White forelock and leukoderma with neurological impairment'], 'uid': u'172850'}

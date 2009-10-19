@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Brachydactylous dwarfs of Mseleni'], 'uid': u'8362904'}

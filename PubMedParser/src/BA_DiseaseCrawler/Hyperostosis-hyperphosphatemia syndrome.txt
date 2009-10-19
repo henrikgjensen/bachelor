@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HHS', u'Hyperostosis with hyperphosphatemia', u'Cortical hyperostosis with hyperphosphatemia'], 'uid': u'610233'}

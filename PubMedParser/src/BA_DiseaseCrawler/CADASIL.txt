@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy', u'Dementia', u' hereditary multi-infarct type', u'Familial vascular leukoencephalopathy', u'Cerebral arteriopathy with subcortical infarcts and leukoencephalopathy', u'CASIL'], 'uid': u'125310'}

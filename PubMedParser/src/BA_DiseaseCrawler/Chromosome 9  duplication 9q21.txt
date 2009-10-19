@@ -1,0 +1,1 @@
+{'terms': u'%28duplication%5ballfields%5dand9q21%5ballfields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Duplication 9q21', u'Disomy 9q21'], 'uid': ''}

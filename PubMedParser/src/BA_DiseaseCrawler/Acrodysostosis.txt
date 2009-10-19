@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arkless-Graham syndrome', u'Maroteaux-Malamut syndrome', u'Acrodysplasia', u'Nasal hypoplasia-peripheral dysostosis-mental retardation syndrome', u'Peripheral dysostosis-nasal hypoplasia-mental retardation &#40;PNM&#41; syndrome'], 'uid': u'101800'}

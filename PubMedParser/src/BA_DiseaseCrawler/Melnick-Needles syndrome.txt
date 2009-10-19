@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Melnick-Needles osteodysplasty', u'MNS', u'Osteodysplasty of Melnick and Needles'], 'uid': u'309350'}

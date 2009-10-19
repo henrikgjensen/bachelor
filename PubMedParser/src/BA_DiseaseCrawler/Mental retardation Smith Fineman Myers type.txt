@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Smith Fineman Myers syndrome', u'SFMS'], 'uid': u'309580'}

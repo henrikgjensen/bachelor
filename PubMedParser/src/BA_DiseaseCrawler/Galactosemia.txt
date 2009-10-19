@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Galactose-1-phosphate uridyltransferase deficiency', u'GALT deficiency', u'Galactosemia', u' classic'], 'uid': u'230400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mesomelic dwarfism Campailla-Martinelli type'], 'uid': u'201250'}

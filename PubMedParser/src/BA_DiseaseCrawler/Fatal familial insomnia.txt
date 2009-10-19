@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial fatal insomnia', u'Insomnia familial fatal'], 'uid': u'600072'}

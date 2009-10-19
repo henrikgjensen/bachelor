@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aminopterin syndrome sine aminopterin', u'ASSA'], 'uid': u'600325'}

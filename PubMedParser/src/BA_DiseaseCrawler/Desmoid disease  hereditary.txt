@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Fibromatosis', u' familial infiltrative', u'FIF', u'Familial infiltrative fibromatosis'], 'uid': u'135290'}

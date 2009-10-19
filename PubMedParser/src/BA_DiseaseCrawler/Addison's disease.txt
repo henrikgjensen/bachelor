@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Addison disease', u'Adrenal hypoplasia', u'Hypoadrenocorticism', u' familial', u'Adrenal aplasia', u'Adrenal gland hypofunction'], 'uid': u'240200'}

@@ -1,0 +1,1 @@
+{'terms': u'alk+%5ball+fields%5d+and+(%22histiocytosis%22%5bmesh+terms%5d+or+%22histiocytosis%22%5ball+fields%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Anaplastic lymphoma kinase positive histiocytosis'], 'uid': ''}

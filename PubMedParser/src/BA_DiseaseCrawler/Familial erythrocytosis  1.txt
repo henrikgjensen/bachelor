@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Erythrocytosis familial', u' 1', u'ECYT1', u'Polycythemia', u' primary familial and congenital', u'PFCP', u'Erythrocytosis autosomal dominant benign'], 'uid': u'133100'}

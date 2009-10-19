@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NS', u'NETH', u'Netherton disease'], 'uid': u'256500'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alternating hemiplegia syndrome', u'AHC', u'AHS', u'Alternating hemiplegia'], 'uid': u'104290'}

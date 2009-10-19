@@ -1,0 +1,1 @@
+{'terms': u'(immunoglobulin-related%5btitle%5d+and+amyloidosis%5btitle%5d)+and+hasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Immunoglobulin-related amyloidosis', u'Amyloidosis Immunoglobulin-related', u'AL amyloidosis'], 'uid': ''}

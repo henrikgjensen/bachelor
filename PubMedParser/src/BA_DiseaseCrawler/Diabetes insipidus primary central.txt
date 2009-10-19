@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Diabetes insipidus', u' neurohypophyseal', u'Neurohypophyseal diabetes insipidus', u'Diabetes insipidus cranial type'], 'uid': u'125700'}

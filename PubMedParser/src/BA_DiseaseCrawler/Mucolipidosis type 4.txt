@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'ML has Disorder4', u'ML 4', u'Berman syndrome', u'Ganglioside sialidase deficiency', u'Ganglioside neuraminidase deficiency'], 'uid': ''}

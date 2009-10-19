@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Albopapuloid dominant dystrophic EB', u'EBDD'], 'uid': u'131750'}

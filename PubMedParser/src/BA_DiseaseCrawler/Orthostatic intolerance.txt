@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neurocirculatory asthenia', u'Mitral valve prolapse syndrome', u'Irritable heart', u'Soldiers heart'], 'uid': u'604715'}

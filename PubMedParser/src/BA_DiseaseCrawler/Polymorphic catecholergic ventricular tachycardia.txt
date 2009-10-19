@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial polymorphic ventricular tachycardia', u'FPVT', u'Catecholamine-induced polymorphic ventricular tachycardia', u'CVPT', u'Catecholaminergic polymorphic ventricular tachycardia', u'Stress-induced polymorphic ventricular tachycardia'], 'uid': u'604772'}

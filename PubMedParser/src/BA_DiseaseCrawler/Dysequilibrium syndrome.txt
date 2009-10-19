@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DES', u'Cerebellar hypoplasia', u' VLDLR associated', u'VLDLRCH', u'Cerebellar disorder', u' nonprogressive', u' with mental retardation'], 'uid': u'224050'}

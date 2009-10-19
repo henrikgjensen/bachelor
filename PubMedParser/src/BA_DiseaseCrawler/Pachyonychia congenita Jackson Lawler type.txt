@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pachyonychia congenita', u' type 2', u'PC2', u'Jackson-Lawler type pachyonychia congenita'], 'uid': u'167210'}

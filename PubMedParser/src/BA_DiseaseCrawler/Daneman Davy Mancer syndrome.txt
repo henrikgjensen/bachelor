@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Multinodular goiter', u' cystic renal disease', u' and digital anomalies', u'MNG&#47;CRD&#47;DA'], 'uid': u'138790'}

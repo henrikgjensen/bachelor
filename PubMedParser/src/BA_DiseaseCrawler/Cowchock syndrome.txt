@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMTX4', u'Neuropathy', u' axonal motor-sensory with deafness and mental retardation', u'NAMSD', u'NADMR', u'Charcot-Marie-Tooth disease', u' X-linked recessive', u' 4', u'Charcot-Marie-Tooth disease with deafness and mental retardation'], 'uid': u'310490'}

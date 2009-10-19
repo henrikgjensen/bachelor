@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ARTS', u'X-linked fatal ataxia with deafness and loss of vision'], 'uid': u'301835'}

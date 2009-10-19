@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28ofuji%5btitle%5danddisease%5btitle%5d%29andhasabstract%5btext%5d%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Ofuji&#39;s disease', u'Ofuji disease', u'Eosinophilic folliculitis', u' pustular', u'EPF'], 'uid': ''}

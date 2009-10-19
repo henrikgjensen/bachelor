@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Glomerulonephritis membranoproliferative type 2', u'Mesangiocapillary glomerulonephritis type 2', u'Dense deposit disease', u'MPGN 2', u'Membranoproliferative glomerulonephritis type II', u'DDD'], 'uid': ''}

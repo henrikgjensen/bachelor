@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BDC', u'Brachydactyly Haws type'], 'uid': u'113100'}

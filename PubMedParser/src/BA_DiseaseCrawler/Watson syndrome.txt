@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pulmonic stenosis with cafe-au-lait spots', u'Cafe-au-lait spots with pulmonic stenosis'], 'uid': u'193520'}

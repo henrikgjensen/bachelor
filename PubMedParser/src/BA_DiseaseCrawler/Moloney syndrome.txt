@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Choroidal atrophy alopecia', u'Fine hair', u' absent&#47;decreased lashes', u' absent&#47;decreased eyebrows', u' visual loss-mild&#47;suspected', u' dysplastic&#47;thick&#47;grooved toenails and fingernails', u'Regional choroidal atrophy and alopecia'], 'uid': u'10994447'}

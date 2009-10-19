@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Hydrocephalus with cerebral aqueductal dysgenesis and craniofacial anomalies'], 'uid': u'6730919'}

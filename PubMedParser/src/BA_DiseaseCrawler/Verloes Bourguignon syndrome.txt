@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Skeletal dysplasia with amelogenesis imperfecta and platyspondyly', u'Platyspondyly with amelogenesis imperfecta', u'Amelogenesis imperfecta and platyspondyly'], 'uid': u'601216'}

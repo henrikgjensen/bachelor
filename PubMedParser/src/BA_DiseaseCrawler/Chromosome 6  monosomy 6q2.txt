@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28%22monosomy%22%5bmeshterms%5dormonosomy%5btextword%5d%29and6q2%5ballfields%5d%29or%28deletion%5ballfields%5dand6q2%5ballfields%5d%29%29and%22human%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Monosomy 6q2', u'Deletion 6q2'], 'uid': ''}

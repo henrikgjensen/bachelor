@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Oculocutaneous albinism', u' minimal pigment type'], 'uid': u'203280'}

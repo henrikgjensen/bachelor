@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Agonadism XY', u' with mental retardation', u' short stature', u' retarded bone age', u' and multiple extragenital malformations'], 'uid': u'600908'}

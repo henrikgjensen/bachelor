@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'LMM', u'Hutchison melanotic freckle'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Patterson&#39;s leprechaunoid syndrome'], 'uid': u'169170'}

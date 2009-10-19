@@ -1,0 +1,1 @@
+{'terms': u'%28progressive%5btitle%5dandmultifocal%5btitle%5dandleukoencephalopathy%5btitle%5d%29and%22loattrfreefulltext%22%5bsb%5dand%222004/01/1912.59%22%5bpdat%5d%3a%222007/01/1912.59%22%5bpdat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Leukoencephalopathy', u' progressive multifocal', u'PML'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Occlusive infantile arteriopathy', u'Idiopathic infantile arterial calcification', u'IIAC', u'Generalized arterial calcification in infancy'], 'uid': u'208000'}

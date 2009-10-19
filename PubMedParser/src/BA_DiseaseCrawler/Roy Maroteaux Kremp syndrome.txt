@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Metaphyseal modeling abnormality', u' skin lesions', u' and Spastic paraplegia'], 'uid': u'250500'}

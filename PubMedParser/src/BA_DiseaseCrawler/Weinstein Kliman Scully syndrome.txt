@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cardiomyopathy', u' hypogonadism and metabolic anomalies', u'Primary testicular insufficiency with normal virilization', u' blindness', u' deafness and metabolic abnormalities'], 'uid': u'203800'}

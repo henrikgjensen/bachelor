@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LCCS', u'Multiple contracture syndrome', u' Finnish type', u'Lethal autosomal recessive syndrome of multiple congenital contractures'], 'uid': u'253310'}

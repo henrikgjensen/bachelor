@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cutaneous albinism hermine phenotype', u'O Doherty syndrome', u'Pigmentary disorder with hearing loss'], 'uid': u'227010'}

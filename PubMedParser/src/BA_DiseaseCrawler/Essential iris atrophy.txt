@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'ICE syndrome', u' essential iris atrophy type', u'Iridocorneal endothelial &#40;ICE&#41; syndrome', u' essential iris atrophy', u'Progressive essential iris atrophy'], 'uid': ''}

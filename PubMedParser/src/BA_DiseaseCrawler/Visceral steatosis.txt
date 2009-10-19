@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Fatty metamorphosis of viscera', u'Steatosis of liver', u'White liver disease', u'Fatal neonatal hepatic steatosis'], 'uid': u'228100'}

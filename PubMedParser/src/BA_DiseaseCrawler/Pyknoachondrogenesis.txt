@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Association of skeletal defects resembling achondrogenesis with generalized bone sclerosis'], 'uid': u'265880'}

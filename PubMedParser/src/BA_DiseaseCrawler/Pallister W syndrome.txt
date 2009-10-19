@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'W syndrome', u'Median cleft upper lip', u' mental retardation and pugilistic facies'], 'uid': u'311450'}

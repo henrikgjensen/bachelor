@@ -1,0 +1,1 @@
+{'terms': u'%28conn%27s%5btitle%5dandsyndrome%5btitle%5d%29andhasabstract%5btext%5dand%222002/03/0613.02%22%5bpdat%5d%3a%222007/03/0613.02%22%5bpdat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Primary aldosteronism', u' hypokalemic alkalosis', u' hypertension and muscle weakness'], 'uid': ''}

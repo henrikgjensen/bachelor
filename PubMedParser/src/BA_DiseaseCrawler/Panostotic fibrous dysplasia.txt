@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Unusual facial appearance', u' bone fragility', u' hyperphosphatasemia', u' and hypophosphatemia'], 'uid': u'174800'}

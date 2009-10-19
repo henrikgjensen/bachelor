@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Stomatocytosis', u' cold-sensitive', u'Cryohydrocytosis'], 'uid': u'185020'}

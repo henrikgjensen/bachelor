@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT 2G', u'Charcot-Marie-Tooth disease', u' axonal', u' Type 2G', u'Charcot-Marie-Tooth disease', u' Type 4A', u' axonal form', u'Charcot-Marie-Tooth disease', u' axonal', u' with vocal cord paresis', u' autosomal recessive', u'Charcot Marie Tooth disease type 2G'], 'uid': u'607706'}

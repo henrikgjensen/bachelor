@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'McAlister Coe Whyte syndrome', u'Macroepiphyseal dysplasia', u' McAlister Coe type'], 'uid': u'248010'}

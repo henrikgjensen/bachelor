@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dermo-distortive urticaria', u'Familial dermatographism'], 'uid': u'125635'}

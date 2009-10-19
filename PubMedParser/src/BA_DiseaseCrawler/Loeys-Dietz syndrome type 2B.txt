@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LDS2B', u'Aortic aneurysm', u' familial thoracic 3', u'AAT3', u'Marfan syndrome', u' type 2 &#40;formerly&#41;'], 'uid': u'610380'}

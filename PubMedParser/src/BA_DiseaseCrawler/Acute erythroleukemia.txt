@@ -1,0 +1,1 @@
+{'terms': u'%28acute%5btitle%5danderythroleukemia%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'AML-M6', u'Acute erythroleukemia - M6b subtype', u'Acute erythroleukemia - M6a subtype', u'Acute myeloid leukemia FAB-M6'], 'uid': ''}

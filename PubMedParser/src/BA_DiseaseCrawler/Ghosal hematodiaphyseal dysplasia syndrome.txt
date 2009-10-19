@@ -1,0 +1,1 @@
+{'terms': u'(ghosal%5ball+fields%5d+and+hemato%5ball+fields%5d+and+%22camurati-engelmann+syndrome%22%5bmesh+terms%5d)+or+(ghosal%5ball+fields%5d+and+hematodiaphyseal%5ball+fields%5d+and+dysplasia%5ball+fields%5d+and+(%22syndrome%22%5bmesh+terms%5d+or+syndrome%5btext+word%5d))', 'desc': '', 'db': u'pubmed', 'syn': [u'GHDD'], 'uid': ''}

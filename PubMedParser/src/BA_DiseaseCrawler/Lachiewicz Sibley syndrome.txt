@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Hereditary renal disease and preauricular pits'], 'uid': u'3998953'}

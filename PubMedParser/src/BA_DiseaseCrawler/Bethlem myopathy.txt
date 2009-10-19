@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Myopathy', u' benign congenital', u' with contractures', u'Muscular dystrophy', u' benign congenital'], 'uid': u'158810'}

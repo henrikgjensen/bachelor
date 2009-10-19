@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Tooth and nail syndrome', u'TNS', u'Dysplasia of nails with hypodontia'], 'uid': u'189500'}

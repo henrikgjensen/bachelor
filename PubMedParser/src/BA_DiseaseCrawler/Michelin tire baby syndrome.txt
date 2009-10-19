@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Skin creases', u' multiple benign ring-shaped', u' of limbs', u'Kunze Riehm syndrome'], 'uid': u'156610'}

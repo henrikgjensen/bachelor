@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PAP', u'Pulmonary alveolar lipoproteinosis acquired', u'PAP acquired', u'Pulmonary alveolar proteinosis autoimmune'], 'uid': u'610910'}

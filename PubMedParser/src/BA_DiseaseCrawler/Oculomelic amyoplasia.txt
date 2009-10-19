@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arthrogryposis with oculomotor limitation and electroretinal abnormalities'], 'uid': u'108145'}

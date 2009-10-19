@@ -1,0 +1,1 @@
+{'terms': u'aorto%5btitle/abstract%5dandpulmonary%5btitle/abstract%5dandartery%5btitle/abstract%5dandfistula%5btitle/abstract%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Aortopulmonary fistula', u'Aorto-pulmonary artery fistula'], 'uid': ''}

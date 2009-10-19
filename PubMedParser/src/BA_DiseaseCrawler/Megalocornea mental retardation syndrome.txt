@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MMR syndrome', u'Neuhauser syndrome', u'Cerebral palsy-hypotonic seizures-megalcornea syndrome', u'Megalocornea-macrocephaly-mental and motor retardation &#40;MMMM&#41; syndrome', u'Seizures-hypotonic cerebral palsy-megalocornea-mental retardation syndrome'], 'uid': u'249310'}

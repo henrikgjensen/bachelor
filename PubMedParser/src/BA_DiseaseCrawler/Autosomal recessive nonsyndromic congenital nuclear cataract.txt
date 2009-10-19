@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital nuclear cataract', u' autosomal recessive'], 'uid': u'609376'}

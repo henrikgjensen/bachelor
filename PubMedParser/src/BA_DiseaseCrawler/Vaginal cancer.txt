@@ -1,0 +1,1 @@
+{'terms': u'%22vaginalneoplasms%22%5bmesh%5dandenglish%5blang%5dand%22humans%22%5bmeshterms%5dand%222000/02/0511.13%22%5bedat%5d%3a%222005/02/0311.13%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

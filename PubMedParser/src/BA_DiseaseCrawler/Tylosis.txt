@@ -1,0 +1,1 @@
+{'terms': u'tylosis%5btitle%5dandhasabstract%5btext%5dandenglish%5blang%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Hyperkeratosis of the palms and soles and esophageal papillomas', u'Focal non epidermolytic palmoplantar keratoderma', u'Familial tylosis &#40;subtype&#41;', u'Late onset tylosis &#40;type A&#41;', u'Early onset tylosis &#40;type B&#41;'], 'uid': ''}

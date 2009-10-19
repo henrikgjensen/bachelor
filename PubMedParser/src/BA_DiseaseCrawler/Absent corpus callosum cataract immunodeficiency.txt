@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Immunodeficiency with cleft lip&#47;palate', u' cataract', u' hypopigmentation and absent corpus callosum', u'Vici syndrome'], 'uid': u'242840'}

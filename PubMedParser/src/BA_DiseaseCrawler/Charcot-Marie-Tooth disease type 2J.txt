@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT 2J', u'Charcot-Marie-Tooth disease', u' axonal', u' Type 2J', u'Charcot-Marie-Tooth disease', u' Type 2', u' with hearing loss and pupillary abnormalities', u'Charcot Marie Tooth disease type 2J'], 'uid': u'607736'}

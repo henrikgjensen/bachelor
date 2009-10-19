@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Partial AVSD', u'Partial atrioventricular septal defects', u'Partial common atrioventricular canal'], 'uid': u'600309'}

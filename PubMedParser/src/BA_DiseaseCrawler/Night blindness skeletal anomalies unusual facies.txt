@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Hunter Thomson Reed syndrome'], 'uid': u'314984'}

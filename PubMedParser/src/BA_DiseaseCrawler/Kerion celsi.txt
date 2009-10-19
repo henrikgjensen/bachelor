@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Susceptibility to Tinea imbricata', u'Trichophyton infection', u'Trichophytia profunda capitis', u'Trichophytia profunda barbae', u'Tinea capitis profunda'], 'uid': u'275240'}

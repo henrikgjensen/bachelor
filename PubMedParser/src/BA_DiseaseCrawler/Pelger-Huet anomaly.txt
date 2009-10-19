@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PHA', u'Pelger Huet anomaly', u'Pelger-Huet nuclear anomaly', u'Ovoid neutrophil nuclei', u' developmental delay', u' epilepsy and skeletal abnormalities'], 'uid': u'169400'}

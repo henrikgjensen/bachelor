@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Choroido-cerebral calcification syndrome with retardation'], 'uid': u'215480'}

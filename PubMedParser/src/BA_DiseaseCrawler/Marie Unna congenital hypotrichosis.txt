@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MUHH', u'Hypotrichosis', u' Marie Unna type', u'Marie Unna hereditary hypotrichosis'], 'uid': u'146550'}

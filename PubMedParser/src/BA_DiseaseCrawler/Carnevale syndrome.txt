@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ptosis of eyelids with diastasis recti and hip dysplasia', u'Oculo-skeletal-abdominal syndrome', u'Carnevale Krajewska Fischetto syndrome', u'OSA syndrome'], 'uid': u'265050'}

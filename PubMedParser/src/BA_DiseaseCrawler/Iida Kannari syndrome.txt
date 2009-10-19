@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Craniosynostosis with joint contractures', u' ear deformity', u' cleft palate', u' scoliosis', u' and other features'], 'uid': u'8547289'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Amyloidosis cutis nodularis atrophicans', u'NLCA'], 'uid': ''}

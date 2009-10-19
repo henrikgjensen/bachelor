@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acromesomelic dysplasia', u' Grebe type', u'Brazilian achondrogenesis', u'Grebe syndrome', u'Grebe chondrodysplasia', u'AMDG', u'Grebe dysplasia'], 'uid': u'200700'}

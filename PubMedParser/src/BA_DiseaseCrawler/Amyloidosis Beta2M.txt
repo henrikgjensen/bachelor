@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Amyloidosis dialysis-related', u'Beta-2-microglobulin amyloidosis', u'Dialysis-related amyloidosis', u'DRA'], 'uid': ''}

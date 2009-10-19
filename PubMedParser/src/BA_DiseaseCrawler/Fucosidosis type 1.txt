@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Infantile fucosidosis', u'Macrocephaly', u' brachycephaly', u' depressed nasal bridge', u' hypertelorism', u' thick eyebrows&#47;scalp hair', u' short stature&#47;neck', u' seizures', u' progressive dementia'], 'uid': u'230000'}

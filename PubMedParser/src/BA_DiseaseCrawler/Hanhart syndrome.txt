@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aglossia adactylia', u'Hypoglossia-hypodactylia syndrome', u'Peromelia with micrognathia'], 'uid': u'103300'}

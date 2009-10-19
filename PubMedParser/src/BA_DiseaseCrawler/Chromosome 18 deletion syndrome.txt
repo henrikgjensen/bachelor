@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'18q syndrome', u'Chromosome 18q syndrome', u'Chromosome 18', u' monosomy 18Q', u'Monosomy 18q syndrome', u'Monosomy 18q', u' deletion 18q'], 'uid': u'601808'}

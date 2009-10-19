@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kallmann syndrome with spastic paraplegia', u'Familial spastic paraplegia with Kallmann&#39;s syndrome'], 'uid': u'308750'}

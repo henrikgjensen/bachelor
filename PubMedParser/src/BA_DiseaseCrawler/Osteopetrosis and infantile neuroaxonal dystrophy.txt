@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Prenatal axonal dystrophy and osteopetrosis', u'Infantile osteopetrosis and neuronal storage disease'], 'uid': u'600329'}

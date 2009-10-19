@@ -1,0 +1,1 @@
+{'terms': u'%28chromosome14%5btitle%5dandtrisomy%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy 14'], 'uid': ''}

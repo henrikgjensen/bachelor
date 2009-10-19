@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Camptodactyly', u' joint contractures', u' facial skeletal defects', u'Camptodactyly', u' myopia', u' and fibrosis of the medial rectus muscle of eye'], 'uid': u'602612'}

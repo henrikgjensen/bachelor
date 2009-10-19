@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cataract', u' lamellar', u'Perinuclear cataract'], 'uid': u'116800'}

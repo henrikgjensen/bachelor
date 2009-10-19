@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Porencephaly', u' cerebellar hypoplasia', u' and internal malformations'], 'uid': u'601322'}

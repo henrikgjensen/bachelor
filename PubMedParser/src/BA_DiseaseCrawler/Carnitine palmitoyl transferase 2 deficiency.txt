@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Carnitine palmitoyltransferase deficiency type 2', u'CPT2'], 'uid': u'600650'}

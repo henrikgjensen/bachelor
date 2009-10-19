@@ -1,0 +1,1 @@
+{'terms': u'ehrlichiosis%5btitle%5d+and+%28%22loattrfree+full+text%22%5bsb%5d+and+%222004%2f01%2f17%22%5bpdat%5d+%3a+%222009%2f01%2f14%22%5bpdat%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Human Ehrlichiosis', u'HE'], 'uid': ''}

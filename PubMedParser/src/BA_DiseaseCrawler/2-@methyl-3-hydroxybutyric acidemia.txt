@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'3-&#64;hydroxyacyl-CoA dehydrogenase type 2 deficiency', u'2-&#64;methyl-3-hydroxybutyryl-CoA dehydrogenase deficiency', u'MHBD deficiency'], 'uid': u'300438'}

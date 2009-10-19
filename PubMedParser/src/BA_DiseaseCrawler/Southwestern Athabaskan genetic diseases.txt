@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Navajo and Apache genetic diseases', u'Athabaskan severe combined immunodeficiency', u' Navajo neuropathy', u' Navajo poikiloderma', u' and Athabaskan brainstem dysgenesis'], 'uid': u'11258351'}

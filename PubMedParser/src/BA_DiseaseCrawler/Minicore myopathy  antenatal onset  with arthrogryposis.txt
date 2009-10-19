@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Multicore myopathy', u' antenatal onset', u' with arthrogryposis', u'Multiminicore myopathy', u' antenatal onset', u' with arthrogryposis'], 'uid': u'607552'}

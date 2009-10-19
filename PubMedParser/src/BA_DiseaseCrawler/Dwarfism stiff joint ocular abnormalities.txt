@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Moore Federman syndrome'], 'uid': u'127200'}

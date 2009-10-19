@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Goeminne syndrome', u'TKC', u'TKCR syndrome'], 'uid': u'314300'}

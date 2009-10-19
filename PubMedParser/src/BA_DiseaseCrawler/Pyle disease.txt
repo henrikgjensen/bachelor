@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Metaphyseal dysplasia', u'Metaphyseal dysplasia with little involvement of the cranial bones', u'Edwin Pyle disease'], 'uid': u'265900'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial intrahepatic cholestasis of pregnancy', u'ICP', u'Recurrent intrahepatic cholestasis of pregnancy', u'RICP', u'Pregnancy related cholestasis', u'Familial recurrent intrahepatic cholestasis of pregnancy'], 'uid': u'147480'}

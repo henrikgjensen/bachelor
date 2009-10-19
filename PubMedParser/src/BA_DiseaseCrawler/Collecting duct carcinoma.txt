@@ -1,0 +1,1 @@
+{'terms': u'%28collecting%5btitle%5dandduct%5btitle%5dandcarcinoma%5btitle%5d%29andhasabstract%5btext%5dandenglish%5blang%5dand%222000/09/0110.05%22%5bedat%5d%3a%222005/08/3110.05%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'CDC', u'Collecting duct carcinoma of the kidney', u'Renal collecting duct carcinoma'], 'uid': ''}

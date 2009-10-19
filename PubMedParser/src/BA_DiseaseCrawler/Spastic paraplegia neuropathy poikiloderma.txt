@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial spastic paraplegia with neuropathy and poikiloderma'], 'uid': u'182815'}

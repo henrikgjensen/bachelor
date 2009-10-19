@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Angiokeratoma corporis diffusum with features of a mucopolysaccharidosis'], 'uid': ''}

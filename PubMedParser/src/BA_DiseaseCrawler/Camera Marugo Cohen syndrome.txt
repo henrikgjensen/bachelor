@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Obesity', u' mental retardation', u' body asymmetry', u' and muscle weakness'], 'uid': u'604257'}

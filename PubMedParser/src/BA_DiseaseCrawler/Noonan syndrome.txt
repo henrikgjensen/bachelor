@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Male Turner syndrome', u'Female pseudo-Turner syndrome', u'Turner phenotype with normal karyotype', u'NS1'], 'uid': u'163950'}

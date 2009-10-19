@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'HTLV-3', u'Lymphadenopathy-associated virus', u'LAV'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Choroid plexus papilloma'], 'uid': u'260500'}

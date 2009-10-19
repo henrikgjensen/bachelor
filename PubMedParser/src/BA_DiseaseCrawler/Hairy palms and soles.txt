@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Circumscribed hairy dysembryoplasia of palms', u'Thickened hair-bearing skin on the palms of both hands', u'Hairy cutaneous malformations of palms and soles'], 'uid': u'139650'}

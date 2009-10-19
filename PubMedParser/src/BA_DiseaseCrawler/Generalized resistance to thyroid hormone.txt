@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GRTH', u'Thyroid hormone receptor BETA', u'THRB', u'Refetoff syndrome'], 'uid': u'190160'}

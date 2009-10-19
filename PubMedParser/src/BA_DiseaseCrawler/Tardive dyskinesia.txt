@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Linguofacial dyskinesia', u'Oral-facial dyskinesia', u'Tardive dystonia', u'Tardive oral dyskinesia', u'TD'], 'uid': u'272620'}

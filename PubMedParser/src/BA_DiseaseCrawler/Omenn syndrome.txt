@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Reticuloendotheliosis', u' familial', u' with eosinophilia', u'Severe combined immunodeficiency with hypereosinophilia'], 'uid': u'603554'}

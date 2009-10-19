@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NISCH syndrome', u'Neonatal ichthyosis-sclerosing cholangitis syndrome', u'ILVASC', u'Ichthyosis-sclerosing cholangitis syndrome'], 'uid': u'607626'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HPS2', u'Hermansky-Pudlak syndrome 2', u'Platelet defects and oculocutaneous albinism'], 'uid': u'608233'}

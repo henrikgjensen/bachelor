@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LAD', u'LAD 1', u'Lymphocyte function-associated antigen 1 immunodeficiency', u'LFA 1 immunodeficiency'], 'uid': u'116920'}

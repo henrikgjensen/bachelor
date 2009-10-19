@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital eye malformation in which the pupils are displaced from their normal central position', u'Familial ectopic pupil'], 'uid': u'129750'}

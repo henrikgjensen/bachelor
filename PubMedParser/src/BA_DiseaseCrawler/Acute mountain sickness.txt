@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Altitude sickness', u'High altitude cerebral edema', u'High altitude pulmonary edema', u'Mountain sickness', u'Altitude anoxia'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Citrullinemia', u' classic', u'Citrullinemia type 1', u'CTNL1', u'Citrullinuria', u'ASS deficiency', u'Argininosuccinate synthetase deficiency', u'Citrullinemia 1', u'Argininosuccinic Acid Synthetase Deficiency'], 'uid': u'215700'}

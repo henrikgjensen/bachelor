@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mirhosseini-Holmes-Walton syndrome', u'Retinal pigmentary degeneration', u' microcephaly', u' and severe mental retardation'], 'uid': u'268050'}

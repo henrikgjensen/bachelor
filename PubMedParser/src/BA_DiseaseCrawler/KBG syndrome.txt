@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short stature', u' characteristic facies', u' macrodontia', u' mental retardation', u' and skeletal anomalies'], 'uid': u'148050'}

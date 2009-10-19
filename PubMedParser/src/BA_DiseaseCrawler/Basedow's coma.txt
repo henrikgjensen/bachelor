@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Coma basedovicum', u'Karl Adolph von Basedow'], 'uid': ''}

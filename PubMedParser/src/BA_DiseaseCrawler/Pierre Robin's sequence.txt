@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pierre-Robin syndrome', u'Glossoptosis', u' micrognathia', u' and cleft palate'], 'uid': u'261800'}

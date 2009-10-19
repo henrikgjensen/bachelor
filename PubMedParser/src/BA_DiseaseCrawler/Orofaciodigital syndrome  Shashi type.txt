@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'X-linked mental retardation syndrome with characteristic facial dysmorphic features', u'Mental retardation X-linked syndromic 11', u'MRXS11', u'Shashi X-linked mental retardation syndrome', u'Mental retardation X-linked Shashi type', u'SMRXS'], 'uid': u'300238'}

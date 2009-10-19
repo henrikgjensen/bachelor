@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CVID', u'Common variable hypogamma-globulinemia', u'Hypogamma-globulinemia', u' acquired', u'Immunoglobulin deficiency', u' late-onset'], 'uid': u'240500'}

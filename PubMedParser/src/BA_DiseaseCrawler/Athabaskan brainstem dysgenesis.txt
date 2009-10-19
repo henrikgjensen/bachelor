@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Navajo brainstem syndrome', u'Athabaskan Brainstem Dysgenesis Syndrome', u'ABDS', u'Bosley Salih Alorainy syndrome', u'BSAS', u'Human HOXA1 syndromes'], 'uid': u'601536'}

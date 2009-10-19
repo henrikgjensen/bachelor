@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Serpentine fibula syndrome', u'SFPKS', u'SFS'], 'uid': u'600330'}

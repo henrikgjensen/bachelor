@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Unilateral upper eyelid coloboma', u' aberrant anterior hairline pattern', u' and anal anomalies', u'Marles syndrome', u'Manitoba Trichoanal syndrome', u'MOTA'], 'uid': u'248450'}

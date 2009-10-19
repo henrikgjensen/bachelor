@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28%28uniparental%5btitle%5danddisomy%5btitle%5d%29and5%5btitle%5d%29or%28%28mosaic%5btitle%5dandtrisomy%5btitle%5d%29andchromosome5%5btitle%5d%29%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Uniparental disomy of  5', u'Mosaic trisomy of chromosome 5'], 'uid': ''}

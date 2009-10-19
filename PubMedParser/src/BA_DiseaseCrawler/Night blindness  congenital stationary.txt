@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Night blindness', u' congenital stationary', u' type 1', u'Night blindness', u' congenital stationary', u' with myopia', u'Hemeralopia-myopia', u'Myopia-night blindness', u'X-linked congenital stationary night blindness'], 'uid': u'310500'}

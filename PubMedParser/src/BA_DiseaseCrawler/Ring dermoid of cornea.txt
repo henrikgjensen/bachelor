@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RDC', u'Ring dermoid syndrome', u'Bilateral', u' annular limbal dermoids with corneal and conjunctival extension'], 'uid': u'180550'}

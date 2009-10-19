@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SMD', u' Kozlowski type'], 'uid': u'184252'}

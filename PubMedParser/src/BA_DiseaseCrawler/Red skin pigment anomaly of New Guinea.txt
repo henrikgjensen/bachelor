@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Red skin pigment', u' New Guinea type'], 'uid': u'266350'}

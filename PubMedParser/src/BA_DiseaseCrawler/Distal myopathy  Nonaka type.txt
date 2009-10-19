@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Nonaka distal myopathy', u'Myopathy', u' distal', u' with rimmed vacuoles', u'NM', u'DMRV'], 'uid': u'605820'}

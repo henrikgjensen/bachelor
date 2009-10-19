@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LDS2A', u'Aortic aneurysm', u' familial thoracic 5', u'AAT5'], 'uid': u'608967'}

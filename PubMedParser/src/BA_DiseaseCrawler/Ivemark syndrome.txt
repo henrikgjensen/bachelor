@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Asplenia with cardiovascular anomalies', u'Asplenia syndrome', u'Bilateral right-sidedness sequence', u'Splenic agenesis syndrome'], 'uid': u'208530'}

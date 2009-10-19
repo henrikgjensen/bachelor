@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deafness', u' congenital', u' with keratopachydermia and constrictions of fingers and toes', u'Mutilating keratoderma', u'Keratoderma hereditarium mutilans', u'KHM'], 'uid': u'124500'}

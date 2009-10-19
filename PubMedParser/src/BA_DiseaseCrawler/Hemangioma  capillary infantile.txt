@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HCI', u'Hemangioma', u' hereditary capillary'], 'uid': u'602089'}

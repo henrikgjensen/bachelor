@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Parana hard skin syndrome'], 'uid': u'260530'}

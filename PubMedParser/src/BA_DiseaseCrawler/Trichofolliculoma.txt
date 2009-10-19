@@ -1,0 +1,1 @@
+{'terms': u'trichofolliculoma%5ballfields%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Folliculo-sebaceous cystic hamartoma &#40; is a trichofolliculoma at its very late stage&#41;', u'Recurrent trichofolliculoma &#40;type&#41;', u'Congenital trichofolliculoma &#40;type&#41;', u'Sebaceous trichofolliculoma &#40;type&#41;'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Multiple epiphyseal dysplasia 3', u'EDM3'], 'uid': u'600969'}

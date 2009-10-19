@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PLOSL', u'Nasu-Hakola disease', u'NHD', u'Presenile dementia with bone cysts', u'Dementia', u' prefrontal', u' with bone cysts', u'Dementia', u' progressive', u' with lipomembranous polycystic osteodysplasia', u'Brain-bone-fat disease'], 'uid': u'221770'}

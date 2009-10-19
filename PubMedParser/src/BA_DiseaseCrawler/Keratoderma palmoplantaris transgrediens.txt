@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Erythrokeratodermia variabilis', u'Erythrokeratodermia figurata', u' congenital familial', u' in plaques', u'Erythrokeratodermia variabilis with erythema gyratum repens', u'Greither disease', u'Keratosis palmoplantaris transgrediens et progrediens'], 'uid': u'133200'}

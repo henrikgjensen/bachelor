@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aughton syndrome', u'Dextrocardia', u' microphthalmia', u' cleft palate', u' choreoathetosis and mental retardation'], 'uid': u'221950'}

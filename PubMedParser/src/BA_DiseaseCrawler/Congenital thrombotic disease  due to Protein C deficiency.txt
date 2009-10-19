@@ -1,0 +1,1 @@
+{'terms': u'%28protein%5btitle%5dandc%5btitle%5danddeficiency%5btitle%5d%29and%22loattrfreefulltext%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Thrombophilia', u' hereditary', u'PC deficiency', u'Thrombophilia', u' hereditary', u' due to pc deficiency', u'PROC deficiency'], 'uid': ''}

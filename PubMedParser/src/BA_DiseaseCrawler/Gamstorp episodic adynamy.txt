@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperkaliemic periodic paralysis type 2', u'HYPP', u'Adynamia episodica hereditaria with or without myotonia', u'Gamstorp disease', u'Sodium channel muscle disease'], 'uid': u'170500'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Fatty aldehyde dehydrogenase deficiency', u'FALDH deficiency', u'Fatty alcohol&#58;NAD&#43; oxidoreductase deficiency', u'FAO deficiency', u'Ichthyosis', u' spastic neurologic disorder', u' and oligophrenia', u'SLS', u'Sjogren Larsson syndrome'], 'uid': u'270200'}

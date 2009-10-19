@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AMS', u'Congenital ablepharon', u' absent eyelashes&#47;eyebrows', u' macrostomia', u' auricular', u' nasal', u' genital and other systemic anomalies'], 'uid': u'200110'}

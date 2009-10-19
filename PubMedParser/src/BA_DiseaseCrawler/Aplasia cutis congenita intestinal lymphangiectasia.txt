@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ACC with intestinal lymphangiectasia'], 'uid': u'207731'}

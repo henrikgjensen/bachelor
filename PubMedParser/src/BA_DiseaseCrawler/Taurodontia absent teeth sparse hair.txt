@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Teeth', u' congenital absence of', u' with taurodontia and sparse hair'], 'uid': u'272980'}

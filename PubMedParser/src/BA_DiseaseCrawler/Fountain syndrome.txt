@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation-deafnes', u' skeletal abnormalities', u' coarse face with full lips'], 'uid': u'229120'}

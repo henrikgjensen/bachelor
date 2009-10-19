@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental deficiency', u' choroideremia', u' acrokeratosis verruciformis', u'anhidrosis', u' skeletal deformity'], 'uid': u'314500'}

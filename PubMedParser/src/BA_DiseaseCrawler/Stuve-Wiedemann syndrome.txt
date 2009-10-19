@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SWS', u'STWS', u'Schwartz Jampel type 2 syndrome', u'Schwartz Jampel syndrome neonatal', u'SJS2', u'Stuve-Wiedemann&#47;Schwartz-Jampel type 2 syndrome'], 'uid': u'601559'}

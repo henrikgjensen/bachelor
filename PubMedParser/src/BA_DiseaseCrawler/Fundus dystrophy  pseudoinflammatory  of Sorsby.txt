@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SFD', u'Macular dystrophy', u' hemorrhagic', u'Sorsby&#39;s pseudoinflammatory macular dystrophy'], 'uid': u'136900'}

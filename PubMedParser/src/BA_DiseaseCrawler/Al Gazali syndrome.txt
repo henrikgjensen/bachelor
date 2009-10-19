@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Al Gazali Al Talabani syndrome', u'Eye defects arachnodactyly cardiopathy'], 'uid': u'609465'}

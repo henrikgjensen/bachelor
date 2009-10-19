@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Antiplasmin deficiency', u' congenital', u'Alpha-2-plasmin inhibitor deficiency'], 'uid': u'262850'}

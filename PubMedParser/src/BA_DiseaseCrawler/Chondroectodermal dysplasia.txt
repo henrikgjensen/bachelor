@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ellis-Van Creveld syndrome', u'EVC', u'Mesoectodermal dysplasia', u'Short limb dwarfism', u' polydactyly', u' malformation of the wristbones', u' nail dystrophy', u' partial hare-lip', u' cardiac malformation', u' prenatal eruption of the tee'], 'uid': u'225500'}

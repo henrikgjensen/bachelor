@@ -1,0 +1,1 @@
+{'terms': u'%28trisomy22%5btitle%5dandmosaic%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy mosaic 22', u'Trisomy 22 mosaic', u'Trisomy 22 mosaicism syndrome', u'Uniparental disomy of  22'], 'uid': ''}

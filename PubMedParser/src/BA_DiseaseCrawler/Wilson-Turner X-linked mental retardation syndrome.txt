@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' X-linked', u' with gynecomastia and obesity', u'WTS', u'Wilson Turner mental retardation syndrome', u'Mental retardation', u' X-linked', u' syndromic 6', u'MRXS6'], 'uid': u'309585'}

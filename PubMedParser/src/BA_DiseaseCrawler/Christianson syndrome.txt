@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation x-linked syndromic Christianson type', u'MRXS Christianson', u'Angelman-like syndrome x-linked', u'Mental retardation microcephaly epilepsy and ataxia syndrome'], 'uid': u'300243'}

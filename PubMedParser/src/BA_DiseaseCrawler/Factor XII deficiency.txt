@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HAF deficiency', u'Hageman factor deficiency', u'F12 deficiency', u'Coagulation factor 12 deficiency', u'Factor 12 deficiency'], 'uid': u'234000'}

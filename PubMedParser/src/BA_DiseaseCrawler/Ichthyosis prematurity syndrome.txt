@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ichthyosis congenita IV', u'IPS'], 'uid': u'608649'}

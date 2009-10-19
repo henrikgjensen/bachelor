@@ -1,0 +1,1 @@
+{'terms': u'%28davis%5ballfields%5dandlafer%5ballfields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Lafer Davis syndrome', u'Mental retardation unusual facies Davis Lafer type'], 'uid': ''}

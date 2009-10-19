@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ornithine carbamoyltransferase deficiency', u'OTC deficiency', u'OTCD'], 'uid': u'311250'}

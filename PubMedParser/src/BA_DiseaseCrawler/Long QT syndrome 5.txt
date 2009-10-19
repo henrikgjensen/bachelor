@@ -1,0 +1,1 @@
+{'terms': u'lqt5%5ball+fields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'LQT5'], 'uid': ''}

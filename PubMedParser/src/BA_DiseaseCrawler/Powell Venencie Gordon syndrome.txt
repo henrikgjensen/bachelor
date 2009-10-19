@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Punctate keratoderma and spastic paralysis', u'Keratoderma and spastic paralysis'], 'uid': u'6227331'}

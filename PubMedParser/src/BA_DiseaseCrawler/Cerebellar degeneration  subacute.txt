@@ -1,0 +1,1 @@
+{'terms': u'%28subacute%5btitle%5dandcerebellar%5btitle%5danddegeneration%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Subacute  cerebellar degeneration', u'SCD'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HPS', u'Albinism with hemorrhagic diathesis and pigmented reticuloendothelial cells', u'Delta storage pool disease', u'Hermansky Pudlak syndrome'], 'uid': u'203300'}

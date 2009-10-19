@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Ectrodactyly', u' diaphragmatic hernia', u' congenital heart defect', u' and agenesis of the corpus callosum'], 'uid': u'7551162'}

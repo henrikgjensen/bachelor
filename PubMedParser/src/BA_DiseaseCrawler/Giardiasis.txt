@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Giardia infection', u'Traveler&#39;s diarrhea', u'Beaver Fever', u'Lambliasis'], 'uid': ''}

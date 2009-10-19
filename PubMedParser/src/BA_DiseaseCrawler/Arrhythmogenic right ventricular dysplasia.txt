@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ARVD', u'Arrhythmogenic right ventricular cardiomyopathy', u'ARVC'], 'uid': u'604401'}

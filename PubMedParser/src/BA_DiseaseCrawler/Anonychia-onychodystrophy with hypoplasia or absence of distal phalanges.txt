@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anonychia and absence&#47;hypoplasia of distal phalanges', u'Cooks syndrome'], 'uid': u'106995'}

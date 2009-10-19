@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Craniofacial dysostosis', u' patent ductus arteriosus', u' hypertrichosis', u' hypoplasia of labia majora', u' dental and eye anomalies', u'GCM syndrome', u'Gorlin-Chaudhry-Moss syndrome'], 'uid': u'233500'}

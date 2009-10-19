@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial torticollis', u'Familial spasmodic torticollis'], 'uid': u'189600'}

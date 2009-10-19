@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bullous congenital ichthyosiform erythroderma', u'BCIE', u'Bullous ichthyosiform erythroderma congenita', u'Bullous ichthyosiform erythroderma', u'BIE', u'Epidermolytic hyperkeratosis', u'EHK'], 'uid': u'113800'}

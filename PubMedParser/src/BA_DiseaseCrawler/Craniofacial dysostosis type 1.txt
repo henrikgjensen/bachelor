@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Crouzon craniofacial dysostosis', u'Crouzon disease', u'CFD 1'], 'uid': u'123500'}

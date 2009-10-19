@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PPAC', u'Progressive pseudorheumatoid arthropathy of childhood', u'Spondyloepiphyseal dysplasia tarda with progressive arthropathy', u'SEDT-PA', u'Progressive pseudorheumatoid dysplasia', u'PPD'], 'uid': u'208230'}

@@ -1,0 +1,1 @@
+{'terms': u'%28splenic%5btitle%5dandinfarcts%5btitle%5d%29andhasabstract%5btext%5dand%22humans%22%5bmeshterms%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Infarct of the spleen'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pretibial epidermolysis bullosa'], 'uid': u'131850'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Plasma cell myeloma', u'Kahler disease', u'Myelomatosis', u'Plasma cell dyscrasia', u'Myeloma - multiple'], 'uid': u'254500'}

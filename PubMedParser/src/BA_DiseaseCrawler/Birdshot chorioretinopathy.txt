@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BSCR', u'Multiple small', u' cream-colored lesions', u' symmetrically scattered mainly around the optic disk'], 'uid': u'605808'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachyphalangy', u' polydactyly and absent tibiae'], 'uid': u'609945'}

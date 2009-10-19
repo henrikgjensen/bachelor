@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Burkitt lymphoma', u'BL', u'Familial Burkitt&#39;s lymphoma'], 'uid': u'113970'}

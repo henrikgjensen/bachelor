@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Clubfoot', u'CTEV', u'Congenital Talipes Equinovarus', u'Talipes', u'Pie Torcido &#40;Spanish&#41;'], 'uid': u'119800'}

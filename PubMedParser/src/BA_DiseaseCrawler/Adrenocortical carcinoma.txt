@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Adrenocortical carcinoma hereditary', u'ADCC'], 'uid': ''}

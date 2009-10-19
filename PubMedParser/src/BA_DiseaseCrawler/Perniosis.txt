@@ -1,0 +1,1 @@
+{'terms': u'%28perniosis%5btitle%5dandhasabstract%5btext%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Chilblains', u'Idiopathic perniosis', u'Cold-induced painful or pruritic erythematous or violaceous acral papular or nodular lesions'], 'uid': ''}

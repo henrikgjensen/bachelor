@@ -1,0 +1,1 @@
+{'terms': u'%28piriformis%5btitle%5dandsyndrome%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Hip socket neuropathy', u'Pseudosciatica', u'Wallet sciatica', u'Deep gluteal syndrome', u'Pyriformis syndrome'], 'uid': ''}

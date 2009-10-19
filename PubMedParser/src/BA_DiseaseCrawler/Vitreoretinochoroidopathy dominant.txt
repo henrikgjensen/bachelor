@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'VRCP autosomal dominant', u'Autosomal dominant Vitreoretinochoroidopathy', u'ADVIRC'], 'uid': u'193220'}

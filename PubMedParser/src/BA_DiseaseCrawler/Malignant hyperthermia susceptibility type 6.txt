@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MHS6', u'Malignant hyperpyrexia susceptibility type 6'], 'uid': u'601888'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Navajo neuropathy', u'NN'], 'uid': u'256810'}

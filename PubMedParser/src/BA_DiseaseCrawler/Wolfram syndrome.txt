@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'WFS', u'Diabetes insipidus and mellitus with optic atrophy and deafness', u'DIDMOAD', u'DIDMOAD syndrome'], 'uid': u'222300'}

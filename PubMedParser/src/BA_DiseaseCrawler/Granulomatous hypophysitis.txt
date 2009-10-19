@@ -1,0 +1,1 @@
+{'terms': u'%28granulomatous%5ball+fields%5d+and+hypophysitis%5ball+fields%5d%29+and+%28%22loattrfree+full+text%22%5bsb%5d+and+hasabstract%5btext%5d+and+%22humans%22%5bmesh+terms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Idiopathic granulomatous hypophysitis'], 'uid': ''}

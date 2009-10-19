@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deafness 3', u' conductive', u' with stapes fixation', u'Sensorineural deafness', u' profound', u' with or without a conductive component', u'Perilymphatic gusher-deafness syndrome', u'Deafness', u' mixed', u' with perilymphatic gusher', u'Nance deafness', u'DFN3'], 'uid': u'304400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hamartoma of the hypothalamus', u'Congenital hypothalamic hamartoma syndrome'], 'uid': u'241800'}

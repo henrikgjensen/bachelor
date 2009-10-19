@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aromatic L-amino acid decarboxylase deficiency', u'AADC deficiency', u'DDC deficiency', u'Dopa decarboxylase deficiency'], 'uid': u'608643'}

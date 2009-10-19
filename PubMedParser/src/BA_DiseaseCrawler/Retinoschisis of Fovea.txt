@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Foveal retinoschisis', u'Familial foveal retinoschisis'], 'uid': u'268080'}

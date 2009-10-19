@@ -1,0 +1,1 @@
+{'terms': u'%28%28jaffer%5ballfields%5dandbeighton%5ballfields%5d%29and%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Arachnodactyly', u' joint laxity', u' and spondylolisthesis'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital myopathy cleft palate and malignant hyperthermia'], 'uid': u'255995'}

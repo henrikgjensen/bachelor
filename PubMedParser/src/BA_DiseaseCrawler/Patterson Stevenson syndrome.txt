@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Split-foot deformity with ectrodactyly and mandibulofacial dysostosis', u'Patterson Stevenson Fontaine syndrome'], 'uid': u'183700'}

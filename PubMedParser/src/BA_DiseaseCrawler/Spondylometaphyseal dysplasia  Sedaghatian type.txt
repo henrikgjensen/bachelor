@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lethal Metaphyseal Dysplasia'], 'uid': u'250220'}

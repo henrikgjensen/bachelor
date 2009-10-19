@@ -1,0 +1,1 @@
+{'terms': u'pityriasis%5btitle%5dandlichenoides%5btitle%5dandet%5btitle%5dandvarioliformis%5btitle%5dandacuta%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'PLEVA', u'Mucha-Habermann disease', u'Pityriasis Lichenoides'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': u'%28anton%27s%5btitle/abstract%5dandsyndrome%5btitle/abstract%5d%29andhasabstract%5btext%5dandenglish%5blang%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Anton-Babinski syndrome', u'Reversible cortical blindness', u'Transient Anton&#39;s syndrome'], 'uid': ''}

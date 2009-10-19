@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Facial features &#40;unique&#41;', u' anorexia', u' cachexia', u' eye and skin anomalies'], 'uid': u'6438152'}

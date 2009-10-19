@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Osteochondrodysplasia with rhizomelia', u' platyspondyly', u' callosal agenesis', u' thrombocytopenia', u' hydrocephalus', u' and hypertension'], 'uid': u'166990'}

@@ -1,0 +1,1 @@
+{'terms': u'%28%28florid%5ballfields%5dandcystic%5ballfields%5d%29andendosalpingiosis%5ballfields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Cystic endosalpingiosis of the uterus'], 'uid': ''}

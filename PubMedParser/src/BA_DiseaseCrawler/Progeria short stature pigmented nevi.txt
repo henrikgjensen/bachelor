@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mulhivill Smith syndrome'], 'uid': u'176690'}

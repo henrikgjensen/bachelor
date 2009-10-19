@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28trisomy%5btitle%5dand4q25%5btitle%5d%29andqter%5btitle%5d%29or%28%28duplication%5btitle%5dand4q25%5btitle%5d%29andqter%5btitle%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy 4q25 qter', u'Duplication 4q25 qter'], 'uid': ''}

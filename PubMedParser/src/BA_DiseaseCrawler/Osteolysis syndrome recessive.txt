@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Osteolysis', u' distal', u' with short stature', u' mental retardation', u' and characteristic facial appearance'], 'uid': u'259610'}

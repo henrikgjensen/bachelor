@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Osteoglophonic dwarfism', u'Fairbank-Keats syndrome', u'OGD'], 'uid': u'166250'}

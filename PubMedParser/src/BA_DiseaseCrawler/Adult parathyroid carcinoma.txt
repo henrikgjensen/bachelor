@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Adulat parathyroid cancer', u'Parathyroid carcinoma', u' adult', u'Parathyroid cancer', u' adult'], 'uid': u'608266'}

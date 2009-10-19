@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Seborrheic keratoses', u'Keratosis Seborrheica'], 'uid': u'182000'}

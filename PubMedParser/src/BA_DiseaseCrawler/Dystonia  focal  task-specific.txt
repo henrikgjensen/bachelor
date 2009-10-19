@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FTSD', u'Focal dystonia', u' task specified'], 'uid': u'611284'}

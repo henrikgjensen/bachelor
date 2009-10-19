@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EDS due to TNX deficiency', u'TNX deficiency'], 'uid': u'606408'}

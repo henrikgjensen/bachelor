@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cryptophthalmos with other malformations'], 'uid': u'219000'}

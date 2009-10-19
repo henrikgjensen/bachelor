@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Chromosome tetraploidy syndrome', u'Tetraploidy syndrome', u'92', u'XXXX syndrome'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Tyrosiluria', u'Inborn hepatorenal dysfunction syndrome', u'Hypermethioninemia', u'Anorexia', u' vomiting', u' diarrhea', u' abdominal distention', u' foul-smelling stool', u' rickets', u' aminociduria with high excretion of tyrosine', u' serine', u' threonine', u'Baber syndrome'], 'uid': ''}

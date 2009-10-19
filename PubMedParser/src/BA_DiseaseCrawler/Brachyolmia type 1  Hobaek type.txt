@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spondylodysplasia with pure brachyolmia', u'Brachyolmia', u' recessive type of Hobaek'], 'uid': u'271530'}

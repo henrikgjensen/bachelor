@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'OFD3', u'Oral-facial-digital syndrome type 3', u'OFD syndrome 3', u'Sugarman syndrome'], 'uid': ''}

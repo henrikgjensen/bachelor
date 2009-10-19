@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lenz-Majewski syndrome', u'LMS', u'Multiple congenital anomalies', u' mental retardation', u' and progressive skeletal sclerosis', u'Lenz-Majewski hyperostotic dysplasia'], 'uid': u'151050'}

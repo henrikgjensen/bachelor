@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'11-&#64;beta-hydroxysteroid dehydrogenase', u' type i', u' deficiency of', u'Hsd11b1 deficiency'], 'uid': u'604931'}

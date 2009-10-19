@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BCD', u'Bietti&#39;s crystalline corneoretinal dystrophy', u'Bietti tapetoretinal degeneration with marginal corneal dystrophy'], 'uid': u'210370'}

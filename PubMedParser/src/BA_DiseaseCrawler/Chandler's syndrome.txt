@@ -1,0 +1,1 @@
+{'terms': u'chandler%27s%5btitle%5dandsyndrome%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Dystrophia endothelialis cornea', u'Iris atrophy with corneal edema and glaucoma', u'Chandler syndrome'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': u'%28orbital%5btitle%5dandlymphoma%5btitle%5d%29andhasabstract%5btext%5dand%222001/02/0607.52%22%5bedat%5d%3a%222006/02/0607.52%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Primary orbital lymphoma', u'Lymphoma  of the orbit'], 'uid': ''}

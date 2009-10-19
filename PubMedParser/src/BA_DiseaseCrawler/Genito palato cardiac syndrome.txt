@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gardner-Silengo-Wachtel syndrome', u'Genito-palato-cardiac syndrome', u'Genitopalatocardiac syndrome', u'Male pseudohermaphroditism with micrognathia', u' cleft palate and conotruncal cardiac defect'], 'uid': u'231060'}

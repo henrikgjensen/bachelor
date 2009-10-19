@@ -1,0 +1,1 @@
+{'terms': u'%28malignant%5btitle%5dandmesenchymal%5btitle%5dandtumor%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Malignant mesenchymoma'], 'uid': ''}

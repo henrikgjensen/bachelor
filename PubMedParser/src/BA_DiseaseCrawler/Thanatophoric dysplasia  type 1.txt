@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thanatophoric dwarfism'], 'uid': u'187600'}

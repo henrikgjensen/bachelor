@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hydrocephalus cleft palate joint contractures', u'Joint contractures with other abnormalities'], 'uid': u'147800'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Primordial birdheaded nanism associated with progressive ataxia', u' early onset insulin resistant diabetes', u' goiter', u' and primary gonadal insufficiency'], 'uid': u'210740'}

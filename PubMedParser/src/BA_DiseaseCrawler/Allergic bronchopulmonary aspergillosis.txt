@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ABPA', u'Allergic bronchopulmonary mycosis', u'Aspergillosis', u' allergic bronchopulmonary', u'Pulmonary aspergillosis', u'Aspergillosis', u' pulmonary fungal infection'], 'uid': u'103920'}

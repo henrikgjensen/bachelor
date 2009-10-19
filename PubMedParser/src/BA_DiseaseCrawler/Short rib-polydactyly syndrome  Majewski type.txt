@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SRPS', u' type 2', u'Majewski syndrome', u'Polydactyly with neonatal chondrodystrophy', u' type 2'], 'uid': u'263520'}

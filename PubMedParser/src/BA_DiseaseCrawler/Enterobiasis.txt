@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Enterobius vermicularis infection', u'Pinworm', u'Seatworm', u'Oxyuriasis', u'Human enterobiasis'], 'uid': ''}

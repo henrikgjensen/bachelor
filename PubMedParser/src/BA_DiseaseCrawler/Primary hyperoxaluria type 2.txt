@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HP2', u'Oxalosis 2', u'Glyoxylate reductase&#47;hydroxypyruvate reductase deficiency', u'Glyceric aciduria', u'D-glycerate dehydrogenase deficiency'], 'uid': u'260000'}

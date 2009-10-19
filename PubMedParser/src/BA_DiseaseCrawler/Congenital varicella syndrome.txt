@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Fetal effects of Chickenpox', u'Fetal varicella infection', u'Fetal varicella zoster syndrome', u'Fetal effects of varicella zoster virus', u'Varicella Embryopathy'], 'uid': ''}

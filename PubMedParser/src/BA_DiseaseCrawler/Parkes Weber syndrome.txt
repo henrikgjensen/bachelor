@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PKWS', u'Cutaneous flush with underlying multiple micro arteriovenous fistulas', u' soft tissue and skeletal hypertrophy of the affected limb'], 'uid': u'608355'}

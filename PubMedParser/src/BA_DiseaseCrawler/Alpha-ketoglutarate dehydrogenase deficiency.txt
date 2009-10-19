@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alpha KGD deficiency', u'2 alpha ketoglutarate dehydrogenase deficiency', u'Oxoglutaricaciduria'], 'uid': u'203740'}

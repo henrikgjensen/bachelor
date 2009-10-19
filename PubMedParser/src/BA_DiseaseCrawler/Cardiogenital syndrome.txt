@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Najjar syndrome', u'Genital anomaly with cardiomyopathy'], 'uid': u'212120'}

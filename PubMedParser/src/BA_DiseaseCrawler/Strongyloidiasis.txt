@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Strongyloides stercoralis infection', u'Nematode &#40;roundworm&#41; Strongyloides stercoralis infection', u'Nematode &#40;roundworm&#41; infection'], 'uid': ''}

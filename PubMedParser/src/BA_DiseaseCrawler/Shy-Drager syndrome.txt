@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Multiple system atrophy &#40;MSA&#41; with orthostatic hypotension', u'Orthostatic hypotension', u' bladder and bowel incontinence', u' anhidrosis', u' iris atrophy', u' amyotrophy', u' ataxia', u' rigidity and tremor', u'Multiple system atrophy with autonomic failure'], 'uid': u'146500'}

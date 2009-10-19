@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachydactyly-distal symphalangism syndrome'], 'uid': u'113450'}

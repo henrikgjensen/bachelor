@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Marden Walker like syndrome without psychomotor retardation', u'Van den Ende Gupta syndrome', u'VDEGS', u'Blepharophimosis', u' arachnodactyly', u' and congenital contractures'], 'uid': u'600920'}

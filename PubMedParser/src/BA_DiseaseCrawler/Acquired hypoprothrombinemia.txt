@@ -1,0 +1,1 @@
+{'terms': u'(acquired%5btitle%5d+and+hypoprothrombinemia%5btitle%5d)+and+hasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Hypoprothrombinemia', u' acquired', u'Acquired prothrombin deficiency', u'Acquired factor II deficiency'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Congenital MG', u'Myasthenia gravis pseudoparalytica', u'Erb-Goldflam syndrome'], 'uid': ''}

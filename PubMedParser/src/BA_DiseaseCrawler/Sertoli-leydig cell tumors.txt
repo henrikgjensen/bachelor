@@ -1,0 +1,1 @@
+{'terms': u'sertoli-leydig%5btitle%5dandcell%5btitle%5dandtumor%5btitle%5dandovary%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Arrhenoblastoma', u'Androblastoma of ovary', u'Sertoli-leydig cell tumor of the ovary'], 'uid': ''}

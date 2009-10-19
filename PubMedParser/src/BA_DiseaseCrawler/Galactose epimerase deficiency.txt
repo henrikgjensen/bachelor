@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'UDP-Galactose-4-epimerase deficiency', u'GALE deficiency', u'Galactosemia 3'], 'uid': u'230350'}

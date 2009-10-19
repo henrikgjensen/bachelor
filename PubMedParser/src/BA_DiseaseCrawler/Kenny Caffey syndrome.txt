@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kenny-Caffey syndrome', u' type 2', u'KCS2', u'Dwarfism', u' cortical thickening of tubular bones', u' and transient hypocalcemia', u'Kenny syndrome'], 'uid': u'127000'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Polydactyly with neonatal chondrodystrophy', u' type 3', u'SRPS', u' type 3', u'Verma-Naumoff syndrome'], 'uid': u'263510'}

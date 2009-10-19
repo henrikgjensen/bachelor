@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PPKB', u'Palmoplantar keratoderma', u' Bothnian type'], 'uid': u'600231'}

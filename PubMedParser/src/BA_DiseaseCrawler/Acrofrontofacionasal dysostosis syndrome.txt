@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AFFN dysostosis 1', u'Polysyndactyly', u' postaxial', u' frontonasal dysostosis and cleft lip&#47;palate', u'Cleft lip&#47;palate with frontonasal dysostosis and postaxial polysyndactyly', u'Acro fronto facio nasal dysostosis'], 'uid': u'201180'}

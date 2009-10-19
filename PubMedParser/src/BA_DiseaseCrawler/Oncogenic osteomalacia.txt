@@ -1,0 +1,1 @@
+{'terms': u'%28oncogenic%5btitle%5dandosteomalacia%5btitle%5d%29andhasabstract%5btext%5dandenglish%5blang%5dand%22humans%22%5bmeshterms%5dand%222000/10/0609.42%22%5bedat%5d%3a%222005/10/0509.42%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'OOM', u'OO'], 'uid': ''}

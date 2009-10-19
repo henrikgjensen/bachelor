@@ -1,0 +1,1 @@
+{'terms': u'sedlackova%5ball+fields%5d+and+(%22syndrome%22%5bmesh+terms%5d+or+%22syndrome%22%5ball+fields%5d)', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

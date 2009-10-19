@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'3 &#64;methylglutaconic aciduria type V', u'MGA V', u'MGA 5'], 'uid': ''}

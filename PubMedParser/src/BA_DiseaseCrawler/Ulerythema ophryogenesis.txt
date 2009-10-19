@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Type of genodermatosis', u'Keratosis pilaris affecting the follicles of the eyebrow hairs'], 'uid': u'604093'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dianzani form of autoimmune lymphoproliferative disease', u'Autoimmune lymphoproliferative syndrome without FAS mutations'], 'uid': u'605233'}

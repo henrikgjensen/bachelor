@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'X-linked form of fetal akinesia syndrome', u'Polyhydramnios', u' hypokinesia', u' brain malformations', u' telecanthus', u' and narrow palpebral fissures'], 'uid': u'300073'}

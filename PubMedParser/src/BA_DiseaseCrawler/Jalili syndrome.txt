@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cone-rod dystrophy and amelogenesis imperfecta'], 'uid': u'217080'}

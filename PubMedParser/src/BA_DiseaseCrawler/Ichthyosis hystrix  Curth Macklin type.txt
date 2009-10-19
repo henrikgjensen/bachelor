@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Curth-Macklin type ichthyosis hystrix', u'IHCM'], 'uid': u'146590'}

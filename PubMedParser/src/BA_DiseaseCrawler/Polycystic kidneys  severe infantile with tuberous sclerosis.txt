@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PKDTS', u'Tuberous sclerosis&#47;polycystic kidney disease contiguous gene syndrome'], 'uid': u'600273'}

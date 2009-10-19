@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dwarfism with short', u' bowed', u' rigid limbs and characteristic facies', u'Boomerang-like skeletal dysplasia', u'BD'], 'uid': u'112310'}

@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28trisomy%5btitle%5dand12p%5btitle%5d%29andhasabstract%5btext%5d%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy 12p', u'Duplication 12p'], 'uid': ''}

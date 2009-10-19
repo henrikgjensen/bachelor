@@ -1,0 +1,1 @@
+{'terms': u'%28asherman%5btiab%5dandsyndrome%5btiab%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Asherman syndrome', u'Intrauterine synechiae', u'Uterine synechiae'], 'uid': ''}

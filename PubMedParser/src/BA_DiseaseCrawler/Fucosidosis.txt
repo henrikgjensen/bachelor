@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alpha-l-fucosidase deficiency', u'Lysosomal storage disease caused by defective alpha-L-fucosidase with accumulation of fucose in the tissues'], 'uid': u'230000'}

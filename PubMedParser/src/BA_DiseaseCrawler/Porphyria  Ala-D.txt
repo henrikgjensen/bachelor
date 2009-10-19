@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Ala-D Porphyria', u'Ala-D deficiency porphyria', u'Amino levulinic acid dehydratase deficiency'], 'uid': ''}

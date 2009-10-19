@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Skeletal dysplasia epilepsy short stature', u'Gurrieri syndrome'], 'uid': u'601187'}

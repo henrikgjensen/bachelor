@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short-limb skeletal dysplasia with severe combined immunodeficiency'], 'uid': u'200900'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hydronephrosis with peculiar facial expression', u'Urofacial syndrome', u'Inverted smile and occult neuropathic bladder', u'Partial facial palsy with urinary abnormalities', u'Urofacial Ochoa&#39;s syndrome', u'UFS'], 'uid': u'236730'}

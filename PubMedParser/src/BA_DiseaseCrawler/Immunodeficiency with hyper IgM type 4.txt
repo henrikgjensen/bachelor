@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HIGM4', u'Hyper IgM syndrome 4'], 'uid': u'608184'}

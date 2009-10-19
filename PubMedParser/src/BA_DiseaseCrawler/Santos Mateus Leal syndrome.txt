@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hirschsprung disease', u' deafness and polydactyly', u'Hirschsprung disease associated with polydactyly', u' unilateral renal agenesis', u' hypertelorism', u' and congenital deafness'], 'uid': u'235740'}

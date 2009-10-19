@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation with spastic paraplegia and palmoplantar hyperkeratosis'], 'uid': u'309560'}

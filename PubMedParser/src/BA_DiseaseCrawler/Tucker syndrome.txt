@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ptosis vocal cord paralysis', u'Congenital bilateral recurrent nerve paralysis and ptosis'], 'uid': u'193240'}

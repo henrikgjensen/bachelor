@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microphthalmos bilateral', u' colobomatous orbital cyst'], 'uid': u'251505'}

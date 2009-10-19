@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28%28%28non%5btitle/abstract%5dandfunctioning%5btitle/abstract%5d%29andpancreatic%5btitle/abstract%5d%29andendocrine%5btitle/abstract%5d%29andtumor%5btitle/abstract%5d%29andhasabstract%5btext%5d%29andenglish%5blang%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Non-functioning EPTs', u'Non-functioning endocrine pancreatic tumors'], 'uid': ''}

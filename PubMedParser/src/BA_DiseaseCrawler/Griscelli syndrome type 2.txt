@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GS2', u'Griscelli syndrome with hemophagocytic syndrome', u'Partial albinism and immunodeficiency syndrome', u'PAID syndrome'], 'uid': u'607624'}

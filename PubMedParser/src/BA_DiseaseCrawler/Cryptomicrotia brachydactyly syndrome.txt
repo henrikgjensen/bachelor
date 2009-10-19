@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Tonoki ohura niikawa syndrome', u'Cryptomicrotia brachydactyly syndrome excess fingertip arch', u'Bilateral cryptomicrotia', u' brachytelomesophalangy', u' hypoplastic toe nails', u' and excess fingertip arch'], 'uid': u'123560'}

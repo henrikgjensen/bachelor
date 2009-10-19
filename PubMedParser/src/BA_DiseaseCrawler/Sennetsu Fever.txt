@@ -1,0 +1,1 @@
+{'terms': u'%28%28sennetsu%5btitle/abstract%5dandfever%5btitle/abstract%5d%29andhasabstract%5btext%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Human Ehrlichial infection', u' Sennetsu type'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short stature', u' brachydactyly', u' nail dysplasia', u' and mental retardation'], 'uid': u'603396'}

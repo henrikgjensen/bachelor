@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Albinism-Microcephaly digital anomalies syndrome'], 'uid': u'203340'}

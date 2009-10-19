@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28trisomy%5btitle%5dand8%5btitle%5d%29andmosaicism%5btitle%5d%29or%28%28uniparental%5btitle%5danddisomy%5btitle%5d%29and8%5btitle%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy 8 Mosaicism', u'Uniparental disomy of 8'], 'uid': ''}

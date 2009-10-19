@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Diffuse cystic renal dysplasia'], 'uid': u'601331'}

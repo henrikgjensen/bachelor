@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Sucrose isomaltose enzyme deficiency'], 'uid': ''}

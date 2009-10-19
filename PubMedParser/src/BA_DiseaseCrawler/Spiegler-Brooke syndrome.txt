@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SBS', u'Brooke-Spiegler syndrome', u'Ancell-Spiegler cylindromas'], 'uid': u'605041'}

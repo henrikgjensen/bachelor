@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Lean spastic dwarfism', u'Dwarfism', u' lean spastic type'], 'uid': u'852873'}

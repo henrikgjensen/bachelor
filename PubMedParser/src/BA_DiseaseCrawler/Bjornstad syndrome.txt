@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BJS', u'Pili torti and nerve deafness', u'PTND', u'Pili torti-sensorineural hearing loss', u'Deafness and pili torti', u' Bjornstad type'], 'uid': u'262000'}

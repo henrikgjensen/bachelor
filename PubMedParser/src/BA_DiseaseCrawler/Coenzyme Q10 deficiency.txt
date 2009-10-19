@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CoQ10 deficiency', u'CoQ10 deficiency', u' primary'], 'uid': u'607426'}

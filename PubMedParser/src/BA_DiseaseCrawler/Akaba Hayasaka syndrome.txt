@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Frontal bossing', u' cloudy corneae', u' low nasal ridge', u' and micrognathia', u' hypoplastic thorax', u' and rhizomelic micromelia'], 'uid': u'8989469'}

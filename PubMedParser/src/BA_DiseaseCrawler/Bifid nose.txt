@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Median fissure of nose', u'Nose', u' median cleft of'], 'uid': u'210400'}

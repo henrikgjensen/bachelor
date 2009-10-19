@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Buschke Fischer Brauer syndrome', u'Keratodermia palmoplantaris papulosa', u' Buschke-Fischer-Brauer type', u'Type I punctate palmoplantar keratoderma', u'Keratoderma', u' palmoplantar punctate type 1'], 'uid': u'148600'}

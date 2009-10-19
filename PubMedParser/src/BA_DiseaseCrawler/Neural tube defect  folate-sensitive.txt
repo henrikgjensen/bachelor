@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neural tube defects', u'NTD- Folate sensitive'], 'uid': u'601634'}

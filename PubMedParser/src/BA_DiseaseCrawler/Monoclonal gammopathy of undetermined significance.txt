@@ -1,0 +1,1 @@
+{'terms': u'(monoclonal%5btitle%5d+and+gammopathy%5btitle%5d+and+undetermined%5btitle%5d+and+significance%5btitle%5d)+or+mgus%5btitle%5d+and+(%222007%2f04%2f12%22%5bpdat%5d+%3a+%222008%2f04%2f10%22%5bpdat%5d+and+english%5blang%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'MGUS'], 'uid': ''}

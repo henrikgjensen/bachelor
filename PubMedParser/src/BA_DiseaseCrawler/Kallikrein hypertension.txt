@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kallikrein attenuated hypertension'], 'uid': u'147910'}

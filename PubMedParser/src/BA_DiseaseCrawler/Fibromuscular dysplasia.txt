@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Fibromuscular dysplasia of arteries', u'FMD'], 'uid': u'135580'}

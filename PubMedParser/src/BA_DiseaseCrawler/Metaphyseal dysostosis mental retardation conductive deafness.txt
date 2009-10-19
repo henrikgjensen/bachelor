@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Metaphyseal dysostosis', u' conductive hearing loss', u' and mental retardation'], 'uid': ''}

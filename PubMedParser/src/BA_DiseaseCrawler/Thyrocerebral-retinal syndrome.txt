@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thyrocerebroretinal syndrome'], 'uid': u'274240'}

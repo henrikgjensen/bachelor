@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pulmonic stenosis', u' brachytelephalangism', u' and calcification of cartilages'], 'uid': u'245150'}

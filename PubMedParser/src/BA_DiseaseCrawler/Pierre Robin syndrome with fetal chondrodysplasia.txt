@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Weissenbacher-Zweymuller syndrome', u'WZS'], 'uid': u'277610'}

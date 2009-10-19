@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Achondrogenesis', u' Fraccaro type', u'Fraccaro achondrogenesis', u'ACG1B'], 'uid': u'600972'}

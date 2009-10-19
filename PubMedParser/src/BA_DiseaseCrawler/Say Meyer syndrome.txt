@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Trigonocephaly', u' short stature and developmental delay', u'Trigonocephaly', u' short stature', u' and retarded psychomotor development'], 'uid': u'314320'}

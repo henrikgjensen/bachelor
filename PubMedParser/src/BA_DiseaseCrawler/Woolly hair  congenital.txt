@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Frizzy hair syndrome', u'Woolly hair syndrome'], 'uid': u'194300'}

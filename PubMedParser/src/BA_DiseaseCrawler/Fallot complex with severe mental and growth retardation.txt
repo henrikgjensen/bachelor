@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bindewald Ulmer Muller syndrome'], 'uid': u'601127'}

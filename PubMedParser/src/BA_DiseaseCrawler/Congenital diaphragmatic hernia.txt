@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDH', u'Congenital diaphragmatic defect', u'Unilateral agenesis of diaphragm', u'Agenesis of hemidiaphragm'], 'uid': u'142340'}

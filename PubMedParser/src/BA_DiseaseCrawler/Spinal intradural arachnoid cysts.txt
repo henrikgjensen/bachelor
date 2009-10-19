@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arachnoid cysts', u' spinal intradural'], 'uid': u'182990'}

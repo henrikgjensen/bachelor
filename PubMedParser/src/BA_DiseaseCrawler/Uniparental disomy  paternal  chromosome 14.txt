@@ -1,0 +1,1 @@
+{'terms': u'paternal%5ballfields%5dand%28%22uniparentaldisomy%22%5bmeshterms%5doruniparentaldisomy%5btextword%5d%29and%28%22chromosomes%2chuman%2cpair14%22%5bmeshterms%5dorchromosome14%5btextword%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Paternal uniparental disomy 14'], 'uid': ''}

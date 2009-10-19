@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Horton&#39;s arteritis', u'Horton&#39;s giant cell arteritis', u'Horton&#8217;s syndrome', u'Horton&#39;s temporal arteritis', u'Horton-Gilmour disease', u'Horton-Magath-Brown syndrome', u'Hutchinson-Horton-Syndrome', u'Arteritis temporalis', u'Arteritis cranialis', u'Temporal megacellular arteritis'], 'uid': ''}

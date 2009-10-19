@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Primary hypertrophic osteoarthropathy', u'Idiopathic hypertrophic osteoarthropathy', u'PDP'], 'uid': u'167100'}

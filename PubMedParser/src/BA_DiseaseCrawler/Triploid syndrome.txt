@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Triploidy', u'Triploidy syndrome', u'Chromosome triploidy syndrome'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital myasthenic syndrome ib'], 'uid': u'159400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Osteosarcoma', u' limb anomalies &#40;clinodactyly', u' absence of digital ray in foot', u' bilateral radioulnar synostosis&#41; and macrocytosis without anemia', u'Osteosarcoma', u' limb anomalies', u' and erythroid macrocytosis with megaloblastic marrow'], 'uid': u'165660'}

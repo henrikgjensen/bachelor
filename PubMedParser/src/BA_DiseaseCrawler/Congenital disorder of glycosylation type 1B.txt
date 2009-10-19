@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDG1B', u'CDG 1B', u'CDGS1B', u'Carbohydrate-deficient glycoprotein syndrome type 1B', u'CDG', u' Gastrointestinal type', u'Mannosephosphate isomerase deficiency', u'MPI deficiency', u'Protein-losing enteropathy-hepatic fibrosis syndrome', u'Saguenay-Lac Saint-Jean syndrome', u'SLSJ syndrome'], 'uid': u'602579'}

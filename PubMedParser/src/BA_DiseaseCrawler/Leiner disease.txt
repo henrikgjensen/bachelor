@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Complement component 5 deficiency', u'C5 deficiency', u'Dysfunction of the fifth component of complement &#40;C5&#41;'], 'uid': u'120900'}

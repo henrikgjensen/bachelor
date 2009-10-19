@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HHF6', u'Hyperinsulinism-hyperammonemia syndrome'], 'uid': u'606762'}

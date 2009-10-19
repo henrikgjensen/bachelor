@@ -1,0 +1,1 @@
+{'terms': u'granuloma+annulare%5bti%5d+not+subcutaneous%5ball+fields%5d+and+(%22loattrfull+text%22%5bsb%5d+and+%222004%2f08%2f04%22%5bpdat%5d+%3a+%222007%2f08%2f03%22%5bpdat%5d)', 'desc': 'Granuloma annulare is a long-term (chronic) skin disease consisting of a rash with reddish bumps arranged in a circle or ring.', 'db': u'pubmed', 'syn': [], 'uid': ''}

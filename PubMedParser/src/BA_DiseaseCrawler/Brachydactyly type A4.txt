@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BDA4', u'Brachydactyly Temtamy type', u'Temtamy type brachydactyly', u'Brachymesophalangy II and V'], 'uid': u'112800'}

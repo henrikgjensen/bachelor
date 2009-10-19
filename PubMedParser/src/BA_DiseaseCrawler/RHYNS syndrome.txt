@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Retinitis pigmentosa', u' HYpopituitarism', u' Nephronophthisis', u' and mild Skeletal dysplasia', u'Retinitis pigmentosa syndrome'], 'uid': u'602152'}

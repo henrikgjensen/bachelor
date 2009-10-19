@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ARG1 deficiency', u'Hyperargininemia', u'Argininemia'], 'uid': u'207800'}

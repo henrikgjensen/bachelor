@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal recessive ectodermal dysplasia', u'Ectodermal dysplasia type 4', u'ED4', u'Ectodermal dysplasia Margarita island type'], 'uid': u'225060'}

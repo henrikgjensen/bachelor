@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital ptosis and posterior fusion of lumbosacral vertebrae', u'Familial posterior lumbosacral vertebral fusion and eyelid ptosis'], 'uid': u'192800'}

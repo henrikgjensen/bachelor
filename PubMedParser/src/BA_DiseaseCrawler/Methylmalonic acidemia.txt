@@ -1,0 +1,1 @@
+{'terms': u'methylmalonic%5btitle%5d+and+acidemia%5btitle%5d+and+(%222003%2f08%2f16%22%5bpdat%5d+%3a+%222008%2f08%2f13%22%5bpdat%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'MMA', u'Acidemia', u' methylmalonic'], 'uid': ''}

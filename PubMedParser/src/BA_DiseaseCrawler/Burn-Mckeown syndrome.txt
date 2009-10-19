@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bilateral choanal atresia', u' cardiac defects', u' deafness', u' and dysmorphic appearance'], 'uid': u'608572'}

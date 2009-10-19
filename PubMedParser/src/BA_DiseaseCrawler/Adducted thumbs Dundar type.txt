@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Adducted thumb-club foot syndrome'], 'uid': u'601776'}

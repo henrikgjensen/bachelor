@@ -1,0 +1,1 @@
+{'terms': u'%28gestational%5ballfields%5dand%28%22pemphigoid%2cbullous%22%5bmeshterms%5dorpemphigoid%5btextword%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Herpes gestationis', u'Pemphigoid gestationis'], 'uid': ''}

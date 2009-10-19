@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Iris coloboma', u' mental retardation', u' obesity', u' hypogenitalism', u' and postaxial polydactyly', u'BS2'], 'uid': u'210350'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCAR4', u'Spinocerebellar ataxia with saccadic intrusions', u'SCASI', u'Spinocerebellar ataxia 24', u' &#40;formerly&#41;'], 'uid': u'607317'}

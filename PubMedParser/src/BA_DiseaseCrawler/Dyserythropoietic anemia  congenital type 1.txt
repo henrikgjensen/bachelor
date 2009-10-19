@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anemia', u' dyserythropoietic', u' congenital type 1', u'Type I congenital dyserythropoietic anemia', u'Congenital dyserythropoietic anemia type 1'], 'uid': u'224120'}

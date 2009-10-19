@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Multicore myopathy with external ophthalmoplegia', u'Multiminicore disease with external ophthalmoplegia'], 'uid': u'255320'}

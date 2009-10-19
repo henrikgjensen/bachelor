@@ -1,0 +1,1 @@
+{'terms': u'dysferlinopathy%5bti%5d', 'desc': 'Dysferlinopathies are muscular dystrophies caused by mutations in the dysferlin gene. Examples of dysferlinopathies include limb-girdle muscular dystrophy type B, Miyoshi myopathy, and distal anterior compartment myopathy.', 'db': u'pubmed', 'syn': [], 'uid': ''}

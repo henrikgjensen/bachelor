@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Keratitis-ichthyosis-deafness syndrome', u' autosomal dominant', u'KID syndrome', u' autosomal dominant', u'Keratitis', u' Ichthyosis', u' and Deafness &#40;KID&#41; Syndrome'], 'uid': u'148210'}

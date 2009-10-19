@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Vesicles', u' celosomia', u'  short neck', u' microcornea and dextrocardia'], 'uid': ''}

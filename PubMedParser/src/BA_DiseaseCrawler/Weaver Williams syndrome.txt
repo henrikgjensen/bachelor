@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Mental retardation', u' microcephaly', u' weight deficiency', u' unusual facies', u' clinodactyly', u' bone hypoplasia', u' and cleft palate'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DTGA', u'Dextro-looped transposition of the great arteries'], 'uid': u'608808'}

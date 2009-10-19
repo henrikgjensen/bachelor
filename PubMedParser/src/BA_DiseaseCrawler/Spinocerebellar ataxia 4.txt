@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCA4', u'Spinocerebellar ataxia', u' autosomal dominant', u' with sensory axonal neuropathy'], 'uid': u'600223'}

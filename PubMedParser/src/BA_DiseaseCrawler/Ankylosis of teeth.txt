@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Molar I reinclusion', u'Dental ankylosis', u'Secondary retention of permanent molars', u'Abnormal fusion of dental cementum with alveolar bone'], 'uid': u'157950'}

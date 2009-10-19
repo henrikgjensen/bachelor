@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcephaly lymphedema chorioretinal dysplasia', u'Chorioretinal dysplasia-microcephaly-mental retardation syndrome'], 'uid': u'152950'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Prenatal and postnatal growth retardation', u' blindness', u' hearing loss', u' dysmorphic features', u' epilepsy', u' mental retardation and absence of speech', u'WTRS'], 'uid': u'300421'}

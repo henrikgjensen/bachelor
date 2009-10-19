@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Trigonobrachycephaly', u' bulbous bifid nose', u' micrognathia', u' and abnormalities of the hands and feet', u'Trigonobrachycephaly', u' bulbous bifid nose', u' macrostomia', u' micrognathia', u' acral anomalies', u' and hypotonia'], 'uid': u'275595'}

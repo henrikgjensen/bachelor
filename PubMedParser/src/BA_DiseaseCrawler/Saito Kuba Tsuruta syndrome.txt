@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Fibulo ulnar hypoplasia renal anomalies', u'Fibuloulnar aplasia or hypoplasia with renal abnormalities'], 'uid': u'228940'}

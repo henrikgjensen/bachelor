@@ -1,0 +1,1 @@
+{'terms': u'%28small%5btitle%5dandcell%5btitle%5dandvariant%5btitle%5dandanaplastic%5btitle%5dandlarge%5btitle%5dandcell%5btitle%5dandlymphoma%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Small cell variant of anaplastic large cell lymphoma'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Capillary venous leptomeningeal angiomatosis', u'Leptomeningeal capillary - venous angiomatosis'], 'uid': ''}

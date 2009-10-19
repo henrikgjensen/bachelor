@@ -1,0 +1,1 @@
+{'terms': u'schranderstumpel%5bauthor%5dandtheunissen%5ballfields%5dandhulsmans%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Vitiligo', u' psychomotor retardation', u' cleft palate and facial dysmorphism', u'Vitiligo vulgaris', u' cleft palate', u' somatic and psychomotor retardation and facial dysmorphism'], 'uid': ''}

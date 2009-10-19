@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ataxia-deafness syndrome', u' X-linked', u'SCAX3'], 'uid': u'301790'}

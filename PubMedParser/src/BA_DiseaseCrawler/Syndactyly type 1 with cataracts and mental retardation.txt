@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Pavone Fiumara Rizzo syndrome'], 'uid': u'8287189'}

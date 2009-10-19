@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EHBA', u'Familial extrahepatic biliary atresia', u'Idiopathic extrahepatic biliary atresia'], 'uid': u'210500'}

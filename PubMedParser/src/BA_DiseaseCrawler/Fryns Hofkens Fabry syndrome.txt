@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ulnar hypoplasia', u'Upper limb mesomelic dysplasia', u'Ulna hypoplasia'], 'uid': u'191440'}

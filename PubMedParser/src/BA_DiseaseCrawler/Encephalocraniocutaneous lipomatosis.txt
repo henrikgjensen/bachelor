@@ -1,0 +1,1 @@
+{'terms': u'(fishman%5btitle%5d+and+syndrome%5btitle%5d)+and+%22loattrfull+text%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'ECCL', u'Fishman syndrome'], 'uid': ''}

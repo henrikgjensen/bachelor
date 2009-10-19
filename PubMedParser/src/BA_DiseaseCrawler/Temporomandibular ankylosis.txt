@@ -1,0 +1,1 @@
+{'terms': u'temporomandibular%5btitle%5dandankylosis%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Ankylosis of the temporomandibular joint &#40;TMJ&#41;', u'TMJ Ankylosis'], 'uid': ''}

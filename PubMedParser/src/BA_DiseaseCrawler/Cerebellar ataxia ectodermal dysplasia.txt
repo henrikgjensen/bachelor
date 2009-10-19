@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ectodermal dysplasia and cerebellar ataxia'], 'uid': u'212835'}

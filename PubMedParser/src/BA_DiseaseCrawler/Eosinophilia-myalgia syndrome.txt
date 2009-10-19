@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'EMS', u'L-tryptophan induced EMS', u'Syndrome with inflammatory and autoimmune components that affect the skin', u' fascia', u' muscle', u' nerve', u' blood vessels', u' lung', u' and heart', u'Severe muscle pain and abnormally high eosinophils'], 'uid': ''}

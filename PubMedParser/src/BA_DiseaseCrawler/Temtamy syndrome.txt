@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dysmorphism', u' corpus callosum agenesis and colobomas', u'Craniofacial dysmorphism with ocular coloboma absent corpus callosum and aortic dilatation'], 'uid': u'218340'}

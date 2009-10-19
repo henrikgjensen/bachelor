@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SHFM2', u'Split hand foot deformity 2', u'SHFD2', u'Split hand foot anomaly - X-linked', u'SHSF2'], 'uid': u'313350'}

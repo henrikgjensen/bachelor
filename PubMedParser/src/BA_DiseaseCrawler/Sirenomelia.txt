@@ -1,0 +1,1 @@
+{'terms': u'sirenomelia%5btitle%5dandhasabstract%5btext%5dand%22loattrfulltext%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Mermaid malformation', u'Fused legs and feet', u'Sirenomelus', u'Sirenomelia sequence', u'Mermaid syndrome'], 'uid': ''}

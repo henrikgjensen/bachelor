@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Phocomelia thrombocytopenia encephalocele and urogenital malformations', u'Von Voss Cherstvoy syndrome'], 'uid': u'223340'}

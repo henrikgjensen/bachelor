@@ -1,0 +1,1 @@
+{'terms': u'hypohidrotic+ectodermal+dysplasia%5bti%5d+and+%28%221999%2f02%2f22%22%5bpdat%5d+%3a+%222009%2f02%2f18%22%5bpdat%5d+and+english%5blang%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'HED', u'Ectodermal dysplasia', u' hypohidrotic'], 'uid': ''}

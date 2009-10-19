@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Generalized connective tissue syndrome', u'Blepharophimosis', u' micrognathia', u' immobile facies', u' kyphoscoliosis', u' limb contractures', u' pigeon breast', u' and arachnodactyly', u'MWS', u'Connective Tissue Disorder', u' Marden-Walker Type'], 'uid': u'248700'}

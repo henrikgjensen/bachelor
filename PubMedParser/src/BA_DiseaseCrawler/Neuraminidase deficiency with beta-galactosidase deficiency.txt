@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Goldberg syndrome', u'Galactosialidosis', u'Lysosomal protective protein', u' deficiency of', u'Protective protein&#47;Cathepsin A deficiency', u'Cathepsin A', u' deficiency of', u'GSL', u'Neuraminidase&#47;beta-galactosidase expression', u'PPCA deficiency'], 'uid': u'256540'}

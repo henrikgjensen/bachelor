@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OASH', u'Cardiomyopathy', u' familial hypertrophic', u'Idiopathic hypertrophic subaortic stenosis', u'Ventricular hypertrophy', u' hereditary', u'Hypertrophic subaortic stenosis', u' idiopathic', u'CMFH'], 'uid': u'192600'}

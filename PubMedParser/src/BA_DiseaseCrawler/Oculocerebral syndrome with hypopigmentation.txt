@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cross syndrome', u'Kramer syndrome', u'Oculocerebral hypopigmentation syndrome', u'Cross-McKusick-Breen syndrome', u'Depigmentation gingival fibromatosis microphthalmia'], 'uid': u'257800'}

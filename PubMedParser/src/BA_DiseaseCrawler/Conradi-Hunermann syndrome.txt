@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Chondrodysplasia punctata 2', u' X-linked dominant', u'CDPXD', u'CDPX2', u'Happle syndrome', u'Conradi Hunermann Happle syndrome'], 'uid': u'302960'}

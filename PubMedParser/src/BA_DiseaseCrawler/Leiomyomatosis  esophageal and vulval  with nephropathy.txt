@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DL-ATS', u'Diffuse leiomyomatosis in Alport syndrome', u'Alport syndrome with diffuse leiomyomatosis', u'ATS-DL'], 'uid': u'308940'}

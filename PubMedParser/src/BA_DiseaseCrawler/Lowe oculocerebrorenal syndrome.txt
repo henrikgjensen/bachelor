@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OCRL', u'OCRL1', u'Lowe syndrome', u'Phosphatidylinositol 4', u'5-bisphosphate 5-phosphatase deficiency'], 'uid': u'309000'}

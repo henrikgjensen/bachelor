@@ -1,0 +1,1 @@
+{'terms': u'%28%28banti%5btitle%5dandsyndrome%5btitle%5d%29andhasabstract%5btext%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Idiopathic portal hypertension', u'Idiopathic congestive splenomegaly', u'Banti&#39;s disease'], 'uid': ''}

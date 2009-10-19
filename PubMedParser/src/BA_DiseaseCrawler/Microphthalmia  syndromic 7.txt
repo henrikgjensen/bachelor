@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microphthalmia', u' dermal aplasia', u' and sclerocornea', u'MLS syndrome', u'Microphthalmia with linear skin defects', u'MIDAS syndrome', u'MCOPS7', u'MLS'], 'uid': u'309801'}

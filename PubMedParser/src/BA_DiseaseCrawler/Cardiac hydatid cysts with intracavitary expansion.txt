@@ -1,0 +1,1 @@
+{'terms': u'cardiac%5btitle%5d+and+hydatid%5btitle%5d+and+cysts%5btitle%5d+and+intracavitary%5btitle%5d+and+expansion%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Cardiac hydatidosis'], 'uid': ''}

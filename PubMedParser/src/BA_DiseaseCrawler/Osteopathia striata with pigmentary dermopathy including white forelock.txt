@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Osteopathia striata associated with familial dermopathy and white forelock', u'Whyte Murphy syndrome'], 'uid': u'311280'}

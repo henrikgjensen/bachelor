@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lewy body disease', u'DLB', u'Diffuse Lewy body disease', u'Autosomal dominant diffuse Lewy body disease'], 'uid': u'127750'}

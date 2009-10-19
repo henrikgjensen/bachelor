@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Lack of subcutaneous tissue arthritis skeletal dysplasia'], 'uid': ''}

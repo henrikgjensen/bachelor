@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Intestinal pseudoobstruction with external ophthalmoplegia', u'Muscular dystrophy', u' oculogastrointestinal'], 'uid': u'277320'}

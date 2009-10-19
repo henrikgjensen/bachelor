@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCCMS', u'Myasthenic syndrome', u' congenital', u' postsynaptic slow-channel', u'Myasthenic syndrome', u' congenital', u' type IIa', u'CMS2A', u'CMS IIa'], 'uid': u'601462'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spondyloepimetaphyseal dysplasia with multiple dislocations leptodactylic type', u'Spondyloepimetaphyseal dysplasia with multiple dislocations Hall type'], 'uid': u'603546'}

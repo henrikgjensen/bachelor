@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'SCA29', u'Aplasia of cerebellar vermis', u'Cerebellar vermis aplasia', u'ACV', u'Cerebellar ataxia', u' early-onset', u' nonprogressive'], 'uid': ''}

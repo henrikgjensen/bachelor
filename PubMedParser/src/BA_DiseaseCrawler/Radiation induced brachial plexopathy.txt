@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Radiation injury to the brachial plexus', u'Radiation induced brachial neuritis'], 'uid': u'10715054'}

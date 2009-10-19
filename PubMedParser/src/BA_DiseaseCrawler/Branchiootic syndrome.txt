@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BOS1', u'BO syndrome 1', u'Branchiootic dysplasia'], 'uid': u'602588'}

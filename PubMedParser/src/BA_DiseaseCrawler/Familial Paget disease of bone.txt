@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PDB1', u'Paget disease of bone type 1', u'Paget&#39;s disease', u' type 1'], 'uid': u'167250'}

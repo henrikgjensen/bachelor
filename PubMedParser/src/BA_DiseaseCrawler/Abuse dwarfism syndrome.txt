@@ -1,0 +1,1 @@
+{'terms': u'(%22child+abuse%22%5bmesh+terms%5d+or+child+abuse%5btext+word%5d)+and+(%22dwarfism%22%5bmesh+terms%5d+or+dwarfism%5btext+word%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Child abuse dwarfism', u'Psychosocial dwarfism'], 'uid': ''}

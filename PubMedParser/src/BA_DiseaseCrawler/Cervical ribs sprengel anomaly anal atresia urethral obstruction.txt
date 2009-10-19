@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cervical ribs', u' Sprengel anomaly', u' preaxial polydactyly', u' anal atresia', u' and urethral obstruction'], 'uid': u'601389'}

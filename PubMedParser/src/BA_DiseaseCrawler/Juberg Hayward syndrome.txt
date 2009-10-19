@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cleft lip&#47;palate with abnormal thumbs and microcephaly', u'Orocraniodigital syndrome', u'JHS'], 'uid': u'216100'}

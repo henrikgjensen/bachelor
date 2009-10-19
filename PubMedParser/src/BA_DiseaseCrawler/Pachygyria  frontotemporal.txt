@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal recessive frontotemporal pachygyria'], 'uid': u'610279'}

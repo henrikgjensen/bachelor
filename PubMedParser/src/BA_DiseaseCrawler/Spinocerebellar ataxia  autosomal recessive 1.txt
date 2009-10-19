@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCAR1', u'Ataxia-oculomotor apraxia 2', u'AOA2', u'Ataxia-ocular apraxia 2'], 'uid': u'606002'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ectodermal dysplasia with mental retardation and syndactyly'], 'uid': u'600906'}

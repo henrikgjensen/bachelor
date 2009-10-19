@@ -1,0 +1,1 @@
+{'terms': u'%28transient%5btitle%5dandacantholytic%5btitle%5danddermatosis%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Transient Acantholytic Dermatosis', u'TAD', u'Grover disease'], 'uid': ''}

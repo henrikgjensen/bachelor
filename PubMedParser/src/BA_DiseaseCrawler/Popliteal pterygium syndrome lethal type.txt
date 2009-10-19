@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bartsocas Papas syndrome', u'BPS', u'Pterygium popliteal lethal type'], 'uid': u'263650'}

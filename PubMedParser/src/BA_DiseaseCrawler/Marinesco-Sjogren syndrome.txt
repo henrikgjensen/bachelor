@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MSS', u'Marinesco-Garland Syndrome', u'Marinesco-Sjogren Syndrome-Hypergonadotrophic Hypogonadism', u'Marinesco-Sjogren Syndrome-Myopathy', u'Marinesco-Sjogren-Garland Syndrome'], 'uid': u'248800'}

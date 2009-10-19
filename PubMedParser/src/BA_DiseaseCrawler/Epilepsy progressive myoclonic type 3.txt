@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EPM 3', u'Progressive myoclonic epilepsy 3'], 'uid': u'611726'}

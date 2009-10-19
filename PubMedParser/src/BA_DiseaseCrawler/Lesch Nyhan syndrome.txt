@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LNS', u'HPRT deficiency', u'HPRT1 deficiency', u'HPRT deficiency', u' complete', u'Hypoxanthine guanine phospho-ribosyltransferase 1 deficiency', u'Lesch-Nyhan syndrome'], 'uid': u'300322'}

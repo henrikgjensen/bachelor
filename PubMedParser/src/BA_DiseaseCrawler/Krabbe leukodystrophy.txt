@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Krabbe disease', u'Globoid cell leukodystrophy', u'GCL', u'Globoid cell leukoencephalopathy', u'Galactosylceramide beta-galactosidase deficiency', u'GALC deficiency', u'GLD', u'Galactocerebrosidase deficiency'], 'uid': u'245200'}

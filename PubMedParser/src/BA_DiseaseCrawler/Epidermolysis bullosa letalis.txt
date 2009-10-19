@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epidermolysis bullosa', u' junctional', u' Herlitz-Pearson type', u'Herlitz-Pearson type epidermolysis bullosa', u'Epidermolysis bullosa', u' junctional', u' Herlitz type'], 'uid': u'226700'}

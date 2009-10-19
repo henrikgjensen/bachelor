@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Cleft lip and palate', u' congenital heart disease', u' scoliosis', u' short stature', u' and mental retardation'], 'uid': u'7139099'}

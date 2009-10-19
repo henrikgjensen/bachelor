@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'JWS', u'Craniosynostosis', u' midfacial hypoplasia', u' and foot abnormalities'], 'uid': u'123150'}

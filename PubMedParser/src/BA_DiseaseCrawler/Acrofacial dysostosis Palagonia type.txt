@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Palagonia type of acrofacial dysostosis', u'Palagonia form of AFD', u'PAFD', u'AFD- Palagonia type'], 'uid': u'601829'}

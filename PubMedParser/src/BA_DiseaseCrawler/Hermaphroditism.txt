@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'True hermaphroditism', u'Familial true hermaphroditism', u'Familial XX true hermaphroditism'], 'uid': u'235600'}

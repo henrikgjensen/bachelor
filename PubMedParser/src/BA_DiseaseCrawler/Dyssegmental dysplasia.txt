@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dyssegmental dysplasia Silverman Handmaker type', u'Dyssegmental dwarfism', u'Anisospondylic camptomicromelic dwarfism'], 'uid': u'224400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Keratoderma palmoplantar', u' punctate type 2', u'Type 2 punctate PPK'], 'uid': u'175850'}

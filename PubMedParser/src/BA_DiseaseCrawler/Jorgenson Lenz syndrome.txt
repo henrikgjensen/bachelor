@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Blepharophimosis radioulnar synostosis', u'Ptosis', u' prognathism', u' microcephaly', u' radio-ulnar synostosis', u' short stature&#47;dwarfism', u'Mild short stature', u' microcephaly', u' ptosis-blepharophimosis', u' facial asymmetry', u' and radioulnar synostosis'], 'uid': u'6590784'}

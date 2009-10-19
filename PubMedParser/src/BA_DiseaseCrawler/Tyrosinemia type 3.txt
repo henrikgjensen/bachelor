@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Tyrosinemia type III', u'4-&#64;hydroxyphenylpyruvic acid oxidase deficiency', u'4-&#64;hydroxyphenylpyruvate dioxygenase deficiency', u'4-hydroxyphenylpyruvate dioxygenase deficiency'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epilepsy with bilateral occipital calcifications', u'Bilateral occipital calcifications with epilepsy', u'Familial unilateral and bilateral occipital calcifications and epilepsy'], 'uid': u'226810'}

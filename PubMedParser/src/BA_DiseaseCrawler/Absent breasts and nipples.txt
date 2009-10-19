@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Athelia', u'Complete absence of breasts'], 'uid': u'113700'}

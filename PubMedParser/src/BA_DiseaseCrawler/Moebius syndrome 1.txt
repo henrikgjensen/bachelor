@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital ophthalmoplegia and facial paresis', u'MBS', u'Facial diplegia', u' congenital', u'MBS1'], 'uid': u'157900'}

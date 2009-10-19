@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Talipes equinovarus', u' atrial septal defect', u' robin sequence', u' and persistence of left superior vena cava', u'TARPS', u'Pierre Robin syndrome with congenital heart malformation and clubfoot'], 'uid': u'311900'}

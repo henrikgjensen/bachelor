@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CTHM', u'Conotruncal cardiac defects'], 'uid': u'217095'}

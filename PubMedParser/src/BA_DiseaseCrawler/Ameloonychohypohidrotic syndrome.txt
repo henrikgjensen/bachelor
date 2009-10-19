@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypocalcified-hypoplastic enamel', u' onycholysis with subungual hyperkeratosis', u' and hypohidrosis'], 'uid': u'104570'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alport syndrome', u' X-linked', u'Nephropathy and deafness', u'Hemorrhagic hereditary nephritis', u'Congenital hereditary hematuria', u'Hemorrhagic familial nephritis'], 'uid': u'301050'}

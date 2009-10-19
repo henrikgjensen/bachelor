@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Muscle contractions', u' tetanoform', u' with characteristic face', u' camptodactyly', u' hyperthermia', u' and sudden death'], 'uid': u'601378'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Levin syndrome 2', u'Osteogenesis imperfecta with unusual skeletal lesions'], 'uid': u'166260'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Contractures of fingers and jaw'], 'uid': u'121070'}

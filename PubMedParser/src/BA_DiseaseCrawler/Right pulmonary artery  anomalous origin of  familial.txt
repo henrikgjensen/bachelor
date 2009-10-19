@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial anomalous origin of right pulmonary artery'], 'uid': u'610338'}

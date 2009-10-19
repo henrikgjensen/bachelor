@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Holoprosencephaly polydactyly syndrome', u'Pseudo trisomy 13 syndrome'], 'uid': u'264480'}

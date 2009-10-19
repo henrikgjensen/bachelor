@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Infantile Refsum disease', u'IRD', u'Infantile form of phytanic acid storage disease'], 'uid': u'266510'}

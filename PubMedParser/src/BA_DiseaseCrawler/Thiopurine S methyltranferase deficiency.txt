@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TPMT deficiency', u'Thiopurines', u' poor metabolism of', u'Thiopurine methyltransferase deficiency'], 'uid': u'610460'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hallux varus and preaxial polysyndactyly'], 'uid': u'234280'}

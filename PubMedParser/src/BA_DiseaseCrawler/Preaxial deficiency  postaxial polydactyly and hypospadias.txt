@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Guttmacher syndrome', u'Autosomal dominant preaxial deficiency', u' postaxial polydactyly', u' and hypospadias'], 'uid': u'176305'}

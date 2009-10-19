@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28chromosome4%5btitle%5dandring%5btitle%5d%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Ring 4 syndrome', u'Ring 4', u' Chromosome', u'R4 syndrome', u'Ring chromosome 4 syndrome', u'&#40;4&#41;r syndrome'], 'uid': ''}

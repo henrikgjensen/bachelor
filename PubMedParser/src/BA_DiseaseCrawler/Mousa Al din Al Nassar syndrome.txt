@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spastic ataxia', u' macular corneal dystrophy', u' congenital cataracts', u' myopia and vertically oval temporally tilted discs', u'Spinocerebellar degeneration with macular corneal dystrophy', u' congenital cataracts', u' and myopia', u'Bedouin spastic ataxia syndrome'], 'uid': u'271320'}

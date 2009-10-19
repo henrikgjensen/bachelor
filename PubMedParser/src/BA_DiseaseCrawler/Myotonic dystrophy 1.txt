@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dystrophia myotonica 1', u'DM 1', u'Steinert disease', u'Steinert myotonic dystrophy'], 'uid': u'160900'}

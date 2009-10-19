@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Flat umbilicus autosomal dominant'], 'uid': u'609164'}

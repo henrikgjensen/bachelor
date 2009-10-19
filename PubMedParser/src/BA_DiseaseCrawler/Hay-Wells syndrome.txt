@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ankyloblepharon-ectodermal defects-cleft lip&#47;palate', u'AEC syndrome', u'Hay wells syndrome dominant form'], 'uid': u'106260'}

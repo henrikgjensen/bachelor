@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thyroid carcinoma', u' Hurthle cell', u'Thyroid cancer', u' follicular', u' Hurthle cell type', u'Follicular thyroid cancer', u' Hurthle cell type', u'Hurthle cell carcinoma of the thyroid'], 'uid': u'607464'}

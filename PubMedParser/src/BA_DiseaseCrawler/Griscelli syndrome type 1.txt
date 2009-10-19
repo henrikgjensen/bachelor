@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GS1', u'Griscelli syndrome with neurologic impairment', u'Partial albinism and primary neurologic disease without hemophagocytic syndrome', u'Pigmentary dilution of the skin and hair', u' the presence of large clumps of pigment in hair shafts', u'Griscelli syndrome', u' cutaneous and neurologic type'], 'uid': u'214450'}

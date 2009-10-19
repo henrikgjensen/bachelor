@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Tachycardia hypertension microphthalmos hyperglycinuria', u'Persistent tachycardia', u' paroxymal hypertension', u' seizures', u' hyperglycinuria', u' dominantly inherited microphthalmia', u' and cataracts'], 'uid': u'272550'}

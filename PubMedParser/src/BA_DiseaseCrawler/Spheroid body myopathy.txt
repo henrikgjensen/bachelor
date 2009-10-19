@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal dominant spheroid body myopathy'], 'uid': u'182920'}

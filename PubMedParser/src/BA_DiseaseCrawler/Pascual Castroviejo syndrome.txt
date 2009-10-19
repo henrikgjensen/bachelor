@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Hemangiomas', u' and cutaneous and intracranial vascular deformations'], 'uid': u'12497310'}

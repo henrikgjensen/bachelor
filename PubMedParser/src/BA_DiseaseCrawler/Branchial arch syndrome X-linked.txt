@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcephaly', u' downslanting palpebral fissures', u' highly arched palate', u' protruding ears', u' hearing loss &#38; webbed neck'], 'uid': u'301950'}

@@ -1,0 +1,1 @@
+{'terms': u'%28cutaneous%5btitle%5dandlarva%5btitle%5dandmigrans%5btitle%5d%29andhasabstract%5btext%5dand%22loattrfulltext%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'CLM', u'Dew itch', u'Creeping eruption', u'Ground itch'], 'uid': ''}

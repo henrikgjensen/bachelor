@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental deficiency', u' macrocranium', u' peculiar facies', u' and cardiac and skeletal anomalies'], 'uid': u'114620'}

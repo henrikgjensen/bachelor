@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MEHMO', u'X-linked MEHMO syndrome', u'MEHMO syndrome'], 'uid': u'300148'}

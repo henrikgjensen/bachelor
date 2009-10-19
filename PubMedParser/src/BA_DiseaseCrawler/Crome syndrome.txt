@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital cataracts', u' renal tubular necrosis and encephalopathy in two sisters'], 'uid': u'218900'}

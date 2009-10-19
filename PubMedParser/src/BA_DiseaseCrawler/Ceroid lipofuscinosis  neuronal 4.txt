@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neuronal ceroid lipofuscinosis', u' adult type', u'Kufs disease', u'Amaurotic idiocy', u' adult type', u'CLN4', u'Kufs disease autosomal recessive'], 'uid': u'204300'}

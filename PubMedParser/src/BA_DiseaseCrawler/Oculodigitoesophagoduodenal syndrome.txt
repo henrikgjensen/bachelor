@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brunner Winter syndrome', u'ODED syndrome', u'Microcephaly-oculo-digito-esophageal-duodenal syndrome', u'Digital anomalies with short palpebral fissures and atresia of esophagus', u' or duodenum', u'Feingold syndrome', u'MMT syndrome'], 'uid': u'164280'}

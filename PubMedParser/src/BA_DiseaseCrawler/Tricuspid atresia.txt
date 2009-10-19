@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital agenesis of the tricuspid valve'], 'uid': u'605067'}

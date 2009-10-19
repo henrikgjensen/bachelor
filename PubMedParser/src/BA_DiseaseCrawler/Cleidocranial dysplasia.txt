@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Marie-Sainton syndrome', u'Scheuthauer-Marie-Sainton syndrome', u'Cleidocranial digital dysostosis', u'Cleidocranial dysostosis', u'CLCD'], 'uid': u'119600'}

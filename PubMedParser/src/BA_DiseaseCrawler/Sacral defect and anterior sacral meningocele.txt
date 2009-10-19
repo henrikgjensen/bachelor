@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SDAM', u'Sacral defect anterior meningocele'], 'uid': u'600145'}

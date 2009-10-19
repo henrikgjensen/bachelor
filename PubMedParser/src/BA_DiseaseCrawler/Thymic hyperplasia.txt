@@ -1,0 +1,1 @@
+{'terms': u'(thymic%5btitle%5d+and+hyperplasia%5btitle%5d)+and+(%22loattrfree+full+text%22%5bsb%5d+and+hasabstract%5btext%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Hyperplasia of thymus gland'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sclerotic bones with dentin dysplasia'], 'uid': u'125440'}

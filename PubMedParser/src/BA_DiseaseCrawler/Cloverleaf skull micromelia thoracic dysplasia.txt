@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Micromelic bone dysplasia with cloverleaf skull'], 'uid': u'156830'}

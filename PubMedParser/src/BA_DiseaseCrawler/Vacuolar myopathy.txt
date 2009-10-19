@@ -1,0 +1,1 @@
+{'terms': u'(vacuolar%5btitle%5d+and+myopathy%5btitle%5d)+and+hasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Autophagic vacuolar myopathy', u'AVM'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal dominant torsion dystonia with onset in infancy', u'Benign idiopathic dystonia with onset in the first year of life'], 'uid': u'602554'}

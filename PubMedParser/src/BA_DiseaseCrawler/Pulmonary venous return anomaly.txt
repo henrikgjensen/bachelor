@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anomalous pulmonary venous return', u'APVR', u'Total anomalous pulmonary venous return', u'TAPVR', u'TAPVR1', u'Scimitar anomaly', u'Scimitar syndrome'], 'uid': u'106700'}

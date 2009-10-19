@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCKL2', u'Bird-headed dwarfism 2', u'Seckel-type dwarfism 2', u'Microcephalic primordial dwarfism 2'], 'uid': u'606744'}

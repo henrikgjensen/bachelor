@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PAIS', u'Partial androgen insensitivity syndrome', u'Reifenstein syndrome', u' partial', u'Androgen resistance syndrome', u' partial', u'Type I familial incomplete male pseudohermaphroditism', u'Incomplete male pseudohermaphroditism'], 'uid': u'312300'}

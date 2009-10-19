@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ACAT2', u'Acetocoenzyme A acetyltransferase 2', u'Acetoacetyl CoA thiolase', u' cytosolic'], 'uid': u'100678'}

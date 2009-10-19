@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Hyperlipoproteinemia type III', u'Dysbetalipoproteinemia', u'Familial dysbetalipoproteinemia', u'Broad beta disease', u'Remnant removal disease'], 'uid': ''}

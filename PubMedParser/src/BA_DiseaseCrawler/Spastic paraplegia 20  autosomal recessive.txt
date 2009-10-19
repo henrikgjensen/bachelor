@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SPG20', u'Spastic paraplegia with distal muscle wasting', u'Spastic paraplegia', u' autosomal recessive', u' Troyer type', u'Troyer syndrome', u'Cross-McKusick syndrome', u'Spastic paraparesis', u' childhood onset', u' with distal muscle wasting'], 'uid': u'275900'}

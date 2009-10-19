@@ -1,0 +1,1 @@
+{'terms': u'%28jequier%5ballfields%5dandkozlowski%5ballfields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Facies unusual arthrogryposis advanced skeletal maturation', u'Round face', u' short small nose', u' advanced bone age', u' enlarged diaphysis', u'Cloverleaf skull and bone dysplasias'], 'uid': ''}

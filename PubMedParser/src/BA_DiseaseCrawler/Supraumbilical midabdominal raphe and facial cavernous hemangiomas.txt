@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Raphe', u' supraumbilical midline', u' with cavernous facial hemangiomas', u'Sternal nonunion with supraumbilical raphe', u'Hemangiomas cavernous of face supraumbilical midline raphe'], 'uid': u'140850'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT4A', u'Charcot-Marie-Tooth disease', u' demyelinating', u' autosomal recessive', u'Charcot Marie Tooth disease type 4A'], 'uid': u'214400'}

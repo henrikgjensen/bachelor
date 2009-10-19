@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcephaly with autosomal dominant inheritance'], 'uid': u'156580'}

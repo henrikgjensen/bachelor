@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Coloboma-microphthalmos syndrome associated with sensorineural hearing loss', u' hematuria', u' and cleft lip&#47;palate', u'Coloboma-microphthalmos syndrome', u'Uveal coloboma-cleft lip&#47;palate-mental retardation syndrome'], 'uid': u'120433'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Severe intrauterine growth retardation with increased mitomycin C sensitivity'], 'uid': u'600546'}

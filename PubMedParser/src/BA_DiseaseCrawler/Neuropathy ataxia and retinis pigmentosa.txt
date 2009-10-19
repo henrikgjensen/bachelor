@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NARP syndrome', u'Neuropathy', u' Ataxia', u' Retinitis Pigmentosa syndrome'], 'uid': u'551500'}

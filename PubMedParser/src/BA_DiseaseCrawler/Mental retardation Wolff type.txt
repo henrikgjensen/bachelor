@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Wolff type Mental retardation', u'Wolff mental retardation syndrome', u'Wolff Zimmermann syndrome'], 'uid': u'277990'}

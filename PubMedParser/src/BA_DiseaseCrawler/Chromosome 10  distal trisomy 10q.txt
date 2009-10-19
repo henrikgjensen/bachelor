@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Distal Duplication 10q', u'Dup&#40;10q&#41; Syndrome', u'Distal Trisomy 10q Syndrome', u'Chromosome 10', u' Trisomy 10q2', u'Chromosome 10', u' Partial Trisomy 10q24-qter'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OPA2', u'Optic atrophy', u' X-linked', u'Optic atrophy', u' non-Leber type', u' with early onset'], 'uid': u'311050'}

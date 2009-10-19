@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neutropenia', u' immunoglobulin deficiency', u' peculiar facies and bony anomalies'], 'uid': u'246550'}

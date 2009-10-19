@@ -1,0 +1,1 @@
+{'terms': u'balantidiasis%5btitle%5dandhasabstract%5btext%5dandenglish%5blang%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Human balantidiasis', u'Balantidiosis', u'Large-intestinal infection with Balantidium coli', u'', u'Balantidium coli infection', u'B coli infection'], 'uid': ''}

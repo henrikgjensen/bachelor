@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Severe upper limb brachymesomelia', u' glomerulocystic renal dysplasia', u' cranial and facial abnormalities', u' corneal opacities'], 'uid': u'113470'}

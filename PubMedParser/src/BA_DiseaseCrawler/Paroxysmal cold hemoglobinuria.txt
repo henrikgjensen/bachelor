@@ -1,0 +1,1 @@
+{'terms': u'%28paroxysmalcoldhemoglobinuria%5btitle%5dandhasabstract%5btext%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'PCH', u'Donath-Landsteiner hemolytic anemia', u'Donath-Landsteiner syndrome', u'Dressler syndrome', u'Harley syndrome', u'Immune hemolytic anemia', u' paroxysmal cold'], 'uid': ''}

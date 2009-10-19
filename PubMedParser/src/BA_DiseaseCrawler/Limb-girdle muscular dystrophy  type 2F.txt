@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LGMD2F', u'Muscular dystrophy limb-girdle with delta-sarcoglyan deficiency'], 'uid': u'601287'}

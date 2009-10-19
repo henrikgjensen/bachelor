@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thiemann&#39;s disease', u'Thiemann epiphyseal disease'], 'uid': u'165700'}

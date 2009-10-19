@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Vitamin C deficiency', u'Deficiency - Vitamin C', u'Scorbutus', u'Hypoascorbemia', u'Vitamin C', u' inability to synthesize'], 'uid': u'240400'}

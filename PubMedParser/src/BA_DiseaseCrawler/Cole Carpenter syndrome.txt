@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bone fragility with craniosynostosis', u' ocular proptosis', u' hydrocephalus', u' and distinctive facial features'], 'uid': u'112240'}

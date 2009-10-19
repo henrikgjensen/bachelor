@@ -1,0 +1,1 @@
+{'terms': u'%28halal%5ballfields%5dandcleft%5ballfields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Microcephaly cleft palate autosomal dominant'], 'uid': ''}

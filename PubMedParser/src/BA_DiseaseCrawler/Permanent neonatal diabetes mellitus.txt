@@ -1,0 +1,1 @@
+{'terms': u'permanent+neonatal+diabetes+mellitus%5bti%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'PNDM', u'Permanent diabetes mellitus of infancy'], 'uid': ''}

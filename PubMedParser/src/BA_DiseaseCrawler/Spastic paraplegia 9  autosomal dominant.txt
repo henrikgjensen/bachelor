@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal dominant spastic paraparesis', u'SPG9', u'Cataracts', u' motor neuronopathy', u' short stature and skeletal abnormalities', u'Bilateral cataracts', u' gastroesophageal reflux', u' and spastic paraparesis with amyotrophy'], 'uid': u'601162'}

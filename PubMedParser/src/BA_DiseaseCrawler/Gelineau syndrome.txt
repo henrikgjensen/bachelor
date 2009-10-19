@@ -1,0 +1,1 @@
+{'terms': u'gelineau%27s%5btitle/abstract%5dandsyndrome%5btitle/abstract%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Irresistible sleepiness', u' cataplexy and onset of sleep in desynchronized phase'], 'uid': ''}

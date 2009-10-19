@@ -1,0 +1,1 @@
+{'terms': u'%28vulvar%5btitle%5dandvestibulitis%5btitle%5dandsyndrome%5btitle%5d%29andhasabstract%5btext%5dand%222000/12/1911.07%22%5bedat%5d%3a%222005/12/1911.07%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'VVS', u'Vulvar dysesthesia localized in the vestibule'], 'uid': ''}

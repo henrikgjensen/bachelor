@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Schofer Beetz Bohl syndrome'], 'uid': u'221995'}

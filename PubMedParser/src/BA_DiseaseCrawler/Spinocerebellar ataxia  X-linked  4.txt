@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCAX4', u'Ataxia-dementia syndrome', u' X-linked'], 'uid': u'301840'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bartter syndrome classic'], 'uid': u'607364'}

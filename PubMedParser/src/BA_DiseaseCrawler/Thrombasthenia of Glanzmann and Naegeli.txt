@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Glanzmann thrombasthenia', u'GT', u'Platelet fibrinogen receptor', u' deficiency of', u'Platelet glycoprotein 2B 3A deficiency', u'Deficiency of GP 2B 3A complex', u'Glanzmann thrombasthenia type A', u'Diacyclothrombopathia 2B 3A'], 'uid': u'273800'}

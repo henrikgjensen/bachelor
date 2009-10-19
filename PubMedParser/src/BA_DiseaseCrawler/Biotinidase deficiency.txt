@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Biotin deficiency', u'BTD deficiency', u'Late-onset biotin-responsive multiple carboxylase deficiency', u'Late-onset multiple carboxylase deficiency'], 'uid': u'253260'}

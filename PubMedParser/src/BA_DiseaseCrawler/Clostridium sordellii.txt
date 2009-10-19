@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Clostridium sordellii toxic shock syndrome'], 'uid': ''}

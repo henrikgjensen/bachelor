@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Guibaud Vainsel syndrome', u'Carbonic anhydrase 2 deficiency', u'Marble brain disease', u'Osteopetrosis', u' autosomal recessive 3', u'OPTB3'], 'uid': u'259730'}

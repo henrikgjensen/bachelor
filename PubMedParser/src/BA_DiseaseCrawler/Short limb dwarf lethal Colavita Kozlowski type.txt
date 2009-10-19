@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Colavita Kozlowski syndrome'], 'uid': u'166260'}

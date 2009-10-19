@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PDA', u'PDA1', u'Patency of the ductus arteriosus', u'Patent ductus arteriosus familial &#40;type&#41;'], 'uid': u'607411'}

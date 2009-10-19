@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Winchester syndrome', u'Torg syndrome', u'Nodulosis arthropathy osteolysis syndrome', u'NOA syndrome', u'Multicentric osteolysis', u' nodulosis and arthropathy', u'MONA', u'Al-Qeel Sewairi syndrome', u'Osteolysis', u' hereditary multicentric', u'Winchester-Grossman syndrome'], 'uid': u'259600'}

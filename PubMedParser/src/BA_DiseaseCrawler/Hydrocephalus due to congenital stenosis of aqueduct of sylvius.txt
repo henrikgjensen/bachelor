@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hydrocephalus', u' X-linked', u'HSAS1', u'Aqueductal stenosis', u' X-linked', u'HSAS', u'HYCX', u'XLAS'], 'uid': u'307000'}

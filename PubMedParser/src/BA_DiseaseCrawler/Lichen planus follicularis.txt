@@ -1,0 +1,1 @@
+{'terms': u'%28%22lichenplanus%22%5bmeshterms%5dorlichenplanus%5btextword%5d%29andfollicularis%5ballfields%5dandtumidus%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Lichen planus follicularis tumidus', u'Follicular lichen planus tumidus', u'Lichen planus tumidus follicularis'], 'uid': ''}

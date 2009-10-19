@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NADH&#58;Q&#40;1&#41; Oxidoreductase deficiency', u'NADH coenzyme q reductase deficiency', u'Mitochondrial NADH dehydrogenase component of complex I', u' deficiency of'], 'uid': u'252010'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Curly hair-ankyloblepharon-nail dysplasia syndrome'], 'uid': u'214350'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Progressive Encephalopathy with edema', u' Hypsarrhythmia', u' and Optic atrophy', u'Infantile cerebellooptic atrophy'], 'uid': u'260565'}

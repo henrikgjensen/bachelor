@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BPPV', u'Familial vestibulopathy', u'Familial benign recurrent vertigo'], 'uid': u'193007'}

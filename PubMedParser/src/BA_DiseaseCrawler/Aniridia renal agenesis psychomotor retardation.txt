@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aniridia partial with unilateral renal agenesis and psychomotor retardation'], 'uid': u'206750'}

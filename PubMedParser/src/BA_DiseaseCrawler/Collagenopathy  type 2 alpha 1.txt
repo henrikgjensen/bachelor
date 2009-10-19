@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'COL2A1', u'Collagen II', u'Cartilage collagen'], 'uid': u'120140'}

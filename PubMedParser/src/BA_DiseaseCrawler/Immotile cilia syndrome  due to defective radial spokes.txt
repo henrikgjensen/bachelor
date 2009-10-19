@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cilia with defective radial spokes'], 'uid': u'242670'}

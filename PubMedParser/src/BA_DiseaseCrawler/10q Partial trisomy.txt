@@ -1,0 +1,1 @@
+{'terms': u'10q%5ballfields%5dandpartial%5ballfields%5dand%28%22trisomy%22%5bmeshterms%5dortrisomy%5btextword%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Chromosome 10q duplication syndrome', u'10q&#43; syndrome', u'10q duplication syndrome', u'Partial trisomy 10q', u'Trisomy 10q', u'Dup&#40;10q&#41; syndrome'], 'uid': ''}

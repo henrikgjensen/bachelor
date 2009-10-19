@@ -1,0 +1,1 @@
+{'terms': u'rheumatic%5btitle%5dandfever%5btitle%5dandhasabstract%5btext%5dandenglish%5blang%5dand%22humans%22%5bmeshterms%5dand%222003/02/0809.06%22%5bedat%5d%3a%222005/02/0709.06%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Acute Rheumatic Fever', u'Inflammatory Rheumatism'], 'uid': ''}

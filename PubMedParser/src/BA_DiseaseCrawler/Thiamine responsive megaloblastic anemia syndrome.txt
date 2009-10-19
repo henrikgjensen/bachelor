@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Diabetes mellitus', u' thiamine-dependent megaloblastic anemia', u' and sensorineural deafness associated with deficient alpha-ketoglutarate dehydrogenase act', u'TRMA', u'Abboud syndrome', u'Rogers syndrome', u'Thiamine responsive myelodysplasia'], 'uid': u'249270'}

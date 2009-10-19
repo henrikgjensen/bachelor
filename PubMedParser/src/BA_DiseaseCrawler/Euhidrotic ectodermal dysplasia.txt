@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pilodental dysplasia with refractive errors', u'Kopysc Barczyk Krol syndrome', u'Trichodental dysplasia with hyperopia'], 'uid': u'262020'}

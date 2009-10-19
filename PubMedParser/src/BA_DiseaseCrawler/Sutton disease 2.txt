@@ -1,0 +1,1 @@
+{'terms': u'sutton%27s%5btitle%5danddisease%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Aphthous Stomatitis', u' Recurrent', u'Aphthous Ulcer', u' Recurrent', u'Major Aphthous Ulcer', u'Major Canker Sore', u'Recurrent Scarring Aphthae'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MCS', u'Mental retardation', u' X-linked', u' syndromic 4', u'MRXS4', u'Mental retardation', u' X-linked', u' with congenital contractures and low fingertip arches'], 'uid': u'309605'}

@@ -1,0 +1,1 @@
+{'terms': u'%28fanconi%5btitle%5dandanemia%5btitle%5d%29andhasabstract%5btext%5dand%22loattrfreefulltext%22%5bsb%5dandenglish%5blang%5dand%22humans%22%5bmeshterms%5dand%222002/05/1612.50%22%5bpdat%5d%3a%222007/05/1612.50%22%5bpdat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Fanconi pancytopenia', u'Fanconi anemia'], 'uid': ''}

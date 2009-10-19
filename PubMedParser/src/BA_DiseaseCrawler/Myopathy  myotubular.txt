@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Centronuclear myopathy', u'Myotubular myopathy', u'Myotubular myopathy', u' X-linked'], 'uid': u'255200'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Weaver Smith syndrome', u'WSS', u'Overgrowth syndrome with accelerated skeletal maturation', u' unusual facies', u' and camptodactyly'], 'uid': u'277590'}

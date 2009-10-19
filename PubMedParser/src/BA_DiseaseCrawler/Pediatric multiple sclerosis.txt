@@ -1,0 +1,1 @@
+{'terms': u'%28pediatric%5btitle%5d+and+multiple%5btitle%5d+and+sclerosis%5btitle%5d%29+and+%28%22loattrfull+text%22%5bsb%5d+and+%22humans%22%5bmesh+terms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Pediatric MS', u'Multiple sclerosis', u' pediatric', u'MS pediatric'], 'uid': ''}

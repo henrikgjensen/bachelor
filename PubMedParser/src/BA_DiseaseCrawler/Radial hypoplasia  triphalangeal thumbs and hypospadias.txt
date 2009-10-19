@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Radial hypoplasia', u' triphalangeal thumbs', u' hypospadias', u' and maxillary diastema'], 'uid': u'179250'}

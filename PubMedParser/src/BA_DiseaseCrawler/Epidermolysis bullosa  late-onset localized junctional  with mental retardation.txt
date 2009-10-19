@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epidermolysis bullosa simplex localisata associated with anodontia', u' hair and nail disorders'], 'uid': u'226440'}

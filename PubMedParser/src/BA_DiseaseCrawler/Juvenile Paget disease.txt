@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Paget disease', u' juvenile', u'JPD', u'Hyperostosis corticalis deformans juvenilis', u'Hyperphosphatasia', u' familial idiopathic', u'Hyperphosphatasemia', u' chronic congenital idiopathic', u'Osteoectasia', u' familial'], 'uid': u'239000'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'OFD10', u'Oral-facial-digital syndrome 10', u'OFD syndrome 10', u'Orofaciodigital syndrome type Figuera', u'OFD syndrome Figuera', u'Orofaciodigital syndrome with fibular aplasia', u'Oral-facial-digital syndrome with fibular aplasia'], 'uid': ''}

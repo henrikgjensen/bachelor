@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anencephalus', u'Absence of a large part of the brain and the skull'], 'uid': u'206500'}

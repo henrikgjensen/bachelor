@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Frontonasal dysplasia with alar clefts'], 'uid': u'203000'}

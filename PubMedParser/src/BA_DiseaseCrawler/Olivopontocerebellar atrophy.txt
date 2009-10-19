@@ -1,0 +1,1 @@
+{'terms': u'%28%28%22olivopontocerebellaratrophies%22%5bmajr%5dandenglish%5blang%5d%29and%28%22hominidae%22%5bmeshterms%5dor%22human%22%5bmeshterms%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'OPCA'], 'uid': ''}

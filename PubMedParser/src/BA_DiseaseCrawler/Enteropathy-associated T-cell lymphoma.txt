@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'EATCL', u'High grade', u' pleomorphic peripheral T-cell lymphoma'], 'uid': u'16610043'}

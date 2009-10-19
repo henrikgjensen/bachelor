@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RB', u'Retinal tumor', u'Retinal cancer', u'Eye cancer', u' retinoblastoma'], 'uid': u'180200'}

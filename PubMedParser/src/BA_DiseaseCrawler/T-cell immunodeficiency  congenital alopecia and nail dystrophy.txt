@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital alopecia and nail dystrophy associated with severe functional T-cell immunodeficiency', u'Pignata Guarino syndrome'], 'uid': u'601705'}

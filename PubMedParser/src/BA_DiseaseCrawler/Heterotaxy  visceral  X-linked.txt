@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HTX', u'Dextrocardia with other cardiac malformations', u'Laterality', u' X-linked', u'Situs inversus', u' complex cardiac defects', u' and splenic defects', u' X-linked', u'Visceral heterotaxia'], 'uid': u'306955'}

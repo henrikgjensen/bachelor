@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Retinal detachment occipital encephalocele'], 'uid': u'267750'}

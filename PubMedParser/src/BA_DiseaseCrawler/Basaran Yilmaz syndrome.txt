@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Keratoderma', u' hypotrichosis and leukonychia totalis'], 'uid': u'7577599'}

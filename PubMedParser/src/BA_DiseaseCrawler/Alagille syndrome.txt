@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hepatic ductular hypoplasia', u'Watson Alagille syndrome', u'Alagille-Watson syndrome', u'Cholestasis with peripheral pulmonary stenosis', u'Arteriohepatic dysplasia', u'Paucity of interlobular bile ducts', u'Cardiovertebral syndrome', u'Watson-Miller syndrome', u'Hepatofacioneurocardiovertebral syndrome'], 'uid': u'118450'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Megalodactyly of the foot', u'Megalodactylism of the foot'], 'uid': u'155500'}

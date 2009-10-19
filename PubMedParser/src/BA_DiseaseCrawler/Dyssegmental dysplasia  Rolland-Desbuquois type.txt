@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DDRD', u'Dyssegmental dwarfism', u' Rolland-Desbuquois type', u'Anisospondylic camptomicromelic dwarfism', u' Rolland-Desbuquois type'], 'uid': u'224400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arthrochalasis multiplex congenita', u'Ehlers-Danlos syndrome cardiac valvular type', u'Ehlers-Danlos syndrome type 7A &#40;formerly&#41;', u'EDS7A &#40;formerly&#41;', u'Ehlers-Danlos syndrome type 7B &#40;formerly&#41;', u'EDS7B &#40;formerly&#41;'], 'uid': u'130060'}

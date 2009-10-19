@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pelvic shoulder dysplasia'], 'uid': u'169550'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Fuchs gyrate atrophy of the choroid and retina', u'Fuchs gyrate atrophy'], 'uid': u'229900'}

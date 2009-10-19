@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Torg osteolysis syndrome', u'Hereditary multicentric osteolysis'], 'uid': u'259600'}

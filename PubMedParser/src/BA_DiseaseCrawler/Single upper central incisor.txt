@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Solitary median maxillary central incisor', u'SMMCI', u'Fused incisors', u'Single central maxillary incisor', u'Solitary median maxillary central incisor syndrome'], 'uid': u'147250'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dwarfism with disproportionately high vertebral bodies', u'Short stature and tall vertebrae'], 'uid': u'126950'}

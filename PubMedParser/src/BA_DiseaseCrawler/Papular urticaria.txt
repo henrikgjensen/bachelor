@@ -1,0 +1,1 @@
+{'terms': u'%28papularurticaria%5btitle%5dandhasabstract%5btext%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Bullous papular urticaria - type'], 'uid': ''}

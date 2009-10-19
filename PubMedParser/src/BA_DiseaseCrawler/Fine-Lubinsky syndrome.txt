@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachycephaly', u' deafness', u' cataract and mental retardation'], 'uid': u'601353'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Cortical-Basal Ganglionic degeneration', u'Cortico-Basal Ganglionic Degeneration &#40;CBGD&#41;', u'CBGD'], 'uid': ''}

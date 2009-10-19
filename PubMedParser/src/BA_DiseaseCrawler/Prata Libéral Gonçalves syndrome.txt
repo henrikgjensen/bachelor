@@ -1,0 +1,1 @@
+{'terms': u'prata%5ball+fields%5d+and+liberal%5ball+fields%5d+and+goncalves%5ball+fields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Brachydactyly', u' scoliosis', u' spina bifida occulta', u' and carpal synostosis', u'Prata Liberal Goncalves syndrome'], 'uid': ''}

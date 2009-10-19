@@ -1,0 +1,1 @@
+{'terms': u'%22idiopathic+hypereosinophilic+syndrome%22%5ball+fields%5d+and+(%222007%2f06%2f25%22%5bpdat%5d+%3a+%222009%2f06%2f23%22%5bpdat%5d)', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Heart block', u' progressive familial', u' type 1', u'PFHB1', u'Cardiac conduction defect', u' progressive', u'PCCD', u'Hereditary bundle branch system defect', u'HBBD', u'Bundle branch block', u'Lenegre Lev disease'], 'uid': u'113900'}

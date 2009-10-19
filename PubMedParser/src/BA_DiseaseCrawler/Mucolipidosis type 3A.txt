@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ML3', u'ML 3 A', u'Pseudo-Hurler polydystrophy'], 'uid': u'252600'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gorlin-Goltz Syndrome', u'Basal Cell Nevus Syndrome', u'Multiple Basal Cell Nevi', u' Odontogenic Keratocysts', u' And Skeletal Anomalies', u'Fifth Phacomatosis', u'Gorlin Syndrome'], 'uid': u'109400'}

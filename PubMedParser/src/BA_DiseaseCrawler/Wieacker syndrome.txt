@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Contractures of feet', u' muscle atrophy', u' and oculomotor apraxia', u'Apraxia', u' oculomotor', u' with congenital contractures and muscle atrophy', u'Wieacker Wolff syndrome', u'WWS'], 'uid': u'314580'}

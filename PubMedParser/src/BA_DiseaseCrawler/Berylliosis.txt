@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Subacute Berylliosis', u'Reversible Berylliosis', u'Acute Berylliosis', u'Chronic pulmonary Berylliosis'], 'uid': ''}

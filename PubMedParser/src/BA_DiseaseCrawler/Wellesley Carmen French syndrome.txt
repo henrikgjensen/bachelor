@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cataracts', u' aberrant oral frenula', u' and growth retardation'], 'uid': u'115645'}

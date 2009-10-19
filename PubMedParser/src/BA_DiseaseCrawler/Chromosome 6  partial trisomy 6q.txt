@@ -1,0 +1,1 @@
+{'terms': u'%28trisomy%5btitle%5dand6q%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Chromosome 6', u' Trisomy 6q2', u'Trisomy 6q Syndrome', u' Partial', u'6q&#43; Syndrome', u' Partial', u'Trisomy 6q', u' Partial', u'Distal Duplication 6q'], 'uid': ''}

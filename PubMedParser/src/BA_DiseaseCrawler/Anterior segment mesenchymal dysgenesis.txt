@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anterior segment ocular dysgenesis', u'ASOD', u'ASMD'], 'uid': u'107250'}

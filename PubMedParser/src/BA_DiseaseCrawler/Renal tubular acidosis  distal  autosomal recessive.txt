@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RTADR', u'Autosomal recessive distal renal tubular acidosis', u'RTA', u' distal', u' autosomal recessive', u'Renal tubular acidosis', u' autosomal recessive with preserved hearing'], 'uid': u'602722'}

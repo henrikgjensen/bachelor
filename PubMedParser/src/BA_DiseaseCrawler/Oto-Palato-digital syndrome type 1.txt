@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Otopalatodigital syndrome', u' type 1', u'Taybi syndrome', u'OPD syndrome', u'OPD syndrome 1', u'OPD1'], 'uid': u'311300'}

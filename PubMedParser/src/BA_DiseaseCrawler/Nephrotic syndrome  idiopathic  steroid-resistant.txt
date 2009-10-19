@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Nephrotic syndrome', u' steroid-resistant', u' autosomal recessive', u'SRN1'], 'uid': u'600995'}

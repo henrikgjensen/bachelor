@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'46', u' XY CGD', u'46', u' XY complete gonadal dysgenesis', u'46', u' XY pure gonadal dysgenesis', u'Gonadal dysgenesis', u' XY female type'], 'uid': u'306100'}

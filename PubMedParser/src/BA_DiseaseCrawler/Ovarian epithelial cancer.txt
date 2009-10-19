@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ovarian cancer', u' epithelial', u'Epithelial ovarian cancer', u'EOC', u'Ovarian epithelial carcinoma'], 'uid': u'604370'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'X-linked mental handicap-retinitis pigmentosa syndrome', u'Nonspecific mental retardation associated with retinitis pigmentosa'], 'uid': u'312600'}

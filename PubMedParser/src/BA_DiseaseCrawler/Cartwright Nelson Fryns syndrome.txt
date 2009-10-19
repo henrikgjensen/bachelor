@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Growth retardation', u' severe mental retardation', u' acral limb deficiencies with poorly keratinized nails'], 'uid': u'1801850'}

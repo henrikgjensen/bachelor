@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dysmorphism multiple structural anomalies', u'Dysmorphic facial features and multiple structural abnormalities'], 'uid': u'227255'}

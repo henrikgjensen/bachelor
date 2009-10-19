@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Absent eyebrows and eyelashes with mental retardation', u'Mental retardation', u' absence of eyebrows and eyelashes', u' progressive spastic quadriplegia', u' microcephaly', u' glaucoma', u' and small', u' beaked nose'], 'uid': ''}

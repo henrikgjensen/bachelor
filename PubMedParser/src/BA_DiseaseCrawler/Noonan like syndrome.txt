@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Noonan-like&#47;multiple giant cell lesion syndrome'], 'uid': u'163955'}

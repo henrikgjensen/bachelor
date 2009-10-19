@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Facial dysmorphism', u' macrocephaly', u' myopia and Dandy-Walker malformation'], 'uid': u'220219'}

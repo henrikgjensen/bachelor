@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypertelorism', u' Teebi type', u'Teebi hypertelorism syndrome'], 'uid': u'145420'}

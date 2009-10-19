@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cleft lip', u' cleft palate', u' characteristic facies', u' intestinal malrotation', u' and lethal congenital heart disease'], 'uid': u'601165'}

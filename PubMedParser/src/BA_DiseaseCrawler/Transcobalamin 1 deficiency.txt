@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TCN1 deficiency', u'Cobalamin pseudodeficiency due to transcobalamin deficiency', u'Cobalamin r binder protein deficiency'], 'uid': u'193090'}

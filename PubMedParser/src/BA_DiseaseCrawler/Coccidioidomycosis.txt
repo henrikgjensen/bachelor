@@ -1,0 +1,1 @@
+{'terms': u'coccidioidomycosis%5btitle%5dandhasabstract%5btext%5dand%222005/01/1912.34%22%5bedat%5d%3a%222006/01/1912.34%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Coccidiosis', u'San Joaquin Valley fever', u'Valley fever', u'Coccidioides immitis infection'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CBBM', u'BCM', u'Color blindness blue mono cone monochromatic type'], 'uid': u'303700'}

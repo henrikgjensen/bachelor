@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MADB', u'Lipodystrophy', u' type B', u' associated with mandibuloacral dysplasia'], 'uid': u'608612'}

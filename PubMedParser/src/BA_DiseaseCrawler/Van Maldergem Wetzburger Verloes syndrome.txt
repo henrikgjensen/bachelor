@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Van Maldergem syndrome', u'Cerebro-facio-articular syndrome of Van Maldergem', u'Cerebro-facio-articular syndrome', u'Cerebrofacioarticular syndrome'], 'uid': u'601390'}

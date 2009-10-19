@@ -1,0 +1,1 @@
+{'terms': u'oculo%2dectodermal%5ball+fields%5d+and+%28%22syndrome%22%5bmesh+terms%5d+or+%22syndrome%22%5ball+fields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Oculoectodermal syndrome'], 'uid': ''}

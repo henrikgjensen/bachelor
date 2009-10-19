@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28tularemia%5btitle%5dandhasabstract%5btext%5d%29andenglish%5blang%5d%29and%28%221993/12/1314.05%22%5bedat%5d%3a%222003/12/1114.05%22%5bedat%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Francisella tularensis infection', u'Deerfly fever', u'Rabbit fever', u'Pahvant Valley plague', u'Ohara disease', u'Yatobyo &#40;Japan&#41;', u'Lemming fever'], 'uid': ''}

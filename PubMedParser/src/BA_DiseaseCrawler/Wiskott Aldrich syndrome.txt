@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'WAS', u'Eczema thrombocytopenia immunodeficiency syndrome', u'Immunodeficiency 2', u'IMD 2', u'Aldrich syndrome'], 'uid': u'301000'}

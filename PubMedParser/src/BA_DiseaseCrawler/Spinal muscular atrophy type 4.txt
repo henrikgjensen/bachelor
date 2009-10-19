@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spinal muscular atrophy', u' adult form', u'SMA 4', u'Spinal muscular atrophy 4', u'Spinal muscular atrophy', u' proximal', u' adult', u' autosomal recessive', u'Adult-onset spinal muscular atrophy'], 'uid': u'158590'}

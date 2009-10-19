@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Cortical Degeneration of the Cerebellum - Parenchymatous', u'Cerebellar Parenchymal Disease'], 'uid': ''}

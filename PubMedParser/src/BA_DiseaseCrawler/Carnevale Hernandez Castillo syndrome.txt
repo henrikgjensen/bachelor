@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Triphalyngeal thumbs and brachyectrodactyly'], 'uid': u'7438506'}

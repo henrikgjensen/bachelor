@@ -1,0 +1,1 @@
+{'terms': u'lhermitte+duclos%5bti%5d+and+(%22loattrfull+text%22%5bsb%5d+and+%221997%2f08%2f06%22%5bpdat%5d+%3a+%222007%2f08%2f03%22%5bpdat%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Dysplastic gangliocytoma of the cerebellum'], 'uid': ''}

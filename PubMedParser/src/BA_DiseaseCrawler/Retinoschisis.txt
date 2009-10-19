@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Retinoschisis X-linked juvenile', u'RS1', u'XLRS1', u'RS', u'X-linked juvenile retinoschisis'], 'uid': u'312700'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pineal hyperplasia', u' insulin-resistant diabetes mellitus', u' and somatic abnormalities', u'Mendenhall Syndrome'], 'uid': u'262190'}

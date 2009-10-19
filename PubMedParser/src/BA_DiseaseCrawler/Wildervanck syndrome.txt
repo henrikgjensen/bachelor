@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cervico-oculo-acoustic syndrome', u'COA Syndrome', u'Cervico-oculo-acoustic dysplasia'], 'uid': u'314600'}

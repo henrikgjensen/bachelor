@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Broad terminal phalanges of the thumbs and great toes', u' antimongoloid slant of the palpebral fissures', u' and characteristic beaked noses'], 'uid': u'3812583'}

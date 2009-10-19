@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'X-linked mental retardation associated with psoriasis', u'Mental retardation X-linked', u' Tranebjaerg type seizures and psoriasis'], 'uid': u'309480'}

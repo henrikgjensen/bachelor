@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lethal Kniest-like dysplasia', u'Arthrosis', u' flat face', u' hypotonia', u' short neck and macrocephaly'], 'uid': u'245190'}

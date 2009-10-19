@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HHF7', u'Hyperinsulinemic hypoglycemia', u' exercise-induced'], 'uid': u'610021'}

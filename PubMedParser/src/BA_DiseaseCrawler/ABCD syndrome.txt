@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Albinism', u' Black lock', u' Cell migration disorder of the neurocytes of the gut and Deafness'], 'uid': u'600501'}

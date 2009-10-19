@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short rib-polydactyly syndrome', u' type 4', u'SRPS', u' type 4', u'Beemer Langer syndrome'], 'uid': u'269860'}

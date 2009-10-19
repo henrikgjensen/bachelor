@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brittle hair and mental deficit', u'Sabinas syndrome', u'Sabinas brittle hair syndrome is a form of nonphotosensitive trichothiodystrophy'], 'uid': u'211390'}

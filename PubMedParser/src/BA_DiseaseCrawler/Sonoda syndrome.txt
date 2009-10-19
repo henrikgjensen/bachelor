@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Round face with depressed nasal bridge and small mouth', u' congenital heart defect', u' and retarded development'], 'uid': u'270460'}

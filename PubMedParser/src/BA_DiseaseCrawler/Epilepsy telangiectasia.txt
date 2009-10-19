@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' epilepsy', u' palpebral conjunctival telangiectasias and IgA deficiency'], 'uid': u'226850'}

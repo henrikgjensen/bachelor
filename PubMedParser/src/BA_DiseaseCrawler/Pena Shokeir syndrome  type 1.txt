@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lethal Pena-Shokeir 1 syndrome', u'Fetal akinesia sequence', u'Fetal akinesia deformation sequence', u'FADS', u'Arthrogryposis multiplex congenita with pulmonary hypoplasia'], 'uid': u'208150'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Proptosis', u' Robin association', u' clenched hands', u' and multiple abnormalities'], 'uid': u'6580389'}

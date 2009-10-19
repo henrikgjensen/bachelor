@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT DI3', u'Charcot Marie Tooth disease dominant intermediate 3'], 'uid': u'607791'}

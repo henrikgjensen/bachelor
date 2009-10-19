@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dyschondrosteosis', u'DCO', u'Leri-weill dyschondrosteosis', u'LWD'], 'uid': u'127300'}

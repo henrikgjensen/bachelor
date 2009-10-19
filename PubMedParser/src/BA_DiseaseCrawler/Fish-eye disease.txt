@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FED', u'Dyslipoproteinemic corneal dystrophy', u'Alpha-lecithin cholesterol acyltransferase deficiency', u'ALPHA-LCAT deficiency', u'LCATA deficiency'], 'uid': u'136120'}

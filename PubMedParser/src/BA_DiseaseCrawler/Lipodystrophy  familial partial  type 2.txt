@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FPLD2', u'Lipodystrophy', u' familial partial', u' Dunnigan type', u'Lipodystrophy', u' familial', u' of limbs and lower trunk', u'Lipodystrophy', u' reverse partial', u'Lipoatrophic diabetes', u'FPL2'], 'uid': u'151660'}

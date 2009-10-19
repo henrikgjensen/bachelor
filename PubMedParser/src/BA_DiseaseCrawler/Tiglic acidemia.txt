@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Disorder of isoleucine metabolism'], 'uid': u'275190'}

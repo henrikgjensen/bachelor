@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'type 2 &#40;Andre syndrome&#41;'], 'uid': ''}

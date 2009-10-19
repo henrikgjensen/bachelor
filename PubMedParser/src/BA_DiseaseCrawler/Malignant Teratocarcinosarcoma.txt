@@ -1,0 +1,1 @@
+{'terms': u'teratocarcinosarcoma%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Sinonasal teratocarcinosarcoma &#40;type&#41;', u'Paranasal sinus teratocarcinosarcoma  &#40;type&#41;'], 'uid': ''}

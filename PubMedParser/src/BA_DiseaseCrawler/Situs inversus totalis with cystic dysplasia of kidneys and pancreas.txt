@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Situs inversus', u' cystic dysplastic kidney and pancreas', u' bowed lower limbs ', u'severe intrauterine growth retardation', u' and oligohydramnios'], 'uid': u'603643'}

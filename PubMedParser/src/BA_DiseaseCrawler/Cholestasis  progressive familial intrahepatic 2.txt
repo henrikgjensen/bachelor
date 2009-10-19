@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PFIC2', u'Progressive familial intrahepatic cholestasis 2'], 'uid': u'601847'}

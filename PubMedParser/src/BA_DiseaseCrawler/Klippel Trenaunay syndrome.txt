@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'KTS', u'Klippel Trenaunay Weber syndrome', u'KTW syndrome', u'Weber Klippel Trenaunay', u'Angio-osteohypertrophy syndrome'], 'uid': u'149000'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Growth retardation', u' Alopecia', u' Pseudoanodontia and Optic atrophy'], 'uid': u'230740'}

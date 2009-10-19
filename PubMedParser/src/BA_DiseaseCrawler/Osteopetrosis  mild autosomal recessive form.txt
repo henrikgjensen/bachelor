@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mild autosomal recessive form of osteopetrosis'], 'uid': u'259710'}

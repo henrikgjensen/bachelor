@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Abnormal tooth shape', u'Conical teeth', u'Mulberry teeth', u'Peg teeth'], 'uid': ''}

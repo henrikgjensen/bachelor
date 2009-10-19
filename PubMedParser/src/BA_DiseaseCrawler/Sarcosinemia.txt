@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sarcosin dehydrogenase complex', u' deficiency of', u'SAR', u'SAR deficiency', u'Hypersarcosinemia', u'SARDH deficiency'], 'uid': u'268900'}

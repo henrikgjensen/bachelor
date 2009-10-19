@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thyroid carcinoma', u' follicular', u'Follicular thyroid carcinoma', u'FTC'], 'uid': u'188470'}

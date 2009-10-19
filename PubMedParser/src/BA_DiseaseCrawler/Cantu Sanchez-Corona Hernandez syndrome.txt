@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Mild mental deficiency', u' short stature', u' macrocranium', u' cardiac anomalies', u' cutis laxa', u' peculiar facies', u' wrinkled palms and soles', u' small vertebral bodies'], 'uid': ''}

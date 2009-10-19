@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HGPS', u'Hutchinson Gilford syndrome', u'Progeria'], 'uid': u'176670'}

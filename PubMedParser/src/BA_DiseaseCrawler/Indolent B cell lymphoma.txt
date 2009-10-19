@@ -1,0 +1,1 @@
+{'terms': u'%28indolent%5btitle%5d+and+b%5btitle%5d+and+cell%5btitle%5d+and+lymphoma%5btitle%5d%29+and+%28hasabstract%5btext%5d+and+%22humans%22%5bmesh+terms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'B cell lymphoma', u' indolent'], 'uid': ''}

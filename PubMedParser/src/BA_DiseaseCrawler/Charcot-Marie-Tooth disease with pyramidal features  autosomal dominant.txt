@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT with pyramidal features', u'Hereditary motor and sensory neuropathy 5', u'HMSN 5', u'Peroneal muscular atrophy with pyramidal features', u' autosomal dominant'], 'uid': u'600361'}

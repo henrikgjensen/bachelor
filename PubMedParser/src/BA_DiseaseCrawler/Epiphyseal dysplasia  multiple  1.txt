@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EDM1', u'Multiple epiphyseal dysplasia', u' cartilage oligomeric matrix protein related', u'Multiple epiphyseal dysplasia', u' COMP-related'], 'uid': u'132400'}

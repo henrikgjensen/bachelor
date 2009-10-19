@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Severe ulnar aplasia and lobster claw feet', u'Familial ulnar aplasia and lobster claw syndrome', u'Complete absence of the ulna and of fingers 2 to 5', u' together with lobster-claw deformity of the feet', u'Van De Berghe Dequeker syndrome'], 'uid': u'314360'}

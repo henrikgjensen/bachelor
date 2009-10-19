@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BFH', u'Thin basement membrane nephropathy', u'Thin membrane nephropathy', u'TMN', u'Familial benign essential hematuria'], 'uid': u'141200'}

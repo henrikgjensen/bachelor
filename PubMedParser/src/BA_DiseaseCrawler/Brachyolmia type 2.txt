@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachyolmia Maroteaux type', u'Spondyloepiphyseal dysplasia Maroteaux type', u'SED', u' Maroteaux type'], 'uid': u'184095'}

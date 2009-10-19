@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kasabach Merritt syndrome', u'Thrombocytopenia-hemangioma syndrome'], 'uid': u'141000'}

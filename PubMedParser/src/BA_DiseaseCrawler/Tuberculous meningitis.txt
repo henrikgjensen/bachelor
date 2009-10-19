@@ -1,0 +1,1 @@
+{'terms': u'%28tuberculous%5btitle%5dandmeningitis%5btitle%5d%29andhasabstract%5btext%5dandenglish%5blang%5dand%22humans%22%5bmeshterms%5dand%222004/12/0211.00%22%5bedat%5d%3a%222005/12/0211.00%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Tubercular meningitis', u'TB meningitis'], 'uid': ''}

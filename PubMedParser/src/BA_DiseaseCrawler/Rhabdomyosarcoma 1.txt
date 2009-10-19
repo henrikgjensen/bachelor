@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RMS1', u'Rhabdomyosarcoma embryonal 1', u'RMSE1'], 'uid': u'268210'}

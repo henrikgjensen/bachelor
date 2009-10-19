@@ -1,0 +1,1 @@
+{'terms': u'%28%28trisomy%5btitle%5dand14%5btitle%5d%29andmosaic%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy 14 mosaicism syndrome', u'Trisomy 14 mosaic', u'Trisomy 14 mosaicism'], 'uid': ''}

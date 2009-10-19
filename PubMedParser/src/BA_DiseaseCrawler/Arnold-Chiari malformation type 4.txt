@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arnold Chiari malformation type 4', u'Chiari malformation type IV'], 'uid': u'118420'}

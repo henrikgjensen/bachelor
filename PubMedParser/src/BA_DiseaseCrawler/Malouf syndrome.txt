@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congestive or dilated cardiomyopathy with hypergonadotropic hypogonadism', u'Congestive cardiomyopathy-hypergonadotropic hypogonadism syndrome', u'Familial cardiomyopathy', u' hypogonadism', u' and collagenoma'], 'uid': u'212112'}

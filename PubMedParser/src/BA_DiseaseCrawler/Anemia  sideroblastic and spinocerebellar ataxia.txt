@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ASAT', u'Pagon Bird Detter syndrome', u'Sideroblastic anemia with spinocerebellar ataxia'], 'uid': u'301310'}

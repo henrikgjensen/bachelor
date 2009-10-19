@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CG', u'Enlargement and eversion of the lower lip', u' hypertrophy of the labial mucous glands', u' dilatation of the excretory ducts', u' and variable inflammation'], 'uid': u'118330'}

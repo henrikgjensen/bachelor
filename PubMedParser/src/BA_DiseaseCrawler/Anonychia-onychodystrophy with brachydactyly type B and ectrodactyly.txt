@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal dominant onychodystrophy and anonychia with type B brachydactyly and ectrodactyly'], 'uid': u'106990'}

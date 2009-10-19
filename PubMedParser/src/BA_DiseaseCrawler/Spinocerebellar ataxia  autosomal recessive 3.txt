@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCAR3', u'Spinocerebellar ataxia with blindness and deafness', u'SCABD'], 'uid': u'271250'}

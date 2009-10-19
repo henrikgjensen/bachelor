@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Posterior laryngeal cleft &#40;PLC&#41;', u'Type 1A &#40;minor laryngeal cleft&#41;', u'Anterior submucous laryngeal cleft &#40;subtype&#41;', u'Congenital laryngeal clefts &#40;subtype&#41;', u'Cleft', u' larynx posterior'], 'uid': u'215800'}

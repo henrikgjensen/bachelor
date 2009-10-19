@@ -1,0 +1,1 @@
+{'terms': u'%28spastic%5btitle%5danddiplegic%5btitle%5dandcerebral%5btitle%5dandpalsy%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Spastic diplegia cerebral palsy'], 'uid': ''}

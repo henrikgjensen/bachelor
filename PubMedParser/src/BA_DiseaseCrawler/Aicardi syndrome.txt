@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AIC', u'Corpus callosum', u' agenesis of', u' with chorioretinal abnormality'], 'uid': u'304050'}

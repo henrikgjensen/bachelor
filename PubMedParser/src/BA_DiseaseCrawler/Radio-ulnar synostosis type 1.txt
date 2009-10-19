@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28radio-ulnar%5btitle%5dandsynostosis%5btitle%5d%29andhasabstract%5btext%5d%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Congenital radio-ulnar synostosis', u'Proximal', u' smooth fusion of 2-6 cm between the radius and ulna and absent head of the radius'], 'uid': ''}

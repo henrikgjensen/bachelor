@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cloverleaf skull with thanatophoric dwarfism', u'Thanatophoric dysplasia with Kleeblattschaedel'], 'uid': u'187601'}

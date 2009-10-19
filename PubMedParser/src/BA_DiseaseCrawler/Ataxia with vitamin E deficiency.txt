@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AVED', u'Ataxia with isolated vitamin E deficiency', u'Familial isolated deficiency of vitamin E', u'Friedreich-like ataxia with selective vitamin E deficiency'], 'uid': u'277460'}

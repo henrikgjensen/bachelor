@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PGL3', u'Glomus tumors', u' familial', u' 3'], 'uid': u'605373'}

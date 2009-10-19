@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Optic nerve head pits', u' bilateral congenital', u'Congenital coloboma of the optic nerve', u'Optic nerve coloboma'], 'uid': u'120430'}

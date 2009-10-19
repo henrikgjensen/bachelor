@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Peptic ulcer&#47;hiatal hernia', u' multiple lentigines&#47;cafe-au-lait spots', u' hypertelorism', u' myopia'], 'uid': u'137270'}

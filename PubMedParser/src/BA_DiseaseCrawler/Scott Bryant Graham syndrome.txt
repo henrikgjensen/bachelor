@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Craniodigital syndrome with mental retardation', u'Craniodigital syndrome-mental retardation', u' Scott type', u'Scott craniodigital syndrome with mental retardation'], 'uid': u'312860'}

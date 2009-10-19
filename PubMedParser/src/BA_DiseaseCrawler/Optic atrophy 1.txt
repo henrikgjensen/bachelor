@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OPA1', u'Optic atrophy', u' juvenile', u'Kjer-type optic atrophy', u'Optic atrophy', u' Kjer type', u'OAK'], 'uid': u'165500'}

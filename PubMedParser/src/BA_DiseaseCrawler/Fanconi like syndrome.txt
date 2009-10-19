@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Immunologic deficiency', u' pancytopenia', u' and cutaneous malignancies'], 'uid': u'227850'}

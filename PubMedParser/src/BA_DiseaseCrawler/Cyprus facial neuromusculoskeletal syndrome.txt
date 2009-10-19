@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Unusual facial appearance', u' skeletal deformities', u' and musculoskeletal and sensory defects'], 'uid': u'123853'}

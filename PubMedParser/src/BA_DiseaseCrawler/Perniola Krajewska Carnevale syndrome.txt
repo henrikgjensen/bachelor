@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neuroectodermosis with alopecia or hypotrichosis', u'Congenital alopecia', u' psychomotor retardation', u' convulsions'], 'uid': u'203650'}

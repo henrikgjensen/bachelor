@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short tarsus absence of lower eyelashes'], 'uid': u'600269'}

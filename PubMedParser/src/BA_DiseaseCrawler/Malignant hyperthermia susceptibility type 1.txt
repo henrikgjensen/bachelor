@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MHS', u'MHS1', u'Hyperthermia of anesthesia', u'Hyperpyrexia', u' malignant'], 'uid': u'145600'}

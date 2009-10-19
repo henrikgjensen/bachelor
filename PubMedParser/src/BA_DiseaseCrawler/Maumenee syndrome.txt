@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Cleft lower lip cleft lateral canthi chorioretinal degeneration', u'Nystagmus', u' macrostoma', u' low set ears and brachydactyly'], 'uid': ''}

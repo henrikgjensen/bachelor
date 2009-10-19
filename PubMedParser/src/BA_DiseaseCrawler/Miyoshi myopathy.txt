@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Muscular dystrophy', u' distal', u' late onset', u' autosomal recessive', u'MM', u'Miyoshi distal myopathy'], 'uid': u'254130'}

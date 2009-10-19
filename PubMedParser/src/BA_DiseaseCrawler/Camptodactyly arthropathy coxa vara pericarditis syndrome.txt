@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arthropathy camptodactyly syndrome', u'Pericarditis arthropathy camptodactyly syndrome', u'PAC syndrome', u'Fibrosing serositis', u' familial', u'Camptodactyly arthropathy pericarditis syndrome', u'Congenital familial hypertrophic synovitis', u'Camptodactyly-arthropathy-coxa vara-pericarditis syndrome'], 'uid': u'208250'}

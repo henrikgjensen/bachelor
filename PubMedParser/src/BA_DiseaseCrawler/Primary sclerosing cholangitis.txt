@@ -1,0 +1,1 @@
+{'terms': u'%22cholangitis%2csclerosing%22%5bmesh%5dandenglish%5blang%5dand%28%22human%22%5bmeshterms%5dor%22hominidae%22%5bmeshterms%5d%29and%222002/10/2716.24%22%5bedat%5d%3a%222004/10/2616.24%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Cholangitis', u' primary sclerosing', u'Sclerosing cholangitis'], 'uid': ''}

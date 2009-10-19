@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sideroblastic anemia with marrow cell vacuolization and exocrine pancreatic dysfunction'], 'uid': u'557000'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deafness optic atrophy syndrome', u'Dominant congenital deafness and progressive optic nerve atrophy'], 'uid': u'125250'}

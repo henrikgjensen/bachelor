@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcephaly with mental retardation and dilated cardiomyopathy', u'Microcephaly with cardiomyopathy', u'Severe microcephaly and self-limiting dilated cardiomyopathy'], 'uid': u'251220'}

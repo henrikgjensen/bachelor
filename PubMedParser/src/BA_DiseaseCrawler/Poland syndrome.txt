@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Poland anomaly', u'Poland syndactyly', u'Poland sequence', u'Unilateral defect of pectoralis muscle and syndactyly of the hand', u'Poland&#39;s syndrome'], 'uid': u'173800'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HEPOD', u'Mccabe disease', u'Familial expansile osteolysis', u'FEO', u'Osteolysis', u' familial expansile', u'Expansile osteolysis', u' familial', u'EOF'], 'uid': u'174810'}

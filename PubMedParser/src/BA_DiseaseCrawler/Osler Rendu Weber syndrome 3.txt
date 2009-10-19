@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ORW3', u'Telangiectasia', u' hereditary hemorrhagic', u' type 3', u'HHT3'], 'uid': u'601101'}

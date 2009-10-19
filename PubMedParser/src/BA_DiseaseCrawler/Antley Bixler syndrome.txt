@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ABS', u'Trapezoidocephaly synostosis syndrome', u'Multisynostotic osteodysgenesis with long bone fractures', u'Osteodysgenesis', u' multisynostotic with fractures'], 'uid': u'207410'}

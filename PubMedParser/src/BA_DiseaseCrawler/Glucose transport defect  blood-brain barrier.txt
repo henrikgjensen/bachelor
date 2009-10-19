@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'De Vivo disease', u'Glucose transporter type1 &#40;GLUT-1&#41; deficiency', u'GLUT-1 deficiency syndrome', u'GLUT1 deficiency syndrome'], 'uid': u'606777'}

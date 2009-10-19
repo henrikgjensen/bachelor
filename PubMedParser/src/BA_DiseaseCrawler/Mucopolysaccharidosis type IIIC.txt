@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mucopoly-saccharidosis type 3C', u'Sanfilippo syndrome C', u'Acetyl-CoA alpha-glucosaminide n-acetyltransferase deficiency', u'MPS IIIC', u'MPS 3C'], 'uid': u'252930'}

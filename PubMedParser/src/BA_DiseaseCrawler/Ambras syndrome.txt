@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypertrichosis universalis congenita Ambras type', u'HTC 1'], 'uid': u'145701'}

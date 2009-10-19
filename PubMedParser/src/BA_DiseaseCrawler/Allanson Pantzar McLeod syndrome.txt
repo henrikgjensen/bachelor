@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Primitive renal tubule syndrome', u'Renotubular dysgenesis', u'Renal tubular dysgenesis'], 'uid': u'267430'}

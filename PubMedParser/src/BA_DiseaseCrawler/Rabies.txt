@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28rabies%5btitle%5dandhasabstract%5btext%5d%29andenglish%5blang%5d%29and%28%222002/10/1811.12%22%5bedat%5d%3a%222003/10/1811.12%22%5bedat%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Lyssa'], 'uid': ''}

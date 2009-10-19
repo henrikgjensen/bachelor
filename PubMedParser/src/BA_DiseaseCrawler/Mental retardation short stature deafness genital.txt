@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Ieshima Koeda Inagaki syndrome'], 'uid': ''}

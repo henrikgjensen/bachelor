@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebroosteonephosis syndrome', u'COND', u'Congenital shortness with mild spondylorhizomelic dwarfism'], 'uid': u'236450'}

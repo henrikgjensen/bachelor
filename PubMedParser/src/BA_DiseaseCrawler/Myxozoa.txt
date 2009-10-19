@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Fish myxosporean parasites', u'Myxosporea', u'Henneguya salminicola'], 'uid': ''}

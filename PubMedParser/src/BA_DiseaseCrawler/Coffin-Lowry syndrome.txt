@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation with osteocartilaginous abnormalities', u'CLS', u'Coffin syndrome'], 'uid': u'303600'}

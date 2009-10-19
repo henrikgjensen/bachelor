@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial congenital muscular dystrophy with gonadal dysgenesis'], 'uid': u'254000'}

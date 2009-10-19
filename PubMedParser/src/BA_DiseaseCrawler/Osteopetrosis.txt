@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Albers-Schonberg disease', u'Congenital osteopetrosis', u'Marble bone disease', u'Osteosclerosis fragilis'], 'uid': ''}

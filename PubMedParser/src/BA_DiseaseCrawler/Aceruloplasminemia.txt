@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ceruloplasmin deficiency', u'Hereditary hypo-ceruloplasminemia &#40;subtype&#41;', u'Familial apoceruloplasmin deficiency &#40;subtype&#41;'], 'uid': u'604290'}

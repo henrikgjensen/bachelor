@@ -1,0 +1,1 @@
+{'terms': u'%28familial%5btitle%5dandamyloid%5btitle%5dandpolyneuropathy%5btitle%5d%29andhasabstract%5btext%5dand%22loattrfulltext%22%5bsb%5dand%22loattrfreefulltext%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

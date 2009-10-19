@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hunter-mcalpine craniosynostosis syndrome', u'Hunter-mcalpine craniosynostosis', u'Craniosynostosis', u' mental deficiency', u' almond-shaped palpebral fissures', u' downturned mouth', u' mild acral-skeletal anomalies', u' and short stature'], 'uid': u'601379'}

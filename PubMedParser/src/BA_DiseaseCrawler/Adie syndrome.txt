@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Tonic', u' sluggishly reacting pupil and hypoactive or absent tendon reflexes', u'Holmes-Adie syndrome', u'HAS', u'Adie&#39;s Pupil'], 'uid': u'103100'}

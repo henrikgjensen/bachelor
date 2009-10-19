@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aarskog Scott syndrome', u'Faciodigitogenital syndrome', u'Faciogenital dysplasia', u'Aarskog disease', u'FGDY', u'Scott Aarskog syndrome'], 'uid': u'305400'}

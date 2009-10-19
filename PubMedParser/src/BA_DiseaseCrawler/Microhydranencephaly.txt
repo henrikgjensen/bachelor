@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MHAC', u'Hydranencephaly and microcephaly'], 'uid': u'605013'}

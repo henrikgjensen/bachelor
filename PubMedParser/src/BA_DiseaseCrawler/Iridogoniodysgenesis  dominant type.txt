@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Iridogoniodysgenesis type 2', u'IRID2', u'Iridogoniodysgenesis syndrome', u'IGDS', u'Iris hypoplasia with early onset glaucoma', u' autosomal dominant', u'IHGA'], 'uid': u'137600'}

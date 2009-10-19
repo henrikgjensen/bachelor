@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebral', u' ocular', u' dental', u' auricular', u' and skeletal syndrome'], 'uid': u'600373'}

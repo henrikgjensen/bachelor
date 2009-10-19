@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Goldston syndrome', u'Meckel like syndrome'], 'uid': u'267010'}

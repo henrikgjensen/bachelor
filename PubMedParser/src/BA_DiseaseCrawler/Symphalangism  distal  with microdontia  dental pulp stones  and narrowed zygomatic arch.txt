@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Distal symphalangism', u' hypoplastic carpal bones', u' microdontia', u' dental pulp stones', u' and narrowing of the zygomatic arch'], 'uid': u'606895'}

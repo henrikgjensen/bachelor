@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Ocular herpes', u'Herpes zoster ophthalmicus', u'Keratitis herpetic'], 'uid': ''}

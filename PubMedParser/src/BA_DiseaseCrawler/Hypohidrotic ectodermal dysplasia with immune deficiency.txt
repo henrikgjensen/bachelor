@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HED-ID', u'Ectodermal dysplasia', u' hypohidrotic', u' with immune deficiency'], 'uid': u'300291'}

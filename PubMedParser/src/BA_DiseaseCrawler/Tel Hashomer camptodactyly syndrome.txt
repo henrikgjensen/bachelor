@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Camptodactyly with muscular hypoplasia', u' skeletal dysplasia', u' and abnormal palmar creases'], 'uid': u'211960'}

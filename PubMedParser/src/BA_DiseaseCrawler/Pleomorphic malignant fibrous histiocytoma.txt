@@ -1,0 +1,1 @@
+{'terms': u'%28pleomorphic%5btitle%5dandmalignant%5btitle%5dandfibrous%5btitle%5dandhistiocytoma%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

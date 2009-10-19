@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT 1E', u'Charcot-Marie-Tooth disease', u' demyelinating', u' Type 1E', u'Charcot-Marie-Tooth disease and deafness', u'Charcot-Marie-Tooth neuropathy and deafness', u' autosomal dominant', u'Charcot Marie Tooth disease type 1E'], 'uid': u'118300'}

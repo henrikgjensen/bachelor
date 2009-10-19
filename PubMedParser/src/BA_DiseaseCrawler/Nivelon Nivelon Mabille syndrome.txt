@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Chondrodysplasia-pseudohermaphroditism syndrome'], 'uid': u'600092'}

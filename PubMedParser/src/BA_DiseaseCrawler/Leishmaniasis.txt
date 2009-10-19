@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kala-azar', u'Visceral leishmaniasis &#40;subtype&#41;', u'Cutaneous leishmaniasis &#40;subtype&#41;'], 'uid': u'608207'}

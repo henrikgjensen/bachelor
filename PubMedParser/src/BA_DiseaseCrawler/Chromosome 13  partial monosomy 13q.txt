@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28monosomy%5btitle%5dandlong%5btitle%5d%29andarm%5btitle%5d%29andchromosome13%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Partial monosomy of the long arm of chromosome 13', u'Deletion 13q syndrome', u' partial', u'13q- syndrome', u' partial', u'Monosomy 13q', u' partial'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TIA', u'Rare form of Hirschsprung&#39;s disease', u'Aganglionosis', u' total colonic', u'Near-total intestinal aganglionosis', u'NTIA'], 'uid': u'202550'}

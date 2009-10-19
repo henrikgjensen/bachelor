@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alopecia Universalis Congenita', u' Mari type', u'Mari type Alopecia universalis congenita'], 'uid': u'604379'}

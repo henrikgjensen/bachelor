@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Cataracts', u' sensorineural deafness', u' hypogonadism', u' hypertrichosis and short stature'], 'uid': u'8574417'}

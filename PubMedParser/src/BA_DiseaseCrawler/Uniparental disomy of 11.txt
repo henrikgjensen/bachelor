@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Paternal uniparental disomy for chromosome 11&#40;type&#41;', u'Uniparental disomy of chromosome 11'], 'uid': u'7479599'}

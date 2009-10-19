@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MRXSSD', u'Mental retardation X-linked Siderius type', u'Siderius Hamel syndrome'], 'uid': u'300263'}

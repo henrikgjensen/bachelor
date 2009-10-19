@@ -1,0 +1,1 @@
+{'terms': u'schisis%5ballfields%5dand%28%22association%22%5bmeshterms%5dorassociation%5btextword%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Midline development field defects'], 'uid': ''}

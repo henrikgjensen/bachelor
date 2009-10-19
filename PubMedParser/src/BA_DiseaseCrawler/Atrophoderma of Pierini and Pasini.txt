@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Idiopathic atrophoderma of Pasini and Pierini', u'Congenital atrophoderma of Pasini and Pierini'], 'uid': ''}

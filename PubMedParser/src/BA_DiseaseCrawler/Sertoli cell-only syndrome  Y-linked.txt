@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sertoli cell-only syndrome', u' type 1'], 'uid': u'400042'}

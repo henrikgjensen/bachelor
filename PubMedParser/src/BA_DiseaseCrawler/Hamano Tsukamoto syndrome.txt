@@ -1,0 +1,1 @@
+{'terms': u'%28hamano%5ballfields%5dandtsukamoto%5ballfields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Infantile progressive spinal muscular atrophy with ophthalmoplegia and pyramidal symptoms'], 'uid': ''}

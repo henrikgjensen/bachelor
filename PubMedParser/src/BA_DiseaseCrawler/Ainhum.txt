@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spontaneous dactylolysis'], 'uid': u'103400'}

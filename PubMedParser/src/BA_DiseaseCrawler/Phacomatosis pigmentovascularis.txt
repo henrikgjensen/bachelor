@@ -1,0 +1,1 @@
+{'terms': u'%28phacomatosis%5btitle%5dandpigmentovascularis%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Association of cutaneous vascular malformations and different pigmentary disorders', u'PPV'], 'uid': ''}

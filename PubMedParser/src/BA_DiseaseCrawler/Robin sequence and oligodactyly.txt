@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pierre Robin syndrome and oligodactyly'], 'uid': u'172880'}

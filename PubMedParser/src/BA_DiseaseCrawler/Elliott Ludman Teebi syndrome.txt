@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Multiple congenital anomalies', u' severe psychomotor retardation and symmetrical circumferential skin creases of arms and legs'], 'uid': u'8779319'}

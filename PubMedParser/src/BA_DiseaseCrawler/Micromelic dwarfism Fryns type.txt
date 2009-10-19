@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Micromelic dwarfism with cone epiphyses', u' metaphyseal dysplasia', u' and vertebral segmentation defects', u'Dwarfism', u' micromelic', u' with cone epiphyses', u' metaphyseal dysplasia', u' and vertebral segmentation defects', u'Spondyloepimetaphyseal dysplasia', u' micromelic'], 'uid': u'601096'}

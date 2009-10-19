@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Martinez Frias syndrome', u'Growth deficiency', u' facial anomalies', u' and brachydactyly'], 'uid': u'609640'}

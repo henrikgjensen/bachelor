@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Merten-Singleton syndrome', u'SM syndrome', u'Widened medullary cavities of bone', u' aortic calcification', u' abnormal dentition', u' and muscular weakness', u'Syndrome of widened medullary cavities of the metacarpals and phalanges', u' aortic calcification and abnormal dentition'], 'uid': u'182250'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary congenital hypopigmented and hyperpigmented macules', u'Westerhof Beemer Cormane syndrome', u'Congenital hypomelanotic and hypermelanotic macules'], 'uid': u'154000'}

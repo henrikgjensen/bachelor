@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LCA1', u'Amaurosis congenita of Leber', u' type 1', u'Retinal blindness', u' congenital', u'CRB'], 'uid': u'204000'}

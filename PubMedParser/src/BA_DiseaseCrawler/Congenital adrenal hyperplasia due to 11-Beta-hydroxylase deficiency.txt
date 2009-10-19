@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Adrenal hyperplasia 4', u'11-Beta-hydroxylase deficiency', u'Hypertensive form of adrenal hyperplasia', u'Steroid 11-beta-hydroxylase', u'P450C11B1 deficiency', u'Congenital adrenal hyperplasia type 4', u'Adrenal hyperplasia', u' congenital', u' due to 11-Beta-hydroxylase deficiency'], 'uid': u'202010'}

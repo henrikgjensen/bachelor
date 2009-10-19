@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MCMTC', u'Megalocephaly cutis marmorata telangiectatica congenita', u'Macrocephaly cutis marmorata telangiectatica congenita'], 'uid': u'602501'}

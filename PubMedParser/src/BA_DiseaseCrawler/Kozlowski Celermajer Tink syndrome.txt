@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Humero-spinal dysostosis with congenital heart disease', u'Humerospinal dysostosis'], 'uid': u'143095'}

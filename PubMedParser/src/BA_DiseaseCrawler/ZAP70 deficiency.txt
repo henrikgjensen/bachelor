@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Selective T-cell defect', u'Zeta-associated-protein 70 deficiency', u'Zeta-chain-associated protein kinase', u'SYK related tyrosine kinase', u'Protein tyrosine kinase ZAP70'], 'uid': u'176947'}

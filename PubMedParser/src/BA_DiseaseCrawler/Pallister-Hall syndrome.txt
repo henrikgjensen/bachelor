@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PHS', u'Hypothalamic hamartoblastoma', u' hypopituitarism', u' imperforate anus', u' and postaxial polydactyly', u'Pallister Hall syndrome'], 'uid': u'146510'}

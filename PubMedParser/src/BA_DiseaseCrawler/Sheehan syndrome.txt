@@ -1,0 +1,1 @@
+{'terms': u'%28sheehan%5btitle%5d+and+syndrome%5btitle%5d%29+and+%28hasabstract%5btext%5d+and+%22humans%22%5bmesh+terms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Postpartum hypopituitarism', u'Postpartum panhypopituitarism', u'Postpartum panhypopituitary syndrome', u'Postpartum pituitary necrosis', u'Simmond&#39;s disease'], 'uid': ''}

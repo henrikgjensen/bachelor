@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypercalcemia', u' familial', u' with nephrocalcinosis and indicanuria'], 'uid': u'211000'}

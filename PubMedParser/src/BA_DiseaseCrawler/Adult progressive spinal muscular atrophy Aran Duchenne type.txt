@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Aran Duchenne spinal muscular atrophy', u'Adult SMA Aran Duchenne type'], 'uid': ''}

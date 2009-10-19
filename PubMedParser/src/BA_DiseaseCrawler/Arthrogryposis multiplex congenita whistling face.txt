@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Illium syndrome', u'Lethal autosomal recessive arthrogryposis multiplex congenita with whistling face and calcifications of the nervous system'], 'uid': u'208155'}

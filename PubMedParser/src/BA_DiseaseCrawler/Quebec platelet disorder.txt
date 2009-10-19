@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'QPD', u'Factor V Quebec'], 'uid': u'601709'}

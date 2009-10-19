@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Isolated ectopia lentis', u'Familial ectopia lentis'], 'uid': u'129600'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Prepenile scrotum', u'Congenital transposition of the penis'], 'uid': u'300068'}

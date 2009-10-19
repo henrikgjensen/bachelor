@@ -1,0 +1,1 @@
+{'terms': u'%28meconium%5btitle%5d+and+aspiration%5btitle%5d+and+syndrome%5btitle%5d%29+and+%28%22loattrfree+full+text%22%5bsb%5d+and+hasabstract%5btext%5d+and+%22humans%22%5bmesh+terms%5d+and+english%5blang%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'MAS'], 'uid': ''}

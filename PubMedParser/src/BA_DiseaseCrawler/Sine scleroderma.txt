@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Systemic sclerosis sine scleroderma', u'Progressive systemic sclerosis sine scleroderma', u'Scleroderma', u' sine'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gingival  fibromatosis with progressive deafness', u'GFD', u'Gingival fibromatosis with sensorineural hearing loss', u'Familial gingival fibromatosis associated with progressive deafness'], 'uid': u'135550'}

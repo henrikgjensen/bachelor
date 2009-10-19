@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Hypogonadotropic hypogonadism alopecia', u'Hypogonadism and frontoparietal alopecia'], 'uid': u'466617'}

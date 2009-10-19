@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'IDC', u'CMD1A', u'Dilated cardiomyopathy with conduction defect', u'CDCD1', u'Familial idiopathic cardiomyopathy', u'Cardiomyopathy dilated 1A', u'Dilated cardiomyopathy 1A'], 'uid': u'115200'}

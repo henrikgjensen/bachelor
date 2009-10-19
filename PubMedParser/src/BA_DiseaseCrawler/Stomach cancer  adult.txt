@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Stomach carcinoma', u' adult', u'Adult stomach cancer', u'Adult stomach carcinoma'], 'uid': ''}

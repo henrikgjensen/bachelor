@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Nephrosis with deafness and urinary tract and digital malformations'], 'uid': u'256200'}

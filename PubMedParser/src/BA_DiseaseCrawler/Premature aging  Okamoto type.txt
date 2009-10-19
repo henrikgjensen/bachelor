@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Premature aging syndrome with osteosarcoma', u' cataracts', u' diabetes mellitus', u' osteoporosis', u' erythroid macrocytosis', u' severe growth', u'developmental delay'], 'uid': u'601811'}

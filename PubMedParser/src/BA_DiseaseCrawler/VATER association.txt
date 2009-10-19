@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Vertebral defects', u' Anal atresia', u' Tracheoesophageal fistula with Esophageal atresia', u' and Radial dysplasia'], 'uid': u'192350'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Myasthenic syndrome', u' congenital', u' postsynaptic', u' associated with acetylcholine receptor deficiency', u'Myasthenic syndrome', u' congenital', u' type id', u'CMS1D', u'CMS1d'], 'uid': u'608931'}

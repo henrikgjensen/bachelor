@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypertrichosis terminalis', u' generalized', u' with gingival hyperplasia', u'Extreme hirsutism with gingival fibromatosis', u'Hereditary gingival fibromatosis with hypertrichosis'], 'uid': u'135400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Skeletal dysplasia related to campomelic dysplasia', u'Campomelic dysplasia', u' mild'], 'uid': u'602196'}

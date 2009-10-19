@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sparse hair', u' prominent nose', u' small mouth', u' micrognathia', u' cleft palate', u' crumpled upper helices', u' digit anomaly', u' and mild developmental delay'], 'uid': u'605945'}

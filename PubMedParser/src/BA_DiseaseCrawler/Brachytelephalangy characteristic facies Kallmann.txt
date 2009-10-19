@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Characteristic craniofacial appearance and brachytelephalangy'], 'uid': u'113480'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Syndrome of unilobed or absent thymus', u' renal and ureter agenesis&#47;dysgenesis', u' and intrauterine growth retardation &#40;IUGR&#41;'], 'uid': u'274265'}

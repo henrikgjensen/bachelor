@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SVAS', u'Subvalvular aortic stenosis', u' Eisenberg type'], 'uid': u'185500'}

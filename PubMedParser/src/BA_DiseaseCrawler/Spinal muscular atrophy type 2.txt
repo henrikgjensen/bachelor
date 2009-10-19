@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SMA 2', u'SMA2', u'Muscular atrophy', u' spinal', u' intermediate type', u'Muscular atrophy', u' spinal', u' infantile chronic form'], 'uid': u'253550'}

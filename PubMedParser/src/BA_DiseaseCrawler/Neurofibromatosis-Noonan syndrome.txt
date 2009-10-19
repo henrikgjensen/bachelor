@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NFNS', u'Noonan neurofibromatosis syndrome', u'Neurofibromatosis with Noonan phenotype'], 'uid': u'601321'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ataxia', u' intermittent', u' with pyruvate dehydrogenase', u' or decarboxylase', u' deficiency', u'Ataxia with lactic acidosis 1'], 'uid': u'312170'}

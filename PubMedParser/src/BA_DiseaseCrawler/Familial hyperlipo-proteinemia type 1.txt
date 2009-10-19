@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperlipemia idiopathic Burger-Grutz type', u'LPL deficiency', u'Hyperlipemia essential familial'], 'uid': u'238600'}

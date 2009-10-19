@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ehlers-danlos syndrome oculoscoliotic type', u'EDS 6  &#40;formerly&#41;', u'Ehlers-Danlos syndrome type 6 &#40;formerly&#41;'], 'uid': u'225400'}

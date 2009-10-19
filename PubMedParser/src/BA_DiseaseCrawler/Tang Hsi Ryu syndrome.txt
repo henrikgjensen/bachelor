@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Polyneuropathy hepatosplenomegaly hyperpigmentation', u'Ascitis', u' splenomegaly', u' lymphadenopathy', u'Syndrome of polyneuropathy', u' skin hyperpigmentation', u' oedema and hepatosplenomegaly'], 'uid': u'6663309'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MELAS syndrome', u'Mitochondrial encephalopathy', u'Mitochondrial myopathy encephalopathy lactic acidosis and strokelike episodes'], 'uid': u'540000'}

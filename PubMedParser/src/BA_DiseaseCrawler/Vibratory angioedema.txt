@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Angioedema', u' vibratory'], 'uid': u'193050'}

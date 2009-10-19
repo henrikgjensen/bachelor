@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Eyelashes long mental retardation', u'Trichomegaly retina pigmentary degeneration dwarfism'], 'uid': u'275400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PC deficiency', u'Ataxia with lactic acidosis 2', u'Leigh necrotizing encephalopathy due to pyruvate carboxylase deficiency', u'Leigh syndrome due to pyruvate carboxylase deficiency'], 'uid': u'266150'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cloverleaf skull syndrome', u'Kleeblattschaedel-deformity syndrome'], 'uid': u'148800'}

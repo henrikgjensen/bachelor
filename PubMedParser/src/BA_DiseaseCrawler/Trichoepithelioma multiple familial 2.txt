@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Multiple familial trichoepithelioma', u'MFT2'], 'uid': u'612099'}

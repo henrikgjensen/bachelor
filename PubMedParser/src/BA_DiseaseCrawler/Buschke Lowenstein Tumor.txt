@@ -1,0 +1,1 @@
+{'terms': u'%28buschke%5btitle%5dandlowenstein%5btitle%5dandtumor%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Giant condyloma acuminatum involving the prepuce and glans penis', u'Giant condyloma of Buschke and L&#246;wenstein', u'GCBL'], 'uid': ''}

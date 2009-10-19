@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' X-linked', u' with marfanoid habitus', u'Marfanoid habitus', u' mild general hypotonia', u' hypernasal voice', u' normal testicular size', u' and distinct craniofacial anomalies'], 'uid': u'309520'}

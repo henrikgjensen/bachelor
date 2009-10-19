@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcephaly', u' mild mental retardation', u' short stature', u' and skeletal anomalies'], 'uid': u'251250'}

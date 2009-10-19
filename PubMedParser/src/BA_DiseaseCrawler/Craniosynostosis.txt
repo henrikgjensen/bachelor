@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Craniostenosis', u'CSO'], 'uid': u'218500'}

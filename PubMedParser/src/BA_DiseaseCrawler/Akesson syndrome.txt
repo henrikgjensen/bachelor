@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cutis verticis gyrata-thyroid aplasia-mental retardation syndrome', u'Cutis verticis gyrata', u' thyroaplasia and mental deficiency syndrome'], 'uid': u'304200'}

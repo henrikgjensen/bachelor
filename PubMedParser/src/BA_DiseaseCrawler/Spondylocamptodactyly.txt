@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Camptodactyly with cervical platyspondyly', u'Spondylo camptodactyly syndrome'], 'uid': u'600000'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperlipoproteinemia type II', u'Hyper-beta-lipoproteinemia', u'Hyperbetalipoproteinemia'], 'uid': u'144400'}

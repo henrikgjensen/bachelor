@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Iris dysplasia', u' orbital hypertelorism', u' and psychomotor retardation'], 'uid': u'4633364'}

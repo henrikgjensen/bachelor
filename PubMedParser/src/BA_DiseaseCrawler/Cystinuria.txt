@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cystinuria type 1', u'CSNU1', u'CSNU'], 'uid': u'220100'}

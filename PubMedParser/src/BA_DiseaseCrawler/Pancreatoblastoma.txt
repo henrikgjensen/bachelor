@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28%28pancreatoblastoma%5btitle%5dandhasabstract%5btext%5d%29andreview%5bptyp%5d%29andenglish%5blang%5d%29and%28%28%22human%22%5bmeshterms%5dor%22hominidae%22%5bmeshterms%5d%29or%22human%22%5bmeshterms%5d%29%29and%28%221993/02/0814.24%22%5bedat%5d%3a%222003/02/0614.24%22%5bedat%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

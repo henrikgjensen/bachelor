@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NYS1', u'Nystagmus', u' congenital motor', u' 1'], 'uid': u'310700'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Microcephaly', u' seizures', u' mental retardation', u' congenital heart disease', u' and skeletal abnormalities'], 'uid': u'www.ncbi.nlm.nih.gov/sites/entrez'}

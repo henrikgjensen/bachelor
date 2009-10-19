@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dandy-Walker malformation with postaxial polydactyly', u'DWM with postaxial polydactyly'], 'uid': u'220220'}

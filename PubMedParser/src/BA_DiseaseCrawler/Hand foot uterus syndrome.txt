@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HFU syndrome', u'HFG syndrome', u'Hand foot genital syndrome', u'HFGS'], 'uid': u'140000'}

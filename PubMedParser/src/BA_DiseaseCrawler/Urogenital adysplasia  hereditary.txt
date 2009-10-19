@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bilateral renal agenesis', u'BRA', u'Hereditary renal agenesis', u'HRA', u'Renal agenesis'], 'uid': u'191830'}

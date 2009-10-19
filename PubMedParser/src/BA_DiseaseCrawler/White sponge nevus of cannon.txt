@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'WSN', u'Leukokeratosis', u' hereditary mucosal'], 'uid': u'193900'}

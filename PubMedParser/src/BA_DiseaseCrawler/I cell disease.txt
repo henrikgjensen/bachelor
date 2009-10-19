@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mucolipidosis 2', u'ML 2', u'ICD', u'GNPTA', u'Inclusion cell disease', u'Leroy Disease', u'N-acetylglucosamine 1phosphotransferase deficiency', u'ML disorder type 2'], 'uid': u'252500'}

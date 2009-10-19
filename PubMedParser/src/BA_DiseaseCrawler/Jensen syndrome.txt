@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Opticoacustic nerve atrophy with dementia', u'Nerve deafness optic nerve atrophy', u' and dementia', u'Syndrome of opticoacoustic nerve atrophy with dementia'], 'uid': u'311150'}

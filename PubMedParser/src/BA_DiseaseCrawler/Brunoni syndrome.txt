@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Mesomelia', u' radial hypoplasia bifid thumb unusual facies', u'Mesomelic dwarfism', u' skeletal abnormalities', u' and ectodermal dysplasia'], 'uid': u'6587010'}

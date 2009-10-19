@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dominant ano-rectal malformation', u' nephritis and nerve-deafness'], 'uid': u'107100'}

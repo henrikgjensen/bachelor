@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pyknodysostosis', u'PKND', u'PYCD', u'Deformity of the skull &#40;including wide sutures&#41;', u' maxilla and phalanges &#40;acroosteolysis&#41;', u' osteosclerosis', u' and fragility of bone'], 'uid': u'265800'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SMA3', u'Muscular atrophy', u' juvenile', u'SMA 3', u'Kugelberg-Welander syndrome', u'KWS', u'Spinal muscular atrophy', u' mild childhood and adolescent form'], 'uid': u'253400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'X-linked mental retardation Snyder - Robinson type', u'SRS'], 'uid': u'309583'}

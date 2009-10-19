@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AFD', u'Mandibulofacial dysostosis', u' Treacher Collins type', u' with limb anomalies', u'Nager syndrome', u'AFD', u' Nager type', u'Preaxial acrofacial dysostosis', u'Nager acrofacial dysostosis syndrome', u'Split hand deformity-mandibulofacial dysostosis', u'Nager acrofacial dysostosis'], 'uid': u'154400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ectrodactyly', u' spastic paraplegia and mental retardation', u'Mental retardation', u' spasticity and transverse limb defects', u'Jancar syndrome'], 'uid': u'246555'}

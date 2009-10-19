@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypothyroidism cleft palate Hypothyroidism', u' athyroidal', u' with spiky hair and cleft palate', u'Bamforth-Lazarus syndrome'], 'uid': u'241850'}

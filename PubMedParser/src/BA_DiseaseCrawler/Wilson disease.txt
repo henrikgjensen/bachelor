@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hepatolenticular degeneration', u'WND', u'WD'], 'uid': u'277900'}

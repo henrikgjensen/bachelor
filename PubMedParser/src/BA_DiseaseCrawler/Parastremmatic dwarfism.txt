@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Parastremmatic dysplasia'], 'uid': u'168400'}

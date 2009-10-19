@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bean syndrome', u'Blue rubber bleb nevus syndrome'], 'uid': u'112200'}

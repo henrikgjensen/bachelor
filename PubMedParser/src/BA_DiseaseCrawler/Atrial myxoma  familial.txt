@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Intracardiac myxoma'], 'uid': u'255960'}

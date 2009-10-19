@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Aplasia cutis cleft palate epidermolysis', u'Ptosis', u' ectropion', u' thin skin', u' beaked nose', u'Aplasia cutis congenita', u' cleft palate', u' epidermolysis bullosa', u' and ectrodactyly'], 'uid': u'1488384'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thyroid', u' ectopic', u'Thyroid hypoplasia', u'Thyroid dysgenesis'], 'uid': u'218700'}

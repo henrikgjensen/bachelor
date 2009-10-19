@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Dienoyl-coa reductase deficiency'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital primary aphakia', u'CPA'], 'uid': u'610256'}

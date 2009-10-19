@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Clarkson disease', u'Periodic systemic capillary leak syndrome', u'Capillary leak syndrome'], 'uid': u'3032644'}

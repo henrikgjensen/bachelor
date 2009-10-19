@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'High red cell phosphatidylcholine hemolytic anemia', u'HPCHA', u'Phosphatidylcholine Red cell membrane disorder', u'Leaky Red cell syndrome'], 'uid': u'179700'}

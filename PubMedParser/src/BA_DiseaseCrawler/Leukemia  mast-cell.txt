@@ -1,0 +1,1 @@
+{'terms': u'%22leukemia%2cmast-cell%22%5bmesh%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Mast-cell leukemia'], 'uid': ''}

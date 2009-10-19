@@ -1,0 +1,1 @@
+{'terms': u'%28%28%22fallopiantubeneoplasms%22%5bmajr%5dand%28%22hominidae%22%5bmeshterms%5dor%22human%22%5bmeshterms%5d%29%29and%28%221998/09/3011.04%22%5bedat%5d%3a%222003/09/2911.04%22%5bedat%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Cancer of the fallopian tube'], 'uid': ''}

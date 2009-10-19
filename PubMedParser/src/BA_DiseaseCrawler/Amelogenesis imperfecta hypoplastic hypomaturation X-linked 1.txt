@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Amelogenesis imperfecta X-linked 1', u'AIH1', u'Enamel hypoplasia X-linked'], 'uid': u'301200'}

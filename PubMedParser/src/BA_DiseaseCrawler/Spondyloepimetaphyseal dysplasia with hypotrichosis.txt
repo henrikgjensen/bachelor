@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Whyte syndrome', u'Whyte Petersen McAlister syndrome'], 'uid': u'183849'}

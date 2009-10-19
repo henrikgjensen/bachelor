@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Schmid-Fraccaro syndrome', u'CES', u'Chromosome 22 partial tetrasomy', u'INV DUP&#40;22&#41;&#40;Q11&#41;', u'Coloboma of the iris and anal atresia with fistula', u' downslanting palpebral fissures', u' preauricular tags and&#47;or pits', u' heart and renal malformations', u' nea'], 'uid': u'115470'}

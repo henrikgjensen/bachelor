@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dyschondrodysplasia with Hemangiomas', u'Enchondromatosis with Multiple Cavernous Hemangiomas', u'Hemangiomatosis Chondrodystrophica', u'Kast Syndrome', u'Multiple Angiomas and Endochondromas'], 'uid': u'166000'}

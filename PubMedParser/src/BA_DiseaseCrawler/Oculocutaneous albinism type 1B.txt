@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Albinism', u' yellow mutant type', u'OCA1B', u'Yellow albinism', u'Yellow mutant albinism'], 'uid': u'606952'}

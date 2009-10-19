@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Papillomatosis florid of nipple', u'Florid papillomatosis'], 'uid': u'www.pubmedcentral.nih.gov/articlerender.fcgi'}

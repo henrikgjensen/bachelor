@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ophthalmoplegia', u' hypotonia', u' ataxia', u' hypacusis', u' and athetosis', u'OHAHA syndrome', u'IOSCA', u'Spinocerebellar ataxia 8 &#40;formerly called&#41;', u'SCA8 &#40;formerly called&#41;', u'Spinocerebellar ataxia infantile with sensory neuropathy'], 'uid': u'271245'}

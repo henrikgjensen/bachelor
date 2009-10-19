@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pulmonary agenesis', u' Microphthalmia', u' and Diaphragmatic defect', u'Matthew Wood syndrome', u'Matthew-Wood syndrome'], 'uid': u'601186'}

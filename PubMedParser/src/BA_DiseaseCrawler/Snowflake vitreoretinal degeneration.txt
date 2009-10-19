@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Vitreoretinal degeneration', u' Snowflake type', u'SVD', u'Snowflake degeneration in hereditary vitreoretinal degeneration'], 'uid': u'193230'}

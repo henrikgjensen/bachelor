@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TBDN', u'Epidermolysis bullosa dystrophica', u' dominant neonatal form'], 'uid': u'131705'}

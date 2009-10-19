@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hemolysis', u' Elevated Liver Enzymes', u' Lowered Platelets'], 'uid': u'189800'}

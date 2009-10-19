@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Radial aplasia', u' X-linked'], 'uid': u'312190'}

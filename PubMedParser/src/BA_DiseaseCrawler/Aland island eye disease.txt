@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AIED', u'Forsius Eriksson type ocular albinism'], 'uid': u'300600'}

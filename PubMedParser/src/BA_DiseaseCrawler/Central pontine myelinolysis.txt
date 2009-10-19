@@ -1,0 +1,1 @@
+{'terms': u'%28%28%22centralpontinemyelinolysis%22%5btiab%5dand%28%28%22human%22%5bmeshterms%5dor%22hominidae%22%5bmeshterms%5d%29or%22human%22%5bmeshterms%5d%29%29and%28%221998/04/1612.21%22%5bedat%5d%3a%222003/04/1512.21%22%5bedat%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'CPM'], 'uid': ''}

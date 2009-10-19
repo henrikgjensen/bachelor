@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AHUS', u'Atypical HUS', u'HUS', u' atypical', u'D-HUS'], 'uid': u'235400'}

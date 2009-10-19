@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CCHS', u'Idiopathic congenital central alveolar hypoventilation', u'Congenital failure of autonomic control', u'Primary alveolar hypoventilation', u'Congenital Ondine curse', u'Ondine&#39;s curse &#40;formerly&#41;', u'Ondine curse &#40;formerly&#41;'], 'uid': u'209880'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Cerebral palsy', u' dyskinetic', u'Dyskinetic cerebral palsy', u'Athetoid cerebral palsy'], 'uid': ''}

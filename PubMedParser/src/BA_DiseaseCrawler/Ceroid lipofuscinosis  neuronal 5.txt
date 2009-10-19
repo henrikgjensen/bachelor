@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neuronal ceroid lipofuscinosis', u' 5', u'CLN5', u'Neuronal ceroid lipofuscinosis', u' Finnish variant', u' late infantile', u'VLINCL'], 'uid': u'256731'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BS', u'Bloom-Torre-Machacek syndrome', u'BLM', u'Growth deficiency', u' sun-sensitive', u' telangiectatic', u' hypo and hyperpigmented skin', u' predisposition to malignancy and chromosomal instability', u'BLS'], 'uid': u'210900'}

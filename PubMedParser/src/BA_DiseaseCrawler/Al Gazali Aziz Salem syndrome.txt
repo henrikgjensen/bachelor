@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Short stature', u' mental retardation', u' facial dysmorphism', u' short webbed neck', u' skin changes and congenital heart disease'], 'uid': u'8905197'}

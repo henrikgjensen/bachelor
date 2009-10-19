@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'KOS', u'Severe mental retardation', u' microcephaly', u' long narrow face', u' ocular anomalies', u' and long thin hands and feet'], 'uid': u'244450'}

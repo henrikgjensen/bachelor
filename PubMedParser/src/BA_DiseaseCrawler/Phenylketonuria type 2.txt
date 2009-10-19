@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PKU2', u'PKU', u' atypical', u'Dihydropteridine reductase deficiency', u'DHPR deficiency', u'Quinoid dihydropteridine reductase deficiency', u'QDPR deficiency'], 'uid': u'261630'}

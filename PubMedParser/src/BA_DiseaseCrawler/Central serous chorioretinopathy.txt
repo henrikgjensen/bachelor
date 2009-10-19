@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Central serous chorioretinopathy after bone marrow transplantation'], 'uid': ''}

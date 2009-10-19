@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'3-hydroxy-3-methylglutaryl-CoA lyase deficiency', u'Defect in leucine metabolism', u'HMG-CoA lyase deficiency', u'3-hydroxy-3-methylglutaric aciduria', u'Hydroxymethylglutaric aciduria', u'HL deficiency'], 'uid': u'246450'}

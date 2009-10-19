@@ -1,0 +1,1 @@
+{'terms': u'cholera%5bti%5d+and+%28%222003%2f11%2f17%22%5bpdat%5d+%3a+%222008%2f11%2f14%22%5bpdat%5d+and+english%5blang%5d+and+review%5bptyp%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

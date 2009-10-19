@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Unilateral absence of a pulmonary artery &#40;UAPA&#41;'], 'uid': ''}

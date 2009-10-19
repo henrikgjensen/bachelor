@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SDTY3', u'Syndactyly of the ring and little finger', u'Syndactyly of fingers four and five', u'Ring and little finger syndactyly'], 'uid': u'186100'}

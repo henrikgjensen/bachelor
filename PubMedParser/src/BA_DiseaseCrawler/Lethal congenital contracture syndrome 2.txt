@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'LCCS2', u'Multiple contracture syndrome', u' Israeli Bedouin type'], 'uid': ''}

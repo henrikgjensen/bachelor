@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Enlarged tongue', u'Giant tongue', u'Congenital macroglossia'], 'uid': u'153630'}

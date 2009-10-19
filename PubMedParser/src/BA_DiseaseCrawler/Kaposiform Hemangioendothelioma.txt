@@ -1,0 +1,1 @@
+{'terms': u'kaposiform%5btitle%5dandhemangioendothelioma%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'KH', u'Congenital cutaneous multifocal kaposiform hemangioendothelioma', u'KHE', u'Kaposiform hemangio-endothelioma'], 'uid': ''}

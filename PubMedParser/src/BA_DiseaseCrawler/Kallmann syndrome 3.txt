@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kallmann syndrome type 3', u'KAL3', u'Hypogonadotropic hypogonadism', u' anosmia', u' and midline cranial anomalies &#40;cleft lip', u' cleft palate and imperfect fusion&#41;'], 'uid': u'244200'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microgastria-limb reduction defects association', u'MLRD', u'Congenital microgastria and limb reduction defects'], 'uid': u'156810'}

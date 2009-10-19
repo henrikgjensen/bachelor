@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pontocerebellar hypoplasia', u' type 5', u'PCH5'], 'uid': u'610204'}

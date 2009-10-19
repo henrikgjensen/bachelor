@@ -1,0 +1,1 @@
+{'terms': u'%28macrophagic%5ballfields%5dandmyofasciitis%5ballfields%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'MMF', u'Macrophagic myofasciitis', u' childhood'], 'uid': ''}

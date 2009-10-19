@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SACS', u'Charlevoix-Saguenay spastic ataxia', u'Autosomal recessive spastic ataxia of Charlevoix-Saguenay', u'ARSACS', u'Spastic ataxia of Charlevoix-Saguenay'], 'uid': u'270550'}

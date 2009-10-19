@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Precocious puberty', u' male limited', u'Sexual precocity', u' familial', u' gonadotropin-independent', u'Pubertas Praecox', u'Familial Testotoxicosis &#40;subtype&#41;'], 'uid': u'176410'}

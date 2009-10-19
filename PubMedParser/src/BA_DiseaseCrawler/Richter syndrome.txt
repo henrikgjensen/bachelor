@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Large cell lymphoma which develops after treatment for chronic lymphocytic leukemia &#40;CLL&#41;'], 'uid': ''}

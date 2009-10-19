@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CGL2', u'Berardinelli-seip congenital lipodystrophy type 2', u'Seip syndrome', u'Berardinelli syndrome', u'Total lipodystrophy and acromegaloid gigantism', u'Congenital lipoatrophic diabetes', u'Brunzell syndrome'], 'uid': u'269700'}

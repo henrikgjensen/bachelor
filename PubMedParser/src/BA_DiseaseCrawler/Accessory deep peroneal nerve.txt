@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Peroneal nerve', u' accessory deep'], 'uid': u'170980'}

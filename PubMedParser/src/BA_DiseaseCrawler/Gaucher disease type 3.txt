@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GD 3', u'Gaucher disease', u' juvenile and adult', u' cerebral', u'Gaucher disease', u' chronic neuronopathic type', u'Gaucher disease', u' subacute neuronopathic type'], 'uid': u'231000'}

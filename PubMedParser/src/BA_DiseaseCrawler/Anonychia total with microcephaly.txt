@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Total anonychia with microcephaly', u'Total anonychia congenita and microcephaly'], 'uid': u'607214'}

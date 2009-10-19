@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'KWE', u'Oudtshoorn skin', u'Erythrokeratolysis hiemalis ichthyosis'], 'uid': u'148370'}

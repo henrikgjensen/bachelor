@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Setleis syndrome', u'Bitemporal forceps marks syndrome', u'Focal facial dermal dysplasia type 2', u'FFDD type 2'], 'uid': u'227260'}

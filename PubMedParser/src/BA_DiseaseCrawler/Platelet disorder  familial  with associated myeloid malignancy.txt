@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FPDMM', u'Thrombocytopenia', u' familial', u' with propensity to acute myelogenous leukemia', u'Platelet disorder', u' Aspirin-like', u'FPD&#47;AML'], 'uid': u'601399'}

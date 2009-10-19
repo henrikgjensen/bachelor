@@ -1,0 +1,1 @@
+{'terms': u'%28acute%5btitle%5dandmegakaryoblastic%5btitle%5dandleukemia%5btitle%5d%29and%22loattrfulltext%22%5bsb%5dand%222004/01/1511.29%22%5bpdat%5d%3a%222007/01/1511.29%22%5bpdat%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

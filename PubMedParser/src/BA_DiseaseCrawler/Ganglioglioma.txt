@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28ganglioglioma%5btitle%5dandhasabstract%5btext%5d%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29and%28%221997/03/0815.38%22%5bedat%5d%3a%222002/03/0715.38%22%5bedat%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Mixed cell tumors containing both neural ganglionic cells and neural glial cell components'], 'uid': ''}

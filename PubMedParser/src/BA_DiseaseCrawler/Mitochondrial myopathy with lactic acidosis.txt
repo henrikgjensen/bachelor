@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Metabolic myopathy associated with chronic lactic acidemia', u' growth failure', u' and nerve deafness'], 'uid': u'251950'}

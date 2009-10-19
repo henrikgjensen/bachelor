@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EB-PA', u'PA-JEB', u'Carmi syndrome', u'Aplasia cutis congenita with gastrointestinal atresia'], 'uid': u'226730'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Borrone dermatocardioskeletal syndrome'], 'uid': u'211170'}

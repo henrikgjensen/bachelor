@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Craniosynostosis and clavicular hypoplasia', u' Delayed closure of the fontanel', u' Anal anomalies and Genitourinary malformations', u'CDAGS syndrome'], 'uid': u'603116'}

@@ -1,0 +1,1 @@
+{'terms': u'%28keshan%5ballfields%5dand%28%22disease%22%5bmeshterms%5dordisease%5btextword%5d%29%29and%22loattrfreefulltext%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Caused by deficiency of selenium in the diet', u'Enlarged heart and poor heart function'], 'uid': ''}

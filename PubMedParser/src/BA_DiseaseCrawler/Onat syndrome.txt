@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Subaortic stenosis short stature syndrome'], 'uid': u'271960'}

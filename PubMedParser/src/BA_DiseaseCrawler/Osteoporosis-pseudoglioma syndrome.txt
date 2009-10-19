@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OPPG', u'OPS', u'Osteogenesis imperfecta', u' ocular form', u'Pseudoglioma with bone fragility'], 'uid': u'259770'}

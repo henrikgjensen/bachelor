@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hemiplegia', u' infantile', u' with porencephaly', u'Familial porencephalic white matter disease'], 'uid': u'175780'}

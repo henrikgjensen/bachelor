@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PMS', u'Postaxial Polydactyly with progressive myopia', u'Czeizel Brooser syndrome', u'Postaxial polydactyly-progressive myopia syndrome'], 'uid': u'174310'}

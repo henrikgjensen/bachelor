@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'SD', u'Abductor spasmodic dysphonia &#40;type&#41;', u'Mixed spasmodic dysphonia &#40;type&#41;', u'Adductor spasmodic dysphonia &#40;type&#41;', u'Laryngeal dyskinesia', u'Laryngeal dystonia', u'Spastic dysphonia'], 'uid': ''}

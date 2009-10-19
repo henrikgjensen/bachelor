@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Keratoderma', u' palmoplantar', u' with nail dystrophy and hereditary motor-sensory neuropathy', u'Axonal neuropathy with palmoplantar keratoderma', u'Charcot-Marie-Tooth disease with palmoplantar keratoderma and nail dystrophy'], 'uid': u'148360'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EAOH', u'Ataxia-oculomotor apraxia syndrome', u'AOA', u'Ataxia-oculomotor apraxia 1', u'AOA1', u'Ataxia-telangiectasia-like syndrome', u'Early-onset cerebellar ataxia with hypoalbuminemia', u'EOCA-HA'], 'uid': u'208920'}

@@ -1,0 +1,1 @@
+{'terms': u'%28aspergillus%5btitle%5dandniger%5btitle%5dandinfection%5btitle%5d%29andhasabstract%5btext%5dandenglish%5blang%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Aspergillus niger infection', u' pulmonary'], 'uid': ''}

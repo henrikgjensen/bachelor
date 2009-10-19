@@ -1,0 +1,1 @@
+{'terms': u'rosenberg%5ballfields%5dandchutorian%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Optic atrophy', u' polyneuropathy', u' and deafness', u'Optic atrophy', u' sensorineural hearing loss and polyneuropathy', u'Familial opticoacoustic nerve degeneration and polyneuropathy'], 'uid': ''}

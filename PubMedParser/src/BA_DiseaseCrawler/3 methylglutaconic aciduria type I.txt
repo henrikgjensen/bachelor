@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'MGA type I', u'3&#64; methylglutaconic aciduria type I', u'3 methylglutaconyl CoA hydratase deficiency', u'3MG CoA hydratase deficiency'], 'uid': ''}

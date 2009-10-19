@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aplasia of tibia with ectrodactyly', u'Tibial aplasia with split-hand&#47;split-foot deformity', u'Ectrodactyly with aplasia of long bones', u'Split-hand&#47;foot malformation with long bone deficiency', u'SHFLD'], 'uid': u'119100'}

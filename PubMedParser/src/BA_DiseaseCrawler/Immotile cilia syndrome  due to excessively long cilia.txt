@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Chronic rhinitis', u' sinusitis', u' bronchitis', u' severely decreased mucociliary clearance of the lungs', u' and nasal polyps'], 'uid': u'242680'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cataract', u' congenital', u' cerulean type 1', u'CCA1', u'Cataract', u' congenital', u' blue dot type 1'], 'uid': u'115660'}

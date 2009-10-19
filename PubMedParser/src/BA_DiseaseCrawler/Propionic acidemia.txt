@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Propionyl-CoA carboxylase deficiency', u'PCC deficiency', u'Glycinemia', u' ketotic', u'Hyperglycinemia with ketoacidosis and leukopenia', u'Ketotic hyperglycinemia', u'Ketotic glycinemia', u'PROP', u'Propionicacidemia', u'Propionyl-CoA carboxylase deficiency'], 'uid': u'606054'}

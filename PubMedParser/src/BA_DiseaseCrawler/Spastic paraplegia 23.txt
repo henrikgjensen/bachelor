@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SPG 23', u'Spastic paraplegia and pigmentary abnormalities', u'Abdallat syndrome', u'Abdallat Davis Farrage syndrome', u'Lison syndrome', u'Spastic paraplegia', u' vitiligo', u' premature graying and characteristic facies'], 'uid': u'270750'}

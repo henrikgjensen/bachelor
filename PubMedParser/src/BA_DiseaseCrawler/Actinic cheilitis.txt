@@ -1,0 +1,1 @@
+{'terms': u'%28actinic%5btitle%5dandcheilitis%5btitle%5d%29andhasabstract%5btext%5dand%222000/09/2114.26%22%5bedat%5d%3a%222005/09/2014.26%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Actinic cheilosis'], 'uid': ''}

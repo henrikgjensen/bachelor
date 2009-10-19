@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Spastic paraplegia', u' bilateral sensorineural deafness', u' intellectual retardation', u' and progressive nephropathy'], 'uid': u'3351903'}

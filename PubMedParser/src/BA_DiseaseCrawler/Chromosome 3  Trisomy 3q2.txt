@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Chromosome 3', u' Distal 3q2 Trisomy', u'Partial Duplication 3q Syndrome', u'Partial Trisomy 3q Syndrome'], 'uid': u'631852'}

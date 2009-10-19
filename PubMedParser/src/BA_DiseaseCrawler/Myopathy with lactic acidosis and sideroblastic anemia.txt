@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mitochondrial myopathy and sideroblastic anemia', u'MLASA', u'MSA'], 'uid': u'600462'}

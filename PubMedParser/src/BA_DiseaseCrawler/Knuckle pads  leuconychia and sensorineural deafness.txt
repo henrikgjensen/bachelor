@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bart Pumphrey syndrome', u'Knuckle pads', u' leukonychia', u' deafness', u' and keratosis palmoplantaris'], 'uid': u'149200'}

@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28kocher-debre%5ballfields%5dand%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29%29andhasabstract%5btext%5d%29andenglish%5blang%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Kocher Debre Semelaigne disease', u'Association of muscular pseudohypertrophy and hypothyroidism in children'], 'uid': ''}

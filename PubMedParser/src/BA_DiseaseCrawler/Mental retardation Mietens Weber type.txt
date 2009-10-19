@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation syndrome', u' Mietens Weber type', u'Corneal opacity', u' nystagmus', u' flexion contracture of the elbows', u' growth failure', u' and mental retardation', u'Mietens-Weber syndrome'], 'uid': u'249600'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Charcot-Marie-Tooth peroneal muscular atrophy', u' X-linked', u' with aplasia cutis congenita', u'Charcot Marie Tooth type 1 aplasia cutis congenita'], 'uid': u'302803'}

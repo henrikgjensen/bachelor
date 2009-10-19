@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dysharmonic skeletal maturation muscular fibre disproportion', u'Hypotonia', u' psychomotor retardation', u' seizures', u' delayed and dysharmonic skeletal maturation', u' and congenital fibre type disproportion', u'Puertorican infant hypotonia syndrome'], 'uid': u'600096'}

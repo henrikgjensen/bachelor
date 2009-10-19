@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HHS', u'Prenatal growth retardation', u' progressive pancytopenia and cerebellar hypoplasia', u'Cerebellar hypoplasia with pancytopenia'], 'uid': u'300240'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypokalemic alkalosis with hypercalciuria antenatal 1', u'Hyperprostaglandin E syndrome 1', u'Antenatal Bartter Syndrome type 1'], 'uid': u'601678'}

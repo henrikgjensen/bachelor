@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SOST', u'Cortical hyperostosis with syndactyly'], 'uid': u'269500'}

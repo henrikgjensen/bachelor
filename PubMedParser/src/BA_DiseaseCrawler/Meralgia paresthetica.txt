@@ -1,0 +1,1 @@
+{'terms': u'meralgia%5btitle%5dandparesthetica%5btitle%5dandhasabstract%5btext%5dand%221999/12/1711.48%22%5bedat%5d%3a%222004/12/1511.48%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Bernhardt-Roth syndrome', u'Lateral femoral cutaneous nerve entrapment'], 'uid': ''}

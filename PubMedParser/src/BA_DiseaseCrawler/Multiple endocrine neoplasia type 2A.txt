@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sipple syndrome', u'MEN 2A', u'MEN-2A syndrome', u'Pheochromocytoma and amyloid producing medullary thyroid carcinoma', u'PTC syndrome'], 'uid': u'171400'}

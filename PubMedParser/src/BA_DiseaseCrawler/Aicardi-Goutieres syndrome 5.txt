@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aicardi-Goutieres syndrome', u' autosomal dominant', u'AGS5'], 'uid': u'610905'}

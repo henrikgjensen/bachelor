@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anomalous insertion of extensor tendons of fingers', u'Hapnes Boman Skeie syndrome'], 'uid': u'187390'}

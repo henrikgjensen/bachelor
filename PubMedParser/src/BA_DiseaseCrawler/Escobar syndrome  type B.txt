@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arthrogryposis multiplex congenita Escobar variant form', u'Escobar variant with pursed mouth', u' creased tongue', u' ophthalmologic features', u' and scoliosis'], 'uid': u'265000'}

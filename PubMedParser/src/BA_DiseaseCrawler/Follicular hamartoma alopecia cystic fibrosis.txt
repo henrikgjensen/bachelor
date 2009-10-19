@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Congenital generalized follicular hamartoma associated with alopecia and cystic fibrosis'], 'uid': u'7726589'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Berk Tabatznik syndrome', u'Cleft nare', u' brachydactyly', u' short stature dwarfism'], 'uid': u'3128111'}

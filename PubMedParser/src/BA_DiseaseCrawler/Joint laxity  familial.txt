@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial joint instability syndrome', u'Joint instability syndrome', u'Articular hypermobility syndrome', u'Ehlers-danlos syndrome', u' type 11 &#40;formerly&#41;', u'EDS 11 &#40;formerly&#41;'], 'uid': u'147900'}

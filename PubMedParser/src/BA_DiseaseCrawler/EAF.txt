@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Eosinophilic angiocentric fibrosis', u'Sinonasal eosinophilic angiocentric fibrosis'], 'uid': u'11211613'}

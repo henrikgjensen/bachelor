@@ -1,0 +1,1 @@
+{'terms': u'marburg%5btitle%5dandhemorrhagic%5btitle%5dandfever%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Marburg virus disease', u'Marburg disease'], 'uid': ''}

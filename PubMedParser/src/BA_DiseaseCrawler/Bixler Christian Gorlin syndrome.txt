@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HMC syndrome', u'Hypertelorism microtia facial clefting syndrome'], 'uid': u'239800'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sialuria', u' infantile form', u'N-Acetylneuraminic acid storage disease', u'NSD', u'ISSD'], 'uid': u'269920'}

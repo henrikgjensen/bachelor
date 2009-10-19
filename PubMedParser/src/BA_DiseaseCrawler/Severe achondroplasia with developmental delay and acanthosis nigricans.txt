@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'SADDAN', u'Skeleton skin brain syndrome'], 'uid': ''}

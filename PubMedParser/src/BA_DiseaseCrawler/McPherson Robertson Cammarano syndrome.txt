@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Dominantly inherited ptosis', u' strabismus and ectopic pupils'], 'uid': u'949861'}

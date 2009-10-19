@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Formiminotransferase deficiency syndrome', u'Formiminoglutamicaciduria &#40;FIGLU-uria&#41;', u'Glutamate formiminotransferase deficiency'], 'uid': u'229100'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dermatoosteopoikilosis', u'BOS', u'Dermatofibrosis', u' disseminated', u' with osteopoikilosis', u'Dermatofibrosis lenticularis disseminata with osteopoikilosis', u'Osteopathia condensans disseminata'], 'uid': u'166700'}

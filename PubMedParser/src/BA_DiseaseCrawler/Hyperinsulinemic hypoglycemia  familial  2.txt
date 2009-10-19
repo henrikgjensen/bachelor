@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HHF2', u'Persistent hyperinsulinemic hypoglycemia of infancy', u'PHHI', u'Hyperinsulinism', u' neonatal', u'Hyperinsulinism', u' congenital', u'Hyperinsulinism', u' familial', u'Hyperinsulinemic hypoglycemia', u' persistent', u'Nesidioblastosis'], 'uid': u'601820'}

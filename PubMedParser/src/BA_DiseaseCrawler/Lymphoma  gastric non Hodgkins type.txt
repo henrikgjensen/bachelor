@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Non-Hodgkins gastric Lymphoma', u'Stomach Lymphoma', u' Non-Hodgkins type'], 'uid': ''}

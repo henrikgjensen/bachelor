@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Progressive bifocal chorioretinal atrophy', u'PBCRA', u'CRAPB'], 'uid': u'600790'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Keratodermia palmoplantar periorificial', u'Dry skin', u' photophobia hyperkeratosis', u' abnormal fingernails', u'Palmoplantar and perioroficial keratoderma with corneal epithelial dysplasia'], 'uid': u'1832929'}

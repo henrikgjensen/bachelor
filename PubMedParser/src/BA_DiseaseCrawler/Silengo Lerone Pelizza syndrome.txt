@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Microcephaly', u' schizencephaly', u' decorticated disturbance of the neurological function', u' congenital optic atrophy and nystagmus'], 'uid': u'www.ncbi.nlm.nih.gov/sites/entrez'}

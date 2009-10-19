@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Familial dyschondroplasia', u'Perthes-like hip disease', u' enchondromata', u' and ecchondromata'], 'uid': u'5316541'}

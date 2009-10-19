@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hallermann Streiff syndrome', u'HSS', u'Hallermann Streiff Francois syndrome', u'Francois dyscephalic syndrome'], 'uid': u'234100'}

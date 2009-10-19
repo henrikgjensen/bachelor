@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lamellar ichthyosis', u' type 3', u'Ichthyosis congenita III'], 'uid': u'604777'}

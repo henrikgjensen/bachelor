@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDA', u'Avellino corneal dystrophy', u'Granular-lattice &#40;Avellino&#41; corneal dystrophy', u'Combined granular-lattice corneal dystrophies', u'Granular and lattice corneal dystrophies', u'Granular corneal dystrophy type 2'], 'uid': u'607541'}

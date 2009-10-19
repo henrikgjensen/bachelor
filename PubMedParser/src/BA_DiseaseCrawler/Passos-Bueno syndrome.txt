@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' hypotonicity', u' incontinence', u' muscle atrophy', u' and inability to walk or speak'], 'uid': u'267750'}

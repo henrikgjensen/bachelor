@@ -1,0 +1,1 @@
+{'terms': u'plasmacytoma%5btitle%5dandanaplastic%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Plasmacytoma', u'Anaplastic skeletal plasmacytoma &#40;type&#41;', u'Extramedullary anaplastic plasmacytoma &#40;type&#41;', u'Anaplastic solitary extramedullary plasmacytoma of the cecum &#40;type&#41;'], 'uid': ''}

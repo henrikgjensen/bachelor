@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ETM1', u'Tremor familial essential', u' 1', u'FET1'], 'uid': u'190300'}

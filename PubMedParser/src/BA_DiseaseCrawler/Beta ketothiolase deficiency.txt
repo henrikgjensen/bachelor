@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alpha-methylacetoaceticaciduria', u'2-methyl-3-hydroxybutyricacidemia', u'Mitochondrial acetoacetyl-CoA Thiolase deficiency', u'3-oxothiolase deficiency', u'3-ketothiolase deficiency'], 'uid': u'203750'}

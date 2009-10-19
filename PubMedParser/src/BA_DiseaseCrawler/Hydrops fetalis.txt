@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Idiopathic hydrops fetalis', u'Hydrops fetalis nonimmune', u'Familial non-immune hydrops fetalis'], 'uid': u'236750'}

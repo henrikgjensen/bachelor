@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital coxa vara', u' patella aplasia and tarsal synostosis'], 'uid': u'168850'}

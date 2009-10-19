@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT12', u'Rapid-onset dystonia-parkinsonism', u'RDP'], 'uid': u'128235'}

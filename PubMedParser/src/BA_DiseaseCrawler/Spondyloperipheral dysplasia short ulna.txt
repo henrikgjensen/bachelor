@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial spondyloepiphyseal dysplasia', u'Spondyloperipheral dysplasia'], 'uid': u'271700'}

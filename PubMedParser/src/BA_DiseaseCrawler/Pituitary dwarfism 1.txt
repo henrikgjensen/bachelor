@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Primordial dwarfism', u'Nanism due to growth hormone isolated deficiency', u'Sexual ateleiotic dwarfism', u'Growth hormone deficiency', u' isolated', u' autosomal recessive', u'Isolated growth hormone deficiency', u' type 1b', u'IGHD IB'], 'uid': u'262400'}

@@ -1,0 +1,1 @@
+{'terms': u'reginato+schiapachasse+syndrome', 'desc': '', 'db': u'pubmed', 'syn': [u'Familial idiopathic hypertrophic osteoarthropathy and cranial suture defects'], 'uid': ''}

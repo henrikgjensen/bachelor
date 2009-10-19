@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary  hypotrichosis simplex', u'HTS'], 'uid': u'605389'}

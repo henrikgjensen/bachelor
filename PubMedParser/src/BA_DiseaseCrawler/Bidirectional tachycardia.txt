@@ -1,0 +1,1 @@
+{'terms': u'%28bidirectional%5btitle%5dandtachycardia%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Bidirectional ventricular tachycardia'], 'uid': ''}

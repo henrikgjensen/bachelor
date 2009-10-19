@@ -1,0 +1,1 @@
+{'terms': u'renoprival%5ballfields%5dand%28%22hypertension%22%5bmeshterms%5dorhypertension%5btextword%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

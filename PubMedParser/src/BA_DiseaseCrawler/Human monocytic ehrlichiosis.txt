@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Human ehrlichial infection', u' human monocytic type', u'HME'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Growth hormone insensitivity due to postreceptor defect', u'Laron syndrome due to postreceptor defect'], 'uid': u'245590'}

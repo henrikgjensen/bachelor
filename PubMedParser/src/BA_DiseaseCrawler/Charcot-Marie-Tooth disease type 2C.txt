@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT 2C', u'Charcot-Marie-Tooth disease', u' axonal', u' Type 2C', u'Hereditary motor and sensory neuropathy 2 C', u'HMSN 2 C', u'Charcot Marie Tooth disease type 2C'], 'uid': u'606071'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Osteogenesis imperfecta with congenital joint contractures', u'BRKS1'], 'uid': u'259450'}

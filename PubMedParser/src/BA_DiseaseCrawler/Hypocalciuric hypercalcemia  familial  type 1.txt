@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial hypocalciuric hypercalcemia', u'HHC1', u'Hypercalcemia', u' familial benign type 1', u'Familial benign hypercalcemia type 1', u'FBH1', u'FHH1'], 'uid': u'145980'}

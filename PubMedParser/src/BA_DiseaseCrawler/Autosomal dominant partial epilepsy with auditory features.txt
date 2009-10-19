@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ADLTE', u'ADPEAF', u'Autosomal dominant lateral temporal lobe epilepsy', u'Autosomal dominant lateral temporal lobe epilepsy', u'ETL1'], 'uid': u'600512'}

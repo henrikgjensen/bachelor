@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary motor and sensory neuropathy', u' Russe type', u'HMSNR', u'Charcot-Marie-Tooth disease', u' type 4g', u'CMT4G', u'Charcot-Marie-Tooth disease', u' autosomal recessive', u' type 4g', u'CMT4G'], 'uid': u'605285'}

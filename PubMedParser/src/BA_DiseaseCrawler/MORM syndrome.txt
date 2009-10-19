@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' truncal obesity', u' retinal dystrophy and micropenis'], 'uid': u'610156'}

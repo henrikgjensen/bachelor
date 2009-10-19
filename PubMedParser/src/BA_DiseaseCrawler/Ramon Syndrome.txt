@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cherubism', u' gingival fibromatosis', u' epilepsy', u' mental deficiency', u' hypertrichosis', u' and stunted growth', u'Gingival fibromatosis combined with cherubism'], 'uid': u'266270'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cranial abnormalities &#40;fronto-orbital recession to clover-leaf skull deformity&#41; headache', u' poor vision', u' seizures and normal intelligence'], 'uid': u'604757'}

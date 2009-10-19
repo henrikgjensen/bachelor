@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Coronal dentin dysplasia', u'Pulpal dysplasia', u'Pulp stones', u'Dentin dyspalsia', u' Shields type 2', u'DTDP2'], 'uid': u'125420'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bowing of the femurs', u' aplasia or hypoplasia of the fibula', u' and digital anomalies', u'Fibular aplasia or hypoplasia', u' femoral bowing and poly-', u' syn-', u' and oligodactyly'], 'uid': u'228930'}

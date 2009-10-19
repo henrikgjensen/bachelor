@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypoplasia of the cerebellar hemispheres and partial agenesis of the cerebellar vermis with normal communication between the fourth ventricle and arac'], 'uid': u'220200'}

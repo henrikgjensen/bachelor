@@ -1,0 +1,1 @@
+{'terms': u'(mycobacterium%5btitle%5d+and+kansasii%5btitle%5d)+and+(%22loattrfree+full+text%22%5bsb%5d+and+hasabstract%5btext%5d+and+%222004%2f07%2f28%22%5bpdat%5d+%3a+%222009%2f07%2f26%22%5bpdat%5d+and+%22humans%22%5bmesh+terms%5d+and+english%5blang%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'M. Kansasii', u'Mycobacterium Kansasii infection'], 'uid': ''}

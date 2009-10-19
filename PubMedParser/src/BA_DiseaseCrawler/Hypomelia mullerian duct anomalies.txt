@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Limb uterus syndrome', u'Severe upper limb hypoplasia and Mullerian duct anomalies'], 'uid': u'146160'}

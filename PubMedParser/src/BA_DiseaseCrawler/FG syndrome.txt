@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FGS', u'Opitz-Kaveggia syndrome', u'FGS1', u'Mental retardation', u' large head', u' imperforate anus', u' congenital hypotonia', u' and partial agenesis of corpus callosum', u'Keller syndrome'], 'uid': u'305450'}

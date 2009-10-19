@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Collagenous plaques of hand and feet', u'AKE', u'Palmoplantar keratoderma', u' punctate type 3'], 'uid': u'101850'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FCDT', u'Cortical dysplasia of Taylor', u'CDT', u'Focal cortical dysplasia', u' type 2'], 'uid': u'607341'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Amyotrophic lateral sclerosis', u' Parkinsonism&#47;Dementia complex of Guam', u'Guam disease'], 'uid': u'105500'}

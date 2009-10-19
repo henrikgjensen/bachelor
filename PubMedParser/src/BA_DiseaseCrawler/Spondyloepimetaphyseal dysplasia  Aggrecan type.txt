@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SEMD', u' Aggrecan type'], 'uid': u'612813'}

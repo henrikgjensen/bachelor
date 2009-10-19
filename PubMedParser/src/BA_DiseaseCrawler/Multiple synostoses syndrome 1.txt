@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Synostoses multiple with brachydactyly', u'Symphalangism brachydactyly syndrome', u'WL syndrome', u'Deafness-symphalangism syndrome of Herrmann', u'Facioaudiosymphalangism syndrome', u'SYNS1'], 'uid': u'186500'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypogonadism cataract syndrome', u'Cataracts and testicular failure', u'Hypogonadism cataract syndrome'], 'uid': u'240950'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bowing', u' congenital', u' with short bones'], 'uid': u'211350'}

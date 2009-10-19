@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Human muscle phosphoglycerate mutase deficiency', u'Myopathy due to phosphoglycerate mutase deficiency', u'PGAMM deficiency'], 'uid': u'261670'}

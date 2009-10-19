@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'AI1G', u'Amelogenesis imperfecta and nephrocalcinosis', u'Enamel-renal syndrome', u'ERS'], 'uid': ''}

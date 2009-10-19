@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital bilateral absence of the vas deferens', u'CBAVD', u'CAVD'], 'uid': u'277180'}

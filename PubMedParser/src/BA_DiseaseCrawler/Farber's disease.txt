@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Farber disease', u'Farber lipogranulomatosis', u'Ceramidase deficiency', u'Acid ceramidase deficiency', u'AC deficiency', u'N-Laurylsphingosine deacylase deficiency'], 'uid': u'228000'}

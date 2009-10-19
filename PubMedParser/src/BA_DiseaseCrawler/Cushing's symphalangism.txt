@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Strasburger-Hawkins-Eldridge syndrome', u'Strasburger-Hawkins-Eldridge-Hargrave-McKusick syndrome', u'Vessel&#8217;s syndrome', u'Hereditary absence of proximal interphalangeal joints', u'Proximal symphalangism'], 'uid': u'185800'}

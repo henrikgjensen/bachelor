@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%22chromosomes%22%5bmeshterms%5dorchromosome%5btextword%5d%29and13q%5ballfields%5d%29and%28%22mosaicism%22%5bmeshterms%5dormosaicism%5btextword%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Mosiacism of chromosome 13q'], 'uid': ''}

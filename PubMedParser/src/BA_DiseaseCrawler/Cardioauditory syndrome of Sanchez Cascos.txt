@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sanchez Cascos cardioauditory syndrome'], 'uid': u'212100'}

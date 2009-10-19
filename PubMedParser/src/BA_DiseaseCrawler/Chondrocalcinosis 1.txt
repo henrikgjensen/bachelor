@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CCAL1', u'Chondrocalcinosis with early-onset osteoarthritis'], 'uid': u'600668'}

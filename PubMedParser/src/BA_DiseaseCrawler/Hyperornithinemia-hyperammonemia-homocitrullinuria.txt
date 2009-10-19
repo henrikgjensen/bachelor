@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperornithinemia-hyperammonemia-homocitrullinuria syndrome', u'HHH syndrome', u'HHHS', u'HHH', u'Ornithine translocase deficiency'], 'uid': u'238970'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Acquired hyperostosis syndrome', u'Synovitis', u' Acne', u' Pustlosis', u' Hyperostosis', u' and Osteomyelitis'], 'uid': u'10968238'}

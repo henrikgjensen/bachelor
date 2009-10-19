@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Idiopathic familial premature ovarian failure', u'Familial premature ovarian failure'], 'uid': u'311360'}

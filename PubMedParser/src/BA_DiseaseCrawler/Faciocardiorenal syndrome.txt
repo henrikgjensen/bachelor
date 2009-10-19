@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Eastman Bixler syndrome'], 'uid': u'227280'}

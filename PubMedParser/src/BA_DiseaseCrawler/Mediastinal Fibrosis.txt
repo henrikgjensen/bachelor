@@ -1,0 +1,1 @@
+{'terms': u'%28mediastinal%5btitle%5dandfibrosis%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'MF', u'Idiopathic mediastinal fibrosis', u'Fibrosing mediastinitis', u'Sclerosing mediastinitis'], 'uid': ''}

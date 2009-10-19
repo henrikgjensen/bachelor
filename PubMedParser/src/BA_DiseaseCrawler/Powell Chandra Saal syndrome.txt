@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PHAVER syndrome', u'Pterygia', u' Heart defects', u' Autosomal recessive inheritance', u' Vertebral defects', u' Ear anomalies', u' and Radial defects', u'Vertebral', u' radial', u' congenital heart', u' and ear defects'], 'uid': u'261575'}

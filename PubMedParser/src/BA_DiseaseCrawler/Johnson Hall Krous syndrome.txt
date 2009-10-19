@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Glossopalatine ankylosis cataracts digital anomalies', u'High nasal bridge', u' cataract and cleft palate'], 'uid': ''}

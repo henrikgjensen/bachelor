@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcoria and congenital nephrotic syndrome'], 'uid': u'609049'}

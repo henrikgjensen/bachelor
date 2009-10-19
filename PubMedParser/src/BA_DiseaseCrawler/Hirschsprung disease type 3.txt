@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HSCR3', u'Hirschsprung disease modifier'], 'uid': u'600156'}

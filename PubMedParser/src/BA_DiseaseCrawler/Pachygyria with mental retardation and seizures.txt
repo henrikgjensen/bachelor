@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pachygyria', u' mental retardation and epilepsy', u'Kuzniecky syndrome'], 'uid': u'600176'}

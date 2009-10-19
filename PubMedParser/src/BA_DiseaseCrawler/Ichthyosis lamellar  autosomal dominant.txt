@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lamellar ichthyosis', u' autosomal dominant'], 'uid': u'146750'}

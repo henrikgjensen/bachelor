@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BDCS', u'Bazex syndrome', u'BZX', u'Follicular atrophoderma-basocellular proliferations-hypotrichosis syndrome', u'Follicular atrophoderma-basal cell carcinoma syndrome', u'Follicular atrophoderma and basal cell carcinomas'], 'uid': u'301845'}

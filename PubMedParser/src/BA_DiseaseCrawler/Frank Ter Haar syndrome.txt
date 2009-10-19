@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ter Haar syndrome', u'Autosomal recessive Melnick-Needles syndrome &#40;formerly&#41;', u'Megalocornea', u' multiple skeletal anomalies', u' and developmental delay'], 'uid': u'249420'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Linear skin atrophy', u' scarring alopecia', u' anonychia', u' and tongue lesion'], 'uid': u'4040704'}

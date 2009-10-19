@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'OFD7', u'Oral-facial-digital syndrome type 7', u'Whelan syndrome', u'OFD syndrome 7'], 'uid': ''}

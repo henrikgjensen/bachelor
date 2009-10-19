@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SGBS1', u'Simpson dysmorphia syndrome', u'Bulldog syndrome', u'Golabi-Rosen syndrome', u'Dysplasia gigantism syndrome', u' X-linked', u'SGBS'], 'uid': u'312870'}

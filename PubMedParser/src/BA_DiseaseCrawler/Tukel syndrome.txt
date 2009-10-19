@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital extraocular muscle fibrosis with ulnar hand anomalies', u'CFEOM-U'], 'uid': u'609428'}

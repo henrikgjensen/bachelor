@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FBD', u'Cerebral amyloid angiopathy', u' British type', u'Presenile dementia with spastic ataxia', u'Familial British dementia'], 'uid': u'176500'}

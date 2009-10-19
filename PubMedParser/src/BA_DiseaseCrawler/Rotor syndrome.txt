@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperbilirubinemia', u' Rotor type'], 'uid': u'237450'}

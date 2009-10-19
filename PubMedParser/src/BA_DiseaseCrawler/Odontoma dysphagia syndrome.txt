@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Odontomatosis &#40;multiple odontomas&#41; with dysphagia', u'Boder syndrome'], 'uid': u'164330'}

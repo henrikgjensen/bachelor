@@ -1,0 +1,1 @@
+{'terms': u'%28%28trisomy%5btitle%5dand13p%5btitle%5d%29or%2813p%5btitle%5dandduplication%5btitle%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy 13p', u'Duplication 13p', u'Chromosome 13p', u' trisomy'], 'uid': ''}

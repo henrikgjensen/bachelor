@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DBA2', u'Diamond-Blackfan Anemia', u' 2'], 'uid': u'606129'}

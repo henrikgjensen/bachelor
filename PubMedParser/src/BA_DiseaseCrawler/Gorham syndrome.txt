@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gorham&#39;s disease', u'Gorham-Stout syndrome', u'Gorham-Stout disease', u'Gorham&#39;s vanishing bone disease', u'GSD', u'Disappearing bone disease', u'Cystic angiomatosis of bone', u' diffuse', u'Idiopathic massive osteolysis', u'Massive gorham osteolysis', u'Massive osteolysis'], 'uid': u'123880'}

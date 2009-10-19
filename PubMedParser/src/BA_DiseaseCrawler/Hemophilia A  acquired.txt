@@ -1,0 +1,1 @@
+{'terms': u'acquired+hemophilia+a%5bti%5d+or+acquired+factor+viii+deficiency%5bti%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Factor 8 deficiency', u' acquired', u'Factor VIII deficiency', u' acquired', u'Acquired hemophilia A', u'Acquired factor 8 deficiency', u'Acquired factor VII deficiency'], 'uid': ''}

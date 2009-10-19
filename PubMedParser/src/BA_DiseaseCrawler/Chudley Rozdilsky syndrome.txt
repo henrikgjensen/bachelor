@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Chudley syndrome', u'Multicore myopathy with mental retardation', u' short stature', u' and hypogonadotropic hypogonadism'], 'uid': u'253320'}

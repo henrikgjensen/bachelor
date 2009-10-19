@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Fanconi syndrome', u' ichthyosis', u' dysmorphism', u' jaundice and diarrhea'], 'uid': u'2206896'}

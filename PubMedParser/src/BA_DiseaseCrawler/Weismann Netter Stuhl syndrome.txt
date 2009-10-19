@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anterior bowing of legs with dwarfism', u'Toxopachyosteosis', u'Toxopachyosteose diaphysaire tibio-peroniere'], 'uid': u'112350'}

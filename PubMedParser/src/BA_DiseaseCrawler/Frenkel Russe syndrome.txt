@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Retinal telangiectasia associated with hypogammaglobulinemia'], 'uid': u'267900'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Proteus-Like syndrome with mental retardation and eye defects'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Laryngeal web', u' congenital heart disease and low stature', u'Subglottic bar', u' congenital heart disease and low stature'], 'uid': u'185400'}

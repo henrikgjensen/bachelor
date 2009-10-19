@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Pingelapese blindness', u'ACHM3', u'Achromatopsia with myopia', u'Total colorblindness with myopia', u'ACHM1 &#40;formerly&#41;', u'Rod monochromatism 1 &#40;formerly&#41;', u'Rod monochromacy 1 &#40;formerly&#41;', u'RMCH1 &#40;formerly&#41;'], 'uid': ''}

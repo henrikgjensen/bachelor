@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebellar ataxia early onset with retained tendon reflex', u'EOCA', u'Ataxia', u' harding type'], 'uid': u'212895'}

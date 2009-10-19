@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'KAL2', u'Hypogonadotropic hypogonadism and anosmia', u' autosomal dominant', u'Autosomal dominant form of Kallmann syndrome'], 'uid': u'147950'}

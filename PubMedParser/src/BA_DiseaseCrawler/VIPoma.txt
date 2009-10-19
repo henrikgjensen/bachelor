@@ -1,0 +1,1 @@
+{'terms': u'vipomas%5btitle%5d+and+hasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Vasoactive intestinal peptide &#40;VIP&#41; tumor', u'Pancreatic VIPoma', u'Vasoactive intestinal peptide-producing tumor'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'L-Xylulosuria', u'Xylitol dehydrogenase deficiency', u'L-Xylulose reductase deficiency'], 'uid': u'260800'}

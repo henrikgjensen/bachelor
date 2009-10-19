@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Rosenthal-Kloepfer syndrome'], 'uid': u'102100'}

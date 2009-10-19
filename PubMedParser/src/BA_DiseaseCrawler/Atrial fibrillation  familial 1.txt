@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal dominant atrial fibrillation', u'Atrial fibrillation', u' autosomal dominant', u'ATFB1'], 'uid': u'607554'}

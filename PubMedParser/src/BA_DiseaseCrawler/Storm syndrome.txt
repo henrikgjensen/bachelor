@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Pleiotropic', u' autosomal dominant disorder affecting connective tissue'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Benign familial macrocephaly', u'Cole-Hughes syndrome', u'Benign familial megalencephaly'], 'uid': u'153470'}

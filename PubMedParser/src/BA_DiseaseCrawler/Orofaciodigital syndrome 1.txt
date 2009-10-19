@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OFD1', u'OFD syndrome 1', u'Oral-facial-digital syndrome type 1', u'Papillon-League-Psaume syndrome'], 'uid': u'311200'}

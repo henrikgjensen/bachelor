@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alport syndrome', u' autosomal recessive', u'Nephropathy and deafness'], 'uid': u'203780'}

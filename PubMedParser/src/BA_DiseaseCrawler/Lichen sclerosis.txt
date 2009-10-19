@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LSA', u'Lichen sclerosis et atrophicus', u'Lichen sclerosus', u'Lichen sclerosus et atrophicus'], 'uid': u'151590'}

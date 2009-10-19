@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Myotonia fluctuans', u'Myotonia permanens', u'Myotonia congenita', u' atypical', u'Myotonia congenita', u' acetazolamide-responsive'], 'uid': u'608390'}

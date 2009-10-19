@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HHC2', u'Familial benign hypercalcemia', u' type 2', u'FBH2', u'Hypercalcemia', u' familial benign type 2'], 'uid': u'145981'}

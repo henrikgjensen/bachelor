@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PFIC1', u'Progressive familial intrahepatic cholestasis', u'Cholestasis', u' fatal intrahepatic', u'Byler&#39;s disease', u'Byler disease'], 'uid': u'211600'}

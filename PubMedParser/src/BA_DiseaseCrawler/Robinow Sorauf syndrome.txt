@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Craniosynostosis-bifid hallux syndrome', u'Acrocephalosyndactyly', u' Robinow-Sorauf type'], 'uid': u'180750'}

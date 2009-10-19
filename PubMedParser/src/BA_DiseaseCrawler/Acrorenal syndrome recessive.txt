@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acrorenal syndrome autosomal recessive', u'Curran syndrome'], 'uid': u'201310'}

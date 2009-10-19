@@ -1,0 +1,1 @@
+{'terms': u'seaver%5ballfields%5dandcassidy%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Hypertelorism', u' downslanting palpebral fissures', u' malar hypoplasia', u' and apparently low-set ears associated with joint and scrotal anomalies'], 'uid': ''}

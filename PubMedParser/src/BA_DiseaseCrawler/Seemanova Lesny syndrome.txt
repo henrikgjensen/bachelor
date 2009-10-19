@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'X-linked microcephaly', u' microphthalmia', u' microcornea', u' congenital cataract', u' hypogenitalism', u' mental deficiency', u' growth retardation', u' spasticity'], 'uid': u'8958326'}

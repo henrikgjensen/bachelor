@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'IPOX', u'Intestinal pseudoobstruction', u' neuronal', u' chronic idiopathic', u' X-linked', u'CIIP- 10', u'Congenital idiopathic intestinal pseudoobstruction', u'CIIP', u' X-linked'], 'uid': u'300048'}

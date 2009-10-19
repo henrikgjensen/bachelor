@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Glycerol kinase deficiency', u'GKD', u'GK deficiency', u'GK1 deficiency'], 'uid': u'307030'}

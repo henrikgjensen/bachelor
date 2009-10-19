@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pili torti and developmental delay'], 'uid': u'261990'}

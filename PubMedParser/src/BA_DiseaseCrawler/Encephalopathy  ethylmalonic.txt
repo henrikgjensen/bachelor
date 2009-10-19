@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ethylmalonic encephalopathy', u'Syndrome of encephalopathy', u' petechiae', u' and ethylmalonic aciduria'], 'uid': u'602473'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Klippel-Feil syndrome', u' autosomal dominant', u'Cervical vertebral fusion', u' autosomal dominant'], 'uid': u'118100'}

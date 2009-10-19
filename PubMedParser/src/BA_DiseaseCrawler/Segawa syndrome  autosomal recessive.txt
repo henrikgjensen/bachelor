@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Parkinsonism', u' infantile', u' autosomal recessive', u'Dystonia', u' DOPA responsive', u' autosomal recessive', u'DOPA responsive dystonia', u' autosomal recessive', u'Tyrosine hydroxylase deficiency'], 'uid': u'128230'}

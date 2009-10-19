@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Penis agenesia', u'Agenesis of the penis', u'Micropenis'], 'uid': u'152790'}

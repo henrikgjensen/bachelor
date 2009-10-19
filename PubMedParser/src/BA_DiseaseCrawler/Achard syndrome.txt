@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arachnodactyly', u' receding lower jaw and joint laxity of hands&#47;feet'], 'uid': u'100700'}

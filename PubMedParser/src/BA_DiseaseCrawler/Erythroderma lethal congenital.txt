@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lethal congenital erythroderma', u'Congenital exfoliative erythroderma resistant to treatment'], 'uid': u'227090'}

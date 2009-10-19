@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Smith-Lemli-Opitz syndrome', u' type 1', u'SLO syndrome type 1', u'7-Dehydrocholesterol reductase deficiency', u'RSH syndrome'], 'uid': u'270400'}

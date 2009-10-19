@@ -1,0 +1,1 @@
+{'terms': u'brucellosis%5btitle%5d+and+(%22loattrfree+full+text%22%5bsb%5d+and+hasabstract%5btext%5d+and+%222004%2f09%2f21%22%5bpdat%5d+%3a+%222007%2f09%2f20%22%5bpdat%5d+and+%22humans%22%5bmesh+terms%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Malta fever', u'Undulant fever', u'Rock fever', u'Gibraltar fever', u'Cyprus fever'], 'uid': ''}

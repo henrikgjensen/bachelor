@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT 4C', u'Charcot Marie Tooth disease type 4C'], 'uid': u'601596'}

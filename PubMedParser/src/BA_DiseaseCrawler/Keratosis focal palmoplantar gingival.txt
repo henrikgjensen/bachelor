@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Focal palmoplantar and oral mucosa hyperkeratosis'], 'uid': u'148730'}

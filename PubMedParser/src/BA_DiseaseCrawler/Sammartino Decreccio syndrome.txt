@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Superficial annular corneal dystrophy', u' ichthyosis nigrans', u' microcephaly and mild mental subnormality'], 'uid': u'6983048'}

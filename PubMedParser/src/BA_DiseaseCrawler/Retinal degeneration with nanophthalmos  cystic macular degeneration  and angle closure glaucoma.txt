@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Retinal degeneration', u' nanophthalmos', u' glaucoma', u'MacKay Shek Carr syndrome'], 'uid': u'267760'}

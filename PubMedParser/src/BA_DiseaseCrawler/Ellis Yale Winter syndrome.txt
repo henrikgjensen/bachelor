@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcephaly', u' congenital heart disease', u' lung segmentation defects and unilateral renal agenesis'], 'uid': u'601355'}

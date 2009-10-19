@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GSD2B', u'Danon disease', u'Glycogen storage cardiomyopathy', u'Pseudoglycogenosis 2', u'Glycogen storage disease limited to the heart', u'Antopol disease', u'X-linked vacuolar cardiomyopathy and myopathy', u'Lysosomal glycogen storage disease without acid maltase deficiency'], 'uid': u'300257'}

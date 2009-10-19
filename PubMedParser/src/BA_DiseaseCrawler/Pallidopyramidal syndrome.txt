@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pallido-pyramidal disease'], 'uid': u'260300'}

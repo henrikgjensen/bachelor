@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LGMD2E', u'Muscular dystrophy limb-girdle with beta-sarcoglycan deficiency', u'Beta-sarcoglycan limb-girdle muscular dystrophy'], 'uid': u'604286'}

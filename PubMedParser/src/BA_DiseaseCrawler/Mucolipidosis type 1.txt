@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sialidoses', u' type 2', u'Neuraminidase deficiency', u'Lipomucopolysaccharidosis', u'Sialidase deficiency', u'Glycoprotein neuraminidase deficiency', u'ML1', u'Glycoprotein neuraminidase deficiency', u'NEUG deficiency', u'Neuraminidase 1 deficiency', u'NEU 1 deficiency'], 'uid': u'256550'}

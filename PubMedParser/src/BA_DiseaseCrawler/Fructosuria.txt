@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hepatic fructokinase deficiency', u'Ketohexokinase deficiency', u'Essential benign fructosuria'], 'uid': u'229800'}

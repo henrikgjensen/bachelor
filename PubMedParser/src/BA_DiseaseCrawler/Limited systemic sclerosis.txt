@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'LcSSc', u'Limited cutaneous systemic sclerosis'], 'uid': ''}

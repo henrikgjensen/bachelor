@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Brocq-Duhring disease', u'Dermatitis herpetiformis'], 'uid': ''}

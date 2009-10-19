@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SIOD', u'Immunoosseous dysplasia Schimke type'], 'uid': u'242900'}

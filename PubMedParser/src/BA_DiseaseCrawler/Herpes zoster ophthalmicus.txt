@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'HZO', u'Herpes zoster ophthalmicus &#40;HZO&#41;'], 'uid': ''}

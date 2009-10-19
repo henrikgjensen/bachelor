@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypersensitivity pneumonitis familial'], 'uid': u'145300'}

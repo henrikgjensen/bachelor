@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachydactyly-ectrodactyly with fibular aplasia or hypoplasia'], 'uid': u'113310'}

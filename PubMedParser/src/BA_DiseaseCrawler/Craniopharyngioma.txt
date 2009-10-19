@@ -1,0 +1,1 @@
+{'terms': u'craniopharyngioma%5btitle%5d+and+%28%22loattrfree+full+text%22%5bsb%5d+and+hasabstract%5btext%5d+and+%22humans%22%5bmesh+terms%5d+and+english%5blang%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Rathke&#39;s pouch tumor', u'Craniopharyngeal duct tumor', u'Adamantinoma', u'Adamantinomatous tumor', u'Dysodontogenic epithelial tumor'], 'uid': ''}

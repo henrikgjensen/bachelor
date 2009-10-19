@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MCDC1', u'Corneal dystrophy', u' macular type', u'Groenouw type II corneal dystrophy', u'Macular corneal dystrophy type 1'], 'uid': u'217800'}

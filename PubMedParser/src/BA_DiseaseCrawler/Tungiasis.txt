@@ -1,0 +1,1 @@
+{'terms': u'%28%28tungiasis%5btitle%5dandhasabstract%5btext%5d%29andenglish%5blang%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Tunga penetrans', u'T penetrans', u'Sarcopsylla penetrans', u'S penetrans', u'Chigger flea'], 'uid': ''}

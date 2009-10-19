@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT 4E', u'Congenital hypomyelinating neuropathy &#40;CHN&#41;', u'Neuropathy', u' congenital hypomyelinating', u'CMT4E', u'Hypomyelination', u' severe congenital', u'CHN', u'Charcot Marie Tooth disease type 4E'], 'uid': u'605253'}

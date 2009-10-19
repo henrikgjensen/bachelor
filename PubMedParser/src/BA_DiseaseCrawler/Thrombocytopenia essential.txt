@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thrombocytosis primary', u'Thrombocytosis autosomal dominant', u'Essential thrombocytopenia'], 'uid': u'187950'}

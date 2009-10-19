@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital Isolated nail dysplasia', u'Isolated congenital nail dysplasia'], 'uid': u'605779'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epidermolysis bullosa simplex', u' Weber-Cockayne type', u'Weber-Cockayne type epidermolysis bullosa simplex', u'Cockayne-Touraine type epidermolysis bullosa', u'EBS', u' acral form', u'Epidermolysis bullosa of hands and feet', u'Weber-Cockayne syndrome'], 'uid': u'131800'}

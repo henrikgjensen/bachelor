@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CLN10', u'Ceroid lipofuscinosis', u' neuronal', u' cathepsin D-deficient', u'Neuronal ceroid lipofuscinosis due to cathepsin D deficiency'], 'uid': u'610127'}

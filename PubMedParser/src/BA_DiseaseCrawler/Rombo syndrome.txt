@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Vermiculate atrophoderma', u' milia', u' hypotrichosis', u' trichoepitheliomas', u' basal cell carcinomas and peripheral vasodilation with cyanosis'], 'uid': u'180730'}

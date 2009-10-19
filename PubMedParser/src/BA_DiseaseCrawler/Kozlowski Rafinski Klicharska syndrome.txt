@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Metaphyseal and epiphyseal dysplasia with unusual facies and cataract'], 'uid': u'4699894'}

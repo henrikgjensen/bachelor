@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PTA deficiency', u'Factor XI deficiency', u'F11 deficiency', u'Rosenthal syndrome'], 'uid': u'264900'}

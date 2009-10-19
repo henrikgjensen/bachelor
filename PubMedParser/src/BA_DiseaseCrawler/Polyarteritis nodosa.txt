@@ -1,0 +1,1 @@
+{'terms': u'%28polyarteritis%5btitle%5d+and+nodosa%5btitle%5d%29+and+%28%22loattrfree+full+text%22%5bsb%5d+and+hasabstract%5btext%5d+and+%22humans%22%5bmesh+terms%5d+and+english%5blang%5d+and+%28meta%2danalysis%5bptyp%5d+or+review%5bptyp%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Periarteritis nodosa', u'PN', u'PAN'], 'uid': ''}

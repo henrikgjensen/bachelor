@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hepatorenal tyrosinemia', u'Fumarylacetoacetase deficiency', u'FAH deficiency'], 'uid': u'276700'}

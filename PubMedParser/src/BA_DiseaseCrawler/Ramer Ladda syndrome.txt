@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Humero-radial synostosis', u'HRS'], 'uid': u'2669480'}

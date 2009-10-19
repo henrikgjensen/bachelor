@@ -1,0 +1,1 @@
+{'terms': u'myeloid%5btitle%5dandsplenomegaly%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Idiopathic myeloid splenomegaly'], 'uid': ''}

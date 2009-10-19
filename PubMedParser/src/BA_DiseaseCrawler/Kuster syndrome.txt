@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Cleft lip palate lip pits limb deficiency', u'Cleft lip and palate', u' lower lip pits', u' and limb deficiency defects'], 'uid': u'2845088'}

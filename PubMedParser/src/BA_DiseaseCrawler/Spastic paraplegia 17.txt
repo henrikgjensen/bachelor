@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spastic paraplegia with amyotrophy of hands and feet', u'Silver syndrome', u'SPG17', u'Silver spastic paraplegia syndrome'], 'uid': u'270685'}

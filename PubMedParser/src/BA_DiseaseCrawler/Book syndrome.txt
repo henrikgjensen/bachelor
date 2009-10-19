@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Premolar aplasia', u' hyperhidrosis', u' and canities prematura', u'PHC syndrome'], 'uid': u'112300'}

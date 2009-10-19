@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DBQD', u'Micromelic dwarfism', u' narrow chest', u' vertebral and metaphyseal abnormalities and advanced carpotarsal ossification'], 'uid': u'251450'}

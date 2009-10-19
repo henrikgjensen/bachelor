@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'UMS', u'Schinzel syndrome', u'Ulnar-mammary syndrome of Pallister'], 'uid': u'181450'}

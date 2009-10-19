@@ -1,0 +1,1 @@
+{'terms': u'friedel%5ballfields%5dandheid%5ballfields%5dandgrosshans%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

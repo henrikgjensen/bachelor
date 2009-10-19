@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BLS type 1', u'HLA class 1 deficiency'], 'uid': u'604571'}

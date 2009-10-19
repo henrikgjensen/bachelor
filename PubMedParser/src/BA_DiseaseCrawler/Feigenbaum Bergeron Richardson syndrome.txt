@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Atherosclerosis', u' premature', u' with deafness', u' nephropathy', u' diabetes mellitus', u' photomyoclonus', u' and degenerative neurologic disease', u'Premature atherosclerosis with photomyoclonic epilepsy', u' deafness', u' diabetes mellitus', u' nephropathy', u' and neurodegenerative disorder'], 'uid': u'209010'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Nail patella like renal disease', u'Glomerular basement membrane disease', u' nail-patella syndrome type'], 'uid': u'256020'}

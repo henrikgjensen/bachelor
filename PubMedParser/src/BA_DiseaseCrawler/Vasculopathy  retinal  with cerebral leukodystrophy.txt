@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebroretinal vasculopathy', u' hereditary', u'CRV', u'Retinopathy', u' vascular', u' with cerebral and renal involvement and Raynaud and migraine phenomena'], 'uid': u'192315'}

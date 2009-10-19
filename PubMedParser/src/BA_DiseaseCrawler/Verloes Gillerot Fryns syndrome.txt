@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebro-Acro-Visceral Early lethality multiplex syndrome', u'CAVE multiplex syndrome'], 'uid': u'603194'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'X-linked anencephaly&#47;spina bifida'], 'uid': u'301410'}

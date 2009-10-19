@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pacman syndrome', u'Epiphyseal stippling with osteoclastic hyperplasia'], 'uid': u'167220'}

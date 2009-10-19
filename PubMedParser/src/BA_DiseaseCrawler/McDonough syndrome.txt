@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' peculiar facies', u' kyphoscoliosis', u' diastasis recti', u' cryptorchidism', u' and congenital heart defect'], 'uid': u'248950'}

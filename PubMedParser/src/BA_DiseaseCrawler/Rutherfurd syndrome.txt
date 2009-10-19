@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gingival hypertrophy corneal dystrophy', u'Corneal dystrophy with gum hypertrophy'], 'uid': u'180900'}

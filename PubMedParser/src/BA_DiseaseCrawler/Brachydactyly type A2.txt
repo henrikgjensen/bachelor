@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BDA2', u'Mohr-Wriedt type brachydactyly', u'Brachymesophalangy 2'], 'uid': u'112600'}

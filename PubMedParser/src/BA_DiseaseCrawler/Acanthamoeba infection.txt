@@ -1,0 +1,1 @@
+{'terms': u'(acanthamoeba%5btitle%5d+and+infection%5btitle%5d)+and+(%22loattrfree+full+text%22%5bsb%5d+and+%22humans%22%5bmesh+terms%5d+and+english%5blang%5d)', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

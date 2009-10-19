@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Moerman Van den berghe Fryns syndrome', u'FRNS', u'Diaphragmatic hernia', u' abnormal face', u' and distal limb anomalies'], 'uid': u'229850'}

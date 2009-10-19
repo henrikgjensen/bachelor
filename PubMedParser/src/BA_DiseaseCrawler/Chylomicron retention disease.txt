@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMRD', u'Lipid transport defect of intestine', u'Hypobetalipoproteinemia with accumulation of apolipoprotein b-like protein in intestinal cells'], 'uid': u'246700'}

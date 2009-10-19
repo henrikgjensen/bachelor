@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SEDC', u'SED congenita', u'Spondyloepiphyseal dysplasia', u' congenital type'], 'uid': u'183900'}

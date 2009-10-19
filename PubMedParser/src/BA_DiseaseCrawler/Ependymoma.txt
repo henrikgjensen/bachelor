@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial ependymoma &#40;subtype&#41;', u'Childhood ependymoma &#40;subtype&#41;', u'Adult intracranial ependymoma &#40;subtype&#41;'], 'uid': u'131445'}

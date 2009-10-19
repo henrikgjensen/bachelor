@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMT 2D', u'Charcot-Marie-Tooth disease', u' axonal', u' Type 2D', u'Charcot-Marie-Tooth disease', u' neuronal', u' Type 2D', u'Charcot Marie Tooth disease type 2D'], 'uid': u'601472'}

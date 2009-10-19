@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PLSD San Diego type'], 'uid': u'270230'}

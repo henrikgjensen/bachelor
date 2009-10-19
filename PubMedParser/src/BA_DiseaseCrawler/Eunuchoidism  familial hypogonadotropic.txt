@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gonadotropin deficiency', u' familial idiopathic', u'FIGD'], 'uid': u'227200'}

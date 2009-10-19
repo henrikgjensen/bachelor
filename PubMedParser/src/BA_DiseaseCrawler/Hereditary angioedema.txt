@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HAE', u'Hereditary angioneurotic edema', u'HANE', u'Deficiency of C1 esterase inhibitor', u'Hereditary angioedema type 1'], 'uid': u'106100'}

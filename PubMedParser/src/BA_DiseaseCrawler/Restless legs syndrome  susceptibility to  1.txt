@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RLS1', u'Ekbom syndrome', u'Acromelalgia hereditary'], 'uid': u'102300'}

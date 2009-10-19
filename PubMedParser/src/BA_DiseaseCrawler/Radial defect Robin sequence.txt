@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Bruce winship syndrome', u'Bilateral radial defects', u' club foot deformity', u' micrognathia and cleft palate'], 'uid': u'8287187'}

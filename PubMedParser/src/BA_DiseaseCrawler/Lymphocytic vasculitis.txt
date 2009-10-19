@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Vasculitis lymphocytic', u' nodular'], 'uid': u'192310'}

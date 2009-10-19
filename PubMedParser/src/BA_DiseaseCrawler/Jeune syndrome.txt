@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Asphyxiating thoracic dystrophy', u'Infantile thoracic dystrophy', u'Thoracic pelvic phalangeal dystrophy', u'Jeune&#39;s syndrome', u'Chondroectodermal dysplasia-like syndrome', u'ATD'], 'uid': u'208500'}

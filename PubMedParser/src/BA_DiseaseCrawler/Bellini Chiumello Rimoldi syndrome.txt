@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Wedge-shaped epiphyses of the knees with mental retardation and short stature'], 'uid': u'250215'}

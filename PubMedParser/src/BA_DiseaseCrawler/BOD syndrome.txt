@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachymorphism-onychodysplasia-dysphalangism syndrome'], 'uid': u'113477'}

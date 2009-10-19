@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Gastric cancer', u' childhood', u'Stomach carcinoma', u' childhood', u'Childhood stomach cancer', u'Childhood stomach carcinoma'], 'uid': ''}

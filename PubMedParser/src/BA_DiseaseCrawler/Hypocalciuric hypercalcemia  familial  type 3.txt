@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HHC3', u'Familial benign hypercalcemia', u' type 3', u'FBH3', u'Hypercalcemia', u' familial benign', u' type 3', u'Hypercalcemia', u' familial benign', u' Oklahoma type', u'Familial benign hypercalcemia', u' Oklahoma variant', u'FBHOk'], 'uid': u'600740'}

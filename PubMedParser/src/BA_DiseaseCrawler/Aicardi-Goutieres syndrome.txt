@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AGS1', u'Aicardi Goutieres syndrome', u'Encephalopathy', u' familial infantile', u' with calcification of basal ganglia and chronic cerebrospinal fluid lymphocytosis', u'Pseudo-torch syndrome', u'Pseudotoxoplasmosis syndrome'], 'uid': u'225750'}

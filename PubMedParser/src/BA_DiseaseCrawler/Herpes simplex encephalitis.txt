@@ -1,0 +1,1 @@
+{'terms': u'%22encephalitis%2cherpessimplex%22%5bmajr%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Herpetic encephalitis'], 'uid': ''}

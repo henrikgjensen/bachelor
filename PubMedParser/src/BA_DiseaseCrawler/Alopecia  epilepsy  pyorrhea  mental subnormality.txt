@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alopecia', u' psychomotor epilepsy', u' pyorrhea', u' and mental subnormality', u'Shokeir syndrome', u'Congenital universal alopecia', u' epilepsy', u' mental subnormality and pyorrhea'], 'uid': u'104130'}

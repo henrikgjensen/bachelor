@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Magnesium loss', u' isolated renal', u'Magnesium wasting', u' renal', u'HOMG2'], 'uid': u'154020'}

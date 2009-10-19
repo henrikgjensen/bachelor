@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Jadassohn-Ti&#232;che nevus', u'Jadassohn-Ti&#232;che syndrome', u'Benign mesenchymal melanoma', u'Blue neuronevus', u'Blue nevus'], 'uid': ''}

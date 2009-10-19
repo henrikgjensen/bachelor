@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Femoral dysgenesis', u' bilateral', u'FFS', u'Femoral hypoplasia unusual facies syndrome', u'FHUFS'], 'uid': u'134780'}

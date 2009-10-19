@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal dominant radial ray hypoplasia syndrome', u'Goldblatt Viljoen radial ray hypoplasia', u'Radial ray hypoplasia with choanal hypoplasia'], 'uid': u'179270'}

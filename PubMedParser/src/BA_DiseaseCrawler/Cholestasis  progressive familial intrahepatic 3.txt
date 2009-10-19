@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PFIC3', u'Progressive familial intrahepatic cholestasis 3', u'Progressive familial intrahepatic cholestasis with elevated serum gamma-glutamyltransferase', u'MDR3 deficiency'], 'uid': u'602347'}

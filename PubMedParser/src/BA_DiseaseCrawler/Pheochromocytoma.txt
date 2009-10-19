@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Chromaffinoma', u'Chromaffin paraganglioma', u'Chromaffin tumor', u'Paraganglioma', u' medullary', u'Chromaffin cell tumor'], 'uid': u'171420'}

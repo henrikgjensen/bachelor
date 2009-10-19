@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GLC3B', u'GLC3', u' type B', u'Primary congenital glaucoma type 3B', u'Glaucoma', u' primary congenital', u' type 3B'], 'uid': u'600975'}

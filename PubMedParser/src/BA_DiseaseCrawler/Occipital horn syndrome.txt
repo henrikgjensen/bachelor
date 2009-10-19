@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OHS', u'Cutis laxa X-linked', u'Ehlers-Danlos syndrome', u' occipital horn type &#40;formerly&#41;', u'EDS IX &#40;formerly&#41;'], 'uid': u'304150'}

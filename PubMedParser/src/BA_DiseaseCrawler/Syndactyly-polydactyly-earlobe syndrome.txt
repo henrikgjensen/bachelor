@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hallux syndactyly ulnar polydactyly abnormal ear lobes', u'SPEL syndrome'], 'uid': u'186350'}

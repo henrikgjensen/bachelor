@@ -1,0 +1,1 @@
+{'terms': u'%28chromosome6%5btitle%5dandring%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Ring 6', u' Chromosome', u'Ring 6', u'R&#40;6&#41; syndrome', u'Ring chromosome 6 syndrome'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Short stature', u' heart defect and craniofacial anomalies', u'Developmental delay', u' growth deficiency', u' congenital heart defect', u' and multiple craniofacial anomalies'], 'uid': u'6590783'}

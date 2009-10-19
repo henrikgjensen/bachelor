@@ -1,0 +1,1 @@
+{'terms': u'multifocal%5ball+fields%5d+and+lymphangioendotheliomatosis%5ball+fields%5d+and+%28%22thrombocytopaenia%22%5ball+fields%5d+or+%22thrombocytopenia%22%5bmesh+terms%5d+or+%22thrombocytopenia%22%5ball+fields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'MLT'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Benign familial neonatal seizures', u'Autosomal dominant form of benign neonatal seizures', u'Benign familial neonatal convulsions'], 'uid': u'269720'}

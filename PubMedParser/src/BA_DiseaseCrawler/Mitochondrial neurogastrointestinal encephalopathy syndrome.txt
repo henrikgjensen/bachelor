@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MNGIE', u'Myoneurogastrointestinal encephalopathy syndrome', u'Polyneuropathy', u' ophthalmoplegia', u' leukoencephalopathy', u' and intestinal', u'Pseudoobstruction', u'Polip syndrome'], 'uid': u'603041'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NYS4', u'Vestibulocerebellar disorder with predominant ocular signs'], 'uid': u'193003'}

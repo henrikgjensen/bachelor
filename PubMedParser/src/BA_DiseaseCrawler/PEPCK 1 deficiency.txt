@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Phosphoenolpyruvate carboxykinase-1 &#40;PCK1&#41; deficiency', u'Phosphopyruvate carboxylase deficiency', u'Phosphoenolpyruvate carboxylase deficiency', u'Phosphoenolpyruvate carboxykinase deficiency', u'PEP carboxykinase deficiency'], 'uid': u'261680'}

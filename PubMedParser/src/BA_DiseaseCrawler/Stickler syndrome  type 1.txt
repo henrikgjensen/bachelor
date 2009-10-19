@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Stickler syndrome', u' vitreous type 1', u'STL1', u'Stickler syndrome', u' membranous vitreous type', u'Arthroophthalmopathy', u' hereditary progressive', u'AOM'], 'uid': u'108300'}

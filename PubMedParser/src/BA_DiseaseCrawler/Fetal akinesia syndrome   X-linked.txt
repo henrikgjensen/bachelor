@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brain malformation', u' growth retardation', u' hypokinesia and polyhydramnios', u'Holmes Benacerraf syndrome'], 'uid': u'300073'}

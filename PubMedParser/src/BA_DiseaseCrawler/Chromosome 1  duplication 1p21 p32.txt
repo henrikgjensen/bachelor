@@ -1,0 +1,1 @@
+{'terms': u'%28%28trisomy%5btitle%5dand1p21%5btitle%5d%29or%28duplication%5btitle%5dand1p21%5btitle%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy 1p21 p32', u'Duplication 1p21 p32'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Very long eyelashes and eyebrows', u' mental retardation', u' and pigmentary degeneration of the retina', u'Oliver-McFarlane syndrome', u'Congenital trichomegaly', u' pigmentary retinal degeneration', u' and short stature'], 'uid': u'275400'}

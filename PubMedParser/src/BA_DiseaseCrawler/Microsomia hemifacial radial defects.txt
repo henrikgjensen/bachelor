@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hemifacial microsomia with radial defects', u'Goldenhar syndrome with ipsilateral radial defect', u'Oculoauriculovertebral spectrum with radial defect', u'OAVS with radial defect', u'Moeschler Clarren syndrome'], 'uid': u'141400'}

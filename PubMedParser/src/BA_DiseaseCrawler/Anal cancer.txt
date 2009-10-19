@@ -1,0 +1,1 @@
+{'terms': u'%28anal%5btitle%5dandcancer%5btitle%5d%29and%22loattrfreefulltext%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Cancer of the anus'], 'uid': ''}

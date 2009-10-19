@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CRMO', u'Multifocal osteomyelitis', u' chronic', u'Chronic multifocal osteomyelitis', u'CMO'], 'uid': u'259680'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HND', u'Hartnup disorder'], 'uid': u'234500'}

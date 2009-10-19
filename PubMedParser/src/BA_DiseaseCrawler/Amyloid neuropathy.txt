@@ -1,0 +1,1 @@
+{'terms': u'amyloid%5btitle%5dandneuropathies%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Neuropathy amyloid'], 'uid': ''}

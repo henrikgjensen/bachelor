@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Criswick-Schepens syndrome', u'EVR1', u'Exudative vitreoretinopathy', u' familial', u' autosomal dominant', u'FEVR', u' autosomal dominant'], 'uid': u'133780'}

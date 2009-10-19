@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Persistence of mullerian derivatives', u' with lymphangiectasia and postaxial polydactyly', u'Urioste syndrome', u'Renal and craniofacial anomalies with persistence of mullerian derivatives', u' lymphangiectasis', u' hepatic failure', u' postaxial polydactyly'], 'uid': u'235255'}

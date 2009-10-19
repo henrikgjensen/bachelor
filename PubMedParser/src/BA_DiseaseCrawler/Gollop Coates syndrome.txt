@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bifurcation of distal humerus with oligoectro-syndactyly'], 'uid': u'143095'}

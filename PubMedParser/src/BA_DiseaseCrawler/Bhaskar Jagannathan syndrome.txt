@@ -1,0 +1,1 @@
+{'terms': u'bhaskar%5ballfields%5dandjagannathan%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Arachnodactyly', u' aminoaciduria', u' congenital cataracts', u' cerebellar ataxia', u' and delayed developmental milestones'], 'uid': ''}

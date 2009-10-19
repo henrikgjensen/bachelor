@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Corpus callosum dysgenesis', u' microcephaly', u' infantile spasm', u' cleft lip-palate', u' exophthalmos and psychomotor retardation', u'Microcephaly', u' facial clefting', u' and preaxial polydactyly'], 'uid': u'601420'}

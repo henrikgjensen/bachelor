@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ARIH', u'Autosomal recessive ichthyosis with hypotrichosis'], 'uid': u'610765'}

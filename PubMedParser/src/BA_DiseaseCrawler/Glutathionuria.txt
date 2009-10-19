@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gamma-glutamyltranspeptidase deficiency', u'GGT deficiency', u'GGT1 deficiency', u'GTG deficiency', u'Gamma-glutamyltransferase deficiency'], 'uid': u'231950'}

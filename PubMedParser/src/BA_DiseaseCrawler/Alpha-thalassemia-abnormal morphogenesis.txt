@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Abuelo Forman Rubin syndrome', u'Homozygous alpha-thalassemia', u' genital abnormalities', u' and terminal transverse limb defects'], 'uid': u'9028450'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mesomelia of the upper limbs', u' absent nails', u' clubfeet', u' and mental retardation', u'Bilateral ulnar hypoplasia and mental retardation'], 'uid': u'276821'}

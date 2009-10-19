@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pheochromocytoma and islet cell tumor of the pancreas'], 'uid': u'171420'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Klebsiella infection', u'Klebsiella pneumoniae infection'], 'uid': ''}

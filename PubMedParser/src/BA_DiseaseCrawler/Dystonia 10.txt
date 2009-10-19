@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT10', u'Familial paroxysmal dystonia', u'Paroxysmal kinesigenic choreoathetosis', u'PKC', u'Dystonia', u' familial paroxysmal', u'EKD1', u'Paroxysmal kinesigenic dyskinesia', u'PKD'], 'uid': u'128200'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bleeding disorder due to primary defects in platelet release mechanism'], 'uid': u'176630'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FRCC', u'Familial renal carcinoma', u'FRC'], 'uid': u'144700'}

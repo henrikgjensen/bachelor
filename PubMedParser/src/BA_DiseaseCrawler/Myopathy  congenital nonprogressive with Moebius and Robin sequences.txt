@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Carey Fineman Ziter syndrome', u'CFZ syndrome', u'Moebius sequence', u' Robin complex', u' and hypotonia', u'Congenital nonprogressive myopathy with Moebius and Robin sequence'], 'uid': u'254940'}

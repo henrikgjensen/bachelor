@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital erythropoietic porphyria', u'CEP', u'Uroporphyrinogen III synthase', u' deficiency of', u'Uros deficiency', u'Gunther disease'], 'uid': u'263700'}

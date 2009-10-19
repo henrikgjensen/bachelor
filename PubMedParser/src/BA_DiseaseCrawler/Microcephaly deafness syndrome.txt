@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kawashima tsuji syndrome', u'Syndrome of microcephaly', u' deafness&#47;malformed ears', u' mental retardation and peculiar facies'], 'uid': u'156620'}

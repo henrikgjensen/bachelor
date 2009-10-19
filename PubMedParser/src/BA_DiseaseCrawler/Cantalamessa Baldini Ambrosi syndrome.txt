@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Primary gonadal failure', u' short stature', u' mitral valve prolapse', u' and mental retardation'], 'uid': u'2502012'}

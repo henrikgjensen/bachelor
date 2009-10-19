@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kenny-Caffey syndrome', u' autosomal recessive form', u'KCS1'], 'uid': u'244460'}

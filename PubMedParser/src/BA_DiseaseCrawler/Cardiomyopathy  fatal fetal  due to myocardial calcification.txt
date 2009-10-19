@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Myocardial calcifications resulting in intrauterine fetal death'], 'uid': u'606163'}

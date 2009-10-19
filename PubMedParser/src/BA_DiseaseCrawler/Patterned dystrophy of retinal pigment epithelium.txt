@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Macular dystrophy', u' butterfly-shaped pigmentary', u'Butterfly dystrophy of retinal pigment epithelium', u'Butterfly-shaped pigment dystrophy of the fovea'], 'uid': u'169150'}

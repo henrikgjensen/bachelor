@@ -1,0 +1,1 @@
+{'terms': u'sandifer%27s%5ballfields%5dand%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Sandifer&#39;s syndrome'], 'uid': ''}

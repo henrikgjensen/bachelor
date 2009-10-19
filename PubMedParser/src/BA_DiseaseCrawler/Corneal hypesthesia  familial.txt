@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Trigeminal anesthesia', u' familial', u'Familial trigeminal anesthesia'], 'uid': u'122450'}

@@ -1,0 +1,1 @@
+{'terms': u'%28trisomy%5btitle%5dand5p%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Chromosome 5', u' Trisomy 5p', u' Complete &#40;5p11-pter&#41;', u'Chromosome 5', u' Trisomy 5p', u' Partial &#40;5p13 or 14-pter&#41;', u'Chromosome 5p syndrome'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'V WD', u'Von Willebrand factor', u' deficiency'], 'uid': u'193400'}

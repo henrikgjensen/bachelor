@@ -1,0 +1,1 @@
+{'terms': u'endemic%5btitle%5d+and+kaposi%5btitle%5d+and+sarcoma%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'African Kaposi sarcoma', u'African&#47;endemic Kaposi sarcoma'], 'uid': ''}

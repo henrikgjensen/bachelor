@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alopecia', u' dysplastic nails', u' palmar and plantar hyperkeratosis', u'Palmoplantar hyperkeratosis and alopecia'], 'uid': u'129500'}

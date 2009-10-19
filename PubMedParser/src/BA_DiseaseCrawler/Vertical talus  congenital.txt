@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CVT', u'Rocker-bottom foot', u'Pes valgus', u' congenital convex'], 'uid': u'192950'}

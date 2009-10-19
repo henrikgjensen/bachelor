@@ -1,0 +1,1 @@
+{'terms': u'revesz%5btitle%2fabstract%5d+and+syndrome%5btitle%2fabstract%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Exudative retinopathy with bone marrow failure', u'Bilateral Coats retinopathy associated with aplastic anemia and mild dyskeratotic signs', u'Revesz-Debuse syndrome'], 'uid': ''}

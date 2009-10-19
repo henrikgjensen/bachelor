@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachyolmia', u' autosomal dominant', u'Brachyrachia'], 'uid': u'113500'}

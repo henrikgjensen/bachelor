@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Iridogoniodysgenesis anomaly', u' Autosomal dominant', u'IRID1', u'IGDA', u'IGDA syndrome'], 'uid': u'601631'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Melanoma and neural system tumor syndrome', u'Cutaneous malignant melanoma and cerebral astrocytoma', u'Familial proneness to melanoma and nervous system tumors'], 'uid': u'155755'}

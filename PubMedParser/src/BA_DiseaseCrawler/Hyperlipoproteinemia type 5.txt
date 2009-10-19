@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperlipoproteinemia type V', u'Hyperchylomicronemia late onset', u'Hyperchylomicronemia with hyperprebetalipoproteinemia', u' familial', u'Hyperlipidemia type V', u'Hyperlipemia mixed', u'Hyperlipemia combined fat and carbohydrate-induced', u'Mixed hyperlipemia', u'Type V hyperlipoproteinemia'], 'uid': u'144650'}

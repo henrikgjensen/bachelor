@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AAT4', u'FAA4', u'Aortic aneurysm&#47;aortic dissection and patent ductus arteriosus'], 'uid': u'132900'}

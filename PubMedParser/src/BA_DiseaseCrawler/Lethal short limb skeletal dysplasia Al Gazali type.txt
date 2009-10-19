@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lethal neonatal short limb dwarfism'], 'uid': u'601356'}

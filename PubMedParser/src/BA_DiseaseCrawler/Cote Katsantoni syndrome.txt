@@ -1,0 +1,1 @@
+{'terms': u'cote%5ballfields%5dandkatsantoni%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

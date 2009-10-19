@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Legg-Calve-Perthes disease', u'Osteochondritis deformans', u'Legg Calve Perthes syndrome', u'LCPD', u'LCP'], 'uid': u'150600'}

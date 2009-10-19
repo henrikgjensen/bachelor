@@ -1,0 +1,1 @@
+{'terms': u'seemanova%5ball+fields%5d+and+(%22microcephaly%22%5bmesh+terms%5d+or+microcephaly%5btext+word%5d)+and+microcornea%5ball+fields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'X-linked microcephaly', u' microphthalmia', u' microcornea', u' congenital cataract', u' hypogenitalism', u' mental deficiency', u' growth retardation'], 'uid': ''}

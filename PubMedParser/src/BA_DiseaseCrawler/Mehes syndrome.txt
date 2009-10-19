@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Delayed speech development', u' facial asymmetry', u' strabismus', u' and transverse ear lobe creases'], 'uid': u'182875'}

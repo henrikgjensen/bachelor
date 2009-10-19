@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Oculocutaneous albinism', u' immunodeficiency', u' hematological disorders', u' and minor anomalies', u'Albinism with immune and hematologic defects'], 'uid': u'203285'}

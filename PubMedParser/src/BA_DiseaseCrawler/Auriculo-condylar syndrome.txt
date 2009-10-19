@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Auriculocondylar syndrome', u'Question mark ear', u'Ears prominent and constricted'], 'uid': u'602483'}

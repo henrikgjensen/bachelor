@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acrofacial dysostosis Richieri Costa Guion-Almeida type', u'Richieri Costa Guion-Almeida dwarfism'], 'uid': u'263750'}

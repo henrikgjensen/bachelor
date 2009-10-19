@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Conjugate gaze palsy', u'Gaze palsy'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'MILS', u'Leigh disease', u' maternally inherited', u'Subacute necrotizing encephalomyelopathy maternally inherited'], 'uid': u'8750605'}

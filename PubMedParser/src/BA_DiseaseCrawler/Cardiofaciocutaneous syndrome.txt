@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CFC syndrome', u'Congenital heart defects', u' characteristic facial appearance', u' ectodermal abnormalities', u' and growth failure'], 'uid': u'115150'}

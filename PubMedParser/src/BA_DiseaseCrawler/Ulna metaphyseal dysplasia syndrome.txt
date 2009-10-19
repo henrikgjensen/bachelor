@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary bone dysplasia with characteristic bowing and thickening of the distal ulna', u'Metaphyseal chondroplasia Rosenberg type', u'Rosenberg Lohr syndrome'], 'uid': u'191420'}

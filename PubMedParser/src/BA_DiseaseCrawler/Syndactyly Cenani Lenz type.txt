@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cenani-Lenz type syndactyly', u'Cenani syndactylism', u'Syndactyly type 7'], 'uid': u'212780'}

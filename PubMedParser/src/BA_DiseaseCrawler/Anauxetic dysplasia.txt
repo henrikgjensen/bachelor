@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spondylometaepiphyseal dysplasia Anauxetic type', u'Spondylometaepiphyseal dysplasia Menger type'], 'uid': u'607095'}

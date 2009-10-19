@@ -1,0 +1,1 @@
+{'terms': u'%28meretoja%5btitle%5dandsyndrome%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Lattice corneal dystrophy associated with familial systemic amyloidosis', u'Meretoja&#39;s syndrome', u'Lattice dystrophy of the cornea with hereditary generalized amyloidosis'], 'uid': ''}

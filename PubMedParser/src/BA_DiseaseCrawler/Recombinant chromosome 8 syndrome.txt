@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Rec8 syndrome', u'San Luis Valley recombinant chromosome 8 syndrome', u'San Luis Valley syndrome'], 'uid': u'179613'}

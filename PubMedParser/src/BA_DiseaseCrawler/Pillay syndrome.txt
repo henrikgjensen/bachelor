@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Ophthalmo-mandibulo-melic dysplasia', u'OMM syndrome'], 'uid': ''}

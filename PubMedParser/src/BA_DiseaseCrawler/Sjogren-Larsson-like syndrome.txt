@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sjogren-Larsson-like ichthyosis without CNS or eye involvement'], 'uid': u'270220'}

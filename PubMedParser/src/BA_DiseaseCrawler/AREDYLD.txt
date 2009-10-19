@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acral renal ectodermal dysplasia lipoatrophic diabetes', u'Acrorenal field defect', u' ectodermal dysplasia', u' and lipoatrophic diabetes', u'Aredyld Syndrome'], 'uid': u'207780'}

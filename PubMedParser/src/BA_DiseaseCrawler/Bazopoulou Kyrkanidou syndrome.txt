@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Hyperbrachycephaly', u' short face', u' fused cervical vertebrae', u' bone defects', u' and destruction of periodontium'], 'uid': u'7811426'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'IP', u'Incontinentia pigmenti', u' familial male-lethal type', u'Bloch-Sulzberger syndrome', u'Incontinentia pigmenti type 2 &#40;formerly&#41;', u'IP2 &#40;formerly&#41;'], 'uid': u'308300'}

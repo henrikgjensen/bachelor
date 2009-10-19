@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' plagiocephaly', u' brachycephaly', u' prominent forehead', u' and coarse facial features', u'Mental retardation', u'  X-linked Hyde-Forster type'], 'uid': u'300064'}

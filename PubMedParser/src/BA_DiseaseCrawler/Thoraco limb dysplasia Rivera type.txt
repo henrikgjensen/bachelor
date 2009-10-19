@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bell-shaped thorax owing to short ribs', u' short-limbed dwarfism', u' pelvic hypoplasia', u' dislocatable radial heads', u' elongated distal fibulas', u' and improvement', u'Rivera Perez Salas syndrome'], 'uid': u'273740'}

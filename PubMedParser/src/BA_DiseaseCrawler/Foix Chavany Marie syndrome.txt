@@ -1,0 +1,1 @@
+{'terms': u'foix-chavany-marie%5btitle/abstract%5dandsyndrome%5btitle/abstract%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Facio-pharyngo-glossal diplegia with automatic-voluntary movement dissociation', u'Congenital Foix-Chavany-Marie syndrome &#40;subtype&#41;'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hirsutism skeletal dysplasia mental retardation syndrome'], 'uid': u'142625'}

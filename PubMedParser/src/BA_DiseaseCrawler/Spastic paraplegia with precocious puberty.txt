@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial spastic paraplegia', u' mental retardation', u' and precocious puberty', u'Precocious puberty with spastic paraplegia'], 'uid': u'182820'}

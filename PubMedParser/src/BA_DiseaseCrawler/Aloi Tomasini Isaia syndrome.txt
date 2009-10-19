@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Basal cell nevus', u' anodontia', u' abnormal bone mineralization', u'Unilateral linear basal cell nevus associated with diffuse osteoma cutis', u' unilateral anodontia', u' and abnormal bone mineralization'], 'uid': u'2715453'}

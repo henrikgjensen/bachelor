@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PDJ', u'Parkinson disease autosomal recessive', u' early onset', u'Juvenile parkinsonism', u'JP', u'Parkinson disease 2', u'PARK2', u'Parkinsonism', u' early onset', u' with diurnal fluctuation'], 'uid': u'600116'}

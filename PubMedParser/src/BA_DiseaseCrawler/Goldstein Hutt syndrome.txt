@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Trichomegaly', u' cataract', u' and hereditary spherocytosis', u'Long eyelashes', u' cataract', u' and hereditary spherocytosis'], 'uid': u'190330'}

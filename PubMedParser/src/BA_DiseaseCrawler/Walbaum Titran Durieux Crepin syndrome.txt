@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Tetradactyly of both hands', u' hypoplasia of both fibulas and scapuloiliac hypoplasia'], 'uid': u'7169596'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alopecia-contractures-dwarfism mental retardation syndrome', u'ACD mental retardation syndrome', u'Syndrome of total alopecia', u' multiple skeletal anomalies', u' shortness of stature', u' and mental deficiency'], 'uid': u'203550'}

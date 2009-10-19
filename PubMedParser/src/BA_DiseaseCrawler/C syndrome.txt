@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Opitz trigonocephaly syndrome', u'Trigonocephaly syndrome'], 'uid': u'211750'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperthyroxinemia', u' eumetabolic', u' due to T4 plasma membrane transport', u'Thyroid hormone resistance due to T4 plasma membrane transport defect'], 'uid': u'188560'}

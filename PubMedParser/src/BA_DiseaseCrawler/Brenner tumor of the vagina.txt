@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Extraovarian Brenner tumor of the vagina'], 'uid': ''}

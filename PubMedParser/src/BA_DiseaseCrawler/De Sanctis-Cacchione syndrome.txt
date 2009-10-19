@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Xerodermic idiocy of de Sanctis and Cacchione', u'Xeroderma pigmentosum', u' mental deficiency', u' dwarfism', u' and gonadal hypoplasia'], 'uid': u'278800'}

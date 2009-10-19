@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Crooked little finger', u' familial', u'Minor streblomicrodactyly', u' familial'], 'uid': u'114200'}

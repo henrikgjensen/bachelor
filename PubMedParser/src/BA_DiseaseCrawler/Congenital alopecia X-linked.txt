@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital alopecia', u'Alopecia congenital'], 'uid': u'300042'}

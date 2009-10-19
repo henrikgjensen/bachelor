@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Forbes disease', u'Cori disease', u'Limit dextrinosis', u'Amylo-1', u'6-glucosidase deficiency', u'Glycogen debrancher deficiency'], 'uid': u'232400'}

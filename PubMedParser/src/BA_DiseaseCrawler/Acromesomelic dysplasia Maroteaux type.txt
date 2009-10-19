@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AMDM', u'Acromesomelic dwarfism Maroteux type'], 'uid': u'602875'}

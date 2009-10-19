@@ -1,0 +1,1 @@
+{'terms': '', 'desc': 'Hemochromatosis type  is a disease in which too much iron builds up in the body.  This extra iron is toxic to the body and can damage the organs. It is caused by mutations in the SLCA gene. \r\n', 'db': u'omim', 'syn': [u'HFE4', u'Hemochromatosis', u' autosomal dominant', u'Hemochromatosis due to defect in ferroportin'], 'uid': u'606069'}

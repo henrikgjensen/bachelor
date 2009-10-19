@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital upward displacement of the scapula', u'High scapula', u'Maladie de Sprengel familiale', u'Sprengel&#39;s shoulder'], 'uid': u'184400'}

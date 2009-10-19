@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ichthyosis', u' hepatosplenomegaly', u' and cerebellar degeneration'], 'uid': u'242520'}

@@ -1,0 +1,1 @@
+{'terms': u'%28malignant%5ball+fields%5d+and+eccrine%5ball+fields%5d+and+spiradenoma%5ball+fields%5d%29+and+%22loattrfree+full+text%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Eccrine spiradenoma', u' malignant', u'MES'], 'uid': ''}

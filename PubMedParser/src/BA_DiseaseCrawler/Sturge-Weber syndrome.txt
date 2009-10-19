@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SWS', u'Sturge Weber syndrome'], 'uid': u'185300'}

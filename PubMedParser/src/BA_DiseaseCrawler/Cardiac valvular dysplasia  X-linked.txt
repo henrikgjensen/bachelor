@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CVD1', u'Valvular heart disease', u' congenital', u'Myxomatous valvular dystrophy', u' X-linked', u'XMVD'], 'uid': u'314400'}

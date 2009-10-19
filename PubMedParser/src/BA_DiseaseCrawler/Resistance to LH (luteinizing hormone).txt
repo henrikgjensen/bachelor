@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Impuberism and anovulation due to resistance to LH'], 'uid': ''}

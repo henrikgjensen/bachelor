@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital corneal dystrophy', u' progressive sensorineural deafness', u'Harboyan syndrome', u'CDPD', u'Corneal dystrophy and sensorineural deafness'], 'uid': u'217400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Scleroatrophic and keratotic dermatosis of limbs', u'HRZ', u'Huriez syndrome', u'Atrophic fibrosis of the skin of the limbs', u' hypoplasia of nails', u' and keratodermia of the palms and soles'], 'uid': u'181600'}

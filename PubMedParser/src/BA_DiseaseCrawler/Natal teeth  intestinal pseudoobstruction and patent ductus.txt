@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Intestinal Pseudoobstruction with Patent Ductus Arteriosus and Natal Teeth'], 'uid': u'243185'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Vertebral &#40;V&#41;', u' anal &#40;A&#41;', u' cardiac &#40;C&#41;', u' tracheoesophageal &#40;TE&#41;', u' renal &#40;R&#41; and limb &#40;L&#41; anomalies and hydrocephaly', u'VACTERL association with hydrocephaly'], 'uid': u'276950'}

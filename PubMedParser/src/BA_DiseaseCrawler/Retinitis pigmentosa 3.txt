@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RP 3', u'Choroidoretinal degeneration with retinal reflex in heterozygous women'], 'uid': u'300389'}

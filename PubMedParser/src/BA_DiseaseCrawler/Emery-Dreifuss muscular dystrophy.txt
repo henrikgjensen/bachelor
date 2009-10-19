@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EDMD', u'Muscular dystrophy', u' tardive', u' Dreifuss-Emery type', u' with contractures', u'Scapuloperoneal syndrome', u' X-linked &#40;formerly&#41;', u'Humeroperoneal neuromuscular disease', u' &#40;formerly&#41;'], 'uid': u'310300'}

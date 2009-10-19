@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cleft lip&#47;palate-ectodermal dysplasia syndrome', u'Ectodermal dysplasia', u' cleft lip and palate', u' mental retardation', u' and syndactyly', u'Zlotogora-Ogur syndrome', u'CLPED1'], 'uid': u'225000'}

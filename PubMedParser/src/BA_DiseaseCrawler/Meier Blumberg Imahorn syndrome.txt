@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Idiopathic hypercalciuria with bilateral macular colobomata'], 'uid': u'248190'}

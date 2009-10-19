@@ -1,0 +1,1 @@
+{'terms': u'mallory%5btitle%5dandweiss%5btitle%5dandsyndrome%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Gastroesophageal laceration-hemorrhage', u'Mallory-Weiss laceration', u'Mallory-Weiss tear', u'Mucosal lacerations - gastroesophageal junction'], 'uid': ''}

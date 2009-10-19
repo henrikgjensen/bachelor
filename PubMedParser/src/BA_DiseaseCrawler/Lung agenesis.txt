@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Unilateral lung agenesis', u'Congenital lung agenesis', u'Pulmonary agenesis', u'Unilateral lobar pulmonary agenesis'], 'uid': u'601612'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FFND', u'Frontofacionasal dysostosis', u'Fronto-facio-nasal dysostosis'], 'uid': u'229400'}

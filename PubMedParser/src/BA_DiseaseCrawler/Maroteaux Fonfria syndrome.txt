@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Apparent Apert syndrome with polydactyly', u'Apert syndrome with polydactyly of hands and feet'], 'uid': u'101200'}

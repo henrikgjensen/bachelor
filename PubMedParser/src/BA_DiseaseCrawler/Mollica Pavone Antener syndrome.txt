@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short stature', u' mental retardation and ocular alterations', u'Dwarfism', u' mental retardation', u' and eye abnormality', u'Mollica syndrome'], 'uid': u'223540'}

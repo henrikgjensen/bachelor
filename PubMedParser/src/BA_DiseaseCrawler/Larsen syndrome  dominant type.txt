@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LRS1', u'Bilateral dislocation of the knees', u' pes cavus', u' cylindrically shaped fingers and characteristic facies'], 'uid': u'150250'}

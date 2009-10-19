@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lactic acidemia with pyruvate dehydrogenase phosphatase deficiency'], 'uid': u'608782'}

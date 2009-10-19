@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LCA5', u'Amaurosis congenita of Leber', u' type 5'], 'uid': u'604537'}

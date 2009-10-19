@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Schaumann&#39;s syndrome', u'Schaumann syndrome', u'Sarcoid', u'Boeck&#39;s sarcoid', u'Boeck sarcoid', u'Boeck&#39;s disease', u'Boeck disease', u'Besnier-Boeck-Schaumann syndrome', u'Besnier-Boeck-Schaumann disease'], 'uid': u'181000'}

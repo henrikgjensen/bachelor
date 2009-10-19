@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'IDF', u'Asymptomatic nodular proliferation of fibrous tissue on the dorsal and lateral aspects of the fingers or toes'], 'uid': ''}

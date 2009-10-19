@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Nanism due to growth hormone qualitative anomaly', u'Pituitary dwarfism with normal immunoreactive growth hormone', u'Pituitary dwarfism 4'], 'uid': u'262650'}

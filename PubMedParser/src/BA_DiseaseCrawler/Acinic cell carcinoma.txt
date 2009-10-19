@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28%28%28%22fastneutrons%22%5bmeshterms%5dorfastneutron+%5btextword%5d%29andsalivary%5ballfields%5d%29andhasabstract%5btext%5d%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29and%28%221997/06/2512.08%22%5bedat%5d%3a%222002/06/2412.08%22%5bedat%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Acinic cell tumor'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%22east%22%5ball+fields%5d+and+%22african%22%5ball+fields%5d%29+or+%22east+african%22%5ball+fields%5d%29+and+%28%22trypanosomiasis%22%5bmesh+terms%5d+or+%22trypanosomiasis%22%5ball+fields%5d%29%29+and+%28%222003%2f11%2f17%22%5bpdat%5d+%3a+%222008%2f11%2f14%22%5bpdat%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Sleeping sickness'], 'uid': ''}

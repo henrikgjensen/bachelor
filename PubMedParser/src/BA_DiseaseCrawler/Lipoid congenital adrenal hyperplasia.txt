@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Adrenal hyperplasia 1', u'Lipoid hyperplasia', u' congenital', u' of adrenal cortex with male pseudohermaphroditism'], 'uid': u'201710'}

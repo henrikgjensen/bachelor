@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Benign hyperostosis corticalis generalisata', u'Endosteal hyperostosis Worth type', u'Osteosclerosis', u' autosomal dominant Worth type with torus palatinus', u'Hyperostosis corticalis generalisata congenita'], 'uid': u'144750'}

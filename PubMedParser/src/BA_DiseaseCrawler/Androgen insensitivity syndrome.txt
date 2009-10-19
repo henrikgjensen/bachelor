@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Androgen receptor deficiency', u'AIS', u'Testicular feminization syndrome', u'TFS', u'Testicular feminization', u'Male pseudohermaphroditism due to androgen insensitivity', u'Androgen resistance syndrome', u'Complete androgen insensitivity'], 'uid': u'300068'}

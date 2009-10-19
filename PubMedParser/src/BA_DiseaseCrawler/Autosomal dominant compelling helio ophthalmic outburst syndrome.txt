@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ACHOO  syndrome', u'Photic sneeze reflex', u'Sneezing from light exposure', u'Peroutka sneeze'], 'uid': u'100820'}

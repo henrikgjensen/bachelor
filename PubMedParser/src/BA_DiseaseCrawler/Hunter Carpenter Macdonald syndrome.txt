@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Neuroaxonal dystrophy presenting with neonatal dysmorphic features', u' early onset of peripheral gangrene'], 'uid': u'3314508'}

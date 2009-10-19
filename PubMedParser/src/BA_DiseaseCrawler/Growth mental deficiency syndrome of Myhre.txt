@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Myhre syndrome', u'Pre- and postnatal growth deficiency', u' unusual facies', u' generalized muscle hypertrophy', u' decreased joint mobility', u' cryptorchidism', u' cardiac anomaly', u' early'], 'uid': u'139210'}

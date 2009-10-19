@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Dominant hearing loss', u' white hair', u' contractures', u' hyperkeratotic papillomata', u' and depressed chemotaxis'], 'uid': u'526579'}

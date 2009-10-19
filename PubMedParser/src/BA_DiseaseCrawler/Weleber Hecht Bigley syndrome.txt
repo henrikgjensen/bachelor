@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Cataract with Hyperostosis Frontalis and Dislocating Patella', u'Cataract hyperostosis frontalis dislocating patella'], 'uid': ''}

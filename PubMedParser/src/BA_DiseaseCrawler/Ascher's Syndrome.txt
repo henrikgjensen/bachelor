@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Double upper lip', u' blepharochalasis and enlargement of the thyroid', u'Ascher syndrome'], 'uid': ''}

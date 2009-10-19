@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Esophageal atresia with or without tracheoesophageal fistula', u'Tracheoesophageal fistula with or without esophageal atresia'], 'uid': u'189960'}

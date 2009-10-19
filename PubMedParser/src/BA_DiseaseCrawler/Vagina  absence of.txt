@@ -1,0 +1,1 @@
+{'terms': u'%28absence%5btitle%5dandvagina%5btitle%5d%29notuterus%5btitle%5dandhasabstract%5btext%5dand%22loattrfulltext%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Absence of vagina'], 'uid': ''}

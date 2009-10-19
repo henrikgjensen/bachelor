@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Q fever pneumonia', u'Coxiella Burnetii fever', u'Query fever'], 'uid': ''}

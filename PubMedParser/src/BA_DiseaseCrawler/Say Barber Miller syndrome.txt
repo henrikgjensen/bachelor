@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Microcephaly hypogammaglobulinemia abnormal immunity', u'Microcephaly with chemotactic defect and transient hypogammaglobulinemia'], 'uid': u'251240'}

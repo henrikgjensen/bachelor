@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Medullary thyroid cancer', u' familial', u'Familial medullary thyroid carcinoma', u'MTC', u' familial'], 'uid': u'155240'}

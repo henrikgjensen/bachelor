@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deafness', u' sensorineural', u' with partial agenesis of the corpus callosum and arachnoid cysts', u'Deafness', u' bilateral sensorineural', u' and hydrocephalus due to foramen of monro obstruction'], 'uid': u'604213'}

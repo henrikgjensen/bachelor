@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ulbright Hodes syndrome', u'RL syndrome', u'Renal dysplasia', u' mesomelia', u' and radiohumeral fusion'], 'uid': u'266910'}

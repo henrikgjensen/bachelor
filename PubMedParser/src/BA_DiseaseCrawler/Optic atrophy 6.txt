@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OPA6', u'Optic atrophy', u' congenital or early infantile', u' autosomal recessive'], 'uid': u'258500'}

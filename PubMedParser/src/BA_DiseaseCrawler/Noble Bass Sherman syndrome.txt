@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Ectopia lentis chorioretinal dystrophy myopia'], 'uid': u'8334934'}

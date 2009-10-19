@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Distal arthrogryposis', u' type 2', u'Congenital contractures with major involvement of the hands and feet'], 'uid': u'601680'}

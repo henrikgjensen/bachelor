@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acroosteolysis with osteoporosis and changes in skull and mandible', u'Cheney syndrome', u'Arthrodentoosteodysplasia'], 'uid': u'102500'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Angioma serpiginosum'], 'uid': u'300652'}

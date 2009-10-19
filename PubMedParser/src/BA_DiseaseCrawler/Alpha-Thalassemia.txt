@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'A-Thalassemia', u'Alpha thalassemia'], 'uid': u'604131'}

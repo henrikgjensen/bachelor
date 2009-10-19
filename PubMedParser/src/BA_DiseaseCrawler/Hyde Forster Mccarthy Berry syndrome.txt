@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' X-linked', u' with craniofacial dysmorphism', u'Mental retardation', u' X-linked', u' Hyde-Forster type'], 'uid': u'300064'}

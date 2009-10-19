@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Amyloidosis due to mutant gelsolin', u'Meretoja type amyloidosis', u'Amyloid cranial neuropathy with lattice corneal dystrophy', u'Amyloidosis V', u'Amyloidosis 5'], 'uid': u'105120'}

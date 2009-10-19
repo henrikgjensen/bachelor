@@ -1,0 +1,1 @@
+{'terms': u'%28hairytongue%5btitle%5dandhasabstract%5btext%5d%29', 'desc': 'Hairy tongue is a condition in which the the central top portion of the tongue presents with an abnormal coloring.  Although the abnormal coating is typically black in color, brown, yellow, and green discoloration has been described. ', 'db': u'pubmed', 'syn': [u'Lingua villosa'], 'uid': ''}

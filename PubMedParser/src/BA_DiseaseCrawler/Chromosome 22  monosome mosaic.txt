@@ -1,0 +1,1 @@
+{'terms': u'%28%28mosaic%5btitle%5dand22%5btitle%5d%29or%2822%5btitle%5dandmosaic%5btitle%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Mosaic Monosome 22', u'Chromosome 22 mosaic monosomy'], 'uid': ''}

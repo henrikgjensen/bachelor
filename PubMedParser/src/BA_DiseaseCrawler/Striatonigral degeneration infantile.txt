@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Striatal degeneration familial', u'Infantile bilateral striatal necrosis', u'IBSN', u'SNDI'], 'uid': u'271930'}

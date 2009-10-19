@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Goldenhar syndrome', u'Oculoauriculovertebral dysplasia', u'OAV dysplasia', u'Facioauriculovertebral sequence', u'Oculoauriculovertebral spectrum', u'Hemifacial microsomia', u'OAVS', u'FAv sequence'], 'uid': u'164210'}

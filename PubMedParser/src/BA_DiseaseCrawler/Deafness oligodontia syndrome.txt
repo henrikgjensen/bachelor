@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital profound sensorineural deafness and oligodontia', u'Autosomal recessive sensorineural hearing impairment', u' dizziness', u' and hypodontia'], 'uid': u'221740'}

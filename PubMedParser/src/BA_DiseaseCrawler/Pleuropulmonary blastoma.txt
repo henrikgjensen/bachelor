@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pulmonary blastoma', u'PPB'], 'uid': u'601200'}

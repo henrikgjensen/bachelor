@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'APL', u'Lipodystrophy partial acquired', u'Lipodystrophy cephalothoracic type', u'Lipodystophy partial progressive'], 'uid': u'608709'}

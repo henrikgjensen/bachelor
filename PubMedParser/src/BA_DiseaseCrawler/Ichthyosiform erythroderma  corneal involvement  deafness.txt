@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Keratitis-ichthyosis-deafness syndrome', u' autosomal recessive', u'KID syndrome', u' autosomal recessive', u'Desmons syndrome'], 'uid': u'242150'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hydrocephalus', u' costovertebral dysplasia and undescended scapula &#40;Sprengel anomaly&#41;'], 'uid': u'600991'}

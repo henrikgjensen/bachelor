@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Aminopterin embryopathy syndrome', u'Aminopterin fetopathy syndrome', u'Aminopterin syndrome', u'Fetal methotrexate syndrome'], 'uid': ''}

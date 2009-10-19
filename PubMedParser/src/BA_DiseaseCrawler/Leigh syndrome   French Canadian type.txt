@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cox deficiency', u' French Canadian type', u'Cox deficiency', u' Saguenay Lac saint Jean type', u'Leigh syndrome', u' Saguenay Lac saint Jean type', u'LSFC', u'Cytochrome c oxidase deficiency', u' French Canadian type'], 'uid': u'220111'}

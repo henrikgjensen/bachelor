@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Methionine synthase deficiency', u'Tetrahydrofolate-methyltransferase deficiency syndrome', u'N5-methylhomocysteine transferase deficiency'], 'uid': u'156570'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Atypical mycobacterial infection', u' disseminated', u'Atypical mycobacterial infection', u' familial disseminated', u'Mycobacterial disease', u' Mendelian susceptibility to', u'MSMD'], 'uid': u'209950'}

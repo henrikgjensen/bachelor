@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Erdheim Cystic medial necrosis of aorta'], 'uid': u'132900'}

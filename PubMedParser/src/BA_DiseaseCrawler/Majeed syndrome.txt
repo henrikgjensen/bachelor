@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Chronic recurrent multifocal osteomyelitis', u' congenital', u'Dyserythropoietic anemia', u' and neutrophilic dermatosis', u'Congenital dyserythropoietic anemia and chronic recurrent multifocal osteomyelitis', u'CDA and CRMO'], 'uid': u'609628'}

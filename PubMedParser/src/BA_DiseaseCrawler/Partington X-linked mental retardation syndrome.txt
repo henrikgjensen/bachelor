@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Partington syndrome', u'PRTS', u'Mental retardation', u' X-linked', u' syndromic 1', u'MRXS1', u'Mental retardation-dystonic movements-ataxia-seizures syndrome', u'Mental retardation', u' X-linked', u' with dystonic movements', u' ataxia', u' and seizures'], 'uid': u'309510'}

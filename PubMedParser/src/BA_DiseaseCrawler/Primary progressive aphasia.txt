@@ -1,0 +1,1 @@
+{'terms': u'(aphasia%5btitle%5d+and+primary%5btitle%5d+and+progressive%5btitle%5d)+and+(%22loattrfree+full+text%22%5bsb%5d+and+hasabstract%5btext%5d+and+%22humans%22%5bmesh+terms%5d+and+english%5blang%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Aphasia', u' primary progressive', u'Primary progressive aphasia syndrome', u'PPA'], 'uid': ''}

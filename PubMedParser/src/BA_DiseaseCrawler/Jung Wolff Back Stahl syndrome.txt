@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anterior chamber cleavage disorder', u' cerebellar hypoplasia', u' hypothyroidism', u' and tracheal stenosis'], 'uid': u'601427'}

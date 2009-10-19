@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%22umbilicalcord%22%5bmeshterms%5dorumbilicalcord%5btextword%5d%29and%28%22ulcer%22%5bmeshterms%5dorulceration%5btextword%5d%29%29and%28%22intestinalatresia%22%5bmeshterms%5dorintestinalatresia%5btextword%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Umbilical cord ulcer with intestinal atresia', u'Umbilical ulceration and intestinal atresia'], 'uid': ''}

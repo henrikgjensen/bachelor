@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CARASIL', u'Maeda syndrome', u'Subcortical vascular encephalopathy', u' progressive', u'Cerebrovascular disease with thin skin', u' alopecia', u' and disc disease'], 'uid': u'600142'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCA1', u'Olivopontocerebellar atrophy 1', u'OPCA1', u'Cerebelloparenchymal disorder 1', u'CPD1', u'Olivopontocerebellar atrophy 4', u'OPCA 4', u'Schut-Haymaker type OPCA', u'Spinocerebellar atrophy 1'], 'uid': u'164400'}

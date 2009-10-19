@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Syndactyly', u' telecanthus and anogenital and renal malformations'], 'uid': u'18297069'}

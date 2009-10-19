@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Small cleaved cell follicular lymphoma'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Frontonasal dysplasia and dilated virchow-robin spaces', u'Polycystic brain &#40;cerebrum polycystica vera&#41; associated with ectodermal dysplasia'], 'uid': u'606156'}

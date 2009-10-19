@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dominantly inherited blepharoptosis', u' high myopia', u' and ectopia lentis'], 'uid': u'110150'}

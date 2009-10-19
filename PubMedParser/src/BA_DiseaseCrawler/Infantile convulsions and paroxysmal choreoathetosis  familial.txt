@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ICCA', u'Convulsions', u' infantile', u' with paroxysmal choreoathetosis', u' familial', u'ICCA syndrome'], 'uid': u'602066'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dengue hemorrhagic fever', u'Dengue shock syndrome', u'Philippine hemorrhagic fever', u'Thai hemorrhagic fever', u'Singapore hemorrhagic fever', u'Hemorrhagic dengue'], 'uid': u'604672'}

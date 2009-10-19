@@ -1,0 +1,1 @@
+{'terms': u'2-hydroxyglutaric%5ballfields%5dandaciduria%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'D2HA'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Richieri Costa Gorlin syndrome', u'Oculomaxillofacial dysplasia with oblique facial clefts', u'Oblique facial clefts'], 'uid': u'600251'}

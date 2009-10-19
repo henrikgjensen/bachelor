@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acrofacial dysostosis of Weyers', u'Curry Hall syndrome'], 'uid': u'193530'}

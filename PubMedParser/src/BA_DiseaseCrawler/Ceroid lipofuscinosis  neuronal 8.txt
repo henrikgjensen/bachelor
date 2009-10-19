@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Northern epilepsy', u'Epilepsy progressive with mental retardation', u'EPMR', u'CLN8', u'Northern epilepsy syndrome'], 'uid': u'600143'}

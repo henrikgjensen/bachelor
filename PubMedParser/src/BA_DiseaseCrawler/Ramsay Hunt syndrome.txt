@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Herpes zoster oticus', u'Ramsay Hunt Syndrome type 2', u'Hunt&#39;s syndrome', u'Myoclonus and Ataxia'], 'uid': u'159700'}

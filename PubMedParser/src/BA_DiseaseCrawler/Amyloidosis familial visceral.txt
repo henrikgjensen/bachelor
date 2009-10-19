@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ostertag type amyloidosis', u'German type amyloidosis', u'Amyloidosis familial renal', u'Amyloidosis systemic nonneuropathic', u'Amyloidosis VIII', u'Amyloidosis 8'], 'uid': u'105200'}

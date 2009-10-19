@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ulerythema ophryogenes with multiple congenital anomalies', u'Keratosis Pilaris Atrophicans Facies', u'Ulerythema ophryogenes', u'Keratosis pilaris'], 'uid': u'604093'}

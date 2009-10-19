@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MOPD 3', u'MOPD Caroline Crachami type', u'Osteodysplastic primordial dwarfism', u' type 3', u'Microcephalic osteodysplastic primordial dwarfism', u' Caroline Crachami type', u'Microcephalic osteodysplastic primordial dwarfism', u' Sicilian fairy type', u'MOPD', u' Sicilian fairy type'], 'uid': u'210730'}

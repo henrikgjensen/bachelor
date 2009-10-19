@@ -1,0 +1,1 @@
+{'terms': u'(ovarian%5ball+fields%5d+and+(%22carcinosarcoma%22%5bmesh+terms%5d+or+carcinosarcoma%5btext+word%5d))+and+(%222003%2f04%2f13%22%5bpdat%5d+%3a+%222008%2f04%2f10%22%5bpdat%5d)', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

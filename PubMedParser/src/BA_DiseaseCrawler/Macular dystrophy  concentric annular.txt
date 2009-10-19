@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MCDCA', u'Maculopathy', u' bull&#39;s eye'], 'uid': u'153870'}

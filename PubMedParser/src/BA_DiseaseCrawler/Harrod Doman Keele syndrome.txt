@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Harrod syndrome', u'Craniofacial digital genital anomalies'], 'uid': u'601095'}

@@ -1,0 +1,1 @@
+{'terms': u'acrospiroma%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Eccrine porocarcinoma', u'Giant eccrine acrospiroma &#40;subtype&#41;'], 'uid': ''}

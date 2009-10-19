@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Methylmalonic acidemia and homocystinemia', u'Cobalamin-C methylmalonic acidemia and homocystinuria', u'Methylmalonic acidemia and homocystinuria cblC type'], 'uid': u'277400'}

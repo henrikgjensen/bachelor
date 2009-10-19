@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TMD', u'Tardive tibial muscular dystrophy', u'UDD Myopathy'], 'uid': u'600334'}

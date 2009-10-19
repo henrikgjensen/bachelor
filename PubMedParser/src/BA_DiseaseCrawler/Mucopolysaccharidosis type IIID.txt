@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mucopoly-saccharidosis type 3D', u'Sanfilippo syndrome D', u'N-acetylglucosamine-6-sulfate sulfatase deficiency', u'MPS IIID', u'MPS 3D'], 'uid': u'252940'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Rieger syndrome type 2'], 'uid': u'601499'}

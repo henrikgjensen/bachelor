@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Fructose malabsorption', u'Intestinal fructose intolerance', u'Dietary fructose intolerance'], 'uid': ''}

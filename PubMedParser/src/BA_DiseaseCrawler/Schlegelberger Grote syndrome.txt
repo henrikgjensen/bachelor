@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Triphalangeal thumbs thrombocytopathy deafness', u'Syndrome with triphalangia of thumbs', u' thrombasthenia Glanzmann and deafness of internal ear'], 'uid': u'3762006'}

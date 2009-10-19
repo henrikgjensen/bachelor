@@ -1,0 +1,1 @@
+{'terms': u'anthrax%5btitle%5dandhasabstract%5btext%5dandenglish%5blang%5dand%22humans%22%5bmeshterms%5dand%222003/08/2611.02%22%5bedat%5d%3a%222005/08/2511.02%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Ragpicker&#39;s disease', u'Wool sorter&#39;s disease', u'Black Baine', u'Malignant edema', u'Malignant pustule', u'Siberian Plague'], 'uid': ''}

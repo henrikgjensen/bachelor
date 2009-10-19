@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spinocerebellar ataxia type 18', u'SCA18', u'Sensorimotor neuropathy with ataxia', u' autosomal dominant', u'SMNA'], 'uid': u'607458'}

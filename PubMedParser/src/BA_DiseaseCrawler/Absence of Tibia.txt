@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bilateral absence of the tibia', u'Tibial hemimelia', u'Tibia', u' absence of'], 'uid': u'275220'}

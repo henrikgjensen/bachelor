@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Isolated unilateral absence of a pulmonary artery', u'Isolated UAPA'], 'uid': ''}

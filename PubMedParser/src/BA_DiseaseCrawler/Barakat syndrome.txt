@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypoparathyroidism', u' sensorineural deafness', u' and renal dysplasia', u'HDR syndrome', u'Nephrosis', u' nerve deafness', u' and hypoparathyroidism'], 'uid': u'146255'}

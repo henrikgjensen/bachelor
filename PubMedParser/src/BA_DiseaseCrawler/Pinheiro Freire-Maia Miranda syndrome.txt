@@ -1,0 +1,1 @@
+{'terms': u'3720011%5buid%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Trichodermodysplasia with dental alterations'], 'uid': ''}

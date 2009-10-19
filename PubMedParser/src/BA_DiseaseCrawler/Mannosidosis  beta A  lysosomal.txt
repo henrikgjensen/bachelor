@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Beta-mannosidosis', u'Lysosomal beta-mannosidase deficiency', u'Beta-mannosidase deficiency'], 'uid': u'248510'}

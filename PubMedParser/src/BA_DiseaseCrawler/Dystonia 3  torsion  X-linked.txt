@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT3', u'Dystonia-Parkinsonism', u' X-linked', u'XDP', u'Torsion dystonia-Parkinsonism', u' Filipino type', u'X-Linked Torsion Dystonia-Parkinsonism syndrome', u'X-Linked Dystonia-Parkinsonism syndrome', u'Lubag'], 'uid': u'314250'}

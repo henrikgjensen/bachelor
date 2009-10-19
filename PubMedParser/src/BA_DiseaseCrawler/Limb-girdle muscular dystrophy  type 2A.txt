@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LGMD2A', u'Calpainopathy', u'Limb-girdle muscular dystrophy type 2', u'LGMD2', u'Muscular dystrophy', u' pelvofemoral', u'Leyden-Moebius muscular dystrophy'], 'uid': u'253600'}

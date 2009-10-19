@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Holzgreve syndrome', u'Complex congenital heart defect', u' renal agenesis', u' and cleft lip and palate'], 'uid': u'236110'}

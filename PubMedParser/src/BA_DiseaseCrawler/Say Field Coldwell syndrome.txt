@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Triphalangeal thumbs and dislocation of patella', u'Polydactyly with triphalangeal thumbs', u' brachydactyly', u' camptodactyly', u' congenital dislocation of the patellas', u' short stature and borderline intelligence'], 'uid': u'169000'}

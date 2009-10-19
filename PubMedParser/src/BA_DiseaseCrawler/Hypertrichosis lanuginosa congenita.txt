@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypertrichosis universalis', u'Congenital hypertrichosis lanuginosa', u'CHL', u'Hypertrichosis lanuginosa universalis'], 'uid': u'145700'}

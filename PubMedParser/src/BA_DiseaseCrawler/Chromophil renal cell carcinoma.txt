@@ -1,0 +1,1 @@
+{'terms': u'%28chromophil%5btitle%5dandrenal%5btitle%5dandcell%5btitle%5dandcarcinoma%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Chromophil RCC'], 'uid': ''}

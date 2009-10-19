@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Monosomy 10pter', u'10p deletion syndrome', u'Deletion 10p'], 'uid': ''}

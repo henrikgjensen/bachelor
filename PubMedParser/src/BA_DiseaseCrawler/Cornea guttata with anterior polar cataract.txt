@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial congenital cornea guttata with anterior polar cataracts &#40;type&#41;'], 'uid': u'121390'}

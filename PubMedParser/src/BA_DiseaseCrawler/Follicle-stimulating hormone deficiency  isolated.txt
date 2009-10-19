@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Isolated follicle-stimulating hormone &#40;FSH&#41; deficiency', u'Isolated FSH deficiency'], 'uid': u'229070'}

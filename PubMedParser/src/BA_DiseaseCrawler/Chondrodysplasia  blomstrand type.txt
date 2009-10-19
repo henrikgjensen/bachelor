@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Blomstrand syndrome', u'BOCD', u'Lethal congenital dwarfism with accelerated skeletal maturation', u'Blomstrand lethal osteochondrodysplasia', u'Blomstrand osteochondrodysplasia'], 'uid': u'215045'}

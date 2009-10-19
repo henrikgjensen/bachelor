@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial Hirschsprung&#39;s disease and type D brachydactyly'], 'uid': u'306980'}

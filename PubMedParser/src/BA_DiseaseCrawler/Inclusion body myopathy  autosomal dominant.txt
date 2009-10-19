@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'IBM3', u'Autosomal dominant myopathy with congenital joint contractures', u' ophthalmoplegia', u' and rimmed vacuoles', u'Inclusion body myopathy 3'], 'uid': u'605637'}

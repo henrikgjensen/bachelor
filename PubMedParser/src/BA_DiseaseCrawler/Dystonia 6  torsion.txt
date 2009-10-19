@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT6', u'Torsion dystonia adult onset mixed type'], 'uid': u'602629'}

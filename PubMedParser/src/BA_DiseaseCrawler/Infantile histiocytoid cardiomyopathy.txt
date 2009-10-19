@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Infantile xanthomatous cardiomyopathy', u'Focal lipid cardiomyopathy', u'Oncocytic cardiomyopathy', u'Foamy myocardial transformation of infancy', u'Histiocytoid cardiomyopathy'], 'uid': u'500000'}

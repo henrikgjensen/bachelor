@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Atypical osteomalacia involving the axial skeleton'], 'uid': u'109130'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thumbs', u' stiff', u' with brachydactyly type a1 and developmental delay'], 'uid': u'188201'}

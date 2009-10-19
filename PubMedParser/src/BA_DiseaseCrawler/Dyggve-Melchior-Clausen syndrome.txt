@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dyggve-Melchior-Clausen syndrome X linked', u'X-linked Dyggve-Melchior-Clausen syndrome'], 'uid': u'304950'}

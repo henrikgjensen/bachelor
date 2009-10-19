@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ostravik lindemann solberg syndrome'], 'uid': u'217085'}

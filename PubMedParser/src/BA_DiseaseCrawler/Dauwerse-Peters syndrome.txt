@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short stature', u' facial dysmorphism', u' severe brachydactyly and syndactyly'], 'uid': u'611733'}

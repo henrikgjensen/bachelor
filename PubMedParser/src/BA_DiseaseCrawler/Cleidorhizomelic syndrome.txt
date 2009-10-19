@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cleido rhizomelic syndrome', u'Brachydactyly', u' enlarged diaphysis', u' rhizomelic micromelia', u' short stature&#47;dwarfism and clavicle absent&#47;abnormal', u'Wallis Zieff Goldblatt syndrome', u'Rhizomelic shortness with clavicular defect'], 'uid': u'119650'}

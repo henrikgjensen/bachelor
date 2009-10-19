@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sexual precocity', u'Idiopathic sexual precocity', u'Familial precocious puberty'], 'uid': u'176400'}

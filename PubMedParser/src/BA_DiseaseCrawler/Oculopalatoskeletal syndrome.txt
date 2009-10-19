@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Michels syndrome', u'Craniosynostosis with lid anomalies'], 'uid': u'257920'}

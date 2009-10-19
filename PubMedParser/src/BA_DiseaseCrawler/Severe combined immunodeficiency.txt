@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Severe combined immunodeficiency due to adenosine deaminase deficiency', u'Severe combined immunodeficiency', u' alymphocytotic type', u'Bubble boy disease', u'SCID1', u'Agammaglobulinemia', u' Swiss type', u'SCID'], 'uid': u'601457'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alpha-mannosidosis adult-onset form'], 'uid': u'248500'}

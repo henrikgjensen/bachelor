@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Prominent glabella microcephaly hypogenitalism', u'Macdermot-Winter syndrome'], 'uid': u'247990'}

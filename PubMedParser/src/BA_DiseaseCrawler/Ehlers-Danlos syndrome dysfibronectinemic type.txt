@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FN abnormality', u'Ehlers-Danlos syndrome with platelet dysfunction from fibronectin abnormality', u'EDS10', u'Ehlers-Danlos syndrome', u' type X', u'Ehlers-Danlos syndrome type 10  &#40;formerly&#41;'], 'uid': u'225310'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'HCFP1', u'MBS2 &#40;formerly&#41;', u'Moebius syndrome 2 &#40;formerly&#41;', u'Mobius syndrome 2', u' &#40;formerly&#41;'], 'uid': u'601471'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ACS5', u'Pfeiffer type acrocephalosyndactyly', u'Acrocephalosyndactyly', u' type 5'], 'uid': u'101600'}

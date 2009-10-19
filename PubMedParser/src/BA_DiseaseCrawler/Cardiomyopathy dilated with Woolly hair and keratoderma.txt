@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DCWHK', u'Carvajal syndrome', u'Epidermolytic palmoplantar keratoderma', u' woolly hair', u' and dilated cardiomyopathy', u'Palmoplantar keratoderma with left ventricular cardiomyopathy and woolly hair'], 'uid': u'605676'}

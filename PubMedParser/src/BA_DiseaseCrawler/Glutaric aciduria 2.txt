@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GA 2 A', u'Glutaric acidemia 2 A', u'Ethylmalonic-adipicaciduria', u'Multiple Acyl-CoA dehydrogenase deficiency', u'EMA', u'MADD'], 'uid': u'231680'}

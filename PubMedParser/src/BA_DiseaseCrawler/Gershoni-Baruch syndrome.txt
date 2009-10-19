@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Omphalocele', u' diaphragmatic hernia', u' and radial ray defects'], 'uid': u'12955772'}

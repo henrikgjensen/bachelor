@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Upswept frontal hairline', u' tight glistening facial skin', u' high-arched and sparse eyebrows', u' absent&#47;scant eyelashes', u' hypertelorism', u' blepharophimosis'], 'uid': u'608156'}

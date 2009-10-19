@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal malignant osteopetrosis', u'Lethal osteopetrosis'], 'uid': u'259720'}

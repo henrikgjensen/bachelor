@@ -1,0 +1,1 @@
+{'terms': u'%28amaurosis%5btitle%5dandfugax%5btitle%5d%29andhasabstract%5btext%5dandenglish%5blang%5dand%222000/10/1310.03%22%5bedat%5d%3a%222005/10/1210.03%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Transient monocular blindness'], 'uid': ''}

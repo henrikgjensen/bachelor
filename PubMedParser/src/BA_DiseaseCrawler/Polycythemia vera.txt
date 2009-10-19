@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Polycythemia rubra vera', u'PRV', u'PV'], 'uid': u'263300'}

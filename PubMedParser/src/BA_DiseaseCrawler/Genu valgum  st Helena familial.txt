@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Genu valgum', u' hereditary pubertal', u'Severe &#39;knock-knees&#39; and variable lesser malalignment at the elbows and wrists', u'St. Helena familial genu valgum', u'Hereditary pubertal genu valgum'], 'uid': u'137370'}

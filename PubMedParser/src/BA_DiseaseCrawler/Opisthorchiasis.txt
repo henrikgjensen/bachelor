@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Infection due to cat liver fluke', u'Infection due to Opisthorchis &#40;felineus&#41;&#40;viverrini&#41;'], 'uid': ''}

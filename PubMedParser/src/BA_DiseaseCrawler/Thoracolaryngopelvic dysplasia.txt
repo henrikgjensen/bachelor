@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TLPD', u'Barnes syndrome', u'Autosomal dominant thoracolaryngopelvic dysplasia'], 'uid': u'187760'}

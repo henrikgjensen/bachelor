@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Drash syndrome', u'Denys-Drash syndrome', u'Nephropathy', u' wilms tumor', u' and genital anomalies', u'Pseudohermaphroditism', u' nephron disorder and Wilms&#39; tumor', u'Nephropathy associated with male pseudohermaphroditism and Wilms&#39; tumor'], 'uid': u'194080'}

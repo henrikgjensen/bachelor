@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Ear deformity characterized by an abnormal development of the helix', u' anthelix', u' and scaphoid fossa', u'Benedict Augustin Morel&#39;s ear'], 'uid': ''}

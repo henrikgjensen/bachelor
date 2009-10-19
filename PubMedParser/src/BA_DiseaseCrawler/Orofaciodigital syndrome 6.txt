@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OFD6', u'OFD syndrome 6', u'Oral-facial-digital syndrome type 6', u'Varadi-Papp syndrome', u'Polydactyly', u' cleft lip&#47;palate or lingual lump', u' and psychomotor retardation'], 'uid': u'277170'}

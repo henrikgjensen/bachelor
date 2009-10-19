@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Colorectal cancer', u' childhood'], 'uid': ''}

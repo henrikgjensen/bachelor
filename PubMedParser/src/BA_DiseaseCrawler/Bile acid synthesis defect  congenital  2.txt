@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CBAS2', u'Cholestasis with delta&#40;4&#41;-3-oxosteroid 5-beta-reductase deficiency'], 'uid': u'235555'}

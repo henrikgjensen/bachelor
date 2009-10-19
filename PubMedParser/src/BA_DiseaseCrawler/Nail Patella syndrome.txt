@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NPS 1', u'Onychoosteodysplasia', u'Turner-Kieser syndrome', u'Fong disease'], 'uid': u'161200'}

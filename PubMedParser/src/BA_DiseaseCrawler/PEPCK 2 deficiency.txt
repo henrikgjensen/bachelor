@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Phosphoenolpyruvate carboxykinase 2 deficiency', u'PCK2 deficiency', u'PEPCK2'], 'uid': u'261650'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RCDP3', u'Alkyldihydroxyacetonephosphate synthase deficiency', u'AGPS deficiency', u'Alkyglycerone-Phosphate synthase deficiency'], 'uid': u'600121'}

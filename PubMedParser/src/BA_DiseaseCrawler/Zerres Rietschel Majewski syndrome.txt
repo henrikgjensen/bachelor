@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Postnatal short stature', u' microcephaly', u' severe syndactyly of hands and feet', u' dysmorphic face', u' and mental retardation'], 'uid': u'1316441'}

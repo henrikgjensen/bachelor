@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Aur syndrome', u'Pancytopenia multiple congenital anomalies', u'Multiple dysmorphic features and pancytopenia'], 'uid': u'4017281'}

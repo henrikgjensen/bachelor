@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GABA transaminase deficiency', u'Gamma aminobutyrate transaminase deficiency', u'GABAT', u'4 alpha aminobutyrate transaminase deficiency', u'ABAT'], 'uid': u'137150'}

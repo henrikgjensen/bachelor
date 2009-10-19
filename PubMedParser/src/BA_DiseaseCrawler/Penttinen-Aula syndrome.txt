@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Prematurely aged appearance', u' delayed bone maturation', u'  acro-osteolysis', u' and brachydactyly', u'Premature aging syndrome Penttinen type'], 'uid': u'601812'}

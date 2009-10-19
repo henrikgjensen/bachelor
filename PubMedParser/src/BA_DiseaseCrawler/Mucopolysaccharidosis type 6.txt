@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Maroteaux Lamy syndrome', u'MPS 6', u'N-acetylgalactosamine-4-sulfatase deficiency', u'Arylsulfatase B deficiency', u'ARSB deficiency', u'MPS 6', u'Mucopoly-saccharidosis type VI'], 'uid': u'253200'}

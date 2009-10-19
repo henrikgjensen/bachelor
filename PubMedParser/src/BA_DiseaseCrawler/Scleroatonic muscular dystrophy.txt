@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ullrich disease', u'Ullrich scleroatonic muscular dystrophy', u'UCMD', u'Ullrich congenital muscular dystrophy', u'Late onset scleroatonic familial myopathy &#40;subtype&#41;'], 'uid': u'254090'}

@@ -1,0 +1,1 @@
+{'terms': u'%28endometrial%5btitle%5dandstromal%5btitle%5dandsarcoma%5btitle%5d%29and%22loattrfreefulltext%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'ESS'], 'uid': ''}

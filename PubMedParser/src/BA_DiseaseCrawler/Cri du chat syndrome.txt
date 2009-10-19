@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cat cry syndrome', u'5p minus syndrome', u'Chromosome 5p deletion syndrome', u'5p- syndrome', u'Monosomy 5p', u'5p deletion syndrome', u'Chromosome 5p- syndrome'], 'uid': u'123450'}

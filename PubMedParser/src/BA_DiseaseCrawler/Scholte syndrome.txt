@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Early balding', u' patella luxation', u' acromicria and hypogonadism'], 'uid': u'181515'}

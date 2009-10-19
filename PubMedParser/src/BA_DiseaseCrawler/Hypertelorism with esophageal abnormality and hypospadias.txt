@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypospadias-dysphagia', u' syndrome', u'Opitz-Frias syndrome', u'G syndrome', u'Opitz-G syndrome', u' type 2', u'Hypertelorism hypospadias syndrome', u'OGS 2', u'BBB syndrome', u'Telecanthus with associated abnormalities', u'Opitz BBBG syndrome', u'GBBB syndrome'], 'uid': u'145410'}

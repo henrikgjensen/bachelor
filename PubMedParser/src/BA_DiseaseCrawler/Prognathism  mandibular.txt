@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Habsburg jaw', u'Hapsburg jaw'], 'uid': u'176700'}

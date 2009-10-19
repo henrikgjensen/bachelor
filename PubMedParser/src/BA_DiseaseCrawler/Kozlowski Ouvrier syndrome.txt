@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Agenesis of the corpus callosum with mental retardation and osseous lesions'], 'uid': u'8357037'}

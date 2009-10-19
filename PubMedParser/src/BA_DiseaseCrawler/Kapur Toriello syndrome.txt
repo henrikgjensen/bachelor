@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Long columella with cleft lip&#47;palate and eye', u' heart', u' and intestinal anomalies', u'Mental and growth retardation', u' congenital defects', u' heart abnormalities', u' intestinal malrotation', u' characteristic facies', u'Cleft lip palate', u' facial', u' eye', u' heart and intestinal anomalies'], 'uid': u'244300'}

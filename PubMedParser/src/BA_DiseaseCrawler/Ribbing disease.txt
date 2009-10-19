@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Multiple diaphyseal sclerosis', u'Diaphyseal sclerosis', u' multiple', u'Hereditary multiple diaphyseal sclerosis'], 'uid': u'601477'}

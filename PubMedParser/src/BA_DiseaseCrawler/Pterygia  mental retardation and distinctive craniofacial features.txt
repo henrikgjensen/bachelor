@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Haspeslagh syndrome', u'Pterygia mental retardation facial dysmorphism'], 'uid': u'177980'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Asprin-like platelet disorder', u'Familial thrombocytopenia with propensity to acute myelogenous leukemia'], 'uid': u'18723428'}

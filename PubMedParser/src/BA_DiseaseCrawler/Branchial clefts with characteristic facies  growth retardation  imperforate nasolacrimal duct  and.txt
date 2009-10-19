@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lee Root Fenske syndrome', u'Branchiooculofacial syndrome', u'BOF syndrome', u'BOFS', u'Lip pseudocleft-hemangiomatous branchial cyst syndrome', u'Hemangiomatous branchial clefts-lip pseudocleft syndrome'], 'uid': u'113620'}

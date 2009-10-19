@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aortic arch syndrome', u'Young female arteritis', u'Takayasu disease', u'Pulseless disease'], 'uid': u'207600'}

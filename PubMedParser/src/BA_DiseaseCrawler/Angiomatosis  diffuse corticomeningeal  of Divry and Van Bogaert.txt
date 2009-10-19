@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Corticomeningeal angiomatosis', u' myelination of the white substance of the centrum ovale', u' hemianopsia and marbled skin'], 'uid': u'206570'}

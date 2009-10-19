@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EDS VIB &#40;formerly&#41;', u'Ehlers-Danlos syndrome type 6B &#40;formerly&#41;', u'Fragilitas oculi with joint hyperextensibility', u'Corneal fragility', u' keratoglobus', u' blue sclerae', u' joint hyperextensibility'], 'uid': u'229200'}

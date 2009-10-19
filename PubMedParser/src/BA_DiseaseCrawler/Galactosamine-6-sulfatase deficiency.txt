@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mucopoly-saccharidosis type IVA', u'MPS IVA', u'MPS4A', u'GALNS deficiency', u'Morquio syndrome A'], 'uid': u'253000'}

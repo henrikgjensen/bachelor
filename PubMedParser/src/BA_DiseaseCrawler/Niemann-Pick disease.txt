@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sphingomyelin lipidosis', u'Sphingomyelinase deficiency'], 'uid': u'257200'}

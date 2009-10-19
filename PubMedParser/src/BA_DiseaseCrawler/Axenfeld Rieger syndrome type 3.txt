@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RIEG3', u'Axenfeld-rieger anomaly with or without cardiac defects and&#47;or sensorineural hearing loss', u'Rieger syndrome type 3', u'Anterior chamber cleavage syndrome'], 'uid': u'602482'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypertelorism hypospadias polysyndactyly syndrome', u'Acrofrontofacionasal dysostosis', u' severe', u'AFFN dysostosis 2', u'Naguib syndrome'], 'uid': u'239710'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neurogenic acroosteolysis', u'Giaccai type acroosteolysis', u'Hereditary sensory radicular neuropathy', u' recessive form', u'Neuropathy', u' progressive sensory', u' of children', u'Neuropathy', u' congenital sensory', u'Morvan disease'], 'uid': u'201300'}

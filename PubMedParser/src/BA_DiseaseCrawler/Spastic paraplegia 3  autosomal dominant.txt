@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SPG3A', u'SPG3', u'Strumpell disease', u'Familial spastic paraplegia', u' autosomal dominant', u' 1', u'FSP1'], 'uid': u'182600'}

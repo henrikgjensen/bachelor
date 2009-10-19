@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CLN1', u'Ceroid lipofuscinosis', u' neuronal', u' 1', u' variable age at onset'], 'uid': u'256730'}

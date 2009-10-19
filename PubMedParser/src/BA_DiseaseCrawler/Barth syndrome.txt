@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'BTHS', u'3-methylglutaconicaciduria type II', u'MGA type II'], 'uid': u'302060'}

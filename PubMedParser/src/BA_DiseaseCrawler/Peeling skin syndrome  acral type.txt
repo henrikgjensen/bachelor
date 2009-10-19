@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acral peeling skin syndrome', u'APSS'], 'uid': u'270300'}

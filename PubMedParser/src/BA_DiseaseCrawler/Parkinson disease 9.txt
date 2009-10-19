@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Park 9', u'Pallidopyramidal degeneration with supranuclear upgaze paresis', u' and dementia', u'KRPPD', u'Kufor-Rakeb syndrome'], 'uid': u'606693'}

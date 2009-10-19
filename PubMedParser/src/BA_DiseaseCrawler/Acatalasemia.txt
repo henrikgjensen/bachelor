@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Catalase deficiency', u'Acatalasia'], 'uid': u'115500'}

@@ -1,0 +1,1 @@
+{'terms': u'%28%28parsonageturnersyndrome%5btitle%5dandhasabstract%5btext%5d%29andenglish%5blang%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Acute brachial neuritis', u'Acute brachial neuritis syndrome', u'Acute brachial radiculitis syndrome', u'Acute shoulder neuritis'], 'uid': ''}

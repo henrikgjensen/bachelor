@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Agnathia', u' microstomia', u' synotia and cardiac and pulmonary maldevelopment', u'Plurimalformative syndrome'], 'uid': u'2701584'}

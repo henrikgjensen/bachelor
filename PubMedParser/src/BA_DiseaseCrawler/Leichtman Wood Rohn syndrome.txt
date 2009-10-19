@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anophthalmia', u' cleft lip&#47;palate', u' facial anomalies', u' and CNS anomalies and hypothalamic disorder'], 'uid': u'600776'}

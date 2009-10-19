@@ -1,0 +1,1 @@
+{'terms': u'%28angiosarcoma%5btitle%5dandbreast%5btitle%5d%29andhasabstract%5btext%5dand%222001/09/0609.46%22%5bpdat%5d%3a%222006/09/0609.46%22%5bpdat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Breast angiosarcoma'], 'uid': ''}

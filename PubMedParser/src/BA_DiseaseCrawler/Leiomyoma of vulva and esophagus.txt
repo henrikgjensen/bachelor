@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Leiomyomatosis', u' esophagogastric and vulvar', u'Esophagogastric and vulvar leiomyomatosis'], 'uid': u'150700'}

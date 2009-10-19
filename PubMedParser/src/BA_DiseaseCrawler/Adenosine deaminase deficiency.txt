@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ADA deficiency', u'ADA-SCID', u'Adenosine deaminase deficient severe combined immunodeficiency', u'SCID due to ADA deficiency', u'Severe combined immunodeficiency due to ADA deficiency'], 'uid': u'102700'}

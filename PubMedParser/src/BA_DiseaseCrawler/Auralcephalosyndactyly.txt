@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aural cephalosyndactyly', u'Kurczynski-Casperson syndrome'], 'uid': u'109050'}

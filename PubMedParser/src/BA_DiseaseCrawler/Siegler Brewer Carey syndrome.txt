@@ -1,0 +1,1 @@
+{'terms': u'siegler%5ball+fields%5d+and+brewer%5ball+fields%5d+and+carey%5ball+fields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Fatal multisystem syndrome involving the eyes', u' ears', u' lungs', u' intestines', u' and kidneys'], 'uid': ''}

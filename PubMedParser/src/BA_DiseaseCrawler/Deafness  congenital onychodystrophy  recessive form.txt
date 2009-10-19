@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deafness', u' Onycho-Osteodystrophy', u' mental Retardation syndrome', u'DOOR syndrome'], 'uid': u'220500'}

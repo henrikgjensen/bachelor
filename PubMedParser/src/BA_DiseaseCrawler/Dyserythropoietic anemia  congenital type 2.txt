@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDAN2', u'Anemia', u' dyserythropoietic', u' congenital type 2', u'CDA 2', u'Dyserythropoietic anemia', u' HEMPAS type', u'HEMPAS anemia', u'Hereditary Erythroblastic Multinuclearity with Positive Acidified-Serum test&#39;'], 'uid': u'224100'}

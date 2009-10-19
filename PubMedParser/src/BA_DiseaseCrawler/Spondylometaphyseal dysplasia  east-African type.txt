@@ -1,0 +1,1 @@
+{'terms': u'%28spondylometaphyseal%5btiab%5dandschmidt%5btiab%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

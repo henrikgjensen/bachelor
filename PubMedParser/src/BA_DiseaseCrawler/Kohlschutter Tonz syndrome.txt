@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epilepsy dementia amelogenesis imperfecta', u'Kohlschutter syndrome', u'Epilepsy and yellow teeth'], 'uid': u'226750'}

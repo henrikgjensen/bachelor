@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Corneal changes', u' hyperkeratosis', u' short stature', u' brachydactyly', u' and premature birth'], 'uid': u'122440'}

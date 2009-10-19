@@ -1,0 +1,1 @@
+{'terms': u'%28%28patella%5btitle/abstract%5dandhypoplasia%5btitle/abstract%5d%29andmentalretardation%5btitle/abstract%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Mental retardation with patellar hypoplasia and luxation'], 'uid': ''}

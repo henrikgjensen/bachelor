@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Stature', u' Hyperextensibility of joints or Hernia &#40;inguinal&#41;', u' Ocular depression', u' Rieger anomaly and Teething delay'], 'uid': u'269880'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Retinitis pigmentosa 8', u' formerly', u'RP8', u' formerly', u'Retinitis pigmentosa 21', u' formerly', u'RP21', u'  formerly'], 'uid': u'500004'}

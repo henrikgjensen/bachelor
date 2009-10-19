@@ -1,0 +1,1 @@
+{'terms': u'lubani%5ball+fields%5d+and+al+saleh%5bauthor%5d+and+teebi%5ball+fields%5d+and+(%22syndrome%22%5bmesh+terms%5d+or+syndrome%5btext+word%5d)', 'desc': '', 'db': u'pubmed', 'syn': [u'Cystic fibrosis', u' Helicobacter pylori gastritis', u' megaloblastic anemia', u' subnormal mentality and minor anomalies'], 'uid': ''}

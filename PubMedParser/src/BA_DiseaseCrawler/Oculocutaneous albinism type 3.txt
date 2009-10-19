@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OCA3', u'Albinism', u' oculocutaneous', u' type 3', u'Albinism 3'], 'uid': u'203290'}

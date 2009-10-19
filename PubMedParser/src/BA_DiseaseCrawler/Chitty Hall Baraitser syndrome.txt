@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deafness', u' femoral epiphyseal dysplasia', u' short stature and developmental delay', u'Growth retardation', u' deafness', u' femoral epiphyseal dysplasia', u' and lacrimal duct obstruction'], 'uid': u'601351'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AFD', u' Catania type', u'ACD', u'Opitz Mollica Sorge syndrome'], 'uid': u'101805'}

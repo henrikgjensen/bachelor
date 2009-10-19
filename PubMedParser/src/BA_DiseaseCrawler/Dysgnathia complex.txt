@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Agnathia-holoprosencephaly', u'Holoprosencephaly-agnathia'], 'uid': u'202650'}

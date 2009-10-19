@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Leri type pleonosteosis', u'Leri&#39;s pleonosteosis', u'Short stature', u' mongoloid facies', u' short spadelike hands', u' broad thumbs ', u'genu recurvatum', u' thick palmar and forearm fasciae', u' shuffling short-stepped gait'], 'uid': u'151200'}

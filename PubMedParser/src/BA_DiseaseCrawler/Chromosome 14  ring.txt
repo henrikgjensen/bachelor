@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28chromosome14%5btitle%5dandring%5btitle%5d%29andhasabstract%5btext%5d%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Ring chromosome 14'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Oculo facio cardio dental syndrome', u'Cataracts', u' microphthalmia', u' radiculomegaly and septal heart defects', u'OFCD syndrome', u'Marashi Gorlin syndrome'], 'uid': u'300166'}

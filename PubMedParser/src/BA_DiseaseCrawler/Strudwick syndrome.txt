@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dappled metaphysis syndrome', u'Spondyloepimetaphyseal dysplasia', u' Strudwick type', u'SMED Strudwick type', u'SMED type 1', u'SMD'], 'uid': u'184250'}

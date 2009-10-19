@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Diaphragmatic hernia', u' exomphalos', u' absent corpus callosum', u' hypertelorism', u' myopia', u' and sensorineural deafness', u'Diaphragmatic hernia-exomphalos-hypertelorism syndrome'], 'uid': u'222448'}

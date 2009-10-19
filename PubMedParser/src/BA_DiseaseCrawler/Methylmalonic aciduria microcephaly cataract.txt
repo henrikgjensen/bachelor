@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Atypical methylmalonic aciduria with progressive encephalopathy', u' microcephaly and cataract'], 'uid': ''}

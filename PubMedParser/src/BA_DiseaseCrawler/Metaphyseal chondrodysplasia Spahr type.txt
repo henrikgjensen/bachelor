@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Spahr type Metaphyseal chondrodysplasia', u'MCDS'], 'uid': u'250400'}

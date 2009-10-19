@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'L-2-hydroxyglutaric acidemia'], 'uid': u'236792'}

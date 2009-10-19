@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Poikiloderma of Rothmund-Thomson', u'Poikiloderma atrophicans and cataract', u'Poikiloderma Congenitale', u'RTS'], 'uid': u'268400'}

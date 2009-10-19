@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Alzheimer&#39;s disease without Tau pathology'], 'uid': u'604154'}

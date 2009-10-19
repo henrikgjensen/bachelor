@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Juvenile giant cell arteritis', u'JGCA', u'Juvenile cranial arteritis', u'Juvenile polymyalgia rheumatica', u'JPMR'], 'uid': u'187360'}

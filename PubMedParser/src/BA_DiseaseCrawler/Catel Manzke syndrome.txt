@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hyperphalangy-clinodactyly of index finger with Pierre Robin syndrome', u'Pierre Robin syndrome with hyperphalangy and clinodactyly', u'Palatodigital syndrome Catel-Manzke type', u'Index finger anomaly with Pierre Robin syndrome'], 'uid': u'302380'}

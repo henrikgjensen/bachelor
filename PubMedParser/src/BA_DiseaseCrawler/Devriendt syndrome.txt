@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Severe short stature', u' hyperphalangy of the index fingers', u' mental retardation and facial dysmorphism'], 'uid': u'610136'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital fissure of the abdominal cavity'], 'uid': u'230750'}

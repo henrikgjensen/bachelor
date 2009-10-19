@@ -1,0 +1,1 @@
+{'terms': u'tollner%5ballfields%5dandhorst%5ballfields%5dandmanzke%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Heptacarpo-octatarso-dactyly combined with multiple malformation'], 'uid': ''}

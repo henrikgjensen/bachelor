@@ -1,0 +1,1 @@
+{'terms': u'hardikar%5btitle%5dandsyndrome%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Cholestasis-pigmentary retinopathy-cleft palate syndrome'], 'uid': ''}

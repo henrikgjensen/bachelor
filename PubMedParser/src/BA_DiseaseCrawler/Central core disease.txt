@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CCD', u'CCO', u'Central core disease of muscle', u'Muscle core disease', u'Muscular central core disease', u'Myopathy', u' central fibrillar', u'Myopathy', u' central core', u'Shy-Magee syndrome'], 'uid': u'117000'}

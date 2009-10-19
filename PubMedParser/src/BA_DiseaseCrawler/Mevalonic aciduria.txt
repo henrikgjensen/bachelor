@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mevalonate kinase deficiency', u'Mevalonicaciduria'], 'uid': u'610377'}

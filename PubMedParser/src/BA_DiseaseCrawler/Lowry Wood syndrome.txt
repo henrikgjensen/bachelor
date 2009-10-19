@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epiphyseal dysplasia', u' microcephaly and nystagmus', u'LWS'], 'uid': u'226960'}

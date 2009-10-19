@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ZES', u'Gastrinoma', u'Pancreatic ulcerogenic tumor syndrome', u'Z E syndrome'], 'uid': u'131100'}

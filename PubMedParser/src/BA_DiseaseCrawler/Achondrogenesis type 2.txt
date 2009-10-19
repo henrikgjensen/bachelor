@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ACG2', u'Achondrogenesis', u' Langer-Saldino type', u'Langer-Saldino achondrogenesis', u'Chondrogenesis imperfecta'], 'uid': u'200610'}

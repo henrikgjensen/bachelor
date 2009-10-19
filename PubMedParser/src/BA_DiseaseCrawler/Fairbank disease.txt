@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Epiphyseal dysplasia Fairbank type', u'Fairbank multiple epiphyseal dysplasia', u'Dysplasia epiphysealis multiplex'], 'uid': u'132400'}

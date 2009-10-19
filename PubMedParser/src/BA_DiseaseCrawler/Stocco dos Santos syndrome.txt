@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Stocco dos Santos X-linked mental retardation syndrome', u'Mental retardation', u' Stocco dos Santos type'], 'uid': u'12673656'}

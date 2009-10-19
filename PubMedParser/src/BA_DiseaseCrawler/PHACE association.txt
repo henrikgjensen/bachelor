@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PHACES association', u'Posterior fossa brain malformations', u' hemangiomas of the face', u' arterial anomalies', u' cardiac anomalies', u' and eye abnormalities'], 'uid': u'606519'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Osteogenesis imperfecta with opalescent teeth', u'OI', u' type 1A', u'Osteogenesis imperfecta', u' type 1', u' with dentinogenesis imperfecta'], 'uid': u'166240'}

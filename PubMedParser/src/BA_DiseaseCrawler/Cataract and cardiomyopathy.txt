@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cardiomyopathy and cataract', u'Sengers syndrome'], 'uid': u'212350'}

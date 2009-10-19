@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NSX', u'Mental retardation', u' malformations', u' chromosome breakage', u' and development of T-cell leukemia'], 'uid': u'310465'}

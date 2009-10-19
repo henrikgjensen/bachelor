@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'G6P translocase deficiency'], 'uid': u'602671'}

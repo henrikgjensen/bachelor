@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Axenfeld Rieger anomaly with partially absent eye muscles', u' hydrocephaly', u' skeletal abnormalities', u' and a distinctive facial'], 'uid': u'109120'}

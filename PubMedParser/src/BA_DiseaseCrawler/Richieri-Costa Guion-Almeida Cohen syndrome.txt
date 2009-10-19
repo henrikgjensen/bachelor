@@ -1,0 +1,1 @@
+{'terms': u'richiericosta%5bauthor%5dandguionalmeida%5bauthor%5dandcohen%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

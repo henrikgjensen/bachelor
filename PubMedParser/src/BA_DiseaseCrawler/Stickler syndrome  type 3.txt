@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Stickler syndrome nonocular type', u'STL3'], 'uid': u'184840'}

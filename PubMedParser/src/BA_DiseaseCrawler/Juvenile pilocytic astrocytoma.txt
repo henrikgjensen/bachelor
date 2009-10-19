@@ -1,0 +1,1 @@
+{'terms': u'%28juvenile%5btitle%5dandpilocytic%5btitle%5dandastrocytoma%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'JPA', u'Pilocytic astrocytoma', u' juvenile'], 'uid': ''}

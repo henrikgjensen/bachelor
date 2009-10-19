@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Central areolar choroidal dystrophy'], 'uid': u'215500'}

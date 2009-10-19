@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Idiopathic inflammatory myopathy', u'Idiopathic inflammatory myopathy', u' familial', u'IIM', u'Myositis'], 'uid': u'160750'}

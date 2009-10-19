@@ -1,0 +1,1 @@
+{'terms': u'%28linear%5btitle%5dandscleroderma%5btitle%5d%29andhasabstract%5btext%5dand%221996/03/1409.36%22%5bedat%5d%3a%222006/03/1409.36%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Scleroderma', u' linear'], 'uid': ''}

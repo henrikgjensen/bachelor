@@ -1,0 +1,1 @@
+{'terms': u'acute%5btitle%5dandbiphenotypic%5btitle%5dandleukemia%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'BAL', u'Biphenotypic acute leukemia', u'Hybrid acute leukemias', u'Mixed-lineage acute leukemias'], 'uid': ''}

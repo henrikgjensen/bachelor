@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MRX14', u'Mental retardation', u' X-linked nonspecific', u' type 14'], 'uid': u'300062'}

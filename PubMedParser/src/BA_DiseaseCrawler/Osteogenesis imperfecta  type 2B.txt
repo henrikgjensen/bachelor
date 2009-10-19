@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OI type 2B', u'OI2B', u'Osteogenesis imperfecta', u' perinatal lethal', u' autosomal recessive'], 'uid': u'610854'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Ectrodactyly of lower limbs', u' congenital heart defect and characteristic facies', u'Van Den Ende Brunner syndrome'], 'uid': u'8867653'}

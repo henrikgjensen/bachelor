@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ichthyosis congenita', u'Lamellar exfoliation of newborn', u'Desquamation of newborn', u'Collodion fetus', u'Lamellar ichthyosis', u' type 1', u'LI1', u'Lamellar ichthyosis'], 'uid': u'242300'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dominant preaxial brachydactyly with hallux varus and thumb abduction'], 'uid': u'112450'}

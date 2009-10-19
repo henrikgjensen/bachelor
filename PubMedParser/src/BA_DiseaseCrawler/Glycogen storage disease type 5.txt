@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GSD 5', u'McArdle disease', u'McArdle type glycogen storage disease', u'PYGM deficiency', u'Muscle glycogen phosphorylase deficiency', u'Myophosphorylase deficiency'], 'uid': u'232600'}

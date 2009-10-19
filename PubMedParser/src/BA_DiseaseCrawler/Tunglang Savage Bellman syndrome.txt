@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Hearing loss insensitivity to aldosterone', u'Hearing loss and familial salivary gland insensitivity to aldosterone'], 'uid': u'2280149'}

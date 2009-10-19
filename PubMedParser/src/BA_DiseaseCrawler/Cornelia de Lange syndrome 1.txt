@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDLS1', u'CDLS', u'CDL', u'Typus degenerativus amstelodamensis', u'De Lange syndrome', u'Brachmann de Lange syndrome', u'BDLS'], 'uid': u'122470'}

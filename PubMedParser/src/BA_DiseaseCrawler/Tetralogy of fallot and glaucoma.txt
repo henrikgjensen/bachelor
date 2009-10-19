@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial tetralogy of fallot and glaucoma'], 'uid': u'187501'}

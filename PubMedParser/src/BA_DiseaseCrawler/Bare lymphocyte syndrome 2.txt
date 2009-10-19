@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bare lymphocyte syndrome type 2', u'BLS 2', u'Severe combined immunodeficiency', u' HLA class ii-negative', u'SCID', u' HLA Class 2-Negative'], 'uid': u'209920'}

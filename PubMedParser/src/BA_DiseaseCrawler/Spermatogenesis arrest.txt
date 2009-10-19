@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arrest of spermatogenesis'], 'uid': u'270960'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CPL', u'Lymphangiomatosis pulmonary', u'Pulmonary cystic lymphangiectasis', u'Congenital pulmonary Lymphangiectasia'], 'uid': u'265300'}

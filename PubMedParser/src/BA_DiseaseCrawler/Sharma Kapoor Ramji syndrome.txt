@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Thin ribs', u' thin tubular bones', u' abnormal facies and intrauterine growth retardation'], 'uid': u'2400886'}

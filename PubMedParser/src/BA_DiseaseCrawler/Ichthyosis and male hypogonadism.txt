@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ichthyosis', u' bilateral cryptorchidism', u' hypogenitalism and mental retardation'], 'uid': u'308200'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Cerebral aneurysm-cirrhosis syndrome'], 'uid': ''}

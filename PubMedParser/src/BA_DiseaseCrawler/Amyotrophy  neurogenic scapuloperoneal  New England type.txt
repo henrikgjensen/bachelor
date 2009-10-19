@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Scapuloperoneal spinal muscular atrophy', u'SPSMA'], 'uid': u'181405'}

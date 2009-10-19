@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ventricular fibrillation', u' paroxysmal familial', u'Paroxysmal familial ventricular fibrillation', u'Idiopathic ventricular fibrillation', u'IVF'], 'uid': u'603829'}

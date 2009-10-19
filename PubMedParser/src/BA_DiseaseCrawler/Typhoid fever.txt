@@ -1,0 +1,1 @@
+{'terms': u'typhoid%5bti%5d+and+%28%222008%2f09%2f26%22%5bpdat%5d+%3a+%222009%2f03%2f24%22%5bpdat%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Typhoid', u'Enteric fever'], 'uid': ''}

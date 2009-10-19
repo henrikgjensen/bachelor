@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pellagra-like rash with neurologic manifestations'], 'uid': u'260650'}

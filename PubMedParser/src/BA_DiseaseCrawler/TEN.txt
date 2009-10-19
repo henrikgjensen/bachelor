@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Toxic epidermal necrolysis', u'Mucocutaneous exfoliative disease', u'Staphylococcal scalded skin syndrome', u'SSSS'], 'uid': ''}

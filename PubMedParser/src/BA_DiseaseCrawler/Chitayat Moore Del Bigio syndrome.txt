@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28chitayat%5ballfields%5dandmoore%5ballfields%5d%29anddelbigio%5bauthor%5d%29and%28%22syndrome%22%5bmeshterms%5dorsyndrome%5btextword%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Familial Dandy-Walker malformation associated with macrocephaly', u' facial anomalies', u' developmental delay', u' and brain stem dysgenesis'], 'uid': ''}

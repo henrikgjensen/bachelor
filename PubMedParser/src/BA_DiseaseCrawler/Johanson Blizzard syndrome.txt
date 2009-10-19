@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'JBS', u'Nasal Alar Hypoplasia', u' Hypothyroidism', u' Pancreatic Achylia', u' Congenital Deafness', u'Ectodermal Dysplasia-Exocrine Pancreatic Insufficiency', u'Malabsorption-Ectodermal Dysplasia-Nasal Alar Hypoplasia'], 'uid': u'243800'}

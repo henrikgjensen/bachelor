@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28chromosome4%5btitle%5dandshort%5btitle%5d%29andarm%5btitle%5d%29anddeletion%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Chromosome 4p deletion', u'Monosomy 4p', u'Deletion 4p'], 'uid': ''}

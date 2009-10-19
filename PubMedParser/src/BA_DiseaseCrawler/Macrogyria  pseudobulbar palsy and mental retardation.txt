@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Kuzniecky Andermann syndrome'], 'uid': u'2500888'}

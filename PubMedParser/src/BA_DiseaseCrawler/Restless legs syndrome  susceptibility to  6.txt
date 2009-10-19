@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RLS6', u'Periodic limb movements in sleep'], 'uid': u'611185'}

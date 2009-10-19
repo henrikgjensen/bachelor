@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hydrocephaly', u'Ventriculomegaly'], 'uid': u'236600'}

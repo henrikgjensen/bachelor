@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28binswanger%27s%5btitle%5danddisease%5btitle%5d%29andhasabstract%5btext%5d%29andenglish%5blang%5d%29and%28%22hominidae%22%5bmeshterms%5dor%22human%22%5bmeshterms%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Dementia multi-infarct', u'Multi-infarct dementia'], 'uid': ''}

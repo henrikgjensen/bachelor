@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Amyloid polyneuropathy transthyretin related', u'TTR amyloid neuropathy', u'Transthyretin related amyloid polyneuropathy', u'Transthyretin amyloidosis'], 'uid': u'176300'}

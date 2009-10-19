@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RCD2', u'Cone degeneration', u' autosomal dominant progressive'], 'uid': u'601251'}

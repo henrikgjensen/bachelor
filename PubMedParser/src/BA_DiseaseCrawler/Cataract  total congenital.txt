@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CCT', u'Cataract', u' total congenital with posterior sutural opacities in Heterozygotes'], 'uid': u'302200'}

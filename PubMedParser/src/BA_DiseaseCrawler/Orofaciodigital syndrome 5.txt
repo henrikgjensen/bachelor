@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'OFD5', u'Oral-facial-digital type 5', u'Thurston syndrome', u'Polydactyly', u' postaxial', u' with median cleft of upper lip', u'OFD syndrome 5'], 'uid': ''}

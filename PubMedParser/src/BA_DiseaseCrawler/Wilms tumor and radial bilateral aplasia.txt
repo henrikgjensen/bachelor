@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bilateral radial aplasia with Wilms tumor', u'WT5', u'Wilms tumor 5'], 'uid': u'601583'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Startle disease', u' familial', u'Startle reaction', u' exaggerated', u'Exaggerated startle reaction', u'STHE', u'Stiff-baby syndrome', u'Stiff-man syndrome', u' congenital', u'Stiff-person syndrome', u' congenital', u'Kok disease', u'Hyperexplexia', u' hereditary'], 'uid': u'149400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PPT syndrome', u'Short stature', u' unique facies', u' enamel hypoplasia', u' progressive joint stiffness', u' and high-pitched voice'], 'uid': u'261560'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brauer syndrome', u'Bitemporal aplasia cutis congenita', u'Hereditary symmetrical aplastic nevi of temples', u'FFDD', u' type 1'], 'uid': u'136500'}

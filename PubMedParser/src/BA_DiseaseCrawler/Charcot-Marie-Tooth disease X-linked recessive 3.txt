@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CMTX3', u'Charcot Marie Tooth disease X-linked recessive 3', u'Charcot-Marie-Tooth disease', u' X-linked recessive', u' 3'], 'uid': u'302802'}

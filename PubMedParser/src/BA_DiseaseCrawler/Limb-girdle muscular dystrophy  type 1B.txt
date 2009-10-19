@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'LGMD1B', u'Muscular dystrophy', u' proximal', u' type 1B'], 'uid': u'159001'}

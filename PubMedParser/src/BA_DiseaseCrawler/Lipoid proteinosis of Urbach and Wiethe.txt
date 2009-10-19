@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lipoproteinosis', u'Hyalinosis cutis et mucosae'], 'uid': u'247100'}

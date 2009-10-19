@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Encephalopathy of childhood', u'Lennox-Gastaut syndrome', u'LGS'], 'uid': u'606369'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Poikiloderma', u' Alopecia', u' Retrognathism', u' and Cleft palate'], 'uid': u'600331'}

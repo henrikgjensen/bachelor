@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation ', u' X-linked with seizures', u' short stature and midface hypoplasia', u'Mental retardation ', u' X-linked', u' with creatine transport deficiency', u'X-linked creatine transporter deficiency', u'X-linked creatine deficiency syndrome'], 'uid': u'300352'}

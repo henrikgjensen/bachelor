@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GSD 6', u'Hers disease', u'GSD VI', u'Phosphorylase deficiency glycogen-storage disease of liver'], 'uid': u'232700'}

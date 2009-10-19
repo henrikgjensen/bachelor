@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Goldblatt syndrome'], 'uid': u'184260'}

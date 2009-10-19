@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sideroblastic anemia', u' autosomal recessive inheritance'], 'uid': u'269950'}

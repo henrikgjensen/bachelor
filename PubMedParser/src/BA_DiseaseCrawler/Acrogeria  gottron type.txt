@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Metageria', u'Acrometageria'], 'uid': u'201200'}

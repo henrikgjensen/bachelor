@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Pulmonary aortic stenosis obstructive uropathy', u'Hypoplastic pulmonary arteries and aorta with obstructive uropathy'], 'uid': u'6711910'}

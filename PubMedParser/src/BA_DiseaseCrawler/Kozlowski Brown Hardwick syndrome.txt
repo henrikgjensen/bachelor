@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Unusual facies', u' hooked clavicles', u' 13 pairs of ribs', u' widened metaphyses', u' square shaped vertebral bodies and communicating hydrocephalus'], 'uid': u'1408436'}

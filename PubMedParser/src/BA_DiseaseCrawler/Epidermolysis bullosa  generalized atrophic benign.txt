@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GABEB', u'Epidermolysis bullosa junctionalis', u' progressive', u'Epidermolysis bullosa junctionalis', u' severe nonlethal', u'Epidermolysis bullosa junctionalis', u' disentis type'], 'uid': u'226650'}

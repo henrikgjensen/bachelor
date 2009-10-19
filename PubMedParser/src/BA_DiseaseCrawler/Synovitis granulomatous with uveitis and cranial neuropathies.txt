@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arthrocutaneouveal granulomatosis', u'ACUG', u'Granulomatosis', u' familial', u' Blau type', u'Granulomatous inflammatory arthritis', u' dermatitis', u' and uveitis', u' familial', u'Blau syndrome', u'Granulomatosis', u' familial juvenile systemic', u'Jabs syndrome'], 'uid': u'186580'}

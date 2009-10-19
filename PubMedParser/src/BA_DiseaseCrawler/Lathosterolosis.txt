@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deficiency of 3-beta-hydroxysteroid-delta&#40;5&#41;-desaturase', u'3-beta-hydroxysteroid-delta&#40;5&#41;-desaturase deficiency', u'SC5D deficiency'], 'uid': u'607330'}

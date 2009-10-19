@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Komuragaeri Disease', u'Muscle spasms', u' intermittent with alopecia', u' diarrhea', u' and skeletal abnormalities'], 'uid': u'600705'}

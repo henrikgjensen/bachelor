@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Joint contractures', u' hyperkeratosis', u' and severe hypoplasia of the posterior columns', u'Arthrogryposis with Hyperkeratosis'], 'uid': u'208158'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Short stature', u' abnormal face', u' skeletal deformities', u' and progressive mental retardation', u'Spondyloepimetaphyseal dysplasia X-linked with mental deterioration', u'SEMD', u' X-linked with mental deterioration'], 'uid': u'300232'}

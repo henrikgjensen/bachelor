@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anophthalmia Waardenburg syndrome', u'Waardenburg anophthalmia syndrome', u'Anophthalmos-syndactyly', u'Ophthalmoacromelic syndrome'], 'uid': u'206920'}

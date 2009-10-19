@@ -1,0 +1,1 @@
+{'terms': u'%22thyroidneoplasms%22%5bmesh%5dandmedullary%5btiab%5dandenglish%5blang%5dand%22humans%22%5bmeshterms%5dand%222000/01/0712.22%22%5bedat%5d%3a%222005/01/0512.22%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Thyroid carcinoma', u' medullary', u'Medullary thyroid cancer &#40;MTC&#41;'], 'uid': ''}

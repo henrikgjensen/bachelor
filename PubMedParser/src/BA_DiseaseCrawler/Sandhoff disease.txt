@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Beta-hexosaminidase-beta-subunit deficiency', u'GM2 gangliosidosis', u' type 2', u'Total hexosaminidase deficiency', u'Hexosaminidase A and B deficiency Disease', u'Sandhoff-Jatzkewitz-Pilz disease'], 'uid': u'268800'}

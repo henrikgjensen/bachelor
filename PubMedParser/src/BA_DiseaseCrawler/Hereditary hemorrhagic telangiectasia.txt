@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Telangiectasia', u' hereditary hemorrhagic', u' of Rendu', u' Osler', u' and Weber', u'Osler-Weber-Rendu syndrome', u'ORW disease', u'Telangiectasia', u' hereditary hemorrhagic', u' type 1', u'Osler-Rendu-Weber Disease', u'HHT'], 'uid': u'187300'}

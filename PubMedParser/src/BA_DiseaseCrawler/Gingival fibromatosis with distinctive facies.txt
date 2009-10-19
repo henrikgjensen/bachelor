@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Gingival fibromatosis with craniofacial dysmorphism'], 'uid': u'228560'}

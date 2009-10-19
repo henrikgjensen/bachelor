@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mental retardation', u' X-linked', u' syndromic 5', u'Mental retardation', u' X-linked', u' with Dandy-Walker malformation', u' basal ganglia disease', u' and seizures', u'Pettigrew syndrome', u'MRXS5', u'PGS'], 'uid': u'304340'}

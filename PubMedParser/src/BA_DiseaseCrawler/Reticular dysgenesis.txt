@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RD', u'Severe combined immunodeficiency with leukopenia', u'Congenital aleukia', u'DeVaal disease'], 'uid': u'267500'}

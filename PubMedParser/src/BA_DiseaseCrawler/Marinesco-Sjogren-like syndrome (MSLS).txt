@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Juvenile cataract', u' cerebellar atrophy', u' mental retardation', u' and myopathy'], 'uid': u'248810'}

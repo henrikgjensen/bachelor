@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Renal coloboma syndrome', u'Optic nerve coloboma with renal disease', u'Optic coloboma', u' vesicoureteral reflux', u' and renal anomalies', u'Coloboma of optic nerve with renal disease'], 'uid': u'120330'}

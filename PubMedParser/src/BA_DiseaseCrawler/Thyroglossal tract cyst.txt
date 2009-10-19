@@ -1,0 +1,1 @@
+{'terms': '', 'desc': 'A thyroglossal duct cyst is a neck mass or lump that develops from cells and tissues remaining after the formation of the thyroid gland during embryonic development. ', 'db': u'omim', 'syn': [u'Thyroglossal duct cysts', u'Thyroglossal duct cysts familial', u'Hereditary thyroglossal duct cysts', u'Familial thyroglossal duct cyst'], 'uid': u'188455'}

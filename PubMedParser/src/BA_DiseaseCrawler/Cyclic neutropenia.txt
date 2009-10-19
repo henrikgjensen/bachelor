@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neutropenia', u' cyclic', u'Cyclic hematopoiesis', u'Cyclic fluctuations in blood neutrophils', u' monocytes', u' eosinophils', u' lymphocytes', u' platelets', u' and reticulocytes'], 'uid': u'162800'}

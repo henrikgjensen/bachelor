@@ -1,0 +1,1 @@
+{'terms': u'langerhans%5btitle%5d+and+cell%5btitle%5d+and+sarcoma%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Malignant Langerhans cell sarcoma'], 'uid': ''}

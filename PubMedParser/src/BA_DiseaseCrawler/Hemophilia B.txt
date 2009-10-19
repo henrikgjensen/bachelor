@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Christmas disease', u'Factor IX deficiency', u'HEM B'], 'uid': u'306900'}

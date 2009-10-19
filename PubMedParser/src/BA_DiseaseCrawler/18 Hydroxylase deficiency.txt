@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aldosterone deficiency due to defect in 18 hydroxylase', u'Aldosterone deficiency 1', u'18 alpha hydroxylase deficiency', u'Corticosterone methyloxidase type 1 deficiency', u'CMO 1 deficiency'], 'uid': u'203400'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Dextrocardia', u' bronchiectasis', u' and sinusitis', u'Siewert syndrome'], 'uid': ''}

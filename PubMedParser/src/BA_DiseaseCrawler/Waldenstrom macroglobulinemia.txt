@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Waldenstrom&#39;s macroglobulinaemia', u'Lymphoplasmacytic lymphoma', u'Waldenstrom&#39;s syndrome'], 'uid': ''}

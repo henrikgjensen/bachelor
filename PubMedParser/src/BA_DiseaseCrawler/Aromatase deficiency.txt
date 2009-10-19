@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial gynecomastia', u' due to increased aromatase activity', u'Increased aromatase activity', u'Pseudohermaphroditism', u' female', u' due to placental aromatase deficiency'], 'uid': u'107910'}

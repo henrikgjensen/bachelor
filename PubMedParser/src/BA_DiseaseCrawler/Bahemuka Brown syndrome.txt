@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Heredofamilial syndrome of spastic paraplegia', u' dysarthria and cutaneous lesions', u'Spastic paraplegia facial cutaneous lesions'], 'uid': u'7117711'}

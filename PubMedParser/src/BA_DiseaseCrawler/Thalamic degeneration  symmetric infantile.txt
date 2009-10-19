@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Symmetric infantile thalamic degeneration', u'Symmetrical thalamic degeneration in infants'], 'uid': ''}

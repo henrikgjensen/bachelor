@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Metaphyseal dysplasia hypertelorism hypospadias'], 'uid': ''}

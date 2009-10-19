@@ -1,0 +1,1 @@
+{'terms': u'%28%22syphilis%22%5bmajr%5dand%22meningitis%22%5bmajr%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Syphilitic meningitis', u'Meningitis', u' syphilitic', u'Meningeal syphilis'], 'uid': ''}

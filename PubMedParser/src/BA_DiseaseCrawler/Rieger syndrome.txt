@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Goniodysgenesis hypodontia', u'Iridogoniodysgenesis with somatic anomalies'], 'uid': u'180500'}

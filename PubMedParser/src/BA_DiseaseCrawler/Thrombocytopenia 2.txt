@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'THC2', u'Thrombocytopenia autosomal dominant 2'], 'uid': u'188000'}

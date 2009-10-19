@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Summitt&#39;s acrocephalosyndactyly', u'Recessive acrocephalosyndactyly with normal intelligence'], 'uid': u'272350'}

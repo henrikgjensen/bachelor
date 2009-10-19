@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PHP', u'Panhypopituitarism X-linked', u'PHPX', u'Pituitary dwarfism IV &#40;formerly&#41;'], 'uid': u'312000'}

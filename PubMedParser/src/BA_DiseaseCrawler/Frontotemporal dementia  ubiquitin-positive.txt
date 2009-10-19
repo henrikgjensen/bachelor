@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dementia', u' hereditary dysphasic disinhibition', u'HDDD'], 'uid': u'607485'}

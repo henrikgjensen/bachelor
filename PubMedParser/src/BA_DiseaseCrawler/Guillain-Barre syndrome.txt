@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acute inflammatory demyelinating polyneuropathy', u'Landry-Guillain-Barre syndrome', u'GBS', u'Acute inflammatory polyneuropathy'], 'uid': u'139393'}

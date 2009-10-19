@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Okihiro syndrome', u'DR syndrome', u'Duane anomaly with radial abnormalities and deafness', u'DRRS', u'Acrorenoocular syndrome'], 'uid': u'607323'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Patella aplasia-hypoplasia', u'PTLAH', u'Familial absence of the patella', u'Familial aplasia of the patella &#40;subtype&#41;'], 'uid': u'168860'}

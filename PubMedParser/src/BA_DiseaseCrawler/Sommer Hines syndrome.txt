@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Tetramelic monodactyly with autosomal dominant inheritance'], 'uid': ''}

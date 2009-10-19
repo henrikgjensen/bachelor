@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Afibrinogenemia congenital', u'Congenital afibrinogenemia'], 'uid': u'202400'}

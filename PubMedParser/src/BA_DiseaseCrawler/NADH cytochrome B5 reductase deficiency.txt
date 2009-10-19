@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Methemoglobinemia due to deficiency of methemoglobin reductase', u'NADH-dependent methemoglobin reductase deficiency', u'Diaphorase deficiency', u'NADH diaphorase deficiency', u'NADH methemoglobin reductase deficiency'], 'uid': u'250800'}

@@ -1,0 +1,1 @@
+{'terms': u'abderhalden-lignac-kaufmann%5ballfields%5dand%28%22disease%22%5bmeshterms%5dordisease%5btextword%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Abderhalden Lignac Kaufmann disease'], 'uid': ''}

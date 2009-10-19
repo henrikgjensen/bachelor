@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Infantile spasm', u'IS', u'X-linked infantile spasm syndrome', u'X-linked infantile spasms', u'West&#39;s syndrome', u'Tonic spasms with clustering', u' arrest of psychomotor development and hypsarrhythmia on EEG'], 'uid': u'308350'}

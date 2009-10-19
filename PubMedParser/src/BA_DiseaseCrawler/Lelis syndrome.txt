@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ectodermal dysplasia', u' hypohidrotic', u' with acanthosis nigricans'], 'uid': u'608290'}

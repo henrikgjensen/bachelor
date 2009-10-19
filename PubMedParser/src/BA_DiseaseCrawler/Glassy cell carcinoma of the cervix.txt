@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Glassy cell adenocarcinoma of the uterine cervix', u'GCC of the cervix'], 'uid': u'14749637'}

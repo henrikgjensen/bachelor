@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT19', u'Episodic kinesigenic dyskinesia 2', u'EKD2'], 'uid': u'611031'}

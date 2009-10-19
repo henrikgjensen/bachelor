@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MCKD1', u'MCKD', u'Medullary cystic kidney disease', u' autosomal dominant', u'ADMCKD1', u'Polycystic kidneys', u' medullary type'], 'uid': u'174000'}

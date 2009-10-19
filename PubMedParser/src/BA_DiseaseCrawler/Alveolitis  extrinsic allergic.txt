@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Allergic interstitial pneumonitis', u'Extrinsic allergic pneumonia hypersensitivity Pneumonitis', u'Hypersensitivity pneumonitis', u'Allergic pneumonitis'], 'uid': ''}

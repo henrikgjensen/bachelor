@@ -1,0 +1,1 @@
+{'terms': u'%28%28monosomy%5btitle%5dand4q%5btitle%5d%29or%284q%5btitle%5danddeletion%5btitle%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Chromosome 4 Long Arm Deletion', u'Chromosome 4q- Syndrome', u'Deletion 4q', u'Monosomy 4q'], 'uid': ''}

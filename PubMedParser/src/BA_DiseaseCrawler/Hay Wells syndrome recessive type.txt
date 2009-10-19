@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ankyloblepharon', u' ectodermal defects', u' and cleft lip and palate and congenital adhesions between the upper and lower jaws &#40;alveolar synechiae&#41;'], 'uid': u'106260'}

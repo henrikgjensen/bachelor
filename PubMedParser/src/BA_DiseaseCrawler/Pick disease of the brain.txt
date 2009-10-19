@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pick&#39;s disease', u'Lobar atrophy of the brain', u'Dementia with lobar atrophy and neuronal cytoplasmic inclusions'], 'uid': u'172700'}

@@ -3,7 +3,8 @@ from BeautifulSoup import *
 from urlparse import urljoin
 from time import strftime, sleep
 import TextCleaner
-import writeOut
+import IOmodule
+import os
 
 # Get compiled regexps
 removeTags=TextCleaner.removeHTMLTags()
@@ -12,6 +13,10 @@ removeRefs=TextCleaner.removeReferences()
 removeSlashes=TextCleaner.removeSlashes()
 removeCommas=TextCleaner.removeCommas()
 removeWhitespaces=TextCleaner.removeWhitespaces()
+
+# Folders to save downloaded diseases in
+diseaseFolder="BA_DiseaseCrawler"
+errorFolder="URL_error_log"
 
 # Pages to be crawled (by default)
 defaultPages=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Z','0-49']
@@ -104,7 +109,8 @@ def fetchPubmedDiseaseTerms(pages):
     Takes a URL-list of pages to crawl for pubmed terms, uids and optional
     describtions.
 
-    Returns a dictionary on the form {DiseaseName:{uid:'',term:[],desc:''}}
+    Returns a dictionary on the form:
+    {DiseaseName:{db='',terms:'',syn=[],uid:'',desc:''}}
     """
 
     pubmedURLs={}
@@ -132,11 +138,17 @@ def fetchPubmedDiseaseTerms(pages):
             soup=BeautifulSoup(c.read())
         except HTMLParseError:
             print 'Experienced difficulties opening %s' % page
-            writeOut.writeOut("BA_DiseaseCrawler/URL_error_log",strftime('%H%M%S'),page)
+            IOmodule.writeOut(diseaseFolder+'/'+errorFolder,strftime('%H%M%S'),page)
             continue
 
         # Get disease name
         title=soup.html.head.title.string
+
+        # Some pages are 'officially' not working. Catch them here
+        if title=='NIH Office of Rare Diseases Research (ORDR) - Error':
+            IOmodule.writeOut(diseaseFolder+'/'+errorFolder,'Page error'+strftime('%H%M%S'),page)
+            print 'Page Error on %s' % page
+            continue
 
         # Allocate dictionary
         pubmedURLs[title]={}
@@ -186,7 +198,7 @@ def fetchPubmedDiseaseTerms(pages):
                         printvar += 1
                         found = True
                         print 'Found', str(printvar), 'PubMed terms/uids.', title, '. (Special case 1: No tokens)'
-                    # Special case 2: If there is a webenv the url is (by experience) not working but the disease name is still valuable for a pbumed search
+                    # Special case 2: If there is a webenv, the url is (by experience) not working but the disease name is still valuable for a pbumed search
                     elif '&webenv=' in urlString:
                         printvar += 1
                         found = True
@@ -238,7 +250,7 @@ def fetchPubmedDiseaseTerms(pages):
         if ((pagenumber%20)==0):
             # Print status report
             print '*****************************************************'
-            print 'Total pages looked in:',str(pagenumber),'\nPages found:',str(printvar),'\nMissing in total:',(len(pages)-printvar),'\nDescriptions found:',str(desccounter)
+            print 'Total pages looked in:',str(pagenumber),'\nPages found:',str(printvar),'\nRemaining in total:',(len(pages)-printvar),'out of',len(pages),'\nDescriptions found:',str(desccounter)
             print '*****************************************************'
             print 'Writing to files...'
             # Write out and flush dictionary
@@ -248,6 +260,26 @@ def fetchPubmedDiseaseTerms(pages):
                 disease=removeSlashes.sub(' ',disease)
                 disease=removeCommas.sub(' ',disease)
                 # Write out
-                writeOut.writeOut("BA_DiseaseCrawler",disease,content)
+                IOmodule.writeOut(diseaseFolder,disease,content)
             pubmedURLs={}
             print 'Wrote successfully. Dictionary flushed.'
+
+def readDiseases(indexStart=0,indexStop=None):
+
+    """
+    Function for returning the content of all or some of the crawled diseases.
+
+    By default all are returned in a list of dictionaries on the form:
+    {DiseaseName:{db='',terms:'',syn=[],uid:'',desc:''}}
+    """
+
+    path=os.getenv("HOME")+'/'+diseaseFolder+'/'
+
+    files=[f for f in os.listdir(path) if os.path.isfile(path+f)]
+
+    contents=[]
+    for file in files[indexStart:indexStop]:
+        content=eval(open(path+file,'r').read())
+        contents.append(content)
+
+    return contents

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Teebi Al-Saleh Hassoon syndrome', u'Macrosomia microphthalmia cleft palate'], 'uid': u'248110'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Sclerosing dysplasia of bone with ichthyosis and premature ovarian failure', u'Osteosclerosis with ichthyosis and POF'], 'uid': u'609993'}

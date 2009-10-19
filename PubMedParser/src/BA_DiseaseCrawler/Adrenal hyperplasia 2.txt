@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'3 alpha beta-hydroxysteroid dehydrogenase type 2 deficiency of', u'3 alpha beta-hydroxysteroid dehydrogenase deficiency', u'3 alpha beta HSD deficiency', u'HSDB', u'HSDB3'], 'uid': u'201810'}

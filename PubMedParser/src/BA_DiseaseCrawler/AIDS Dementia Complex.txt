@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'ADC', u'Aids-related cognitive impairment'], 'uid': ''}

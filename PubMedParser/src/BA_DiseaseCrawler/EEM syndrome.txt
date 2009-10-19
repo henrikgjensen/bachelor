@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ectodermal dysplasia', u' ectrodactyly', u' and macular dystrophy'], 'uid': u'225280'}

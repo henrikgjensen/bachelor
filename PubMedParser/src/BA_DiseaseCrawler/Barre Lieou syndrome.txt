@@ -1,0 +1,1 @@
+{'terms': u'%28barre%5btitle%5dandlieou%5btitle%5dandsyndrome%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Syndrome of Barre-Lieou', u'Headaches', u' tinnitus', u' cranial nerve dysfunction', u' hearing changes', u' vertigo', u' hoarsness', u' aphonia and decreased memory and concentration', u'Barre-Lieou syndrome'], 'uid': ''}

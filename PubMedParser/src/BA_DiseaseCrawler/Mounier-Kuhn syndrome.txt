@@ -1,0 +1,1 @@
+{'terms': u'%28mounier-kuhn%5btitle%5dandsyndrome%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Congenital tracheobronchomegaly', u'Mounier Kuhn syndrome'], 'uid': ''}

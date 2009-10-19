@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial pulmonary capillary hemangiomatosis'], 'uid': u'234810'}

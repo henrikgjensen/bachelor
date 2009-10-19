@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Quinquaud&#39;s folliculitis depilans', u'Quinquaud&#8217;s disease', u'Folliculitis decalvans', u'Arnozan&#8217;s syndrome', u'Quinquaud&#8217;s syndrome'], 'uid': ''}

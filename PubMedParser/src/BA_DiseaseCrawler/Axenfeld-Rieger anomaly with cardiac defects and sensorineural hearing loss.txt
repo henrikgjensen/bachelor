@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Axenfeld-Rieger anomaly with atrial septal defect and sensorineural hearing loss'], 'uid': u'602482'}

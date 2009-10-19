@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hypoparathyroidism short stature mental retardation seizures retardation', u' and developmental delay', u'Hypoparathyroidism with short stature', u' mental retardation', u' and seizures', u'Sanjad-Sakati syndrome'], 'uid': u'241410'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Isolated hyperostosis of the calvarium'], 'uid': u'302030'}

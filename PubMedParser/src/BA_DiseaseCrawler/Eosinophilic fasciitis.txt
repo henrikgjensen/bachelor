@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Shulman syndrome', u'EF'], 'uid': u'226350'}

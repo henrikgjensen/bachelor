@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Histidase deficiency', u'HIS deficiency', u'HAL deficiency', u'Histidine ammonia-lyase deficiency'], 'uid': u'235800'}

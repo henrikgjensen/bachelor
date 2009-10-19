@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Renal dysplasia retinal aplasia', u'Loken-Senior syndrome', u'Renal-retinal syndrome', u'Juvenile nephronophthisis with Leber amaurosis', u'SLSN1'], 'uid': u'266900'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Syndactyly type I with microcephaly and mental retardation', u'Unusual facial appearance', u' microcephaly', u' growth and mental retardation and syndactyly'], 'uid': u'272440'}

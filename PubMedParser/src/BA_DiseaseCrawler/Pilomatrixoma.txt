@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Pilomatricoma', u'PTR', u'Calcifying epithelioma of Malherbe'], 'uid': u'132600'}

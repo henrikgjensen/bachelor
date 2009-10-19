@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'AMC', u' distal', u' X-linked'], 'uid': u'301830'}

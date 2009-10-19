@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Kinky hair', u' photosensitivity', u' broken eyebrows and eyelashes', u' and nonprogressive mental retardation', u'Calderon Gonzalez-Cantu syndrome'], 'uid': u'234030'}

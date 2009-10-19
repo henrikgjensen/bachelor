@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Peptide growth factors deficiency', u'Hoepffner dreyer reimers syndrome'], 'uid': u'233805'}

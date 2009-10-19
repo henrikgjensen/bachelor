@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PPKS1', u'Striate palmoplantar keratoderma 1', u'SPPK1', u'Keratoderma', u' palmoplantar striate form 1'], 'uid': u'148700'}

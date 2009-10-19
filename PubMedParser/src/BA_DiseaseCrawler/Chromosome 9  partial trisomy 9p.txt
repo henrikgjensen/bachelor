@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28trisomy%5btitle%5dand9p%5btitle%5d%29andpartial%5btitle%5d%29or%28%28duplication%5btitle%5dand9p%5btitle%5d%29andpartial%5btitle%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Trisomy 9p partial', u'Duplication 9p partial'], 'uid': ''}

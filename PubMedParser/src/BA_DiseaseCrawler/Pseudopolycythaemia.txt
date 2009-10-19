@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Pseudopolycythemia', u'Gaisboeck&#39;s syndrome', u'Stress polycythemia'], 'uid': ''}

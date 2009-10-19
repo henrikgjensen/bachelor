@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RRS', u'Ataxia-deafness-retardation syndrome with ketoaciduria', u'Familial ataxia-hypogonadism syndrome', u'Ketoaciduria-mental deficiency syndrome'], 'uid': u'245100'}

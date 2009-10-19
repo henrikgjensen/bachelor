@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acrocephalopolysyndactyly type 4', u'Goodman camptodactyly', u'ACPS 4'], 'uid': u'201020'}

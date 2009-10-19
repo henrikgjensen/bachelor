@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28cavernoushemangioma%5btitle%5dandhasabstract%5btext%5d%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29and%28%221997/04/2308.47%22%5bedat%5d%3a%222002/04/2208.47%22%5bedat%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Cavernous hemangioma'], 'uid': ''}

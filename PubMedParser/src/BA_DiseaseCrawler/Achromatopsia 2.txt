@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ACHM2', u'Colorblindness', u' total', u'RMCH2', u'Rod monochromatism 2', u'Rod monochromacy 2'], 'uid': u'216900'}

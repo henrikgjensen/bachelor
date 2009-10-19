@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital contractures', u' ectodermal dysplasia', u' cleft lip&#47;palate', u' and developmental impairment', u'Arthrogryposis', u' ectodermal dysplasia', u' cleft lip palate and developmental delay'], 'uid': u'301815'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'SCID', u' AR', u' T-cell negative', u' B-cell negative', u' NK cell-positive'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Unilateral aplasia of the optic nerve with cryptophthalmus and contralateral microphthalmus', u'Oculo-cerebral dysplasia'], 'uid': u'6813561'}

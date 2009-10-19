@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'EPS', u'Elastoma intrapapillare perforans verruciformis', u'Miescher elastoma'], 'uid': u'130100'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PRPP synthetase deficiency'], 'uid': u'311850'}

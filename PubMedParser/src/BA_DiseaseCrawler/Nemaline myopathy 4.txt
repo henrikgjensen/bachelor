@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Nemaline myopathy caused by mutation in the tropomyosin 2 gene', u'NEM4'], 'uid': u'609285'}

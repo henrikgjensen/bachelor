@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Delleman syndrome', u'OCCS', u'Orbital cyst with cerebral and focal dermal malformations', u'OCC Syndrome', u'Oculo-cerebro-cutaneous syndrome'], 'uid': u'164180'}

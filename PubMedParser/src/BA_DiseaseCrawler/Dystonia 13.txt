@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DYT13', u'Dystonia 13', u' torsion'], 'uid': u'607671'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Aspartylglucos-aminuria', u'Aspartylglucos-amidase &#40;AGA&#41; deficiency', u'AGU', u'AGA deficiency', u'Glycosylasparaginase deficiency'], 'uid': u'208400'}

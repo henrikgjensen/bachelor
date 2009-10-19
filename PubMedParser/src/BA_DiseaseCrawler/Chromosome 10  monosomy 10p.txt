@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'10p Deletion Syndrome &#40;Partial&#41;', u'Chromosome 10', u' Partial Deletion &#40;short arm&#41;', u'Chromosome 10', u' 10p- Partial', u'Monosomy 10p'], 'uid': ''}

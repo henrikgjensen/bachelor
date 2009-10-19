@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PAPA syndrome', u'Pyogenic arthritis', u' pyoderma gangrenosum', u' and severe cystic acne', u'PAPAS', u'Familial recurrent arthritis', u'FRA'], 'uid': u'604416'}

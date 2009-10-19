@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital polycystic dilatation of intrahepatic bile ducts', u'Caroli disease isolated', u'Cystic dilatation of the intrahepatic biliary tree'], 'uid': u'600643'}

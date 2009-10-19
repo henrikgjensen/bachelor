@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dermochondrocorneal dystrophy', u'Francois syndrome', u'DCCD'], 'uid': u'221800'}

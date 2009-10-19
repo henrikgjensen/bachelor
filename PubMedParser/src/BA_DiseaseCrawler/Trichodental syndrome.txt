@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Trichodental dysplasia', u'Tricho-dental syndrome', u'Tricho-dental dysplasia'], 'uid': u'601453'}

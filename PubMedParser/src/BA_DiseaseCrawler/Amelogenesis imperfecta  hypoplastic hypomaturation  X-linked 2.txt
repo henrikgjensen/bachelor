@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Amelogenesis imperfecta 3', u' hypoplastic type', u' formerly', u'AIH3', u' formerly', u'Enamel hypoplasia', u' X-linked'], 'uid': u'301201'}

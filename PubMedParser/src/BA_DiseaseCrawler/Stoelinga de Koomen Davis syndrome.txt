@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Non erupted teeth with maxillary hypoplasia and genu valgum', u'Multiple non-erupting teeth', u' maxillo-zygomatical hypoplasia and other congenital defects'], 'uid': u'273050'}

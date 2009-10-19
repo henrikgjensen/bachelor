@@ -1,0 +1,1 @@
+{'terms': u'childhood-onset%5ballfields%5dand%28%22schizophrenia%22%5bmeshterms%5dorschizophrenia%5btextword%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Childhood schizophrenia'], 'uid': ''}

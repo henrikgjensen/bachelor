@@ -1,0 +1,1 @@
+{'terms': u'stewart%5btitle%5dandtreves%5btitle%5dandsyndrome%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Angiosarcoma associated with chronic lymphedema', u'Postmastectomy extremity angiosarcoma', u'Lymphangiosarcoma following mastectom'], 'uid': ''}

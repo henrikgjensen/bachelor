@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Instituto Venezolano de Investigaciones Cientificas syndrome', u'Radial ray defects', u' hearing impairment', u' external ophthalmoplegia', u' and thrombocytopenia', u'Oculootoradial syndrome', u'OORS'], 'uid': u'147750'}

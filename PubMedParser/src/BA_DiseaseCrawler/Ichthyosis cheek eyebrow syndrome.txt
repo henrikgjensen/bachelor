@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'ICE syndrome', u'Sidransky Feinstein Goodman syndrome'], 'uid': u'146720'}

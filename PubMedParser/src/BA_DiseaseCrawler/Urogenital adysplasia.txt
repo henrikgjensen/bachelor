@@ -1,0 +1,1 @@
+{'terms': u'(urogenital%5btitle%5d+and+adysplasia%5btitle%5d)+and+hasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

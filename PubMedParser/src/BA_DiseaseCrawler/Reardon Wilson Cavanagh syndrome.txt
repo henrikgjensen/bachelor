@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial ataxia', u' deafness', u' and developmental delay', u'Ataxia', u' hearing loss', u' and mental retardation', u'Ataxia-deafness-retardation syndrome', u'ADR syndrome'], 'uid': u'208850'}

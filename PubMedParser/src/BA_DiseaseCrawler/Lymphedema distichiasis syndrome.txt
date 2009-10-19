@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Lymphedema with distichiasis', u'Hereditary lymphedema-distichiasis syndrome &#40;subtype&#41;'], 'uid': u'153400'}

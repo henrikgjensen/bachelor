@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CML-like syndrome', u' familial'], 'uid': u'600080'}

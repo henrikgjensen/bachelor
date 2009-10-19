@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Palpebral coloboma lipoma Syndrome'], 'uid': u'167730'}

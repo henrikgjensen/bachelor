@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'NFDR syndrome', u'Freire-Maia Pinheiro Opitz syndrome'], 'uid': u'256690'}

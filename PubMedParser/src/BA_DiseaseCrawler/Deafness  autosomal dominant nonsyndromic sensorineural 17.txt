@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'DFNA17', u'Nonsyndromic hereditary deafness DFNA17', u'Late-onset progressive hereditary hearing impairment due to cochleosaccular degeneration'], 'uid': u'603622'}

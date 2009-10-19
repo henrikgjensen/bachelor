@@ -1,0 +1,1 @@
+{'terms': u'adenocarcinoid%5btitle%5dandtumor%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Deficiency of the aminoacylase-1 enzyme', u'ACY1 deficiency', u'ACY1D'], 'uid': u'609924'}

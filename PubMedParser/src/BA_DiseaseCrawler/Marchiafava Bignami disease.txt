@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'MBD', u'Chronic Marchiafava-Bignami syndrome', u'Acute Marchiafava-Bignami disease'], 'uid': ''}

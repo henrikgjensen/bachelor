@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Degos syndrome', u'Malignant atrophic papulosis', u'Degos&#39;s malignant atrophic papulosis', u'Atrophic papulosis', u' malignant'], 'uid': u'602248'}

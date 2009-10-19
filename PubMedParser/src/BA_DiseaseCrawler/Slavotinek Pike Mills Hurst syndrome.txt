@@ -1,0 +1,1 @@
+{'terms': u'slavotinek%5ballfields%5dandhurst%5ballfields%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Cataracts', u' motor system disorder', u' short stature', u' learning difficulties', u' and skeletal abnormalities'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'IBGC childhood onset', u'Bilateral striopallidodentate calcinosis', u'Bilateral striopallidodentate calcinosis childhood onset', u'Cerebral calcification nonarteriosclerotic idiopathic childhood-onset'], 'uid': u'114100'}

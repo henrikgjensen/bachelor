@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Neuroectodermal melanolysosomal disease', u'Melanolysosomal neurocutaneous syndrome', u'Neuro-ectodermal melanolysosomal syndrome'], 'uid': u'256710'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Encephalopathy', u' recurrent', u' of childhood'], 'uid': u'130950'}

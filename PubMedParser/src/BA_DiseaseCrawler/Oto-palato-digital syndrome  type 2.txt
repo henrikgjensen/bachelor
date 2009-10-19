@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Otopalatodigital syndrome type 2', u'Andre syndrome', u'OPD 2 syndrome', u'Cranio-oro-digital syndrome', u'Faciopalatoosseous syndrome', u'FPO'], 'uid': u'304120'}

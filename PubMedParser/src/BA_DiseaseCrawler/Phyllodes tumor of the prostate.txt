@@ -1,0 +1,1 @@
+{'terms': u'%28phyllodestumor%5btextword%5dorphyllodestumour%5btextword%5dor%22phyllodestumor%22%5bmeshterms%5d%29and%28%22prostate%22%5bmeshterms%5dorprostate%5btextword%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Malignant phyllodes tumor of prostate &#40;subtype&#41;'], 'uid': ''}

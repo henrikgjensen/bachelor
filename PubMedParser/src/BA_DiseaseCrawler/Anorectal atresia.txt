@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Anorectal malformation', u'Anal atresia', u'Anorectal stenosis'], 'uid': u'207500'}

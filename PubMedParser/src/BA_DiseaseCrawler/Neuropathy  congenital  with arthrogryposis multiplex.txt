@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital non-progressive peripheral neuropathy with arthrogryposis multiplex'], 'uid': u'162370'}

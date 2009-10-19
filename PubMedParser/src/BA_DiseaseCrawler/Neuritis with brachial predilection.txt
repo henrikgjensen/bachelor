@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachial plexus neuropathy', u' hereditary', u'Amyotrophy', u' hereditary neuralgic', u' with predilection for brachial plexus', u'Hereditary brachial plexus neuropathy', u'NAPB'], 'uid': u'162100'}

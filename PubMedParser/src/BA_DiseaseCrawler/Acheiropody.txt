@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Acheiropodia', u'ACHP', u'Acheiropody', u' Brazilian type'], 'uid': u'200500'}

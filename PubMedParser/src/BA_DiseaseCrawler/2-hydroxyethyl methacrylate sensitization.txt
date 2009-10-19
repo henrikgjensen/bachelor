@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Sensitization to 2-hydroxyethyl methacrylate', u'2-HEMA sensitization'], 'uid': u'8156756'}

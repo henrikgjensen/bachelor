@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Mesomelia synostoses', u'Dominant mesomelic shortness of stature with acral synostoses', u' umbilical anomalies', u' and soft palate agenesis', u'Verloes-David syndrome'], 'uid': u'600383'}

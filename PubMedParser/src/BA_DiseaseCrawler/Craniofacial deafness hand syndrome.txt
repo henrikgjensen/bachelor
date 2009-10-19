@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'CDHS', u'Features of flat facial profile', u' hypertelorism', u' hypoplastic nose with slitlike nares', u' and a sensorineural hearing loss'], 'uid': u'122880'}

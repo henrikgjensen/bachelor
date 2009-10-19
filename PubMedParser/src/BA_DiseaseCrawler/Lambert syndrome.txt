@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Branchial dysplasia', u' clubfoot', u' inguinal hernia', u' and biliary atresia'], 'uid': u'245550'}

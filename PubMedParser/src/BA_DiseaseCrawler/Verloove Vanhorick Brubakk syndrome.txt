@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cleft Limb Heart Malformation Syndrome', u'CLH Syndrome'], 'uid': u'215850'}

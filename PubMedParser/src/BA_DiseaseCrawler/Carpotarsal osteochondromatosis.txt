@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dominant carpotarsal osteochondromatosis', u'Dysplasia epiphysealis hemimelica with chondromas and osteochondromas', u'Maroteaux Le Merrer Bensahel syndrome'], 'uid': u'127820'}

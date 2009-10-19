@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PGL4', u'Pheochromocytoma', u' extraadrenal', u' and cervical paraganglioma', u'Paragangliomas', u' hereditary extraadrenal', u'Pheochromocytoma', u' familial extraadrenal', u'Paraganglioma', u' familial malignant', u'Carotid body tumors and multiple extraadrenal pheochromocytomas'], 'uid': u'115310'}

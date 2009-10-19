@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Morquio syndrome', u' nonkeratan-sulfate-excreting type'], 'uid': u'252300'}

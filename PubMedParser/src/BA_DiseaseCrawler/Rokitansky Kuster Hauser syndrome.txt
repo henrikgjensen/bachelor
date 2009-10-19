@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RKH syndrome', u'Von Mayer Rokitansky Kuster anomaly', u'Mayer Rokitansky Kuster Hauser syndrome', u'Congenital absence of uterus and vagina', u'Uterus bipartitus solidus rudimentarius cum vagina solida', u'MRK anomaly', u'MRKH anomaly', u'CAUV'], 'uid': u'277000'}

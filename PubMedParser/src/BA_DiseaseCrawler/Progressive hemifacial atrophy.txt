@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Parry-Romberg syndrome', u'Hemifacial atrophy', u' progressive', u'Romberg hemi-facial atrophy'], 'uid': u'141300'}

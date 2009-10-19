@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Autosomal recessive spondylocostal dysostosis'], 'uid': u'609813'}

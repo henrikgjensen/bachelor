@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'TCPT', u'Thrombocytopenia Paris-Trousseau type', u'Paris-Trousseau syndrome'], 'uid': u'188025'}

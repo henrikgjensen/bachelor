@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dermal Ridges', u'Ridges-off-the-end syndrome'], 'uid': u'125530'}

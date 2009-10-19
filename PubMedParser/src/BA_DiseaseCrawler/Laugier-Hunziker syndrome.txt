@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'LHS', u'Laugier and Hunziker pigmentation'], 'uid': ''}

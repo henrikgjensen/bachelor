@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital bilateral perisylvian syndrome', u'Perisylvian syndrome', u' congenital bilateral', u'CBPS', u'Polymicrogyria', u' bilateral perisylvian', u'PMGX'], 'uid': u'300388'}

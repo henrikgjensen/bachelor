@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachydactyly of the hands and feet with duplication of the first toes', u'Brachydactyly with major proximal phalangeal shortening'], 'uid': u'272150'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'GPHN', u'Giant hairy nevus', u'Giant pigmented nevus', u'Bathing trunk nevus', u'Congenital melanocytic nevus - large', u'Congenital giant pigmented nevus'], 'uid': u'137550'}

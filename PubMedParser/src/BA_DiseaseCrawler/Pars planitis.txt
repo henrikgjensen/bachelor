@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial pars planitis &#40;subtype&#41;'], 'uid': u'606177'}

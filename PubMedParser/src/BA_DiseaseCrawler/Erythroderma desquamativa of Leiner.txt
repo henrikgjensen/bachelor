@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Generalized erythroderma', u' diarrhea', u' and failure to thrive', u'Erythroderma Desquamativum of Infancy', u'Leiner-Moussous Desquamative Erythroderma'], 'uid': u'120900'}

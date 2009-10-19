@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'OI type 3', u'Osteogenesis imperfecta', u' progressively deforming', u' with normal sclerae'], 'uid': u'259420'}

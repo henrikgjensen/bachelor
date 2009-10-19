@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PGL 1', u'Paragangliomas', u' familial', u' 1', u'Paragangliomata', u'Pgl', u'Glomus tumors', u' familial', u' 1', u'Chemodectomas', u'Carotid body tumors', u'CBT1', u'Glomus jugulare tumors', u'Paraganglioma', u' carotid body'], 'uid': u'168000'}

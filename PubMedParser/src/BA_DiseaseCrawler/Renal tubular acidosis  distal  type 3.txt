@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Bicarbonate-wasting RTA', u'RTA', u' bicarbonate-wasting type', u'RTA', u' dislocation type'], 'uid': u'267200'}

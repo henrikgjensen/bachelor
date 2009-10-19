@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'VVS', u'Syncope', u' familial vasovagal'], 'uid': u'609289'}

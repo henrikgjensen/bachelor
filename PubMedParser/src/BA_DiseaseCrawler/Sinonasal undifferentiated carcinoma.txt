@@ -1,0 +1,1 @@
+{'terms': u'sinonasal%5btitle%5dandundifferentiated%5btitle%5dandcarcinoma%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'SNUC', u'Highly aggressive undifferentiated carcinoma of the nasal cavity and paranasal sinuses'], 'uid': ''}

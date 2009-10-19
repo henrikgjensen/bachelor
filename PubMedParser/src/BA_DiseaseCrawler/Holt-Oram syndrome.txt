@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Heart-hand syndrome', u'HOS', u'Atriodigital dysplasia', u'Ventriculo-radial syndrome', u'Atrio digital syndrome', u'Cardiac-limb syndrome', u'Heart-hand syndrome', u' type 1', u'HOS 1', u'\n', u'\n', u'\r\n\t\t\t\tThe ', u'\r\n\t\t\t\tThe ', u'\n', u'\n'], 'uid': u'142900'}

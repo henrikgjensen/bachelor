@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Aniridia', u' lens luxation', u' mental retardation', u'Aniridia', u' ectopia lentis', u' abnormal upper incisors and mental retardation'], 'uid': u'3266265'}

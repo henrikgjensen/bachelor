@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'JBS', u'Chromosome 11q deletion syndrome', u'Partial 11q monosomy syndrome'], 'uid': u'147791'}

@@ -1,0 +1,1 @@
+{'terms': u'rubella%5btitle%5dandhasabstract%5btext%5dand%22loattrfreefulltext%22%5bsb%5dand%222005/12/1211.16%22%5bpdat%5d%3a%222006/12/1211.16%22%5bpdat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'German measles', u'Three day measles'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': u'lipomatous%5btitle%5dandhemangiopericytoma%5btitle%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

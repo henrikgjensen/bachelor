@@ -1,0 +1,1 @@
+{'terms': u'(subcutaneous%5btitle%5d+and+panniculitis-like%5btitle%5d+and+t-cell%5btitle%5d+and+lymphoma%5btitle%5d)+and+%22loattrfree+full+text%22%5bsb%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

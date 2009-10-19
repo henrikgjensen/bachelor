@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Noninflammatory corneal thining', u'KC'], 'uid': u'148300'}

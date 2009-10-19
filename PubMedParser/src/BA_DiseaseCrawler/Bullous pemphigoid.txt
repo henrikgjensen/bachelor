@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Senile Dermatitis Herpetiformis', u'Pemphigoid', u'Parapemphigus', u'Old Age Pemphigus', u'Benign Pemphigus'], 'uid': ''}

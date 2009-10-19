@@ -1,0 +1,1 @@
+{'terms': u'%28ochronosis%5btitle%5dandhereditary%5btitle%5d%29andhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Hereditary ochronosis'], 'uid': ''}

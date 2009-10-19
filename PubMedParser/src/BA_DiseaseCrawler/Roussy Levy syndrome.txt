@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Roussy Levy hereditary areflexic dystasia', u'Roussy-Levy disease', u'Hereditary areflexic dystasia'], 'uid': u'180800'}

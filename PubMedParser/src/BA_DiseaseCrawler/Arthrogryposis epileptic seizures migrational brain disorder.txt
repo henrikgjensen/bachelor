@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Arthrogryposis multiplex congenita with epileptic seizures and migrational brain disorder'], 'uid': u'7839807'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Cerebellar ataxia hypogonadotropic hypogonadism'], 'uid': ''}

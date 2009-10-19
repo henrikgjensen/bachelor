@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Familial pemphigus vulgaris'], 'uid': u'169610'}

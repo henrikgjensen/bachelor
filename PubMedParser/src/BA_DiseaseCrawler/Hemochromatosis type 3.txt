@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hemochromatosis due to defect in transferrin receptor 2', u'HFE3'], 'uid': u'604250'}

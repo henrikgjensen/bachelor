@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Brachydactyly and intraventricular conduction defect', u'Upper limb malformations and congenital cardiac anomalies'], 'uid': u'140450'}

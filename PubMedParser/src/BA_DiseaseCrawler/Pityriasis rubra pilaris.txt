@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'PRP', u'Familial pityriasis rubra pilaris', u'Pityriasis rubra pilaris--familial type'], 'uid': u'173200'}

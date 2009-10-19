@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hereditary vertical nystagmus', u'Congenital hereditary vertical nystagmus'], 'uid': u'164150'}

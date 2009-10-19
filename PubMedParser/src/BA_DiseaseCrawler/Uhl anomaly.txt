@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Parchment right ventricle', u'Uhl&#39;s anomaly'], 'uid': u'107970'}

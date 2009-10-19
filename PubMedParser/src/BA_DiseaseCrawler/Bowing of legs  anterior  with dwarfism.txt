@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Weismann Netter syndrome', u'Toxopachyoteose diaphysaire tibio peroniere', u'Bowed diaphysis ', u'cortical anomaly ', u' tibia absent&#47;abnormal ', u' fibula absent&#47;abnormal'], 'uid': u'112350'}

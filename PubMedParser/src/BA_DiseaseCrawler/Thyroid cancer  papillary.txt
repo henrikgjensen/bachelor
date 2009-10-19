@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Thyroid carcinoma', u' papillary', u'Papillary thyroid carcinoma'], 'uid': u'188550'}

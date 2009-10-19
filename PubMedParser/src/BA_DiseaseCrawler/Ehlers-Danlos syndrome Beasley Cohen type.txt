@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Ehlers-Danlos syndrome with mental retardation', u' deafness', u' and cataract'], 'uid': u'608763'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Xanthurenic aciduria', u'Kynureninase deficiency'], 'uid': u'236800'}

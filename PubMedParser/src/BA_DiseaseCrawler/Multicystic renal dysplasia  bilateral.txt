@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'MRD', u'Pelvi-ureteric junction obstruction', u'PUJO', u'Hydronephrosis due to PUJO'], 'uid': u'143400'}

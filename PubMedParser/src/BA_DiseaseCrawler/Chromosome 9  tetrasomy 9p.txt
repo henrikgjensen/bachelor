@@ -1,0 +1,1 @@
+{'terms': u'%28tetrasomy%5btitle%5dand9p%5btitle%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Tetrasomy 9p', u'Tetrasomy', u' short arm of chromosome 9', u'Chromosome 9', u' tetrasomy 9p mosaicism', u'Mosaic tetrasomy 9p'], 'uid': ''}

@@ -1,0 +1,1 @@
+{'terms': u'%28%28%28%28%28%28%28non-small%5btitle%5dandcell%5btitle%5d%29andlungcancer%5btitle%5d%29andhasabstract%5btext%5d%29andreview%5bptyp%5d%29andenglish%5blang%5d%29and%22human%22%5bmeshterms%5d%29and%28%222001/11/2112.00%22%5bedat%5d%3a%222002/05/2012.00%22%5bedat%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'NSCLC'], 'uid': ''}

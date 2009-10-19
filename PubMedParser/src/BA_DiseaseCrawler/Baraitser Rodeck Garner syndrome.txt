@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Craniosynostosis', u' mental retardation', u' seizures', u' choroidal coloboma', u' dysplastic kidneys', u' bat ears', u' cleft lip and palate', u' and beaked nose'], 'uid': u'218650'}

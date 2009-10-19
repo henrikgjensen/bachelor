@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Endemic pemphigus foliaceus', u'FS', u'Brazilian pemphigus', u'South American pemphigus', u'Brazilian pemphigus foliaceus'], 'uid': u'125670'}

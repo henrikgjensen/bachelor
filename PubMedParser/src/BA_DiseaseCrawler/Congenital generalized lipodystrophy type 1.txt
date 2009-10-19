@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Berardinelli-Seip congenital lipodystrophy type 1', u'BSCL1'], 'uid': u'608594'}

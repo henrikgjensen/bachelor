@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Fumaricaciduria', u'Fumarase deficiency'], 'uid': u'606812'}

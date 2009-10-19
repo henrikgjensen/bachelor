@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Congenital corneal anesthesia with retinal abnormalities', u' deafness', u' unusual facies', u' persistent ductus arteriosus', u' and mental retardation'], 'uid': u'122430'}

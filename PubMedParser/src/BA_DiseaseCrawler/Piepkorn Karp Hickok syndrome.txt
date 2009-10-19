@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'pubmed', 'syn': [u'Short ribs', u' polysyndactyly', u' cranial synostosis', u' cleft palate cardiovascular and urogenital anomalies and severe ossification defect'], 'uid': u'594914'}

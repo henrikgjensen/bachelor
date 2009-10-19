@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'FCMD', u'Muscular dystrophy', u' congenital progressive', u' with mental retardation', u'Muscular dystrophy', u' congenital', u' with central nervous system involvement', u'Muscular dystrophy', u' congenital', u' Fukuyama type', u'Cerebromuscular dystrophy', u' Fukuyama type'], 'uid': u'253800'}

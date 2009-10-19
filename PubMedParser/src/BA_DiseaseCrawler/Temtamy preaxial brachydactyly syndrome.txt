@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Preaxial brachydactyly syndrome', u' Temtamy type', u'Mental retardation syndrome with preaxial brachydactyly', u' hyperphalangism', u' deafness and orodental anomalies'], 'uid': u'605282'}

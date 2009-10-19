@@ -1,0 +1,1 @@
+{'terms': u'%28%22lung%22%5bmesh+terms%5d+or+%22lung%22%5ball+fields%5d+or+%22pulmonary%22%5ball+fields%5d%29+and+dysmaturity%5ball+fields%5d+and+%28%22syndrome%22%5bmesh+terms%5d+or+%22syndrome%22%5ball+fields%5d%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Pulmonary dysmaturity syndrome'], 'uid': ''}

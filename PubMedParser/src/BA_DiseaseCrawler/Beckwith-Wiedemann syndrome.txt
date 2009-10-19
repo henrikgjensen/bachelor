@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Wiedemann-Beckwith Syndrome &#40;WBS&#41;', u'Exomphalos macroglossia gigantism syndrome', u'EMG Syndrome'], 'uid': u'130650'}

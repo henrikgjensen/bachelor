@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Dejerine-Sottas syndrome', u'DSS', u'Hereditary motor and sensory neuropathy 3', u'HMSN3', u'Dejerine-Sottas neuropathy', u'DSN', u'Charcot-Marie-Tooth disease', u' demyelinating', u' type 4F', u'CMT4F'], 'uid': u'145900'}

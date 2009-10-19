@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Asymetric crying facies', u'Facial paresis partial unilateral', u'Cayler syndrome', u'Partial unilateral facial paralysis', u'ACF', u'Cayler&#39;s syndrome'], 'uid': u'125520'}

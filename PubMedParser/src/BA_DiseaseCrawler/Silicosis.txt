@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Chronic silicosis', u'Accelerated silicosis', u'Acute silicosis', u'Experimental silicosis'], 'uid': ''}

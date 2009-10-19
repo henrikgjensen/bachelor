@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Cerebellar vermis hypo&#47;aplasia', u' Oligophrenia', u' Ataxia congenital', u' Coloboma', u' and Hepatic fibrosis'], 'uid': u'216360'}

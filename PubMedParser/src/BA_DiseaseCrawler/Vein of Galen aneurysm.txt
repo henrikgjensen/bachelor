@@ -1,0 +1,1 @@
+{'terms': u'vein%5btitle%5dandgalen%5btitle%5dandaneurysm%5btitle%5dandhasabstract%5btext%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Ectasia or varix of the vein of Galen', u'Galenic arteriovenous malformation', u'Vein of Galen aneurysm malformation', u'VGAM', u'Galen vein aneurysm'], 'uid': ''}

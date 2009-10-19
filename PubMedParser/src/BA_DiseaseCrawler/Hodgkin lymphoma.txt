@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Hodgkin disease', u'Hodgkin&#39;s lymphoma', u'Lymphoma', u' Hodgkin&#39;s'], 'uid': u'236000'}

@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Amyloid neuropathy type 1', u'Familial Portuguese polyneuritic amyloidosis', u'Hereditary neuropathic amyloidosis', u'Neuropathic amyloid syndrome', u'Wohlwill-Corino Andrade syndrome'], 'uid': u'176300'}

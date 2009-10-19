@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'Ampullary somatostatinoma', u'Somatomedin-secreting carcinoid', u'Carcinoid somatostatinoma', u'Malignant islet cell tumor', u'Somatostatin-secreting pancreatic neoplasm'], 'uid': ''}

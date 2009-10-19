@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Optic atrophy', u' hearing loss', u' and peripheral neuropathy', u' autosomal recessive', u'Optic atrophy', u' neural deafness', u' and distal neurogenic amyotrophy'], 'uid': u'258650'}

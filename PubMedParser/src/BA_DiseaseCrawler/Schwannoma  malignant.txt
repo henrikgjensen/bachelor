@@ -1,0 +1,1 @@
+{'terms': u'malignant%5btitle%5dandschwannoma%5btitle%5dandhasabstract%5btext%5dand%22animals%22%5bmeshterms%5d', 'desc': '', 'db': u'pubmed', 'syn': [], 'uid': ''}

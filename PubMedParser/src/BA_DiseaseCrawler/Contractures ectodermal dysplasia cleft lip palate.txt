@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'Arthrogryposis', u' ectodermal dysplasia', u' cleft lip&#47;palate', u' and developmental delay'], 'uid': u'301815'}

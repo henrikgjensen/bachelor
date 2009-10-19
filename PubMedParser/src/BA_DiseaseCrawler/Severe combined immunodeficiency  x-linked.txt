@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'SCIDX1', u'SCIDX', u'XSCID', u'SCID', u' x-linked', u'Immunodeficiency 4', u'IMD4', u'Severe combined immunodeficiency', u' x-linked', u' Tcell negative', u' B cell positive', u' NK cell negative'], 'uid': u'300400'}

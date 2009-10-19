@@ -1,0 +1,1 @@
+{'terms': u'sars%5btitle%5dandhasabstract%5btext%5dand%28%22human%22%5bmeshterms%5dor%22hominidae%22%5bmeshterms%5d%29and%222002/09/1707.26%22%5bedat%5d%3a%222004/09/1607.26%22%5bedat%5d', 'desc': '', 'db': u'pubmed', 'syn': [u'Severe acute respiratory syndrome'], 'uid': ''}

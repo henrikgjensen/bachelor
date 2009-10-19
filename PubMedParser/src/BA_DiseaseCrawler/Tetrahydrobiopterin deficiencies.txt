@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': 'pubmed', 'syn': [u'BH4 deficiency', u'Hyperphenylalaninemia caused by a defect in biopterin metabolism', u'Hyperphenylalaninemia', u' non-phenylketonuric', u'Non-phenylketonuric hyperphenylalaninemia'], 'uid': ''}

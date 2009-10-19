@@ -1,0 +1,1 @@
+{'terms': u'%28%28monosomy%5btitle%5dand1p%5btitle%5d%29or%28deletion%5btitle%5dand1p%5btitle%5d%29%29', 'desc': '', 'db': u'pubmed', 'syn': [u'Monosomy 1p', u'Deletion 1p'], 'uid': ''}

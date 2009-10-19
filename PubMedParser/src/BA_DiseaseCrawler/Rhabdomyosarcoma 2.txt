@@ -1,0 +1,1 @@
+{'terms': '', 'desc': '', 'db': u'omim', 'syn': [u'RMS2', u'Alveolar rhabdomyosarcoma', u'RMSA', u'Rhabdomyosarcoma', u' alveolar'], 'uid': u'268220'}
