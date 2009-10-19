@@ -269,7 +269,7 @@ def readDiseases(indexStart=0,indexStop=None):
     """
     Function for returning the content of all or some of the crawled diseases.
 
-    By default all are returned in a list of dictionaries on the form:
+    By default all are returned in a dictionary of diseases on the form:
     {DiseaseName:{db='',terms:'',syn=[],uid:'',desc:''}}
     """
 
@@ -277,9 +277,10 @@ def readDiseases(indexStart=0,indexStop=None):
 
     files=[f for f in os.listdir(path) if os.path.isfile(path+f)]
 
-    contents=[]
+    contents={}
     for file in files[indexStart:indexStop]:
-        content=eval(open(path+file,'r').read())
-        contents.append(content)
-
+        diseaseName=file[0:file.find('.')]
+        diseaseAttr=eval(open(path+file,'r').read())
+        contents[diseaseName]=diseaseAttr
+        
     return contents
