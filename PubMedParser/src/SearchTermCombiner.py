@@ -1,4 +1,4 @@
-def searchTermCombiner(listOfSearchTerms, additionalSearchOptions=''):
+def searchTermCombiner(listOfSearchTerms, additionalSearchOptions='', minimumToCombine=2):
 
     # We might consider making this a class.
 
@@ -14,7 +14,7 @@ def searchTermCombiner(listOfSearchTerms, additionalSearchOptions=''):
 
     # We need to get the last term containing all search terms,
     # stopping with len(lOST) results in one missing combination
-    for i in range(1, len(listOfSearchTerms) + 1): 
+    for i in range(minimumToCombine, len(listOfSearchTerms) + 1): 
         for uc in _xuniqueCombinations(listOfSearchTerms, i):
             combinedSearchTermList.append(' '.join(uc))
         
