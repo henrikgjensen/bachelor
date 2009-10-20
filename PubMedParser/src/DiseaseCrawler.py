@@ -275,7 +275,7 @@ def readDiseases(indexStart=0,indexStop=None):
 
     path=os.getenv("HOME")+'/'+diseaseFolder+'/'
 
-    files=[f for f in os.listdir(path) if os.path.isfile(path+f)]
+    files=sorted([f for f in os.listdir(path) if os.path.isfile(path+f)])
 
     contents={}
     for file in files[indexStart:indexStop]:
