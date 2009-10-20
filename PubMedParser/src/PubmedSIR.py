@@ -140,15 +140,17 @@ def getArticleIDs(diseaseDictionary):
 
 
         synonymArticleIDlist={}
+        optimizedSynonymList=[]
         for synonym in diseaseDictionary[disease]['syn']:
             synonymArticleIDlist[synonym]=[]
             synonymArticleIDlist[synonym].extend(getArticleIDsFromMultiSource('pubmed', '', TC.unquoteString(synonym)+additionalSearchOptions ,0))
             if len(synonymArticleIDlist[synonym])==0:
                 del synonymArticleIDlist[synonym]
-                del diseaseDictionary[disease][synonym]
+            else:
+                optimizedSynonymList.append(synonym)
 
         # Call SearchTermCombiner to combine search terms and adds hasabstract[text] behind it.
-        diseaseDictionary[disease]['syn'] = STC.searchTermCombiner(diseaseDictionary[disease]['syn'], additionalSearchOptions)
+        diseaseDictionary[disease]['syn'] = STC.searchTermCombiner(optimizedSynonymList, additionalSearchOptions)
 
 #        print 'Downloading into synonym list:'
         for synonym in diseaseDictionary[disease]['syn']:
