@@ -55,7 +55,7 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
             dictionary[disease]['records']=[]
             dictionary[disease]['decription'] = diseaseDictionary[disease]['description']
 
-            dictionary[disease]['records'].extend(getMedlineList(dictionary[disease]['PMIDs']))
+            dictionary[disease]['records'].extend(getMedlineList(diseaseDictionary[disease]['PMIDs']))
 
             IOmodule.writeOut(directory, disease, dictionary[disease], 'w')
         
