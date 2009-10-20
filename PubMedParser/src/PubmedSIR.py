@@ -22,8 +22,10 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
     # Default directory to save information files in.
     directory = 'diseaseInformation'
 
+    d=DC.readDiseases(startIndex,stopIndex)
+
     for i in range(steps):
-        diseaseList = DC.readDiseases(i * numberToGet, i * numberToGet + numberToGet)
+        diseaseList = d[i * numberToGet:i * numberToGet + numberToGet]
 
         diseaseDictionary = {}
 
