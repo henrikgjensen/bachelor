@@ -43,19 +43,17 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
     # want to segment it the download to better be able to handle
     # crashes and such, but its only a proto type.
 
-        dictionary = getArticleIDs(diseaseDictionary)
-
-#        print dictionary
+        dictionary = {}
+        diseaseDictionary = getArticleIDs(diseaseDictionary)
 
         print 'Completed dictionary construction for iteration', str(i)
         print 'We still need to complete', str(numberOfRareDiseases - (i*numberToGet))
     
-        for disease in dictionary:
+        for disease in diseaseDictionary:
 
+            dictionary[disease] = {}
             dictionary[disease]['records']=[]
-
-#            print 'This is disease', disease
-#            print 'This is dictionary[\'disease\'][\'PMIDs\']', dictionary[disease]['PMIDs']
+            dictionary[disease]['decription'] = diseaseDictionary[disease]['description']
 
             dictionary[disease]['records'].extend(getMedlineList(dictionary[disease]['PMIDs']))
 
