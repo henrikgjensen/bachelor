@@ -12,41 +12,39 @@ from time import sleep
 # Collector function that gathers all functionality.
 def gatherOfAllThings():
 
-
-    # ================= Begin Junk Code =================
-    numberOfRareDiseases = 6881 # DiseaseCrawler.getNumber()
+    numberOfRareDiseases = len(DC.readDiseases()) # Get the total number of diseases from DC.
     numberToGet = 5 # Default number per chuck, before writeout
     steps = int(math.ceil(numberOfRareDiseases / numberToGet))
 
     # Default directory to save information files in.
     directory = 'diseaseInformation'
-    # path = os.getenv("HOME")+'/'+directory+'/'
-    
-    # if not os.path.isdir(path):
-    #     os.mkdir(path)
 
     for i in range(steps):
-        diseaseDictionary = DC.readDiseases(i * numberToGet, i * numberToGet + numberToGet)
+        diseaseList = DC.readDiseases(i * numberToGet, i * numberToGet + numberToGet)
 
-    #    for i in range(steps):
-    #    getRange(i*numberToGet, i*numberToGet+numberToGet)
-    # ================== End Junk Code ==================
+        diseaseDictionary = {}
 
+        for i in range(len(diseaseList)):
+#            print diseaseList[i].keys(), diseaseList[i].values()
+            diseaseDictionary[diseaseList[i].keys()[0]] = diseaseList[i].values()[0]
+
+            
+#        print diseaseDictionary
+        
     # Calls the DiseaseCrawler to get all the diseases from it.
     # diseaseDictionary = DC.readDiseases()
 
     # Calls the module itself to get 500 PMIDs for each disease. Might
     # want to segment it the download to better be able to handle
     # crashes and such, but its only a proto type.
+
         dictionary = getArticleIDs(diseaseDictionary)
 
-#        print dictionary
 #        print dictionary
 
         print 'Completed dictionary construction for iteration', str(i)
         print 'We still need to complete', str(numberOfRareDiseases - (i*numberToGet))
     
-
         for disease in dictionary:
 
             dictionary[disease]['records']=[]
@@ -241,21 +239,43 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
         #             print "Could not open page. Terminating.."
         #             raise StopIteration()
 
+
+    elif database.lower()=='pubmed' and uid != '':
+        for i in range(3):
+            try:
+                handle=Entrez.elink(db=database, from_uid=uid)
+            except:
+                print 'Could not get article count for:', searchterm
+                print 'Retrying...', str(i+1),'out of 3'
+                sleep(5)
+        results = Entrez.read(handle)
+        ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
     if database.lower()=='pubmed':
-        for i in range(3):
-            try:
-                if numberOfArticles==0: numberOfArticles=getArticleCount(searchterm)
-            except:
-                print 'Could not get article count for:', searchterm
-                print 'Retrying...', str(i+1),'out of 3'
-                sleep(5)
-        for i in range(3):
-            try:
-                handle=Entrez.esearch(db = database, term=searchterm, retmax=numberOfArticles)
-            except:
-                print 'Could not get article count for:', searchterm
-                print 'Retrying...', str(i+1),'out of 3'
-                sleep(5)
+        if uid != '':
+            for i in range(3):
+                try:
+                    handle=Entrez.elink(db=database, from_uid=uid)
+                except:
+                    print 'Could not get article count for:', searchterm
+                    print 'Retrying...', str(i+1),'out of 3'
+                    sleep(5)
+            results = Entrez.read(handle)
+            ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
+        else:
+            for i in range(3):
+                try:
+                    if numberOfArticles==0: numberOfArticles=getArticleCount(searchterm)
+                except:
+                    print 'Could not get article count for:', searchterm
+                    print 'Retrying...', str(i+1),'out of 3'
+                    sleep(5)
+            for i in range(3):
+                try:
+                    handle=Entrez.esearch(db = database, term=searchterm, retmax=numberOfArticles)
+                except:
+                    print 'Could not get article count for:', searchterm
+                    print 'Retrying...', str(i+1),'out of 3'
+                    sleep(5)
             results = Entrez.read(handle)
             ids = results['IdList']
     elif database.lower()=='omim' and uid != '':
