@@ -1,18 +1,21 @@
 from Bio import Entrez
 from Bio import Medline
-#import urllib
 import SearchTermCombiner as STC
+reload(STC)
 import TextCleaner as TC
+reload(TC)
 import DiseaseCrawler as DC
+reload(DC)
 import math
 import IOmodule
+reload(IOmodule)
 import os
 from time import sleep
 
 # Collector function that gathers all functionality.
-def gatherOfAllThings():
+def gatherOfAllThings(startIndex=0,stopIndex=None):
 
-    numberOfRareDiseases = len(DC.readDiseases()) # Get the total number of diseases from DC.
+    numberOfRareDiseases = len(DC.readDiseases(startIndex,stopIndex)) # Get the total number of diseases from DC.
     numberToGet = 5 # Default number per chuck, before writeout
     steps = int(math.ceil(numberOfRareDiseases / numberToGet))
 
@@ -240,16 +243,6 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
         #             raise StopIteration()
 
 
-    elif database.lower()=='pubmed' and uid != '':
-        for i in range(3):
-            try:
-                handle=Entrez.elink(db=database, from_uid=uid)
-            except:
-                print 'Could not get article count for:', searchterm
-                print 'Retrying...', str(i+1),'out of 3'
-                sleep(5)
-        results = Entrez.read(handle)
-        ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
     if database.lower()=='pubmed':
         if uid != '':
             for i in range(3):
