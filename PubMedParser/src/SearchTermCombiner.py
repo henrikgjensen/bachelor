@@ -1,4 +1,4 @@
-def searchTermCombiner(listOfSearchTerms):
+def searchTermCombiner(listOfSearchTerms, additionalSearchOptions=''):
 
     # We might consider making this a class.
 
@@ -20,7 +20,7 @@ def searchTermCombiner(listOfSearchTerms):
         
 
     # Append 'AND hasabtract[text]' to each search term.
-    return [term + ' AND hasabstract[text]' for term in combinedSearchTermList]
+    return [term + additionalSearchOptions for term in combinedSearchTermList]
         
     # Might consider remove reversed searchterm, as Pubmed does not
     # distincguise these. E.g. Myostoma Cyst returns the same as Cyst

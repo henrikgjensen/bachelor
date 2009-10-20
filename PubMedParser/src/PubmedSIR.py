@@ -1,14 +1,85 @@
 from Bio import Entrez
 from Bio import Medline
-import urllib
+#import urllib
 import SearchTermCombiner as STC
 import TextCleaner as TC
+import DiseaseCrawler as DC
+import math
+import IOmodule
+import os
+from time import sleep
+
+# Collector function that gathers all functionality.
+def gatherOfAllThings():
+
+
+    # ================= Begin Junk Code =================
+    numberOfRareDiseases = 6881 # DiseaseCrawler.getNumber()
+    numberToGet = 5 # Default number per chuck, before writeout
+    steps = int(math.ceil(numberOfRareDiseases / numberToGet))
+
+    # Default directory to save information files in.
+    directory = 'diseaseInformation'
+    # path = os.getenv("HOME")+'/'+directory+'/'
+    
+    # if not os.path.isdir(path):
+    #     os.mkdir(path)
+
+    for i in range(steps):
+        diseaseDictionary = DC.readDiseases(i * numberToGet, i * numberToGet + numberToGet)
+
+    #    for i in range(steps):
+    #    getRange(i*numberToGet, i*numberToGet+numberToGet)
+    # ================== End Junk Code ==================
+
+    # Calls the DiseaseCrawler to get all the diseases from it.
+    # diseaseDictionary = DC.readDiseases()
+
+    # Calls the module itself to get 500 PMIDs for each disease. Might
+    # want to segment it the download to better be able to handle
+    # crashes and such, but its only a proto type.
+        dictionary = getArticleIDs(diseaseDictionary)
+
+#        print dictionary
+#        print dictionary
+
+        print 'Completed dictionary construction for iteration', str(i)
+        print 'We still need to complete', str(numberOfRareDiseases - (i*numberToGet))
+    
+
+        for disease in dictionary:
+
+            dictionary[disease]['records']=[]
+
+#            print 'This is disease', disease
+#            print 'This is dictionary[\'disease\'][\'PMIDs\']', dictionary[disease]['PMIDs']
+
+            dictionary[disease]['records'].extend(getMedlineList(dictionary[disease]['PMIDs']))
+
+            IOmodule.writeOut(directory, disease, dictionary[disease], 'w')
+        
+#            print 'test'
+#            filepath=path+disease+'.txt'
+#            outputFile = open(filepath,'w')
+#            outputFile.write('Description:' + dictionary[disease]['description'])
+#            print 'We should have written the Description to the file now:'
+            # records = [line + '\n' for line in records] # Do not know whether this works or not.
+#            for i in range(len(records)):
+#                string = '{'
+#                string = ''
+#                for key in records[i]:
+#                    string+=key+' : '+records[i][key]
+#                    
+#                outputFile.write(string)
+            
+#            outputFile.close()
+                
 
 def getArticleIDs(diseaseDictionary):
 
     """
     Takes a dictionary of the form:
-    {'disease xx': {'terms' : [xx, yy], 'uid' : string, 'description' : string }, etc}}
+    {'disease xx': {'terms' : [xx, yy], 'uid' : string, 'description' : string }, etc}
     And returns a dictionary containing:
     {'disease a': [pmid1, pmid2, pmid3...], 'disease b' : [pmidx, pmidy,...], ...}
 
@@ -35,14 +106,18 @@ def getArticleIDs(diseaseDictionary):
     # Iterates through the diseaseDictionary and searches for uid,
     # term, diseasename, and combinations of synonyms
     diseaseArticleIDlist={}
+    additionalSearchOptions = ' AND hasabstract[text]' # Contains additional options, e.g. ' AND LA[eng]'
 
     for disease in diseaseDictionary:
+
+        print
+        print 'Processing:', disease
         articleCount=250
         diseaseArticleIDlist[disease] = {}
         diseaseArticleIDlist[disease]['PMIDs']=[]
         diseaseArticleIDlist[disease]['description'] = ''
         if (diseaseDictionary[disease]['terms'] != ''):
-            diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(diseaseDictionary[disease]['db'],'',TC.unquoteString(diseaseDictionary[disease]['terms']),articleCount))
+            diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(diseaseDictionary[disease]['db'],'',TC.unquoteString(diseaseDictionary[disease]['terms']) + additionalSearchOptions,articleCount))
         elif (diseaseDictionary[disease]['uid'] != ''):
             diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(diseaseDictionary[disease]['db'],diseaseDictionary[disease]['uid'],'',articleCount))
 
@@ -51,7 +126,7 @@ def getArticleIDs(diseaseDictionary):
         # If we still have qouta left
         if (articleCount > 0):
             # Search for the disease name on pubmed/medline
-            diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource('pubmed','',disease,articleCount))
+            diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource('pubmed','',disease + additionalSearchOptions,articleCount))
 
         # Remove duplicates
         diseaseArticleIDlist[disease]['PMIDs'] = removeDuplicates(diseaseArticleIDlist[disease]['PMIDs'])
@@ -63,7 +138,7 @@ def getArticleIDs(diseaseDictionary):
         articleCount = 500 - len(diseaseArticleIDlist[disease]['PMIDs'])
 
         # Call SearchTermCombiner to combine search terms and adds hasabstract[text] behind it.
-        diseaseDictionary[disease]['syn'] = STC.searchTermCombiner(diseaseDictionary[disease]['syn'])
+        diseaseDictionary[disease]['syn'] = STC.searchTermCombiner(diseaseDictionary[disease]['syn'], additionalSearchOptions)
 
 #        print 'Downloading into synonym list:'
         synonymArticleIDlist={}
@@ -116,16 +191,27 @@ def getArticleIDs(diseaseDictionary):
 #            print collectionSet
 
         if len(collectionSet) != articleCount:
-            print 'The collection size differs from articleCount: ' + articleCount + '. The size is: ', len(collectionSet)
+            print 'The collection size differs from articleCount: ' + str(articleCount) + '. The size is: ', len(collectionSet)
 
         diseaseArticleIDlist[disease]['PMIDs'].extend(list(collectionSet))
 
-        if len(diseaseArticleIDlist[disease]['PMIDs']) != 500:
+        if len(diseaseArticleIDlist[disease]['PMIDs']) == 0:
+            print 'The disease:', disease + ' did not return any results.'
+        elif len(diseaseArticleIDlist[disease]['PMIDs']) != 500:
             print 'We did not succeed in getting the default number of records (500), however we did get ', len(diseaseArticleIDlist[disease]['PMIDs'])
+        
 
         diseaseArticleIDlist[disease]['description'] = diseaseDictionary[disease]['desc']
 
-        return diseaseArticleIDlist
+        # We have 500 diseases perform a write out of the PMIDs, and the description
+        # if len(diseaseArticleIDlist) == 100:
+        #     for disease in diseaseArticleIDlist:
+        #         writeOut('diseasePMIDs',disease,diseaseArticleIDlist[disease])
+
+        #     print 'Write out of 100 disease is completed. Flushing dictionary'
+#        diseaseArticleIDlist = {}
+
+    return diseaseArticleIDlist
 
 def removeDuplicates(listOfIDs):
     """
@@ -142,18 +228,46 @@ def removeDuplicates(listOfIDs):
 
     return listOfIDs
 
-def getArticleIDsFromMultiSource(database='', uid='', searchterm='', number_of_articles=20):
+def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArticles=20):
+
+        # for i in range(3):
+        #     try:
+        #         c=urllib2.urlopen(page)
+        #     except:
+        #         print "Could not open %s" % page
+        #         print "Attempt",str(i+1),"out of 3"
+        #         sleep(5)
+        #         if i==2:
+        #             print "Could not open page. Terminating.."
+        #             raise StopIteration()
 
     if database.lower()=='pubmed':
-        if number_of_articles==0: number_of_articles=getArticleCount(searchterm)
-        
-        handle=Entrez.esearch(db = database, term=searchterm, retmax=number_of_articles)
-        results = Entrez.read(handle)
-        ids = results['IdList']
+        for i in range(3):
+            try:
+                if numberOfArticles==0: numberOfArticles=getArticleCount(searchterm)
+            except:
+                print 'Could not get article count for:', searchterm
+                print 'Retrying...', str(i+1),'out of 3'
+                sleep(5)
+        for i in range(3):
+            try:
+                handle=Entrez.esearch(db = database, term=searchterm, retmax=numberOfArticles)
+            except:
+                print 'Could not get article count for:', searchterm
+                print 'Retrying...', str(i+1),'out of 3'
+                sleep(5)
+            results = Entrez.read(handle)
+            ids = results['IdList']
     elif database.lower()=='omim' and uid != '':
-        handle=Entrez.elink(db=database, LinkName='omim_pubmed_calculated', from_uid=uid)
+        for i in range(3):
+            try:
+                handle=Entrez.elink(db=database, LinkName='omim_pubmed_calculated', from_uid=uid)
+            except:
+                print 'Could not get article count for:', searchterm
+                print 'Retrying...', str(i+1),'out of 3'
+                sleep(5)
         results = Entrez.read(handle)
-        ids = [link['Id'] for lin in results[0]['LinkSetDb'][0]['Link']]
+        ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
     
     return ids    
 
