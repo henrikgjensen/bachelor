@@ -277,10 +277,12 @@ def readDiseases(indexStart=0,indexStop=None):
 
     files=sorted([f for f in os.listdir(path) if os.path.isfile(path+f)])
 
-    contents={}
+    sortedcontents=[]
     for file in files[indexStart:indexStop]:
+        contents={}
         diseaseName=file[0:file.find('.')]
         diseaseAttr=eval(open(path+file,'r').read())
         contents[diseaseName]=diseaseAttr
-        
-    return contents
+        sortedcontents.append(contents)
+
+    return sortedcontents
