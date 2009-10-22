@@ -227,7 +227,6 @@ def getArticleIDs(diseaseDictionary):
 
             transferTuple = items.pop()
 
-            # If 
             if transferTuple[0] == 0:
 #                print 'Choose to contiue, because resulting tuple did not contain any results'
                 continue
@@ -253,14 +252,6 @@ def getArticleIDs(diseaseDictionary):
 
         diseaseArticleIDlist[disease]['description'] = diseaseDictionary[disease]['desc']
 
-        # We have 500 diseases perform a write out of the PMIDs, and the description
-        # if len(diseaseArticleIDlist) == 100:
-        #     for disease in diseaseArticleIDlist:
-        #         writeOut('diseasePMIDs',disease,diseaseArticleIDlist[disease])
-
-        #     print 'Write out of 100 disease is completed. Flushing dictionary'
-#        diseaseArticleIDlist = {}
-
     return diseaseArticleIDlist
 
 def removeDuplicates(listOfIDs):
@@ -280,54 +271,49 @@ def removeDuplicates(listOfIDs):
 
 def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArticles=20):
 
-        # for i in range(3):
-        #     try:
-        #         c=urllib2.urlopen(page)
-        #     except:
-        #         print "Could not open %s" % page
-        #         print "Attempt",str(i+1),"out of 3"
-        #         sleep(5)
-        #         if i==2:
-        #             print "Could not open page. Terminating.."
-        #             raise StopIteration()
-
+    numberOfRetries = 100 # Number of retries per disease, high due to unstable internetconnection.
+    sleepTimeBetweenTries = 5 # Sleep time between retries, default 5 sec
 
     if database.lower()=='pubmed':
         if uid != '':
-            for i in range(100):
+            for i in range(numberOfRetries):
                 try:
                     handle=Entrez.elink(db=database, from_uid=uid)
+                    continue
                 except:
                     print 'Could not get article count for:', searchterm
-                    print 'Retrying...', str(i+1),'out of 3'
-                    sleep(5)
+                    print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
+                    sleep(sleepTimeBetweenTries)
             results = Entrez.read(handle)
             ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
         else:
-            for i in range(100):
+            for i in range(numberOfRetries):
                 try:
                     if numberOfArticles==0: numberOfArticles=getArticleCount(searchterm)
+                    continue
                 except:
                     print 'Could not get article count for:', searchterm
-                    print 'Retrying...', str(i+1),'out of 3'
-                    sleep(5)
-            for i in range(100):
+                    print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
+                    sleep(sleepTimeBetweenTries)
+            for i in range(numberOfRetries):
                 try:
                     handle=Entrez.esearch(db = database, term=searchterm, retmax=numberOfArticles)
+                    continue
                 except:
                     print 'Could not get article count for:', searchterm
-                    print 'Retrying...', str(i+1),'out of 3'
-                    sleep(5)
+                    print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
+                    sleep(sleepTimeBetweenTries)
             results = Entrez.read(handle)
             ids = results['IdList']
     elif database.lower()=='omim' and uid != '':
-        for i in range(100):
+        for i in range(numberOfRetries):
             try:
                 handle=Entrez.elink(db=database, LinkName='omim_pubmed_calculated', from_uid=uid)
+                continue
             except:
                 print 'Could not get article count for:', searchterm
-                print 'Retrying...', str(i+1),'out of 3'
-                sleep(5)
+                print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
+                sleep(sleepTimeBetweenTries)
         results = Entrez.read(handle)
         ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
     
