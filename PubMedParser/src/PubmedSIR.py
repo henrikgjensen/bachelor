@@ -140,8 +140,8 @@ def getArticleIDs(diseaseDictionary):
 
         # Translate the special signs contained in some synonyms
         for i in diseaseDictionary[disease]['syn']:
-            i=(i[0],TC.unquoteString(i[1]))
-            i=(i[0],TC.decodeURLcharacters(i[1]))
+            i=TC.unquoteString(i)
+            i=TC.decodeURLcharacters(i)
 
         # Create a set of all combinations of synonyms and save it in 'optimizedSynonymList'
         synonymArticleIDlist={}
@@ -156,13 +156,7 @@ def getArticleIDs(diseaseDictionary):
         print "================================================"
         print "Total number of synonyms:",len(optimizedSynonymList)
         printcount=len(optimizedSynonymList)
-
-        print "<<<<<<SYNLIST START>>>>>"
-        print str(optimizedSynonymList)
-        print "<<<<<<SYNLIST END>>>>>"
-
         for synTuple in optimizedSynonymList:
-
             synonym=synTuple[1]
             print "Gathering data from: \""+synonym+"\""
             synonymArticleIDlist[synonym]=[]
