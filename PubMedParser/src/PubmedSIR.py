@@ -138,13 +138,14 @@ def getArticleIDs(diseaseDictionary):
         # synonyms)
         articleCount = 500 - len(diseaseArticleIDlist[disease]['PMIDs'])
 
+        # Translate the special signs contained in some synonyms
+        for i in diseaseDictionary[disease]['syn']:
+            i=(i[0],TC.unquoteString(i[1]))
+            i=(i[0],TC.decodeURLcharacters(i[1]))
+
         # Create a set of all combinations of synonyms and save it in 'optimizedSynonymList'
         synonymArticleIDlist={}
         optimizedSynonymList = sorted(STC.searchTermCombiner(diseaseDictionary[disease]['syn'], additionalSearchOptions,1))
-
-        # Translate the special signs contained in some synonyms
-        for i in optimizedSynonymList:
-            i=(i[0],TC.unquoteString(i[1]))
 
         # Go though the list of synonyms, download corresponding PMIDs from Pubmed
         # and delete synonyms not returned any PMIDs (and all combinations
@@ -170,7 +171,7 @@ def getArticleIDs(diseaseDictionary):
                 tempList=optimizedSynonymList[:]
                 for syn in tempList:
                     shortenedSyn=synonym[0:(len(synonym)-len(additionalSearchOptions))]
-                    if shortenedSyn in syn[1]:
+                    if (shortenedSyn != syn[1]) and (shortenedSyn in syn[1]):
                         print "Deleted: "+str(syn)
                         optimizedSynonymList.remove(syn)
                         printcount-=1
