@@ -16,11 +16,11 @@ def searchTermCombiner(listOfSearchTerms, additionalSearchOptions='', minimumToC
     # stopping with len(lOST) results in one missing combination
     for i in range(minimumToCombine, len(listOfSearchTerms) + 1): 
         for uc in _xuniqueCombinations(listOfSearchTerms, i):
-            combinedSearchTermList.append(' '.join(uc))
+            combinedSearchTermList.append((i,' '.join(uc)+additionalSearchOptions))
         
 
     # Append 'AND hasabtract[text]' to each search term.
-    return [term + additionalSearchOptions for term in combinedSearchTermList]
+    return combinedSearchTermList#[term + additionalSearchOptions for term in combinedSearchTermList]
         
     # Might consider remove reversed searchterm, as Pubmed does not
     # distincguise these. E.g. Myostoma Cyst returns the same as Cyst

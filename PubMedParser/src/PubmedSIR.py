@@ -138,7 +138,45 @@ def getArticleIDs(diseaseDictionary):
         # synonyms)
         articleCount = 500 - len(diseaseArticleIDlist[disease]['PMIDs'])
 
+        # Create a set of all combinations of synonyms and save it in 'optimizedSynonymList'
+        synonymArticleIDlist={}
+        optimizedSynonymList = sorted(STC.searchTermCombiner(diseaseDictionary[disease]['syn'], additionalSearchOptions,1))
 
+        # Translate the special signs contained in some synonyms
+        for i in optimizedSynonymList:
+            i=(i[0],TC.unquoteString(i[1]))
+
+        # Go though the list of synonyms, download corresponding PMIDs from Pubmed
+        # and delete synonyms not returned any PMIDs (and all combinations
+        # containing this synonym!).
+        # Note that the sorted nature of the the list of tuples in
+        # 'optimizedSynonymList' allows us to delete post-indices while iterating
+        # through it without getting indexs errors or missing any steps.
+        print "================================================"
+        print "Total number of synonyms:",len(optimizedSynonymList)
+        printcount=len(optimizedSynonymList)
+        for synTuple in optimizedSynonymList:
+            synonym=synTuple[1]
+            print "Gathering data from: \""+synonym+"\""
+            synonymArticleIDlist[synonym]=[]
+            synonymArticleIDlist[synonym].extend(getArticleIDsFromMultiSource('pubmed', '', synonym ,0))
+            if len(synonymArticleIDlist[synonym])==0:
+                tempList=optimizedSynonymList[:]
+                for syn in tempList:
+                    shortenedSyn=synonym[0:(len(synonym)-len(additionalSearchOptions))]
+                    if shortenedSyn in syn[1]:
+                        print "Deleted: "+str(syn)
+                        optimizedSynonymList.remove(syn)
+                        printcount-=1
+                print "-------",printcount,"remaining -------"
+            #del synonymArticleIDlist[syn[1]]
+            else:
+                print "Done with "+str(synTuple)
+                printcount-=1
+                print "-------",printcount,"remaining -------"
+        print "================================================"
+
+        """
         synonymArticleIDlist={}
         optimizedSynonymList=[]
         for synonym in diseaseDictionary[disease]['syn']:
@@ -160,7 +198,7 @@ def getArticleIDs(diseaseDictionary):
             synonymArticleIDlist[synonym].extend(getArticleIDsFromMultiSource('pubmed', '', TC.unquoteString(synonym) ,0))
 
 #        if debug == True : print 'Completed download from synonym list'
-
+        """
         print 'Sorting items accoring to their count by values()'
         # Needs to get the list sorted on the amount of return IDs.
         items = [(len(v),v,k) for k,v in synonymArticleIDlist.items()]
