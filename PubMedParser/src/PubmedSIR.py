@@ -53,7 +53,7 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
 
             dictionary[disease] = {}
             dictionary[disease]['records']=[]
-            dictionary[disease]['decription'] = diseaseDictionary[disease]['description']
+            dictionary[disease]['description'] = diseaseDictionary[disease]['description']
 
             dictionary[disease]['records'].extend(getMedlineList(diseaseDictionary[disease]['PMIDs']))
 
