@@ -171,9 +171,11 @@ def getArticleIDs(diseaseDictionary):
                 tempList=optimizedSynonymList[:]
                 for syn in tempList:
                     shortenedSyn=synonym[0:(len(synonym)-len(additionalSearchOptions))]
-                    if (shortenedSyn != syn[1]) and (shortenedSyn in syn[1]):
+                    if (synonym != syn[1]) and (shortenedSyn in syn[1]):
                         print "Deleted: "+str(syn)
                         optimizedSynonymList.remove(syn)
+                        printcount-=1
+                    if (synonym == syn[1]):
                         printcount-=1
                 print "-------",printcount,"remaining -------"
             #del synonymArticleIDlist[syn[1]]
