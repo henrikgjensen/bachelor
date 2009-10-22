@@ -139,9 +139,7 @@ def getArticleIDs(diseaseDictionary):
         articleCount = 500 - len(diseaseArticleIDlist[disease]['PMIDs'])
 
         # Translate the special signs contained in some synonyms
-        for i in diseaseDictionary[disease]['syn']:
-            i=TC.unquoteString(i)
-            i=TC.decodeURLcharacters(i)
+        diseaseDictionary[disease]['syn']=[TC.decodeURLcharacters(TC.unquoteString(i)) for i in diseaseDictionary[disease]['syn']]
 
         # Create a set of all combinations of synonyms and save it in 'optimizedSynonymList'
         synonymArticleIDlist={}
@@ -296,7 +294,7 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
 
     if database.lower()=='pubmed':
         if uid != '':
-            for i in range(3):
+            for i in range(100):
                 try:
                     handle=Entrez.elink(db=database, from_uid=uid)
                 except:
@@ -306,14 +304,14 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
             results = Entrez.read(handle)
             ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
         else:
-            for i in range(3):
+            for i in range(100):
                 try:
                     if numberOfArticles==0: numberOfArticles=getArticleCount(searchterm)
                 except:
                     print 'Could not get article count for:', searchterm
                     print 'Retrying...', str(i+1),'out of 3'
                     sleep(5)
-            for i in range(3):
+            for i in range(100):
                 try:
                     handle=Entrez.esearch(db = database, term=searchterm, retmax=numberOfArticles)
                 except:
@@ -323,7 +321,7 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
             results = Entrez.read(handle)
             ids = results['IdList']
     elif database.lower()=='omim' and uid != '':
-        for i in range(3):
+        for i in range(100):
             try:
                 handle=Entrez.elink(db=database, LinkName='omim_pubmed_calculated', from_uid=uid)
             except:
