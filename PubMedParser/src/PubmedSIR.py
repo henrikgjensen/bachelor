@@ -279,7 +279,7 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
             for i in range(numberOfRetries):
                 try:
                     handle=Entrez.elink(db=database, from_uid=uid)
-                    continue
+                    break
                 except:
                     print 'Could not get article count for:', searchterm
                     print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
@@ -290,7 +290,7 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
             for i in range(numberOfRetries):
                 try:
                     if numberOfArticles==0: numberOfArticles=getArticleCount(searchterm)
-                    continue
+                    break
                 except:
                     print 'Could not get article count for:', searchterm
                     print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
@@ -298,7 +298,7 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
             for i in range(numberOfRetries):
                 try:
                     handle=Entrez.esearch(db = database, term=searchterm, retmax=numberOfArticles)
-                    continue
+                    break
                 except:
                     print 'Could not get article count for:', searchterm
                     print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
@@ -309,7 +309,7 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
         for i in range(numberOfRetries):
             try:
                 handle=Entrez.elink(db=database, LinkName='omim_pubmed_calculated', from_uid=uid)
-                continue
+                break
             except:
                 print 'Could not get article count for:', searchterm
                 print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
