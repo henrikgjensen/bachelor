@@ -156,6 +156,11 @@ def getArticleIDs(diseaseDictionary):
         print "Total number of synonyms:",len(optimizedSynonymList)
         printcount=len(optimizedSynonymList)
         for synTuple in optimizedSynonymList:
+
+            print "<<<<<<SYNLIST START>>>>>"
+            print str(optimizedSynonymList)
+            print "<<<<<<SYNLIST END>>>>>"
+
             synonym=synTuple[1]
             print "Gathering data from: \""+synonym+"\""
             synonymArticleIDlist[synonym]=[]
