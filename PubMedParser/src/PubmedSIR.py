@@ -15,35 +15,35 @@ from time import sleep
 # Collector function that gathers all functionality.
 def gatherOfAllThings(startIndex=0,stopIndex=None):
 
-    numberOfRareDiseases = len(DC.readDiseases(startIndex,stopIndex)) # Get the total number of diseases from DC.
-    numberToGet = 5 # Default number per chuck, before writeout
+    # Get the number of diseases from DC, based on start and stop. If
+    # stopIndex = None, then it returns the whole range
+    numberOfRareDiseases = len(DC.readDiseases(startIndex,stopIndex))
+    # Default number per chuck, before writeout
+    numberToGet = 5
+    # Calculate the numbers of steps, for looping.
     steps = int(math.ceil(numberOfRareDiseases / numberToGet))
 
     # Default directory to save information files in.
     directory = 'diseaseInformation'
 
+    # Read in the range of diseases we want to get information about,
+    # in a list, it needs to be sorted to support resume.
     d=DC.readDiseases(startIndex,stopIndex)
 
     for i in range(steps):
+        # Read in the a chuck of diseases in a list
         diseaseList = d[i * numberToGet:i * numberToGet + numberToGet]
 
         diseaseDictionary = {}
 
         for i in range(len(diseaseList)):
-#            print diseaseList[i].keys(), diseaseList[i].values()
+            # Transfer the ordered disease list into an unordered dictionary
             diseaseDictionary[diseaseList[i].keys()[0]] = diseaseList[i].values()[0]
 
             
-#        print diseaseDictionary
-        
-    # Calls the DiseaseCrawler to get all the diseases from it.
-    # diseaseDictionary = DC.readDiseases()
-
-    # Calls the module itself to get 500 PMIDs for each disease. Might
-    # want to segment it the download to better be able to handle
-    # crashes and such, but its only a proto type.
-
         dictionary = {}
+        # Runs through the disease dictionary and gets all the PMIDs
+        # for each disease
         diseaseDictionary = getArticleIDs(diseaseDictionary)
 
         print 'Completed dictionary construction for iteration', str(i)
@@ -327,8 +327,14 @@ def getArticleCount(search_term):
     """
 
     Entrez.email = 'henrikgjensen@gmail.com'
-
-    handle=Entrez.esearch(db='pubmed',term=search_term,retmax='0')
+    
+    for i in range(100):
+        try: 
+            handle=Entrez.esearch(db='pubmed',term=search_term,retmax='0')
+            break
+        except:
+            print 'Failed to get article count for:', search_term
+            print 'Retrying...', str(i+1),'out of 100'
     record=Entrez.read(handle)
     retmax_length=record['Count']
     print 'Counted a total of',retmax_length,'articles'
