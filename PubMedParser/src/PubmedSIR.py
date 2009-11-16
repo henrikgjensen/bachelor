@@ -46,8 +46,8 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
         # for each disease
         diseaseDictionary = getArticleIDs(diseaseDictionary)
 
-        print 'Completed dictionary construction for iteration', str(i)
-        print 'We still need to complete', str(numberOfRareDiseases - (i*numberToGet))
+#        print 'Completed dictionary construction for iteration', str(i)
+#        print 'We still need to complete', str(numberOfRareDiseases - (i*numberToGet))
     
         for disease in diseaseDictionary:
 
@@ -133,13 +133,13 @@ def getArticleIDs(diseaseDictionary):
         diseaseArticleIDlist[disease]['PMIDs'] = removeDuplicates(diseaseArticleIDlist[disease]['PMIDs'])
 
         # diseaseArticleIDlist, should contain about 250 PMIDs by now,
-        # but we have a max limit on 500 articles, therefore we wish
+        # but we have a max limit on 500 records, therefore we wish
         # to fill up with the other search form now. (By searching on
         # synonyms)
         articleCount = 500 - len(diseaseArticleIDlist[disease]['PMIDs'])
 
         # Translate the special signs contained in some synonyms
-        diseaseDictionary[disease]['syn']=[TC.decodeURLcharacters(TC.unquoteString(i)) for i in diseaseDictionary[disease]['syn']]
+        diseaseDictionary[disease]['syn']=[TC.decodeURLcharacters(TC.unquoteString(i)).encode('utf-8','ignore') for i in diseaseDictionary[disease]['syn']]
 
         # Create a set of all combinations of synonyms and save it in 'optimizedSynonymList'
         synonymArticleIDlist={}
