@@ -1,13 +1,13 @@
 import os
 
-def loadMedlineRecords(dir):
+def loadMedlineRecords(dir,indexStart=0,indexStop=None):
 
     modifiedRecords={}
 
     files=sorted([f for f in os.listdir(dir) if os.path.isfile(dir+f)])
 
     counter=0
-    for file in files:
+    for file in files[indexStart:indexStop]:
 
         diseaseDic=eval(open(dir+file,'r').read())
 
