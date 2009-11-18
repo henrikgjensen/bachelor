@@ -8,7 +8,6 @@ def countRecordfield(directory,field):
     counter=0
     for file in files:
 
-        #diseaseName=file[0:file.find('.txt')]
         diseaseDic=eval(open(directory+file,'r').read())
 
         medlineRecords=diseaseDic['records']
@@ -22,4 +21,12 @@ def countRecordfield(directory,field):
         print "Files remaining:",(len(files)-counter)
 
     return fieldSum
-    
+
+
+def getSortedValues(dic,option="small2large"):
+
+    l=sorted(dic.values())
+    if option==large2small:
+        l.reverse()
+
+    return l
