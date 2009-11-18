@@ -40,7 +40,6 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
             # Transfer the ordered disease list into an unordered dictionary
             diseaseDictionary[diseaseList[i].keys()[0]] = diseaseList[i].values()[0]
 
-            
         dictionary = {}
         # Runs through the disease dictionary and gets all the PMIDs
         # for each disease
@@ -58,23 +57,6 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
             dictionary[disease]['records'].extend(getMedlineList(diseaseDictionary[disease]['PMIDs']))
 
             IOmodule.writeOut(directory, disease, dictionary[disease], 'w')
-        
-#            print 'test'
-#            filepath=path+disease+'.txt'
-#            outputFile = open(filepath,'w')
-#            outputFile.write('Description:' + dictionary[disease]['description'])
-#            print 'We should have written the Description to the file now:'
-            # records = [line + '\n' for line in records] # Do not know whether this works or not.
-#            for i in range(len(records)):
-#                string = '{'
-#                string = ''
-#                for key in records[i]:
-#                    string+=key+' : '+records[i][key]
-#                    
-#                outputFile.write(string)
-            
-#            outputFile.close()
-                
 
 def getArticleIDs(diseaseDictionary):
 
@@ -158,7 +140,12 @@ def getArticleIDs(diseaseDictionary):
             synonym=synTuple[1]
             print "Gathering data from: \""+synonym+"\""
             synonymArticleIDlist[synonym]=[]
-            synonymArticleIDlist[synonym].extend(getArticleIDsFromMultiSource('pubmed', '', synonym ,0))
+
+            # We don't need to get more medline records than can be
+            # crammed into the 500 - primary search, so we use the
+            # articleCount as paramter. Hopefully there will be lots
+            # of small results that get used up first.
+            synonymArticleIDlist[synonym].extend(getArticleIDsFromMultiSource('pubmed', '', synonym, articleCount))
             if len(synonymArticleIDlist[synonym])==0:
                 tempList=optimizedSynonymList[:]
                 for syn in tempList:
@@ -170,36 +157,12 @@ def getArticleIDs(diseaseDictionary):
                     if (synonym == syn[1]):
                         printcount-=1
                 print "-------",printcount,"remaining -------"
-            #del synonymArticleIDlist[syn[1]]
             else:
                 print "Done with "+str(synTuple)
                 printcount-=1
                 print "-------",printcount,"remaining -------"
         print "================================================"
 
-        """
-        synonymArticleIDlist={}
-        optimizedSynonymList=[]
-        for synonym in diseaseDictionary[disease]['syn']:
-            synonymArticleIDlist[synonym]=[]
-            synonymArticleIDlist[synonym].extend(getArticleIDsFromMultiSource('pubmed', '', TC.unquoteString(synonym)+additionalSearchOptions ,0))
-            if len(synonymArticleIDlist[synonym])==0:
-                del synonymArticleIDlist[synonym]
-            else:
-                optimizedSynonymList.append(synonym)
-
-        # Call SearchTermCombiner to combine search terms and adds hasabstract[text] behind it.
-        diseaseDictionary[disease]['syn'] = STC.searchTermCombiner(optimizedSynonymList, additionalSearchOptions)
-
-#        print 'Downloading into synonym list:'
-        for synonym in diseaseDictionary[disease]['syn']:
-            synonymArticleIDlist[synonym]=[]
-
-#            synonymArticleIDlist[synonym].extend(getArticleIDlist(TC.unquoteString(synonym) ,0))
-            synonymArticleIDlist[synonym].extend(getArticleIDsFromMultiSource('pubmed', '', TC.unquoteString(synonym) ,0))
-
-#        if debug == True : print 'Completed download from synonym list'
-        """
         print 'Sorting items accoring to their count by values()'
         # Needs to get the list sorted on the amount of return IDs.
         items = [(len(v),v,k) for k,v in synonymArticleIDlist.items()]
@@ -207,14 +170,13 @@ def getArticleIDs(diseaseDictionary):
         items.sort()
         # Reverse to get largest to smallest in list
         items.reverse()
-#        print items
 
         listIsEmpty = False
 
-        # Gonna make a list of maximum 250 PMIDs from the synonym list, without duplicates. As set contains unordered, unique elements, 
+        # Gonna make a list of maximum 250 PMIDs from the synonym list, without duplicates. As set contains unordered, unique elements, we use a set to collect the PMIDs
         collectionSet = set()
 
-        # We might consider changing this, because right now, we check twice to see whester collectionSet exceeds articleCount
+        # We might consider changing this, because right now, we check twice to see whether collectionSet exceeds articleCount
         while len(collectionSet) <= articleCount or not listIsEmpty:
 
             # Is the list of items empty, then we can't do anything.
@@ -228,28 +190,31 @@ def getArticleIDs(diseaseDictionary):
             transferTuple = items.pop()
 
             if transferTuple[0] == 0:
-#                print 'Choose to contiue, because resulting tuple did not contain any results'
                 continue
 
             for pmid in transferTuple[1]:
                 # Test to see if len of the set is articleCount?
-                if len(collectionSet) == articleCount:
+                if len(collectionSet) + articleCount > 499:
                     break
                 collectionSet.add(pmid)
 
-#            print collectionSet
+#        if len(collectionSet) < 500 - articleCount:
+#            print 'The collection set size differs from ' + str(500-articleCount) + '. The size is: ', len(collectionSet)
 
-        if len(collectionSet) != articleCount:
-            print 'The collection size differs from articleCount: ' + str(articleCount) + '. The size is: ', len(collectionSet)
+        print 'Hand crafted / Disease name search returned:', str(len(diseaseArticleIDlist[disease]['PMIDs'])), 'results'
+        print 'Synonym search returned:', str(len(collectionSet)), 'results'
+        print 'Total number of results:', str(len(collectionSet) + len(diseaseArticleIDlist[disease]['PMIDs']))
 
         diseaseArticleIDlist[disease]['PMIDs'].extend(list(collectionSet))
 
+        # This might be unusable information, might consider removing it.
         if len(diseaseArticleIDlist[disease]['PMIDs']) == 0:
             print 'The disease:', disease + ' did not return any results.'
         elif len(diseaseArticleIDlist[disease]['PMIDs']) != 500:
             print 'We did not succeed in getting the default number of records (500), however we did get ', len(diseaseArticleIDlist[disease]['PMIDs'])
         
-
+        # Copy over the disease description, if none is present, the
+        # value will be empty string ''
         diseaseArticleIDlist[disease]['description'] = diseaseDictionary[disease]['desc']
 
     return diseaseArticleIDlist
@@ -285,7 +250,7 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
                     print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
                     sleep(sleepTimeBetweenTries)
             results = Entrez.read(handle)
-            ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
+            ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']][:numberOfArticles]
         else:
             for i in range(numberOfRetries):
                 try:
@@ -304,7 +269,7 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
                     print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
                     sleep(sleepTimeBetweenTries)
             results = Entrez.read(handle)
-            ids = results['IdList']
+            ids = list(results['IdList'])[:numberOfArticles]
     elif database.lower()=='omim' and uid != '':
         for i in range(numberOfRetries):
             try:
@@ -315,9 +280,9 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
                 print 'Retrying...', str(i+1),'out of ' + str(numberOfRetries)
                 sleep(sleepTimeBetweenTries)
         results = Entrez.read(handle)
-        ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']]
+        ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']][:numberOfArticles]
     
-    return ids    
+    return ids
 
 def getArticleCount(search_term):
 
@@ -356,7 +321,11 @@ def getMedlineList(pmids):
     for i in range(0, listLength, 650):
         tempList = pmids[i:i + 650]
         handle = Entrez.efetch(db='pubmed', id=tempList,rettype='medline', retmode='text')
-        records.extend(list(Medline.parse(handle)))
+        try:
+            records.extend(list(Medline.parse(handle)))
+        except:
+            IOmodule.writeOut('errorDir', pmids[i], '')
+
         print 'Downloaded',len(records),'MedLine articles.',str(listLength-len(records)),'remaining...'
 
     for article in records:
