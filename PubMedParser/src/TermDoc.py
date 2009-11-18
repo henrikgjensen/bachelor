@@ -1,26 +1,23 @@
+import RecordHandler
+from pysparse import spmatrix
 
 
-def _loadDiseaseFile(filepath):
+def populateMatrix(m,n,doc,term):
 
-    try:
-        diseaseDic=eval(open(filepath,'r').read())
-    except:
-        print "Failed to open",filepath
+    M = spmatrix.ll_mat(m,n)
 
-    return diseaseDic
+    # row : m
+    # col : n
+
+    for m in range(len(M[1,:])):
+        for n in range(len(M[:,1])):
+
+            #M[n,m]=float(str(n)+str(m))
+            if m==0:
+                M[n,m]=1
+
+    return M
 
 
-def readMedlineFields(filepath,listOfFields):
 
-    diseaseDic=_loadDiseaseFile(filepath)
-
-    medlineRecords=diseaseDic['records']
-
-    fieldDic={}
-    for field in listOfFields:
-        fieldDic[field]=[]
-
-    for record in medlineRecords:
-            
-            fieldDic[field]=record[field]
 
