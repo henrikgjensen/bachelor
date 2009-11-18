@@ -8,7 +8,7 @@ def countRecordfield(directory,field):
     for file in files:
 
         #diseaseName=file[0:file.find('.txt')]
-        diseaseDic=eval(open(filepath+file,'r').read())
+        diseaseDic=eval(open(directory+file,'r').read())
 
         medlineRecords=diseaseDic['records']
 
