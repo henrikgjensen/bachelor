@@ -24,6 +24,7 @@ def loadMedlineRecords(dir):
     return modifiedRecords
 
 
+
 def readMedlineFields(modifiedRecords,listOfFields):
 
     recordFieldDic={}
