@@ -19,7 +19,7 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
     # stopIndex = None, then it returns the whole range
     numberOfRareDiseases = len(DC.readDiseases(startIndex,stopIndex))
     # Default number per chuck, before writeout
-    numberToGet = 5
+    numberToGet = 1
     # Calculate the numbers of steps, for looping.
     steps = int(math.ceil(numberOfRareDiseases / numberToGet))
 
