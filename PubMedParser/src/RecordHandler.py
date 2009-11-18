@@ -1,28 +1,18 @@
-import os
 
-def loadMedlineRecords(dir,indexStart=0,indexStop=None):
+def loadMedlineRecords(dir,filename):
 
     modifiedRecords={}
 
-    files=sorted([f for f in os.listdir(dir) if os.path.isfile(dir+f)])
+    diseaseDic=eval(open(dir+filename,'r').read())
 
-    counter=0
-    for file in files[indexStart:indexStop]:
+    diseaseName=file[0:file.find('.txt')]
+    modifiedRecords[diseaseName]={}
 
-        diseaseDic=eval(open(dir+file,'r').read())
-
-        diseaseName=file[0:file.find('.txt')]
-        modifiedRecords[diseaseName]={}
-
-        medlineRecords=diseaseDic['records']
-        for record in medlineRecords:
-            modifiedRecords[diseaseName][record['PMID']]=record
-
-        counter+=1
-        print "Files remaining:",(len(files)-counter)
+    medlineRecords=diseaseDic['records']
+    for record in medlineRecords:
+        modifiedRecords[diseaseName][record['PMID']]=record
 
     return modifiedRecords
-
 
 
 def readMedlineFields(modifiedRecords,listOfFields):
