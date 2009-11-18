@@ -3,7 +3,7 @@ import os
 def countRecordfield(directory,field):
 
     fieldSum={}
-    files=sorted([f for f in os.listdir(dicrectory) if os.path.isfile(directory+f)])
+    files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])
 
     for file in files:
 
