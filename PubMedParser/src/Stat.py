@@ -5,6 +5,7 @@ def countRecordfield(directory,field):
     fieldSum={}
     files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])
 
+    counter=0
     for file in files:
 
         #diseaseName=file[0:file.find('.txt')]
@@ -16,6 +17,9 @@ def countRecordfield(directory,field):
             item=record[field]
             fieldSum.setdefault(item,0)
             fieldSum[item]+=1
+
+        counter+=1
+        print "Files remaining:",(len(files)-counter)
 
     return fieldSum
     
