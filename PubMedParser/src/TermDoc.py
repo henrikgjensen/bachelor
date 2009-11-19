@@ -1,4 +1,5 @@
 import RecordHandler
+import IOmodule
 from pysparse import spmatrix
 from scipy import sparse
 import WordCounter
@@ -56,5 +57,5 @@ def medlineDir2MatrixDir(medlineDir,m,n):
         data=gatherMatrixData(medlineDir,file)
         M,termList,pmidList=populateMatrix(m,n,data)
         diseaseName=file[0:file.find('.txt')]
-        writeOutTDM('diseaseMatrices',diseaseName,(M,termList,pmidList))
+        IOmodule.writeOutTDM('diseaseMatrices',diseaseName,(M,termList,pmidList))
         print str(len(matrixList))+" matrices made."+"Term length: "+str(len(termList))
