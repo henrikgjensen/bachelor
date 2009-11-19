@@ -1,6 +1,7 @@
 import RecordHandler
 from pysparse import spmatrix
 import WordCounter
+import os
 
 
 def gatherMatrixData(dir,filename):
