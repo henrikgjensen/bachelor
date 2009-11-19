@@ -1,7 +1,7 @@
 import os.path
 import os
 
-def writeOut(dir,filename,text,mode='w'):
+def writeOutTxt(dir,filename,text,mode='w'):
 
     """
     Simple function for creating a directory (if it does not exsist) and

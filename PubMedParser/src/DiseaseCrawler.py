@@ -138,7 +138,7 @@ def fetchPubmedDiseaseTerms(pages):
             soup=BeautifulSoup(c.read())
         except HTMLParseError:
             print 'Experienced difficulties opening %s' % page
-            IOmodule.writeOut(diseaseFolder+'/'+errorFolder,strftime('%H%M%S'),page)
+            IOmodule.writeOutTxt(diseaseFolder+'/'+errorFolder,strftime('%H%M%S'),page)
             continue
 
         # Get disease name
@@ -146,7 +146,7 @@ def fetchPubmedDiseaseTerms(pages):
 
         # Some pages are 'officially' not working. Catch them here
         if title=='NIH Office of Rare Diseases Research (ORDR) - Error':
-            IOmodule.writeOut(diseaseFolder+'/'+errorFolder,'Page error'+strftime('%H%M%S'),page)
+            IOmodule.writeOutTxt(diseaseFolder+'/'+errorFolder,'Page error'+strftime('%H%M%S'),page)
             print 'Page Error on %s' % page
             continue
 
@@ -260,7 +260,7 @@ def fetchPubmedDiseaseTerms(pages):
                 disease=removeSlashes.sub(' ',disease)
                 disease=removeCommas.sub(' ',disease)
                 # Write out
-                IOmodule.writeOut(diseaseFolder,disease,content)
+                IOmodule.writeOutTxt(diseaseFolder,disease,content)
             pubmedURLs={}
             print 'Wrote successfully. Dictionary flushed.'
 
