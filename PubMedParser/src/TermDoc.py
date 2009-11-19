@@ -53,9 +53,11 @@ def medlineDir2MatrixDir(medlineDir,m,n):
 
     files=sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir+f)])
 
+    counter=0
     for file in files:
         data=gatherMatrixData(medlineDir,file)
         M,termList,pmidList=populateMatrix(m,n,data)
         diseaseName=file[0:file.find('.txt')]
         IOmodule.writeOutTDM('diseaseMatrices',diseaseName,(M,termList,pmidList))
-        print str(len(matrixList))+" matrices made."+"Term length: "+str(len(termList))
+        counter+=1
+        print str(counter)+" matrices made."+"Term length: "+str(len(termList))
