@@ -18,7 +18,7 @@ def gatherMatrixData(dir,filename):
 def populateMatrix(m,n,termDoc):
 
 #    M = spmatrix.ll_mat(m,n)
-   M = sparse.lil_matrix((m,n))
+    M = sparse.lil_matrix((m,n))
 
    
     # row number : m
