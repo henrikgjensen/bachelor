@@ -5,7 +5,7 @@ def loadMedlineRecords(dir,filename):
 
     diseaseDic=eval(open(dir+filename,'r').read())
 
-    diseaseName=file[0:file.find('.txt')]
+    diseaseName=filename[0:filename.find('.txt')]
     modifiedRecords[diseaseName]={}
 
     medlineRecords=diseaseDic['records']
