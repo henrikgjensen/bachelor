@@ -1,10 +1,10 @@
 import RecordHandler
 from pysparse import spmatrix
 import WordCounter
-import RecordHandler
 
-def countWords(dir, filename):
-   
+
+def gatherMatrixData(dir,filename):
+
    l = []
    records = RecordHandler.loadMedlineRecords(dir,filename)
    interesting_records = RecordHandler.readMedlineFields(records,['AB'])
@@ -13,6 +13,7 @@ def countWords(dir, filename):
        l.append(WordCounter.wc(entry[0],entry[1]['AB']))
 
    return l
+
 
 def populateMatrix(m,n,termDoc):
 
@@ -45,5 +46,14 @@ def populateMatrix(m,n,termDoc):
     return M,termList,pmidList
 
 
+def medlineDir2MatrixDir(medlineDir,m,n):
 
+    files=sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir+f)])
 
+    # Create matrix Dir here...
+
+    for file in files:
+        data=gatherMatrixData(medlineDir,file)
+        M,termList,pmidList=populateMatrix(m,n,data)
+        diseaseName=file[0:file.find('.txt')]
+        # Save file in matrix-Dir here...
