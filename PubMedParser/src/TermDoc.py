@@ -1,8 +1,8 @@
 import RecordHandler
 from pysparse import spmatrix
+from scipy import sparse
 import WordCounter
 import os
-
 
 def gatherMatrixData(dir,filename):
 
@@ -15,11 +15,12 @@ def gatherMatrixData(dir,filename):
 
    return l
 
-
 def populateMatrix(m,n,termDoc):
 
-    M = spmatrix.ll_mat(m,n)
+#    M = spmatrix.ll_mat(m,n)
+   M = sparse.lil_matrix((m,n))
 
+   
     # row number : m
     # col number : n
 
