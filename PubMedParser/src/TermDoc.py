@@ -66,6 +66,6 @@ def testMatrixThreshold(medlineDir,m,n):
         data=gatherMatrixData(medlineDir,file)
         M,termList,pmidList=populateMatrix(m,n,data)
         matrixList.append((M,termList,pmidList))
-        print str(len(matrixList))+" matrices made"
+        print str(len(matrixList))+" matrices made. Term length: "+str(len(M[1,:]))
 
     return matrixList
