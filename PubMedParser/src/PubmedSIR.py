@@ -56,7 +56,7 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
 
             dictionary[disease]['records'].extend(getMedlineList(diseaseDictionary[disease]['PMIDs']))
 
-            IOmodule.writeOut(directory, disease, dictionary[disease], 'w')
+            IOmodule.writeOutTxt(directory, disease, dictionary[disease], 'w')
 
 def getArticleIDs(diseaseDictionary):
 
@@ -324,7 +324,7 @@ def getMedlineList(pmids):
         try:
             records.extend(list(Medline.parse(handle)))
         except:
-            IOmodule.writeOut('errorDir', pmids[i], '')
+            IOmodule.writeOutTxt('errorDir', pmids[i], '')
 
         print 'Downloaded',len(records),'MedLine articles.',str(listLength-len(records)),'remaining...'
 
