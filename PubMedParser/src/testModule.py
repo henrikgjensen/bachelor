@@ -72,7 +72,13 @@ def saveMatrix(filename,matrix):
     print 'Time used: ',(t2-t1)
 
 
-#def addSubToLargeMatrix(MSmall,MLarge):
-#
-#    for m in MSmall:
-#        for n in MSmall:
+def addSubToLargeMatrix(MSmall,MLarge):
+
+    t1 = time.time()
+
+    for m in MSmall:
+        for n in MSmall:
+            one=1
+
+    t2 = time.time()
+    print 'Time used: ',(t2-t1)
