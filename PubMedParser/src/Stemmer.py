@@ -1,23 +1,26 @@
 from nltk import *
-import re
-from nltk.corpus import stopwords
 
-# Default string cleaner, it simply removes everything that is not
-# alphabetic or or digit.
-def _cleanString(string):
+def stem(string,stem=PorterStemmer().stem):
+    """
+    Accept a string and optionally a stemmer function working on
+    single words, it defaults to the nltk PorterStemmer algorithm.
 
-    return re.sub('[^\w]', ' ', string)
+    Return a combined string.
+    """
 
-# Default stopword remover. Uses nltk default stopword list for
-# identifying stopwords
-def _removeStopwords(string):
+    forStemming = Text(string.lower().split(' '))
 
-    return ' '.join([word for word in string.split(' ') if word not in stopwords.words()])
+    return ' '.join([stem(w.strip()) for w in forStemming if w != ''])
 
-# Stem function, that is used for stemming a string. It also allows
-# varies kinds of cleaning and stopword removal.
-def stem(string,cleanString=_cleanString, removeStopwords=_removeStopwords, stem=PorterStemmer().stem):
 
-    forStemming = Text(removeStopwords(cleanString(string.lower())).split(' '))
+def stem(stringList,stem=PorterStemmer().stem):
+    """
+    Accept a list of strings and optionally a stemmer function working
+    on single words, it defaults to the nltk PorterStemmer algorithm.
 
-    return ' '.join([stem(w) for w in forStemming if w != ''])
+    Return a list of stemmed strings.
+    """
+
+    forStemming = Text([w.lower() for w in stringList])
+
+    return [stem(w.strip()) for w in forStemming if w != '']
