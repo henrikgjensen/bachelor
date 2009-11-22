@@ -11,9 +11,9 @@ def createLargeMatrix():
     M=sparse.lil_matrix((m,n))
 
     # populate some of the matrix
-    M.setdiag(ones(m-1))
-    M[(m/2),:]=ones(n-1)
-    M[:,(n/2)]=ones(m-1)
+    M.setdiag(ones(int(m-1)))
+    M[(m/2),:]=ones(int(n-1))
+    M[:,(n/2)]=ones(int(m-1))
 
     return M
 
