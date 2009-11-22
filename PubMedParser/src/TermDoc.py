@@ -1,4 +1,5 @@
 import RecordHandler
+import IOmodule
 from pysparse import spmatrix
 from scipy import sparse
 import WordCounter
@@ -52,21 +53,11 @@ def medlineDir2MatrixDir(medlineDir,m,n):
 
     files=sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir+f)])
 
+    counter=0
     for file in files:
         data=gatherMatrixData(medlineDir,file)
         M,termList,pmidList=populateMatrix(m,n,data)
         diseaseName=file[0:file.find('.txt')]
-        # Create matrix Dir here...
-        # Save file in matrix-Dir here...
-
-
-def testMatrixThreshold(medlineDir,m,n):
-    files=sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir+f)])
-    matrixList=[]
-    for file in files:
-        data=gatherMatrixData(medlineDir,file)
-        M,termList,pmidList=populateMatrix(m,n,data)
-        matrixList.append((M,termList,pmidList))
-        print str(len(matrixList))+" matrices made."+"Term length: "+str(len(termList))
-
-    return matrixList
+        IOmodule.writeOutTDM('diseaseMatrices',diseaseName,(M,termList,pmidList))
+        counter+=1
+        print str(counter)+" matrices made."+"Term length: "+str(len(termList))

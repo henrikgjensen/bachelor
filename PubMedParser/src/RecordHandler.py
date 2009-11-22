@@ -26,7 +26,11 @@ def loadMedlineRecords(dir,filename):
 def readMedlineFields(modifiedRecords,listOfFields):
 
     """
+    This function is used to extract field information in MedLine records.
+    It returns a dictionary on the form {PMID: {Field1 : content1,...},...}
 
+    It takes a dictionary on the form given by the 'loadMedlineRecords'
+    function, and a list of the fields to be returned.
     """
 
     recordFieldDic={}
