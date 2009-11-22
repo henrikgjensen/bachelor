@@ -2,6 +2,17 @@ import os
 
 def countRecordfield(directory,field):
 
+    """
+    This function counts the number of identical fields in the MedLine records.
+
+    This could for instance be used for a view into how many identical PMIDs
+    that have been downloaded on the cross of different disease searches.
+
+    It takes a medline record directory (full path) and a field.
+
+    It returns a dictionary on the form: {PMID: #ids,...}
+    """
+    
     fieldSum={}
     files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])
 
@@ -24,6 +35,11 @@ def countRecordfield(directory,field):
 
 
 def getSortedValues(dic,option="small2large"):
+
+    """
+    This function simply sorts the values of a dictionry and optionally
+    reverses them.
+    """
 
     l=sorted(dic.values())
     if option==large2small:
