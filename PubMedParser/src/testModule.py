@@ -13,7 +13,7 @@ def createLargeMatrix():
     # populate some of the matrix
     M.setdiag(ones(m))
     M[(m/2),:]=ones(n)
-    M[:,(n/2)]=ones(m)
+    M[:,(n/2)]=1
 
     return M
 
@@ -27,11 +27,11 @@ def createSubMatrix():
 
     # Populate some of the matrix
     M[0,:]=ones(n)
-    M[:,0]=ones(m)
+    M[:,0]=1
     M[(m/2),:]=ones(n)
-    M[:,(n/2)]=ones(m)
+    M[:,(n/2)]=1
     M[(m-1),:]=ones(n)
-    M[:,(n-1)]=ones(m)
+    M[:,(n-1)]=1
 
     return M
 
@@ -51,11 +51,11 @@ def createLargeSubMatrix():
 
     # Populate some of the matrix
     M[0,:]=ones(n)
-    M[:,0]=ones(m)
+    M[:,0]=1
     M[(m/2),:]=ones(n)
-    M[:,(n/2)]=ones(m)
+    M[:,(n/2)]=1
     M[(m-1),:]=ones(n)
-    M[:,(n-1)]=ones(m)
+    M[:,(n-1)]=1
 
     t2 = time.time()
     print 'Time used: ',(t2-t1)
