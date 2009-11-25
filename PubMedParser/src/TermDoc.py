@@ -18,8 +18,8 @@ def gatherMatrixData(dir, filename):
 
     l = []
     records = RecordHandler.loadMedlineRecords(dir, filename)
-    interesting_records = RecordHandler.readMedlineFields(records, ['AB'])
-    for entry in interesting_records.items():
+    fields = RecordHandler.readMedlineFields(records, ['AB'])
+    for entry in fields.items():
         l.append(WordCounter.wc(entry[0], entry[1]['AB']))
 
     return l
@@ -87,3 +87,38 @@ def medlineDir2MatrixDir(medlineDir, m, n):
         IOmodule.writeOutTDM('diseaseMatrices', diseaseName, (M, termList, pmidList))
         counter += 1
         print str(counter) + " matrices made." + "Term length: " + str(len(termList))
+
+
+def createHashes(medlineDir):
+
+    files = sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir + f)])
+
+    termHashTable={}
+    pmidHashTable={}
+    termCounter = 0
+    pmidCounter = 0
+    for file in files:
+        records = RecordHandler.loadMedlineRecords(medlineDir, file)
+
+        # Hash PMID's
+        for diseaseRecords in records.values():
+            for record in diseaseRecords:
+                pmid=record[0]
+                if pmid not in pmidHashTable:
+                    pmidHashTable[pmid]=pmidCounter
+                    pmidCounter+=1
+
+                # Hash terms
+                termList = [word.lower() for word in record[1]['AB'].split(' ')]
+                for term in termList:
+                    if term not in termHashTable:
+                        termHashTable[term]=termCounter
+                        termCounter+=1
+                    else: continue
+                
+        print str(termCounter)+" terms hashed. "+str(pmidCounter)+" pmids hashed."
+
+    IOmodule.writeOutTxt("hashTables", "termHash", termHashTable)
+    IOmodule.writeOutTxt("hashTables", "pmidHash", pmidHashTable)
+
+    return termHashTable, pmidHashTable
