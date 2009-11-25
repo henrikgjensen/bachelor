@@ -28,7 +28,7 @@ def gatherMatrixData(dir, filename):
 
     return l
 
-def populateMatrix(m, n, termDoc, termHash, pmidHash):
+def populateMatrix(m, n, termDoc, termHashTable, pmidHashTable):
 
     """
     This function creates and populates the term-doc matrices.
@@ -41,13 +41,7 @@ def populateMatrix(m, n, termDoc, termHash, pmidHash):
     Structure: If term A occurs x times in doc B, the coordinate of x in matrix M
     is given by the index: x = M[list-index of B, list-index of A].
     """
-
-    termHashData=open(termHash)
-    pmidHashData=open(pmidHash)
-
-    termHashTable=cPickle.load(termHashData)
-    pmidHashTable=cPickle.load(pmidHashData)
-
+    
     M = sparse.lil_matrix((m, n))
 
     termList = []
@@ -96,10 +90,15 @@ def medlineDir2MatrixDir(medlineDir, m, n,termHash, pmidHash):
 
     files = sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir + f)])
 
+    termHashData=open(termHash)
+    pmidHashData=open(pmidHash)
+    termHashTable=cPickle.load(termHashData)
+    pmidHashTable=cPickle.load(pmidHashData)
+
     counter = 0
     for file in files:
         data = gatherMatrixData(medlineDir, file)
-        M = populateMatrix(m, n, data,termHash, pmidHash)
+        M = populateMatrix(m, n, data,termHashTable, pmidHashTable)
         diseaseName = file[0:file.find('.txt')]
         IOmodule.writeOutTDM('diseaseMatrices', diseaseName, M)
         counter += 1
