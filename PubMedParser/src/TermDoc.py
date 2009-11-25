@@ -41,7 +41,9 @@ def populateMatrix(m, n, termDoc, termHash, pmidHash):
     """
 
     termHashTable=eval(open(termHash,'r').read())
+    print 'a'
     pmidHashTable=eval(open(pmidHash,'r').read())
+    print 'b'
 
     M = sparse.lil_matrix((m, n))
 
@@ -52,6 +54,8 @@ def populateMatrix(m, n, termDoc, termHash, pmidHash):
         termIndex = 0
         pmid=item[0]
         termCountList=item[1]
+
+        print 'c'
 
         if pmid not in pmidList:
             pmidList.append(pmid)
@@ -91,17 +95,12 @@ def medlineDir2MatrixDir(medlineDir, m, n,termHash, pmidHash):
 
     files = sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir + f)])
 
-    print 'a'
-
     counter = 0
     for file in files:
         data = gatherMatrixData(medlineDir, file)
-        print 'b'
         M = populateMatrix(m, n, data,termHash, pmidHash)
         diseaseName = file[0:file.find('.txt')]
-        print 'c'
         IOmodule.writeOutTDM('diseaseMatrices', diseaseName, M)
-        print 'd'
         counter += 1
         print str(counter) + " matrices made." + "Term length: " + str(len(termList))
 
