@@ -123,7 +123,7 @@ def createHashes(medlineDir):
     pmidCounter = 0
 
     # Get the regex pattern that sanitizeses strings.
-    sanitize = sanitizeString()
+    sanitize = TextCleaner.sanitizeString()
 
     for file in files:
         records = RecordHandler.loadMedlineRecords(medlineDir, file)
