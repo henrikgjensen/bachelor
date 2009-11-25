@@ -91,12 +91,17 @@ def medlineDir2MatrixDir(medlineDir, m, n,termHash, pmidHash):
 
     files = sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir + f)])
 
+    print 'a'
+
     counter = 0
     for file in files:
         data = gatherMatrixData(medlineDir, file)
+        print 'b'
         M = populateMatrix(m, n, data,termHash, pmidHash)
         diseaseName = file[0:file.find('.txt')]
+        print 'c'
         IOmodule.writeOutTDM('diseaseMatrices', diseaseName, M)
+        print 'd'
         counter += 1
         print str(counter) + " matrices made." + "Term length: " + str(len(termList))
 
