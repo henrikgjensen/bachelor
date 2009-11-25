@@ -40,10 +40,13 @@ def populateMatrix(m, n, termDoc, termHash, pmidHash):
     is given by the index: x = M[list-index of B, list-index of A].
     """
 
-    termHashTable=eval(open(termHash,'r').read())
+    #termHashTable=eval(open(termHash,'r').read())
+    termHashTable=pickle.load(termHash)
     print 'a'
-    pmidHashTable=eval(open(pmidHash,'r').read())
+    #pmidHashTable=eval(open(pmidHash,'r').read())
+    termHashTable=pickle.load(pmidHash)
     print 'b'
+    pmidHashTable=eval(open(pmidHash,'r').read())
 
     M = sparse.lil_matrix((m, n))
 
