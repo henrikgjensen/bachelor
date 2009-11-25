@@ -3,7 +3,7 @@ import IOmodule
 from scipy import sparse
 import WordCounter
 import os
-import pickle
+import cPickle
 
 path=os.getenv("HOME")+'/'
 
@@ -42,10 +42,10 @@ def populateMatrix(m, n, termDoc, termHash, pmidHash):
     """
 
     #termHashTable=eval(open(termHash,'r').read())
-    termHashTable=pickle.load(termHash)
+    termHashTable=cPickle.load(termHash)
     print 'a'
     #pmidHashTable=eval(open(pmidHash,'r').read())
-    termHashTable=pickle.load(pmidHash)
+    termHashTable=cPickle.load(pmidHash)
     print 'b'
     pmidHashTable=eval(open(pmidHash,'r').read())
 
