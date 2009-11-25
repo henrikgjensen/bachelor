@@ -4,6 +4,7 @@ from scipy import sparse
 import WordCounter
 import os
 import cPickle
+import TextCleaner
 
 path=os.getenv("HOME")+'/'
 
@@ -120,6 +121,10 @@ def createHashes(medlineDir):
     pmidHashTable={}
     termCounter = 0
     pmidCounter = 0
+
+    # Get the regex pattern that sanitizeses strings.
+    sanitize = sanitizeString()
+
     for file in files:
         records = RecordHandler.loadMedlineRecords(medlineDir, file)
 
@@ -132,7 +137,7 @@ def createHashes(medlineDir):
                     pmidHashTable[pmid]=pmidCounter
 
                 # Hash terms
-                termList = [word.lower() for word in record[1]['AB'].split(' ')]
+                termList = [word.lower() for word in sanitize.sub(' ', record[1]['AB']).split(' ') if word != '']
                 for term in termList:
                     if term not in termHashTable:
                         termCounter+=1

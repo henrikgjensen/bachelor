@@ -1,6 +1,6 @@
 import os.path
 import os
-import pickle
+import cPickle
 from scipy.io import mmwrite
 from scipy.io import mmread
 import numpy
@@ -58,7 +58,7 @@ def pickleOut(dirname, filename, object):
     filepath=path+dirname+'/'+filename+'.btd' # binary term document matrix
     print filepath
     fd = open(filepath,'w')
-    pickle.dump(object,fd)
+    cPickle.dump(object,fd)
     fd.close()
 
 def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
