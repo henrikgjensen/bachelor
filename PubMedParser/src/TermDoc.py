@@ -76,7 +76,7 @@ def populateMatrix(m, n, termDoc, termHash, pmidHash):
     return M
 
 
-def medlineDir2MatrixDir(medlineDir, m, n):
+def medlineDir2MatrixDir(medlineDir, m, n,termHash, pmidHash):
 
     """
     This function converts a directory of MedLine records to a new directory of
@@ -94,7 +94,7 @@ def medlineDir2MatrixDir(medlineDir, m, n):
     counter = 0
     for file in files:
         data = gatherMatrixData(medlineDir, file)
-        M = populateMatrix(m, n, data)
+        M = populateMatrix(m, n, data,termHash, pmidHash)
         diseaseName = file[0:file.find('.txt')]
         IOmodule.writeOutTDM('diseaseMatrices', diseaseName, M)
         counter += 1
