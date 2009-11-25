@@ -102,7 +102,7 @@ def medlineDir2MatrixDir(medlineDir, m, n,termHash, pmidHash):
         diseaseName = file[0:file.find('.txt')]
         IOmodule.writeOutTDM('diseaseMatrices', diseaseName, M)
         counter += 1
-        print str(counter) + " matrices made." + "Term length: " + str(len(termList))
+        #print str(counter) + " matrices made." + "Term length: " + str(len(termList))
 
 
 def createHashes(medlineDir):
@@ -134,8 +134,8 @@ def createHashes(medlineDir):
                 
         print str(termCounter)+" terms hashed. "+str(pmidCounter)+" pmids hashed."
 
-    IOmodule.writeOutTxt("hashTables", "termHash", termHashTable)
-    IOmodule.writeOutTxt("hashTables", "pmidHash", pmidHashTable)
+    IOmodule.pickleOut("hashTables", "termHash", termHashTable)
+    IOmodule.pickleOut("hashTables", "pmidHash", pmidHashTable)
 
     return termHashTable, pmidHashTable
 
