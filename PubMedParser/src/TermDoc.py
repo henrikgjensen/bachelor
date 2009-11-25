@@ -41,11 +41,14 @@ def populateMatrix(m, n, termDoc, termHash, pmidHash):
     is given by the index: x = M[list-index of B, list-index of A].
     """
 
+    termHashData=open(termHash)
+    pmidHashData=open(pmidHash)
+
     #termHashTable=eval(open(termHash,'r').read())
-    termHashTable=cPickle.load(termHash)
+    termHashTable=cPickle.load(termHashData)
     print 'a'
     #pmidHashTable=eval(open(pmidHash,'r').read())
-    termHashTable=cPickle.load(pmidHash)
+    termHashTable=cPickle.load(pmidHashData)
     print 'b'
     pmidHashTable=eval(open(pmidHash,'r').read())
 
