@@ -3,6 +3,7 @@ import IOmodule
 from scipy import sparse
 import WordCounter
 import os
+import pickle
 
 path=os.getenv("HOME")+'/'
 
