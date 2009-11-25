@@ -4,6 +4,8 @@ from scipy import sparse
 import WordCounter
 import os
 
+path=os.getenv("HOME")+'/'
+
 def gatherMatrixData(dir, filename):
 
     """
@@ -24,7 +26,7 @@ def gatherMatrixData(dir, filename):
 
     return l
 
-def populateMatrix(m, n, termDoc):
+def populateMatrix(m, n, termDoc, termHash, pmidHash):
 
     """
     This function creates and populates the term-doc matrices.
@@ -38,30 +40,40 @@ def populateMatrix(m, n, termDoc):
     is given by the index: x = M[list-index of B, list-index of A].
     """
 
+    termHashTable=eval(open(termHash,'r').read())
+    pmidHashTable=eval(open(pmidHash,'r').read())
+
     M = sparse.lil_matrix((m, n))
-   
+
     termList = []
     pmidList = []
     for item in termDoc:
         pmidIndex = 0
         termIndex = 0
+        pmid=item[0]
+        termCountList=item[1]
 
-        if item[0] not in pmidList:
-            pmidList.append(item[0])
-            pmidIndex = len(pmidList)-1
+        if pmid not in pmidList:
+            pmidList.append(pmid)
+            pmidIndex = len(pmidList)
+            M[pmidIndex,0]=pmidHashTable[pmid]
         else:
-            pmidIndex = pmidList.index(item[0])
+            pmidIndex = pmidList.index(pmid)+1
 
-        for term in item[1]:
-            if term[0] not in termList:
-                termList.append(term[0])
-                termIndex = len(termList)-1
-                M[pmidIndex, termIndex] = term[1]
+        for tc in termCountList:
+            term=tc[0]
+            termCount=tc[1]
+            
+            if term not in termList:
+                termList.append(term)
+                termIndex = len(termList)
+                M[pmidIndex, termIndex] = termCount
+                M[0,termIndex]=termHashTable[term]
             else:
-                termIndex = termList.index(term[0])
-                M[pmidIndex, termIndex] += term[1]
+                termIndex = termList.index(term)+1
+                M[pmidIndex, termIndex] += termCount
 
-    return M, termList, pmidList
+    return M
 
 
 def medlineDir2MatrixDir(medlineDir, m, n):
@@ -82,9 +94,9 @@ def medlineDir2MatrixDir(medlineDir, m, n):
     counter = 0
     for file in files:
         data = gatherMatrixData(medlineDir, file)
-        M, termList, pmidList = populateMatrix(m, n, data)
+        M = populateMatrix(m, n, data)
         diseaseName = file[0:file.find('.txt')]
-        IOmodule.writeOutTDM('diseaseMatrices', diseaseName, (M, termList, pmidList))
+        IOmodule.writeOutTDM('diseaseMatrices', diseaseName, M)
         counter += 1
         print str(counter) + " matrices made." + "Term length: " + str(len(termList))
 
@@ -105,15 +117,15 @@ def createHashes(medlineDir):
             for record in diseaseRecords:
                 pmid=record[0]
                 if pmid not in pmidHashTable:
-                    pmidHashTable[pmid]=pmidCounter
                     pmidCounter+=1
+                    pmidHashTable[pmid]=pmidCounter
 
                 # Hash terms
                 termList = [word.lower() for word in record[1]['AB'].split(' ')]
                 for term in termList:
                     if term not in termHashTable:
-                        termHashTable[term]=termCounter
                         termCounter+=1
+                        termHashTable[term]=termCounter
                     else: continue
                 
         print str(termCounter)+" terms hashed. "+str(pmidCounter)+" pmids hashed."
@@ -122,3 +134,10 @@ def createHashes(medlineDir):
     IOmodule.writeOutTxt("hashTables", "pmidHash", pmidHashTable)
 
     return termHashTable, pmidHashTable
+
+
+def createTermDoc(subMatrixDir,m,n,termDocDir,refreshHash=False):
+
+    # To be implemented...
+
+    return None
