@@ -48,9 +48,9 @@ def populateMatrix(m, n, termDoc, termHash, pmidHash):
     termHashTable=cPickle.load(termHashData)
     print 'a'
     #pmidHashTable=eval(open(pmidHash,'r').read())
-    termHashTable=cPickle.load(pmidHashData)
+    pmidHashTable=cPickle.load(pmidHashData)
     print 'b'
-    pmidHashTable=eval(open(pmidHash,'r').read())
+    #pmidHashTable=eval(open(pmidHash,'r').read())
 
     M = sparse.lil_matrix((m, n))
 
