@@ -148,6 +148,7 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
 
     path=os.getenv("HOME")+'/'
     files = sorted([f for f in os.listdir(path+subMatrixDir) if os.path.isfile(path+subMatrixDir + f)])
+    print path+subMatrixDir
 
     termHashData=open(termHash)
     pmidHashData=open(pmidHash)
