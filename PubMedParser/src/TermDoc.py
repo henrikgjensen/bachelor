@@ -146,7 +146,8 @@ def createHashes(medlineDir):
 
 def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
 
-    files = sorted([f for f in os.listdir(subMatrixDir) if os.path.isfile(subMatrixDir + f)])
+    path=os.getenv("HOME")+'/'
+    files = sorted([f for f in os.listdir(path+subMatrixDir) if os.path.isfile(path+subMatrixDir + f)])
 
     termHashData=open(termHash)
     pmidHashData=open(pmidHash)
