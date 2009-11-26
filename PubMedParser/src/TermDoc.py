@@ -148,7 +148,6 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
 
     path=os.getenv("HOME")+'/'
     files = sorted([f for f in os.listdir(path+subMatrixDir+"/") if os.path.isfile(path+subMatrixDir+"/" + f)])
-    print path+subMatrixDir
 
     termHashData=open(termHash)
     pmidHashData=open(pmidHash)
@@ -174,30 +173,6 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
             termDoc[m,n] += v
         print "Added",file
 
+    IOmodule.writeOutTDM(termDocDir, "TermDoc", termDoc)
+
     return termDoc
-
-    """
-    for file in files:
-        subMatrix=readInTDM(subMatrixDir, file)
-
-        for i,j,v in zip(subMatrix.row, subMatrix.col, subMatrix.data):
-            m = subMatrix[i,0]
-            n = subMatrix[0,j]
-            MLarge[m,n] += v
-    """
-    """
-    t1 = time.time()
-
-    MSmall2 = sparse.coo_matrix(MSmall)
-
-    for i,j,v in zip(MSmall2.row, MSmall2.col, MSmall2.data):
-        m = MSmall[i,0]
-        n = MSmall[0,j]
-
-        MLarge[m,n] += v
-
-    t2 = time.time()
-    print 'Time used: ',(t2-t1)
-    """
-
-    return None
