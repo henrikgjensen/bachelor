@@ -146,7 +146,6 @@ def createHashes(medlineDir):
 
 def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
 
-
     files = sorted([f for f in os.listdir(subMatrixDir) if os.path.isfile(subMatrixDir + f)])
 
     termHashData=open(termHash)
@@ -161,7 +160,7 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
 
     for file in files:
         subMatrix=IOmodule.readInTDM(subMatrixDir, file)
-        subMCopy=subMatrix.todoc()
+        subMCopy=subMatrix.todok()
         for i,j,v in zip(subMatrix.row, subMatrix.col, subMatrix.data):
             m = subMCopy[i,0]
             n = subMCopy[0,j]
