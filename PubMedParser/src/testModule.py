@@ -75,21 +75,47 @@ def saveMatrix(filename,matrix):
     print 'Time used: ',(t2-t1)
 
 
-def addSubToLargeMatrix(MSmall,MLarge):
+def addSubToLargeMatrix():
 
-    t1 = time.time()
+    # create sub matrix
 
-#    MSmall = sparse.dok_matrix(MSmall)
+    # [0, 3, 7]
+    # [5,11,12]
+    # [9,21,22]
 
-    MSmall2 = sparse.coo_matrix(MSmall)
+    msub=sparse.lil_matrix((3,3))
+    msub[0,0]=0
+    msub[0,1]=3
+    msub[0,2]=7
+    msub[1,0]=5
+    msub[2,0]=9
+    msub[1,1]=11
+    msub[1,2]=12
+    msub[2,1]=21
+    msub[2,2]=22
+    msub=msub.tocoo()
+    msub2=msub.tolil()
+    print 'Made submatrix'
 
-#    MLarge = sparse.dok_matrix(MLarge)
+    # create large matrix
+    mlar=sparse.lil_matrix((30,30))
+    print 'Allocated large matrix: ',mlar
 
-    for i,j,v in zip(MSmall2.row, MSmall2.col, MSmall2.data):
-        m = MSmall[i,0]
-        n = MSmall[0,j]
-        
-        MLarge[m,n] += v
 
-    t2 = time.time()
-    print 'Time used: ',(t2-t1)
+    #for row in range(msub.shape[0]):
+    #    for col in range(msub.shape[1]):
+
+    for i,j,v in zip(msub.row, msub.col, msub.data):
+        m = msub2[i,0]
+        n = msub2[0,j]
+
+        # Make sure not to add index's
+        if m==0 or n==0:
+            continue
+
+        print "row:",i,"col:",j
+        print "Adding "+str(v)+" to ("+str(m)+","+str(n)+")"
+        mlar[m,n] += v
+        print 'Successfully added'
+
+    return mlar
