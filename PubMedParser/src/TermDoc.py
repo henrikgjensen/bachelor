@@ -154,10 +154,20 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
     termHashTable=cPickle.load(termHashData)
     pmidHashTable=cPickle.load(pmidHashData)
 
-    print len(termHashTable)
-    print len(pmidHashTable)
+    m=termHashTable
+    n=pmidHashTable
 
-    MLarge = sparse.lil_matrix(1,500)
+    termDoc = sparse.lil_matrix(m,n)
+
+    for file files:
+        subMatrix=readInTDM(subMatrixDir, file):
+        for i,j,v in zip(subMatrix.row, subMatrix.col, subMatrix.data):
+            m = subMatrix[i,0]
+            n = subMatrix[0,j]
+            termDoc[m,n] += v
+
+    return termDoc
+
     """
     for file in files:
         subMatrix=readInTDM(subMatrixDir, file)
