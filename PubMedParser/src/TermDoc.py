@@ -161,7 +161,7 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
 
     for file in files:
         subMatrix=readInTDM(subMatrixDir, file)
-        subMCopy=subMatrix.toodoc()
+        subMCopy=subMatrix.todoc()
         for i,j,v in zip(subMatrix.row, subMatrix.col, subMatrix.data):
             m = subMCopy[i,0]
             n = subMCopy[0,j]
