@@ -144,8 +144,42 @@ def createHashes(medlineDir):
     return termHashTable, pmidHashTable
 
 
-def createTermDoc(subMatrixDir,m,n,termDocDir,refreshHash=False):
+def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
 
-    # To be implemented...
+
+    files = sorted([f for f in os.listdir(subMatrixDir) if os.path.isfile(subMatrixDir + f)])
+
+    termHashData=open(termHash)
+    pmidHashData=open(pmidHash)
+    termHashTable=cPickle.load(termHashData)
+    pmidHashTable=cPickle.load(pmidHashData)
+
+    print len(termHashTable)
+    print len(termHashTable)
+
+    MLarge = sparse.lil_matrix(1,500)
+    """
+    for file in files:
+        subMatrix=readInTDM(subMatrixDir, file)
+
+        for i,j,v in zip(subMatrix.row, subMatrix.col, subMatrix.data):
+            m = subMatrix[i,0]
+            n = subMatrix[0,j]
+            MLarge[m,n] += v
+    """
+    """
+    t1 = time.time()
+
+    MSmall2 = sparse.coo_matrix(MSmall)
+
+    for i,j,v in zip(MSmall2.row, MSmall2.col, MSmall2.data):
+        m = MSmall[i,0]
+        n = MSmall[0,j]
+
+        MLarge[m,n] += v
+
+    t2 = time.time()
+    print 'Time used: ',(t2-t1)
+    """
 
     return None
