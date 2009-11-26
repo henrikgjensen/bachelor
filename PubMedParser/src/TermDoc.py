@@ -171,6 +171,7 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
                 continue
 
             termDoc[m,n] += v
+        print "Added",file
 
     return termDoc
 
