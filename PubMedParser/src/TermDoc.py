@@ -155,7 +155,7 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
     pmidHashTable=cPickle.load(pmidHashData)
 
     print len(termHashTable)
-    print len(termHashTable)
+    print len(pmidHashTable)
 
     MLarge = sparse.lil_matrix(1,500)
     """
