@@ -95,9 +95,6 @@ def readInTDM(dirname, filename):
 
     path+=dirname+'/'+filename
 
-    try:
-        A = mmread(path)
-    except:
-        print 'Unable to read', path
+    A = mmread(path)
 
     return A
