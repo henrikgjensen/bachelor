@@ -5,6 +5,7 @@ import WordCounter
 import os
 import cPickle
 import TextCleaner
+import time
 
 path=os.getenv("HOME")+'/'
 
@@ -146,6 +147,8 @@ def createHashes(medlineDir):
 
 def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
 
+    t1 = time.time()
+
     path=os.getenv("HOME")+'/'
     files = sorted([f for f in os.listdir(path+subMatrixDir+"/") if os.path.isfile(path+subMatrixDir+"/" + f)])
 
@@ -154,8 +157,9 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
     termHashTable=cPickle.load(termHashData)
     pmidHashTable=cPickle.load(pmidHashData)
 
-    m=len(termHashTable)
-    n=len(pmidHashTable)
+    # Need to add one due to non zero indexing
+    m=len(termHashTable)+1
+    n=len(pmidHashTable)+1
 
     termDoc = sparse.lil_matrix((m,n))
 
@@ -174,5 +178,9 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
         print "Added",file
 
     IOmodule.writeOutTDM(termDocDir, "TermDoc", termDoc)
+
+    t2 = time.time()
+
+    print 'Time elapsed:',str(t2-t1)
 
     return termDoc
