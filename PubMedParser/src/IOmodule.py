@@ -3,7 +3,6 @@ import os
 import cPickle
 from scipy.io import mmwrite
 from scipy.io import mmread
-import numpy
 
 def writeOutTxt(dir,filename,text,mode='w'):
 
@@ -50,12 +49,10 @@ def pickleOut(dirname, filename, object):
 
     """
 
-    path=os.getenv("HOME")+'/'
+    if not os.path.isdir(dirname):
+        os.mkdir(dirname)
 
-    if not os.path.isdir(path+dirname):
-        os.mkdir(path+dirname)
-
-    filepath=path+dirname+'/'+filename+'.btd' # binary term document matrix
+    filepath=dirname+'/'+filename+'.btd' # binary term document matrix
     print filepath
     fd = open(filepath,'w')
     cPickle.dump(object,fd)
@@ -70,13 +67,11 @@ def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
     Uses mmwrite to write out matrices, saving them in Matrix Marked
     format which saves a lot of space 
     """
-
-    path=os.getenv("HOME")+'/'
     
-    if not os.path.isdir(path+dirname):
-        os.mkdir(path+dirname)
+    if not os.path.isdir(dirname):
+        os.mkdir(dirname)
 
-    filepath=path+dirname+'/'+filename # binary term document matrix
+    filepath=dirname+'/'+filename # binary term document matrix
     print filepath
     # Write out the Matrix Marked file
     try:

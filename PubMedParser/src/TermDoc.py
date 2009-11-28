@@ -1,15 +1,53 @@
 import RecordHandler
 import IOmodule
 from scipy import sparse
-import WordCounter
 import os
 import cPickle
 import TextCleaner
 import time
+from nltk import *
+from TextCleaner import sanitizeString
 
-path=os.getenv("HOME")+'/'
+# Path to main folder
+_path=os.getenv("HOME")+'/'
+# MedLine directory
+_medlineDir="medlineDir"
+# Sub-matrix directory
+_subMatrixDir="diseaseMatrices"
+# Term-doc directory
+_termDocDir="TermDoc"
+# Term- and PMID-hash directory
+_hashTablesDir="hashTables"
+# Term-hash table file
+_termHashTable="termHash.btd"
+# PMID-hash table file
+_pmidHashTable="pmidHash.btd"
 
-def gatherMatrixData(dir, filename):
+
+
+def _wordCounter(pmid, string):
+
+    """
+    This function counts the number of occurences for each term in a text-string.
+
+    It takes a PMID and a text-string
+
+    It returns a list on the form [(term1,count1),...]
+    """
+
+    ll=[pmid,[]]
+
+    # Get the regex pattern that sanitizeses strings.
+    p = sanitizeString()
+
+    # Sanitize and remove empty strings ''
+    fdist = FreqDist([word.lower() for word in p.sub(' ', string).split(' ') if word != ''])
+
+    ll[1].extend(fdist.items())
+
+    return ll
+
+def _gatherMatrixData(filename):
 
     """
     This function utilizes the RecordHandler module to create and structure the
@@ -21,32 +59,35 @@ def gatherMatrixData(dir, filename):
     It returns a doc-term list on the form: [[PMID,[(term1,count1),...],...]
     """
 
+    medlineDir=_path+_medlineDir
+
     l = []
-    records = RecordHandler.loadMedlineRecords(dir, filename)
+    records = RecordHandler.loadMedlineRecords(medlineDir, filename)
     fields = RecordHandler.readMedlineFields(records, ['AB'])
     for entry in fields.items():
-        l.append(WordCounter.wc(entry[0], entry[1]['AB']))
+        l.append(_wordCounter(entry[0], entry[1]['AB']))
 
     return l
 
-def populateMatrix(m, n, termDoc, termHashTable, pmidHashTable):
+def _populateMatrix(m, n, termDoc,termHashTable,pmidHashTable):
 
     """
     This function creates and populates the term-doc matrices.
 
-    It takes the matrix dimensions (row: m, col: n) and the term-doc data,
-    structered as returned by the 'gatherMatrixData' function.
+    It takes the matrix dimensions (row: m, col: n), the term-doc data,
+    structered as returned by the 'gatherMatrixData' function and the two hash
+    tables (on dictionary form).
 
-    It returns a sparse matrix, a term list and pmid (doc) list.
+    It returns a sparse matrix.
 
     Structure: If term A occurs x times in doc B, the coordinate of x in matrix M
     is given by the index: x = M[list-index of B, list-index of A].
     """
-    
-    M = sparse.lil_matrix((m, n))
 
+    M = sparse.lil_matrix((m, n))
     termList = []
     pmidList = []
+
     for item in termDoc:
         pmidIndex = 0
         termIndex = 0
@@ -76,50 +117,66 @@ def populateMatrix(m, n, termDoc, termHashTable, pmidHashTable):
     return M
 
 
-def medlineDir2MatrixDir(medlineDir, m, n,termHash, pmidHash):
+def medlineDir2MatrixDir(m=500, n=20000):
 
     """
     This function converts a directory of MedLine records to a new directory of
-    corresponding matrices.
+    corresponding term-doc matrices.
 
-    It takes a MedLine record directory (full path) and the matrix dimensions
-    (row: m, col: n).
+    It takes the matrix dimensions (row: m, col: n).
 
     It creates a directory (in the home folder) named 'diseaseMatrices' and
-    stores the matrices as 'pickeled' .bdt files, named by the disease name.
+    stores the matrices as 'MatrixMarket' .mtx files, named by the disease name.
     """
 
-    files = sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir + f)])
-
+    medlineDir=_path+_medlineDir
+    termHash=_path+_hashTablesDir+"/"+_termHashTable
+    pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
     termHashData=open(termHash)
     pmidHashData=open(pmidHash)
     termHashTable=cPickle.load(termHashData)
     pmidHashTable=cPickle.load(pmidHashData)
 
+    files = sorted([f for f in os.listdir(medlineDir+"/") if os.path.isfile(medlineDir+"/" + f)])
+
     counter = 0
     for file in files:
-        data = gatherMatrixData(medlineDir, file)
-        M = populateMatrix(m, n, data,termHashTable, pmidHashTable)
+        data = _gatherMatrixData(file)
+        M = _populateMatrix(m, n, data,termHashTable, pmidHashTable)
         diseaseName = file[0:file.find('.txt')]
         IOmodule.writeOutTDM('diseaseMatrices', diseaseName, M)
         counter += 1
-        #print str(counter) + " matrices made." + "Term length: " + str(len(termList))
+        print str(counter),"matrices made. Total number of terms:",len(termHashTable)
 
 
-def createHashes(medlineDir):
+def createHashes():
 
-    files = sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir + f)])
+    """
+    This function creates two hash tables of the PMID's and terms to be used
+    for the term-doc matrix.
 
+    Note that the terms a sanitized for any non-alphanumerical characters.
+    """
+
+    medlineDir = _path+_medLineDir
+    hashTables = _path+_hashTablesDir
     termHashTable={}
     pmidHashTable={}
     termCounter = 0
     pmidCounter = 0
 
+    files = sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir + f)])
+
     # Get the regex pattern that sanitizeses strings.
-    sanitize = TextCleaner.sanitizeString()
+    sanitizer = TextCleaner.sanitizeString()
 
     for file in files:
         records = RecordHandler.loadMedlineRecords(medlineDir, file)
+
+        # *Note*
+        # Parts of the following loops could be optimized by using dictionaries
+        # for direct loopkups instead of linear lookups, but since it's not
+        # important, optimization will have to wait for another day.
 
         # Hash PMID's
         for diseaseRecords in records.values():
@@ -130,7 +187,7 @@ def createHashes(medlineDir):
                     pmidHashTable[pmid]=pmidCounter
 
                 # Hash terms
-                termList = [word.lower() for word in sanitize.sub(' ', record[1]['AB']).split(' ') if word != '']
+                termList = [word.lower() for word in sanitizer.sub(' ', record[1]['AB']).split(' ') if word != '']
                 for term in termList:
                     if term not in termHashTable:
                         termCounter+=1
@@ -139,18 +196,34 @@ def createHashes(medlineDir):
                 
         print str(termCounter)+" terms hashed. "+str(pmidCounter)+" pmids hashed."
 
-    IOmodule.pickleOut("hashTables", "termHash", termHashTable)
-    IOmodule.pickleOut("hashTables", "pmidHash", pmidHashTable)
+    IOmodule.pickleOut(hashTables, "termHash", termHashTable)
+    IOmodule.pickleOut(hashTables, "pmidHash", pmidHashTable)
 
     return termHashTable, pmidHashTable
 
 
-def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
+def createTermDoc(refreshHash=False):
+
+    """
+    This function creates a large term-doc martix from a directory of sub term-
+    doc matrices.
+
+    It returns a matrix with dimensions given by the specified hash tables.
+
+    It also saves the matrix for later use as a MatrixMarket .mtx file.
+    """
+
+    subMatrixDir=_path+_subMatrixDir
+    termDocDir=_path+_termDocDir
+    termHash=_path+_hashTablesDir+"/"+_termHashTable
+    pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
 
     t1 = time.time()
 
-    path=os.getenv("HOME")+'/'
-    files = sorted([f for f in os.listdir(path+subMatrixDir+"/") if os.path.isfile(path+subMatrixDir+"/" + f)])
+    if refreshHash:
+        createHashes()
+
+    files = sorted([f for f in os.listdir(subMatrixDir+"/") if os.path.isfile(subMatrixDir+"/" + f)])
 
     termHashData=open(termHash)
     pmidHashData=open(pmidHash)
@@ -163,6 +236,7 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
 
     termDoc = sparse.lil_matrix((m,n))
 
+    # Insert values representing hashes
     for i in range(m): termDoc[i,0]=i
     termDoc[0,:]=range(n)
 
