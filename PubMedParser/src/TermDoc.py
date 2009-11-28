@@ -163,8 +163,8 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
 
     termDoc = sparse.lil_matrix((m,n))
 
-    termDoc[0:m,0]=range(m)
-    termDoc[0,0:n]=range(n)
+    termDoc[:,0]=range(m)
+    termDoc[0,:]=range(n)
 
     for file in files:
         subMatrix=IOmodule.readInTDM(subMatrixDir, file)
