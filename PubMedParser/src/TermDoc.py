@@ -158,10 +158,13 @@ def createTermDoc(subMatrixDir,termDocDir,termHash,pmidHash,refreshHash=False):
     pmidHashTable=cPickle.load(pmidHashData)
 
     # Need to add one due to non zero indexing
-    m=len(termHashTable)+2
-    n=len(pmidHashTable)+2
+    m=len(pmidHashTable)+1
+    n=len(termHashTable)+1
 
     termDoc = sparse.lil_matrix((m,n))
+
+    termDoc[0:m,0]=range(m)
+    termDoc[0,0:n]=range(n)
 
     for file in files:
         subMatrix=IOmodule.readInTDM(subMatrixDir, file)
