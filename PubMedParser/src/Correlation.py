@@ -77,10 +77,10 @@ def calculateCorrelation(M,searchVector):
 
     # Get the rows expressed by the columns above
     rowVectors={}
-    for pmidHash in colVectors.items():
-        print pmidHash[0]
-        print pmidHash[1]
-        rowVectors[pmidHash[0]]=pmidHash[0][1]
+    for item in colVectors.items():
+        colHash=item[0]
+        for pmidHash in item[1]:
+        rowVectors[pmidHash]=M.getrow(pmidHash).nonzero()[0]
 
     t2=time.time()
         
