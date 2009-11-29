@@ -73,7 +73,7 @@ def calculateCorrelation(M,searchVector):
     print "Found",len(colVectors),"column(s)"
 
     # Convert the matrix to a compressed-sparse-row matrix
-    M=M.tocsr()
+    M=M.tolil()
 
     # Get the rows expressed by the columns above
     rowVectors={}
