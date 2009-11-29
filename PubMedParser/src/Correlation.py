@@ -41,11 +41,6 @@ def calculateCorrelation(M,searchVector):
     termHashTable=_termHashTable
     pmidHashTable=_pmidHashTable
 
-    # Make sure hashes are loaded:
-    if len(termHashTable)==0 or len(pmidHashTable)==0:
-        print "Make sure to loaded hashes first!"
-        raise Exception()
-
     # Convert the sparse matrix to a compressed-sparse-column matrix
     M=M.tocsc()
 
@@ -73,7 +68,10 @@ def calculateCorrelation(M,searchVector):
     print "Found",len(colVectors),"column(s)"
 
     # Convert the matrix to a compressed-sparse-row matrix
+    t3=time.time()
     M=M.tocsr()
+    t4=time.time()
+    print "Converted matrix (csc to csr) in "+str(t4-t3)
 
     # Get the rows expressed by the columns above
     rowVectors={}
@@ -85,7 +83,7 @@ def calculateCorrelation(M,searchVector):
 
     t2=time.time()
         
-    print "Time elapsed: "+str(t2-t1)
+    print "Total time elapsed: "+str(t2-t1)
 
     print "Number of vectors: "+str(len(rowVectors))
 
