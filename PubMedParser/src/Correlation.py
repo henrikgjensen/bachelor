@@ -1,4 +1,5 @@
 import TextCleaner
+import os
 
 # Path to main folder
 _path=os.getenv("HOME")+'/'
