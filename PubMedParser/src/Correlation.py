@@ -79,7 +79,6 @@ def calculateCorrelation(M,searchVector):
     rowVectors={}
     for pmidHash in colVectors.items():
         print pmidHash[0]
-        print pmidHash[0][1]
         print pmidHash[1]
         rowVectors[pmidHash[0]]=pmidHash[0][1]
 
