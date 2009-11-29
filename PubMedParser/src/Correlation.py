@@ -1,5 +1,6 @@
 import TextCleaner
 import os
+import cPickle
 
 # Path to main folder
 _path=os.getenv("HOME")+'/'
