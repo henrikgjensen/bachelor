@@ -24,6 +24,8 @@ def calculateCorrelation(M,searchVector):
     termHashTable=cPickle.load(termHashData)
     pmidHashTable=cPickle.load(pmidHashData)
 
+    print "Loaded hash"
+
     # Convert the sparse amtrix to a compressed-sparse-column matrix
     M=M.tocsc()
 
