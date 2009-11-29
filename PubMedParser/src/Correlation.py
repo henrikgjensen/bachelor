@@ -42,13 +42,13 @@ def calculateCorrelation(M,searchVector):
     pmidHashTable=_pmidHashTable
 
     t3=time.time()
-    M2=M.tocsr()
+    M2=M.tolil()
     t4=time.time()
     print "Converted matrix (coo to lil) in "+str(t4-t3)
 
     # Convert the sparse matrix to a compressed-sparse-column matrix
     t3=time.time()
-    M=M2.tocsc()
+    M=M.tocsc()
     t4=time.time()
     print "Converted matrix (coo to csc) in "+str(t4-t3)
 
