@@ -15,6 +15,6 @@ def calculateCorrelation(M,searchVector):
 
     for pmid in range(M.shape[1]-1):
 
-        vector=M[pmid+1,1:]
+        #vector=M[pmid+1,1:]
 
         print pmid
