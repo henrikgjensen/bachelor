@@ -71,4 +71,6 @@ def calculateCorrelation(M,searchVector):
     for col in colVectors.items()[1]:
 
         revers=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
-        print revers[col]
+
+        for item in col:
+            print revers[item]
