@@ -13,10 +13,13 @@ _termHashTable="termHash.btd"
 # PMID-hash table file
 _pmidHashTable="pmidHash.btd"
 
+# Loaded hash tables
+termHashTable=[]
+pmidHashTable=[]
 
-def calculateCorrelation(M,searchVector):
 
-    # Load hash-lists
+def loadHashes():
+
     termHash=_path+_hashTablesDir+"/"+_termHashTable
     pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
     termHashData=open(termHash)
@@ -24,9 +27,16 @@ def calculateCorrelation(M,searchVector):
     termHashTable=cPickle.load(termHashData)
     pmidHashTable=cPickle.load(pmidHashData)
 
-    print "Loaded hash"
+    print "Hashes loaded"
 
-    # Convert the sparse amtrix to a compressed-sparse-column matrix
+def calculateCorrelation(M,searchVector):
+
+    # Make sure hashes are loaded:
+    if len(termHashTable)==0 or len(pmidHashTable)==0:
+        print "Make sure to loaded hashes first!"
+        raise Exception()
+
+    # Convert the sparse matrix to a compressed-sparse-column matrix
     M=M.tocsc()
 
     # Sanitize the search vector and convert it to a list of terms
@@ -45,10 +55,13 @@ def calculateCorrelation(M,searchVector):
 
     print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
-    # Locate pmids containing the given terms
-    colIndices=[]
+    # Locate columns containing the given terms
+    #colIndices=[]
     for term in hashedSearchTerms:
 
-        colIndices.append(M[0,term])
+        col=M.getcol(term)
+        #colIndices.append(M[0,term])
 
-        print term
+        print col
+
+    
