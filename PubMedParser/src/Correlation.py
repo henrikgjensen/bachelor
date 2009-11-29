@@ -15,10 +15,10 @@ _pmidHashTable="pmidHash.btd"
 
 _termHash=_path+_hashTablesDir+"/"+_termHashTable
 _pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
-_termHashData=open(termHash)
-_pmidHashData=open(pmidHash)
-_termHashTable=cPickle.load(termHashData)
-_pmidHashTable=cPickle.load(pmidHashData)
+_termHashData=open(_termHash)
+_pmidHashData=open(_pmidHash)
+_termHashTable=cPickle.load(_termHashData)
+_pmidHashTable=cPickle.load(_pmidHashData)
 
 print "Hashes loaded"
 
