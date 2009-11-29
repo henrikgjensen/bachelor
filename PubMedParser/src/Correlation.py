@@ -68,13 +68,13 @@ def calculateCorrelation(M,searchVector):
         
         colVectors[termHash]=M.getcol(termHash).nonzero()[0]
 
-    print "Found",len(colVectors),"columns"
+    print "Found",len(colVectors),"column(s)"
 
     # Convert the matrix to a compressed-sparse-row matrix
     M=M.tocsr()
 
     # Get the rows expressed by the columns above
-    for pmidHash in colVectors[1]:
+    for pmidHash in colVectors.items()[1]:
         print pmidHash
         
 
