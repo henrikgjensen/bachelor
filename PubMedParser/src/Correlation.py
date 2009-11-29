@@ -13,7 +13,7 @@ def calculateCorrelation(M,searchVector):
     print str(searchVector)
 
 
-    for pmid in range(len(M.shape[1])-1):
+    for pmid in range(M.shape[1]-1):
 
         vector=M[pmid+1,1:]
 
