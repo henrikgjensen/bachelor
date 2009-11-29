@@ -82,7 +82,7 @@ def calculateCorrelation(M,searchVector):
         print "colhash: "+str(colHash)
         for pmidHash in item[1]:
             print "pmidHash: "+str(pmidHash)
-            rowVectors[colHash]=M.getrow(pmidHash).nonzero()[0]
+            rowVectors[pmidHash]=M.getrow(pmidHash).nonzero()[0]
 
     t2=time.time()
         
