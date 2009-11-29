@@ -13,10 +13,14 @@ _termHashTable="termHash.btd"
 # PMID-hash table file
 _pmidHashTable="pmidHash.btd"
 
-# Loaded hash tables
-termHashTable=[]
-pmidHashTable=[]
+termHash=_path+_hashTablesDir+"/"+_termHashTable
+pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
+termHashData=open(termHash)
+pmidHashData=open(pmidHash)
+termHashTable=cPickle.load(termHashData)
+pmidHashTable=cPickle.load(pmidHashData)
 
+print "Hashes loaded"
 
 def loadHashes():
 
