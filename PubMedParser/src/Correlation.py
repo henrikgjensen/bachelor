@@ -42,7 +42,10 @@ def calculateCorrelation(M,searchVector):
     pmidHashTable=_pmidHashTable
 
     # Convert the sparse matrix to a compressed-sparse-column matrix
+    t3=time.time()
     M=M.tocsc()
+    t4=time.time()
+    print "Converted matrix (coo to csc) in "+str(t4-t3)
 
     # Sanitize the search vector and convert it to a list of terms
     sanitizer=TextCleaner.sanitizeString()
@@ -69,7 +72,7 @@ def calculateCorrelation(M,searchVector):
 
     # Convert the matrix to a compressed-sparse-row matrix
     t3=time.time()
-    M=M.tocsr()
+    M=M.tolil()
     t4=time.time()
     print "Converted matrix (csc to csr) in "+str(t4-t3)
 
