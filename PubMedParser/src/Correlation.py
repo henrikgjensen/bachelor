@@ -34,23 +34,26 @@ def loadHashes():
 
     print "Hashes loaded"
 
-def calculateCorrelation(M,searchVector):
+def calculateCorrelation(M_lil,M_csc,searchVector):
 
     t1=time.time()
 
     termHashTable=_termHashTable
     pmidHashTable=_pmidHashTable
 
-    t3=time.time()
-    M2=M.tolil()
-    t4=time.time()
-    print "Converted matrix (lil to lil) in "+str(t4-t3)
+    M=M_csc
+    M2=M_lil
+
+    #t3=time.time()
+    #M2=M.tolil()
+    #t4=time.time()
+    #print "Converted matrix (lil to lil) in "+str(t4-t3)
 
     # Convert the sparse matrix to a compressed-sparse-column matrix
-    t3=time.time()
-    M=M.tocsc()
-    t4=time.time()
-    print "Converted matrix (lil to csc) in "+str(t4-t3)
+    #t3=time.time()
+    #M=M.tocsc()
+    #t4=time.time()
+    #print "Converted matrix (lil to csc) in "+str(t4-t3)
 
     # Sanitize the search vector and convert it to a list of terms
     sanitizer=TextCleaner.sanitizeString()
