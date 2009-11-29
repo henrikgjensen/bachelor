@@ -1,4 +1,5 @@
 from scipy import sparse, ones
+import pysparse
 import IOmodule
 import os
 import time
@@ -119,3 +120,15 @@ def addSubToLargeMatrix():
         print 'Successfully added'
 
     return mlar
+
+def loadMatrix(dirPath,filename):
+
+    t1=time.time()
+
+    M = IOmodule.readInTDM(dirPath, filename)
+
+    t2=time.time()
+
+    print str(t2-t1)
+
+    return M
