@@ -64,12 +64,10 @@ def calculateCorrelation(M,searchVector):
 
     # Locate columns containing the given terms
     colVectors={}
-    for term in hashedSearchTerms:
+    for termHash in hashedSearchTerms:
         
-        colVectors[term]=M.getcol(term).nonzero()[0]
+        colVectors[termHash]=M.getcol(term)[1:].nonzero()[0]
         
-    for col in colVectors.items():
 
-        revers=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 
-        print col
+    # revers=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
