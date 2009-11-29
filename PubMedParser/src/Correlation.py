@@ -44,13 +44,13 @@ def calculateCorrelation(M,searchVector):
     t3=time.time()
     M2=M.tolil()
     t4=time.time()
-    print "Converted matrix (coo to lil) in "+str(t4-t3)
+    print "Converted matrix (lil to lil) in "+str(t4-t3)
 
     # Convert the sparse matrix to a compressed-sparse-column matrix
     t3=time.time()
     M=M.tocsc()
     t4=time.time()
-    print "Converted matrix (coo to csc) in "+str(t4-t3)
+    print "Converted matrix (lil to csc) in "+str(t4-t3)
 
     # Sanitize the search vector and convert it to a list of terms
     sanitizer=TextCleaner.sanitizeString()
