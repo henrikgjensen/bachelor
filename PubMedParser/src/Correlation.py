@@ -42,7 +42,7 @@ def calculateCorrelation(M,searchVector):
     pmidHashTable=_pmidHashTable
 
     t3=time.time()
-    M2=M.tolil()
+    M2=M.tocsr()
     t4=time.time()
     print "Converted matrix (coo to lil) in "+str(t4-t3)
 
@@ -50,7 +50,7 @@ def calculateCorrelation(M,searchVector):
     t3=time.time()
     M=M2.tocsc()
     t4=time.time()
-    print "Converted matrix (lil to csc) in "+str(t4-t3)
+    print "Converted matrix (coo to csc) in "+str(t4-t3)
 
     # Sanitize the search vector and convert it to a list of terms
     sanitizer=TextCleaner.sanitizeString()
