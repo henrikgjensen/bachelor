@@ -4,7 +4,7 @@ def calculateCorrelation(M,searchVector):
 
 
     # Convert the sparse amtrix to a compressed-sparse-row matrix
-    M=M.todok()
+    M=M.tolil()
 
     # Sanitize the search vector and convert it to a list of terms
     sanitizer=TextCleaner.sanitizeString()
