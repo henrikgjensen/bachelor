@@ -59,7 +59,7 @@ def calculateCorrelation(M,searchVector):
     #colIndices=[]
     for term in hashedSearchTerms:
 
-        col=M.getcol(term)
+        col=M.getcol(term).nonzero()[0]
         #colIndices.append(M[0,term])
 
         print col
