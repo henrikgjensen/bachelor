@@ -72,4 +72,4 @@ def calculateCorrelation(M,searchVector):
 
         revers=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 
-        print revers
+        print col
