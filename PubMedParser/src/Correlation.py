@@ -74,7 +74,7 @@ def calculateCorrelation(M,searchVector):
     M=M.tocsr()
 
     # Get the rows expressed by the columns above
-    for pmidHash in colVectors.items():
+    for pmidHash in colVectors.items()[0][1]:
         print pmidHash
         
 
