@@ -1,6 +1,7 @@
 import TextCleaner
 import os
 import cPickle
+import time
 
 # Path to main folder
 _path=os.getenv("HOME")+'/'
@@ -35,6 +36,8 @@ def loadHashes():
 
 def calculateCorrelation(M,searchVector):
 
+    t1=time.time()
+
     termHashTable=_termHashTable
     pmidHashTable=_pmidHashTable
 
@@ -65,7 +68,6 @@ def calculateCorrelation(M,searchVector):
     # Locate columns containing the given terms
     colVectors={}
     for termHash in hashedSearchTerms:
-        
         colVectors[termHash]=M.getcol(termHash).nonzero()[0]
 
     print "Found",len(colVectors),"column(s)"
@@ -74,9 +76,14 @@ def calculateCorrelation(M,searchVector):
     M=M.tocsr()
 
     # Get the rows expressed by the columns above
-    for pmidHash in colVectors.items()[0][1]:
-        print pmidHash
-        
+    rowVectors={}
+    for pmidHash in colVectors.items()[0]:
+        rowVectors[pmidHash[0]]=pmidHash[1]
 
+    t2=time.time()
+        
+    print "Time elapsed: "+str(t2-t1)
+
+    print "Number of vectors: "+str(len(rowVectors))
 
     # revers=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
