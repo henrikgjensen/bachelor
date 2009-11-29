@@ -13,12 +13,12 @@ _termHashTable="termHash.btd"
 # PMID-hash table file
 _pmidHashTable="pmidHash.btd"
 
-termHash=_path+_hashTablesDir+"/"+_termHashTable
-pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
-termHashData=open(termHash)
-pmidHashData=open(pmidHash)
-termHashTable=cPickle.load(termHashData)
-pmidHashTable=cPickle.load(pmidHashData)
+_termHash=_path+_hashTablesDir+"/"+_termHashTable
+_pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
+_termHashData=open(termHash)
+_pmidHashData=open(pmidHash)
+_termHashTable=cPickle.load(termHashData)
+_pmidHashTable=cPickle.load(pmidHashData)
 
 print "Hashes loaded"
 
@@ -34,6 +34,9 @@ def loadHashes():
     print "Hashes loaded"
 
 def calculateCorrelation(M,searchVector):
+
+    termHashTable=_termHashTable
+    pmidHashTable=_pmidHashTable
 
     # Make sure hashes are loaded:
     if len(termHashTable)==0 or len(pmidHashTable)==0:
@@ -60,12 +63,12 @@ def calculateCorrelation(M,searchVector):
     print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
     # Locate columns containing the given terms
-    #colIndices=[]
+    colVectors={}
     for term in hashedSearchTerms:
+        
+        colVectors[term]=M.getcol(term).nonzero()[0]
+        
+    for col in colVectors.items()[1]:
 
-        col=M.getcol(term).nonzero()[0]
-        #colIndices.append(M[0,term])
-
-        print col
-
-    
+        revers=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
+        print revers[col]
