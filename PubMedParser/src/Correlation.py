@@ -70,25 +70,35 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
 #    for termHash in hashedSearchTerms:
 #        colVectors[termHash]=M_csc.getcol(termHash).nonzero()[0]
 
-
-    colVectors={}
+#####################
+    t3=time.time()
+    colVectors=[]
     firstHash=M_csc.getcol(hashedSearchTerms[0]).nonzero()[0]
-    for termHash in hashedSearchTerms[1:]:
-        colVectors[termHash]=[]
-        for element in M_csc.getcol(termHash).nonzero()[0]:
-            if element in firstHash:
-                colVectors[termHash].append(element)
+    if len(hashedSearchTerms)>1:
+        for termHash in hashedSearchTerms[1:]:
+            for element in M_csc.getcol(termHash).nonzero()[0]:
+                if element in firstHash:
+                    colVectors.append(element)
+        t4=time.time()
+        print "Compared",len(hashedSearchTerms),"vectors in "+str(t4-t3)
+#####################
 
-
-    print "Found",len(colVectors),"column(s)"
+#    print "Found",len(colVectors),"column(s)"
 
     # Get the rows expressed by the columns above
+#    rowVectors={}
+#    for item in colVectors.items():
+#        colHash=item[0]
+#        print "colhash: "+str(colHash)
+#        for pmidHash in item[1]:
+#            rowVectors[pmidHash]=M_lil.getrow(pmidHash).nonzero()[0]
+
+#####################
     rowVectors={}
-    for item in colVectors.items():
-        colHash=item[0]
-        print "colhash: "+str(colHash)
+    for item in colVectors:
         for pmidHash in item[1]:
             rowVectors[pmidHash]=M_lil.getrow(pmidHash).nonzero()[0]
+#####################
 
     t2=time.time()
         
