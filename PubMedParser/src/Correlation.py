@@ -95,9 +95,8 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
 
 #####################
     rowVectors={}
-    for item in colVectors:
-        for pmidHash in item[1]:
-            rowVectors[pmidHash]=M_lil.getrow(pmidHash).nonzero()[0]
+    for pmid in colVectors:
+        rowVectors[pmidHash]=M_lil.getrow(pmidHash).nonzero()[0]
 #####################
 
     t2=time.time()
