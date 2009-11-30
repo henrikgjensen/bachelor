@@ -76,7 +76,7 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
     firstHash=M_csc.getcol(hashedSearchTerms[0]) #.nonzero()[0]
     if len(hashedSearchTerms)>1:
         for termHash in hashedSearchTerms[1:]:
-            for element in M_csc.getcol(termHash) #.nonzero()[0]:
+            for element in M_csc.getcol(termHash): #.nonzero()[0]:
                 if element in firstHash:
                     colVectors.append(element)
         t4=time.time()
