@@ -69,7 +69,7 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
 
     rowVectors={}
     for pmidHash in intersectedColSet:
-        rowVectors[pmidHash]=M_lil.getrow(pmidHash)[1:].nonzero()[0]
+        rowVectors[pmidHash]=M_lil.getrow(pmidHash)[:,1:].nonzero()[0]
 
     totalTime2=time.time()
     print "Total time elapsed: "+str(totalTime2-totalTime1)
