@@ -78,7 +78,7 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
     for termHash in hashedSearchTerms:
         colList.append(M_csc.getcol(termHash).nonzero()[0])
 
-    intersectedColSet=reduce(set.intersection,map[set,colList])
+    intersectedColSet=reduce(set.intersection,map(set,colList))
 
     t4=time.time()
     print "Compared",len(hashedSearchTerms),"vectors in "+str(t4-t3)
