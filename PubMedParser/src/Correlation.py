@@ -66,11 +66,12 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
     print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
     # Locate columns containing the given terms
-#    colVectors={}
-#    for termHash in hashedSearchTerms:
-#        colVectors[termHash]=M_csc.getcol(termHash).nonzero()[0]
+    colVectors={}
+    for termHash in hashedSearchTerms:
+        colVectors[termHash]=M_csc.getcol(termHash).nonzero()[0]
 
 #####################
+    """
     t3=time.time()
   
     # Husk at vi stadig har problemet med det 0'te element i cols'ny !
@@ -82,22 +83,25 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
 
     t4=time.time()
     print "Compared",len(hashedSearchTerms),"vectors in "+str(t4-t3)
+    """
 #####################
 
-#    print "Found",len(colVectors),"column(s)"
+    print "Found",len(colVectors),"column(s)"
 
     # Get the rows expressed by the columns above
-#    rowVectors={}
-#    for item in colVectors.items():
-#        colHash=item[0]
-#        print "colhash: "+str(colHash)
-#        for pmidHash in item[1]:
-#            rowVectors[pmidHash]=M_lil.getrow(pmidHash).nonzero()[0]
+    rowVectors={}
+    for item in colVectors.items():
+        colHash=item[0]
+        print "colhash: "+str(colHash)
+        for pmidHash in item[1]:
+            rowVectors[pmidHash]=M_lil.getrow(pmidHash).nonzero()[0]
 
 #####################
+    """
     rowVectors={}
     for pmidHash in intersectedColSet:
         rowVectors[pmidHash]=M_lil.getrow(pmidHash).nonzero()[0]
+    """
 #####################
 
     t2=time.time()
