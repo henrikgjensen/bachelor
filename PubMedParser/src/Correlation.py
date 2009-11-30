@@ -49,12 +49,6 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
     #t4=time.time()
     #print "Converted matrix (lil to lil) in "+str(t4-t3)
 
-    # Convert the sparse matrix to a compressed-sparse-column matrix
-    #t3=time.time()
-    #M=M.tocsc()
-    #t4=time.time()
-    #print "Converted matrix (lil to csc) in "+str(t4-t3)
-
     # Sanitize the search vector and convert it to a list of terms
     sanitizer=TextCleaner.sanitizeString()
     searchVector=[term.lower() for term in sanitizer.sub(' ', searchVector).split(' ') if term!='']
@@ -72,17 +66,21 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
     print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
     # Locate columns containing the given terms
+#    colVectors={}
+#    for termHash in hashedSearchTerms:
+#        colVectors[termHash]=M_csc.getcol(termHash).nonzero()[0]
+
+
     colVectors={}
-    for termHash in hashedSearchTerms:
-        colVectors[termHash]=M.getcol(termHash).nonzero()[0]
+    firstHash=M_csc.getcol(hashedSearchTerms[0]).nonzero()[0]
+    for termHash in hashedSearchTerms[1:]:
+        colVectors[termHash]=[]
+        for element in M_csc.getcol(termHash).nonzero()[0]:
+            if element in firstHash:
+                colVectors[termHash].append(element)
+
 
     print "Found",len(colVectors),"column(s)"
-
-    # Convert the matrix to a compressed-sparse-row matrix
-    #t3=time.time()
-    #M=M.tolil()
-    #t4=time.time()
-    #print "Converted matrix (csc to lil) in "+str(t4-t3)
 
     # Get the rows expressed by the columns above
     rowVectors={}
@@ -90,7 +88,7 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
         colHash=item[0]
         print "colhash: "+str(colHash)
         for pmidHash in item[1]:
-            rowVectors[pmidHash]=M2.getrow(pmidHash).nonzero()[0]
+            rowVectors[pmidHash]=M_lil.getrow(pmidHash).nonzero()[0]
 
     t2=time.time()
         
