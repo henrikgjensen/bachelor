@@ -36,18 +36,10 @@ def loadHashes():
 
 def calculateCorrelation(M_lil,M_csc,searchVector):
 
-    t1=time.time()
+    totalTime1=time.time()
 
     termHashTable=_termHashTable
-    pmidHashTable=_pmidHashTable
-
-    M=M_csc
-    M2=M_lil
-
-    #t3=time.time()
-    #M2=M.tolil()
-    #t4=time.time()
-    #print "Converted matrix (lil to lil) in "+str(t4-t3)
+    #pmidHashTable=_pmidHashTable
 
     # Sanitize the search vector and convert it to a list of terms
     sanitizer=TextCleaner.sanitizeString()
@@ -65,48 +57,22 @@ def calculateCorrelation(M_lil,M_csc,searchVector):
 
     print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
-    # Locate columns containing the given terms
-    colVectors={}
-    for termHash in hashedSearchTerms:
-        colVectors[termHash]=M_csc.getcol(termHash).nonzero()[0]
-
-#####################
-    """
-    t3=time.time()
-  
-    # Husk at vi stadig har problemet med det 0'te element i cols'ny !
+    t1=time.time()
+    # Husk at vi stadig har problemet med det 0'te element i cols'ne!
     colList=[]
     for termHash in hashedSearchTerms:
-        colList.append(M_csc.getcol(termHash).nonzero()[0])
+        colList.append(M_csc.getcol(termHash)[1:].nonzero()[0])
 
     intersectedColSet=reduce(set.intersection,map(set,colList))
+    t2=time.time()
+    print "Compared",len(hashedSearchTerms),"vectors in "+str(t2-t1)
 
-    t4=time.time()
-    print "Compared",len(hashedSearchTerms),"vectors in "+str(t4-t3)
-    """
-#####################
-
-    print "Found",len(colVectors),"column(s)"
-
-    # Get the rows expressed by the columns above
-    rowVectors={}
-    for item in colVectors.items():
-        colHash=item[0]
-        print "colhash: "+str(colHash)
-        for pmidHash in item[1]:
-            rowVectors[pmidHash]=M_lil.getrow(pmidHash).nonzero()[0]
-
-#####################
-    """
     rowVectors={}
     for pmidHash in intersectedColSet:
         rowVectors[pmidHash]=M_lil.getrow(pmidHash).nonzero()[0]
-    """
-#####################
 
-    t2=time.time()
-        
-    print "Total time elapsed: "+str(t2-t1)
+    totalTime2=time.time()
+    print "Total time elapsed: "+str(totalTime2-totalTime1)
 
     print "Number of vectors: "+str(len(rowVectors))
 
