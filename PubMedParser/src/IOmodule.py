@@ -1,9 +1,9 @@
 import os.path
 import os
-import pickle
+import cPickle
+import time
 from scipy.io import mmwrite
 from scipy.io import mmread
-import numpy
 
 def writeOutTxt(dir,filename,text,mode='w'):
 
@@ -50,19 +50,16 @@ def pickleOut(dirname, filename, object):
 
     """
 
-    path=os.getenv("HOME")+'/'
+    if not os.path.isdir(dirname):
+        os.mkdir(dirname)
 
-    if not os.path.isdir(path+dirname):
-        os.mkdir(path+dirname)
-
-    filepath=path+dirname+'/'+filename+'.btd' # binary term document matrix
+    filepath=dirname+'/'+filename+'.btd' 
     print filepath
     fd = open(filepath,'w')
-    pickle.dump(object,fd)
+    cPickle.dump(object,fd)
     fd.close()
 
 def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
-# writeOut Term Document Matrix
 
     """
     Receives a dirname, filename, matrix and optional type, which is
@@ -70,13 +67,11 @@ def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
     Uses mmwrite to write out matrices, saving them in Matrix Marked
     format which saves a lot of space 
     """
-
-    path=os.getenv("HOME")+'/'
     
-    if not os.path.isdir(path+dirname):
-        os.mkdir(path+dirname)
+    if not os.path.isdir(dirname):
+        os.mkdir(dirname)
 
-    filepath=path+dirname+'/'+filename # binary term document matrix
+    filepath=dirname+'/'+filename # binary term document matrix
     print filepath
     # Write out the Matrix Marked file
     try:
@@ -87,17 +82,19 @@ def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
 def readInTDM(dirname, filename):
 
     """
-    Receives dirname without / infront or behind. And filename without
+    Receives dirname without "/" infront or behind, and filename without
     extention.
     """
+
+    t1=time.time()
 
     path=os.getenv("HOME")+'/'
 
     path+=dirname+'/'+filename
 
-    try:
-        A = mmread(path)
-    except:
-        print 'Unable to read', path
+    A = mmread(path)
+
+    t2=time.time()
+    print "Matrix loaded in "+str(t2-t1)
 
     return A

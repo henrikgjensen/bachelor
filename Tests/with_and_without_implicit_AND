@@ -1,0 +1,46 @@
+>>> Cor.calculateCorrelation(M,M2,"cancer breast female")
+Search vector: ['cancer', 'breast', 'female'] . Corresponding hash: [825, 5320, 449]
+Found 3 column(s)
+Total time elapsed: 25.5499241352
+Number of vectors: 65835
+
+-------------------
+
+>>> Cor.calculateCorrelation(M,M2,"cancer breast female")
+Search vector: ['cancer', 'breast', 'female'] . Corresponding hash: [825, 5320, 449]
+Compared 3 vectors in 0.0395970344543
+Total time elapsed: 0.339318037033
+Number of vectors: 447
+
+======================
+
+>>> Cor.calculateCorrelation(M,M2,"syndrome eye facial")
+Search vector: ['syndrome', 'eye', 'facial'] . Corresponding hash: [15, 375, 693]
+Found 3 column(s)
+Total time elapsed: 48.4750430584
+Number of vectors: 133991
+
+--------------------
+
+>>> Cor.calculateCorrelation(M,M2,"syndrome eye facial")
+Search vector: ['syndrome', 'eye', 'facial'] . Corresponding hash: [15, 375, 693]
+Compared 3 vectors in 0.0608780384064
+Total time elapsed: 0.298810005188
+Number of vectors: 263
+
+==============================
+
+>>> Cor.calculateCorrelation(M,M2,"syndrome cancer protein")
+Search vector: ['syndrome', 'cancer', 'protein'] . Corresponding hash: [15, 825, 1172]
+Found 3 column(s)
+Total time elapsed: 78.2651970387
+Number of vectors: 205208
+
+--------------------
+
+>>> Cor.calculateCorrelation(M,M2,"syndrome cancer protein")
+Search vector: ['syndrome', 'cancer', 'protein'] . Corresponding hash: [15, 825, 1172]
+Compared 3 vectors in 0.0927619934082
+Total time elapsed: 0.503674983978
+Number of vectors: 770
+
