@@ -3,8 +3,13 @@ import os
 import cPickle
 import time
 
+mainFolder = 'The_Hive'
+subFolder = 'search'
+
+
+
 # Path to main folder
-_path=os.getenv("HOME")+'/'
+_path=os.getenv("HOME")
 # Term-doc directory
 _termDocDir="TermDoc"
 # Term- and PMID-hash directory
@@ -13,6 +18,14 @@ _hashTablesDir="hashTables"
 _termHashTable="termHash.btd"
 # PMID-hash table file
 _pmidHashTable="pmidHash.btd"
+
+# If mainFolder do not exists, create it.
+if not os.path.isdir(_path+'/'+mainDir):
+    os.mkdir(_path+'/'+mainDir)
+
+# If subFolder do not exists
+if not os.path.isdir(_path+'/'+mainDir+'/'+subFolder):
+    os.mkdir(_path+'/'+mainDir+'/'+subFolder)
 
 # Hashes to be instansiated:
 _termHash=_path+_hashTablesDir+"/"+_termHashTable
