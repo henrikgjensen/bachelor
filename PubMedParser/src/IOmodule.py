@@ -20,11 +20,10 @@ def writeOutTxt(dir,filename,text,mode='w'):
 
     string=str(text)
 
-    path=os.getenv("HOME")+'/'
-    if not os.path.isdir(path+dir):
-        os.mkdir(path+dir)
+    if not os.path.isdir(dir):
+        os.mkdir(dir)
 
-    filepath=path+dir+'/'+filename+'.txt'
+    filepath=dir+'/'+filename+'.txt'
     print filepath
     out = file(filepath,mode)
     out.write(string)
@@ -47,7 +46,6 @@ def pickleOut(dirname, filename, object):
     work station.
 
     The format is pythons seriaized object via the pickle module.
-
     """
 
     if not os.path.isdir(dirname):
@@ -62,8 +60,9 @@ def pickleOut(dirname, filename, object):
 def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
 
     """
-    Receives a dirname, filename, matrix and optional type, which is
-    defined by numpy, and is e.g. numpy.float32, numpy.integer etc.
+    Receives a (full) directory name and a filename, a matrix and optional type,
+    which is defined by numpy, and is e.g. numpy.float32, numpy.integer etc.
+    
     Uses mmwrite to write out matrices, saving them in Matrix Marked
     format which saves a lot of space 
     """
@@ -82,16 +81,14 @@ def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
 def readInTDM(dirname, filename):
 
     """
-    Receives dirname without "/" infront or behind, and filename without
-    extention.
+    Receives (full) directory path and filename without extention.
+    
+    Returns the matrix specified.
     """
 
     t1=time.time()
 
-    path=os.getenv("HOME")+'/'
-
-    path+=dirname+'/'+filename
-
+    path=dirname+'/'+filename
     A = mmread(path)
 
     t2=time.time()

@@ -8,21 +8,31 @@ import time
 from nltk import *
 from TextCleaner import sanitizeString
 
-# Path to main folder
-_path=os.getenv("HOME")+'/'
-# MedLine directory
-_medlineDir="medlineDir"
+# Main folder
+_mainFolder=os.getenv("HOME")+"/"+"The_Hive"
+# Phase subfolder
+_subFolder = _mainFolder+"/"+"term_doc"
+# MedLine record directory
+_medlineDir=_mainFolder+"/data_acquisition/"+"medline_records"
 # Sub-matrix directory
-_subMatrixDir="diseaseMatrices"
+_subMatrixDir=_mainFolder+"/"+_subFolder+"/"+"diseaseMatrices"
 # Term-doc directory
-_termDocDir="TermDoc"
+_termDocDir=_mainFolder+"/"+_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
-_hashTablesDir="hashTables"
+_hashTablesDir=_mainFolder+"/"+_subFolder+"/"+"hashTables"
 # Term-hash table file
-_termHashTable="termHash.btd"
+_termHashTable=_hashTablesDir+"/"+"termHash.btd"
 # PMID-hash table file
-_pmidHashTable="pmidHash.btd"
+_pmidHashTable=_hashTablesDir+"/"+"pmidHash.btd"
 
+
+# Create main folder if it doesn't already exist.
+if not os.path.isdir(_mainFolder):
+        os.mkdir(_mainFolder)
+
+# Create sub folder if it doesn't already exist..
+if not os.path.isdir(_mainFolder+"/"+_subFolder):
+        os.mkdir(_mainFolder+"/"+_subFolder)
 
 
 def _wordCounter(pmid, string):
@@ -59,7 +69,7 @@ def _gatherMatrixData(filename):
     It returns a doc-term list on the form: [[PMID,[(term1,count1),...],...]
     """
 
-    medlineDir=_path+_medlineDir
+    medlineDir=_medlineDir
 
     l = []
     records = RecordHandler.loadMedlineRecords(medlineDir, filename)
@@ -129,9 +139,9 @@ def medlineDir2MatrixDir(m=500, n=20000):
     stores the matrices as 'MatrixMarket' .mtx files, named by the disease name.
     """
 
-    medlineDir=_path+_medlineDir
-    termHash=_path+_hashTablesDir+"/"+_termHashTable
-    pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
+    medlineDir=_medlineDir
+    termHash=_termHashTable
+    pmidHash=_pmidHashTable
     termHashData=open(termHash)
     pmidHashData=open(pmidHash)
     termHashTable=cPickle.load(termHashData)
@@ -213,10 +223,10 @@ def createTermDoc(refreshHash=False):
     It also saves the matrix for later use as a MatrixMarket .mtx file.
     """
 
-    subMatrixDir=_path+_subMatrixDir
-    termDocDir=_path+_termDocDir
-    termHash=_path+_hashTablesDir+"/"+_termHashTable
-    pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
+    subMatrixDir=_subMatrixDir
+    termDocDir=_termDocDir
+    termHash=_hashTablesDir+"/"+_termHashTable
+    pmidHash=_hashTablesDir+"/"+_pmidHashTable
 
     t1 = time.time()
 
