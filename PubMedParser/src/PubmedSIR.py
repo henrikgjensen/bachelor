@@ -349,7 +349,7 @@ def getMedlineList(pmids):
         try:
             records.extend(list(Medline.parse(handle)))
         except:
-            IOmodule.writeOutTxt(_path+'/'+'errordir_medlinerecords', pmids[i], '')
+            IOmodule.writeOutTxt(_path+'/'+'errordir_medline_records', pmids[i], '')
 
         print 'Downloaded',len(records),'MedLine articles.',str(listLength-len(records)),'remaining...'
 
