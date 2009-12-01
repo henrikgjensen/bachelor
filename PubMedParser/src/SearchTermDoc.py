@@ -14,6 +14,7 @@ _termHashTable="termHash.btd"
 # PMID-hash table file
 _pmidHashTable="pmidHash.btd"
 
+# Hashes to be instansiated:
 _termHash=_path+_hashTablesDir+"/"+_termHashTable
 _pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
 _termHashData=open(_termHash)
@@ -21,7 +22,6 @@ _pmidHashData=open(_pmidHash)
 _termHashTable=cPickle.load(_termHashData)
 _pmidHashTable=cPickle.load(_pmidHashData)
 _revPmidHashTable=revers=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
-
 print "Hashes loaded"
 
 def extractRelevantVectors(M_lil,M_csc,searchVector):
@@ -29,7 +29,6 @@ def extractRelevantVectors(M_lil,M_csc,searchVector):
     totalTime1=time.time()
 
     termHashTable=_termHashTable
-    #pmidHashTable=_pmidHashTable
 
     # Sanitize the search vector and convert it to a list of terms
     sanitizer=TextCleaner.sanitizeString()
@@ -67,4 +66,11 @@ def extractRelevantVectors(M_lil,M_csc,searchVector):
 
     return rowVectors
 
-    # revers=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
+def getPMID(hashedPMID):
+
+    """
+    This function simply returns the true PMID from the hashtable. It uses a
+    reverse of the pmidHashTable dictionary for a O(1) time lookup.
+    """
+
+    return _revPmidHashTable[hashedPMID]

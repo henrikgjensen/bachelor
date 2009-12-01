@@ -1,7 +1,7 @@
 import os.path
 import os
 import cPickle
-
+import time
 from scipy.io import mmwrite
 from scipy.io import mmread
 
@@ -53,14 +53,13 @@ def pickleOut(dirname, filename, object):
     if not os.path.isdir(dirname):
         os.mkdir(dirname)
 
-    filepath=dirname+'/'+filename+'.btd' # binary term document matrix
+    filepath=dirname+'/'+filename+'.btd' 
     print filepath
     fd = open(filepath,'w')
     cPickle.dump(object,fd)
     fd.close()
 
 def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
-# writeOut Term Document Matrix
 
     """
     Receives a dirname, filename, matrix and optional type, which is
@@ -83,14 +82,19 @@ def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
 def readInTDM(dirname, filename):
 
     """
-    Receives dirname without / infront or behind. And filename without
+    Receives dirname without "/" infront or behind, and filename without
     extention.
     """
+
+    t1=time.time()
 
     path=os.getenv("HOME")+'/'
 
     path+=dirname+'/'+filename
 
     A = mmread(path)
+
+    t2=time.time()
+    print "Matrix loaded in "+str(t2-t1)
 
     return A
