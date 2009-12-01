@@ -23,14 +23,14 @@ _path+=_path+'/'+subFolder
 if not os.path.isdir(_path):
     os.mkdir(_path)
 
-# Hashes to be instansiated:
+# Hashes to be instantiated:
 _termHash=_hashTablesDir+"/"+_termHashTable
 _pmidHash=_hashTablesDir+"/"+_pmidHashTable
 _termHashData=open(_termHash)
 _pmidHashData=open(_pmidHash)
 _termHashTable=cPickle.load(_termHashData)
 _pmidHashTable=cPickle.load(_pmidHashData)
-_revPmidHashTable=revers=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
+_revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 print "Hashes loaded"
 
 def extractRelevantVectors(M_lil,M_csc,searchVector):
