@@ -37,7 +37,8 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
         diseaseDictionary = {}
 
         for i in range(len(diseaseList)):
-            # Transfer the ordered disease list into an unordered dictionary
+            # Transfer the ordered disease list into an unordered
+            # dictionary
             diseaseDictionary[diseaseList[i].keys()[0]] = diseaseList[i].values()[0]
 
         dictionary = {}
@@ -45,8 +46,8 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
         # for each disease
         diseaseDictionary = getArticleIDs(diseaseDictionary)
 
-#        print 'Completed dictionary construction for iteration', str(i)
-#        print 'We still need to complete', str(numberOfRareDiseases - (i*numberToGet))
+        # Do not know where this should be.
+        # print 'Number of diseases remaining:', str(numberOfRareDiseases - i)
     
         for disease in diseaseDictionary:
 
@@ -62,19 +63,12 @@ def getArticleIDs(diseaseDictionary):
 
     """
     Takes a dictionary of the form:
-    {'disease xx': {'terms' : [xx, yy], 'uid' : string, 'description' : string }, etc}
-    And returns a dictionary containing:
-    {'disease a': [pmid1, pmid2, pmid3...], 'disease b' : [pmidx, pmidy,...], ...}
+    {'disease xx': {'syn' : [xx, yy], 'term' : string, 'uid' : string,
+    'description' : string }, etc}}
 
-    Duplicate PMIDs are removed.
-    """
-    #  ^ Need to update this one. ^
-
-    """
-    Takes a dictionary of the form:
-    {'disease xx': {'syn' : [xx, yy], 'term' : string, 'uid' : string, 'description' : string }, etc}}
     And returns a dictionary containing:
-    {'disease a': [pmid1, pmid2, pmid3...], 'disease b' : [pmidx, pmidy,...], ...}
+    {'disease a': [pmid1, pmid2, pmid3...], 'disease b' : [pmidx,
+    pmidy,...], ...}
 
     Where disease xx is the name of the disease, syn is a list of
     synonyms, term is a hand crafted search term (if it exists),
@@ -83,8 +77,6 @@ def getArticleIDs(diseaseDictionary):
 
     Duplicate PMIDs are removed.
     """
-
-    # ^ Needs to be updated or removed ^
 
     # Iterates through the diseaseDictionary and searches for uid,
     # term, diseasename, and combinations of synonyms
@@ -103,7 +95,7 @@ def getArticleIDs(diseaseDictionary):
             diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(diseaseDictionary[disease]['db'],'',TC.unquoteString(diseaseDictionary[disease]['terms']) + additionalSearchOptions,articleCount))
         elif (diseaseDictionary[disease]['uid'] != ''):
             diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(diseaseDictionary[disease]['db'],diseaseDictionary[disease]['uid'],'',articleCount))
-
+            
         articleCount = articleCount - len(diseaseArticleIDlist[disease]['PMIDs'])
 
         # If we still have qouta left
@@ -115,24 +107,26 @@ def getArticleIDs(diseaseDictionary):
         diseaseArticleIDlist[disease]['PMIDs'] = removeDuplicates(diseaseArticleIDlist[disease]['PMIDs'])
 
         # diseaseArticleIDlist, should contain about 250 PMIDs by now,
-        # but we have a max limit on 500 records, therefore we wish
-        # to fill up with the other search form now. (By searching on
+        # but we have a max limit on 500 records, therefore we wish to
+        # fill up with the other search form now. (By searching on
         # synonyms)
         articleCount = 500 - len(diseaseArticleIDlist[disease]['PMIDs'])
 
         # Translate the special signs contained in some synonyms
         diseaseDictionary[disease]['syn']=[TC.decodeURLcharacters(TC.unquoteString(i)).encode('utf-8','ignore') for i in diseaseDictionary[disease]['syn']]
 
-        # Create a set of all combinations of synonyms and save it in 'optimizedSynonymList'
+        # Create a set of all combinations of synonyms and save it in
+        # 'optimizedSynonymList'
         synonymArticleIDlist={}
         optimizedSynonymList = sorted(STC.searchTermCombiner(diseaseDictionary[disease]['syn'], additionalSearchOptions,1))
 
-        # Go though the list of synonyms, download corresponding PMIDs from Pubmed
-        # and delete synonyms not returned any PMIDs (and all combinations
-        # containing this synonym!).
-        # Note that the sorted nature of the the list of tuples in
-        # 'optimizedSynonymList' allows us to delete post-indices while iterating
-        # through it without getting indexs errors or missing any steps.
+        # Go though the list of synonyms, download corresponding PMIDs
+        # from Pubmed and delete synonyms not returned any PMIDs (and
+        # all combinations containing this synonym!).  Note that the
+        # sorted nature of the the list of tuples in
+        # 'optimizedSynonymList' allows us to delete post-indices
+        # while iterating through it without getting indexs errors or
+        # missing any steps.
         print "================================================"
         print "Total number of synonyms:",len(optimizedSynonymList)
         printcount=len(optimizedSynonymList)
@@ -173,19 +167,19 @@ def getArticleIDs(diseaseDictionary):
 
         listIsEmpty = False
 
-        # Gonna make a list of maximum 250 PMIDs from the synonym list, without duplicates. As set contains unordered, unique elements, we use a set to collect the PMIDs
+        # Gonna make a list of maximum 250 PMIDs from the synonym
+        # list, without duplicates. As set contains unordered, unique
+        # elements, we use a set to collect the PMIDs
         collectionSet = set()
 
-        # We might consider changing this, because right now, we check twice to see whether collectionSet exceeds articleCount
+        # We might consider changing this, because right now, we check
+        # twice to see whether collectionSet exceeds articleCount
         while len(collectionSet) <= articleCount or not listIsEmpty:
 
             # Is the list of items empty, then we can't do anything.
             if items == []:
                 listIfEmpty = True
                 break
-            # Does the next range of items exceed 250 PMIDs?
-#            elif len(collectionSet) + items[len(items)-1][0] > 250:
-#                break
 
             transferTuple = items.pop()
 
@@ -194,13 +188,12 @@ def getArticleIDs(diseaseDictionary):
 
             for pmid in transferTuple[1]:
                 # Test to see if len of the set is articleCount?
-                if len(collectionSet) + articleCount > 499:
+                if (len(collectionSet) + articleCount) > 499:
                     break
                 collectionSet.add(pmid)
 
-#        if len(collectionSet) < 500 - articleCount:
-#            print 'The collection set size differs from ' + str(500-articleCount) + '. The size is: ', len(collectionSet)
-
+        # Print some useful information about the number of returned
+        # articles from each of the search types
         print 'Hand crafted / Disease name search returned:', str(len(diseaseArticleIDlist[disease]['PMIDs'])), 'results'
         print 'Synonym search returned:', str(len(collectionSet)), 'results'
         print 'Total number of results:', str(len(collectionSet) + len(diseaseArticleIDlist[disease]['PMIDs']))
@@ -236,8 +229,29 @@ def removeDuplicates(listOfIDs):
 
 def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArticles=20):
 
-    numberOfRetries = 100 # Number of retries per disease, high due to unstable internetconnection.
-    sleepTimeBetweenTries = 5 # Sleep time between retries, default 5 sec
+    ###########################################################
+    ### WE NEED TO SEARCH ON THE DISEASE NAME IF PUBMED UID ###
+    ### OR OMIM UID DO NOT RETURN 250 MEDLINE RECORDS!!!    ###
+    ###########################################################    
+
+
+    """
+    This function is for getting PMIDs from different sources. The are
+    a number of different sources available. We first see if the
+    database is PUBMED and if the uid is set. In this case we need to
+    use Entrez.elink for performing our search. If uid is not set we
+    need to use Entrez.esearch instead.
+
+    If the database is OMIM then we need to use Entrez.elink to
+    perform the search
+
+    """
+
+    # Number of retries per disease, high due to unstable
+    # internetconnection.
+    numberOfRetries = 100
+    # Sleep time between retries, default 5 sec
+    sleepTimeBetweenTries = 5
 
     if database.lower()=='pubmed':
         if uid != '':
@@ -308,8 +322,8 @@ def getArticleCount(search_term):
 def getMedlineList(pmids):
 
     """
-    This function takes a list of article-ids and returns a list of MedLine
-    articles that contains an abstract.
+    This function takes a list of article-ids and returns a list of
+    MedLine articles that contains an abstract.
     """
 
     records = []
