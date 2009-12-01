@@ -4,32 +4,28 @@ import cPickle
 import time
 
 mainFolder = 'The_Hive'
-subFolder = 'search'
-
-
+subFolder = 'search_engine'
 
 # Path to main folder
-_path=os.getenv("HOME")
+_path=os.getenv("HOME")+'/'+mainFolder
 # Term-doc directory
-_termDocDir="TermDoc"
+_termDocDir=_path+'/'+'term_doc'+'/'+"termDoc"
 # Term- and PMID-hash directory
-_hashTablesDir="hashTables"
+_hashTablesDir=_path+'/'+'term_doc'+'/'+"hashTables"
 # Term-hash table file
 _termHashTable="termHash.btd"
 # PMID-hash table file
 _pmidHashTable="pmidHash.btd"
 
-# If mainFolder do not exists, create it.
-if not os.path.isdir(_path+'/'+mainDir):
-    os.mkdir(_path+'/'+mainDir)
+_path+=_path+'/'+subFolder
 
 # If subFolder do not exists
-if not os.path.isdir(_path+'/'+mainDir+'/'+subFolder):
-    os.mkdir(_path+'/'+mainDir+'/'+subFolder)
+if not os.path.isdir(_path):
+    os.mkdir(_path)
 
 # Hashes to be instansiated:
-_termHash=_path+_hashTablesDir+"/"+_termHashTable
-_pmidHash=_path+_hashTablesDir+"/"+_pmidHashTable
+_termHash=_hashTablesDir+"/"+_termHashTable
+_pmidHash=_hashTablesDir+"/"+_pmidHashTable
 _termHashData=open(_termHash)
 _pmidHashData=open(_pmidHash)
 _termHashTable=cPickle.load(_termHashData)
