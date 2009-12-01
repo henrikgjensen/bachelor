@@ -12,6 +12,17 @@ reload(IOmodule)
 import os
 from time import sleep
 
+mainFolder = 'The_Hive'
+subFolder = 'data_acquisition'
+
+# Path to main folder
+_path=os.getenv("HOME")
+_path+='/'+_path+'/'+mainFolder+'/'+subFolder
+
+# If mainFolder and subFolder do not exists, create it.
+if not os.path.isdir(_path):
+    os.mkdir(_path)
+
 # Collector function that gathers all functionality.
 def gatherOfAllThings(startIndex=0,stopIndex=None):
 
@@ -24,7 +35,10 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
     steps = int(math.ceil(numberOfRareDiseases / numberToGet))
 
     # Default directory to save information files in.
-    directory = 'diseaseInformation'
+    directory = 'medline_records'
+    _path_medlinerecords+=_path+'/'+directory
+    if not os.path.isDir(_path_medlinerecords):
+        os.mkdir(_path_medlinerecords)
 
     # Read in the range of diseases we want to get information about,
     # in a list, it needs to be sorted to support resume.
@@ -46,9 +60,6 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
         # for each disease
         diseaseDictionary = getArticleIDs(diseaseDictionary)
 
-        # Do not know where this should be.
-        # print 'Number of diseases remaining:', str(numberOfRareDiseases - i)
-    
         for disease in diseaseDictionary:
 
             dictionary[disease] = {}
@@ -57,7 +68,7 @@ def gatherOfAllThings(startIndex=0,stopIndex=None):
 
             dictionary[disease]['records'].extend(getMedlineList(diseaseDictionary[disease]['PMIDs']))
 
-            IOmodule.writeOutTxt(directory, disease, dictionary[disease], 'w')
+            IOmodule.writeOutTxt(_path_medlinerecords, disease, dictionary[disease], 'w')
 
 def getArticleIDs(diseaseDictionary):
 
@@ -338,7 +349,7 @@ def getMedlineList(pmids):
         try:
             records.extend(list(Medline.parse(handle)))
         except:
-            IOmodule.writeOutTxt('errorDir', pmids[i], '')
+            IOmodule.writeOutTxt(_path+'/'+'errordir_medlinerecords', pmids[i], '')
 
         print 'Downloaded',len(records),'MedLine articles.',str(listLength-len(records)),'remaining...'
 
