@@ -14,11 +14,24 @@ removeSlashes=TextCleaner.removeSlashes()
 removeCommas=TextCleaner.removeCommas()
 removeWhitespaces=TextCleaner.removeWhitespaces()
 
-# Folders to save downloaded diseases in
-diseaseFolder="BA_DiseaseCrawler"
+# Path to main folder
+_mainFolder=os.getenv("HOME")+"/"+"The_Hive"
+# Path the phase subfolder
+_subFolder = "data_acquisition"
+# Downloaded diseases
+diseaseFolder="rarediseases_info"
+# Error log
 errorFolder="URL_error_log"
 
-# Pages to be crawled (by default)
+# Create main folder if it doesn't already exist..
+if not os.path.isdir(_mainFolder):
+        os.mkdir(_mainFolder)
+
+# Create sub folder if it doesn't already exist..
+if not os.path.isdir(_mainFolder+"/"+_subFolder):
+        os.mkdir(_mainFolder+"/"+_subFolder)
+
+# Pages to be crawled (by default).
 defaultPages=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Z','0-49']
 
 def fetchPubmedDiseaseURLs(pages=defaultPages):
@@ -114,7 +127,6 @@ def fetchPubmedDiseaseTerms(pages):
     """
 
     pubmedURLs={}
-    problematicURLs=[]
 
     printvar=0
     pagenumber=0
@@ -122,7 +134,7 @@ def fetchPubmedDiseaseTerms(pages):
     for page in pages:
         pagenumber+=1
         
-        # Open the page
+        # Open the page.
         for i in range(3):
             try:
                 c=urllib2.urlopen(page)
@@ -138,19 +150,19 @@ def fetchPubmedDiseaseTerms(pages):
             soup=BeautifulSoup(c.read())
         except HTMLParseError:
             print 'Experienced difficulties opening %s' % page
-            IOmodule.writeOutTxt(diseaseFolder+'/'+errorFolder,strftime('%H%M%S'),page)
+            IOmodule.writeOutTxt(_mainFolder+"/"+_subFolder+"/"+diseaseFolder+'/'+errorFolder,strftime('%H%M%S'),page)
             continue
 
-        # Get disease name
+        # Get disease name.
         title=soup.html.head.title.string
 
-        # Some pages are 'officially' not working. Catch them here
+        # Some pages are 'officially' not working. Catch them here.
         if title=='NIH Office of Rare Diseases Research (ORDR) - Error':
-            IOmodule.writeOutTxt(diseaseFolder+'/'+errorFolder,'Page error'+strftime('%H%M%S'),page)
+            IOmodule.writeOutTxt(_mainFolder+"/"+_subFolder+"/"+diseaseFolder+'/'+errorFolder,'Page error'+strftime('%H%M%S'),page)
             print 'Page Error on %s' % page
             continue
 
-        # Allocate dictionary
+        # Allocate dictionary.
         pubmedURLs[title]={}
         pubmedURLs[title]['db']='pubmed'    # ..database to search in (pubmed by default)
         pubmedURLs[title]['terms']=''       # ..handcrafted search term
@@ -158,7 +170,7 @@ def fetchPubmedDiseaseTerms(pages):
         pubmedURLs[title]['uid']=''         # ..search id
         pubmedURLs[title]['desc']=''        # ..optional disease description
 
-        # Check for Pubmed direct links
+        # Check for PubMed direct links.
         links=soup('a')
         found=False
         for link in links:
@@ -185,7 +197,7 @@ def fetchPubmedDiseaseTerms(pages):
                         found = True
                         print 'Found', str(printvar), 'PubMed terms/uids.', title
                         continue
-                    # Special case 1: If there is a PubMed direct link but the uid is not part of the tokens
+                    # Special case 1: If there is a PubMed direct link but the uid is not part of the tokens.
                     elif ('/entrez/' not in urlString):
                         start = urlString.find('/pubmed/') + 8
                         if '?' in urlString:
@@ -198,7 +210,7 @@ def fetchPubmedDiseaseTerms(pages):
                         printvar += 1
                         found = True
                         print 'Found', str(printvar), 'PubMed terms/uids.', title, '. (Special case 1: No tokens)'
-                    # Special case 2: If there is a webenv, the url is (by experience) not working but the disease name is still valuable for a pbumed search
+                    # Special case 2: If there is a webenv, the url is (by experience) not working but the disease name is still valuable for a pbumed search.
                     elif '&webenv=' in urlString:
                         printvar += 1
                         found = True
@@ -210,18 +222,18 @@ def fetchPubmedDiseaseTerms(pages):
                         print 'Could not fetch url'
                         raise StopIteration()
 
-        # A simple addition to the printouts
+        # A simple addition to the printouts.
         if not found:
             printvar+=1
             print 'Found',str(printvar),'Diseases.',title,'(no uid or term).'
 
-        # Notify if an unexpected database shows up
+        # Notify if an unexpected database shows up.
         if ((pubmedURLs[title]['db']!='')&(pubmedURLs[title]['db']!='omim')&(pubmedURLs[title]['db']!='pubmed')):
             print "*****Found different db:",pubmedURLs[title]['db']
             print 'Could not fetch url'
             raise StopIteration()
 
-        # Disease synonyms are also added to the term list
+        # Disease synonyms are also added to the term list.
         lis=soup('li')
         for li in lis:
             if ('synonym' in str(li.parent)):
@@ -235,7 +247,7 @@ def fetchPubmedDiseaseTerms(pages):
                     pubmedURLs[title]['syn'].append(synonym)
                     print '  ' + synonym
 
-        # Look for a optional disease description on rarediseases.info.nih.gov
+        # Look for a optional disease description on rarediseases.info.nih.gov.
         descs=soup('span')
         for desc in descs:
             if ('id' in dict(desc.attrs)):
@@ -276,7 +288,7 @@ def readDiseases(indexStart=0,indexStop=None):
     order.
     """
 
-    path=os.getenv("HOME")+'/'+diseaseFolder+'/'
+    path=_path+"/"+_mainFolder+"/"+_subFolder+"/"
 
     files=sorted([f for f in os.listdir(path) if os.path.isfile(path+f)])
 
