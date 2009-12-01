@@ -133,3 +133,14 @@ def loadMatrix(dirPath,filename):
 
     return M
 
+
+
+def simarray(a1,a2):
+
+    aSum=a1+a2
+
+    aSub=a1-a2
+
+    aResult=aSum
+
+    a1-aSub
