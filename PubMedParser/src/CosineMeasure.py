@@ -13,7 +13,7 @@ _hashTablePath = _path + "/The_Hive/term_doc/hashTable"
 
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'VLHash'))
 
-def cosineMeasure(queryString, M_csr, M_csc, numberOfResults=20):
+def cosineMeasure(queryString, M_lil, M_csr, numberOfResults=20):
 
     """
     This method is for making the standard cosine measure between two
@@ -24,11 +24,17 @@ def cosineMeasure(queryString, M_csr, M_csc, numberOfResults=20):
     Where q, d are vector.
 
     And ||v|| denotes the length of vector v.
+
+    Returns a list of tuples containing:
+    [(pmidHash, angle in degrees), ... ]
+
+    THIS IS COMPUTATIONALLY TOO HEAVY TO DEAL WITH IT TAKES ABOUT 2
+    MINUTES TO TRAVERSE THROUGH 50000 RECORDS.
     """
 
     # Makes the query vector a column vector with size
-    # M_csc.shape[1]-1 x 1 where M size is approximately 456.xxx
-    queryVector = blowUpVector(queryString, M_csr.shape[1]-1)
+    # M_csc.shape[1]-1 x 1 where M size is approximately 456.xxx x 1
+    queryVector = blowUpVector(queryString, M_csr.shape[1])
 
     # Calculate the length of query vector |qv|
     lengthOfqv = math.sqrt(len(queryString.split(' ')))
@@ -36,7 +42,7 @@ def cosineMeasure(queryString, M_csr, M_csc, numberOfResults=20):
     # Extracts the row indices based on the query string
     searchIndices = SearchTermDoc.extractRowIndices(M_csc, queryString)
     
-    # Combine the search indices into one large set
+    # Combine the search indices into one large set of pmidHashes
     searchIndices=reduce(set.union,map(set,searchIndices))
 
     #   Vector length calculation made smart! Hopefully
@@ -47,8 +53,9 @@ def cosineMeasure(queryString, M_csr, M_csc, numberOfResults=20):
     for index in searchIndices:
         # Should not matter whether you use '0' or ':' here. As getrow
         # returns a 1 x 456.xxx matrix
-        row = M_csr.getrow(index)[:,1:]
-        pmidHash = M_csr.getrow(index)[0,0]
+        row = M_csr.getrow(index)
+        pmidHash = row[0,0]
+        row[0,0]=0
         # Remember the right order of the dot product.
         # n x m DOT m x n = n x n. So what we want to
         # do is 1 x 456.543 DOT 456.453 x 1 = 1 x 1
@@ -64,12 +71,30 @@ def cosineMeasure(queryString, M_csr, M_csc, numberOfResults=20):
 
     return angleResults[:numberOfResults]    
 
+def cosineMeasure2(M_lil, queryString):
+
+    searchIndices = SearchTermDoc.extractRowIndices(M_csc, queryString)
+
+    queryString = SearchTermDoc.modifySearchString(queryString)
+
+    results=[]
+    for termHash in searchIndices.items()
+        for row in termHash[1]:
+            Sum=0
+            for element for termHash[0]:
+                Sum+=M_lil[row,element]
+            results.append(tuple(row,(1/len(termHash[0]))*(1/_vectorLength[row])*Sum))
+            
+
+
 def blowUpVector(queryString, size):
 
     """
     Helper function that makes a query vector be the same size as a
     vector from the term doc matrix and with its entries in the
     correct places.
+
+    Returns a 456.xxx x 1 "vector", in reality it is a column matrix
     """
 
     queryVector = SearchTermDoc.modifySearchString(queryString)
@@ -81,7 +106,7 @@ def blowUpVector(queryString, size):
     # positions to one.
     for term in queryVector:
         try:
-            qVector[SearchTermDoc._termHashTable[term],0] = 1
+            qVector[SearchTermDoc.termHashTable[term],0] = 1
         except:
             print "Did not locate term", term
             continue
