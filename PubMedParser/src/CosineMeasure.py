@@ -31,10 +31,10 @@ def cosineMeasure(queryString, termDocMatrix, numberOfResults=20):
 
     lengthOfqv = sqrt(len(queryString.split(' ')))
 
-    searchSpace = SearchTermDoc.extractRowIndices(termDocMatrix_csc, queryString):
+    searchSpace = SearchTermDoc.extractRowIndices(termDocMatrix_csc, queryString)
     
     angleResults = []
-    for in searchSpace:
+    for row in searchSpace:
         angleResults.append((queryVector * row)/(lengthOfqv*sqrt(sum(map((lambda x -> math.pow(x,2)),row[1:])))))
 
     return angleResults[:numberOfResults]    
