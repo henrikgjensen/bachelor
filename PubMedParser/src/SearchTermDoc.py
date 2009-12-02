@@ -30,7 +30,7 @@ _termHashData=open(_termHash)
 _pmidHashData=open(_pmidHash)
 _termHashTable=cPickle.load(_termHashData)
 _pmidHashTable=cPickle.load(_pmidHashData)
-_revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
+_revPmidHashTable=dict(zip(_pmidHashTable.values(),_pmidHashTable.keys()))
 print "Hashes loaded"
 
 
