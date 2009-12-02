@@ -2,6 +2,7 @@ import TextCleaner
 import os
 import cPickle
 import time
+import IOmodule
 
 mainFolder = 'The_Hive'
 subFolder = 'search_engine'
@@ -12,24 +13,14 @@ _path=os.getenv("HOME")+'/'+mainFolder
 _termDocDir=_path+'/'+'term_doc'+'/'+"termDoc"
 # Term- and PMID-hash directory
 _hashTablesDir=_path+'/'+'term_doc'+'/'+"hashTables"
-# Term-hash table file
-_termHashTable="termHash.btd"
-# PMID-hash table file
-_pmidHashTable="pmidHash.btd"
-
-
 
 # If subFolder do not exists
 if not os.path.isdir(_path+'/'+subFolder):
     os.mkdir(_path+'/'+subFolder)
 
 # Hashes to be instantiated:
-_termHash=_hashTablesDir+"/"+_termHashTable
-_pmidHash=_hashTablesDir+"/"+_pmidHashTable
-_termHashData=open(_termHash)
-_pmidHashData=open(_pmidHash)
-_termHashTable=cPickle.load(_termHashData)
-_pmidHashTable=cPickle.load(_pmidHashData)
+_termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash.btd")
+_pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash.btd")
 _revPmidHashTable=dict(zip(_pmidHashTable.values(),_pmidHashTable.keys()))
 print "Hashes loaded"
 
