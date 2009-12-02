@@ -33,17 +33,24 @@ _pmidHashTable=cPickle.load(_pmidHashData)
 _revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 print "Hashes loaded"
 
-def extractRelevantVectors(M_lil,M_csc,searchVector):
+def extractRowIndices(M_csc,searchString):
 
-    totalTime1=time.time()
+    """
+    Given a csc_matrix and a search string, this function extracts the relevant
+    rows in the term-doc matrix. It looks up the search terms in the hash list
+    (if they exist) and returns a list of all the PMID-indices that contain the
+    given term(s).
+    """
+
+    t1=time.time()
 
     termHashTable=_termHashTable
 
-    # Sanitize the search vector and convert it to a list of terms
+    # Sanitize the search vector and convert it to a list of terms.
     sanitizer=TextCleaner.sanitizeString()
-    searchVector=[term.lower() for term in sanitizer.sub(' ', searchVector).split(' ') if term!='']
+    searchVector=[term.lower() for term in sanitizer.sub(' ', searchString).split(' ') if term!='']
 
-    # Look up hashes for terms
+    # Look up hashes for terms.
     hashedSearchTerms=[]
     for term in searchVector:
         try:
@@ -52,28 +59,18 @@ def extractRelevantVectors(M_lil,M_csc,searchVector):
             print "Did not locate",term
             continue
         hashedSearchTerms.append(termHash)
-
     print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
-    t1=time.time()
+    # Extract all the indices of the non-zero elements in the columns.
     colList=[]
     for termHash in hashedSearchTerms:
         colList.append((M_csc.getcol(termHash).nonzero()[0])[1:])
 
-    intersectedColSet=reduce(set.intersection,map(set,colList))
     t2=time.time()
-    print "Compared",len(hashedSearchTerms),"vectors in "+str(t2-t1)
+    print "Found and returned column vectors in: "+str(t2-t1)
 
-    rowVectors={}
-    for pmidHash in intersectedColSet:
-        rowVectors[pmidHash]=(M_lil.getrow(pmidHash).nonzero()[0])[1:]
+    return colList
 
-
-    totalTime2=time.time()
-    print "Total time elapsed: "+str(totalTime2-totalTime1)
-    print "Number of vectors: "+str(len(rowVectors))
-
-    return rowVectors
 
 def getPMID(hashedPMID):
 
