@@ -33,6 +33,19 @@ _pmidHashTable=cPickle.load(_pmidHashData)
 _revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 print "Hashes loaded"
 
+
+def modifySearchString(searchString):
+
+    """
+    Takes a search string and returns a list of sanitized search terms.
+    """
+
+    # Sanitize the search vector and convert it to a list of terms.
+    sanitizer=TextCleaner.sanitizeString()
+    searchVector=[term.lower() for term in sanitizer.sub(' ', searchString).split(' ') if term!='']
+
+    return searchVector
+
 def extractRowIndices(M_csc,searchString):
 
     """
@@ -45,11 +58,8 @@ def extractRowIndices(M_csc,searchString):
     t1=time.time()
 
     termHashTable=_termHashTable
-
-    # Sanitize the search vector and convert it to a list of terms.
-    sanitizer=TextCleaner.sanitizeString()
-    searchVector=[term.lower() for term in sanitizer.sub(' ', searchString).split(' ') if term!='']
-
+    searchVector=modifySearchString(searchString)
+    
     # Look up hashes for terms.
     hashedSearchTerms=[]
     for term in searchVector:
