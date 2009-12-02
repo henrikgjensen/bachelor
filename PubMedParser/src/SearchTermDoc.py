@@ -86,6 +86,7 @@ def extractRowIndices(M_csc,searchString):
 
 def vector2QueryScore():
 
+    return None
 
 
 

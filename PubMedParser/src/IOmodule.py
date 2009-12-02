@@ -57,6 +57,15 @@ def pickleOut(dirname, filename, object):
     cPickle.dump(object,fd)
     fd.close()
 
+def pickleIn(dirname, filename):
+
+    """
+    Loads a pickled (.btd) object.
+    """
+
+    return cPickle.load(open(dirname+"/"+filename))
+
+
 def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
 
     """
