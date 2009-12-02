@@ -19,8 +19,8 @@ if not os.path.isdir(_path+'/'+subFolder):
     os.mkdir(_path+'/'+subFolder)
 
 # Hashes to be instantiated:
-_termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash.btd")
-_pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash.btd")
+_termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
+_pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
 _revPmidHashTable=dict(zip(_pmidHashTable.values(),_pmidHashTable.keys()))
 print "Hashes loaded"
 
