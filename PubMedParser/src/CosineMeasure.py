@@ -35,7 +35,7 @@ def cosineMeasure(queryString, termDocMatrix, numberOfResults=20):
     
     angleResults = []
     for row in searchSpace:
-        angleResults.append((queryVector * row)/(lengthOfqv*sqrt(sum(map((lambda x -> math.pow(x,2)),row[1:])))))
+        angleResults.append((queryVector * row)/(lengthOfqv*sqrt(sum(map((lambda x: math.pow(x,2)),row[1:])))))
 
     return angleResults[:numberOfResults]    
 
@@ -47,7 +47,7 @@ def blowUpVector(queryString, size):
     correct places.
     """
 
-    queryVector = SearchTermDoc.modifySearchString(queryString):
+    queryVector = SearchTermDoc.modifySearchString(queryString)
 
     # Init empty query vector
     qVector = scipy.sparse.lil_matrix((1,size))

@@ -17,11 +17,11 @@ _termHashTable="termHash.btd"
 # PMID-hash table file
 _pmidHashTable="pmidHash.btd"
 
-_path+=_path+'/'+subFolder
+
 
 # If subFolder do not exists
-if not os.path.isdir(_path):
-    os.mkdir(_path)
+if not os.path.isdir(_path+'/'+subFolder):
+    os.mkdir(_path+'/'+subFolder)
 
 # Hashes to be instantiated:
 _termHash=_hashTablesDir+"/"+_termHashTable
