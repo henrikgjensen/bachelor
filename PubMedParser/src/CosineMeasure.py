@@ -6,14 +6,6 @@ import os
 import SearchTermDoc 
 
 _path = os.getenv("HOME")
-# Term- and PMID-hash directory
-_hashTablesDir=_path+'/'+'The_Hive'+'/'+'term_doc'+'/'+"hashTables"
-# Term-hash table file
-_termHashTable="termHash.btd"
-
-_termHashData=open(_termHash)
-_termHashTable=cPickle.load(_termHashData)
-
 
 def cosineMeasure(queryString, termDocMatrix, numberOfResults=20):
 
@@ -56,7 +48,7 @@ def blowUpVector(queryString, size):
     # positions to one.
     for term in queryVector:
         try:
-            qVector[0,termHashTable[term]] = 1
+            qVector[0,SearchTermDoc._termHashTable[term]] = 1
         except:
             print "Did not locate term", term
             continue
