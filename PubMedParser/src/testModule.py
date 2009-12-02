@@ -143,3 +143,5 @@ def createVLHash(M_lil):
         VLHash[pmidHash]=linalg.norm((M_lil.getrow(i).data[0])[1:])
 
     IOmodule.pickleOut("/root/The_Hive/term_doc/hashTables", "VLHash", VLHash)
+
+    

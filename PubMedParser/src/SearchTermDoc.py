@@ -19,13 +19,13 @@ if not os.path.isdir(_path+'/'+subFolder):
     os.mkdir(_path+'/'+subFolder)
 
 # Hashes to be instantiated:
-_termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
-_pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
-_revPmidHashTable=dict(zip(_pmidHashTable.values(),_pmidHashTable.keys()))
+termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
+pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
+revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 print "Hashes loaded"
 
 
-def _modifySearchString(searchString):
+def modifySearchString(searchString):
 
     """
     Takes a search string and returns a list of sanitized search terms.
@@ -50,8 +50,8 @@ def extractRowIndices(M_csc,searchString):
 
     t1=time.time()
 
-    termHashTable=_termHashTable
-    searchVector=_modifySearchString(searchString)
+    termHashTable=termHashTable
+    searchVector=modifySearchString(searchString)
     
     # Look up hashes for terms.
     hashedSearchTerms=[]
@@ -65,14 +65,14 @@ def extractRowIndices(M_csc,searchString):
     print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
     # Extract all the indices of the non-zero elements in the columns.
-    colList=[]
+    colDic=[]
     for termHash in hashedSearchTerms:
-        colList.append((M_csc.getcol(termHash).nonzero()[0])[1:])
+        colDic[termHash].append((M_csc.getcol(termHash).nonzero()[0])[1:])
 
     t2=time.time()
     print "Found and returned column vectors in: "+str(t2-t1)
 
-    return colList
+    return colDic
 
 
 def vector2QueryScore():
@@ -88,4 +88,4 @@ def getPMID(hashedPMID):
     reverse of the pmidHashTable dictionary for a O(1) time lookup.
     """
 
-    return _revPmidHashTable[hashedPMID]
+    return revPmidHashTable[hashedPMID]
