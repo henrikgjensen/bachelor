@@ -11,7 +11,7 @@ _path = os.getenv("HOME")
 
 _hashTablePath = _path + "/The_Hive/term_doc/hashTable"
 
-_vectorLength = cPickle.load(open(_hashTablePath+VLHash+".btd"))
+_vectorLength = IOmodule.pickleIn(_hashTablePath,'VLHash'))
 
 def cosineMeasure(queryString, M_csr, M_csc, numberOfResults=20):
 
