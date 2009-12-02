@@ -34,7 +34,7 @@ _revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 print "Hashes loaded"
 
 
-def modifySearchString(searchString):
+def _modifySearchString(searchString):
 
     """
     Takes a search string and returns a list of sanitized search terms.
@@ -53,12 +53,14 @@ def extractRowIndices(M_csc,searchString):
     rows in the term-doc matrix. It looks up the search terms in the hash list
     (if they exist) and returns a list of all the PMID-indices that contain the
     given term(s).
+
+    Return format: [array([rowindex1 of term1, rowindex2 of term1 ,...]),array...]
     """
 
     t1=time.time()
 
     termHashTable=_termHashTable
-    searchVector=modifySearchString(searchString)
+    searchVector=_modifySearchString(searchString)
     
     # Look up hashes for terms.
     hashedSearchTerms=[]
@@ -80,6 +82,11 @@ def extractRowIndices(M_csc,searchString):
     print "Found and returned column vectors in: "+str(t2-t1)
 
     return colList
+
+
+def vector2QueryScore():
+
+
 
 
 def getPMID(hashedPMID):
