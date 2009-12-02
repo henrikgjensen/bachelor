@@ -7,7 +7,7 @@ import SearchTermDoc
 
 _path = os.getenv("HOME")
 
-def cosineMeasure(queryString, M_csc, M_lil, numberOfResults=20):
+def cosineMeasure(queryString, M_lil, M_csc, numberOfResults=20):
 
     """
     This method is for making the standard cosine measure between two
@@ -21,15 +21,17 @@ def cosineMeasure(queryString, M_csc, M_lil, numberOfResults=20):
     """
     queryVector = blowUpVector(queryString, M_lil.shape[1]-1)
 
-    lengthOfqv = sqrt(len(queryString.split(' ')))
+    lengthOfqv = math.sqrt(len(queryString.split(' ')))
 
     searchIndices = SearchTermDoc.extractRowIndices(M_csc, queryString)
     
     searchIndices=reduce(set.union,map(set,searchIndices))
 
+    print len(searchIndices)
+
     angleResults = []
-    for index in SearchIndices:
-        row = M_lil.getrow(index))[1:]
+    for index in searchIndices:
+        row = M_lil.getrow(index)[1:]
         angleResults.append((queryVector * row)/(lengthOfqv*sqrt(sum(map((lambda x: math.pow(x,2)),row)))))
 
     return angleResults[:numberOfResults]    
