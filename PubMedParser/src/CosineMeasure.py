@@ -31,7 +31,7 @@ def cosineMeasure(queryString, M_lil, M_csc, numberOfResults=20):
 
     angleResults = []
     for index in searchIndices:
-        row = M_lil.getrow(index)[1:]
+        row = (M_lil.getrow(index))[1:]
         angleResults.append((queryVector * row)/(lengthOfqv*sqrt(sum(map((lambda x: math.pow(x,2)),row)))))
 
     return angleResults[:numberOfResults]    
