@@ -1,24 +1,24 @@
-import SearchAND
-import CosineMeasure
+import CosineMeasureOR
+import CosineMeasureAND
 
-def searchAND(M_lil,M_csc,searchString):
+def cosineMeasureOR(M_lil, M_csc, queryString):
+
+    """
+    Return the tuple with (pmidhash, angle in radians)
+    """
+
+    results = CosineMeasureOR.cosineMeasureOR(M_lil, M_csc, queryString)
+
+    return results
+
+
+def cosineMeasureAND(M_lil,M_csc,queryString):
 
     """
     Returns only rows that contain all the searched terms. In other words,
     there exists an implicit AND between each term in the query.
     """
 
-    result = SearchAND.searchAND(M_lil,M_csc,searchString)
+    result = CosineMeasureAND.cosineMeasureAND(M_lil,M_csc,queryString)
 
     return result
-
-
-def cosineMeasure(M_lil, M_csc, searchString):
-
-    """
-    Return the tuple with (pmidhash, angle in radians)
-    """
-
-    results = CosineMeasure.cosineMeasure(M_lil, M_csc, searchString)
-
-    return results

@@ -16,24 +16,25 @@ _hashTablePath = _path+"/"+"term_doc/hashTables"
 # Load the precomputed norm of each row-vector in the term-doc matrix.
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'VLHash')
 
+"""
 def cosineMeasure2(queryString, M_lil, M_csr, numberOfResults=20):
 
-    """
-    This method is for making the standard cosine measure between two
-    vector or between a term doc matrix. Using the standard calculation
 
-    vectormath.dot(q, d) / ||q|| ||d||
+    #This method is for making the standard cosine measure between two
+    #vector or between a term doc matrix. Using the standard calculation
 
-    Where q, d are vector.
+    #vectormath.dot(q, d) / ||q|| ||d||
 
-    And ||v|| denotes the length of vector v.
+    #Where q, d are vector.
 
-    Returns a list of tuples containing:
-    [(pmidHash, angle in degrees), ... ]
+    #And ||v|| denotes the length of vector v.
 
-    THIS IS COMPUTATIONALLY TOO HEAVY TO DEAL WITH IT TAKES ABOUT 2
-    MINUTES TO TRAVERSE THROUGH 50000 RECORDS.
-    """
+    #Returns a list of tuples containing:
+    #[(pmidHash, angle in degrees), ... ]
+
+    #THIS IS COMPUTATIONALLY TOO HEAVY TO DEAL WITH IT TAKES ABOUT 2
+    #MINUTES TO TRAVERSE THROUGH 50000 RECORDS.
+    
 
     # Makes the query vector a column vector with size
     # M_csc.shape[1]-1 x 1 where M size is approximately 456.xxx x 1
@@ -73,8 +74,10 @@ def cosineMeasure2(queryString, M_lil, M_csr, numberOfResults=20):
 #        angleResults.append(tuple((M_csc.getrow(index)[0,0]),math.acos((queryVector * row)/(lengthOfqv*math.sqrt(sum(map((lambda x: math.pow(x,2)),row)))))))
 
     return angleResults[:numberOfResults]    
+"""
 
-def cosineMeasure(M_lil, M_csc, queryString):
+
+def cosineMeasureOR(M_lil, M_csc, queryString):
 
     t1 = time.time()
 
@@ -96,15 +99,16 @@ def cosineMeasure(M_lil, M_csc, queryString):
 
     return results
 
+"""
 def blowUpVector(queryString, size):
 
-    """
-    Helper function that makes a query vector be the same size as a
-    vector from the term doc matrix and with its entries in the
-    correct places.
+    
+    #Helper function that makes a query vector be the same size as a
+    #vector from the term doc matrix and with its entries in the
+    #correct places.
 
-    Returns a 456.xxx x 1 "vector", in reality it is a column matrix
-    """
+    #Returns a 456.xxx x 1 "vector", in reality it is a column matrix
+    
 
     queryVector = SearchTermDoc.modifySearchString(queryString)
 
@@ -121,6 +125,7 @@ def blowUpVector(queryString, size):
             continue
 
     return qVector
+"""
 
 def createVLHash(M_lil):
 
