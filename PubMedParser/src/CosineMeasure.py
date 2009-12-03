@@ -6,6 +6,7 @@ import os
 import SearchTermDoc 
 from numpy import linalg
 import IOmodule
+import time
 
 # Main folder
 _path = os.getenv("HOME")+"/"+"The_Hive"
