@@ -77,23 +77,22 @@ def cosineMeasure2(queryString, M_lil, M_csr, numberOfResults=20):
 def cosineMeasure(M_lil, M_csc, queryString):
 
     t1 = time.time()
-    
-    searchIndices = SearchTermDoc.extractRowIndices(M_csc, queryString)
+
+    # Extract the relevant indices of the row-vectors (pmid-hashes)
+    searchIndices,hashedSearchTerms = SearchTermDoc.extractRowIndices(M_csc, queryString)
+    # Union the arrays to avoid searching each row more than once
+    searchIndices = reduce(set.union,map(set,colList))
 
     queryString = SearchTermDoc.modifySearchString(queryString)
 
-    hashIndices = searchIndices.keys()
-
-    print hashIndices
+    print hashedSearchTerms
 
     results=[]
-    for termHash in searchIndices.items():
-        for pmidHash in termHash[1]:
-            Sum=0
-            for term in hashIndices:
-                Sum+=M_lil[pmidHash,term]
-#            print 1/len(hashIndices)
-            results.append(((pmidHash,(1.0/len(hashIndices))*(1.0/_vectorLength[pmidHash])*Sum)))
+    for pmidHash in searchIndices:
+        Sum=0
+        for termHash in hashedSearchTerms:
+            Sum+=M_lil[pmidHash,termHash]
+        results.append(((pmidHash,(1.0/len(hashedSearchTerms))*(1.0/_vectorLength[pmidHash])*Sum)))
 
     t2 = time.time()
 

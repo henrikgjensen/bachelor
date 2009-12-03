@@ -64,14 +64,14 @@ def extractRowIndices(M_csc,searchString):
     print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
     # Extract all the indices of the non-zero elements in the columns.
-    colDic={}
+    colList=[]
     for termHash in hashedSearchTerms:
-        colDic[termHash] = (M_csc.getcol(termHash).nonzero()[0])[1:]
+        colList.append((M_csc.getcol(termHash).nonzero()[0])[1:])
 
     t2=time.time()
     print "Found and returned column vectors in: "+str(t2-t1)
 
-    return colDic
+    return colList, hashedSearchTerms
 
 
 def vector2QueryScore():
