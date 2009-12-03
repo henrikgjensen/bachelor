@@ -7,13 +7,15 @@ import SearchTermDoc
 from numpy import linalg
 import IOmodule
 
-_path = os.getenv("HOME")
+# Main folder
+_path = os.getenv("HOME")+"/"+"The_Hive"
+# Hashtable directory
+_hashTablePath = _path+"/"+"term_doc/hashTables"
 
-_hashTablePath = _path + "/The_Hive/term_doc/hashTables"
-
+# Load the precomputed norm of each row-vector in the term-doc matrix.
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'VLHash')
 
-def cosineMeasure(queryString, M_lil, M_csr, numberOfResults=20):
+def cosineMeasure2(queryString, M_lil, M_csr, numberOfResults=20):
 
     """
     This method is for making the standard cosine measure between two
@@ -71,7 +73,7 @@ def cosineMeasure(queryString, M_lil, M_csr, numberOfResults=20):
 
     return angleResults[:numberOfResults]    
 
-def cosineMeasure2(M_lil, M_csc, queryString):
+def cosineMeasure(M_lil, M_csc, queryString):
 
     t1 = time.time()
     

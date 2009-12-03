@@ -1,5 +1,6 @@
 import SearchTermDoc
 
+# FINISH ME!!!!!!!!!!!!!!!!!!!!!
 
 def searchAND(M_lil,M_csc,searchVector)
 
