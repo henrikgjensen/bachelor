@@ -1,4 +1,5 @@
 import SearchTermDoc
+import time
 
 # Main folder
 _path = os.getenv("HOME")+"/"+"The_Hive"
