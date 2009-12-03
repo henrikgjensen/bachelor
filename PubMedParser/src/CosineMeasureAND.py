@@ -1,6 +1,13 @@
 import SearchTermDoc
 
-# FINISH ME!!!!!!!!!!!!!!!!!!!!!
+# Main folder
+_path = os.getenv("HOME")+"/"+"The_Hive"
+# Hashtable directory
+_hashTablePath = _path+"/"+"term_doc/hashTables"
+
+# Load the precomputed norm of each row-vector in the term-doc matrix.
+_vectorLength = IOmodule.pickleIn(_hashTablePath,'VLHash')
+
 
 def cosineMeasureAND(M_lil,M_csc,queryString)
 
