@@ -95,7 +95,7 @@ def cosineMeasure(M_lil, M_csc, queryString):
         for termHash in hashedSearchTerms:
             Sum+=M_lil[pmidHash,termHash]
         results.append(((pmidHash,(1.0/len(hashedSearchTerms))*(1.0/_vectorLength[pmidHash])*Sum)))
-
+    
     t2 = time.time()
 
     print "Time for cosine scoring:", (t2-t1)
