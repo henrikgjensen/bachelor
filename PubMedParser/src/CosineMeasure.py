@@ -81,15 +81,8 @@ def cosineMeasure(M_lil, M_csc, queryString):
     # Extract the relevant indices of the row-vectors (pmid-hashes)
     searchIndices,hashedSearchTerms = SearchTermDoc.extractRowIndices(M_csc, queryString)
     # Union the arrays to avoid searching each row more than once
-    print map(len,searchIndices)
     searchIndices = reduce(set.union,map(set,searchIndices))
-    print len(searchIndices)
-    #print searchIndices
-    #searchIndices = set(searchIndices)
-
-    queryString = SearchTermDoc.modifySearchString(queryString)
-
-    print hashedSearchTerms
+    print "Number of searchindices to go through: ",len(searchIndices)
 
     results=[]
     for pmidHash in searchIndices:
