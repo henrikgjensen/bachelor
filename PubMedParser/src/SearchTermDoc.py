@@ -50,7 +50,6 @@ def extractRowIndices(M_csc,searchString):
 
     t1=time.time()
 
-    termHashTable=termHashTable
     searchVector=modifySearchString(searchString)
     
     # Look up hashes for terms.
@@ -65,9 +64,9 @@ def extractRowIndices(M_csc,searchString):
     print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
     # Extract all the indices of the non-zero elements in the columns.
-    colDic=[]
+    colDic={}
     for termHash in hashedSearchTerms:
-        colDic[termHash].append((M_csc.getcol(termHash).nonzero()[0])[1:])
+        colDic[termHash] = (M_csc.getcol(termHash).nonzero()[0])[1:]
 
     t2=time.time()
     print "Found and returned column vectors in: "+str(t2-t1)

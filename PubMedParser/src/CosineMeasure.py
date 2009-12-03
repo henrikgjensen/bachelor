@@ -9,9 +9,9 @@ import IOmodule
 
 _path = os.getenv("HOME")
 
-_hashTablePath = _path + "/The_Hive/term_doc/hashTable"
+_hashTablePath = _path + "/The_Hive/term_doc/hashTables"
 
-_vectorLength = IOmodule.pickleIn(_hashTablePath,'VLHash'))
+_vectorLength = IOmodule.pickleIn(_hashTablePath,'VLHash')
 
 def cosineMeasure(queryString, M_lil, M_csr, numberOfResults=20):
 
@@ -71,21 +71,32 @@ def cosineMeasure(queryString, M_lil, M_csr, numberOfResults=20):
 
     return angleResults[:numberOfResults]    
 
-def cosineMeasure2(M_lil, queryString):
+def cosineMeasure2(M_lil, M_csc, queryString):
 
+    t1 = time.time()
+    
     searchIndices = SearchTermDoc.extractRowIndices(M_csc, queryString)
 
     queryString = SearchTermDoc.modifySearchString(queryString)
 
-    results=[]
-    for termHash in searchIndices.items()
-        for row in termHash[1]:
-            Sum=0
-            for element for termHash[0]:
-                Sum+=M_lil[row,element]
-            results.append(tuple(row,(1/len(termHash[0]))*(1/_vectorLength[row])*Sum))
-            
+    hashIndices = searchIndices.keys()
 
+    print hashIndices
+
+    results=[]
+    for termHash in searchIndices.items():
+        for pmidHash in termHash[1]:
+            Sum=0
+            for term in hashIndices:
+                Sum+=M_lil[pmidHash,term]
+#            print 1/len(hashIndices)
+            results.append(((pmidHash,(1.0/len(hashIndices))*(1.0/_vectorLength[pmidHash])*Sum)))
+
+    t2 = time.time()
+
+    print "Time for cosine scoring:", (t2-t1)
+
+    return results
 
 def blowUpVector(queryString, size):
 
