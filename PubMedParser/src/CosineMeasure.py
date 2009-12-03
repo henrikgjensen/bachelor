@@ -82,6 +82,7 @@ def cosineMeasure(M_lil, M_csc, queryString):
     searchIndices,hashedSearchTerms = SearchTermDoc.extractRowIndices(M_csc, queryString)
     # Union the arrays to avoid searching each row more than once
     #searchIndices = reduce(set.union,map(set,searchIndices))
+    print searchIndices
     searchIndices = set(searchIndices)
 
     queryString = SearchTermDoc.modifySearchString(queryString)
