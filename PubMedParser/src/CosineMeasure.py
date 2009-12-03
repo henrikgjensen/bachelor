@@ -82,7 +82,6 @@ def cosineMeasure(M_lil, M_csc, queryString):
     searchIndices,hashedSearchTerms = SearchTermDoc.extractRowIndices(M_csc, queryString)
     # Union the arrays to avoid searching each row more than once
     searchIndices = reduce(set.union,map(set,searchIndices))
-    print "Number of searchindices to go through: ",len(searchIndices)
 
     results=[]
     for pmidHash in searchIndices:
@@ -93,7 +92,7 @@ def cosineMeasure(M_lil, M_csc, queryString):
     
     t2 = time.time()
 
-    print "Time for cosine scoring:", (t2-t1)
+    print "Time for cosine scoring on",len(searchIndices),"rows:",(t2-t1)
 
     return results
 
