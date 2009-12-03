@@ -1,6 +1,5 @@
 import os
 import SearchTermDoc
-from numpy import linalg
 import IOmodule
 import time
 
@@ -35,8 +34,8 @@ def cosineMeasureAND(M_lil,M_csc,queryString)
 
     return results
 
-"""
-def searchAND(M_lil,M_csc,searchVector)
+    """
+    def searchAND(M_lil,M_csc,searchVector)
 
     
     #Returns only rows that contain all the searched terms. In other words,
@@ -65,4 +64,4 @@ def searchAND(M_lil,M_csc,searchVector)
 
     return rowVectors
 
-"""
+    """
