@@ -74,6 +74,14 @@ def extractRowIndices(M_csc,searchString):
     return colList, hashedSearchTerms
 
 
+def extractColVectors(M_csc):
+
+    colList=[]
+    for termHash in termHashTable:
+        colList.append((M_csc.getcol(termHash).nonzero()[0])[1:])
+
+    return None
+
 def createVLHash(M_lil):
 
     """
