@@ -1,8 +1,8 @@
 import TextCleaner
 import os
-import cPickle
 import time
 import IOmodule
+from numpy import linalg
 
 mainFolder = 'The_Hive'
 subFolder = 'search_engine'
@@ -25,7 +25,7 @@ revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 print "Hashes loaded"
 
 
-def modifySearchString(searchString):
+def _modifySearchString(searchString):
 
     """
     Takes a search string and returns a list of sanitized search terms.
@@ -50,7 +50,7 @@ def extractRowIndices(M_csc,searchString):
 
     t1=time.time()
 
-    searchVector=modifySearchString(searchString)
+    searchVector=_modifySearchString(searchString)
     
     # Look up hashes for terms.
     hashedSearchTerms=[]
@@ -74,10 +74,25 @@ def extractRowIndices(M_csc,searchString):
     return colList, hashedSearchTerms
 
 
-def vector2QueryScore():
+def createVLHash(M_lil):
 
-    return None
+    """
+    Precompute and save the lengths of each row vector in the term-doc matrix.
+    """
 
+    t1=time.time()
+
+    if not os.path.isdir(_hashTablePath):
+        os.mkdir(_hashTablePath)
+
+    VLHash={}
+    for pmidHash in range(M_lil.shape[0]):
+        VLHash[pmidHash]=linalg.norm((M_lil.getrow(i).data[0])[1:])
+
+    IOmodule.pickleOut(_hashTablePath, "VLHash", VLHash)
+
+    t2=time.time()
+    print "Created and saved VectorLength-hash in: "+str(t2-t1)
 
 
 def getPMID(hashedPMID):

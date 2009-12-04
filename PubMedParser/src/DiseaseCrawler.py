@@ -17,7 +17,7 @@ removeWhitespaces=TextCleaner.removeWhitespaces()
 # Path to main folder
 _mainFolder=os.getenv("HOME")+"/"+"The_Hive"
 # Path the phase subfolder
-_subFolder = "data_acquisition"
+_subFolder =_mainFolder+"/"+"data_acquisition"
 # Downloaded diseases
 diseaseFolder="rarediseases_info"
 # Error log
@@ -28,8 +28,8 @@ if not os.path.isdir(_mainFolder):
         os.mkdir(_mainFolder)
 
 # Create sub folder if it doesn't already exist..
-if not os.path.isdir(_mainFolder+"/"+_subFolder):
-        os.mkdir(_mainFolder+"/"+_subFolder)
+if not os.path.isdir(_subFolder):
+        os.mkdir(_subFolder)
 
 # Pages to be crawled (by default).
 defaultPages=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Z','0-49']
@@ -150,7 +150,7 @@ def fetchPubmedDiseaseTerms(pages):
             soup=BeautifulSoup(c.read())
         except HTMLParseError:
             print 'Experienced difficulties opening %s' % page
-            IOmodule.writeOutTxt(_mainFolder+"/"+_subFolder+"/"+diseaseFolder+'/'+errorFolder,strftime('%H%M%S'),page)
+            IOmodule.writeOutTxt(_subFolder+"/"+diseaseFolder+'/'+errorFolder,strftime('%H%M%S'),page)
             continue
 
         # Get disease name.
@@ -158,7 +158,7 @@ def fetchPubmedDiseaseTerms(pages):
 
         # Some pages are 'officially' not working. Catch them here.
         if title=='NIH Office of Rare Diseases Research (ORDR) - Error':
-            IOmodule.writeOutTxt(_mainFolder+"/"+_subFolder+"/"+diseaseFolder+'/'+errorFolder,'Page error'+strftime('%H%M%S'),page)
+            IOmodule.writeOutTxt(_subFolder+"/"+diseaseFolder+'/'+errorFolder,'Page error'+strftime('%H%M%S'),page)
             print 'Page Error on %s' % page
             continue
 
@@ -275,29 +275,3 @@ def fetchPubmedDiseaseTerms(pages):
                 IOmodule.writeOutTxt(diseaseFolder,disease,content)
             pubmedURLs={}
             print 'Wrote successfully. Dictionary flushed.'
-
-def readDiseases(indexStart=0,indexStop=None):
-
-    """
-    Function for returning the content of all or some of the crawled diseases.
-
-    By default all are returned in a dictionary of diseases on the form:
-    [{DiseaseName:{db='',terms:'',syn=[],uid:'',desc:''}}]
-
-    The reason all the dictionaries are returned as a list is to be sure of the
-    order.
-    """
-
-    path=_path+"/"+_mainFolder+"/"+_subFolder+"/"
-
-    files=sorted([f for f in os.listdir(path) if os.path.isfile(path+f)])
-
-    sortedcontents=[]
-    for file in files[indexStart:indexStop]:
-        contents={}
-        diseaseName=file[0:file.find('.txt')]
-        diseaseAttr=eval(open(path+file,'r').read())
-        contents[diseaseName]=diseaseAttr
-        sortedcontents.append(contents)
-
-    return sortedcontents
