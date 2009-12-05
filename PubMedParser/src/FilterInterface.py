@@ -44,26 +44,26 @@ def generateLogTFIDF(M_coo):
         counter = 0
         termVector += 1
         print "Progress: " + str(len(allHashedTerms)-termVector)
-        termVector = (M_csc.getcol(termVector).data)[1:]
-        print termVector
+        termVectorData = (M_csc.getcol(termVector).data)[1:]
+        termVectorDoc = (M_csc.getcol(termVector).nonzero()[0])[1:]
         # Calculate the inverse document frequency
         # (Note that the length of each term vector is always greater than 0)
         idf = math.log(numberOfDocs / len(termVector))
 
         print "Length of term vector before:", len(termVector)
 
-        for term in termVector:
+        for term in termVectorData:
             counter += 1
 
-            if tfidfMatrix[counter, term] == 0:
+            if tfidfMatrix[termVectorDoc[counter], term] == 0:
                 print "Looked up zero-value at: "+str(counter)+" "+str(term)
                 raise Exception
 
             # Calculate the term frequency
-            tf = tfidfMatrix[counter, term]
+            tf = tfidfMatrix[termVectorDoc[counter], term]
             tf = math.log(1 + tf)
             # Update the new matrix values
-            tfidfMatrix[counter, term] = tf * idf
+            tfidfMatrix[termVectorDoc[counter], term] = tf * idf
 
         print "Length of term vector after (for the tfidf matrix):", counter
 
