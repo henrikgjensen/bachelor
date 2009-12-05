@@ -115,7 +115,7 @@ def createRLHash(M_lil):
     t2=time.time()
     print "Created and saved RowLength-hash in: "+str(t2-t1)
 
-def createCLHash(M_csc):
+def createCLHash(M_coo):
 
     """
     Precompute and save the length of each column vector in the term-doc matrix.
@@ -127,12 +127,15 @@ def createCLHash(M_csc):
     if not os.path.isdir(_hashTablesDir):
         os.mkdir(_hashTablesDir)
 
+    M_lil=(M_coo.transpose()).tolil()
+
     CLHash={}
     count=0
-    for termHash in range(M_csc.shape[1]):
-        CLHash[termHash]=len((M_csc.getcol(termHash).nonzero()[0])[1:])
+    for termHash in range(M_coo.shape[1]):
+        termVectorLength=len((M_lil.getrow(termHash).nonzero()[0])[1:])
+        CLHash[termHash]=termVectorLength
         count+=1
-        print "Hashes created: "+str(count)
+        print "Hashes created: "+str(count)+". Length:"+str(termVectorLength)
 
     IOmodule.pickleOut(_hashTablesDir, "CLHash", CLHash)
 
