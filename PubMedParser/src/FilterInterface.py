@@ -3,8 +3,9 @@
 
 import IOmodule
 import math
-import SearchTermDoc
+#import SearchTermDoc
 import time
+import os
 
 # Main folder
 _path = os.getenv("HOME")+"/"+"The_Hive"
