@@ -9,7 +9,7 @@ _path = os.getenv("HOME")+"/"+"The_Hive"
 _hashTablePath = _path+"/"+"term_doc/hashTables"
 
 # Load the precomputed norm of each row-vector in the term-doc matrix.
-_vectorLength = IOmodule.pickleIn(_hashTablePath,'VLHash')
+_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
 
 
 def cosineMeasureAND(M_lil,M_csc,queryString):

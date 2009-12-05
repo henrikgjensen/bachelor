@@ -107,7 +107,7 @@ def createRLHash(M_lil):
     for pmidHash in range(M_lil.shape[0]):
         RLHash[pmidHash]=linalg.norm((M_lil.getrow(pmidHash).data[0])[1:])
 
-    IOmodule.pickleOut(_hashTablePath, "RLHash", RLHash)
+    IOmodule.pickleOut(_hashTablesDir, "RLHash", RLHash)
 
     t2=time.time()
     print "Created and saved RowLength-hash in: "+str(t2-t1)
@@ -128,7 +128,7 @@ def createCLHash(M_csc):
     for termHash in range(M_csc.shape[1]):
         CLHash[termHash]=len((M_csc.getcol(termHash).nonzero()[0])[1:])
 
-    IOmodule.pickleOut(_hashTablePath, "CLHash", CLHash)
+    IOmodule.pickleOut(_hashTablesDir, "CLHash", CLHash)
 
     t2=time.time()
     print "Created and saved ColumnLength-hash in: "+str(t2-t1)
