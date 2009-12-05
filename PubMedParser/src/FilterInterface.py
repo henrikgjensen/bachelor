@@ -55,7 +55,7 @@ def generateLogTFIDF(M_coo):
             counter += 1
 
             if tfidfMatrix[counter, term] == 0:
-                print "Looked up zero-value"
+                print "Looked up zero-value at: "+str(counter)+" "+str(term)
                 raise Exception
 
             # Calculate the term frequency
