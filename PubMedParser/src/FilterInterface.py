@@ -21,15 +21,15 @@ def generateLogTFIDF(M_coo):
     allHashedTerms = sorted(SearchTermDoc.termHashTable.values())
 
 
-    print "Transposing coo matrix"
-    t1=time.time()
-    MT_coo=M_coo.transpose()
-    t2=time.time()
-    print "Matrix transposed in",(t2-t1)
+    #print "Transposing coo matrix"
+    #t1=time.time()
+    #MT_coo=M_coo.transpose()
+    #t2=time.time()
+    #print "Matrix transposed in",(t2-t1)
 
-    print "Converting from (transposed) coo to lil..."
+    print "Converting from coo to lil..."
     t1=time.time()
-    T_tfidfMatrix=MT_coo.tolil()
+    tfidfMatrix=M_coo.tolil()
     t2=time.time()
     print "Matrix converted to lil in",(t2-t1)
 
@@ -41,6 +41,21 @@ def generateLogTFIDF(M_coo):
 
 #    del M_coo
 
+    for row in range(numberOfDocs):
+        row+=1
+        subMatrix=[row,1:].tocoo()
+        for i,j,v in zip(subMatrix.row, subMatrix.col, subMatrix.data):
+            m = tfidfMatrix[i,0] # row index = doc index
+            n = tfidfMatrix[0,j] # col index = term index
+
+            idf = math.log(numberOfDocs / len(_vectorLength[n]))
+            tf = math.log(1 + v)
+
+            tfidfMatrix[m,n] = idf*tf
+
+        print "Row "+str(row)+" done."
+
+"""
     for termVectorIndex in range(M_coo.shape[1]):
         termVectorIndex += 1
         print "Progress: " + str(len(allHashedTerms)-termVectorIndex)
@@ -53,16 +68,16 @@ def generateLogTFIDF(M_coo):
         #row=T_tfidfMatrix[termVectorIndex,1:]
         #T_tfidfMatrix[termVectorIndex,1:]=map(lambda x: math.log(1+x)*idf,row)
 
-        #for docIndex in docIndexVector:
-        #    # Calculate the term frequency
-        #    tf = T_tfidfMatrix[termVectorIndex,docIndex]
-        #    if tf == 0:
-        #        print "Looked up zero-value at: ("+str(termVectorIndex)+" "+str(docIndex)+")"
-        #        raise Exception
-        #    tf = math.log(1 + tf)
+        for docIndex in docIndexVector:
+            # Calculate the term frequency
+            tf = T_tfidfMatrix[termVectorIndex,docIndex]
+            if tf == 0:
+                print "Looked up zero-value at: ("+str(termVectorIndex)+" "+str(docIndex)+")"
+                raise Exception
+            tf = math.log(1 + tf)
             # Update the new matrix values
-        #    T_tfidfMatrix[termVectorIndex,docIndex] = tf * idf
-
+            T_tfidfMatrix[termVectorIndex,docIndex] = tf * idf
+"""
     """
     for termVectorIndex in range(M_coo.shape[1]):
         termVectorIndex += 1
