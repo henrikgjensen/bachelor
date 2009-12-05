@@ -83,6 +83,8 @@ def extractColVectors(M_csc, termHashes):
     Format: [array1,array2,...]
     """
 
+    termHashes=sorted(termHashes)
+
     colList=[]
     for termHash in termHashes:
         print str(len(termHashes)-termHash)
