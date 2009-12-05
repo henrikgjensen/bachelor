@@ -1,3 +1,4 @@
+import IOmodule
 
 ###################
 
@@ -30,16 +31,17 @@ def generateLogTFIDF(M_coo):
     t2=time.time()
     print "Made format in",(t2-t1)
 
-    print "Extracting term vectors"
-    t1=time.time()
-    colList = SearchTermDoc.extractColVectors(M_csc, allHashedTerms)
-    t2=time.time()
-    print "Term vectors extracted in",(t2-t1)
+    #print "Extracting term vectors"
+    #t1=time.time()
+    #colList = SearchTermDoc.extractColVectors(M_csc, allHashedTerms)
+    #t2=time.time()
+    #print "Term vectors extracted in",(t2-t1)
 
-    del M_csc
+    #del M_csc
 
-    for termVector in colList:
+    for termVector in range(M_csc.shape[1]):
         counter=0
+        termVector=(M_csc.getcol(termHash))[1:].data
         # Calculate the inverse document frequency
         # (Note that the length of each term vector is always greater than 0)
         idf=math.log(numberOfDocs/len(termVector))
@@ -61,8 +63,6 @@ def generateLogTFIDF(M_coo):
 
         print "Length of term vector after (for the tfidf matrix):",counter
 
-    # writeout...
-
-    return tfidfMatrix
+    IOmodule.writeOutTDM("/root/The_Hive/term_doc/tfidf_termDoc", "TFIDF_termdoc", tfidfMatrix)
 
 ###################
