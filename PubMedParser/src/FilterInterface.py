@@ -55,15 +55,15 @@ def generateLogTFIDF(M_coo):
         for term in termVectorData:
             counter += 1
 
-            if tfidfMatrix[termVectorDoc[counter], term] == 0:
+            if tfidfMatrix[termVectorDoc[counter], termVector] == 0:
                 print "Looked up zero-value at: "+str(counter)+" "+str(term)
                 raise Exception
 
             # Calculate the term frequency
-            tf = tfidfMatrix[termVectorDoc[counter], term]
+            tf = tfidfMatrix[termVectorDoc[counter], termVector]
             tf = math.log(1 + tf)
             # Update the new matrix values
-            tfidfMatrix[termVectorDoc[counter], term] = tf * idf
+            tfidfMatrix[termVectorDoc[counter], termVector] = tf * idf
 
         print "Length of term vector after (for the tfidf matrix):", counter
 
