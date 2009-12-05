@@ -45,13 +45,13 @@ def generateLogTFIDF(M_coo):
         row+=1
         subMatrix=tfidfMatrix[row,1:].tocoo()
         for i,j,v in zip(subMatrix.row, subMatrix.col, subMatrix.data):
-            m = tfidfMatrix[i,0] # row index = doc index
-            n = tfidfMatrix[0,j] # col index = term index
+            #m = tfidfMatrix[i,0]
+            #n = tfidfMatrix[0,j]
 
-            idf = math.log(numberOfDocs / _vectorLength[n])
+            idf = math.log(numberOfDocs / _vectorLength[j])
             tf = math.log(1 + v)
 
-            tfidfMatrix[m,n] = idf*tf
+            tfidfMatrix[i,j] = idf*tf
 
         print "Row "+str(row)+" done."
 
