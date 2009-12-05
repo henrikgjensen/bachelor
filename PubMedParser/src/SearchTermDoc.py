@@ -100,8 +100,8 @@ def createRLHash(M_lil):
 
     t1=time.time()
 
-    if not os.path.isdir(_hashTablePath):
-        os.mkdir(_hashTablePath)
+    if not os.path.isdir(_hashTablesDir):
+        os.mkdir(_hashTablesDir)
 
     RLHash={}
     for pmidHash in range(M_lil.shape[0]):
@@ -121,8 +121,8 @@ def createCLHash(M_csc):
 
     t1=time.time()
 
-    if not os.path.isdir(_hashTablePath):
-        os.mkdir(_hashTablePath)
+    if not os.path.isdir(_hashTablesDir):
+        os.mkdir(_hashTablesDir)
 
     CLHash={}
     for termHash in range(M_csc.shape[1]):
