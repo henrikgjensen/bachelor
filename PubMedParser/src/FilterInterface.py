@@ -29,7 +29,7 @@ def generateLogTFIDF(M_coo):
 
     print "Converting from (transposed) coo to lil..."
     t1=time.time()
-    T_tfidfMatrix=MT_coo.tolil()
+    T_tfidfMatrix=MT_coo.tocsr()
     t2=time.time()
     print "Matrix converted to lil in",(t2-t1)
 
@@ -50,15 +50,15 @@ def generateLogTFIDF(M_coo):
         # (Note that the length of each term vector is always greater than 0)
         idf = math.log(numberOfDocs / len(docIndexVector))
 
-        for docIndex in docIndexVector:
-            # Calculate the term frequency
-            tf = T_tfidfMatrix[termVectorIndex,docIndex]
-            if tf == 0:
-                print "Looked up zero-value at: ("+str(termVectorIndex)+" "+str(docIndex)+")"
-                raise Exception
-            tf = math.log(1 + tf)
-            # Update the new matrix values
-            T_tfidfMatrix[termVectorIndex,docIndex] = tf * idf
+#        for docIndex in docIndexVector:
+#            # Calculate the term frequency
+#            tf = T_tfidfMatrix[termVectorIndex,docIndex]
+#            if tf == 0:
+#                print "Looked up zero-value at: ("+str(termVectorIndex)+" "+str(docIndex)+")"
+#                raise Exception
+#            tf = math.log(1 + tf)
+#            # Update the new matrix values
+#            T_tfidfMatrix[termVectorIndex,docIndex] = tf * idf
 
     """
     for termVectorIndex in range(M_coo.shape[1]):
