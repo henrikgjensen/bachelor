@@ -44,7 +44,7 @@ def generateLogTFIDF(M_coo):
         counter = 0
         termVector += 1
         print "Progress: " + str(len(allHashedTerms)-termVector)
-        termVector = (M_csc.getcol(termVector))[1:].data
+        termVector = (M_csc.getcol(termVector).data)[1:]
         # Calculate the inverse document frequency
         # (Note that the length of each term vector is always greater than 0)
         idf = math.log(numberOfDocs / len(termVector))
