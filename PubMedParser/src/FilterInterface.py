@@ -9,7 +9,7 @@ import time
 def generateLogTFIDF(M_coo):
 
     numberOfDocs = len(SearchTermDoc.pmidHashTable)
-    allHashedTerms = SearchTermDoc.termHashTable.values()
+    allHashedTerms = sorted(SearchTermDoc.termHashTable.values())
 
     print "Duplicating matrix..."
     t1=time.time()
@@ -39,30 +39,33 @@ def generateLogTFIDF(M_coo):
 
     #del M_csc
 
+        
     for termVector in range(M_csc.shape[1]):
-        counter=0
-        termVector=(M_csc.getcol(termHash))[1:].data
+        counter = 0
+        termVector += 1
+        print "Progress: " + str(len(allHashedTerms)-termVector)
+        termVector = (M_csc.getcol(termVector))[1:].data
         # Calculate the inverse document frequency
         # (Note that the length of each term vector is always greater than 0)
-        idf=math.log(numberOfDocs/len(termVector))
+        idf = math.log(numberOfDocs / len(termVector))
 
-        print "Length of term vector before:",len(termVector)
+        print "Length of term vector before:", len(termVector)
 
         for term in termVector:
-            counter+=1
+            counter += 1
 
-            if tfidfMatrix[counter,term]==0:
+            if tfidfMatrix[counter, term] == 0:
                 print "Looked up zero-value"
                 raise Exception
 
             # Calculate the term frequency
-            tf=tfidfMatrix[counter,term]
-            tf=math.log(1+tf)
+            tf = tfidfMatrix[counter, term]
+            tf = math.log(1 + tf)
             # Update the new matrix values
-            tfidfMatrix[counter,term]=tf*idf
+            tfidfMatrix[counter, term] = tf * idf
 
-        print "Length of term vector after (for the tfidf matrix):",counter
+        print "Length of term vector after (for the tfidf matrix):", counter
 
-    IOmodule.writeOutTDM("/root/The_Hive/term_doc/tfidf_termDoc", "TFIDF_termdoc", tfidfMatrix)
+IOmodule.writeOutTDM("/root/The_Hive/term_doc/tfidf_termDoc", "TFIDF_termdoc", tfidfMatrix)
 
 ###################
