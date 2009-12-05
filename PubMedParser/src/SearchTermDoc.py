@@ -74,13 +74,20 @@ def extractRowIndices(M_csc,searchString):
     return colList, hashedSearchTerms
 
 
-def extractColVectors(M_csc):
+def extractColVectors(M_csc, termHashes):
+
+    """
+    Does the same as 'extractRowIndices' but takes a hashlist instead of a
+    querystring and returns a list of values instead of a list of row indices
+
+    Format: [array1,array2,...]
+    """
 
     colList=[]
-    for termHash in termHashTable:
-        colList.append((M_csc.getcol(termHash).nonzero()[0])[1:])
+    for termHash in termHashes:
+        colList.append((M_csc.getcol(termHash))[1:].data)
 
-    return None
+    return colList
 
 def createVLHash(M_lil):
 
