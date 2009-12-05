@@ -43,7 +43,7 @@ def generateLogTFIDF(M_coo):
 
     for row in range(numberOfDocs):
         row+=1
-        subMatrix=M_coo.getrow(row)
+        subMatrix=(M_coo.getrow(row)).tocoo()
         for i,j,v in zip(subMatrix.row, subMatrix.col, subMatrix.data):
             #m = tfidfMatrix[i,0]
             #n = tfidfMatrix[0,j]
