@@ -55,7 +55,7 @@ def generateLogTFIDF(M_coo):
 
         print "Row "+str(row)+" done."
 
-"""
+    """
     for termVectorIndex in range(M_coo.shape[1]):
         termVectorIndex += 1
         print "Progress: " + str(len(allHashedTerms)-termVectorIndex)
@@ -77,7 +77,7 @@ def generateLogTFIDF(M_coo):
             tf = math.log(1 + tf)
             # Update the new matrix values
             T_tfidfMatrix[termVectorIndex,docIndex] = tf * idf
-"""
+    """
     """
     for termVectorIndex in range(M_coo.shape[1]):
         termVectorIndex += 1
