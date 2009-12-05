@@ -92,7 +92,7 @@ def extractColVectors(M_csc, termHashes):
 
     return colList
 
-def createRLHash(M_lil):
+def createRLHash(M_lil,filename):
 
     """
     Precompute and save the norm of each row vector in the term-doc matrix.
@@ -110,12 +110,12 @@ def createRLHash(M_lil):
         count+=1
         print "Hashes created: "+str(count)
 
-    IOmodule.pickleOut(_hashTablesDir, "RLHash", RLHash)
+    IOmodule.pickleOut(_hashTablesDir, filename, RLHash)
 
     t2=time.time()
     print "Created and saved RowLength-hash in: "+str(t2-t1)
 
-def createCLHash(M_coo):
+def createCLHash(M_coo,filename):
 
     """
     Precompute and save the length of each column vector in the term-doc matrix.
@@ -137,7 +137,7 @@ def createCLHash(M_coo):
         count+=1
         print "Hashes created: "+str(count)+". Length:"+str(termVectorLength)
 
-    IOmodule.pickleOut(_hashTablesDir, "CLHash", CLHash)
+    IOmodule.pickleOut(_hashTablesDir, filename, CLHash)
 
     t2=time.time()
     print "Created and saved ColumnLength-hash in: "+str(t2-t1)
