@@ -50,9 +50,8 @@ def generateLogTFIDF(M_coo):
         # (Note that the length of each term vector is always greater than 0)
         idf = math.log(numberOfDocs / len(docIndexVector))
 
-        row=T_tfidfMatrix[termVectorIndex,1:]
-
-        T_tfidfMatrix[termVectorIndex,1:]=map(lambda x: math.log(1+x)*idf,row)
+        #row=T_tfidfMatrix[termVectorIndex,1:]
+        #T_tfidfMatrix[termVectorIndex,1:]=map(lambda x: math.log(1+x)*idf,row)
 
         #for docIndex in docIndexVector:
         #    # Calculate the term frequency
