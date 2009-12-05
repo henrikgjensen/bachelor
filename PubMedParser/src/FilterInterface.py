@@ -16,25 +16,17 @@ def generateLogTFIDF(M_coo):
     t2=time.time()
     print "Matrix duplicated in",(t2-t1)
 
-
     print "Converting from coo to lil..."
     t1=time.time()
     tfidfMatrix=tfidfMatrix.tolil()
-    del M_coo
     t2=time.time()
     print "Matrix converted in",(t2-t1)
-
-    print "Making original in lil_matrix format..."
-    t1=time.time()
-    M_lil=M_coo.tolil()
-    t2=time.time()
-    print "Matrix duplicated in",(t2-t1)
 
     del M_coo
 
     print "Making a csc_matrix format..."
     t1=time.time()
-    M_csc=M_lil.tocsc()
+    M_csc=tfidfMatrix.tocsc()
     t2=time.time()
     print "Made format in",(t2-t1)
 
@@ -57,12 +49,12 @@ def generateLogTFIDF(M_coo):
         for term in termVector:
             counter+=1
 
-            if M_lil[counter,term]==0:
+            if tfidfMatrix[counter,term]==0:
                 print "Looked up zero-value"
                 raise Exception
 
             # Calculate the term frequency
-            tf=M_lil[counter,term]
+            tf=tfidfMatrix[counter,term]
             tf=math.log(1+tf)
             # Update the new matrix values
             tfidfMatrix[counter,term]=tf*idf
