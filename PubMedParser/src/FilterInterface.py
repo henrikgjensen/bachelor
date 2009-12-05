@@ -54,7 +54,7 @@ def generateLogTFIDF(M_coo):
             # Calculate the term frequency
             tf = T_tfidfMatrix[termVectorIndex,docIndex]
             if tf == 0:
-                print "Looked up zero-value at: ("str(termVectorIndex)+" "+str(docIndex)+")"
+                print "Looked up zero-value at: ("+str(termVectorIndex)+" "+str(docIndex)+")"
                 raise Exception
             tf = math.log(1 + tf)
             # Update the new matrix values
