@@ -48,9 +48,9 @@ def generateLogTFIDF(M_coo):
         termVectorDoc = (M_csc.getcol(termVector).nonzero()[0])[1:]
         # Calculate the inverse document frequency
         # (Note that the length of each term vector is always greater than 0)
-        idf = math.log(numberOfDocs / len(termVector))
+        idf = math.log(numberOfDocs / len(termVectorData))
 
-        print "Length of term vector before:", len(termVector)
+        print "Length of term vector before:", len(termVectorData)
 
         for term in termVectorData:
             counter += 1
