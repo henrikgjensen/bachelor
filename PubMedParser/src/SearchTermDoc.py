@@ -92,10 +92,10 @@ def extractColVectors(M_csc, termHashes):
 
     return colList
 
-def createVLHash(M_lil):
+def createRLHash(M_lil):
 
     """
-    Precompute and save the lengths of each row vector in the term-doc matrix.
+    Precompute and save the norm of each row vector in the term-doc matrix.
     """
 
     t1=time.time()
@@ -103,14 +103,35 @@ def createVLHash(M_lil):
     if not os.path.isdir(_hashTablePath):
         os.mkdir(_hashTablePath)
 
-    VLHash={}
+    RLHash={}
     for pmidHash in range(M_lil.shape[0]):
-        VLHash[pmidHash]=linalg.norm((M_lil.getrow(i).data[0])[1:])
+        RLHash[pmidHash]=linalg.norm((M_lil.getrow(pmidHash).data[0])[1:])
 
-    IOmodule.pickleOut(_hashTablePath, "VLHash", VLHash)
+    IOmodule.pickleOut(_hashTablePath, "RLHash", RLHash)
 
     t2=time.time()
-    print "Created and saved VectorLength-hash in: "+str(t2-t1)
+    print "Created and saved RowLength-hash in: "+str(t2-t1)
+
+def createCLHash(M_csc):
+
+    """
+    Precompute and save the length of each column vector in the term-doc matrix.
+    Here the length refers to the number of elements.
+    """
+
+    t1=time.time()
+
+    if not os.path.isdir(_hashTablePath):
+        os.mkdir(_hashTablePath)
+
+    CLHash={}
+    for termHash in range(M_csc.shape[1]):
+        CLHash[termHash]=len((M_csc.getcol(termHash).nonzero()[0])[1:])
+
+    IOmodule.pickleOut(_hashTablePath, "CLHash", CLHash)
+
+    t2=time.time()
+    print "Created and saved ColumnLength-hash in: "+str(t2-t1)
 
 
 def getPMID(hashedPMID):
