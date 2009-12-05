@@ -15,16 +15,26 @@ def generateLogTFIDF(M_coo):
     tfidfMatrix=M_coo.copy()
     t2=time.time()
     print "Matrix duplicated in",(t2-t1)
-    
+
+
     print "Converting from coo to lil..."
     t1=time.time()
     tfidfMatrix=tfidfMatrix.tolil()
+    del M_coo
     t2=time.time()
     print "Matrix converted in",(t2-t1)
 
-    print "Making a lil_matrix format..."
+    print "Making original in lil_matrix format..."
     t1=time.time()
-    M_lil=tfidfMatrix.tocsc()
+    M_lil=M_coo.tolil()
+    t2=time.time()
+    print "Matrix duplicated in",(t2-t1)
+
+    del M_coo
+
+    print "Making a csc_matrix format..."
+    t1=time.time()
+    M_csc=M_lil.tocsc()
     t2=time.time()
     print "Made format in",(t2-t1)
 
@@ -33,6 +43,8 @@ def generateLogTFIDF(M_coo):
     colList = SearchTermDoc.extractColVectors(M_csc, allHashedTerms)
     t2=time.time()
     print "Term vectors extracted in",(t2-t1)
+
+    del M_csc
 
     for termVector in colList:
         counter=0
