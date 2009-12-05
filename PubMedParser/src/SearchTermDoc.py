@@ -104,8 +104,11 @@ def createRLHash(M_lil):
         os.mkdir(_hashTablesDir)
 
     RLHash={}
+    count=0
     for pmidHash in range(M_lil.shape[0]):
         RLHash[pmidHash]=linalg.norm((M_lil.getrow(pmidHash).data[0])[1:])
+        count+=1
+        print "Hashes created: "+str(count)
 
     IOmodule.pickleOut(_hashTablesDir, "RLHash", RLHash)
 
@@ -125,8 +128,11 @@ def createCLHash(M_csc):
         os.mkdir(_hashTablesDir)
 
     CLHash={}
+    count=0
     for termHash in range(M_csc.shape[1]):
         CLHash[termHash]=len((M_csc.getcol(termHash).nonzero()[0])[1:])
+        count+=1
+        print "Hashes created: "+str(count)
 
     IOmodule.pickleOut(_hashTablesDir, "CLHash", CLHash)
 
