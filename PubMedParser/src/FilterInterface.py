@@ -3,7 +3,7 @@
 
 import IOmodule
 import math
-#import SearchTermDoc
+import SearchTermDoc
 import time
 import os
 
