@@ -45,12 +45,12 @@ def generateLogTFIDF(M_coo):
         for term in termVector:
             counter+=1
 
-            if M[counter,term]==0:
+            if M_lil[counter,term]==0:
                 print "Looked up zero-value"
                 raise Exception
 
             # Calculate the term frequency
-            tf=M[counter,term]
+            tf=M_lil[counter,term]
             tf=math.log(1+tf)
             # Update the new matrix values
             tfidfMatrix[counter,term]=tf*idf
