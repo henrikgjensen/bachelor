@@ -5,16 +5,28 @@ import math
 import SearchTermDoc
 import time
 
-def generateLogTFIDF(M_lil,M_csc):
+def generateLogTFIDF(M_coo):
 
     numberOfDocs = len(SearchTermDoc.pmidHashTable)
     allHashedTerms = SearchTermDoc.pmidHashTable.keys()
 
     print "Duplicating matrix..."
     t1=time.time()
-    tfidfMatrix=M_lil.copy()
+    tfidfMatrix=M_coo.copy()
     t2=time.time()
     print "Matrix duplicated in",(t2-t1)
+    
+    print "Converting from coo to lil..."
+    t1=time.time()
+    tfidfMatrix=tfidfMatrix.tolil()
+    t2=time.time()
+    print "Matrix converted in",(t2-t1)
+
+    print "Making a lil_matrix format..."
+    t1=time.time()
+    M_lil=tfidfMatrix.tocsc()
+    t2=time.time()
+    print "Made format in",(t2-t1)
 
     print "Extracting term vectors"
     t1=time.time()
@@ -46,7 +58,7 @@ def generateLogTFIDF(M_lil,M_csc):
         print "Length of term vector after (for the tfidf matrix):",counter
 
     # writeout...
-    
+
     return tfidfMatrix
 
 ###################
