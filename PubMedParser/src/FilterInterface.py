@@ -48,7 +48,7 @@ def generateLogTFIDF(M_coo):
             m = tfidfMatrix[i,0] # row index = doc index
             n = tfidfMatrix[0,j] # col index = term index
 
-            idf = math.log(numberOfDocs / len(_vectorLength[n]))
+            idf = math.log(numberOfDocs / _vectorLength[n])
             tf = math.log(1 + v)
 
             tfidfMatrix[m,n] = idf*tf
