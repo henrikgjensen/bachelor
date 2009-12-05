@@ -41,19 +41,14 @@ def generateLogTFIDF(M_coo):
 
 #    del M_coo
 
-    for row in range(numberOfDocs):
-        row+=1
-        subMatrix=(M_coo.getrow(row)).tocoo()
-        for i,j,v in zip(subMatrix.row, subMatrix.col, subMatrix.data):
-            #m = tfidfMatrix[i,0]
-            #n = tfidfMatrix[0,j]
+    for i,j,v in zip(M_coo.row, M_coo.col, M_coo.data):
+    
+        idf = math.log(numberOfDocs / _vectorLength[j])
+        tf = math.log(1 + v)
+        tfidf=tf*idf
+        tfidfMatrix[i,j] = tfidf
 
-            idf = math.log(numberOfDocs / _vectorLength[j])
-            tf = math.log(1 + v)
-
-            tfidfMatrix[i,j] = idf*tf
-
-        print "Row "+str(row)+" done."
+        print "Wrote "+str(tfidf)+" to ("+str(i)+","+str(j)+")"
 
     """
     for termVectorIndex in range(M_coo.shape[1]):
