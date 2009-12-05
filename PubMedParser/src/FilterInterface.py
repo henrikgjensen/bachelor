@@ -8,8 +8,7 @@ import time
 def generateLogTFIDF(M_coo):
 
     numberOfDocs = len(SearchTermDoc.pmidHashTable)
-    allHashedTerms = SearchTermDoc.termHashTable.keys()
-    print allHashedTerms
+    allHashedTerms = SearchTermDoc.termHashTable.values()
 
     print "Duplicating matrix..."
     t1=time.time()
