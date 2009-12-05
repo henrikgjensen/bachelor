@@ -66,6 +66,6 @@ def generateLogTFIDF(M_coo):
 
         print "Length of term vector after (for the tfidf matrix):", counter
 
-IOmodule.writeOutTDM("/root/The_Hive/term_doc/tfidf_termDoc", "TFIDF_termdoc", tfidfMatrix)
+    IOmodule.writeOutTDM("/root/The_Hive/term_doc/tfidf_termDoc", "TFIDF_termdoc", tfidfMatrix)
 
 ###################
