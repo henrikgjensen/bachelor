@@ -34,16 +34,16 @@ def generateLogTFIDF(M_coo):
 
 #    del M_coo
 
-    print "Making a dok_matrix format..."
-    t1=time.time()
-    M_dok=M_coo.todok()
-    t2=time.time()
-    print "Made format in",(t2-t1)
+#    print "Making a dok_matrix format..."
+#    t1=time.time()
+#    M_dok=M_coo.todok()
+#    t2=time.time()
+#    print "Made format in",(t2-t1)
 
 
     for i,j,v in zip(M_coo.row, M_coo.col, M_coo.data):
-        m = M_dok[i,0] # row number = doc index
-        n = M_dok[0,j] # column number = term index
+        m = tfidfMatrix[i,0] # row number = doc index
+        n = tfidfMatrix[0,j] # column number = term index
         
         idf = math.log(numberOfDocs / _vectorLength[n])
         tf = math.log(1+v)
