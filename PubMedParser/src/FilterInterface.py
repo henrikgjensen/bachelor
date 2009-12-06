@@ -1,6 +1,7 @@
 
 import TFIDFMatrix
 import Stemmer
+import StopwordRemover
 
 def generateLogTFIDF(M_coo):
 
@@ -23,3 +24,18 @@ def porterStemmer(string):
     string=Stemmer.stem(string)
 
     return string
+
+def stopwordRemover(string):
+
+    """
+    Removes stopwords in accordance to the nltk stopwords corpus using
+    english words, we might consider the user to supply a stopword
+    list to allow it to be customized.
+
+    By sending a stop word list to the function it allows a user
+    defined stop word list to be used instead of the standard nltk
+    stop word corpus.
+    """
+
+    return StopwordRemover.removeStopwords(string)
+
