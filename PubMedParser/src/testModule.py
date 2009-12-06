@@ -181,7 +181,7 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
     """
     for termVectorIndex in range(M_coo.shape[1]):
         termVectorIndex += 1
-        print "Progress: " + str(len(allHashedTerms)-termVectorIndex)
+        print "Progress: " + str(M_coo.shape[1]-termVectorIndex)
         #termVectorData = (M_csc.getcol(termVector).data)[1:]
         docIndexVector = (M_csc.getcol(termVectorIndex).nonzero()[0])[1:]
         # Calculate the inverse document frequency
