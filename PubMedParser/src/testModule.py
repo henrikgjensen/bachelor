@@ -165,7 +165,7 @@ def go(MT_coo,MT_csr,M_lil):
     print "Number of docs: "+str(numberOfDocs)
 
     for col in range(MT_coo.shape[0]):
-        print col
+        col=+1
         slice=MT_csr.getrow(col).tocoo() # 'column' slice
 
         print len(slice.data)
