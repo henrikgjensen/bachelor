@@ -141,7 +141,7 @@ def medlineDir2MatrixDir(m=500, n=20000):
     termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
     pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
 
-    files = sorted([f for f in os.listdir(medlineDir+"/") if os.path.isfile(medlineDir+"/" + f)])
+    files = sorted([f for f in os.listdir(_medlineDir+"/") if os.path.isfile(_medlineDir+"/" + f)])
 
     counter = 0
     for file in files:
