@@ -153,9 +153,6 @@ def go(M_lil,M_csr,M_coo):
     numberOfDocs = M_coo.shape[0]
     allHashedTerms = sorted(SearchTermDoc.termHashTable.values())
 
-
-    print M_lil[i,1]
-
     for termVectorIndex in range(M_coo.shape[1]):
         termVectorIndex += 1
         print "Progress: " + str(len(allHashedTerms)-termVectorIndex)
@@ -178,8 +175,6 @@ def go(M_lil,M_csr,M_coo):
             # Update the new matrix values
         #    T_tfidfMatrix[termVectorIndex,docIndex] = tf * idf
 
-
-    print M_lil[i,1]
         
 
     
