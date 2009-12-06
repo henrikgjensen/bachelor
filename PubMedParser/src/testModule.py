@@ -153,8 +153,9 @@ def go(M_coo,T_tfidfMatrix):
     data=[(M_coo.row, M_coo.col, M_coo.data)]
 
     counter=0
+
     for i in data:
-        print data
+        print i
         if counter==100000:
             break
 
