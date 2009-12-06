@@ -151,7 +151,7 @@ def medlineDir2MatrixDir(m=500, n=20000):
         diseaseName = file[0:file.find('.txt')]
         IOmodule.writeOutTDM(_subMatrixDir, diseaseName, M)
         counter += 1
-        print str(counter),"matrices made. Total number of terms:",M.shape[1]
+        print str(counter),"matrices made. Total number of terms:",len(M.getrow(0).nonzero()[0])
 
 
 def createHashes():
