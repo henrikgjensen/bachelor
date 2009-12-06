@@ -182,8 +182,10 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
     return M_lil
     """
 
-    t3=time.time()
     for termVectorIndex in range(M_coo.shape[1]):
+
+        t3=time.time()
+
         termVectorIndex += 1
         print "Progress: " + str(M_coo.shape[1]-termVectorIndex)
         #termVectorData = (M_csc.getcol(termVector).data)[1:]
@@ -201,6 +203,9 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
             tf = math.log(1 + tf)
             # Update the new matrix values
             M_lil[docIndex, termVectorIndex] = tf * idf
-        print str(t3-time.time())
+
+        t4=time.time()
+        
+        print str(t4-t3)
 
     
