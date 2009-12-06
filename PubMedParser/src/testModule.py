@@ -144,4 +144,16 @@ def createVLHash(M_lil):
 
     IOmodule.pickleOut("/root/The_Hive/term_doc/hashTables", "VLHash", VLHash)
 
+
+#really fast elementwise stuff:
+def go(M_lil,M_csr,M_coo):
+
+    log=math.log
+
+    for i in range(100000):
+
+        map(lambda x: log(1+x),M_lil.getrow(i).data)
+
+        print i
+
     
