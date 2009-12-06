@@ -15,11 +15,14 @@ _subFolder = _mainFolder+"/"+"term_doc"
 # MedLine record directory
 _medlineDir=_mainFolder+"/data_acquisition/"+"medline_records"
 # Sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
+_subMatrixDir=_subFolder+"/"+"diseaseMatrices"
 # Term-doc directory
 _termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
 _hashTablesDir=_subFolder+"/"+"hashTables"
+# Hashtable filenames:
+_termHash="termHash"
+_pmidHash="pmidHash"
 
 
 # Create main folder if it doesn't already exist.
@@ -112,6 +115,7 @@ def _populateMatrix(m, n, termDoc,termHashTable,pmidHashTable):
         if pmid not in pmidList:
             pmidList.append(pmid)
             pmidIndex = len(pmidList)
+            print "pmidindex: "+str(pmidIndex)
             M[pmidIndex,0]=pmidHashTable[pmid]
         else:
             pmidIndex = pmidList.index(pmid)+1
@@ -144,8 +148,8 @@ def medlineDir2MatrixDir(m=500, n=20000):
     stores the matrices as 'MatrixMarket' .mtx files, named by the disease name.
     """
 
-    termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
-    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash_stemmed")
+    termHashTable=IOmodule.pickleIn(_hashTablesDir, _termHash)
+    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, _pmidHash)
 
     files = sorted([f for f in os.listdir(_medlineDir+"/") if os.path.isfile(_medlineDir+"/" + f)])
 
@@ -212,8 +216,8 @@ def createHashes():
                 
         print str(termCounter)+" terms hashed. "+str(pmidCounter)+" pmids hashed."
 
-    IOmodule.pickleOut(hashTables, "termHash_stemmed", termHashTable)
-    IOmodule.pickleOut(hashTables, "pmidHash_stemmed", pmidHashTable)
+    IOmodule.pickleOut(hashTables, _termHash, termHashTable)
+    IOmodule.pickleOut(hashTables, _pmidHash, pmidHashTable)
 
     return termHashTable, pmidHashTable
 
@@ -236,8 +240,8 @@ def createTermDoc(refreshHash=False):
 
     files = sorted([f for f in os.listdir(subMatrixDir+"/") if os.path.isfile(subMatrixDir+"/" + f)])
     
-    termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
-    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
+    termHashTable=IOmodule.pickleIn(_hashTablesDir, _termHash)
+    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, _pmidHash)
 
 
     # Need to add one due to non zero indexing
