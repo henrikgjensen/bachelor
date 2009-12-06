@@ -15,7 +15,7 @@ _subFolder = _mainFolder+"/"+"term_doc"
 # MedLine record directory
 _medlineDir=_mainFolder+"/data_acquisition/"+"medline_records"
 # Sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"diseaseMatrices"
+_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
 # Term-doc directory
 _termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
@@ -74,7 +74,8 @@ def _gatherMatrixData(filename):
     for entry in fields.items():
         abstract=entry[1]['AB']
         # Remove english stopwords from the abstract
-        abstract=FilterInterface.stopwordRemover(entry[1]['AB'])
+        abstract=FilterInterface.stopwordRemover(abstract)
+        abstract=FilterInterface.porterStemmer(abstract)
         l.append(_wordCounter(entry[0],abstract))
 
     return l
