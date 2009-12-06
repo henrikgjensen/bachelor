@@ -136,7 +136,7 @@ def _populateMatrix(m, n, termDoc,termHashTable,pmidHashTable):
     return M
 
 
-def medlineDir2MatrixDir(m=500, n=20000):
+def medlineDir2MatrixDir(m=501, n=20000):
 
     """
     This function converts a directory of MedLine records to a new directory of
