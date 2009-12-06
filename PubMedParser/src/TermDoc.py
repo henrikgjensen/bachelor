@@ -171,7 +171,7 @@ def createHashes():
     Note that the terms a sanitized for any non-alphanumerical characters.
     """
 
-    medlineDir = _medLineDir
+    medlineDir = _medlineDir
     hashTables = _hashTablesDir
     termHashTable={}
     pmidHashTable={}
