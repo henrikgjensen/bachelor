@@ -15,14 +15,14 @@ _subFolder = _mainFolder+"/"+"term_doc"
 # MedLine record directory
 _medlineDir=_mainFolder+"/data_acquisition/"+"medline_records"
 # Sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"diseaseMatrices"
+_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
 # Term-doc directory
 _termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
 _hashTablesDir=_subFolder+"/"+"hashTables"
 # Hashtable filenames:
-_termHash="termHash"
-_pmidHash="pmidHash"
+_termHash="termHash_stemmed"
+_pmidHash="pmidHash_stemmed"
 
 
 # Create main folder if it doesn't already exist.
