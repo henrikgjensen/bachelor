@@ -150,7 +150,7 @@ import math
 import SearchTermDoc
 def go(M_coo,M_csr):
 
-    for i in range(M_coo.shape[0])
+    for i in range(M_coo.shape[0]):
         slice=M_csr.getrow[i].tocoo()
         for j,v in zip(slice.col,slice.data):
             #idf = math.log(numberOfDocs / _vectorLength[j])
