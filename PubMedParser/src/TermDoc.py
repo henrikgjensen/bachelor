@@ -179,6 +179,7 @@ def createHashes():
     pmidCounter = 0
 
     files = sorted([f for f in os.listdir(medlineDir+"/") if os.path.isfile(medlineDir+"/")])
+    print files
 
     # Get the regex pattern that sanitizeses strings.
     sanitizer = TextCleaner.sanitizeString()
