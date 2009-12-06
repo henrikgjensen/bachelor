@@ -10,6 +10,7 @@ def generateLogTFIDF(M_coo):
     
     TFIDFMatrix.generateLogTFIDF(M_coo)
 
+
 def porterStemmer(string):
 
     """
@@ -19,6 +20,6 @@ def porterStemmer(string):
     Returns a stemmed string.
     """
 
-    string=Stemmer.stem(string, stem)
+    string=Stemmer.stem(string)
 
     return string
