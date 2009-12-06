@@ -81,7 +81,7 @@ def _gatherMatrixData(filename):
 
         # OPTIONAL:
         # Stem the abstract (remember to change file directory!)
-        abstract=FilterInterface.porterStemmer(abstract)
+        #abstract=FilterInterface.porterStemmer(abstract)
 
         l.append(_wordCounter(entry[0],abstract))
 
