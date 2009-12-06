@@ -1,5 +1,6 @@
 import RecordHandler
 import IOmodule
+import FilterInterface
 from scipy import sparse
 import os
 import TextCleaner
@@ -19,10 +20,6 @@ _subMatrixDir=_subFolder+"/"+"diseaseMatrices"
 _termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
 _hashTablesDir=_subFolder+"/"+"hashTables"
-# Term-hash table file
-_termHashTable="termHash.btd"
-# PMID-hash table file
-_pmidHashTable="pmidHash.btd"
 
 
 # Create main folder if it doesn't already exist.
@@ -60,7 +57,8 @@ def _gatherMatrixData(filename):
 
     """
     This function utilizes the RecordHandler module to create and structure the
-    data to populate the term-doc matrices.
+    data to populate the term-doc matrices. It currently also removes stopwords
+    from the abstract.
 
     It takes a MedLine record directory (full path) and the records file to
     gather data from.
@@ -74,7 +72,9 @@ def _gatherMatrixData(filename):
     records = RecordHandler.loadMedlineRecords(medlineDir, filename)
     fields = RecordHandler.readMedlineFields(records, ['AB'])
     for entry in fields.items():
-        l.append(_wordCounter(entry[0], entry[1]['AB']))
+        # Remove english stopwords from the abstract
+        abstract=FilterInterface.stopwordRemover(entry[1]['AB'])
+        l.append(_wordCounter(entry[0],abstract))
 
     return l
 
@@ -138,8 +138,8 @@ def medlineDir2MatrixDir(m=500, n=20000):
     stores the matrices as 'MatrixMarket' .mtx files, named by the disease name.
     """
 
-    termHashTable=IOmodule.pickleIn(_hashTablesDir, _termHashTable)
-    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, _pmidHashTable)
+    termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
+    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
 
     files = sorted([f for f in os.listdir(medlineDir+"/") if os.path.isfile(medlineDir+"/" + f)])
 
@@ -148,7 +148,7 @@ def medlineDir2MatrixDir(m=500, n=20000):
         data = _gatherMatrixData(file)
         M = _populateMatrix(m, n, data,termHashTable, pmidHashTable)
         diseaseName = file[0:file.find('.txt')]
-        IOmodule.writeOutTDM('diseaseMatrices', diseaseName, M)
+        IOmodule.writeOutTDM(_subMatrixDir, diseaseName, M)
         counter += 1
         print str(counter),"matrices made. Total number of terms:",len(termHashTable)
 
@@ -224,8 +224,8 @@ def createTermDoc(refreshHash=False):
 
     files = sorted([f for f in os.listdir(subMatrixDir+"/") if os.path.isfile(subMatrixDir+"/" + f)])
     
-    termHashTable=IOmodule.pickleIn(_hashTablesDir, _termHashTable)
-    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, _pmidHashTable)
+    termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
+    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
 
 
     # Need to add one due to non zero indexing

@@ -1,4 +1,3 @@
-
 import TFIDFMatrix
 import Stemmer
 import StopwordRemover
@@ -21,9 +20,8 @@ def porterStemmer(string):
     Returns a stemmed string.
     """
 
-    string=Stemmer.stem(string)
+    return Stemmer.stem(string)
 
-    return string
 
 def stopwordRemover(string):
 
