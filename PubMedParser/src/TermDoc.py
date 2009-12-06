@@ -178,7 +178,7 @@ def createHashes():
     termCounter = 0
     pmidCounter = 0
 
-    files = sorted([f for f in os.listdir(medlineDir) if os.path.isfile(medlineDir + f)])
+    files = sorted([f for f in os.listdir(medlineDir+"/"+f) if os.path.isfile(medlineDir+"/"+f)])
 
     # Get the regex pattern that sanitizeses strings.
     sanitizer = TextCleaner.sanitizeString()
