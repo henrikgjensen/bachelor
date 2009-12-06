@@ -75,7 +75,11 @@ def _gatherMatrixData(filename):
         abstract=entry[1]['AB']
         # Remove english stopwords from the abstract
         abstract=FilterInterface.stopwordRemover(abstract)
+
+        # OPTIONAL:
+        # Stem the abstract (remember to change file directory!)
         abstract=FilterInterface.porterStemmer(abstract)
+
         l.append(_wordCounter(entry[0],abstract))
 
     return l
@@ -140,8 +144,8 @@ def medlineDir2MatrixDir(m=500, n=20000):
     stores the matrices as 'MatrixMarket' .mtx files, named by the disease name.
     """
 
-    termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
-    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
+    termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
+    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash_stemmed")
 
     files = sorted([f for f in os.listdir(_medlineDir+"/") if os.path.isfile(_medlineDir+"/" + f)])
 
@@ -164,8 +168,8 @@ def createHashes():
     Note that the terms a sanitized for any non-alphanumerical characters.
     """
 
-    medlineDir = _path+_medLineDir
-    hashTables = _path+_hashTablesDir
+    medlineDir = _medLineDir
+    hashTables = _hashTablesDir
     termHashTable={}
     pmidHashTable={}
     termCounter = 0
@@ -193,7 +197,13 @@ def createHashes():
                     pmidHashTable[pmid]=pmidCounter
 
                 # Hash terms
-                termList = [word.lower() for word in sanitizer.sub(' ', record[1]['AB']).split(' ') if word != '']
+                abstract=record[1]['AB']
+
+                # OPTIONAL:
+                # Stem the abstract (remember to change file name!)
+                abstract=FilterInterface.porterStemmer(abstract)
+
+                termList = [word.lower() for word in sanitizer.sub(' ', abstract).split(' ') if word != '']
                 for term in termList:
                     if term not in termHashTable:
                         termCounter+=1
@@ -202,8 +212,8 @@ def createHashes():
                 
         print str(termCounter)+" terms hashed. "+str(pmidCounter)+" pmids hashed."
 
-    IOmodule.pickleOut(hashTables, "termHash", termHashTable)
-    IOmodule.pickleOut(hashTables, "pmidHash", pmidHashTable)
+    IOmodule.pickleOut(hashTables, "termHash_stemmed", termHashTable)
+    IOmodule.pickleOut(hashTables, "pmidHash_stemmed", pmidHashTable)
 
     return termHashTable, pmidHashTable
 
