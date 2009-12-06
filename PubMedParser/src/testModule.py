@@ -149,13 +149,36 @@ def createVLHash(M_lil):
 import math
 def go(M_lil,M_csr,M_coo):
 
-    log=math.log
+    numberOfDocs = M_coo.shape[0]
+    allHashedTerms = sorted(SearchTermDoc.termHashTable.values())
 
-    for i in range(100000):
 
-        print M_lil.getrow(i).data[0][1]
-        map(lambda x: log(1+x),M_lil.getrow(i).data[0])
-        print M_lil.getrow(i).data[0][1]
+    print M_lil[i,1]
+
+    for termVectorIndex in range(M_coo.shape[1]):
+        termVectorIndex += 1
+        print "Progress: " + str(len(allHashedTerms)-termVectorIndex)
+        #termVectorData = (M_csc.getcol(termVector).data)[1:]
+        docIndexVector = (T_tfidfMatrix.getrow(termVectorIndex).nonzero()[1])[1:]
+        # Calculate the inverse document frequency
+        # (Note that the length of each term vector is always greater than 0)
+        idf = math.log(numberOfDocs / len(docIndexVector))
+
+        #row=T_tfidfMatrix[termVectorIndex,1:]
+        #T_tfidfMatrix[termVectorIndex,1:]=map(lambda x: math.log(1+x)*idf,row)
+
+        #for docIndex in docIndexVector:
+        #    # Calculate the term frequency
+        #    tf = T_tfidfMatrix[termVectorIndex,docIndex]
+        #    if tf == 0:
+        #        print "Looked up zero-value at: ("+str(termVectorIndex)+" "+str(docIndex)+")"
+        #        raise Exception
+        #    tf = math.log(1 + tf)
+            # Update the new matrix values
+        #    T_tfidfMatrix[termVectorIndex,docIndex] = tf * idf
+
+
+    print M_lil[i,1]
         
 
     

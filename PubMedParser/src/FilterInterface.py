@@ -40,7 +40,7 @@ def generateLogTFIDF(M_coo):
 #    print "Made format in",(t2-t1)
 
 #    del M_coo
-
+"""
     for i,j,v in zip(M_coo.row, M_coo.col, M_coo.data):
     
         idf = math.log(numberOfDocs / _vectorLength[j])
@@ -72,7 +72,7 @@ def generateLogTFIDF(M_coo):
             tf = math.log(1 + tf)
             # Update the new matrix values
             T_tfidfMatrix[termVectorIndex,docIndex] = tf * idf
-    """
+    
     """
     for termVectorIndex in range(M_coo.shape[1]):
         termVectorIndex += 1
