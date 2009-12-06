@@ -182,11 +182,10 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
     return M_lil
     """
 
-    for termVectorIndex in range(M_coo.shape[1]):
+    for termVectorIndex in range(1,M_coo.shape[1]+1):
 
         t3=time.time()
-
-        termVectorIndex += 1
+        
         print "Progress: " + str(M_coo.shape[1]-termVectorIndex)
         #termVectorData = (M_csc.getcol(termVector).data)[1:]
         docIndexVector = (M_csc.getcol(termVectorIndex).nonzero()[0])[1:]
