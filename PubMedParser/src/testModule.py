@@ -165,9 +165,10 @@ def go(MT_coo,MT_csr,M_lil):
     print "Number of docs: "+str(numberOfDocs)
 
     for col in range(MT_coo.shape[0]):
-        print "getting slice.."
         slice=MT_csr.getrow(col).tocoo() # 'column' slice
-        print "got slice"
+
+        print len(slice.data)
+
         for row,data in zip(slice.col,slice.data):
             idf = math.log(numberOfDocs / _vectorLength[col])
             tf = math.log(1 + data)
