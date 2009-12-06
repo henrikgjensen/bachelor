@@ -190,7 +190,7 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
 
         for docIndex in docIndexVector:
             # Calculate the term frequency
-            tf = tfidfMatrix[docIndex, termVectorIndex]
+            tf = M_lil[docIndex, termVectorIndex]
             if tf == 0:
                 print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
                 raise Exception
