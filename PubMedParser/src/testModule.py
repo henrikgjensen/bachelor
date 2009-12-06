@@ -218,7 +218,7 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
 
         t3=time.time()
 
-        print "Progress: " + str(len(M_coo.shape[0])-termVectorIndex)
+        print "Progress: " + str(M_coo.shape[0]-termVectorIndex)
         #termVectorData = (M_csc.getcol(termVector).data)[1:]
         docIndexVector = (MT_csr.getrow(termVectorIndex).nonzero()[1])[1:]
         # Calculate the inverse document frequency
