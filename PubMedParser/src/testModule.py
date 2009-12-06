@@ -146,6 +146,7 @@ def createVLHash(M_lil):
 
 
 #really fast elementwise stuff:
+import math
 def go(M_lil,M_csr,M_coo):
 
     log=math.log
