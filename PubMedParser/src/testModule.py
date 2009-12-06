@@ -166,11 +166,12 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
     print "Number of docs: "+str(numberOfDocs)
 
 
-    """
+    
     for col in range(1,MT_coo.shape[0]+1):
-        slice=MT_csr.getrow(col).tocoo() # 'column' slice
 
-        print len(slice.data)
+        t3=time.time()
+
+        slice=MT_csr.getrow(col).tocoo() # 'column' slice
 
         for row,data in zip(slice.col,slice.data):
             idf = math.log(numberOfDocs / _vectorLength[col])
@@ -179,9 +180,12 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
             #data=(j,i,v) # (row,col,data)
         print "column number: "+str(col)
 
-    return M_lil
-    """
+        t4=time.time()
+        print str(t4-t3)
 
+    return M_lil
+    
+    """
     for termVectorIndex in range(1,M_coo.shape[1]+1):
 
         t3=time.time()
@@ -206,5 +210,5 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
         t4=time.time()
         
         print str(t4-t3)
-
+    """
     
