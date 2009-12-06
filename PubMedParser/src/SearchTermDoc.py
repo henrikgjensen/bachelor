@@ -1,8 +1,8 @@
 import TextCleaner
 import os
-import cPickle
 import time
 import IOmodule
+from numpy import linalg
 
 mainFolder = 'The_Hive'
 subFolder = 'search_engine'
@@ -25,7 +25,7 @@ revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 print "Hashes loaded"
 
 
-def modifySearchString(searchString):
+def _modifySearchString(searchString):
 
     """
     Takes a search string and returns a list of sanitized search terms.
@@ -50,7 +50,7 @@ def extractRowIndices(M_csc,searchString):
 
     t1=time.time()
 
-    searchVector=modifySearchString(searchString)
+    searchVector=_modifySearchString(searchString)
     
     # Look up hashes for terms.
     hashedSearchTerms=[]
@@ -74,10 +74,73 @@ def extractRowIndices(M_csc,searchString):
     return colList, hashedSearchTerms
 
 
-def vector2QueryScore():
+def extractColVectors(M_csc, termHashes):
 
-    return None
+    """
+    Does the same as 'extractRowIndices' but takes a hashlist instead of a
+    querystring and returns a list of values instead of a list of row indices
 
+    Format: [array1,array2,...]
+    """
+
+    termHashes=sorted(termHashes)
+
+    colList=[]
+    for termHash in termHashes:
+        print str(len(termHashes)-termHash)
+        colList.append((M_csc.getcol(termHash))[1:].data)
+
+    return colList
+
+def createRLHash(M_lil,filename):
+
+    """
+    Precompute and save the norm of each row vector in the term-doc matrix.
+    """
+
+    t1=time.time()
+
+    if not os.path.isdir(_hashTablesDir):
+        os.mkdir(_hashTablesDir)
+
+    RLHash={}
+    count=0
+    for pmidHash in range(M_lil.shape[0]):
+        RLHash[pmidHash]=linalg.norm((M_lil.getrow(pmidHash).data[0])[1:])
+        count+=1
+        print "Hashes created: "+str(count)
+
+    IOmodule.pickleOut(_hashTablesDir, filename, RLHash)
+
+    t2=time.time()
+    print "Created and saved RowLength-hash in: "+str(t2-t1)
+
+def createCLHash(M_coo,filename):
+
+    """
+    Precompute and save the length of each column vector in the term-doc matrix.
+    Here the length refers to the number of elements.
+    """
+
+    t1=time.time()
+
+    if not os.path.isdir(_hashTablesDir):
+        os.mkdir(_hashTablesDir)
+
+    M_lil=(M_coo.transpose()).tolil()
+
+    CLHash={}
+    count=0
+    for termHash in range(M_coo.shape[1]):
+        termVectorLength=len((M_lil.getrow(termHash).nonzero()[0])[1:])
+        CLHash[termHash]=termVectorLength
+        count+=1
+        print "Hashes created: "+str(count)+". Length:"+str(termVectorLength)
+
+    IOmodule.pickleOut(_hashTablesDir, filename, CLHash)
+
+    t2=time.time()
+    print "Created and saved ColumnLength-hash in: "+str(t2-t1)
 
 
 def getPMID(hashedPMID):

@@ -144,4 +144,102 @@ def createVLHash(M_lil):
 
     IOmodule.pickleOut("/root/The_Hive/term_doc/hashTables", "VLHash", VLHash)
 
+
+#really fast elementwise stuff:
+import math
+import os
+import SearchTermDoc
+
+# Main folder
+_path = os.getenv("HOME")+"/"+"The_Hive"
+# Hashtable directory
+_hashTablePath = _path+"/"+"term_doc/hashTables"
+
+# Load the precomputed length of each column-vector in the term-doc matrix.
+_vectorLength = IOmodule.pickleIn(_hashTablePath,'CLHash')
+
+
+def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
+
+
+    numberOfDocs = MT_coo.shape[1]
+    print "Number of docs: "+str(numberOfDocs)
+
+
     
+    for col in range(250000,MT_coo.shape[0]+1):
+
+        t3=time.time()
+
+        slice=MT_csr.getrow(col).tocoo() # 'column' slice
+
+        for row,data in zip(slice.col,slice.data):
+            idf = math.log(numberOfDocs / _vectorLength[col])
+            tf = math.log(1 + data)
+            if data==0:
+                raise Exception
+            M_lil[row,col]=tf*idf
+            #data=(j,i,v) # (row,col,data)
+        print "column number: "+str(col)
+
+        t4=time.time()
+        print str(t4-t3)
+
+    return M_lil
+    
+    """
+    for termVectorIndex in range(250000,M_coo.shape[1]+1):
+
+        t3=time.time()
+        
+        print "Progress: " + str(M_coo.shape[1]-termVectorIndex)
+        #termVectorData = (M_csc.getcol(termVector).data)[1:]
+        docIndexVector = (M_csc.getcol(termVectorIndex).nonzero()[0])[1:]
+        # Calculate the inverse document frequency
+        # (Note that the length of each term vector is always greater than 0)
+        idf = math.log(numberOfDocs / len(docIndexVector))
+
+        for docIndex in docIndexVector:
+            # Calculate the term frequency
+            tf = M_lil[docIndex, termVectorIndex]
+            if tf == 0:
+                print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
+                raise Exception
+            tf = math.log(1 + tf)
+            # Update the new matrix values
+            M_lil[docIndex, termVectorIndex] = tf * idf
+
+        t4=time.time()
+        
+        print str(t4-t3)
+    """
+
+    """
+    for termVectorIndex in range(1,M_coo.shape[1]+1):
+
+        t3=time.time()
+
+        print "Progress: " + str(M_coo.shape[0]-termVectorIndex)
+        #termVectorData = (M_csc.getcol(termVector).data)[1:]
+        docIndexVector = (MT_csr.getrow(termVectorIndex).nonzero()[1])[1:]
+        # Calculate the inverse document frequency
+        # (Note that the length of each term vector is always greater than 0)
+        idf = math.log(numberOfDocs / len(docIndexVector))
+
+        #row=T_tfidfMatrix[termVectorIndex,1:]
+        #T_tfidfMatrix[termVectorIndex,1:]=map(lambda x: math.log(1+x)*idf,row)
+
+        for docIndex in docIndexVector:
+            # Calculate the term frequency
+            tf = M_lil[docIndex,termVectorIndex]
+            if tf == 0:
+                print "Looked up zero-value at: ("+str(termVectorIndex)+" "+str(docIndex)+")"
+                raise Exception
+            tf = math.log(1 + tf)
+            # Update the new matrix values
+            M_lil[docIndex,termVectorIndex] = tf * idf
+
+        t4=time.time()
+        print str(t4-t3)
+    
+    """

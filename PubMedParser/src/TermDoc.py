@@ -15,11 +15,11 @@ _subFolder = _mainFolder+"/"+"term_doc"
 # MedLine record directory
 _medlineDir=_mainFolder+"/data_acquisition/"+"medline_records"
 # Sub-matrix directory
-_subMatrixDir=_mainFolder+"/"+_subFolder+"/"+"diseaseMatrices"
+_subMatrixDir=_subFolder+"/"+"diseaseMatrices"
 # Term-doc directory
-_termDocDir=_mainFolder+"/"+_subFolder+"/"+"termDoc"
+_termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
-_hashTablesDir=_mainFolder+"/"+_subFolder+"/"+"hashTables"
+_hashTablesDir=_subFolder+"/"+"hashTables"
 # Term-hash table file
 _termHashTable=_hashTablesDir+"/"+"termHash.btd"
 # PMID-hash table file
@@ -31,8 +31,8 @@ if not os.path.isdir(_mainFolder):
         os.mkdir(_mainFolder)
 
 # Create sub folder if it doesn't already exist..
-if not os.path.isdir(_mainFolder+"/"+_subFolder):
-        os.mkdir(_mainFolder+"/"+_subFolder)
+if not os.path.isdir(_subFolder):
+        os.mkdir(_subFolder)
 
 
 def _wordCounter(pmid, string):

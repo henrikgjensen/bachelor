@@ -1,34 +1,66 @@
 from Bio import Entrez
 from Bio import Medline
 import SearchTermCombiner as STC
-reload(STC)
 import TextCleaner as TC
-reload(TC)
-import DiseaseCrawler as DC
-reload(DC)
 import math
 import IOmodule
-reload(IOmodule)
 import os
 from time import sleep
 
 mainFolder = 'The_Hive'
 subFolder = 'data_acquisition'
 
-# Path to main folder
-_path=os.getenv("HOME")
-_path+='/'+_path+'/'+mainFolder+'/'+subFolder
+# Main folder
+_mainFolder=os.getenv("HOME")+"/"+"The_Hive"
+# Subfolder
+_subFolder = _mainFolder+"/"+"data_acquisition"
+# Downloaded diseases
+diseaseFolder="rarediseases_info"
 
-# If mainFolder and subFolder do not exists, create it.
-if not os.path.isdir(_path):
-    os.mkdir(_path)
 
-# Collector function that gathers all functionality.
-def gatherOfAllThings(startIndex=0,stopIndex=None, dataSourceDir=str(_path)+"/rarediseases_info"):
+# Create main folder if it doesn't already exist..
+if not os.path.isdir(_mainFolder):
+        os.mkdir(_mainFolder)
 
-    # Get the number of diseases from DC, based on start and stop. If
+# Create sub folder if it doesn't already exist..
+if not os.path.isdir(_subFolder):
+        os.mkdir(_subFolder))
+
+
+
+
+def _readDiseases(indexStart=0,indexStop=None):
+
+    """
+    Function for returning the content of all or some of the crawled diseases.
+
+    By default all are returned in a dictionary of diseases on the form:
+    [{DiseaseName:{db='',terms:'',syn=[],uid:'',desc:''}}]
+
+    The reason all the dictionaries are returned as a list is to be sure of the
+    order.
+    """
+
+    path=_subFolder+"/"+diseaseFolder
+
+    files=sorted([f for f in os.listdir(path) if os.path.isfile(path+f)])
+
+    sortedcontents=[]
+    for file in files[indexStart:indexStop]:
+        contents={}
+        diseaseName=file[0:file.find('.txt')]
+        diseaseAttr=eval(open(path+file,'r').read())
+        contents[diseaseName]=diseaseAttr
+        sortedcontents.append(contents)
+
+    return sortedcontents
+
+
+def gatherOfAllThings(startIndex=0,stopIndex=None):
+
+    # Get the number of diseases, based on start and stop. If
     # stopIndex = None, then it returns the whole range
-    numberOfRareDiseases = len(DC.readDiseases(startIndex,stopIndex))
+    numberOfRareDiseases = len(_readDiseases(startIndex,stopIndex))
     # Default number per chuck, before writeout
     numberToGet = 1
     # Calculate the numbers of steps, for looping.
@@ -36,13 +68,13 @@ def gatherOfAllThings(startIndex=0,stopIndex=None, dataSourceDir=str(_path)+"/ra
 
     # Default directory to save information files in.
     directory = 'medline_records'
-    _path_medlinerecords+=_path+'/'+directory
+    _path_medlinerecords+=_mainFolder+'/'+directory
     if not os.path.isDir(_path_medlinerecords):
         os.mkdir(_path_medlinerecords)
 
     # Read in the range of diseases we want to get information about,
     # in a list, it needs to be sorted to support resume.
-    d=DC.readDiseases(startIndex,stopIndex)
+    d=_readDiseases(startIndex,stopIndex)
 
     for i in range(steps):
         # Read in the a chuck of diseases in a list
@@ -70,6 +102,7 @@ def gatherOfAllThings(startIndex=0,stopIndex=None, dataSourceDir=str(_path)+"/ra
 
             IOmodule.writeOutTxt(_path_medlinerecords, disease, dictionary[disease], 'w')
 
+
 def getArticleIDs(diseaseDictionary):
 
     """
@@ -92,8 +125,7 @@ def getArticleIDs(diseaseDictionary):
     # Iterates through the diseaseDictionary and searches for uid,
     # term, diseasename, and combinations of synonyms
     diseaseArticleIDlist={}
-    # Contains additional options, e.g. ' AND LA[eng]'
-    additionalSearchOptions = ' AND hasabstract[text]'
+    additionalSearchOptions = ' AND hasabstract[text]' # Contains additional options, e.g. ' AND LA[eng]'
 
     for disease in diseaseDictionary:
 
@@ -103,19 +135,17 @@ def getArticleIDs(diseaseDictionary):
         diseaseArticleIDlist[disease] = {}
         diseaseArticleIDlist[disease]['PMIDs']=[]
         diseaseArticleIDlist[disease]['description'] = ''
-        # Either the disease has a handcrafted search string or it contains either pubmed or omim uid.
         if (diseaseDictionary[disease]['terms'] != ''):
             diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(diseaseDictionary[disease]['db'],'',TC.unquoteString(diseaseDictionary[disease]['terms']) + additionalSearchOptions,articleCount))
         elif (diseaseDictionary[disease]['uid'] != ''):
             diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(diseaseDictionary[disease]['db'],diseaseDictionary[disease]['uid'],'',articleCount))
+            
         articleCount = articleCount - len(diseaseArticleIDlist[disease]['PMIDs'])
 
-        # If we still have qouta left, make a search on the disease name
+        # If we still have qouta left
         if (articleCount > 0):
-            # Sanitize the disease name string for searching and append the additional search option.
-            # diseaseName = ' '.join([part.lower().strip() for part in disease.split(' ') if part != ''])
             # Search for the disease name on pubmed/medline
-            diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(database='pubmed',uid='',searchterm=disease + additionalSearchOptions,numberOfArticles=articleCount))
+            diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource('pubmed','',disease + additionalSearchOptions,articleCount))
 
         # Remove duplicates
         diseaseArticleIDlist[disease]['PMIDs'] = removeDuplicates(diseaseArticleIDlist[disease]['PMIDs'])
@@ -226,6 +256,7 @@ def getArticleIDs(diseaseDictionary):
 
     return diseaseArticleIDlist
 
+
 def removeDuplicates(listOfIDs):
     """
     Quick and dirty hack to remove duplicates from list using
@@ -241,13 +272,14 @@ def removeDuplicates(listOfIDs):
 
     return listOfIDs
 
+
 def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArticles=20):
 
     ###########################################################
     ### WE NEED TO SEARCH ON THE DISEASE NAME IF PUBMED UID ###
     ### OR OMIM UID DO NOT RETURN 250 MEDLINE RECORDS!!!    ###
-    ### THIS NEEDS TO BE ADDED IN THE getArticleID func.    ###
     ###########################################################    
+
 
     """
     This function is for getting PMIDs from different sources. The are
@@ -309,10 +341,6 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
                 sleep(sleepTimeBetweenTries)
         results = Entrez.read(handle)
         ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']][:numberOfArticles]
-
-    # else:
-    #    implement emergency search on disease name
-
     
     return ids
 
@@ -356,7 +384,7 @@ def getMedlineList(pmids):
         try:
             records.extend(list(Medline.parse(handle)))
         except:
-            IOmodule.writeOutTxt(_path+'/'+'errordir_medline_records', pmids[i], '')
+            IOmodule.writeOutTxt(_mainFolder+'/'+'errordir_medline_records', pmids[i], '')
 
         print 'Downloaded',len(records),'MedLine articles.',str(listLength-len(records)),'remaining...'
 
