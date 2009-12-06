@@ -162,15 +162,14 @@ _vectorLength = IOmodule.pickleIn(_hashTablePath,'CLHash')
 def go(MT_coo,MT_csr,M_lil):
 
     numberOfDocs = MT_coo.shape[1]
-    print "Number of terms: "+str(numberOfDocs)
+    print "Number of docs: "+str(numberOfDocs)
 
-    for col in range(numberOfDocs):
+    for col in range(MT_coo.shape[0]):
         slice=MT_csr.getrow(col).tocoo() # 'column' slice
-        print "column length: "+str(slice)
         for row,data in zip(slice.col,slice.data):
             idf = math.log(numberOfDocs / _vectorLength[col])
             tf = math.log(1 + data)
-            M_lil[row,col]=tf*idf
+            #M_lil[row,col]=tf*idf
             #data=(j,i,v) # (row,col,data)
         print "column number: "+str(col)
 
