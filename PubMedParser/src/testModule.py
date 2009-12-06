@@ -153,7 +153,7 @@ def go(M_lil,M_csr,M_coo):
 
     for i in range(100000):
 
-        map(lambda x: log(1+x),M_lil.getrow(i).data)
+        map(lambda x: log(1+x),M_lil.getrow(i).data[0])
 
         print i
 
