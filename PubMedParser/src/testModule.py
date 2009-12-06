@@ -150,6 +150,15 @@ import math
 import SearchTermDoc
 def go(M_coo,T_tfidfMatrix):
 
+    data=[(M_coo.row, M_coo.col, M_coo.data)]
+
+    counter=0
+    for i in data:
+        print data
+        if counter==100000:
+            break
+
+    """
     numberOfDocs = M_coo.shape[0]
     allHashedTerms = sorted(SearchTermDoc.termHashTable.values())
 
@@ -175,6 +184,6 @@ def go(M_coo,T_tfidfMatrix):
             # Update the new matrix values
         #    T_tfidfMatrix[termVectorIndex,docIndex] = tf * idf
 
-        
+    """
 
     
