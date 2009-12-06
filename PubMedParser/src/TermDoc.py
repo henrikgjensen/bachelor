@@ -74,7 +74,7 @@ def _gatherMatrixData(filename):
     for entry in fields.items():
         abstract=entry[1]['AB']
         # Remove english stopwords from the abstract
-        #abstract=FilterInterface.stopwordRemover(entry[1]['AB'])
+        abstract=FilterInterface.stopwordRemover(entry[1]['AB'])
         l.append(_wordCounter(entry[0],abstract))
 
     return l
