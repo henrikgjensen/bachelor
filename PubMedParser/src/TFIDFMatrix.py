@@ -32,7 +32,7 @@ def generateLogTFIDF(M_coo):
         docIndexVector = (M_csc.getcol(termVectorIndex).nonzero()[0])[1:]
         # Calculate the inverse document frequency
         # (Note that the length of each term vector is always greater than 0)
-        idf = math.log(numberOfDocs / len(docIndexVector))
+        idf = math.log(float(numberOfDocs) / len(docIndexVector))
 
         for docIndex in docIndexVector:
             # Calculate the term frequency
@@ -42,6 +42,9 @@ def generateLogTFIDF(M_coo):
                 raise Exception
             tf = math.log(1 + tf)
             # Update the new matrix values
-            M_lil[docIndex, termVectorIndex] = tf * idf
+            tfidf=tf * idf
+            M_lil[docIndex, termVectorIndex] = tfidf
+
+            print tfidf
 
     IOmodule.writeOutTDM(_termDocDir, "TFIDF_termdoc", tfidfMatrix)
