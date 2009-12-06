@@ -2,7 +2,6 @@ import RecordHandler
 import IOmodule
 from scipy import sparse
 import os
-import cPickle
 import TextCleaner
 import time
 from nltk import *
@@ -21,9 +20,9 @@ _termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
 _hashTablesDir=_subFolder+"/"+"hashTables"
 # Term-hash table file
-_termHashTable=_hashTablesDir+"/"+"termHash.btd"
+_termHashTable="termHash.btd"
 # PMID-hash table file
-_pmidHashTable=_hashTablesDir+"/"+"pmidHash.btd"
+_pmidHashTable="pmidHash.btd"
 
 
 # Create main folder if it doesn't already exist.
@@ -139,13 +138,8 @@ def medlineDir2MatrixDir(m=500, n=20000):
     stores the matrices as 'MatrixMarket' .mtx files, named by the disease name.
     """
 
-    medlineDir=_medlineDir
-    termHash=_termHashTable
-    pmidHash=_pmidHashTable
-    termHashData=open(termHash)
-    pmidHashData=open(pmidHash)
-    termHashTable=cPickle.load(termHashData)
-    pmidHashTable=cPickle.load(pmidHashData)
+    termHashTable=IOmodule.pickleIn(_hashTablesDir, _termHashTable)
+    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, _pmidHashTable)
 
     files = sorted([f for f in os.listdir(medlineDir+"/") if os.path.isfile(medlineDir+"/" + f)])
 
@@ -223,22 +217,16 @@ def createTermDoc(refreshHash=False):
     It also saves the matrix for later use as a MatrixMarket .mtx file.
     """
 
-    subMatrixDir=_subMatrixDir
-    termDocDir=_termDocDir
-    termHash=_hashTablesDir+"/"+_termHashTable
-    pmidHash=_hashTablesDir+"/"+_pmidHashTable
-
     t1 = time.time()
 
     if refreshHash:
         createHashes()
 
     files = sorted([f for f in os.listdir(subMatrixDir+"/") if os.path.isfile(subMatrixDir+"/" + f)])
+    
+    termHashTable=IOmodule.pickleIn(_hashTablesDir, _termHashTable)
+    pmidHashTable=IOmodule.pickleIn(_hashTablesDir, _pmidHashTable)
 
-    termHashData=open(termHash)
-    pmidHashData=open(pmidHash)
-    termHashTable=cPickle.load(termHashData)
-    pmidHashTable=cPickle.load(pmidHashData)
 
     # Need to add one due to non zero indexing
     m=len(pmidHashTable)+1
