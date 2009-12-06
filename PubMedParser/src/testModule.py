@@ -148,16 +148,17 @@ def createVLHash(M_lil):
 #really fast elementwise stuff:
 import math
 import SearchTermDoc
-def go(M_coo,T_tfidfMatrix):
+def go(M_coo,M_csr):
 
-    data=(M_coo.row, M_coo.col, M_coo.data)
-
-    counter=0
-    for i in data[0]:
+    for i in range(M_coo.shape[0])
+        slice=M_csr.getrow[i].tocoo()
+        for j,v in zip(slice.col,slice.data):
+            #idf = math.log(numberOfDocs / _vectorLength[j])
+            #tf = math.log(1 + v)
+            #tfidf=tf*idf
+            data=(i,j,v)
         print i
-        if counter==100000:
-            break
-
+        
     """
     numberOfDocs = M_coo.shape[0]
     allHashedTerms = sorted(SearchTermDoc.termHashTable.values())
