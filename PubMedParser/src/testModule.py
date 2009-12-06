@@ -147,17 +147,33 @@ def createVLHash(M_lil):
 
 #really fast elementwise stuff:
 import math
+import os
 import SearchTermDoc
-def go(M_coo,M_csr):
 
-    for i in range(M_coo.shape[0]):
-        slice=M_csr.getrow(i).tocoo()
-        for j,v in zip(slice.col,slice.data):
-            #idf = math.log(numberOfDocs / _vectorLength[j])
-            #tf = math.log(1 + v)
-            #tfidf=tf*idf
-            data=(i,j,v)
+# Main folder
+_path = os.getenv("HOME")+"/"+"The_Hive"
+# Hashtable directory
+_hashTablePath = _path+"/"+"term_doc/hashTables"
+
+# Load the precomputed length of each column-vector in the term-doc matrix.
+_vectorLength = IOmodule.pickleIn(_hashTablePath,'CLHash')
+
+
+def go(MT_coo,MT_csr,M_csr):
+
+    numberOfDocs = MT_coo.shape[1]
+    print "Number of docs: "+str(numberOfDocs)
+
+    for col in range(numberOfDocs):
+        slice=MT_csr.getrow(col).tocoo() # 'column' slice
+        for row,data in zip(slice.col,slice.data):
+            idf = math.log(numberOfDocs / _vectorLength[col])
+            tf = math.log(1 + data)
+            M_csr[row,col]=tf*idf
+            #data=(j,i,v) # (row,col,data)
         print i
+
+    return M_csr
         
     """
     numberOfDocs = M_coo.shape[0]
