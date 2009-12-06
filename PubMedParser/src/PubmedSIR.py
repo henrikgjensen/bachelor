@@ -24,7 +24,7 @@ if not os.path.isdir(_path):
     os.mkdir(_path)
 
 # Collector function that gathers all functionality.
-def gatherOfAllThings(startIndex=0,stopIndex=None):
+def gatherOfAllThings(startIndex=0,stopIndex=None, dataSourceDir=str(_path)+"/rarediseases_info"):
 
     # Get the number of diseases from DC, based on start and stop. If
     # stopIndex = None, then it returns the whole range
@@ -92,7 +92,8 @@ def getArticleIDs(diseaseDictionary):
     # Iterates through the diseaseDictionary and searches for uid,
     # term, diseasename, and combinations of synonyms
     diseaseArticleIDlist={}
-    additionalSearchOptions = ' AND hasabstract[text]' # Contains additional options, e.g. ' AND LA[eng]'
+    # Contains additional options, e.g. ' AND LA[eng]'
+    additionalSearchOptions = ' AND hasabstract[text]'
 
     for disease in diseaseDictionary:
 
@@ -102,17 +103,19 @@ def getArticleIDs(diseaseDictionary):
         diseaseArticleIDlist[disease] = {}
         diseaseArticleIDlist[disease]['PMIDs']=[]
         diseaseArticleIDlist[disease]['description'] = ''
+        # Either the disease has a handcrafted search string or it contains either pubmed or omim uid.
         if (diseaseDictionary[disease]['terms'] != ''):
             diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(diseaseDictionary[disease]['db'],'',TC.unquoteString(diseaseDictionary[disease]['terms']) + additionalSearchOptions,articleCount))
         elif (diseaseDictionary[disease]['uid'] != ''):
             diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(diseaseDictionary[disease]['db'],diseaseDictionary[disease]['uid'],'',articleCount))
-            
         articleCount = articleCount - len(diseaseArticleIDlist[disease]['PMIDs'])
 
-        # If we still have qouta left
+        # If we still have qouta left, make a search on the disease name
         if (articleCount > 0):
+            # Sanitize the disease name string for searching and append the additional search option.
+            # diseaseName = ' '.join([part.lower().strip() for part in disease.split(' ') if part != ''])
             # Search for the disease name on pubmed/medline
-            diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource('pubmed','',disease + additionalSearchOptions,articleCount))
+            diseaseArticleIDlist[disease]['PMIDs'].extend(getArticleIDsFromMultiSource(database='pubmed',uid='',searchterm=disease + additionalSearchOptions,numberOfArticles=articleCount))
 
         # Remove duplicates
         diseaseArticleIDlist[disease]['PMIDs'] = removeDuplicates(diseaseArticleIDlist[disease]['PMIDs'])
@@ -243,8 +246,8 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
     ###########################################################
     ### WE NEED TO SEARCH ON THE DISEASE NAME IF PUBMED UID ###
     ### OR OMIM UID DO NOT RETURN 250 MEDLINE RECORDS!!!    ###
+    ### THIS NEEDS TO BE ADDED IN THE getArticleID func.    ###
     ###########################################################    
-
 
     """
     This function is for getting PMIDs from different sources. The are
@@ -306,6 +309,10 @@ def getArticleIDsFromMultiSource(database='', uid='', searchterm='', numberOfArt
                 sleep(sleepTimeBetweenTries)
         results = Entrez.read(handle)
         ids = [link['Id'] for link in results[0]['LinkSetDb'][0]['Link']][:numberOfArticles]
+
+    # else:
+    #    implement emergency search on disease name
+
     
     return ids
 
