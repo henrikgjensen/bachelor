@@ -176,7 +176,7 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
         for row,data in zip(slice.col,slice.data):
             idf = math.log(numberOfDocs / _vectorLength[col])
             tf = math.log(1 + data)
-            #M_lil[row,col]=tf*idf
+            M_lil[row,col]=tf*idf
             #data=(j,i,v) # (row,col,data)
         print "column number: "+str(col)
 
