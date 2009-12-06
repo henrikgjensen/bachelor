@@ -115,7 +115,6 @@ def _populateMatrix(m, n, termDoc,termHashTable,pmidHashTable):
         if pmid not in pmidList:
             pmidList.append(pmid)
             pmidIndex = len(pmidList)
-            print "pmidindex: "+str(pmidIndex)
             M[pmidIndex,0]=pmidHashTable[pmid]
         else:
             pmidIndex = pmidList.index(pmid)+1
