@@ -159,11 +159,12 @@ _hashTablePath = _path+"/"+"term_doc/hashTables"
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'CLHash')
 
 
-def go(MT_coo,MT_csr,M_lil):
+def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
+
 
     numberOfDocs = MT_coo.shape[1]
     print "Number of docs: "+str(numberOfDocs)
-
+    """
     for col in range(1,MT_coo.shape[0]+1):
         slice=MT_csr.getrow(col).tocoo() # 'column' slice
 
@@ -177,33 +178,24 @@ def go(MT_coo,MT_csr,M_lil):
         print "column number: "+str(col)
 
     return M_lil
-        
     """
-    numberOfDocs = M_coo.shape[0]
-    allHashedTerms = sorted(SearchTermDoc.termHashTable.values())
-
     for termVectorIndex in range(M_coo.shape[1]):
         termVectorIndex += 1
         print "Progress: " + str(len(allHashedTerms)-termVectorIndex)
         #termVectorData = (M_csc.getcol(termVector).data)[1:]
-        docIndexVector = (T_tfidfMatrix.getrow(termVectorIndex).nonzero()[1])[1:]
+        docIndexVector = (M_csc.getcol(termVectorIndex).nonzero()[0])[1:]
         # Calculate the inverse document frequency
         # (Note that the length of each term vector is always greater than 0)
         idf = math.log(numberOfDocs / len(docIndexVector))
 
-        #row=T_tfidfMatrix[termVectorIndex,1:]
-        #T_tfidfMatrix[termVectorIndex,1:]=map(lambda x: math.log(1+x)*idf,row)
-
-        #for docIndex in docIndexVector:
-        #    # Calculate the term frequency
-        #    tf = T_tfidfMatrix[termVectorIndex,docIndex]
-        #    if tf == 0:
-        #        print "Looked up zero-value at: ("+str(termVectorIndex)+" "+str(docIndex)+")"
-        #        raise Exception
-        #    tf = math.log(1 + tf)
+        for docIndex in docIndexVector:
+            # Calculate the term frequency
+            tf = tfidfMatrix[docIndex, termVectorIndex]
+            if tf == 0:
+                print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
+                raise Exception
+            tf = math.log(1 + tf)
             # Update the new matrix values
-        #    T_tfidfMatrix[termVectorIndex,docIndex] = tf * idf
-
-    """
+            M_lil[docIndex, termVectorIndex] = tf * idf
 
     
