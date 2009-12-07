@@ -14,16 +14,33 @@ _mainFolder=os.getenv("HOME")+"/"+"The_Hive"
 _subFolder = _mainFolder+"/"+"term_doc"
 # MedLine record directory
 _medlineDir=_mainFolder+"/data_acquisition/"+"medline_records"
-# Sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
 # Term-doc directory
 _termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
 _hashTablesDir=_subFolder+"/"+"hashTables"
-# Hashtable filenames:
-_termHash="termHash_stemmed"
-_pmidHash="pmidHash_stemmed"
 
+##############################################
+#### Use only stopword-removal as filter: ####
+##############################################
+
+ # Sub-matrix directory
+_subMatrixDir=_subFolder+"/"+"diseaseMatrices"
+ # Hashtable filenames:
+_termHash="termHash"
+_pmidHash="pmidHash"
+_stemmer=False
+
+
+########################################################################
+#### Use stopword-removal and Porter-stemming (english) as filters: ####
+########################################################################
+
+ # Stemmed sub-matrix directory
+#_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
+ # Stemmed hashtable filenames:
+#_termHash="termHash_stemmed"
+#_pmidHash="pmidHash_stemmed"
+#_stemmer=True
 
 # Create main folder if it doesn't already exist.
 if not os.path.isdir(_mainFolder):
@@ -80,8 +97,8 @@ def _gatherMatrixData(filename):
         abstract=FilterInterface.stopwordRemover(abstract)
 
         # OPTIONAL:
-        # Stem the abstract (remember to change file directory!)
-        abstract=FilterInterface.porterStemmer(abstract)
+        # Stem the abstract
+        if _stemmer: abstract=FilterInterface.porterStemmer(abstract)
 
         l.append(_wordCounter(entry[0],abstract))
 
