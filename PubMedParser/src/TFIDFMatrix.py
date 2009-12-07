@@ -19,6 +19,12 @@ def generateLogTFIDF(M_coo):
 
     numberOfDocs = M_coo.shape[0]
 
+    print "Converting from coo to csc..."
+    t1=time.time()
+    M_csc=M_coo.tocsc()
+    t2=time.time()
+    print "Matrix converted to csc in",(t2-t1)
+
     print "Converting from coo to lil..."
     t1=time.time()
     tfidfMatrix=M_coo.tolil()
@@ -36,14 +42,14 @@ def generateLogTFIDF(M_coo):
 
         for docIndex in docIndexVector:
             # Calculate the term frequency
-            tf = M_lil[docIndex, termVectorIndex]
+            tf = tfidfMatrix[docIndex, termVectorIndex]
             if tf == 0:
                 print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
                 raise Exception
             tf = math.log(1 + tf)
             # Update the new matrix values
             tfidf=tf * idf
-            M_lil[docIndex, termVectorIndex] = tfidf
+            tfidfMatrix[docIndex, termVectorIndex] = tfidf
 
             print tfidf
 
