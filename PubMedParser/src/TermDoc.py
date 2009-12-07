@@ -58,16 +58,14 @@ def _wordCounter(pmid, string):
 
     It takes a PMID and a text-string
 
-    It returns a list on the form [(term1,count1),...]
+    It returns a list on the form [PMID1,[(term1,count1),...],PMID2,[...],...]
     """
 
     ll=[pmid,[]]
 
-    # Get the regex pattern that sanitizeses strings.
-    p = sanitizeString()
 
-    # Sanitize and remove empty strings ''
-    fdist = FreqDist([word.lower() for word in p.sub(' ', string).split(' ') if word != ''])
+    # Run FreqDist on the split string, removing empty strings in the process
+    fdist = FreqDist([word.lower() for word in string.split(' ') if word != ''])
 
     ll[1].extend(fdist.items())
 
@@ -88,11 +86,17 @@ def _gatherMatrixData(filename):
 
     medlineDir=_medlineDir
 
+    # Get the regex pattern that sanitizeses strings.
+    sanitizer = sanitizeString()
+
     l = []
     records = RecordHandler.loadMedlineRecords(medlineDir, filename)
     fields = RecordHandler.readMedlineFields(records, ['AB'])
     for entry in fields.items():
+        # Get the abstract
         abstract=entry[1]['AB']
+        # Sanitize the abstract
+        abstract=sanitizer.sub(' ', abstract)
         # Remove english stopwords from the abstract
         abstract=FilterInterface.stopwordRemover(abstract)
 
@@ -216,14 +220,18 @@ def createHashes():
                     pmidCounter+=1
                     pmidHashTable[pmid]=pmidCounter
 
-                # Hash terms
+                # Get the abstract
                 abstract=record[1]['AB']
+                # Sanitize the abstract
+                abstract=sanitizer.sub(' ', abstract)
+                # remove stopwords from the abstract
+                abstract=FilterInterface.stopwordRemover(abstract)
 
                 # OPTIONAL:
-                # Stem the abstract (remember to change file name!)
-                abstract=FilterInterface.porterStemmer(abstract)
+                # Stem the abstract
+                if _stemmer: abstract=FilterInterface.porterStemmer(abstract)
 
-                termList = [word.lower() for word in sanitizer.sub(' ', abstract).split(' ') if word != '']
+                termList = [word.lower() for word in abstract.split(' ') if word != '']
                 for term in termList:
                     if term not in termHashTable:
                         termCounter+=1
@@ -284,7 +292,7 @@ def createTermDoc(refreshHash=False):
             termDoc[m,n] += v
         print "Added",file
 
-    IOmodule.writeOutTDM(termDocDir, "TermDoc", termDoc)
+    IOmodule.writeOutTDM(_termDocDir, "TermDoc", termDoc)
 
     t2 = time.time()
 
