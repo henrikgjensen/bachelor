@@ -262,7 +262,7 @@ def createTermDoc(refreshHash=False):
     if refreshHash:
         createHashes()
 
-    files = sorted([f for f in os.listdir(subMatrixDir+"/") if os.path.isfile(subMatrixDir+"/" + f)])
+    files = sorted([f for f in os.listdir(_subMatrixDir+"/") if os.path.isfile(_subMatrixDir+"/" + f)])
     
     termHashTable=IOmodule.pickleIn(_hashTablesDir, _termHash)
     pmidHashTable=IOmodule.pickleIn(_hashTablesDir, _pmidHash)
@@ -279,7 +279,7 @@ def createTermDoc(refreshHash=False):
     termDoc[0,:]=range(n)
 
     for file in files:
-        subMatrix=IOmodule.readInTDM(subMatrixDir, file)
+        subMatrix=IOmodule.readInTDM(_subMatrixDir, file)
         subMCopy=subMatrix.todok()
         for i,j,v in zip(subMatrix.row, subMatrix.col, subMatrix.data):
             m = subMCopy[i,0]
