@@ -14,8 +14,6 @@ _mainFolder=os.getenv("HOME")+"/"+"The_Hive"
 _subFolder = _mainFolder+"/"+"term_doc"
 # MedLine record directory
 _medlineDir=_mainFolder+"/data_acquisition/"+"medline_records"
-# Term-doc directory
-_termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
 _hashTablesDir=_subFolder+"/"+"hashTables"
 
@@ -28,6 +26,9 @@ _subMatrixDir=_subFolder+"/"+"diseaseMatrices"
  # Hashtable filenames:
 _termHash="termHash"
 _pmidHash="pmidHash"
+# Term-doc directory and file name
+_termDocDir=_subFolder+"/"+"termDoc"
+_termDoc="TermDoc"
 _stemmer=False
 
 
@@ -36,11 +37,14 @@ _stemmer=False
 ########################################################################
 
  # Stemmed sub-matrix directory
-#_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
+_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
  # Stemmed hashtable filenames:
-#_termHash="termHash_stemmed"
-#_pmidHash="pmidHash_stemmed"
-#_stemmer=True
+_termHash="termHash_stemmed"
+_pmidHash="pmidHash_stemmed"
+# Term-doc directory and file name
+_termDocDir=_subFolder+"/"+"termDoc_stemmed"
+_termDoc="TermDoc_stemmed"
+_stemmer=True
 
 # Create main folder if it doesn't already exist.
 if not os.path.isdir(_mainFolder):
@@ -292,7 +296,7 @@ def createTermDoc(refreshHash=False):
             termDoc[m,n] += v
         print "Added",file
 
-    IOmodule.writeOutTDM(_termDocDir, "TermDoc", termDoc)
+    IOmodule.writeOutTDM(_termDocDir, _termDoc, termDoc)
 
     t2 = time.time()
 
