@@ -68,7 +68,7 @@ def _generateLogTFIDF(M_coo):
 
     t1=time.time()
 
-    for row in range(numberOfDocs-100,numberOfDocs+2):
+    for row in range(numberOfDocs-100,numberOfDocs+1):
         
         for col in (tfidfMatrix.getrow(row).nonzero()[1])[1:]:
             
