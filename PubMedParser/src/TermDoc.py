@@ -95,10 +95,14 @@ def _gatherMatrixData(filename):
 
     l = []
     records = RecordHandler.loadMedlineRecords(medlineDir, filename)
-    fields = RecordHandler.readMedlineFields(records, ['AB'])
+    fields = RecordHandler.readMedlineFields(records, ['AB','TI','MH'])
     for entry in fields.items():
         # Get the abstract
         abstract=entry[1]['AB']
+        abstractANDtitle=abstract+' '+entry[1]['TI']
+
+        # MESH GOES HERE
+
         # Sanitize the abstract
         abstract=sanitizer.sub(' ', abstract)
         # Remove english stopwords from the abstract

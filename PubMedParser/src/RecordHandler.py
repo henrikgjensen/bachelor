@@ -39,5 +39,9 @@ def readMedlineFields(modifiedRecords,listOfFields):
         for item in diseaseRecords:
             recordFieldDic[item[0]]={}
             for field in listOfFields:
-                recordFieldDic[item[0]][field]=item[1][field]
+                try:
+                    recordFieldDic[item[0]][field]=item[1][field]
+                except:
+                    print "Did not locate",field
+                    continue
     return recordFieldDic
