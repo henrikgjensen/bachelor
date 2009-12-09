@@ -17,19 +17,22 @@ _tfidfName = "TFIDFMatrix"
 # Load the precomputed norm of each row-vector in the term-doc matrix.
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
 
+# Load the precomputed length of each column in the term-doc matrix
+_termSum = IOmodule.pickleIn(_hashTablePath,'CLHash')
+
 print "Hash loaded."
 
 def _generateLogTFIDF(M_coo):
 
     totalTime1=time.time()
 
-    numberOfDocs = M_coo.shape[0]
+    numberOfDocs = float(M_coo.shape[0]-1)
 
-    print "Converting from coo to csc..."
-    t1=time.time()
-    M_csc=M_coo.tocsc()
-    t2=time.time()
-    print "Matrix converted to csc in",(t2-t1)
+    #print "Converting from coo to csc..."
+    #t1=time.time()
+    #M_csc=M_coo.tocsc()
+    #t2=time.time()
+    #print "Matrix converted to csc in",(t2-t1)
 
     print "Converting from coo to lil..."
     t1=time.time()
@@ -37,6 +40,33 @@ def _generateLogTFIDF(M_coo):
     t2=time.time()
     print "Matrix converted to lil in",(t2-t1)
 
+
+    t1=time.time()
+
+    for row in range(1,numberOfDocs+2):
+        
+        for col in (tfidfMatrix.getrow(row).nonzero()[1])[1:]:
+            
+            tf=tfidfMatrix[row,col]
+
+            if tf == 0:
+                print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
+                raise Exception
+            tf = math.log(1 + tf)
+            
+            idf = math.log(numberOfDocs / _termSum[col])
+            
+            tfidfMatrix[row,col]=tf*idf
+        
+        print "Row:",row
+        
+    t2=time.time()
+    print "Total:"+str(t2-t1)
+
+    # Save and overwrite the log_tfidf generate above
+    IOmodule.writeOutTDM(_tfidfDir, _tfidfName, tfidfMatrix)
+
+    """
     for termVectorIndex in range(1,M_coo.shape[1]+1):
 
         print "Progress: " + str(termVectorIndex)
@@ -59,7 +89,7 @@ def _generateLogTFIDF(M_coo):
             # Update the new matrix values
             tfidf=tf * idf
             tfidfMatrix[docIndex, termVectorIndex] = tfidf
-
+    """
     # Save the progress
     IOmodule.writeOutTDM(_termDocDir, _tfidfName, tfidfMatrix)
 
@@ -72,7 +102,7 @@ def _normalizeVectorLengths(M_lil):
 
     t1=time.time()
 
-    for row in range(1,M_lil.shape[0]):
+    for row in range(1,M_lil.shape[0]+1):
 
         norm=_vectorLength[row]
         for col in (M_lil.getrow(row).nonzero()[1])[1:]:
