@@ -72,7 +72,7 @@ def test(M_lil,M_csr,M_coo):
 
         t3=time.time()
         for col in (M_csr.getrow(row).nonzero()[1])[1:]:
-            M_lil[row,col]=(M_csr[row,col])/norm
+            M_lil[row,col]=(M_lil[row,col])/norm
 
         #M_csr.getrow(row).data[1:] += norm
 
