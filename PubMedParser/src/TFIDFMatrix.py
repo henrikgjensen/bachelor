@@ -90,8 +90,8 @@ def _normalizeVectorLengths(M_lil):
 def runTFIDF(M_coo):
 
     print "Generating log_TFIDF..."
-    TFIDFMatrix=_generateLogTFIDF(M_coo):
+    TFIDFMatrix=_generateLogTFIDF(M_coo)
     print "Normalizing vector lengths..."
-    _normalizeVectorLengths(TFIDFMatrix):
+    _normalizeVectorLengths(TFIDFMatrix)
     print "Done."
 
