@@ -77,4 +77,4 @@ def test(M_lil,M_csr,M_coo):
         print "Row "+str(row)+" done in "+str(t4-t3)
 
     t2=time.time()
-    print "Total:" str(t2-t1)
+    print "Total:"+str(t2-t1)
