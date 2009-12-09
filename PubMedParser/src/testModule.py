@@ -1,5 +1,4 @@
 from scipy import sparse, ones
-import pysparse
 import IOmodule
 import os
 import time

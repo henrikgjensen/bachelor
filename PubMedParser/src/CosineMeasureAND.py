@@ -8,8 +8,21 @@ _path = os.getenv("HOME")+"/"+"The_Hive"
 # Hashtable directory
 _hashTablePath = _path+"/"+"term_doc/hashTables"
 
-# Load the precomputed norm of each row-vector in the term-doc matrix.
+####################################################################
+#### Use stopword-removed TermDoc ##################################
+####################################################################
+
+ # Load the precomputed norm of each row-vector in the term-doc matrix.
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
+
+####################################################################
+#### Use stopword-removed and Porter-stemmed (english) TermDoc: ####
+####################################################################
+
+ # Load the precomputed norm of each row-vector in the stemmed term-doc matrix.
+#_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash_stemmed')
+
+####################################################################
 
 
 def cosineMeasureAND(M_lil,M_csc,queryString):
@@ -33,8 +46,3 @@ def cosineMeasureAND(M_lil,M_csc,queryString):
     print "Time for cosine scoring on",len(searchIndices),"rows:",(t2-t1)
 
     return results
-
-
-#rowVectors={}
-#for pmidHash in intersectedColSet:
-#    rowVectors[pmidHash]=(M_lil.getrow(pmidHash).nonzero()[0])[1:]

@@ -11,18 +11,43 @@ _subFolder = _path+"/"+"term_doc"
 _hashTablePath = _subFolder+"/"+"hashTables"
 # Term-doc directory
 _termDocDir = _subFolder+"/"+"termDoc"
-# TFIDF-matrix file name
+
+
+####################################################################
+#### Use stopword-removed TermDoc ##################################
+####################################################################
+
+ # TFIDF-matrix file name
 _tfidfName = "TFIDFMatrix"
-
-# Load the precomputed norm of each row-vector in the term-doc matrix.
+ # Load the precomputed norm of each row-vector in the term-doc matrix.
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
-
-# Load the precomputed length of each column in the term-doc matrix
+ # Load the precomputed length of each column in the term-doc matrix
 _termSum = IOmodule.pickleIn(_hashTablePath,'CLHash')
 
-print "Hash loaded."
+####################################################################
+#### Use stopword-removed and Porter-stemmed (english) TermDoc: ####
+####################################################################
+
+# TFIDF-matrix file name
+_tfidfName = "TFIDFMatrix_stemmed"
+# Load the precomputed norm of each row-vector in the stemmed term-doc matrix.
+_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash_stemmed')
+# Load the precomputed length of each column in the stemmed term-doc matrix
+_termSum = IOmodule.pickleIn(_hashTablePath,'CLHash_stemmed')
+
+####################################################################
+
+print "Hashes loaded."
+
 
 def _generateLogTFIDF(M_coo):
+
+    """
+    Creates a Term-Frequency Inverse-Document-Frequency from a sparse coo_matrix,
+    using log-transformation on TF and IDF.
+
+    Returns a sparse lil_matrix to be used for vector-normalization.
+    """
 
     totalTime1=time.time()
 
@@ -100,6 +125,10 @@ def _generateLogTFIDF(M_coo):
 
 def _normalizeVectorLengths(M_lil):
 
+    """
+    Normalize the length of a sparse lil_matrix.
+    """
+
     t1=time.time()
 
     for row in range(1,M_lil.shape[0]+1):
@@ -111,11 +140,15 @@ def _normalizeVectorLengths(M_lil):
     t2=time.time()
     print "Total:"+str(t2-t1)
 
-    # Save and overwrite the log_tfidf generate above
+    # Save and overwrite the log_tfidf generated above
     IOmodule.writeOutTDM(_tfidfDir, _tfidfName, tfidfMatrix)
 
 
 def runTFIDF(M_coo):
+
+    """
+    Create a normalized log-transformed TFIDF-matrix from a sparse coo_matrix.
+    """
 
     print "Generating log_TFIDF..."
     TFIDFMatrix=_generateLogTFIDF(M_coo)

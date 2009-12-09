@@ -19,9 +19,9 @@ _termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
 _hashTablesDir=_subFolder+"/"+"hashTables"
 
-##############################################
-#### Use only stopword-removal as filter: ####
-##############################################
+########################################################################
+#### Use only stopword-removal as filter: ##############################
+########################################################################
 
  # Sub-matrix directory
 _subMatrixDir=_subFolder+"/"+"diseaseMatrices"
@@ -30,7 +30,6 @@ _termHash="termHash"
 _pmidHash="pmidHash"
 _termDoc="TermDoc"
 _stemmer=False
-
 
 ########################################################################
 #### Use stopword-removal and Porter-stemming (english) as filters: ####
@@ -43,6 +42,9 @@ _stemmer=False
 #_pmidHash="pmidHash_stemmed"
 #_termDoc="TermDoc_stemmed"
 #_stemmer=True
+
+########################################################################
+
 
 # Create main folder if it doesn't already exist.
 if not os.path.isdir(_mainFolder):

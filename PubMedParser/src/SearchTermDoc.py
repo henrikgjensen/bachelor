@@ -18,10 +18,27 @@ _hashTablesDir=_path+'/'+'term_doc'+'/'+"hashTables"
 if not os.path.isdir(_path+'/'+subFolder):
     os.mkdir(_path+'/'+subFolder)
 
-# Hashes to be instantiated:
+####################################################################
+#### Use stopword-removed TermDoc ##################################
+####################################################################
+
+ # Hashes
 termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
 pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
 revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
+
+####################################################################
+#### Use stopword-removed and Porter-stemmed (english) TermDoc: ####
+####################################################################
+
+ # Stemmed hashes
+#termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
+#pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash_stemmed")
+#revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
+
+####################################################################
+
+
 print "Hashes loaded"
 
 
@@ -36,6 +53,7 @@ def _modifySearchString(searchString):
     searchVector=[term.lower() for term in sanitizer.sub(' ', searchString).split(' ') if term!='']
 
     return searchVector
+
 
 def extractRowIndices(M_csc,searchString):
 
@@ -92,6 +110,7 @@ def extractColVectors(M_csc, termHashes):
 
     return colList
 
+
 def createRLHash(M_lil,filename):
 
     """
@@ -114,6 +133,7 @@ def createRLHash(M_lil,filename):
 
     t2=time.time()
     print "Created and saved RowLength-hash in: "+str(t2-t1)
+
 
 def createCLHash(M_coo,filename):
 
