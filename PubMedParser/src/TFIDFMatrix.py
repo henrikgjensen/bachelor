@@ -17,7 +17,7 @@ _tfidfName = "TFIDFMatrix"
 # Load the precomputed norm of each row-vector in the term-doc matrix.
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
 
-print "Hashe loaded."
+print "Hash loaded."
 
 def _generateLogTFIDF(M_coo):
 
