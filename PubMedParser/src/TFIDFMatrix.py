@@ -72,9 +72,9 @@ def test(M_lil,M_csr,M_coo):
 
         t3=time.time()
         for col in (M_lil.getrow(row).nonzero()[1])[1:]:
-            M_lil[row,col]=(M_lil[row,col])/norm
+            M_lil[row,col]=(M_coo[row,col])/norm
 
-        M_csr.getrow(row).data[1:] += norm
+        #M_csr.getrow(row).data[1:] += norm
 
         t4=time.time()
         print "Row "+str(row)+" done in "+str(t4-t3)
