@@ -28,12 +28,12 @@ _termSum = IOmodule.pickleIn(_hashTablePath,'CLHash')
 #### Use stopword-removed and Porter-stemmed (english) TermDoc: ####
 ####################################################################
 
-# TFIDF-matrix file name
-_tfidfName = "TFIDFMatrix_stemmed"
-# Load the precomputed norm of each row-vector in the stemmed term-doc matrix.
-_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash_stemmed')
-# Load the precomputed length of each column in the stemmed term-doc matrix
-_termSum = IOmodule.pickleIn(_hashTablePath,'CLHash_stemmed')
+ # TFIDF-matrix file name
+#_tfidfName = "TFIDFMatrix_stemmed"
+ # Load the precomputed norm of each row-vector in the stemmed term-doc matrix.
+#_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash_stemmed')
+ # Load the precomputed length of each column in the stemmed term-doc matrix
+#_termSum = IOmodule.pickleIn(_hashTablePath,'CLHash_stemmed')
 
 ####################################################################
 
@@ -68,7 +68,7 @@ def _generateLogTFIDF(M_coo):
 
     t1=time.time()
 
-    for row in range(1,numberOfDocs+2):
+    for row in range(numberOfDoc-100,numberOfDocs+2):
         
         for col in (tfidfMatrix.getrow(row).nonzero()[1])[1:]:
             
@@ -87,6 +87,8 @@ def _generateLogTFIDF(M_coo):
         
     t2=time.time()
     print "Total:"+str(t2-t1)
+
+    raise Exception
 
     # Save and overwrite the log_tfidf generate above
     IOmodule.writeOutTDM(_tfidfDir, _tfidfName, tfidfMatrix)
