@@ -6,7 +6,7 @@ import SearchTermDoc
 def search20(M_lil, M_csc, queryString):
 
     # Search-heuristic used to retrieve the list of results
-    results=SearchInterface.cosineMeasureOR(M_lil, M_csc, queryString)
+    results=SearchInterface.cosineMeasureAND(M_lil, M_csc, queryString)
 
     # Sort the results
     results.sort()
