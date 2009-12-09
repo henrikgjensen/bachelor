@@ -13,7 +13,12 @@ _hashTablePath = _subFolder+"/"+"hashTables"
 _termDocDir = _subFolder+"/"+"termDoc"
 
 # Load the precomputed length of each column-vector in the term-doc matrix.
-_vectorLength = IOmodule.pickleIn(_hashTablePath,'CLHash')
+#_vectorLength = IOmodule.pickleIn(_hashTablePath,'CLHash')
+
+# Load the precomputed norm of each row-vector in the term-doc matrix.
+_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
+
+print "Hashes loaded."
 
 def generateLogTFIDF(M_coo):
 
@@ -34,23 +39,42 @@ def generateLogTFIDF(M_coo):
     for termVectorIndex in range(1,M_coo.shape[1]+1):
 
         print "Progress: " + str(termVectorIndex)
+
         #termVectorData = (M_csc.getcol(termVector).data)[1:]
         docIndexVector = (M_csc.getcol(termVectorIndex).nonzero()[0])[1:]
+
         # Calculate the inverse document frequency
         # (Note that the length of each term vector is always greater than 0)
         idf = math.log(float(numberOfDocs) / len(docIndexVector))
 
         for docIndex in docIndexVector:
-            # Calculate the term frequency
+            # Retrieve the term frequency
             tf = tfidfMatrix[docIndex, termVectorIndex]
             if tf == 0:
                 print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
                 raise Exception
+            # Calculate the log-transformation of the term-frequency
             tf = math.log(1 + tf)
             # Update the new matrix values
             tfidf=tf * idf
             tfidfMatrix[docIndex, termVectorIndex] = tfidf
 
-            print tfidf
+            print tfidf ### line to be deleted later ###
 
-    IOmodule.writeOutTDM(_termDocDir, "TFIDF_termdoc", tfidfMatrix)
+
+def test(M_lil,M_csr,M_coo):
+
+    t1=time.time()
+
+    for row in range(1,1000):
+
+        norm=_vectorLength[row]
+
+        t3=time.time()
+        for col in (M_coo.getrow(row).nonzero()[1])[1:]:
+            M_lil[row,col]=(M_lil[row,col])/norm
+        t4=time.time()
+        print "Row "+str(row)+" done in "+str(t4-t3)
+
+    t2=time.time()
+    print "Total:" str(t2-t1)
