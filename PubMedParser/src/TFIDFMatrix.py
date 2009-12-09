@@ -72,12 +72,12 @@ def _normalizeVectorLengths(M_lil):
 
     t1=time.time()
 
-    for row in range(1,1000):
+    for row in range(1,M_lil.shape[0]):
 
         norm=_vectorLength[row]
         for col in (M_lil.getrow(row).nonzero()[1])[1:]:
             M_lil[row,col]=(M_lil[row,col])/norm
-
+        print "Normalized:",row
     t2=time.time()
     print "Total:"+str(t2-t1)
 
