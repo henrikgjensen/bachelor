@@ -68,7 +68,7 @@ def _generateLogTFIDF(M_coo):
 
     t1=time.time()
 
-    for row in range(numberOfDocs-100,numberOfDocs+1):
+    for row in range(1,numberOfDocs+1):
         
         for col in (tfidfMatrix.getrow(row).nonzero()[1])[1:]:
             
@@ -87,8 +87,6 @@ def _generateLogTFIDF(M_coo):
         
     t2=time.time()
     print "Total:"+str(t2-t1)
-
-    raise Exception
 
     # Save and overwrite the log_tfidf generate above
     IOmodule.writeOutTDM(_tfidfDir, _tfidfName, tfidfMatrix)
