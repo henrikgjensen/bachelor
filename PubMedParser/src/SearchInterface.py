@@ -4,7 +4,8 @@ import CosineMeasureAND
 def cosineMeasureOR(M_lil, M_csc, queryString):
 
     """
-    Return the tuple with (pmidhash, angle in radians)
+    Returns a list of tuples on the form:
+    [(angle in radians, pmidhash1),(angle in radians, pmidhash2),...]
     """
 
     results = CosineMeasureOR.cosineMeasureOR(M_lil, M_csc, queryString)
@@ -19,6 +20,6 @@ def cosineMeasureAND(M_lil,M_csc,queryString):
     there exists an implicit AND between each term in the query.
     """
 
-    result = CosineMeasureAND.cosineMeasureAND(M_lil,M_csc,queryString)
+    results = CosineMeasureAND.cosineMeasureAND(M_lil,M_csc,queryString)
 
-    return result
+    return results

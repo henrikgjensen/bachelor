@@ -163,11 +163,15 @@ def createCLHash(M_coo,filename):
     print "Created and saved ColumnLength-hash in: "+str(t2-t1)
 
 
-def getPMID(hashedPMID):
+def getPMIDList(hashedPMIDList):
 
     """
-    This function simply returns the true PMID from the hashtable. It uses a
-    reverse of the pmidHashTable dictionary for a O(1) time lookup.
+    This function simply returns a list of the 'true' PMIDs from the hashtable.
+    It uses a reverse of the pmidHashTable dictionary for a O(1) time lookup.
     """
 
-    return revPmidHashTable[hashedPMID]
+    pmidList=[]
+    for hashedPMID in hashedPMIDList:
+        pmidList.append(revPmidHashTable[hashedPMID])
+
+    return pmidList

@@ -25,10 +25,15 @@ _vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
 
 def cosineMeasureOR(M_lil, M_csc, queryString):
 
+    """
+    
+    """
+
     t1 = time.time()
 
     # Extract the relevant indices of the row-vectors (pmid-hashes)
     searchIndices,hashedSearchTerms = SearchTermDoc.extractRowIndices(M_csc, queryString)
+
     # Union the arrays to avoid searching each row more than once
     searchIndices = reduce(set.union,map(set,searchIndices))
 
@@ -37,10 +42,10 @@ def cosineMeasureOR(M_lil, M_csc, queryString):
         Sum=0
         for termHash in hashedSearchTerms:
             Sum+=M_lil[pmidHash,termHash]
-        results.append(((pmidHash,(1.0/len(hashedSearchTerms))*(1.0/_vectorLength[pmidHash])*Sum)))
+        results.append(((1.0/len(hashedSearchTerms))*(1.0/_vectorLength[pmidHash])*Sum,pmidHash))
     
     t2 = time.time()
 
-    print "Time for cosine scoring on",len(searchIndices),"rows:",(t2-t1)
+    print "Time for cosine-scoring on",len(searchIndices),"rows:",(t2-t1)
 
     return results
