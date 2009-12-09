@@ -11,16 +11,17 @@ _subFolder = _path+"/"+"term_doc"
 _hashTablePath = _subFolder+"/"+"hashTables"
 # Term-doc directory
 _termDocDir = _subFolder+"/"+"termDoc"
-
-# Load the precomputed length of each column-vector in the term-doc matrix.
-#_vectorLength = IOmodule.pickleIn(_hashTablePath,'CLHash')
+# TFIDF-matrix file name
+_tfidfName = "TFIDFMatrix"
 
 # Load the precomputed norm of each row-vector in the term-doc matrix.
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
 
-print "Hashes loaded."
+print "Hashe loaded."
 
-def generateLogTFIDF(M_coo):
+def _generateLogTFIDF(M_coo):
+
+    totalTime1=time.time()
 
     numberOfDocs = M_coo.shape[0]
 
@@ -61,25 +62,36 @@ def generateLogTFIDF(M_coo):
 
             print tfidf ### line to be deleted later ###
 
+    # Save the progress
+    IOmodule.writeOutTDM(_termDocDir, _tfidfName, tfidfMatrix)
 
-def test(M_lil,M_csr,M_coo):
+    totalTime2=time.time()
+    print "Total time: "+str(totalTime2-totalTime1)
+
+    return tfidfMatrix
+
+def _normalizeVectorLengths(M_lil):
 
     t1=time.time()
 
     for row in range(1,1000):
 
         norm=_vectorLength[row]
-
-        t3=time.time()
         for col in (M_lil.getrow(row).nonzero()[1])[1:]:
             M_lil[row,col]=(M_lil[row,col])/norm
-
-        #M_csr.getrow(row).data[1:] += norm
-
-        t4=time.time()
-        print "Row "+str(row)+" done in "+str(t4-t3)
 
     t2=time.time()
     print "Total:"+str(t2-t1)
 
-    return M_lil,M_csr,M_coo
+    # Save and overwrite the log_tfidf generate above
+    IOmodule.writeOutTDM(_tfidfDir, _tfidfName, tfidfMatrix)
+
+
+def runTFIDF(M_coo):
+
+    print "Generating log_TFIDF..."
+    TFIDFMatrix=_generateLogTFIDF(M_coo):
+    print "Normalizing vector lengths..."
+    _normalizeVectorLengths(TFIDFMatrix):
+    print "Done."
+

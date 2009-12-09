@@ -2,13 +2,13 @@ import TFIDFMatrix
 import Stemmer
 import StopwordRemover
 
-def generateLogTFIDF(M_coo):
+def generateTFIDF(M_coo):
 
     """
-    Creates a log TF-IDF term-doc matrix.
+    Creates a normalized log TF-IDF term-doc matrix.
     """
     
-    TFIDFMatrix.generateLogTFIDF(M_coo)
+    TFIDFMatrix.runTFIDF(M_coo)
 
 
 def porterStemmer(string):
