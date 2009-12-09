@@ -60,8 +60,6 @@ def _generateLogTFIDF(M_coo):
             tfidf=tf * idf
             tfidfMatrix[docIndex, termVectorIndex] = tfidf
 
-            print tfidf ### line to be deleted later ###
-
     # Save the progress
     IOmodule.writeOutTDM(_termDocDir, _tfidfName, tfidfMatrix)
 
