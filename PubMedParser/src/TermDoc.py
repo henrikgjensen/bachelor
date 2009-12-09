@@ -97,22 +97,33 @@ def _gatherMatrixData(filename):
     records = RecordHandler.loadMedlineRecords(medlineDir, filename)
     fields = RecordHandler.readMedlineFields(records, ['AB','TI','MH'])
     for entry in fields.items():
-        # Get the abstract
-        abstract=entry[1]['AB']
-        abstractANDtitle=abstract+' '+entry[1]['TI']
+	# Get the title if any
+        try:
+		information=' '+entry[1]['TI']
+        except:
+		print 'Unable to find title in', entry[0]
 
-        # MESH GOES HERE
+	# Get the abstract if any
+        try:
+		information+=' '+entry[1]['AB']
+        except:
+		print 'Unable to find abstract in', entry[0]
+
+	# Get all the mesh terms if any
+	if 'MH' in entry[1]:
+		for meshterm in entry[1]['MH']:
+			information+=' '+meshterm
 
         # Sanitize the abstract
-        abstract=sanitizer.sub(' ', abstract)
-        # Remove english stopwords from the abstract
-        abstract=FilterInterface.stopwordRemover(abstract)
+        information=sanitizer.sub(' ', information)
+        # Remove english stopwords from the information
+        information=FilterInterface.stopwordRemover(information)
 
         # OPTIONAL:
-        # Stem the abstract
-        if _stemmer: abstract=FilterInterface.porterStemmer(abstract)
+        # Stem the information
+        if _stemmer: information=FilterInterface.porterStemmer(information)
 
-        l.append(_wordCounter(entry[0],abstract))
+        l.append(_wordCounter(entry[0],information))
 
     return l
 
@@ -163,7 +174,6 @@ def _populateMatrix(m, n, termDoc,termHashTable,pmidHashTable):
 
     return M
 
-
 def medlineDir2MatrixDir(m=501, n=20000):
 
     """
@@ -197,7 +207,8 @@ def createHashes():
     This function creates two hash tables of the PMID's and terms to be used
     for the term-doc matrix.
 
-    Note that the terms a sanitized for any non-alphanumerical characters.
+    Note that the terms are sanitized for any non-alphanumerical characters.
+    And it is default to remove stop words.
     """
 
     medlineDir = _medlineDir
@@ -229,17 +240,32 @@ def createHashes():
                     pmidHashTable[pmid]=pmidCounter
 
                 # Get the abstract
-                abstract=record[1]['AB']
-                # Sanitize the abstract
-                abstract=sanitizer.sub(' ', abstract)
+		try:
+			information=' '+record[1]['AB']
+		except:
+			print 'Unable to get abstract', record[0]
+		try:
+			information+=' '+record[1]['TI']
+		except:
+			print 'Unable to get title for', record[0]
+
+		if 'MH' in record[1]:
+			for meshterm in record[1]['MH']:
+				information+=' '+meshterm
+		# We do not want to print this, as most of the
+		# records do not have MeSH.
+		# print 'Unable to get MeSH terms for', record[0]
+		
+                # Sanitize the information
+                information=sanitizer.sub(' ', information)
                 # remove stopwords from the abstract
-                abstract=FilterInterface.stopwordRemover(abstract)
+                information=FilterInterface.stopwordRemover(information)
 
                 # OPTIONAL:
                 # Stem the abstract
-                if _stemmer: abstract=FilterInterface.porterStemmer(abstract)
+                if _stemmer: information=FilterInterface.porterStemmer(information)
 
-                termList = [word.lower() for word in abstract.split(' ') if word != '']
+                termList = [word.lower() for word in information.split(' ') if word != '']
                 for term in termList:
                     if term not in termHashTable:
                         termCounter+=1

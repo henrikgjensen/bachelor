@@ -42,6 +42,8 @@ def readMedlineFields(modifiedRecords,listOfFields):
                 try:
                     recordFieldDic[item[0]][field]=item[1][field]
                 except:
-                    print "Did not locate",field
+                    # Lots of records do not have the field 'MH' so we
+                    # skip printing
+                    # print "Did not locate",field
                     continue
     return recordFieldDic
