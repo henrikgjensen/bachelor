@@ -46,3 +46,58 @@ def getSortedValues(dic,option="small2large"):
         l.reverse()
 
     return l
+
+def countFields(directory, fields):
+
+        files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])
+        
+        fieldSum={}
+        counter=0
+        pmidCounter=0
+        for f in files:
+            
+            fd = open(directory+f,'r')
+            
+            diseaseDic=eval(fd.read())
+
+            fd.close()
+            
+            medlineRecords=diseaseDic['records']
+
+            for record in medlineRecords:
+                pmidCounter+=1
+                for label in fields:
+                    fieldSum.setdefault(label,0)
+                    if label in record:
+                        fieldSum[label]+=1
+
+            counter+=1
+            print "Files remaining:",(len(files)-counter)
+                
+        return fieldSum,{'pmid count': pmidCounter}
+
+def pmidDuplicateCounter(directory):
+
+        files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])
+        
+        pmidCount={}
+        counter=0
+        for f in files:
+            # Open file descriptor
+            fd = open(directory+f,'r')
+            # Read in from file
+            diseaseDic=eval(fd.read())
+            # Close the file descriptor nicely again
+            fd.close()
+            
+            medlineRecords=diseaseDic['records']
+
+            for record in medlineRecords:
+                pmidCount.setdefault(record['PMID'],0)
+                pmidCount[record['PMID']]+=1
+
+            counter+=1
+            print "Files remaining:",(len(files)-counter)
+                
+        return pmidCount
+
