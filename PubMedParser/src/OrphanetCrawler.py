@@ -58,9 +58,11 @@ def fetchOrphanetDiseaseTerms(pages):
 
     diseaseURLs={}
 
+
+
     user_agent = 'Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11'
     user_agent = 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15'
-    headers = { 'User-Agent' : user_agent }
+    headers = { 'User-Agent' : user_agent, 'Accept': 'text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5','Accept-Language': 'en-gb,en;q=0.5','Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7','Connection': 'keep-alive'}
 
     printvar=0
     pagenumber=0
