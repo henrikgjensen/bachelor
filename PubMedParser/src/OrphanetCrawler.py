@@ -58,6 +58,9 @@ def fetchOrphanetDiseaseTerms(pages):
 
     diseaseURLs={}
 
+    user_agent = 'Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11'
+    headers = { 'User-Agent' : user_agent }
+
     printvar=0
     pagenumber=0
     desccounter=0
@@ -68,11 +71,12 @@ def fetchOrphanetDiseaseTerms(pages):
         # Open the page.
         for i in range(3):
             try:
-                c=urllib2.urlopen(page)
+                req=urllib2.Request(page)
+                c=urllib2.urlopen(req,headers)
             except:
                 print "Could not open %s" % page
                 print "Attempt",str(i+1),"out of 3"
-                sleep(5)
+                #sleep(7)
                 if i==2:
                     print "Could not open page. Terminating.."
                     raise StopIteration()
@@ -97,12 +101,6 @@ def fetchOrphanetDiseaseTerms(pages):
         for header in soup('div'):
             if 'class' in dict(header.attrs):
                 if header['class']=='article':
-                    print header.contents
+                    print header.contents[2]
 
-
-        """
-        for header in soup('h2'):
-            if (header.contents):
-                if header.contents[0]=='Summary':
-                    print 'yes'
-        """
+    
