@@ -96,10 +96,9 @@ def fetchOrphanetDiseaseTerms(pages):
 
         for header in soup('div'):
             if 'class' in dict(header.attrs):
-                print header['class']
-            if (header.contents):
-                if header.contents[0]=='Summary':
-                    print 'yes'
+                if header['class']=='article':
+                    print header.contents
+
 
         """
         for header in soup('h2'):
