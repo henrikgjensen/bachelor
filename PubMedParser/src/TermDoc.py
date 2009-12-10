@@ -36,12 +36,12 @@ _stemmer=False
 ########################################################################
 
  # Stemmed sub-matrix directory
-#_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
+_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
  # Stemmed hashtable filenames:
-#_termHash="termHash_stemmed"
-#_pmidHash="pmidHash_stemmed"
-#_termDoc="TermDoc_stemmed"
-#_stemmer=True
+_termHash="termHash_stemmed"
+_pmidHash="pmidHash_stemmed"
+_termDoc="TermDoc_stemmed"
+_stemmer=True
 
 ########################################################################
 
@@ -97,6 +97,7 @@ def _gatherMatrixData(filename):
     records = RecordHandler.loadMedlineRecords(medlineDir, filename)
     fields = RecordHandler.readMedlineFields(records, ['AB','TI','MH'])
     for entry in fields.items():
+        information=''
 	# Get the title if any
         try:
 		information=' '+entry[1]['TI']
@@ -239,6 +240,7 @@ def createHashes():
                     pmidCounter+=1
                     pmidHashTable[pmid]=pmidCounter
 
+                information=''
                 # Get the abstract
 		try:
 			information=' '+record[1]['AB']
