@@ -75,7 +75,8 @@ def fetchOrphanetDiseaseTerms(pages):
         for i in range(3):
             try:
                 req=urllib2.Request(page)
-                c=urllib2.urlopen(req,headers)
+                data=''
+                c=urllib2.urlopen(req,data,headers)
             except:
                 print "Could not open %s" % page
                 print "Attempt",str(i+1),"out of 3"
