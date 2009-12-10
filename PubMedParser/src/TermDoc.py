@@ -36,12 +36,12 @@ _stemmer=False
 ########################################################################
 
  # Stemmed sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
+#_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
  # Stemmed hashtable filenames:
-_termHash="termHash_stemmed"
-_pmidHash="pmidHash_stemmed"
-_termDoc="TermDoc_stemmed"
-_stemmer=True
+#_termHash="termHash_stemmed"
+#_pmidHash="pmidHash_stemmed"
+#_termDoc="TermDoc_stemmed"
+#_stemmer=True
 
 ########################################################################
 
@@ -90,7 +90,7 @@ def _gatherMatrixData(filename):
 
     medlineDir=_medlineDir
 
-    # Get the regex pattern that sanitizeses strings.
+    # Get the regex pattern that sanitize strings.
     sanitizer = sanitizeString()
 
     l = []
