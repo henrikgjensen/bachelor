@@ -103,13 +103,11 @@ def _gatherMatrixData(filename):
 		information=' '+entry[1]['TI']
         except:
 		print 'Unable to find title in', entry[0]
-
 	# Get the abstract if any
         try:
 		information+=' '+entry[1]['AB']
         except:
 		print 'Unable to find abstract in', entry[0]
-
 	# Get all the mesh terms if any
 	if 'MH' in entry[1]:
 		for meshterm in entry[1]['MH']:
