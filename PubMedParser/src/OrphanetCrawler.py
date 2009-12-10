@@ -59,7 +59,7 @@ def fetchOrphanetDiseaseTerms(pages):
     diseaseURLs={}
 
     user_agent = 'Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11'
-    user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US;rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4'
+    user_agent = 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15'
     headers = { 'User-Agent' : user_agent }
 
     printvar=0
