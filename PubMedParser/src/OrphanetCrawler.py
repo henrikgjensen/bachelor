@@ -5,6 +5,7 @@ from time import strftime, sleep
 import TextCleaner
 import IOmodule
 import os
+import commands
 
 # Pages to be crawled (by default).
 defaultPages=['0','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Z']
@@ -74,18 +75,7 @@ def fetchOrphanetDiseaseTerms(pages):
         # Open the page.
         for i in range(3):
             try:
-                #url = page
-                #opener = urllib2.build_opener()
-                #opener.addheaders = [('Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15')]
-                #usock = opener.open(url)
-                #data = usock.read()
-                #usock.close()
-                #page="http://google.dk"
-                page=urllib2.Request(page)
-                page.add_header('User-Agent','Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15')
-                opener = urllib2.build_opener()
-                page = opener.open(page).read()
-                #print data
+                data=commands.getoutput('links2 -codepage iso-8859-2 -source '+page)
             except:
                 print "Could not open %s" % page
                 print "Attempt",str(i+1),"out of 3"
@@ -94,26 +84,26 @@ def fetchOrphanetDiseaseTerms(pages):
                     print "Could not open page. Terminating.."
                     raise StopIteration()
 
-        try:
-            soup=BeautifulSoup(data.read())
-        except:
-            print 'Experienced difficulties opening %s' % page
-            continue
+            try:
+                soup=BeautifulSoup(data)
+            except:
+                print 'Experienced difficulties opening %s' % data
+                continue
 
-        # Get disease name.
-        title=soup.html.head.title.string[10:]
+            # Get disease name.
+            title=soup.html.head.title.string[10:]
 
-        print title
+            print title
 
-        # Allocate dictionary.
-        diseaseURLs[title]={}
-        diseaseURLs[title]['syn']=[]
-        diseaseURLs[title]['desc']=''
+            # Allocate dictionary.
+            diseaseURLs[title]={}
+            diseaseURLs[title]['syn']=[]
+            diseaseURLs[title]['desc']=''
 
 
-        for header in soup('div'):
-            if 'class' in dict(header.attrs):
-                if header['class']=='article':
-                    print header.contents[2]
+            for header in soup('div'):
+                if 'class' in dict(header.attrs):
+                    if header['class']=='article':
+                        print header.contents[2]
 
     
