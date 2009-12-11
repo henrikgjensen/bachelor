@@ -90,6 +90,8 @@ def fetchOrphanetDiseaseTerms(pages):
                 print 'Experienced difficulties opening %s' % data
                 continue
 
+            print soup
+
             # Get disease name.
             title=soup.html.head.title.string[10:]
 
