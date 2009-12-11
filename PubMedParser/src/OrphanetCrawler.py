@@ -80,7 +80,7 @@ def fetchOrphanetDiseaseTerms(pages):
                 #usock = opener.open(url)
                 #data = usock.read()
                 #usock.close()
-                page="http://google.dk"
+                #page="http://google.dk"
                 page=urllib2.Request(page)
                 page.add_header('User-Agent','Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15')
                 opener = urllib2.build_opener()
