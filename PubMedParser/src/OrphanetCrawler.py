@@ -74,7 +74,7 @@ def fetchOrphanetDiseaseTerms(pages):
         # Open the page.
         for i in range(3):
             try:
-                url = "http://www.example.com"
+                url = page
                 opener = urllib2.build_opener()
                 opener.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.12) Gecko/20061201 Firefox/2.0.0.12 (Ubuntu-feisty)')]
                 usock = opener.open(url)
