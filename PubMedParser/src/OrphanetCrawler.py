@@ -91,7 +91,7 @@ def fetchOrphanetDiseaseTerms(pages):
 
         try:
             soup=BeautifulSoup(data.read())
-        except HTMLParseError:
+        except:
             print 'Experienced difficulties opening %s' % page
             continue
 
