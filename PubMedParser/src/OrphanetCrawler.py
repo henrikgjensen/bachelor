@@ -71,18 +71,21 @@ def fetchOrphanetDiseaseTerms(pages):
         sleep(3)
         pagenumber+=1
 
-        page="http://www.google.dk"
-
         # Open the page.
         for i in range(3):
             try:
-                url = page
+                #url = page
+                #opener = urllib2.build_opener()
+                #opener.addheaders = [('Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15')]
+                #usock = opener.open(url)
+                #data = usock.read()
+                #usock.close()
+                page="http://google.dk"
+                page=urllib2.Request(page)
+                page.add_header('User-Agent','Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15')
                 opener = urllib2.build_opener()
-                opener.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.12) Gecko/20061201 Firefox/2.0.0.12 (Ubuntu-feisty)')]
-                usock = opener.open(url)
-                url = usock.geturl()
-                data = usock.read()
-                usock.close()
+                page = opener.open(page).read()
+                #print data
             except:
                 print "Could not open %s" % page
                 print "Attempt",str(i+1),"out of 3"
