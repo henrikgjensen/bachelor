@@ -80,6 +80,7 @@ def fetchOrphanetDiseaseTerms(pages):
                 usock = opener.open(url)
                 url = usock.geturl()
                 data = usock.read()
+                print data
                 usock.close()
             except:
                 print "Could not open %s" % page
