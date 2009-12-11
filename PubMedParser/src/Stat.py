@@ -1,4 +1,6 @@
 import os
+import numpy as np
+from matplotlib import pylab as pl
 
 def countRecordfield(directory,field):
 
@@ -106,4 +108,44 @@ def pmidDuplicateCounter(directory, number=None):
             print "Files remaining:",(len(files)-counter)
                 
         return pmidCount
+
+def makeHistogram(dictionaryToMakeHistogramFrom, numberOfBins=100):
+
+    """
+    Recieves a list of the form: { 'pmid_1': count_1, ..., 'pmid_n': count_n }
+
+    Makes a histogram of the different counts.
+    """
+
+    # Need to transform the dictionary into a list of single values
+    data = [v for k,v in dictionaryToMakeHistogramFrom.items()]
+    
+#     dataOne = get_data_one()
+#     dataTwo = get_data_two()
+    
+#     hN = pl.hist(dataTwo, orientation='horizontal', normed=0, rwidth=0.8, label='ONE')
+#     hS = pl.hist(dataOne, bins=hN[1], orientation='horizontal', normed=0, 
+#                  rwidth=0.8, label='TWO')
+
+#     for p in hS[2]:
+#         p.set_width( - p.get_width())
+        
+#     xmin = min([ min(w.get_width() for w in hS[2]), 
+#                  min([w.get_width() for w in hN[2]]) ])
+#     xmin = np.floor(xmin)
+#     xmax = max([ max(w.get_width() for w in hS[2]), 
+#                  max([w.get_width() for w in hN[2]]) ])
+#     xmax = np.ceil(xmax)
+#     range = xmax - xmin
+#     delta = 0.0 * range
+#     pl.xlim([xmin - delta, xmax + delta])
+#     xt = pl.xticks()
+#     n = xt[0]
+#     s = ['%.1f'%abs(i) for i in n]
+#     pl.xticks(n, s)
+#     pl.legend(loc='best')
+#     pl.axvline(0.0)
+#     pl.show()
+
+    return data
 
