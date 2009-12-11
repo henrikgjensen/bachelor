@@ -54,6 +54,7 @@ def countFields(directory, fields):
         fieldSum={}
         counter=0
         pmidCounter=0
+        emptyCounter=0
         for f in files:
             
             fd = open(directory+f,'r')
@@ -63,6 +64,11 @@ def countFields(directory, fields):
             fd.close()
             
             medlineRecords=diseaseDic['records']
+
+            if medlineRecords == []:
+                print "Found empty record"
+                emptyCounter+=1
+                continue
 
             for record in medlineRecords:
                 pmidCounter+=1
@@ -74,11 +80,11 @@ def countFields(directory, fields):
             counter+=1
             print "Files remaining:",(len(files)-counter)
                 
-        return fieldSum,{'pmid count': pmidCounter}
+        return fieldSum,{'pmid count': pmidCounter},{'empty count': emptyCounter}
 
-def pmidDuplicateCounter(directory):
+def pmidDuplicateCounter(directory, number=None):
 
-        files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])
+        files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])[:number]
         
         pmidCount={}
         counter=0
