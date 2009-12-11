@@ -68,7 +68,7 @@ def countFields(directory, fields):
             if medlineRecords == []:
                 print "Found empty record"
                 emptyCounter+=1
-                continue
+#                continue
 
             for record in medlineRecords:
                 pmidCounter+=1
