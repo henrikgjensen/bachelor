@@ -39,9 +39,8 @@ def fetchPubmedDiseaseURLs(pages=defaultPages):
     """
     Takes a list of letters representing the pages to be crawled for rare
     diseases on http://rarediseases.info.nih.gov.
-    
-    Returns a list of URLs to be crawled for pubmed terms, uids and optional
-    describtions.
+
+    Returns a list of URLs linking to describtive pages of the diseases found.
 
     The default list is:
     ['A','B','C','D','E','F','G','H','I','J','K','L','M',

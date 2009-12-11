@@ -1,19 +1,19 @@
-import os
+#import os
 import SearchTermDoc
-import IOmodule
+#import IOmodule
 import time
 
 # Main folder
-_path = os.getenv("HOME")+"/"+"The_Hive"
+#_path = os.getenv("HOME")+"/"+"The_Hive"
 # Hashtable directory
-_hashTablePath = _path+"/"+"term_doc/hashTables"
+#_hashTablePath = _path+"/"+"term_doc/hashTables"
 
 ####################################################################
 #### Use stopword-removed TermDoc ##################################
 ####################################################################
 
  # Load the precomputed norm of each row-vector in the term-doc matrix.
-_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
+#_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
 
 ####################################################################
 #### Use stopword-removed and Porter-stemmed (english) TermDoc: ####
@@ -43,7 +43,8 @@ def cosineMeasureAND(M_lil,M_csc,queryString):
         Sum=0
         for termHash in hashedSearchTerms:
             Sum+=M_lil[pmidHash,termHash]
-        results.append(((1.0/len(hashedSearchTerms))*(1.0/_vectorLength[pmidHash])*Sum,pmidHash))
+        #results.append(((1.0/len(hashedSearchTerms))*(1.0/_vectorLength[pmidHash])*Sum,pmidHash))
+        results.append((Sum,pmidHash))
 
     t2 = time.time()
 
