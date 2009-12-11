@@ -60,9 +60,9 @@ def fetchOrphanetDiseaseTerms(pages):
 
 
 
-    user_agent = 'Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11'
-    user_agent = 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15'
-    headers = { 'User-Agent' : user_agent, 'Accept': 'text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5','Accept-Language': 'en-gb,en;q=0.5','Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7','Connection': 'keep-alive'}
+    #user_agent = 'Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11'
+    #user_agent = 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15'
+    #headers = { 'User-Agent' : user_agent}
 
     printvar=0
     pagenumber=0
@@ -74,9 +74,13 @@ def fetchOrphanetDiseaseTerms(pages):
         # Open the page.
         for i in range(3):
             try:
-                req=urllib2.Request(page)
-                data=''
-                c=urllib2.urlopen(req,data,headers)
+                url = "http://www.example.com"
+                opener = urllib2.build_opener()
+                opener.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.12) Gecko/20061201 Firefox/2.0.0.12 (Ubuntu-feisty)')]
+                usock = opener.open(url)
+                url = usock.geturl()
+                data = usock.read()
+                usock.close()
             except:
                 print "Could not open %s" % page
                 print "Attempt",str(i+1),"out of 3"
@@ -86,7 +90,7 @@ def fetchOrphanetDiseaseTerms(pages):
                     raise StopIteration()
 
         try:
-            soup=BeautifulSoup(c.read())
+            soup=BeautifulSoup(data.read())
         except HTMLParseError:
             print 'Experienced difficulties opening %s' % page
             continue
