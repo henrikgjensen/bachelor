@@ -29,6 +29,7 @@ def search20(M_lil, M_csc, queryString):
     top20=[result[1] for result in results[0:19]]
 
     # Retrieve the top 20 results as PMIDs
+    print top20
     pmidList=SearchTermDoc.getPMIDList(top20)
 
     return pmidList

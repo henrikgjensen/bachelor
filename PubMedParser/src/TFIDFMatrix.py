@@ -2,6 +2,7 @@ import IOmodule
 import math
 import time
 import os
+import SearchTermDoc
 
 # Main folder
 _path = os.getenv("HOME")+"/"+"The_Hive"
@@ -19,11 +20,15 @@ _termDocDir = _subFolder+"/"+"termDoc"
 
  # TFIDF-matrix file name
 _tfidfName = "TFIDFMatrix"
+ # Vector-norm hash for then TFIDFMatrix
+_RLHash = "RLHash"
+ # Hash for the number of documents each term occur in
+_CLHash = "CLHash"
  # Load the precomputed norm of each row-vector in the term-doc matrix.
-_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
+_vectorLength = IOmodule.pickleIn(_hashTablePath,_RLHash)
  # Load the precomputed length of each column in the term-doc matrix
-_termSum = IOmodule.pickleIn(_hashTablePath,'CLHash')
- # Same path of the tfidf matrix, the same as other term docs
+_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
+ 
 
 ####################################################################
 #### Use stopword-removed and Porter-stemmed (english) TermDoc: ####
@@ -31,11 +36,14 @@ _termSum = IOmodule.pickleIn(_hashTablePath,'CLHash')
 
  # TFIDF-matrix file name
 #_tfidfName = "TFIDFMatrix_stemmed"
+ # Vector-norm hash for then TFIDFMatrix
+#_RLHash = "RLHash_stemmed"
+ # Hash for the number of documents each term occur in
+#_CLHash = "CLHash_stemmed"
  # Load the precomputed norm of each row-vector in the stemmed term-doc matrix.
-#_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash_stemmed')
+#_vectorLength = IOmodule.pickleIn(_hashTablePath,_RLHash)
  # Load the precomputed length of each column in the stemmed term-doc matrix
-#_termSum = IOmodule.pickleIn(_hashTablePath,'CLHash_stemmed')
- # Same path of the tfidf matrix, the same as other term docs
+#_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 
 
 ####################################################################
@@ -55,12 +63,6 @@ def _generateLogTFIDF(M_coo):
     totalTime1=time.time()
 
     numberOfDocs = float(M_coo.shape[0]-1)
-
-    #print "Converting from coo to csc..."
-    #t1=time.time()
-    #M_csc=M_coo.tocsc()
-    #t2=time.time()
-    #print "Matrix converted to csc in",(t2-t1)
 
     print "Converting from coo to lil..."
     t1=time.time()
@@ -94,31 +96,6 @@ def _generateLogTFIDF(M_coo):
     # Save and overwrite the log_tfidf generate above
     IOmodule.writeOutTDM(_termDocDir, _tfidfName, tfidfMatrix)
 
-    """
-    for termVectorIndex in range(1,M_coo.shape[1]+1):
-
-        print "Progress: " + str(termVectorIndex)
-
-        #termVectorData = (M_csc.getcol(termVector).data)[1:]
-        docIndexVector = (M_csc.getcol(termVectorIndex).nonzero()[0])[1:]
-
-        # Calculate the inverse document frequency
-        # (Note that the length of each term vector is always greater than 0)
-        idf = math.log(float(numberOfDocs) / len(docIndexVector))
-
-        for docIndex in docIndexVector:
-            # Retrieve the term frequency
-            tf = tfidfMatrix[docIndex, termVectorIndex]
-            if tf == 0:
-                print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
-                raise Exception
-            # Calculate the log-transformation of the term-frequency
-            tf = math.log(1 + tf)
-            # Update the new matrix values
-            tfidf=tf * idf
-            tfidfMatrix[docIndex, termVectorIndex] = tfidf
-    """
-
     totalTime2=time.time()
     print "Total time: "+str(totalTime2-totalTime1)
 
@@ -131,6 +108,8 @@ def _normalizeVectorLengths(M_lil):
     """
 
     t1=time.time()
+
+    SearchTermDoc.createRLHash(M_lil, _RLHash)
 
     for row in range(1,M_lil.shape[0]):
 
