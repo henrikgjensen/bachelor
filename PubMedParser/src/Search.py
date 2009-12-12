@@ -26,7 +26,7 @@ def search20(M_lil, M_csc, queryString):
     # Sort the results and reverse to get the highest score first
     results.sort(); results.reverse()
 
-    top20=results[:19]
+    top20=[result[0] for result in results[:19]]
 
     # Retrieve the top 20 results as PMIDs
     print top20
