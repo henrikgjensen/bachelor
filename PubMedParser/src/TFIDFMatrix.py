@@ -18,11 +18,12 @@ _termDocDir = _subFolder+"/"+"termDoc"
 ####################################################################
 
  # TFIDF-matrix file name
-_tfidfName = "TFIDFMatrix"
+_tfidfName = "TFIDFMatrix_test100"
  # Load the precomputed norm of each row-vector in the term-doc matrix.
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
  # Load the precomputed length of each column in the term-doc matrix
 _termSum = IOmodule.pickleIn(_hashTablePath,'CLHash')
+ # Same path of the tfidf matrix, the same as other term docs
 
 ####################################################################
 #### Use stopword-removed and Porter-stemmed (english) TermDoc: ####
@@ -34,6 +35,8 @@ _termSum = IOmodule.pickleIn(_hashTablePath,'CLHash')
 #_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash_stemmed')
  # Load the precomputed length of each column in the stemmed term-doc matrix
 #_termSum = IOmodule.pickleIn(_hashTablePath,'CLHash_stemmed')
+ # Same path of the tfidf matrix, the same as other term docs
+
 
 ####################################################################
 
@@ -89,7 +92,7 @@ def _generateLogTFIDF(M_coo):
     print "Total:"+str(t2-t1)
 
     # Save and overwrite the log_tfidf generate above
-    IOmodule.writeOutTDM(_tfidfDir, _tfidfName, tfidfMatrix)
+    IOmodule.writeOutTDM(_termDocDir, _tfidfName, tfidfMatrix)
 
     """
     for termVectorIndex in range(1,M_coo.shape[1]+1):
@@ -115,8 +118,6 @@ def _generateLogTFIDF(M_coo):
             tfidf=tf * idf
             tfidfMatrix[docIndex, termVectorIndex] = tfidf
     """
-    # Save the progress
-    IOmodule.writeOutTDM(_termDocDir, _tfidfName, tfidfMatrix)
 
     totalTime2=time.time()
     print "Total time: "+str(totalTime2-totalTime1)
@@ -131,7 +132,7 @@ def _normalizeVectorLengths(M_lil):
 
     t1=time.time()
 
-    for row in range(1,M_lil.shape[0]+1):
+    for row in range(1,M_lil.shape[0]):
 
         norm=_vectorLength[row]
         for col in (M_lil.getrow(row).nonzero()[1])[1:]:
@@ -140,8 +141,11 @@ def _normalizeVectorLengths(M_lil):
     t2=time.time()
     print "Total:"+str(t2-t1)
 
+    # This is madness
+    tfidfMatrix = M_lil
+
     # Save and overwrite the log_tfidf generated above
-    IOmodule.writeOutTDM(_tfidfDir, _tfidfName, tfidfMatrix)
+    IOmodule.writeOutTDM(_termDocDir, _tfidfName+'_normalized', tfidfMatrix)
 
 
 def runTFIDF(M_coo):
@@ -155,4 +159,3 @@ def runTFIDF(M_coo):
     print "Normalizing vector lengths..."
     _normalizeVectorLengths(TFIDFMatrix)
     print "Done."
-
