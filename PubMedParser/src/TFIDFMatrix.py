@@ -18,7 +18,7 @@ _termDocDir = _subFolder+"/"+"termDoc"
 ####################################################################
 
  # TFIDF-matrix file name
-_tfidfName = "TFIDFMatrix_test100"
+_tfidfName = "TFIDFMatrix"
  # Load the precomputed norm of each row-vector in the term-doc matrix.
 _vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash')
  # Load the precomputed length of each column in the term-doc matrix
@@ -145,7 +145,7 @@ def _normalizeVectorLengths(M_lil):
     tfidfMatrix = M_lil
 
     # Save and overwrite the log_tfidf generated above
-    IOmodule.writeOutTDM(_termDocDir, _tfidfName+'_normalized', tfidfMatrix)
+    IOmodule.writeOutTDM(_termDocDir, _tfidfName, tfidfMatrix)
 
 
 def runTFIDF(M_coo):
