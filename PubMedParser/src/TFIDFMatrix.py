@@ -145,7 +145,7 @@ def _normalizeVectorLengths(M_lil):
     tfidfMatrix = M_lil
 
     # Save and overwrite the log_tfidf generated above
-    IOmodule.writeOutTDM(_termDocDir, _tfidfName+'_test', tfidfMatrix)
+    IOmodule.writeOutTDM(_termDocDir, _tfidfName+'_norm', tfidfMatrix)
 
 def runTFIDF(M_coo):
 
