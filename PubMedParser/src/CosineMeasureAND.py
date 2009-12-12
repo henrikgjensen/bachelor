@@ -28,7 +28,11 @@ import time
 def cosineMeasureAND(M_lil,M_csc,queryString):
 
     """
-    
+    This function calculates the cosine score for each document containing all
+    of the query-terms in the query string (thereby the implicit 'and' between
+    each query-term).
+
+    It returns a scored list of all the documents mentioned above.
     """
 
     t1 = time.time()

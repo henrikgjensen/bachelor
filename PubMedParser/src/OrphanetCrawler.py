@@ -72,10 +72,14 @@ def fetchOrphanetDiseaseTerms(pages):
         sleep(3)
         pagenumber+=1
 
+        print page
+
+        #page="http://www.maltas.dk"
+
         # Open the page.
         for i in range(3):
             try:
-                data=commands.getoutput('links2 -codepage iso-8859-2 -source '+page)
+                data=commands.getoutput('links2 -source '+page)
             except:
                 print "Could not open %s" % page
                 print "Attempt",str(i+1),"out of 3"
