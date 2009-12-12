@@ -84,7 +84,7 @@ def extractRowIndices(M_csc,searchString):
     # Extract all the indices of the non-zero elements in the columns.
     colList=[]
     for termHash in hashedSearchTerms:
-        colList.append((M_csc.getcol(termHash).nonzero()[0])[1:])
+        colList.append((M_csc.getcol(termHash).nonzero()[0])[:-1])
         print M_csc.getcol(termHash).nonzero()[0][1:]
 
     t2=time.time()
