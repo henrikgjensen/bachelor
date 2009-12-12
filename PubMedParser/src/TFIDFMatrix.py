@@ -132,7 +132,7 @@ def _normalizeVectorLengths(M_lil):
 
     t1=time.time()
 
-    for row in range(1,M_lil.shape[0]):
+    for row in range(1,M_lil.shape[0]+1):
 
         norm=_vectorLength[row]
         for col in (M_lil.getrow(row).nonzero()[1])[1:]:
@@ -145,8 +145,7 @@ def _normalizeVectorLengths(M_lil):
     tfidfMatrix = M_lil
 
     # Save and overwrite the log_tfidf generated above
-    IOmodule.writeOutTDM(_termDocDir, _tfidfName, tfidfMatrix)
-
+    IOmodule.writeOutTDM(_termDocDir, _tfidfName+'_test', tfidfMatrix)
 
 def runTFIDF(M_coo):
 
