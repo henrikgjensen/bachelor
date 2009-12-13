@@ -9,7 +9,7 @@ import FilterInterface
 _stemmer=False
 
 
-def search20(M_lil, M_csc, queryString):
+def search20(M_lil, M_csc, queryString, AND=False):
 
     """
     This function is still a work in progress..
@@ -22,6 +22,8 @@ def search20(M_lil, M_csc, queryString):
     # CHOOSE HEURISTIC:
     # Search-heuristic used to retrieve the list of results
     results=SearchInterface.cosineMeasureOR(M_lil, M_csc, queryString)
+
+    if AND: results=SearchInterface.cosineMeasureAND(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
     results.sort()
