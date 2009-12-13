@@ -265,7 +265,7 @@ def createHashes():
                 # Stem the abstract
                 if _stemmer: information=FilterInterface.porterStemmer(information)
 
-                termList = [word.lower() for word in information.split(' ') if word != '']
+                termList = [word for word in information.split(' ') if word != '']
                 for term in termList:
                     if term not in termHashTable:
                         termCounter+=1
