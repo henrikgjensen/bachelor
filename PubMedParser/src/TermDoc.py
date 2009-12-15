@@ -298,7 +298,7 @@ def createDiseaseLabelHash():
         subMatrix=IOmodule.readInTDM(_subMatrixDir, file)
         colMatrix=subMatrix.tocsc()
 
-        pmids=M_csc.getcol(termHash)[1:].data
+        pmids=colMatrix.getcol(termHash)[1:].data
 
         for pmid in pmids:
             try:
