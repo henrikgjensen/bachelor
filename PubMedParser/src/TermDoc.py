@@ -315,7 +315,7 @@ def createDiseaseLabelHash():
 
     print 'Created disease label hash in:',str(t2-t1)
 
-    IOmodule.pickleOut(hashTables, _labelHash, labelHash)
+    IOmodule.pickleOut(_hashTablesDir, _labelHash, labelHash)
 
 
 def createTermDoc(refreshHash=False):
