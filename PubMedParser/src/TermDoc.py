@@ -309,7 +309,7 @@ def createDiseaseLabelHash():
                 labelHash[pmid].append(file[:-4])
             
         fileCount+=1
-        print "Remaining:",(len(files)-fileCount),"Completed",file
+        print "Remaining:",(len(files)-fileCount),"Completed",file[:-4]
 
     t2 = time.time()
 
