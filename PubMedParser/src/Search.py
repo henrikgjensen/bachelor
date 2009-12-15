@@ -4,9 +4,18 @@ import SearchInterface
 import SearchTermDoc
 import FilterInterface
 
-
+# Main folder
+_path = os.getenv("HOME")+"/"+"The_Hive"
+# Sub folder
+_subFolder = _path+"/"+"term_doc"
+# Hashtable directory
+_hashTablePath = _subFolder+"/"+"hashTables"
 # Set True for Porter-stemming
 _stemmer=False
+
+# Disease label hash
+_labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
+print "Label hash loaded"
 
 
 def search20(M_lil, M_csc, queryString, AND=False):
@@ -39,7 +48,7 @@ def search20(M_lil, M_csc, queryString, AND=False):
     return pmidList
 
 
-def search30(M_lil, M_csc, queryString, AND=False):
+def search100(M_lil, M_csc, queryString, AND=False):
 
     """
     This function is still a work in progress..
@@ -59,10 +68,16 @@ def search30(M_lil, M_csc, queryString, AND=False):
     results.sort()
     results.reverse()
 
-    top30=[result[1] for result in results[:30]]
+    top100=[result[1] for result in results[:100]]
 
-    # Retrieve the top 20 results as PMIDs
-    pmidList=SearchTermDoc.getPMIDList(top30)
+    # Retrieve the top 100 results as PMIDs
+    pmidList=SearchTermDoc.getPMIDList(top100)
+
+    # HERE WE GO...! (to be made: resultList) #
+
+    #resultList=[]
+    #for pmid in pmidList:
+        #resultList.append(())
 
     pmidList=' '.join(pmid for pmid in pmidList)
 
