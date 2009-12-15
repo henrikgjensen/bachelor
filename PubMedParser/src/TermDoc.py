@@ -294,22 +294,22 @@ def createDiseaseLabelHash():
 
     labelHash={}
 
+    fileCount=0
     for file in files:
         subMatrix=IOmodule.readInTDM(_subMatrixDir, file)
         colMatrix=subMatrix.tocsc()
 
         pmids=colMatrix.getcol(0)[1:].data
 
-        count=0
         for pmid in pmids:
             try:
                 labelHash[pmid].append(file[:-4])
             except:
                 labelHash[pmid]=[]
                 labelHash[pmid].append(file[:-4])
-            count+=1
-
-        print "Completed",file,". Remaining:",(len(files)-count)
+            
+        fileCount+=1
+        print "Remaining:",(len(files)-fileCount),"Completed",file
 
     t2 = time.time()
 
