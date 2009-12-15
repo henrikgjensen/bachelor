@@ -298,9 +298,12 @@ def createDiseaseLabelHash():
         subMatrix=IOmodule.readInTDM(_subMatrixDir, file)
         colMatrix=subMatrix.tocsc()
 
-        pmids=colMatrix.getcol(termHash)[1:].data
+        pmids=colMatrix.getcol(0)[1:].data
+
+        if 0 in pmids: raise Exception
 
         for pmid in pmids:
+
             try:
                 labelHash[pmid].append(file)
                 print "Adding to already existing pmid:",file
