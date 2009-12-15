@@ -300,17 +300,17 @@ def createDiseaseLabelHash():
 
         pmids=colMatrix.getcol(0)[1:].data
 
-        if 0 in pmids: raise Exception
+        print pmids
 
-        for pmid in pmids:
-
-            try:
-                labelHash[pmid].append(file)
-                print "Adding to already existing pmid:",file
-            except:
-                labelHash[pmid]=[]
-                labelHash[pmid].append(file)
-                print "Added",file
+#        for pmid in pmids:
+#
+#            try:
+#                labelHash[pmid].append(file)
+#                print "Adding to already existing pmid:",file
+#            except:
+#                labelHash[pmid]=[]
+#                labelHash[pmid].append(file)
+#                print "Added",file
 
     t2 = time.time()
 
