@@ -68,17 +68,24 @@ def search100(M_lil, M_csc, queryString, AND=False):
     results.sort()
     results.reverse()
 
-    top100=[result[1] for result in results[:100]]
+    top100=[result for result in results[:100]]
 
     # Retrieve the top 100 results as PMIDs
-    pmidList=SearchTermDoc.getPMIDList(top100)
+    #pmidList=SearchTermDoc.getPMIDList(top100)
 
-    # HERE WE GO...! (to be made: resultList) #
+    print top100
 
-    #resultList=[]
-    #for pmid in pmidList:
-        #resultList.append(())
+    resultList={}
+    for item in top100:
+        pmid=SearchTermDoc.getPMID(item[1])
+        try:
+            resultList[pmid]+=item[0]
+        except:
+            resultList[pmid]=[]
+            resultList[pmid].append(item[0])
 
-    pmidList=' '.join(pmid for pmid in pmidList)
+    print resultList
 
-    return pmidList
+    #pmidList=' '.join(pmid for pmid in pmidList)
+
+#    return pmidList

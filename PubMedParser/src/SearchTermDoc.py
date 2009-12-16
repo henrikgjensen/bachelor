@@ -175,3 +175,11 @@ def getPMIDList(hashedPMIDList):
         pmidList.append(revPmidHashTable[hashedPMID])
 
     return pmidList
+
+def getPMID(hashedPMID):
+
+    """
+
+    """
+
+    return revPmidHashTable[hashedPMID]

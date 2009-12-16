@@ -46,7 +46,6 @@ def cosineMeasureOR(M_lil, M_csc, queryString):
         Sum=0
         for termHash in hashedSearchTerms:
             Sum+=M_lil[pmidHash,termHash]
-        #results.append(((1.0/len(hashedSearchTerms))*(1.0/_vectorLength[pmidHash])*Sum,pmidHash))
         results.append((Sum,pmidHash))
 
     t2 = time.time()
