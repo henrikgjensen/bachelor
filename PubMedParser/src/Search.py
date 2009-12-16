@@ -75,7 +75,7 @@ def search100(M_lil, M_csc, queryString, AND=False):
     # Retrieve the top 100 results as PMIDs
     #pmidList=SearchTermDoc.getPMIDList(top100)
 
-    print top100
+    print len(top100)
 
     resultList={}
     for item in top100:
@@ -86,7 +86,7 @@ def search100(M_lil, M_csc, queryString, AND=False):
             resultList[pmid]=[]
             resultList[pmid].append(item[0])
 
-    print resultList
+    print len(resultList)
 
     #pmidList=' '.join(pmid for pmid in pmidList)
 
