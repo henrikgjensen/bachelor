@@ -79,18 +79,20 @@ def search100(M_lil, M_csc, queryString, AND=False):
 
     print len(top100)
 
-    resultList={}
+    resultDic={}
     for item in top100:
         pmid=item[1] #SearchTermDoc.getPMID(item[1])
         labels=_labelHash[pmid]
         for label in labels:
             try:
-                resultList[label]+=item[0]
+                resultDic[label]+=item[0]
                 print "added"
             except:
-                resultList[label]=item[0]
+                resultDic[label]=item[0]
 
-    
+    resultList=sorted(resultDic.items(), key=lambda(k,v):(v,k))
+
+    return resultList
 
     #pmidList=' '.join(pmid for pmid in pmidList)
 
