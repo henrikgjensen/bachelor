@@ -90,7 +90,7 @@ def search100(M_lil, M_csc, queryString, AND=False):
                 resultList[label]=[]
                 resultList[label].append(item[0])
 
-    print len(resultList)
+    print resultList
 
     #pmidList=' '.join(pmid for pmid in pmidList)
 
