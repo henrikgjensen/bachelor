@@ -81,7 +81,7 @@ def search100(M_lil, M_csc, queryString, AND=False):
 
     resultList={}
     for item in top100:
-        pmid=SearchTermDoc.getPMID(item[1])
+        pmid=item[1] #SearchTermDoc.getPMID(item[1])
         label=_labelHash[pmid]
         try:
             resultList[label]+=item[0]
