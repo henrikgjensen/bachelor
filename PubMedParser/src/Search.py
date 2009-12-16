@@ -87,8 +87,9 @@ def search100(M_lil, M_csc, queryString, AND=False):
             try:
                 resultList[label]+=item[0]
             except:
-                resultList[label]=[]
-                resultList[label].append(item[0])
+                resultList[label]=item[0]
+
+    print len(resultList)
 
     print resultList
 
