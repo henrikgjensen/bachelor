@@ -86,7 +86,6 @@ def search100(M_lil, M_csc, queryString, AND=False):
         for label in labels:
             try:
                 resultDic[label]+=item[0]
-                print "added"
             except:
                 resultDic[label]=item[0]
 
