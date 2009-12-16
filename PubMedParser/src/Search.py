@@ -80,7 +80,7 @@ def search100(M_lil, M_csc, queryString, AND=False):
     #print len(top100)
 
     resultDic={}
-    for item in results[:50]:
+    for item in results[:100]:
         pmid=item[1] #SearchTermDoc.getPMID(item[1])
         labels=_labelHash[pmid]
         for label in labels:
