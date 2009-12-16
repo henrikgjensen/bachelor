@@ -50,7 +50,7 @@ def search20(M_lil, M_csc, queryString, AND=False):
     return pmidList
 
 
-def search100(M_lil, M_csc, queryString, AND=False):
+def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     """
     This function is still a work in progress..
@@ -80,7 +80,7 @@ def search100(M_lil, M_csc, queryString, AND=False):
     #print len(top100)
 
     resultDic={}
-    for item in results:
+    for item in results[:top]:
         pmid=item[1] #SearchTermDoc.getPMID(item[1])
         labels=_labelHash[pmid]
         for label in labels:
