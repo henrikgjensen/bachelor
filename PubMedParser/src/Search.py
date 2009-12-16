@@ -70,6 +70,8 @@ def search100(M_lil, M_csc, queryString, AND=False):
     results.sort()
     results.reverse()
 
+
+    # Note: tror den her er unødvendig kompliceret.
     top100=[result for result in results[:100]]
 
     # Retrieve the top 100 results as PMIDs
@@ -80,11 +82,12 @@ def search100(M_lil, M_csc, queryString, AND=False):
     resultList={}
     for item in top100:
         pmid=SearchTermDoc.getPMID(item[1])
+        label=_labelHash[pmid]
         try:
-            resultList[pmid]+=item[0]
+            resultList[label]+=item[0]
         except:
-            resultList[pmid]=[]
-            resultList[pmid].append(item[0])
+            resultList[label]=[]
+            resultList[label].append(item[0])
 
     print len(resultList)
 
