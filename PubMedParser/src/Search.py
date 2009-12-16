@@ -3,6 +3,7 @@
 import SearchInterface
 import SearchTermDoc
 import FilterInterface
+import os
 
 # Main folder
 _path = os.getenv("HOME")+"/"+"The_Hive"
