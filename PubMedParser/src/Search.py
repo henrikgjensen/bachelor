@@ -3,6 +3,7 @@
 import SearchInterface
 import SearchTermDoc
 import FilterInterface
+import IOmodule
 import os
 
 # Main folder
