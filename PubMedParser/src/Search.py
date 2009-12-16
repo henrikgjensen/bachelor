@@ -90,6 +90,7 @@ def search100(M_lil, M_csc, queryString, AND=False):
                 resultDic[label]=item[0]
 
     resultList=sorted(resultDic.items(), key=lambda(k,v):(v,k))
+    resultlist.reverse()
 
     return resultList
 
