@@ -86,12 +86,11 @@ def search100(M_lil, M_csc, queryString, AND=False):
         for label in labels:
             try:
                 resultList[label]+=item[0]
+                print "added"
             except:
                 resultList[label]=item[0]
 
-    print len(resultList)
-
-    print resultList
+    
 
     #pmidList=' '.join(pmid for pmid in pmidList)
 
