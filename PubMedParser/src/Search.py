@@ -72,15 +72,15 @@ def search100(M_lil, M_csc, queryString, AND=False):
 
 
     # Note: tror den her er unodvendig kompliceret.
-    top100=[result for result in results[:100]]
+    #top100=[result for result in results[:100]]
 
     # Retrieve the top 100 results as PMIDs
     #pmidList=SearchTermDoc.getPMIDList(top100)
 
-    print len(top100)
+    #print len(top100)
 
     resultDic={}
-    for item in top100:
+    for item in results:
         pmid=item[1] #SearchTermDoc.getPMID(item[1])
         labels=_labelHash[pmid]
         for label in labels:
