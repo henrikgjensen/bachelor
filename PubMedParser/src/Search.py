@@ -71,7 +71,7 @@ def search100(M_lil, M_csc, queryString, AND=False):
     results.reverse()
 
 
-    # Note: tror den her er unødvendig kompliceret.
+    # Note: tror den her er unodvendig kompliceret.
     top100=[result for result in results[:100]]
 
     # Retrieve the top 100 results as PMIDs
