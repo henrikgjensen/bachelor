@@ -93,6 +93,12 @@ def search100(M_lil, M_csc, queryString, AND=False):
 
     return resultList
 
-    #pmidList=' '.join(pmid for pmid in pmidList)
-
-#    return pmidList
+def getScore(resultList,diseaseName):
+    
+    for result in resultList:
+        if result[0]==diseaseName:
+            print "<<<<<<<",diseaseName,">>>>>>>"
+            print "Scored",resultList.index(result),"out of",len(resultsList)
+            print "Cosine score:",result[1]
+        else:
+            print "Did not locate the disease"
