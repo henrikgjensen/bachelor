@@ -22,7 +22,7 @@ import time
  # Load the precomputed norm of each row-vector in the stemmed term-doc matrix.
 #_vectorLength = IOmodule.pickleIn(_hashTablePath,'RLHash_stemmed')
 
-
+import math
 def cosineMeasureOR(M_lil, M_csc, queryString):
 
     """
@@ -45,7 +45,7 @@ def cosineMeasureOR(M_lil, M_csc, queryString):
     for pmidHash in searchIndices:
         Sum=0
         for termHash in hashedSearchTerms:
-            Sum+=pow(M_lil[pmidHash,termHash],2)
+            Sum+=math.sqrt(M_lil[pmidHash,termHash])
         results.append((Sum,pmidHash))
 
     t2 = time.time()
