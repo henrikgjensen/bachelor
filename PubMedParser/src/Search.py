@@ -70,9 +70,6 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     results.sort()
     results.reverse()
 
-
-    print results[:top]
-
     # Note: tror den her er unodvendig kompliceret.
     #top100=[result for result in results[:100]]
 
