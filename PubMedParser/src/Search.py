@@ -105,4 +105,15 @@ def getScore(resultList,diseaseName):
 
     if not Found: print "Did not locate the disease"
         
-            
+
+def runScoreTest(M_lil, M_csc, queryString, diseaseName):
+
+    topList=[None,3000,2000,1000,500,100,50]
+
+    for top in topList:
+
+        results=search(M_lil, M_csc, queryString, top, AND=False)
+
+        getScore(results,diseaseName)
+
+    print "TEST DONE"
