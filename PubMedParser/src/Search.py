@@ -142,10 +142,10 @@ def runScoreTest2(M_lil, M_csc):
 
         printout=''
 
+        printout+=str(disease[0])+"\t\t\t"
+
         for top in topList:
             results=search(M_lil, M_csc, disease[1], top, AND=False)
-            
-            printout+=str(disease[0])+"\t\t\t"
 
             for result in results:
                 if result[0]==disease[0]:
