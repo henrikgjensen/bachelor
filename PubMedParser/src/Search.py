@@ -125,7 +125,7 @@ def runScoreTest2(M_lil, M_csc):
 
     diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
                 ("Cushing's syndrome","hypertension, adrenal, mass"),
-                ("Eosinophilic granuloma Hip", "lesion, older, child"),
+                ("Eosinophilic granuloma", "Hip, lesion, older, child"),
                 ("Ehrlichiosis","fever, bilateral, thigh, pain, weakness"),
                 ("Neurofibromatosis type 1","multiple, spinal, tumours, skin, tumours"),
                 ("Pheochromocytoma","hypertension, papilledema, headache, renal, mass, cafe, au, lait"),
@@ -149,7 +149,7 @@ def runScoreTest2(M_lil, M_csc):
 
             for result in results:
                 if result[0]==disease[0]:
-                    printout+=str(top)+":"+str(results.index(result))+"\t\t"+str(result[1])+"\t\t"
+                    printout+="("+str(top)+"\t"+str(results.index(result))+"\t"+str(result[1])[0:5]+")\t\t"
         
         print printout
 
