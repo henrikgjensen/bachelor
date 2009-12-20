@@ -50,6 +50,6 @@ def cosineMeasureOR(M_lil, M_csc, queryString):
 
     t2 = time.time()
 
-    print "Time for cosine-scoring on",len(searchIndices),"rows:",(t2-t1)
+    #print "Time for cosine-scoring on",len(searchIndices),"rows:",(t2-t1)
 
     return results

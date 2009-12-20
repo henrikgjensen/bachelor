@@ -79,7 +79,7 @@ def extractRowIndices(M_csc,searchString):
             print "Did not locate",term
             continue
         hashedSearchTerms.append(termHash)
-    print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
+    #print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
     # Extract all the indices of the non-zero elements in the columns.
     colList=[]
@@ -87,7 +87,7 @@ def extractRowIndices(M_csc,searchString):
         colList.append((M_csc.getcol(termHash).nonzero()[0])[:-1])
 
     t2=time.time()
-    print "Found and returned",len(colList),"column vector(s) in: "+str(t2-t1)
+    #print "Found and returned",len(colList),"column vector(s) in: "+str(t2-t1)
 
     return colList, hashedSearchTerms
 
