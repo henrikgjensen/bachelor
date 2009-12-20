@@ -149,7 +149,7 @@ def runScoreTest2(M_lil, M_csc):
 
             for result in results:
                 if result[0]==disease[0]:
-                    printout+=top+":"+resultList.index(result)+"\t"+result[1]+"\t"
+                    printout+=top+":"+str(resultList.index(result))+"\t"+result[1]+"\t"
         
         print printout
 
