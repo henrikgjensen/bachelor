@@ -106,7 +106,7 @@ def getScore(resultList,diseaseName):
     if not Found: print "Did not locate the disease"
         
 
-def runScoreTest(M_lil, M_csc, queryString, diseaseName):
+def runScoreTest1(M_lil, M_csc, queryString, diseaseName):
 
     topList=[None,3000,2000,1000,500,100,50]
 
@@ -115,5 +115,42 @@ def runScoreTest(M_lil, M_csc, queryString, diseaseName):
         results=search(M_lil, M_csc, queryString, top, AND=False)
 
         getScore(results,diseaseName)
+
+    print "TEST DONE"
+
+
+def runScoreTest2(M_lil, M_csc):
+
+    topList=[3000,1000,100]
+
+    diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
+                ("Cushing's syndrome","hypertension, adrenal, mass"),
+                ("Eosinophilic granuloma Hip", "lesion, older, child"),
+                ("Ehrlichiosis","fever, bilateral, thigh, pain, weakness"),
+                ("Neurofibromatosis type 1","multiple, spinal, tumours, skin, tumours"),
+                ("Pheochromocytoma","hypertension, papilledema, headache, renal, mass, cafe, au, lait"),
+                ("Creutzfeldt-Jakob disease","ataxia, confusion, insomnia, death"),
+                ("Churg-Strauss syndrome","Wheeze, weight, loss, ANCA, haemoptysis, haematuria"),
+                ("Dermatomyositis","myopathy, neoplasia, dysphagia, rash, periorbital, swelling"),
+                ("Cat Scratch Disease","renal, transplant, fever, cat, lymphadenopathy"),
+                ("TEN","bullous, skin, conditions, respiratory, failure, carbamazepine"),
+                ("MELAS","seizure, confusion, dysphasia, T2, lesions"),
+                ("Brugada","cardiac arrest sleep")]
+
+
+    for disease in diseaseList:
+
+        printout=''
+
+        for top in topList:
+            results=search(M_lil, M_csc, disease[1], top, AND=False)
+            
+            printout+=diseaseName+"\t\t"
+
+            for result in results:
+                if result[0]==diseaseName:
+                    printout+=top+":"+resultList.index(result)+"\t"+result[1]+"\t"
+        
+        print printout
 
     print "TEST DONE"
