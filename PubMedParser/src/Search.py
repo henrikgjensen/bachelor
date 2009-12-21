@@ -135,7 +135,7 @@ def runScoreTest2(M_lil, M_csc):
                 ("Cat Scratch Disease","renal, transplant, fever, cat, lymphadenopathy"),
                 ("TEN","bullous, skin, conditions, respiratory, failure, carbamazepine"),
                 ("MELAS","seizure, confusion, dysphasia, T2, lesions"),
-                ("Brugada","cardiac arrest sleep")]
+                ("Brugada syndrome","cardiac arrest sleep")]
 
 
     for disease in diseaseList:
