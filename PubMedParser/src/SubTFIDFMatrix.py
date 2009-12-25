@@ -9,7 +9,7 @@ _path = os.getenv("HOME")+"/"+"The_Hive"
 # Sub folder
 _subFolder = _path+"/"+"term_doc"
 # Matrices folder
-_matrixDir=_subfolder+"/"+"diseaseMatrices_stemmed"
+_matrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
 # Term-doc directory
 _termDocDir = _subFolder+"/"+"diseaseMatrices_tfidf_stemmed"
 
