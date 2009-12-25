@@ -23,20 +23,19 @@ if not os.path.isdir(_path+'/'+subFolder):
 ####################################################################
 
  # Hashes
-termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
-pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
-revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
+#termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash")
+#pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash")
+#revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 
 ####################################################################
 #### Use stopword-removed and Porter-stemmed (english) TermDoc: ####
 ####################################################################
 
  # Stemmed hashes
-#termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
-#pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash_stemmed")
-#revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
+termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
+pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash_stemmed")
+revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 
-####################################################################
 
 
 print "Hashes loaded"

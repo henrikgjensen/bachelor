@@ -45,6 +45,18 @@ _stemmer=False
 #_termDoc="TermDoc_stemmed"
 #_stemmer=True
 
+################################################################################
+#### Use stopword-removal, Porter-stemming (english), and TFIDF as filters: ####
+################################################################################
+
+ # Stemmed sub-matrix directory
+_subMatrixDir=_subFolder+"/"+"diseaseMatrices_tfidf_stemmed"
+ # Stemmed hashtable filenames:
+_termHash="termHash_stemmed"
+_pmidHash="pmidHash_stemmed"
+_termDoc="TermDoc_tfidf_stemmed"
+_stemmer=True
+
 ########################################################################
 
 

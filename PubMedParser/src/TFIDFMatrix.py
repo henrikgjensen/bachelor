@@ -19,15 +19,15 @@ _termDocDir = _subFolder+"/"+"termDoc"
 ####################################################################
 
  # TFIDF-matrix file name
-_tfidfName = "TFIDFMatrix"
+#_tfidfName = "TFIDFMatrix"
  # Vector-norm hash for then TFIDFMatrix
-_RLHash = "RLHash"
+#_RLHash = "RLHash"
  # Hash for the number of documents each term occur in
-_CLHash = "CLHash"
+#_CLHash = "CLHash"
  # Load the precomputed norm of each row-vector in the term-doc matrix.
-_vectorLength = IOmodule.pickleIn(_hashTablePath,_RLHash)
+#_vectorLength = IOmodule.pickleIn(_hashTablePath,_RLHash)
  # Load the precomputed length of each column in the term-doc matrix
-_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
+#_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
  
 
 ####################################################################
@@ -45,6 +45,21 @@ _termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
  # Load the precomputed length of each column in the stemmed term-doc matrix
 #_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 
+
+#######################################################################################
+#### Use stopword-removed, Porter-stemmed (english) and TFIDF-prefiltered TermDoc: ####
+#######################################################################################
+
+ # TFIDF-matrix file name
+_tfidfName = "TFIDFMatrix_tfidf_stemmed"
+ # Vector-norm hash for then TFIDFMatrix
+_RLHash = "RLHash_tfidf_stemmed"
+ # Hash for the number of documents each term occur in
+_CLHash = "CLHash_tfidf_stemmed"
+ # Load the precomputed norm of each row-vector in the stemmed term-doc matrix.
+_vectorLength = IOmodule.pickleIn(_hashTablePath,_RLHash)
+ # Load the precomputed length of each column in the stemmed term-doc matrix
+_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 
 ####################################################################
 
