@@ -127,7 +127,7 @@ def createRLHash(M_lil,filename,save_file=True):
     for pmidHash in range(1,M_lil.shape[0]):
         RLHash[pmidHash]=linalg.norm((M_lil.getrow(pmidHash).data[0])[1:])
         count+=1
-        print "Hashes created: "+str(count)
+        if save_file: print "Hashes created: "+str(count)
 
     if save_file:
         IOmodule.pickleOut(_hashTablesDir, filename, RLHash)
@@ -158,12 +158,12 @@ def createCLHash(M_coo,filename,save_file=True):
         termVectorLength=len((M_lil.getrow(termHash).nonzero()[0])[1:])
         CLHash[termHash]=termVectorLength
         count+=1
-        print "Hashes created: "+str(count)+". Length:"+str(termVectorLength)
+        if save_file: print "Hashes created: "+str(count)+". Length:"+str(termVectorLength)
 
-    t2=time.time()
-    print "Created and saved ColumnLength-hash in: "+str(t2-t1)
+    t2=time.time()    
 
     if save_file:
+        print "Created and saved ColumnLength-hash in: "+str(t2-t1)
         IOmodule.pickleOut(_hashTablesDir, filename, CLHash)
     else:
         return CLHash

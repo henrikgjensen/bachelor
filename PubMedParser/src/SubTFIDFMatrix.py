@@ -53,7 +53,7 @@ def _normalizeVectorLengths(M_lil,filename):
     Normalize the length of a sparse lil_matrix.
     """
 
-    vectorLength=SearchTermDoc.createRLHash(M_lil, None, _RLHash)
+    vectorLength=SearchTermDoc.createRLHash(M_lil, None, False)
 
     for row in range(1,M_lil.shape[0]):
 
