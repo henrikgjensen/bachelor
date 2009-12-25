@@ -81,12 +81,12 @@ def runTFIDF():
         subM_coo=IOmodule.readInTDM(_matrixDir,file)
 
         t1=time.time()
-        subTFIDFMatrix=_generateLogTFIDF(subM_coo,termSum)
+        subTFIDFMatrix=_generateLogTFIDF(subM_coo)
         t2=time.time()
         print "Generated log_TFIDF in "+str(t2-t1)
 
         t1=time.time()
-        _normalizeVectorLengths(subTFIDFMatrix,vectorLength,file)
+        _normalizeVectorLengths(subTFIDFMatrix,file)
         t2=time.time()
         print "Normalized vector lengths in "+str(t2-t1)
 
