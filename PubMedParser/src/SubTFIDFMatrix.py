@@ -14,7 +14,7 @@ _matrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
 _termDocDir = _subFolder+"/"+"diseaseMatrices_tfidf_stemmed"
 
 
-def _generateLogTFIDF(M_coo,termSum):
+def _generateLogTFIDF(M_coo):
 
     """
     Creates a Term-Frequency Inverse-Document-Frequency from a sparse coo_matrix,
@@ -23,18 +23,11 @@ def _generateLogTFIDF(M_coo,termSum):
     Returns a sparse lil_matrix to be used for vector-normalization.
     """
 
-    totalTime1=time.time()
+    termSum=SearchTermDoc.createCLHash(M_coo, None, False)
 
     numberOfDocs = float(M_coo.shape[0]-1)
 
-    print "Converting from coo to lil..."
-    t1=time.time()
     tfidfMatrix=M_coo.tolil()
-    t2=time.time()
-    print "Matrix converted to lil in",(t2-t1)
-
-
-    t1=time.time()
 
     for row in range(1,numberOfDocs+1):
 
@@ -51,36 +44,22 @@ def _generateLogTFIDF(M_coo,termSum):
 
             tfidfMatrix[row,col]=tf*idf
 
-        print "Row:",row
-
-    t2=time.time()
-    print "Total:"+str(t2-t1)
-
-    totalTime2=time.time()
-    print "Total time: "+str(totalTime2-totalTime1)
-
     return tfidfMatrix
 
 
-def _normalizeVectorLengths(M_lil,vectorLength,filename):
+def _normalizeVectorLengths(M_lil,filename):
 
     """
     Normalize the length of a sparse lil_matrix.
     """
 
-    t1=time.time()
-
-    SearchTermDoc.createRLHash(M_lil, _RLHash)
+    vectorLength=SearchTermDoc.createRLHash(M_lil, None, _RLHash)
 
     for row in range(1,M_lil.shape[0]):
 
         norm=vectorLength[row]
         for col in (M_lil.getrow(row).nonzero()[1])[1:]:
             M_lil[row,col]=(M_lil[row,col])/norm
-        print "Normalized:",row
-        
-    t2=time.time()
-    print "Total:"+str(t2-t1)
 
     # This is madness
     tfidfMatrix = M_lil
@@ -101,11 +80,14 @@ def runTFIDF():
 
         subM_coo=IOmodule.readInTDM(_matrixDir,file)
 
-        vectorLength=SearchTermDoc.createRLHash(M_lil, None, False)
-        termSum=SearchTermDoc.createCLHash(M_coo, None, False)
-
-        print "Generating log_TFIDF..."
+        t1=time.time()
         subTFIDFMatrix=_generateLogTFIDF(subM_coo,termSum)
-        print "Normalizing vector lengths..."
+        t2=time.time()
+        print "Generated log_TFIDF in "+str(t2-t1)
+
+        t1=time.time()
         _normalizeVectorLengths(subTFIDFMatrix,vectorLength,file)
-        print "Done."
+        t2=time.time()
+        print "Normalized vector lengths in "+str(t2-t1)
+
+        print "Done with: "+file
