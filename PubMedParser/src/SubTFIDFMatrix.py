@@ -78,6 +78,8 @@ def runTFIDF():
 
     for file in files:
 
+        file=file[:-4]
+
         subM_coo=IOmodule.readInTDM(_matrixDir,file)
 
         t1=time.time()
@@ -90,4 +92,4 @@ def runTFIDF():
         t2=time.time()
         print "Normalized vector lengths in "+str(t2-t1)
 
-        print "Done with: "+file
+        print "Done with: "+file+"\n"
