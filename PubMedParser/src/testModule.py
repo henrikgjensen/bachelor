@@ -307,12 +307,21 @@ def makehist():
 from scipy import linalg, mat
 def svd(M_coo):
 
+    t1=time.time()
     X = M_coo.todense()
+    t2=time.time()
+    print str(t2-t1)
 
+    t1=time.time()
     X = X[1:,1:]
+    t2=time.time()
+    print str(t2-t1)
 
+    t1=time.time()
     U, S, Vt = linalg.svd(X)
-
+    t2=time.time()
+    print str(t2-t1)
+    
     M, N = X.shape
 
     Sig = mat(linalg.diagsvd(S, M, N))
