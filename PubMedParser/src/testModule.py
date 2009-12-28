@@ -248,14 +248,29 @@ import math
 def makehist():
 
 
-    diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    
+
+    # TEST 1 : Found on our own from orpha.net#
+
+    diseases=['Appar','Rubin','Aagen','Aase','Achon','Acalv','Acrod','Acrom','Bilia','Bronc','Chole']
 
     # Not stemmed
-    x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
+    x1 = [4,725,75,37,38,85,68,1651,1,23,80]
     # Stemmed
-    x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
+    x2 = [3,149,33,71,10,63,27,597,6,31,56]
     # Stemmed and tfidf-preprocessed
-    x3 = [14,7,1152,1011,277,49,42,3,16,0,1,13,4]
+    x3 = [2,102,33,28,14,54,46,306,2,13,203]
+
+    # TEST 2 : From BMJ #
+
+    # diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+
+    # Not stemmed
+    #x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
+    # Stemmed
+    #x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
+    # Stemmed and tfidf-preprocessed
+    #x3 = [14,7,1152,1011,277,49,42,3,16,0,1,13,4]
 
     x1_log=map(lambda x: math.log(x+1),x1)
     x2_log=map(lambda x: math.log(x+1),x2)
@@ -287,3 +302,22 @@ def makehist():
     title('Score test')
 
     show()
+
+
+from scipy import linalg, mat
+def keywordExtractor(M_coo):
+
+    X = M_coo.todense()
+
+    X = X[1:,1:]
+
+    U, S, Vt = linalg.svd(X)
+
+    M, N = X.shape
+
+    Sig = mat(linalg.diagsvd(S, M, N))
+    U, Vt = mat(U), mat(Vt)
+    
+    return U,Sig,Vt
+
+

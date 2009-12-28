@@ -174,7 +174,6 @@ def runScoreTest3(M_lil, M_csc):
                 ('Acalvaria','missing scalp and flat bones over an area of the cranial vault'),
                 ('Acrodysostosis','abnormally short and malformed bones of the hands and feet (peripheral dysostosis), nasal hypoplasia and mental retardation'),
                 ('Acromegaly','progressive somatic disfigurement (face and extremities) and systemic manifestations'),
-                ('Ballard syndrome','hypoplasia of the distal phalanges of the ulnar side of the hand and shortening of metacarpals'),
                 ('Biliary atresia','biliary obstruction of unknown origin, neonatal period'),
                 ('Bronchiolitis obliterans with obstructive pulmonary disease','inflammatory and fibrosing thickening of bronchiolar walls, airflow obstruction'),
                 ('Cholera','severe diarrhea and vomiting')]
