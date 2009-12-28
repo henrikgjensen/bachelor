@@ -60,7 +60,7 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     # Stem the information
     if _stemmer:
         queryString=FilterInterface.porterStemmer(queryString)
-        print 'test'
+        print queryString
 
     # CHOOSE HEURISTIC:
     # Search-heuristic used to retrieve the list of results
