@@ -59,8 +59,11 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     # OPTIONAL:
     # Stem the information
     if _stemmer:
+        # Get the regex pattern that sanitizeses information and sanitize it
+        sanitizer = TextCleaner.sanitizeString()
+        queryString=sanitizer.sub(' ', queryString)
+        # Stem the information
         queryString=FilterInterface.porterStemmer(queryString)
-        print queryString
 
     # CHOOSE HEURISTIC:
     # Search-heuristic used to retrieve the list of results
