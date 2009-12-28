@@ -253,20 +253,8 @@ def makehist():
     # Stemmed and tfidf-preprocessed
     x3 = [14,7,1152,1011,277,49,42,3,16,0,1,13,4]
 
-    # the histogram of the data
-    n, bins, patches = hist(x, 50, normed=1)
-    setp(patches, 'facecolor', 'g', 'alpha', 0.75)
 
-    # add a 'best fit' line
-    y = normpdf(bins, mu, sigma)
-    l = plot(bins, y, 'r--')
-    setp(l, 'linewidth', 1)
+    bar(arrange(len(x2)), x2, color='red', width=0.2, label='x2')
 
-    xlabel('Smarts')
-    ylabel('Probability')
-    title(r'$\mathrm{Histogram\ of\ IQ:}\ \mu=100,\ \sigma=15$')
-    axis([40, 160, 0, 0.03])
-    grid(True)
-
-    #savefig('histogram_demo',dpi=72)
-    show()
+    bar(arrange(len(x3)), x3, color='blue', width=0.2, label='x3')
+    
