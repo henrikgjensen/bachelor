@@ -243,7 +243,7 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
     
     """
 
-from pylab import *
+#from pylab import *
 import math
 def makehist():
 
