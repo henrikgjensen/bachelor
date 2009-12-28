@@ -251,7 +251,7 @@ def makehist():
     diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
 
     # Stemmed
-    x2 = [36,5,580,1134,39,77,570,21,35,47,196,137,3]
+    x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
     # Stemmed and tfidf-preprocessed
     x3 = [14,7,1152,1011,277,49,42,3,16,0,1,13,4]
 
