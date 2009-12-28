@@ -186,7 +186,10 @@ def runScoreTest3(M_lil, M_csc):
         printout+=str(disease[0])[0:5]+"\t\t\t"
 
         for top in topList:
-            results=search(M_lil, M_csc, disease[1], top, AND=False)
+
+            symptoms=FilterInterface.stopwordRemover(disease[1])
+
+            results=search(M_lil, M_csc, symptoms, top, AND=False)
 
             for result in results:
                 if result[0]==disease[0]:
