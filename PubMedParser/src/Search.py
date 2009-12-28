@@ -92,19 +92,19 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     return resultList
 
-def getScore(resultList,diseaseName):
-
-    Found=False
-
-    for result in resultList:
-        if result[0]==diseaseName:
-            print "<<<<<<<",diseaseName,">>>>>>>"
-            print "Scored",resultList.index(result),"out of",len(resultList)
-            print "Cosine score:",result[1]
-            Found=True
-
-    if not Found: print "Did not locate the disease"
-        
+#def getScore(resultList,diseaseName):
+#
+#    Found=False
+#
+#    for result in resultList:
+#        if result[0]==diseaseName:
+#            print "<<<<<<<",diseaseName,">>>>>>>"
+#            print "Scored",resultList.index(result),"out of",len(resultList)
+#            print "Cosine score:",result[1]
+#            Found=True
+#
+#    if not Found: print "Did not locate the disease"
+#        
 
 def runScoreTest1(M_lil, M_csc, queryString, diseaseName):
 
