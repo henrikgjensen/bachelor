@@ -13,4 +13,4 @@ def removeStopwords(string, stopWordList=stopwords.words("english")):
     stop word corpus.
     """
 
-    return ' '.join([word.strip().lower() for word in string2.split(' ') if word not in stopwords.words() and word != '']).strip()
+    return ' '.join([word.strip().lower() for word in string.split(' ') if word not in stopwords.words() and word != '']).strip()

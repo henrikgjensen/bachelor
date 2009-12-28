@@ -36,8 +36,6 @@ revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 #pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash_stemmed")
 #revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 
-####################################################################
-
 
 print "Hashes loaded"
 
@@ -79,7 +77,7 @@ def extractRowIndices(M_csc,searchString):
             print "Did not locate",term
             continue
         hashedSearchTerms.append(termHash)
-    print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
+    #print "Search vector:",str(searchVector),". Corresponding hash:",str(hashedSearchTerms)
 
     # Extract all the indices of the non-zero elements in the columns.
     colList=[]
@@ -87,7 +85,7 @@ def extractRowIndices(M_csc,searchString):
         colList.append((M_csc.getcol(termHash).nonzero()[0])[:-1])
 
     t2=time.time()
-    print "Found and returned",len(colList),"column vector(s) in: "+str(t2-t1)
+    #print "Found and returned",len(colList),"column vector(s) in: "+str(t2-t1)
 
     return colList, hashedSearchTerms
 
@@ -111,7 +109,7 @@ def extractColVectors(M_csc, termHashes):
     return colList
 
 
-def createRLHash(M_lil,filename):
+def createRLHash(M_lil,filename,save_file=True):
 
     """
     Precompute and save the norm of each row vector in the term-doc matrix.
@@ -127,15 +125,18 @@ def createRLHash(M_lil,filename):
     for pmidHash in range(1,M_lil.shape[0]):
         RLHash[pmidHash]=linalg.norm((M_lil.getrow(pmidHash).data[0])[1:])
         count+=1
-        print "Hashes created: "+str(count)
+        if save_file: print "Hashes created: "+str(count)
 
-    IOmodule.pickleOut(_hashTablesDir, filename, RLHash)
+    if save_file:
+        IOmodule.pickleOut(_hashTablesDir, filename, RLHash)
+    else:
+        return RLHash
 
     t2=time.time()
     print "Created and saved RowLength-hash in: "+str(t2-t1)
 
 
-def createCLHash(M_coo,filename):
+def createCLHash(M_coo,filename,save_file=True):
 
     """
     Precompute and save the length of each column vector in the term-doc matrix.
@@ -155,13 +156,17 @@ def createCLHash(M_coo,filename):
         termVectorLength=len((M_lil.getrow(termHash).nonzero()[0])[1:])
         CLHash[termHash]=termVectorLength
         count+=1
-        print "Hashes created: "+str(count)+". Length:"+str(termVectorLength)
+        if save_file: print "Hashes created: "+str(count)+". Length:"+str(termVectorLength)
 
-    IOmodule.pickleOut(_hashTablesDir, filename, CLHash)
+    t2=time.time()    
 
-    t2=time.time()
-    print "Created and saved ColumnLength-hash in: "+str(t2-t1)
+    if save_file:
+        print "Created and saved ColumnLength-hash in: "+str(t2-t1)
+        IOmodule.pickleOut(_hashTablesDir, filename, CLHash)
+    else:
+        return CLHash
 
+    
 
 def getPMIDList(hashedPMIDList):
 
@@ -175,3 +180,11 @@ def getPMIDList(hashedPMIDList):
         pmidList.append(revPmidHashTable[hashedPMID])
 
     return pmidList
+
+def getPMID(hashedPMID):
+
+    """
+
+    """
+
+    return revPmidHashTable[hashedPMID]

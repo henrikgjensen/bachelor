@@ -18,6 +18,8 @@ _medlineDir=_mainFolder+"/data_acquisition/"+"medline_records"
 _termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
 _hashTablesDir=_subFolder+"/"+"hashTables"
+# Disease label hash
+_labelHash="labelHash"
 
 ########################################################################
 #### Use only stopword-removal as filter: ##############################
@@ -36,14 +38,12 @@ _stemmer=False
 ########################################################################
 
  # Stemmed sub-matrix directory
-#_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
+_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
  # Stemmed hashtable filenames:
-#_termHash="termHash_stemmed"
-#_pmidHash="pmidHash_stemmed"
-#_termDoc="TermDoc_stemmed"
-#_stemmer=True
-
-########################################################################
+_termHash="termHash_stemmed"
+_pmidHash="pmidHash_stemmed"
+_termDoc="TermDoc_stemmed"
+_stemmer=True
 
 
 # Create main folder if it doesn't already exist.
@@ -200,7 +200,7 @@ def medlineDir2MatrixDir(m=501, n=20000):
         print str(counter),"matrices made. Total number of terms:",len(M.getrow(0).nonzero()[0])
 
 
-def createHashes():
+def createTermAndPmidHashes():
 
     """
     This function creates two hash tables of the PMID's and terms to be used
@@ -280,6 +280,42 @@ def createHashes():
     return termHashTable, pmidHashTable
 
 
+def createDiseaseLabelHash():
+
+    """
+
+    """
+
+    t1 = time.time()
+
+    files = sorted([f for f in os.listdir(_subMatrixDir+"/") if os.path.isfile(_subMatrixDir+"/" + f)])
+
+    labelHash={}
+
+    fileCount=0
+    for file in files:
+        subMatrix=IOmodule.readInTDM(_subMatrixDir, file)
+        colMatrix=subMatrix.tocsc()
+
+        pmids=colMatrix.getcol(0)[1:].data
+
+        for pmid in pmids:
+            try:
+                labelHash[pmid].append(file[:-4])
+            except:
+                labelHash[pmid]=[]
+                labelHash[pmid].append(file[:-4])
+            
+        fileCount+=1
+        print "Remaining:",(len(files)-fileCount),"Completed",file[:-4]
+
+    t2 = time.time()
+
+    print 'Created disease label hash in:',str(t2-t1)
+
+    IOmodule.pickleOut(_hashTablesDir, _labelHash, labelHash)
+
+
 def createTermDoc(refreshHash=False):
 
     """
@@ -294,7 +330,7 @@ def createTermDoc(refreshHash=False):
     t1 = time.time()
 
     if refreshHash:
-        createHashes()
+        createTermAndPmidHashes()
 
     files = sorted([f for f in os.listdir(_subMatrixDir+"/") if os.path.isfile(_subMatrixDir+"/" + f)])
     

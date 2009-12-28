@@ -104,3 +104,16 @@ def readInTDM(dirname, filename):
     print "Matrix loaded in "+str(t2-t1)
 
     return A
+
+def getSortedFilelist(dir, startIndex=None, stopIndex=None):
+
+    """
+    Returns a sorted list of files, from dir. It allow for a start and
+    stop index to be provided.
+
+    E.g. only want first 10 file, just call getSortedFilelist(dir, 0, 10)
+    """
+    
+    files=sorted([f for f in os.listdir(dir) if os.path.isfile(dir+f)])[startIndex:stopIndex]
+
+    return files
