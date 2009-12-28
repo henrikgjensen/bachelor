@@ -346,8 +346,11 @@ def semanticSpace(U,Sig,Vt,reduce=5):
             n=bottomUp
 
     U=U[:,:-n]
+    print str(U.shape)
     Sig=Sig[:-n,:-n]
+    print str(Sig.shape)
     Vt=Vt[:-n,:]
+    print str(Vt.shape)
 
     U=sparse.csc_matrix(U)
     Sig=sparse.csc_matrix(Sig)
