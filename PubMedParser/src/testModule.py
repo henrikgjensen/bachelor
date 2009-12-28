@@ -330,7 +330,7 @@ def semanticSpace(U,Sig,Vt,reduce=5):
 
     Sig_csc=sparse.csc_matrix(Sig)
     eigSum = Sig_csc.sum()
-    diaLen = Sig_csc.getnnz()
+    diagLen = Sig_csc.getnnz()
 
     percentReduce=(float(eigSum)/100)*reduce
 
