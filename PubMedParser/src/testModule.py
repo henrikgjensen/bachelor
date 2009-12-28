@@ -304,41 +304,56 @@ def makehist():
     show()
 
 
-from scipy import linalg, mat
+from scipy import linalg, mat, sparse
 def svd(M_coo):
 
     t1=time.time()
+
     X = M_coo.todense()
-    t2=time.time()
-    print str(t2-t1)
 
-    t1=time.time()
     X = X[1:,1:]
-    t2=time.time()
-    print str(t2-t1)
 
-    t1=time.time()
     U, S, Vt = linalg.svd(X)
-    t2=time.time()
-    print str(t2-t1)
-    
+
     M, N = X.shape
 
     Sig = mat(linalg.diagsvd(S, M, N))
     U, Vt = mat(U), mat(Vt)
-    
+
+    t2=time.time()
+    print str(t2-t1)
+
     return U,Sig,Vt
 
 
-def reduce(U,Sig,Vt):
+def semanticSpace(U,Sig,Vt,reduce=5):
 
-    diagLen = Sig.shape[1]
+    Sig_csc=sparse.csc_matrix(Sig)
+    eigSum = Sig_csc.sum()
+    diaLen = Sig_csc.getnnz()
 
+    percentReduce=(float(eigSum)/100)*reduce
+
+    counter=0
+    n=0
     for i in range(diagLen):
 
-        fivepercent=1
+        bottomUp=diaLen-i
 
-        S[diaLen-i,diaLen-i]
+        counter+=S[bottomUp,bottomUp]
+        
+        if counter >=percentReduce:
+            n=bottomUp
+
+    U=U[:,:-bottomUp]
+    Sig=Sig[:-bottumUp,:-bottomUp]
+    Vt=Vt[:-bottomUp,:]
+
+    U=sparse.csc_matrix(U)
+    Sig=sparse.csc_matrix(Sig)
+    Vt=sparse.csc_matrix(Vt)
+
+    return U*Sig*Vt
 
 
 def testspeed(csc,csr,lil,dense):
