@@ -5,6 +5,7 @@ import SearchTermDoc
 import FilterInterface
 import IOmodule
 import os
+import TextCleaner
 
 # Main folder
 _path = os.getenv("HOME")+"/"+"The_Hive"
