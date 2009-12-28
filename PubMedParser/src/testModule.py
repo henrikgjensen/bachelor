@@ -338,7 +338,7 @@ def semanticSpace(U,Sig,Vt,reduce=5):
     n=0
     for i in range(diagLen):
 
-        bottomUp=diaLen-i
+        bottomUp=diagLen-i
 
         counter+=S[bottomUp,bottomUp]
         
