@@ -52,8 +52,8 @@ _stemmer=False
  # Stemmed sub-matrix directory
 _subMatrixDir=_subFolder+"/"+"diseaseMatrices_tfidf_stemmed"
  # Stemmed hashtable filenames:
-_termHash="termHash_stemmed"
-_pmidHash="pmidHash_stemmed"
+_termHash="termHash_tfidf_stemmed"
+_pmidHash="pmidHash_tfidf_stemmed"
 _termDoc="TermDoc_tfidf_stemmed"
 _stemmer=True
 
