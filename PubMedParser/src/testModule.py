@@ -340,14 +340,14 @@ def semanticSpace(U,Sig,Vt,reduce=5):
 
         bottomUp=diagLen-i
 
-        counter+=S[bottomUp,bottomUp]
+        counter+=Sig[bottomUp,bottomUp]
         
         if counter >=percentReduce:
             n=bottomUp
 
-    U=U[:,:-bottomUp]
-    Sig=Sig[:-bottumUp,:-bottomUp]
-    Vt=Vt[:-bottomUp,:]
+    U=U[:,:-n]
+    Sig=Sig[:-n,:-n]
+    Vt=Vt[:-n,:]
 
     U=sparse.csc_matrix(U)
     Sig=sparse.csc_matrix(Sig)
