@@ -1,6 +1,7 @@
 import os
 import numpy as np
 from matplotlib import pylab as pl
+import math
 
 def countRecordfield(directory,field):
 
@@ -57,6 +58,8 @@ def countFields(directory, fields):
         counter=0
         pmidCounter=0
         emptyCounter=0
+        noDescription=0
+
         for f in files:
             
             fd = open(directory+f,'r')
@@ -67,10 +70,14 @@ def countFields(directory, fields):
             
             medlineRecords=diseaseDic['records']
 
+            descriptionField=diseaseDic['description']
+
+            if descriptionField== '':
+                noDescription+=1
+
             if medlineRecords == []:
                 print "Found empty record"
                 emptyCounter+=1
-#                continue
 
             for record in medlineRecords:
                 pmidCounter+=1
@@ -82,7 +89,7 @@ def countFields(directory, fields):
             counter+=1
             print "Files remaining:",(len(files)-counter)
                 
-        return fieldSum,{'pmid count': pmidCounter},{'empty count': emptyCounter}
+        return fieldSum,{'pmid count': pmidCounter},{'empty diseases': emptyCounter}
 
 def pmidDuplicateCounter(directory, number=None):
 
@@ -109,20 +116,35 @@ def pmidDuplicateCounter(directory, number=None):
                 
         return pmidCount
 
-def makeHistogram(dictionaryToMakeHistogramFrom, numberOfBins=100):
+def makeHistogram(data, numberOfBins=None):
 
     """
-    Recieves a list of the form: { 'pmid_1': count_1, ..., 'pmid_n': count_n }
+    Recieves a list of the form: [1,1,2,3,5,2,6,7,3,2,1,2,3,...,]
 
-    Makes a histogram of the different counts.
+    Makes a histogram of the different counts. This is very screwed as
+    we have some 602205 'unique' pmids with the count 1, and all the
+    uothers are insignificant in relation to that number.
     """
 
     # Need to transform the dictionary into a list of single values
-    data = [v for k,v in dictionaryToMakeHistogramFrom.items()]
+#    data = [v for k,v in dictionaryToMakeHistogramFrom.items()]
     
-#     dataOne = get_data_one()
-#     dataTwo = get_data_two()
-    
+    hN = pl.hist(data, bins=numberOfBins)
+
+    xmin = min(hN[2])
+    xmin = math.floor(xmin)
+
+    xmax = max(hN[2])
+    xmax = math.ceil(xmax)
+
+    range = xmax - xmin
+
+    delta = 0.0 * range
+    print "Delta is",delta
+
+    pl.xlim([xmin - delta, xmax + delta])
+
+    pl.show()    
 #     hN = pl.hist(dataTwo, orientation='horizontal', normed=0, rwidth=0.8, label='ONE')
 #     hS = pl.hist(dataOne, bins=hN[1], orientation='horizontal', normed=0, 
 #                  rwidth=0.8, label='TWO')
@@ -147,5 +169,4 @@ def makeHistogram(dictionaryToMakeHistogramFrom, numberOfBins=100):
 #     pl.axvline(0.0)
 #     pl.show()
 
-    return data
-
+#    return data
