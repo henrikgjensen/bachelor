@@ -317,9 +317,6 @@ def svd(M_coo):
 
     Sig = mat(linalg.diagsvd(S, M, N))
     U, Vt = mat(U), mat(Vt)
-
-    for eigV in Sig:
-
     
     return U,Sig,Vt
 
@@ -330,7 +327,7 @@ def reduce(U,Sig,Vt):
 
     for i in range(diagLen):
 
-        fivepercent=
+        fivepercent=1
 
         S[diaLen-i,diaLen-i]
 
