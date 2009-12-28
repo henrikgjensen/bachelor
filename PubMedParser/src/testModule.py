@@ -305,7 +305,7 @@ def makehist():
 
 
 from scipy import linalg, mat
-def keywordExtractor(M_coo):
+def svd(M_coo):
 
     X = M_coo.todense()
 
@@ -317,7 +317,20 @@ def keywordExtractor(M_coo):
 
     Sig = mat(linalg.diagsvd(S, M, N))
     U, Vt = mat(U), mat(Vt)
+
+    for eigV in Sig:
+
     
     return U,Sig,Vt
 
+
+def reduce(U,Sig,Vt):
+
+    diagLen = Sig.shape[1]
+
+    for i in range(diagLen):
+
+        fivepercent=
+
+        S[diaLen-i,diaLen-i]
 
