@@ -344,8 +344,9 @@ def semanticSpace(U,Sig,Vt,reduce=5):
         print counter
         print percentReduce
         
-        if counter >=percentReduce:
+        if counter >= percentReduce:
             n=bottomUp
+            break
 
     print n
     U=U[:,:-n]
