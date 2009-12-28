@@ -341,8 +341,6 @@ def semanticSpace(U,Sig,Vt,reduce=5):
         bottomUp=diagLen-i
 
         counter+=Sig[bottomUp,bottomUp]
-        print counter
-        print percentReduce
         
         if counter >= percentReduce:
             n=bottomUp
