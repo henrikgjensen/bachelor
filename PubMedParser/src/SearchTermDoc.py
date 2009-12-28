@@ -41,8 +41,8 @@ if not os.path.isdir(_path+'/'+subFolder):
 ########################################################################################
 
  # Stemmed tfidf hashes
-termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_tfidf_stemmed")
-pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash_tfidf_stemmed")
+termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
+pmidHashTable=IOmodule.pickleIn(_hashTablesDir, "pmidHash_stemmed")
 revPmidHashTable=dict(zip(pmidHashTable.values(),pmidHashTable.keys()))
 
 ####################################################################

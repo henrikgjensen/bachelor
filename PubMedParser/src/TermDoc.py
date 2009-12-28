@@ -38,26 +38,12 @@ _stemmer=False
 ########################################################################
 
  # Stemmed sub-matrix directory
-#_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
+_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
  # Stemmed hashtable filenames:
-#_termHash="termHash_stemmed"
-#_pmidHash="pmidHash_stemmed"
-#_termDoc="TermDoc_stemmed"
-#_stemmer=True
-
-################################################################################
-#### Use stopword-removal, Porter-stemming (english), and TFIDF as filters: ####
-################################################################################
-
- # Stemmed sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"diseaseMatrices_tfidf_stemmed"
- # Stemmed hashtable filenames:
-_termHash="termHash_tfidf_stemmed"
-_pmidHash="pmidHash_tfidf_stemmed"
-_termDoc="TermDoc_tfidf_stemmed"
+_termHash="termHash_stemmed"
+_pmidHash="pmidHash_stemmed"
+_termDoc="TermDoc_stemmed"
 _stemmer=True
-
-########################################################################
 
 
 # Create main folder if it doesn't already exist.
