@@ -63,13 +63,13 @@ def sim_pearson(v1, v2, output=False):
         print simIndex
 
     # Number of sim non zero
-    n = len(simIndex)
+    n = float(len(simIndex))
 
     if output:
         print "n =", n
 
     # If n is 0, no need to work anymore
-    if n == 0: return 0
+    if n == 0: return 0.0
 
     # Sum up similar
     sum1 = 0.0
@@ -109,12 +109,12 @@ def sim_pearson(v1, v2, output=False):
         print 'num =', num
         print 'den =', den
 
-    if den == 0: return 0
+    if den == 0: return 0.0
 
     r = num / den
 
     # Return pearsons correlations coefficient
-    return r
+    return float(r)
 
 def cosine_measure(v1,v2):
 

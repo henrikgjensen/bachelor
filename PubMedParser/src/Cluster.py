@@ -5,8 +5,12 @@ from math import sqrt, pow, fabs
 import random
 from PIL import Image, ImageDraw
 import time
+from __future__ import division
+
 
 def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
+
+    tiny_value = 0.0001
 
     n = tdm.shape[0]
 
@@ -19,8 +23,10 @@ def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
     realdist=[]
 
     for i in range(0,n):
-        for j in range(i+1,n):
-            realdist.append(distance(tdm.getrow(i)[0,1:],tdm.getrow(j)[0,1:]))
+        # Should be a slight optimazation
+        row_i = tdm.getrow(i)[0,1:]
+        for j in range(0,n):
+            realdist.append(distance(row_i,tdm.getrow(j)[0,1:]))
 
 #    realdist = [[distance(tdm.getrow(i)[0,1:], tdm.getrow(j)[0,1:])
 #                 for j in range(0, n)]
@@ -51,7 +57,7 @@ def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
     for m in range(0, 1500):
         # Find projected distance
         for i in range(0,n):
-            for j in range(i+1,n):
+            for j in range(0,n):
                 fakedist[i][j] = sqrt(sum([pow(loc[i][x] - loc[j][x], 2) for x in range(len(loc[i]))]))
 
         # Move the points around
@@ -59,13 +65,11 @@ def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
 
         totalerror=0
         for k in range(0,n):
-            for j in range(i+1,n):
+            for j in range(0,n):
                 if j == k: continue
-                # The error is percent difference between the distances
-                if realdist[j][k] == 0.0:
-                    print 'realdist zero'
-                
-                errorterm = (fakedist[j][k] - realdist[j][k]) / realdist[j][k]
+                # The error is percent difference between the
+                # distances, plus a tiny value to avoid division by zero
+                errorterm = (fakedist[j][k] - realdist[j][k]) / realdist[j][k] + tiny_value
 
                 # Each point needs to be moved away from or towards the other
                 # point in proportion to how much error it has
@@ -75,7 +79,7 @@ def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
             # Keep track of the total error
                 totalerror+=abs(errorterm)
                 
-        print totalerror
+        print totalerror, 
                 
         # If the answer got worse by moving the points, we are done
         if lasterror and lasterror < totalerror: break
@@ -86,6 +90,7 @@ def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
             loc[k][0] -= rate * grad[k][0]
             loc[k][1] -= rate * grad[k][1]
 
+    print
     print 'Done finding projected distances and moving points around.'
 
     if time_log:
