@@ -336,7 +336,7 @@ def semanticSpace(U,Sig,Vt,reduce=5):
 
     counter=0
     n=0
-    for i in range(diagLen):
+    for i in range(1,diagLen):
 
         bottomUp=diagLen-i
 
