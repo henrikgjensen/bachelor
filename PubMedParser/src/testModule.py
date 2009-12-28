@@ -150,12 +150,12 @@ import os
 
 
 # Main folder
-_path = os.getenv("HOME")+"/"+"The_Hive"
+#_path = os.getenv("HOME")+"/"+"The_Hive"
 # Hashtable directory
-_hashTablePath = _path+"/"+"term_doc/hashTables"
+#_hashTablePath = _path+"/"+"term_doc/hashTables"
 
 # Load the precomputed length of each column-vector in the term-doc matrix.
-_vectorLength = IOmodule.pickleIn(_hashTablePath,'CLHash')
+#_vectorLength = IOmodule.pickleIn(_hashTablePath,'CLHash')
 
 
 def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
@@ -247,26 +247,23 @@ from pylab import *
 
 def makehist():
 
-    
+
+    diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+
     # Stemmed
-    x2 = [36,5,580,1134,39,77,570,21,35,47,196,137,3]
+    x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
     # Stemmed and tfidf-preprocessed
     x3 = [14,7,1152,1011,277,49,42,3,16,0,1,13,4]
 
-    # the histogram of the data
-    n, bins, patches = hist(x, 50, normed=1)
-    setp(patches, 'facecolor', 'g', 'alpha', 0.75)
 
-    # add a 'best fit' line
-    y = normpdf(bins, mu, sigma)
-    l = plot(bins, y, 'r--')
-    setp(l, 'linewidth', 1)
+    bar(arange(len(x2)), x2, color='red', width=0.2, label='x2')
 
-    xlabel('Smarts')
-    ylabel('Probability')
-    title(r'$\mathrm{Histogram\ of\ IQ:}\ \mu=100,\ \sigma=15$')
-    axis([40, 160, 0, 0.03])
-    grid(True)
+    bar(arange(len(x3))+0.2, x3, color='blue', width=0.2, label='x3')
 
-    #savefig('histogram_demo',dpi=72)
+    xticks(range(len(x3)),diseases)
+
+    legend()
+    grid('.')
+    title('Score test')
+
     show()
