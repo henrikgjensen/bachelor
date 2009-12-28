@@ -340,3 +340,25 @@ def reduce(U,Sig,Vt):
 
         S[diaLen-i,diaLen-i]
 
+
+def testspeed(csc,csr,lil,dense):
+
+    t1=time.time()
+    csc*csc.tranpose()
+    t2=time.time()
+    print str(t2-t1)
+
+    t1=time.time()
+    csr*csr.tranpose()
+    t2=time.time()
+    print str(t2-t1)
+
+    t1=time.time()
+    lil*lil.transpose()
+    t2=time.time()
+    print str(t2-t1)
+
+    t1=time.time()
+    dense*dense.transpose()
+    t2=time.time()
+    print str(t2-t1)
