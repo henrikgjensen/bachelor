@@ -127,7 +127,7 @@ def runScoreTest1(M_lil, M_csc, queryString, diseaseName):
 
 def runScoreTest2(M_lil, M_csc):
 
-    topList=[3000,1000,100]
+    topList=[3000]
 
     diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
                 ("Cushing's syndrome","hypertension, adrenal, mass"),
@@ -160,3 +160,39 @@ def runScoreTest2(M_lil, M_csc):
         print printout
 
     print "TEST DONE"
+
+
+def runScoreTest3(M_lil, M_csc):
+
+    topList=[3000]
+
+    diseaseList=[('Apparent mineralocorticoid excess','early-onset, severe hypertension, associated, low renin levels, hypoaldosteronism'),
+                ('Rubinstein-Taybi syndrome','congenital anomalies, intellectual deficit, behavioural characteristics'),
+                ('Aagenaes syndrome','chronic severe lymphoedema, severe neonatal cholestasis, lessens during early childhood and becomes episodic'),
+                ('Aase Smith syndrome','congenital malformations: hydrocephalus, cleft palate, severe joint contractures'),
+                ('Achondroplasia','short limbs, hyperlordosis, short hands, macrocephaly, high forehead and saddle nose'),
+                ('Acalvaria','missing scalp and flat bones over an area of the cranial vault'),
+                ('Acrodysostosis','abnormally short and malformed bones of the hands and feet (peripheral dysostosis), nasal hypoplasia and mental retardation'),
+                ('Acromegaly','progressive somatic disfigurement (face and extremities) and systemic manifestations'),
+                ('Ballard syndrome','hypoplasia of the distal phalanges of the ulnar side of the hand and shortening of metacarpals'),
+                ('Biliary atresia','biliary obstruction of unknown origin, neonatal period'),
+                ('Bronchiolitis obliterans with obstructive pulmonary disease','inflammatory and fibrosing thickening of bronchiolar walls, airflow obstruction'),
+                ('Cholera','severe diarrhea and vomiting')]
+
+    for disease in diseaseList:
+
+        printout=''
+
+        printout+=str(disease[0])[0:5]+"\t\t\t"
+
+        for top in topList:
+            results=search(M_lil, M_csc, disease[1], top, AND=False)
+
+            for result in results:
+                if result[0]==disease[0]:
+                    printout+="("+str(top)+"\t"+str(results.index(result))+"\t"+str(result[1])[0:5]+")\t\t"
+
+        print printout
+
+    print "TEST DONE"
+

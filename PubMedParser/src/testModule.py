@@ -244,23 +244,43 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
     """
 
 from pylab import *
-
+import math
 def makehist():
 
 
     diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
 
+    # Not stemmed
+    x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
     # Stemmed
     x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
     # Stemmed and tfidf-preprocessed
     x3 = [14,7,1152,1011,277,49,42,3,16,0,1,13,4]
 
+    x1_log=map(lambda x: math.log(x+1),x1)
+    x2_log=map(lambda x: math.log(x+1),x2)
+    x3_log=map(lambda x: math.log(x+1),x3)
 
-    bar(arange(len(x2)), x2, color='red', width=0.2, label='x2')
 
-    bar(arange(len(x3))+0.2, x3, color='blue', width=0.2, label='x3')
+    xlen=len(x1)*6
+    step=6
 
-    xticks(range(len(x3)),diseases)
+    bar(arange(0,xlen,step), x1_log, color='green', width=1, label='Not stemmed')
+    bar(arange(1,xlen,step), x2_log, color='red', width=1, label='Stemmed')
+    bar(arange(2,xlen,step), x3_log, color='blue', width=1, label='TFIDF-preprocessed and stemmed')
+
+    x=linspace(1,xlen)
+    y1=mean(x1_log)
+    print y1
+    y2=mean(x2_log)
+    print y2
+    y3=mean(x3_log)
+    print y3
+    plot([0,xlen],[y1,y1],'g-',linewidth=2)
+    plot([0,xlen],[y2,y2],'r-',linewidth=2)
+    plot([0,xlen],[y3,y3],'b-',linewidth=2)
+
+    xticks(range(1,len(x3)*6,6),diseases)
 
     legend()
     grid('.')
