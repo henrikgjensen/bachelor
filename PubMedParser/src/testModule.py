@@ -344,12 +344,12 @@ def reduce(U,Sig,Vt):
 def testspeed(csc,csr,lil,dense):
 
     t1=time.time()
-    csc*csc.tranpose()
+    csc*csc.transpose()
     t2=time.time()
     print str(t2-t1)
 
     t1=time.time()
-    csr*csr.tranpose()
+    csr*csr.transpose()
     t2=time.time()
     print str(t2-t1)
 
