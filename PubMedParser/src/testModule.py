@@ -312,11 +312,11 @@ def svd(M_coo):
     X = M_coo.todense()
 
     termHashTable=IOmodule.pickleIn("/root/The_Hive/term_doc/hashTables", "termHash_stemmed")
-    print termHashTable
+    revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
     hashes=[]
     termHashes=array(X[0,1:])
     for termHash in termHashes[0]:
-        hashes.append(termHashTable[int(termHash)])
+        hashes.append(revTermHashTable[termHash])
 
     X = X[1:,1:]
 
