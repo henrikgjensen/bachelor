@@ -10,8 +10,8 @@ _subFolder = _path+"/"+"term_doc"
 _oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed"
 # Matrices folder (write out)
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_5"
-#_matrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_50"
-_matrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_95"
+#_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_50"
+_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_95"
 
 def _svd(M_dense):
 
