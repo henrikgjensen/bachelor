@@ -202,7 +202,7 @@ def medlineDir2MatrixDir():
         test={}
         for pmid in data:
             for term in pmid[1]:
-                test[term[1]]
+                test[term[1]]=0
         print "L:",len(test)
 
         M = _populateMatrix(m, n, data,termHashTable, pmidHashTable)
