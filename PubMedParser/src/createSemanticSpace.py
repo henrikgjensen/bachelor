@@ -11,7 +11,7 @@ _oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed"
 # Matrices folder (write out)
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_5"
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_50"
-_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_95"
+_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_90"
 
 def _svd(M_dense):
 
@@ -48,7 +48,6 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     diagLen = Sig_csc.getnnz()
 
     percentReduce=(float(eigSum)/100)*reduce
-    print "Reducing with "+str(percentReduce)+" percent"
 
     counter=0
     n=0
@@ -89,22 +88,22 @@ def runAndSaveMatrices():
 
         M_coo=IOmodule.readInTDM(_oldMatrixDir,file)
 
-        X = M_coo.todense()
+        X=M_coo.todense()
 
 
         U,Sig,Vt=_svd(X)
 
 
-        S =  _semanticSpace(U,Sig,Vt)
+        S= _semanticSpace(U,Sig,Vt)
 
 
-        X[1:,1:]=S.todense()
+        #X[1:,1:]=S.todense()
 
 
-        X=sparse.coo_matrix(X)
+        #X=sparse.coo_matrix(X)
 
 
-        IOmodule.writeOutTDM(_newMatrixDir, file, X)
+        IOmodule.writeOutTDM(_newMatrixDir, file, S)
 
 
 
