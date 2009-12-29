@@ -313,7 +313,7 @@ def svd(M_coo):
 
     termHashTable=IOmodule.pickleIn("/root/The_Hive/term_doc/hashTables", "termHash_stemmed")
     hashes=[]
-    termHashes=array(X[0])
+    termHashes=array(X[0,1:])
     for termHash in termHashes[0]:
         hashes.append(termHashTable[termHash])
 
