@@ -197,14 +197,11 @@ def medlineDir2MatrixDir():
         # [[PMID,[(term1,count1),...],...]
 
         # Get matrix dimensions (+1 for the [0,0] field)
-        ## (Here follows a small hack to get n = total number of terms)
+        ## (Here follows a small 0.0001 sec. hack to get n = total number of terms)
         temp={}
-        t1=time.time()
         for pmid in data:
             for term in pmid[1]:
                 temp[term[0]]=0
-        t2=time.time()
-        print str(t2-t1)
         m=len(data)+1
         n=len(temp)+1
 
