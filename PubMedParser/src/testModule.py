@@ -333,7 +333,7 @@ def svd(M_coo):
     return U,Sig,Vt,hashes
 
 
-def semanticSpace(U,Sig,Vt,reduce=95):
+def semanticSpace(U,Sig,Vt,reduce=5):
 
     Sig_csc=sparse.csc_matrix(Sig)
     eigSum = Sig_csc.sum()
