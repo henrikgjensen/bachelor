@@ -38,7 +38,7 @@ _labelHash="labelHash"
 ########################################################################
 
  # Stemmed sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
+_subMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed"
  # Stemmed hashtable filenames:
 _termHash="termHash_stemmed"
 _pmidHash="pmidHash_stemmed"
