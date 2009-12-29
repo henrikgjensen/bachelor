@@ -26,24 +26,24 @@ _labelHash="labelHash"
 ########################################################################
 
  # Sub-matrix directory
-#_subMatrixDir=_subFolder+"/"+"diseaseMatrices"
+_subMatrixDir=_subFolder+"/"+"new_diseaseMatrices"
  # Hashtable filenames:
-#_termHash="termHash"
-#_pmidHash="pmidHash"
-#_termDoc="TermDoc"
-#_stemmer=False
+_termHash="termHash"
+_pmidHash="pmidHash"
+_termDoc="TermDoc"
+_stemmer=False
 
 ########################################################################
 #### Use stopword-removal and Porter-stemming (english) as filters: ####
 ########################################################################
 
  # Stemmed sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed"
+#_subMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed"
  # Stemmed hashtable filenames:
-_termHash="termHash_stemmed"
-_pmidHash="pmidHash_stemmed"
-_termDoc="TermDoc_stemmed"
-_stemmer=True
+#_termHash="termHash_stemmed"
+#_pmidHash="pmidHash_stemmed"
+#_termDoc="TermDoc_stemmed"
+#_stemmer=True
 
 
 # Create main folder if it doesn't already exist.
