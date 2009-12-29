@@ -315,6 +315,7 @@ def svd(M_coo):
     hashes=[]
     termHashes=array(X[0,1:])
     for termHash in termHashes:
+        print termHash
         hashes.append(termHashTable[termHash])
 
     X = X[1:,1:]
