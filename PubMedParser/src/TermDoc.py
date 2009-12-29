@@ -199,7 +199,7 @@ def medlineDir2MatrixDir():
         # Get matrix dimensions (+1 for the [0,0] field)
         m=len(data)+1
         n=1
-        test=[]
+        test={}
         for pmid in data:
             for term in pmid[1]:
                 test[term[0]]=0
