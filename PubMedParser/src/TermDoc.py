@@ -293,7 +293,7 @@ def createTermAndPmidHashes():
 def createDiseaseLabelHash():
 
     """
-
+    Create and save a hash that connects every PMID with one or more diseases.
     """
 
     t1 = time.time()
