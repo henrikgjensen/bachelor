@@ -197,13 +197,16 @@ def medlineDir2MatrixDir():
         # [[PMID,[(term1,count1),...],...]
 
         # Get matrix dimensions (+1 for the [0,0] field)
-        m=len(data)+1
-        n=1
-        test={}
+        ## (Here follows a small hack to get n = total number of terms)
+        temp={}
+        t1=time.time()
         for pmid in data:
             for term in pmid[1]:
-                test[term[0]]=0
-        print "L:",len(test)
+                temp[term[0]]=0
+        t2=time.time()
+        print str(t2-t1)
+        m=len(data)+1
+        n=len(temp)+1
 
         M = _populateMatrix(m, n, data,termHashTable, pmidHashTable)
         diseaseName = file[0:file.find('.txt')]
