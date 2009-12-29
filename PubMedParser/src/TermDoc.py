@@ -196,7 +196,7 @@ def medlineDir2MatrixDir():
         # Get matrix dimensions (+1 for the [0,0] field)
         n=len(data)+1
         m=1
-        for i in data: m+=len(data[1])
+        for i in data: m+=len(i[1])
 
         M = _populateMatrix(m, n, data,termHashTable, pmidHashTable)
         diseaseName = file[0:file.find('.txt')]
