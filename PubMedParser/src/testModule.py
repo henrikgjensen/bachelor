@@ -304,12 +304,18 @@ def makehist():
     show()
 
 
-from scipy import linalg, mat, sparse
+from scipy import linalg, mat, sparse, array
 def svd(M_coo):
 
     t1=time.time()
 
     X = M_coo.todense()
+
+    termHashTable=IOmodule.pickleIn("/root/The_Hive/term_doc/hashTables", "termHash_stemmed")
+    hashes=[]
+    termHashes=array(X[0,1:])
+    for termHash in termHashes:
+        hashes.append(termHashTable[termHash])
 
     X = X[1:,1:]
 
@@ -323,7 +329,7 @@ def svd(M_coo):
     t2=time.time()
     print str(t2-t1)
 
-    return U,Sig,Vt
+    return U,Sig,Vt,hashes
 
 
 def semanticSpace(U,Sig,Vt,reduce=95):
@@ -350,7 +356,7 @@ def semanticSpace(U,Sig,Vt,reduce=95):
     print n
     U=U[:,:-n]
     print str(U.shape)
-    Sig=Sig[:-n,:-n]
+    Sig=Sig[:-n,:-n]# Make magic...
     print str(Sig.shape)
     Vt=Vt[:-n,:]
     print str(Vt.shape)
@@ -362,8 +368,16 @@ def semanticSpace(U,Sig,Vt,reduce=95):
     return U*Sig*Vt
 
 
-def topSemanticTerms(M_csc):
+def topSemanticTerms(M_csc,hashes):
 
     # Make magic...
 
-    return None
+    l=[]
+
+    for col in range(M_csc.shape[1]):
+        l.append((sum(M_csc.getcol(col).data),hashes[col]))
+
+    l.sort()
+    l.reverse()
+
+    return l

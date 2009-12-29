@@ -194,8 +194,6 @@ def medlineDir2MatrixDir():
     for file in files:
         data = _gatherMatrixData(file)
 
-        # [[PMID,[(term1,count1),...],...]
-
         # Get matrix dimensions (+1 for the [0,0] field)
         ## (Here follows a small 0.0001 sec. hack to get n = total number of terms)
         temp={}
