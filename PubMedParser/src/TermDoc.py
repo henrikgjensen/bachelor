@@ -26,12 +26,12 @@ _labelHash="labelHash"
 ########################################################################
 
  # Sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"diseaseMatrices"
+#_subMatrixDir=_subFolder+"/"+"diseaseMatrices"
  # Hashtable filenames:
-_termHash="termHash"
-_pmidHash="pmidHash"
-_termDoc="TermDoc"
-_stemmer=False
+#_termHash="termHash"
+#_pmidHash="pmidHash"
+#_termDoc="TermDoc"
+#_stemmer=False
 
 ########################################################################
 #### Use stopword-removal and Porter-stemming (english) as filters: ####
@@ -82,8 +82,7 @@ def _gatherMatrixData(filename):
     data to populate the term-doc matrices. It currently also removes stopwords
     from the abstract.
 
-    It takes a MedLine record directory (full path) and the records file to
-    gather data from.
+    It takes the records' file name to gather data from.
 
     It returns a doc-term list on the form: [[PMID,[(term1,count1),...],...]
     """
@@ -173,7 +172,7 @@ def _populateMatrix(m, n, termDoc,termHashTable,pmidHashTable):
 
     return M
 
-def medlineDir2MatrixDir(m=501, n=20000):
+def medlineDir2MatrixDir():
 
     """
     This function converts a directory of MedLine records to a new directory of
@@ -193,6 +192,12 @@ def medlineDir2MatrixDir(m=501, n=20000):
     counter = 0
     for file in files:
         data = _gatherMatrixData(file)
+
+        # Get matrix dimensions (+1 for the [0,0] field)
+        n=len(data)+1
+        m=1
+        for i in data: m+=len(data[1])
+
         M = _populateMatrix(m, n, data,termHashTable, pmidHashTable)
         diseaseName = file[0:file.find('.txt')]
         IOmodule.writeOutTDM(_subMatrixDir, diseaseName, M)

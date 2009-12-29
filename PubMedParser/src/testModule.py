@@ -326,7 +326,7 @@ def svd(M_coo):
     return U,Sig,Vt
 
 
-def semanticSpace(U,Sig,Vt,reduce=99):
+def semanticSpace(U,Sig,Vt,reduce=95):
 
     Sig_csc=sparse.csc_matrix(Sig)
     eigSum = Sig_csc.sum()
@@ -362,24 +362,8 @@ def semanticSpace(U,Sig,Vt,reduce=99):
     return U*Sig*Vt
 
 
-def testspeed(csc,csr,lil,dense):
+def topSemanticTerms(M_csc):
 
-    t1=time.time()
-    csc*csc.transpose()
-    t2=time.time()
-    print str(t2-t1)
+    # Make magic...
 
-    t1=time.time()
-    csr*csr.transpose()
-    t2=time.time()
-    print str(t2-t1)
-
-    t1=time.time()
-    lil*lil.transpose()
-    t2=time.time()
-    print str(t2-t1)
-
-    t1=time.time()
-    dense*dense.transpose()
-    t2=time.time()
-    print str(t2-t1)
+    return None
