@@ -141,6 +141,7 @@ def _populateMatrix(m, n, termDoc,termHashTable,pmidHashTable):
     """
 
     M = sparse.lil_matrix((m, n))
+    print M.shape
     termList = []
     pmidList = []
 
