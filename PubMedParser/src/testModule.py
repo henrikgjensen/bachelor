@@ -306,7 +306,7 @@ def makehist():
 
 from nltk import *
 from nltk.corpus import stopwords
-from scipy import sparse
+from scipy import sparse, array
 termHashTable=IOmodule.pickleIn("/root/The_Hive/term_doc/hashTables", "termHash_stemmed")
 revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
 from numpy import delete
@@ -346,7 +346,7 @@ def sanitizeMatrices():
         for i in range(1,n+1):
             term=revTermHashTable[dense[0,i]]
             if term in stopWordList:
-                toBeDeleted.append((i,term))
+                toBeDeleted.append(i)
                 print "Removed "+term
 
         dense=delete(dense,toBeDeleted,1)
