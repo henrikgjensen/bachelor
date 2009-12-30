@@ -10,26 +10,26 @@ _subFolder = _path+"/"+"term_doc"
 #################
 
 # Matrices folder (read in)
-_oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf"
+#_oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf"
 # Matrices folder (write out)
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_reduced_5"
 #_reduceBy=5
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_reduced_50"
 #_reduceBy=50
-_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_reduced_90"
-_reduceBy=90
+#_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_reduced_90"
+#_reduceBy=90
 
 ################
 
 # Matrices folder (read in)
-#_oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed"
+_oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed"
 # Matrices folder (write out)
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_5"
 #_reduceBy=5
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_50"
 #_reduceBy=50
-#_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed_reduced_90"
-#_reduceBy=90
+_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed_reduced_90"
+_reduceBy=90
 
 ################
 
@@ -89,7 +89,6 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
 
         if counter >= percentReduce:
             n=i
-            print i
             break
 
     # Make sure there are at least 3 dimensions in the reduced matrix
@@ -100,6 +99,7 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     U=U[:,:-n]
     Sig=Sig[:-n,:-n]
     Vt=Vt[:-n,:]
+    print "U",U.shape,", Sig",Sig.shape,", Vt",Vt.shape
 
     U=sparse.csc_matrix(U)
     Sig=sparse.csc_matrix(Sig)
