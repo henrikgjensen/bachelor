@@ -91,9 +91,14 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
             n=i
             break
 
+
+
     # Make sure there are at least 3 dimensions in the reduced matrix
     if n>diagLen-3:
         n=diagLen-3
+    # If there are less than 3 or less dimensions, do not reduce dimensionality
+    if n<4:
+        n=diagLen
 
     print "Dimensions reduced: "+str(n)
     U=U[:,:-n]
