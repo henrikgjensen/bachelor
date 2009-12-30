@@ -10,26 +10,26 @@ _subFolder = _path+"/"+"term_doc"
 #################
 
 # Matrices folder (read in)
-_oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf"
+#_oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf"
 # Matrices folder (write out)
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_reduced_5"
 #_reduceBy=5
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_reduced_50"
 #_reduceBy=50
-_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_reduced_90"
-_reduceBy=90
+#_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_reduced_90"
+#_reduceBy=90
 
 ################
 
 # Matrices folder (read in)
-#_oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed"
+_oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed"
 # Matrices folder (write out)
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_5"
 #_reduceBy=5
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_50"
 #_reduceBy=50
-#_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed_reduced_90"
-#_reduceBy=90
+_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed_reduced_90"
+_reduceBy=90
 
 ################
 
