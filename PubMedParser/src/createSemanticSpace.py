@@ -54,6 +54,7 @@ def _svd(M_dense):
 
     # Return the SVD matrices
     Sig = mat(linalg.diagsvd(S, M, N))
+    print Sig
     U, Vt = mat(U), mat(Vt)
     return U,Sig,Vt
 
