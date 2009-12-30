@@ -339,14 +339,16 @@ def sanitizeMatrices():
         print "Dim("+str(m)+","+str(n)+")"
 
         dense=dense[:m+1,:n+1]
-        newDense=dense
 
+        toBeDeleted=[]
         for i in range(1,m+1):
-            print str(dense[0,m])
             term=revTermHashTable[dense[0,i]]
             if term in stopWordList:
-                newDense=delete(newDense,i,1)
-                print "Removed "+term
+                toBeDeleted.append((i,term))
+                
+        for i in toBeDeleted:
+            dense=delete(dense,i[0],1)
+            print "Removed "+i[1]
 
         print ""
 
