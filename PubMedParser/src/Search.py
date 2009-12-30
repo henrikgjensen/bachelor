@@ -178,7 +178,28 @@ def runScoreTest3(M_lil, M_csc):
                 ('Acromegaly','progressive somatic disfigurement (face and extremities) and systemic manifestations'),
                 ('Biliary atresia','biliary obstruction of unknown origin, neonatal period'),
                 ('Bronchiolitis obliterans with obstructive pulmonary disease','inflammatory and fibrosing thickening of bronchiolar walls, airflow obstruction'),
-                ('Cholera','severe diarrhea and vomiting')]
+                ('Cholera','severe diarrhea and vomiting'),
+                ('Choroideremia','progressive degeneration of the choroid, retinal pigment epithelium (RPE), and neural retina'),
+                ('Coats disease','abnormal development of retinal vessels (telangiectasia) with a progressive deposition of intraretinal or subretinal exudates'),
+                ('Pelviscapular dysplasia','pelviscapular dysplasia with epiphyseal abnormalities, congenital dwarfism and facial dysmorphism'),
+                ('Omphalocele cleft palate syndrome lethal','omphalocele and cleft palate'),
+                ('Darier disease','keratotic papules in seborrheic areas and specific nail anomalies'),
+                ('Ichthyosis hepatosplenomegaly cerebellar degeneration','ichthyosis, hepatosplenomegaly and late-onset cerebellar ataxia'),
+                ('Emery-Dreifuss muscular dystrophy','muscular weakness and atrophy, with early contractures of the tendons and cardiomyopathy'),
+                ('Costello syndrome','postnatal growth retardation, coarse facies, intellectual deficit, skin anomalies and cardiac abnormalities'),
+                ('Fibrodysplasia ossificans progressiva','congenital malformation of great toes, progressive, disabling heterotopic osteogenesis in predictable anatomical patterns'),
+                ('Deafness skeletal dysplasia lip granuloma','deafness, intellectual deficit , facial dysmorphy, and skeletal abnormalities'),
+                ('Acropectorovertebral dysplasia','fusion of the carpal and tarsal bones, with complex anomalies of the fingers and toes'),
+                ('Osteogenesis imperfecta','increased bone fragility and low bone mass'),
+                ('Primary biliary cirrhosis','injury of the intrahepatic bile ducts'),
+                ('Hennekam syndrome','lymphoedema, intestinal lymphangiectasia, intellectual deficit and facial dysmorphism'),
+                ('Hyperlysinemia','elevated levels of lysine in the cerebrospinal fluid and blood'),
+                ('Jackson-Weiss syndrome','tarsal and/or metatarsal coalitions and variable craniosynostosis, accompanied by facial anomalies, broad halluces and normal hands'),
+                ('Jalili syndrome','amelogenesis imperfecta and cone-rod retinal dystrophy'),
+                ('Jeune syndrome','narrow thorax and short limbs'),
+                ('Jackson-Weiss syndrome','tarsal and/or metatarsal coalitions and variable craniosynostosis, accompanied by facial anomalies, broad halluces and normal hands'),
+                ('Multiple myeloma','overproduction of abnormal plasma cells in the bone marrow and manifested by skeletal destruction, bone pain, and presence of abnormous immunoglobulins'),
+                ('Trichodental syndrome','fine, dry and short hair with dental anomalies')]
 
     printout1=''
     printout2=''
