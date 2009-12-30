@@ -87,27 +87,19 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
 
         counter+=Sig[bottomUp,bottomUp]
 
-        print str(percentReduce-counter)
-
         if counter >= percentReduce:
             n=i
             print i
             break
 
-
     # Make sure there are at least 3 dimensions in the reduced matrix
-    print diagLen
     if n>diagLen-3:
         n=diagLen-3
-        print "test"
 
     print "Dimensions reduced: "+str(n)
     U=U[:,:-n]
-    print str(Sig.shape)+" "+str(n)
     Sig=Sig[:-n,:-n]
-    print str(Sig.shape)+" "+str(n)
     Vt=Vt[:-n,:]
-    print "U",U.shape,", Sig",Sig.shape,", Vt",Vt.shape
 
     U=sparse.csc_matrix(U)
     Sig=sparse.csc_matrix(Sig)
