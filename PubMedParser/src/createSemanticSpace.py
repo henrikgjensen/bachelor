@@ -75,6 +75,7 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     diagLen = Sig_csc.getnnz()
 
     percentReduce=(float(eigSum)/100)*reduce
+    print percentReduce
 
     counter=0
     n=0
