@@ -242,8 +242,8 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
         print str(t4-t3)
     
     """
-#from pylab import *
-#import math
+from pylab import *
+import math
 def makehist():
 
     
@@ -267,7 +267,7 @@ def makehist():
     # Stemmed
     x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
     # Stemmed and tfidf-preprocessed
-    x3 = [14,7,1152,1011,277,49,42,3,16,0,1,13,4]
+    x3 = [13,8,1394,722,196,48,87,2,7,0,2,8,2]
 
     x1_log=map(lambda x: math.log(x+1),x1)
     x2_log=map(lambda x: math.log(x+1),x2)
@@ -303,7 +303,7 @@ def makehist():
     show()
     savefig("/home/henne/Documents/Projektet/bachelor/Grafer_og_tegninger/bmj_hist.png")
 
-
+"""
 from nltk import *
 from nltk.corpus import stopwords
 from scipy import sparse
@@ -356,3 +356,4 @@ def sanitizeMatrices():
         IOmodule.writeOutTDM(newMatrixDir,file[:-4],coo)
 
         print ""
+"""
