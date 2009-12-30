@@ -319,7 +319,7 @@ def sanitizeMatrices():
 
     stopWordList=stopwords.words("english")
 
-    files = sorted([f for f in os.listdir(_oldMatrixDir+"/") if os.path.isfile(_oldMatrixDir+"/" + f)])
+    files = sorted([f for f in os.listdir(oldMatrixDir+"/") if os.path.isfile(oldMatrixDir+"/" + f)])
 
     count=0
     for file in files:
