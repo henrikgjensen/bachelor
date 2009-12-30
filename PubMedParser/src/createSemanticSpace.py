@@ -54,7 +54,6 @@ def _svd(M_dense):
 
     # Return the SVD matrices
     Sig = mat(linalg.diagsvd(S, M, N))
-    print Sig
     U, Vt = mat(U), mat(Vt)
     return U,Sig,Vt
 
@@ -73,6 +72,7 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
 
     Sig_csc=sparse.csc_matrix(Sig)
     eigSum = Sig_csc.sum()
+    print eigSum
     diagLen = Sig_csc.getnnz()
 
     percentReduce=(float(eigSum)/100)*reduce
