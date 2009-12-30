@@ -10,9 +10,9 @@ _path = os.getenv("HOME")+"/"+"The_Hive"
 # Sub folder
 _subFolder = _path+"/"+"term_doc"
 # Matrices folder
-_matrixDir=_subFolder+"/"+"new_diseaseMatrices"
+_matrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed"
 # Term-doc directory
-_termDocDir = _subFolder+"/"+"new_diseaseMatrices_tfidf"
+_termDocDir = _subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed"
 
 
 def _generateLogTFIDF(M_coo):
