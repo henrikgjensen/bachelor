@@ -242,12 +242,11 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
         print str(t4-t3)
     
     """
-
+#from pylab import *
+#import math
 def makehist():
 
-    from pylab import *
-    import math
-
+    
     # TEST 1 : Found on our own from orpha.net#
 
     #diseases=['Appar','Rubin','Aagen','Aase','Achon','Acalv','Acrod','Acrom','Bilia','Bronc','Chole']
