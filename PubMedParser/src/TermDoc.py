@@ -26,7 +26,7 @@ _labelHash="labelHash"
 ########################################################################
 
  # Sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"diseaseMatrices"
+_subMatrixDir=_subFolder+"/"+"new_diseaseMatrices"
  # Hashtable filenames:
 _termHash="termHash"
 _pmidHash="pmidHash"
@@ -38,12 +38,12 @@ _stemmer=False
 ########################################################################
 
  # Stemmed sub-matrix directory
-_subMatrixDir=_subFolder+"/"+"diseaseMatrices_stemmed"
+#_subMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed"
  # Stemmed hashtable filenames:
-_termHash="termHash_stemmed"
-_pmidHash="pmidHash_stemmed"
-_termDoc="TermDoc_stemmed"
-_stemmer=True
+#_termHash="termHash_stemmed"
+#_pmidHash="pmidHash_stemmed"
+#_termDoc="TermDoc_stemmed"
+#_stemmer=True
 
 
 # Create main folder if it doesn't already exist.
@@ -82,8 +82,7 @@ def _gatherMatrixData(filename):
     data to populate the term-doc matrices. It currently also removes stopwords
     from the abstract.
 
-    It takes a MedLine record directory (full path) and the records file to
-    gather data from.
+    It takes the records' file name to gather data from.
 
     It returns a doc-term list on the form: [[PMID,[(term1,count1),...],...]
     """
@@ -142,6 +141,7 @@ def _populateMatrix(m, n, termDoc,termHashTable,pmidHashTable):
     """
 
     M = sparse.lil_matrix((m, n))
+    print M.shape
     termList = []
     pmidList = []
 
@@ -173,7 +173,7 @@ def _populateMatrix(m, n, termDoc,termHashTable,pmidHashTable):
 
     return M
 
-def medlineDir2MatrixDir(m=501, n=20000):
+def medlineDir2MatrixDir():
 
     """
     This function converts a directory of MedLine records to a new directory of
@@ -193,6 +193,16 @@ def medlineDir2MatrixDir(m=501, n=20000):
     counter = 0
     for file in files:
         data = _gatherMatrixData(file)
+
+        # Get matrix dimensions (+1 for the [0,0] field)
+        ## (Here follows a small 0.0001 sec. hack to get n = total number of terms)
+        temp={}
+        for pmid in data:
+            for term in pmid[1]:
+                temp[term[0]]=0
+        m=len(data)+1
+        n=len(temp)+1
+
         M = _populateMatrix(m, n, data,termHashTable, pmidHashTable)
         diseaseName = file[0:file.find('.txt')]
         IOmodule.writeOutTDM(_subMatrixDir, diseaseName, M)
@@ -283,7 +293,7 @@ def createTermAndPmidHashes():
 def createDiseaseLabelHash():
 
     """
-
+    Create and save a hash that connects every PMID with one or more diseases.
     """
 
     t1 = time.time()

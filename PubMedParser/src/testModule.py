@@ -243,34 +243,32 @@ def go(MT_coo,MT_csr,M_lil,M_csc,M_coo):
     
     """
 
-#from pylab import *
-import math
 def makehist():
 
-
-    
+    from pylab import *
+    import math
 
     # TEST 1 : Found on our own from orpha.net#
 
-    diseases=['Appar','Rubin','Aagen','Aase','Achon','Acalv','Acrod','Acrom','Bilia','Bronc','Chole']
+    #diseases=['Appar','Rubin','Aagen','Aase','Achon','Acalv','Acrod','Acrom','Bilia','Bronc','Chole']
 
     # Not stemmed
-    x1 = [4,725,75,37,38,85,68,1651,1,23,80]
+    #x1 = [4,725,75,37,38,85,68,1651,1,23,80]
     # Stemmed
-    x2 = [3,149,33,71,10,63,27,597,6,31,56]
+    #x2 = [3,149,33,71,10,63,27,597,6,31,56]
     # Stemmed and tfidf-preprocessed
-    x3 = [2,102,33,28,14,54,46,306,2,13,203]
+    #x3 = [2,102,33,28,14,54,46,306,2,13,203]
 
     # TEST 2 : From BMJ #
 
-    # diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
 
     # Not stemmed
-    #x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
+    x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
     # Stemmed
-    #x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
+    x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
     # Stemmed and tfidf-preprocessed
-    #x3 = [14,7,1152,1011,277,49,42,3,16,0,1,13,4]
+    x3 = [14,7,1152,1011,277,49,42,3,16,0,1,13,4]
 
     x1_log=map(lambda x: math.log(x+1),x1)
     x2_log=map(lambda x: math.log(x+1),x2)
@@ -284,7 +282,7 @@ def makehist():
     bar(arange(1,xlen,step), x2_log, color='red', width=1, label='Stemmed')
     bar(arange(2,xlen,step), x3_log, color='blue', width=1, label='TFIDF-preprocessed and stemmed')
 
-    x=linspace(1,xlen)
+    #x=linspace(1,xlen)
     y1=mean(x1_log)
     print y1
     y2=mean(x2_log)
@@ -299,25 +297,11 @@ def makehist():
 
     legend()
     grid('.')
-    title('Score test')
+    title('Score test (BMJ)')
+    xlabel('Disease')
+    ylabel('Log_score')
 
     show()
-
-
-from scipy import linalg, mat
-def keywordExtractor(M_coo):
-
-    X = M_coo.todense()
-
-    X = X[1:,1:]
-
-    U, S, Vt = linalg.svd(X)
-
-    M, N = X.shape
-
-    Sig = mat(linalg.diagsvd(S, M, N))
-    U, Vt = mat(U), mat(Vt)
-    
-    return U,Sig,Vt
+    savefig("/home/henne/Documents/Projektet/bachelor/Grafer_og_tegninger/bmj_hist.png")
 
 

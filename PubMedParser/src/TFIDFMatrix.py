@@ -51,7 +51,7 @@ _termDocDir = _subFolder+"/"+"termDoc"
 #######################################################################################
 
  # TFIDF-matrix file name
-_tfidfName = "TFIDFMatrix_tfidf_stemmed"
+_tfidfName = "nolog_TFIDFMatrix_tfidf_stemmed"
  # Vector-norm hash for then TFIDFMatrix
 _RLHash = "RLHash_tfidf_stemmed"
  # Hash for the number of documents each term occur in
@@ -97,7 +97,7 @@ def _generateLogTFIDF(M_coo):
             if tf == 0:
                 print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
                 raise Exception
-            tf = math.log(1 + tf)
+            #tf = math.log(1 + tf)
             
             idf = math.log(numberOfDocs / _termSum[col])
             
