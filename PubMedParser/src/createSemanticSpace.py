@@ -104,6 +104,10 @@ def runAndSaveMatrices():
     for file in files:
 
         M_coo=IOmodule.readInTDM(_oldMatrixDir,file)
+
+        if M_coo.shape[0]==1:
+            continue
+
         M_dense=M_coo.todense()
 
         # Run SVD
