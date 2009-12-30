@@ -87,6 +87,7 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
         bottomUp=diagLen-i
 
         counter+=Sig[bottomUp,bottomUp]
+        print counter
 
         if counter >= percentReduce:
             n=i
