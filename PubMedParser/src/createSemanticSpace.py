@@ -61,6 +61,8 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
             n=i
             break
 
+    if n>diagLen-3: n=diagLen-3
+
     print "Dimensions reduced: "+str(n)
     U=U[:,:-n]
     Sig=Sig[:-n,:-n]
@@ -97,10 +99,10 @@ def runAndSaveMatrices():
         S= _semanticSpace(U,Sig,Vt)
 
 
-        #X[1:,1:]=S.todense()
+        X[1:,1:]=S.todense()
 
 
-        #X=sparse.coo_matrix(X)
+        X=sparse.coo_matrix(X)
 
 
         IOmodule.writeOutTDM(_newMatrixDir, file, S)

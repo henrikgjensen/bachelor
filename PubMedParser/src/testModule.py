@@ -305,3 +305,50 @@ def makehist():
     savefig("/home/henne/Documents/Projektet/bachelor/Grafer_og_tegninger/bmj_hist.png")
 
 
+from nltk import *
+from nltk.corpus import stopwords
+from scipy import sparse
+termHashTable=IOmodule.pickleIn("/root/The_Hive/term_doc/hashTables", "termHash_stemmed")
+revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
+
+def sanitizeMatrices():
+
+    oldMatrixDir="/root/The_Hive/term_doc/diseaseMatrices"
+    #oldMatrixDir="/root/The_Hive/term_doc/diseaseMatrices_stemmed"
+    newMatrixDir="/root/The_Hive/term_doc/new_diseaseMatrices"
+    #newMatrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_stemmed"
+
+    stopWordList=stopwords.words("english")
+
+    files = sorted([f for f in os.listdir(_oldMatrixDir+"/") if os.path.isfile(_oldMatrixDir+"/" + f)])
+
+    count=0
+    for file in files:
+        count+=1
+        print "Matrix "+str(count)
+        coo=IOmodule.readInTDM(oldMatrixDir,file)
+        csr=coo.tocsr()
+        csc=coo.tocsc()
+        dense=coo.todense()
+    
+        termHash=csr.getrow(0).data
+        pmidHash=csc.getcol(0).data
+
+        m=len(termHash)
+        n=len(pmidHash)
+
+        print "Dim("+str(m)+","+str(n)+")"
+
+        dense=dense[:m+1,:n+1]
+
+        for i in range(1,m+1):
+            term=revTermHashTable[dense[0,i]]
+            if term in stopWordList:
+                dense=delete(dense,i,1)
+                print "Removed "+term
+
+        print ""
+
+        coo=sparse.coo_matrix(dense)
+
+        IOmodule.writeOutTDM(newMatrixDir,file[:-4],)
