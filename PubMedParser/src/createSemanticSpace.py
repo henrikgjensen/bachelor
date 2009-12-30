@@ -1,7 +1,6 @@
 from scipy import linalg, mat, sparse
 import IOmodule
 import os
-import time
 
 # Main folder
 _path = os.getenv("HOME")+"/"+"The_Hive"
@@ -32,20 +31,14 @@ def _svd(M_dense):
     M_dense = M_dense[1:,1:]
 
     # Calculate singular values
-    t1=time.time()
     U, S, Vt = linalg.svd(M_dense)
-    t2=time.time()
-    print "1.1: "+str(t2-t1)
 
     # Get the dimensions of the matrix
     M, N = M_dense.shape
 
     # Return the SVD matrices
-    t1=time.time()
     Sig = mat(linalg.diagsvd(S, M, N))
     U, Vt = mat(U), mat(Vt)
-    t2=time.time()
-    print "1.2: "+str(t2-t1)
     return U,Sig,Vt
 
 
@@ -61,16 +54,11 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     improved speed.
     """
 
-    t1=time.time()
     Sig_csc=sparse.csc_matrix(Sig)
     eigSum = Sig_csc.sum()
     diagLen = Sig_csc.getnnz()
 
     percentReduce=(float(eigSum)/100)*reduce
-
-    t2=time.time()
-    print "2.1: "+str(t2-t1)
-    t1=time.time()
 
     counter=0
     n=0
@@ -87,30 +75,20 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
             n=i
             break
 
-    t2=time.time()
-    print "2.2: "+str(t2-t1)
-    t1=time.time()
-
     # Make sure there are at least 3 dimensions in the reduced matrix
     if n<diagLen-3: n=diagLen-3
 
-    #print "Dimensions reduced: "+str(n)
+    print "Dimensions reduced: "+str(n)
     U=U[:,:-n]
     Sig=Sig[:-n,:-n]
     Vt=Vt[:-n,:]
-    #print "U",U.shape,", Sig",Sig.shape,", Vt",Vt.shape
+    print "U",U.shape,", Sig",Sig.shape,", Vt",Vt.shape
 
     U=sparse.csc_matrix(U)
     Sig=sparse.csc_matrix(Sig)
     Vt=sparse.csc_matrix(Vt)
 
-    t2=time.time()
-    print "2.3: "+str(t2-t1)
-    t1=time.time()
-
     S=U*Sig*Vt
-    t2=time.time()
-    print "2.4: "+str(t2-t1)
 
     return S
 
@@ -129,28 +107,16 @@ def runAndSaveMatrices():
         M_dense=M_coo.todense()
 
         # Run SVD
-        t1=time.time()
+
         U,Sig,Vt=_svd(M_dense)
-        t2=time.time()
-        print "1: "+str(t2-t1)
 
         # Get the reduced semantic space
-        t1=time.time()
         S= _semanticSpace(U,Sig,Vt)
-        t2=time.time()
-        print "2: "+str(t2-t1)
 
         # Recombine the indices and the reduced matrix
-        t1=time.time()
         M_dense[1:,1:]=S.todense()
-        t2=time.time()
-        print "3: "+str(t2-t1)
 
         # Save the matrix
-        t1=time.time()
         M_coo=sparse.coo_matrix(M_dense,_reduceBy)
         IOmodule.writeOutTDM(_newMatrixDir, file, M_coo)
-        t2=time.time()
-        print "4: "+str(t2-t1)
-
 
