@@ -26,9 +26,6 @@ if not os.path.isdir(_mainFolder):
 if not os.path.isdir(_subFolder):
         os.mkdir(_subFolder))
 
-
-
-
 def _readDiseases(indexStart=0,indexStop=None):
 
     """
@@ -41,15 +38,16 @@ def _readDiseases(indexStart=0,indexStop=None):
     order.
     """
 
-    path=_subFolder+"/"+diseaseFolder
+    path=_subFolder+"/"+diseaseFolder+'/'
 
-    files=sorted([f for f in os.listdir(path) if os.path.isfile(path+f)])
+    #    files=sorted([f for f in os.listdir(path) if os.path.isfile(path+f)])
+    files = IOmodules.getSortedFilelist(path, startIndex=indexStart, stopIndex=indexStop)
 
     sortedcontents=[]
-    for file in files[indexStart:indexStop]:
+    for f in files:
         contents={}
-        diseaseName=file[0:file.find('.txt')]
-        diseaseAttr=eval(open(path+file,'r').read())
+        diseaseName=f[0:file.find('.txt')]
+        diseaseAttr=eval(open(path+f,'r').read())
         contents[diseaseName]=diseaseAttr
         sortedcontents.append(contents)
 
