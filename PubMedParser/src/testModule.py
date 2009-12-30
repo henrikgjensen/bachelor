@@ -341,6 +341,7 @@ def sanitizeMatrices():
         dense=dense[:m+1,:n+1]
 
         for i in range(1,m+1):
+            print str(dense[0,i]) + " " + str(i)
             term=revTermHashTable[dense[0,i]]
             if term in stopWordList:
                 dense=delete(dense,i,1)
