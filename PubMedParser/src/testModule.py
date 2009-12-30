@@ -342,16 +342,21 @@ def sanitizeMatrices():
 
         print dense.shape
 
-        c=0
+        toBeDeleted=[]
         for i in range(1,n+1):
             term=revTermHashTable[dense[0,i]]
             if term in stopWordList:
-                dense=delete(dense,i[0]-c,1)
-                print "Removed "+i[1]
-                c+=1
-            
+                toBeDeleted.append((i,term))
+
+        c=0
+        for i in toBeDeleted:
+            dense=delete(dense,i[0]-c,1)
+            print "Removed "+i[1]
+            print revTermHashTable[i[0]-c]
+            c+=1
+
         print ""
 
-        coo=sparse.coo_matrix(dense)
+        coo=sparse.coo_matrix(newDense)
 
         IOmodule.writeOutTDM(newMatrixDir,file[:-4],)
