@@ -1,6 +1,7 @@
 from scipy import linalg, mat, sparse
 import IOmodule
 import os
+import time
 
 # Main folder
 _path = os.getenv("HOME")+"/"+"The_Hive"
@@ -107,10 +108,16 @@ def runAndSaveMatrices():
         M_dense=M_coo.todense()
 
         # Run SVD
+        t1=time.time()
         U,Sig,Vt=_svd(M_dense)
+        t2=time.time()
+        print "1: "+str(t2-t1)
 
         # Get the reduced semantic space
+        t1=time.time()
         S= _semanticSpace(U,Sig,Vt)
+        t2=time.time()
+        print "2: "+str(t2-t1)
 
         # Recombine the indices and the reduced matrix
         M_dense[1:,1:]=S.todense()
