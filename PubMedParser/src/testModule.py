@@ -249,7 +249,8 @@ def makehist():
     
     # TEST 1 : Found on our own from orpha.net#
 
-    diseases=['Appar','Rubin','Aagen','Aase','Achon','Acalv','Acrod','Acrom','Bilia','Bronc','Chole']
+    diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Pe','Om','Da','Ic','Em','Co','Fi','De','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
+
     graphName="orphan_hist.png"
 
     # Not stemmed
