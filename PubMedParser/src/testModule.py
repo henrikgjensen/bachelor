@@ -308,6 +308,7 @@ from nltk import *
 from nltk.corpus import stopwords
 from scipy import sparse
 termHashTable=IOmodule.pickleIn("/root/The_Hive/term_doc/hashTables", "termHash")
+#termHashTable=IOmodule.pickleIn("/root/The_Hive/term_doc/hashTables", "termHash_stemmed")
 revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
 from numpy import delete
 def sanitizeMatrices():
