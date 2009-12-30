@@ -72,11 +72,9 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
 
     Sig_csc=sparse.csc_matrix(Sig)
     eigSum = Sig_csc.sum()
-    print eigSum
     diagLen = Sig_csc.getnnz()
 
     percentReduce=(float(eigSum)/100)*reduce
-    print percentReduce
 
     counter=0
     n=0
@@ -96,7 +94,11 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
 
     # Make sure there are at least 3 dimensions in the reduced matrix
     print diagLen
-    if n>diagLen-3: n=diagLen-3
+    if n>diagLen-3:
+        n=diagLen-3
+        print diagLen
+        print diagLen-3
+        print n
 
     print "Dimensions reduced: "+str(n)
     U=U[:,:-n]
