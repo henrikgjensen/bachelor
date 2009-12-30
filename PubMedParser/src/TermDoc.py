@@ -188,7 +188,9 @@ def medlineDir2MatrixDir():
     termHashTable=IOmodule.pickleIn(_hashTablesDir, _termHash)
     pmidHashTable=IOmodule.pickleIn(_hashTablesDir, _pmidHash)
 
-    files = sorted([f for f in os.listdir(_medlineDir+"/") if os.path.isfile(_medlineDir+"/" + f)])
+    files = IOmodule.getSortedFilelist(_medlineDir+'/')
+
+#    files = sorted([f for f in os.listdir(_medlineDir+"/") if os.path.isfile(_medlineDir+"/" + f)])
 
     counter = 0
     for file in files:
@@ -227,7 +229,8 @@ def createTermAndPmidHashes():
     termCounter = 0
     pmidCounter = 0
 
-    files = sorted([f for f in os.listdir(medlineDir+"/") if os.path.isfile(medlineDir+"/"+f)])
+    files = IOmodule.getSortedFilelist(medlineDir+'/')
+#    files = sorted([f for f in os.listdir(medlineDir+"/") if os.path.isfile(medlineDir+"/"+f)])
 
     # Get the regex pattern that sanitizeses strings.
     sanitizer = TextCleaner.sanitizeString()
@@ -298,7 +301,9 @@ def createDiseaseLabelHash():
 
     t1 = time.time()
 
-    files = sorted([f for f in os.listdir(_subMatrixDir+"/") if os.path.isfile(_subMatrixDir+"/" + f)])
+    files = IOmodule.getSortedFilelist(_subMatrixDir+'/')
+
+#    files = sorted([f for f in os.listdir(_subMatrixDir+"/") if os.path.isfile(_subMatrixDir+"/" + f)])
 
     labelHash={}
 
@@ -342,7 +347,9 @@ def createTermDoc(refreshHash=False):
     if refreshHash:
         createTermAndPmidHashes()
 
-    files = sorted([f for f in os.listdir(_subMatrixDir+"/") if os.path.isfile(_subMatrixDir+"/" + f)])
+    files = IOmodule.getSortedFilelist(_subMatrixDir+'/')
+
+#    files = sorted([f for f in os.listdir(_subMatrixDir+"/") if os.path.isfile(_subMatrixDir+"/" + f)])
     
     termHashTable=IOmodule.pickleIn(_hashTablesDir, _termHash)
     pmidHashTable=IOmodule.pickleIn(_hashTablesDir, _pmidHash)
