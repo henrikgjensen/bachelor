@@ -81,7 +81,9 @@ def runTFIDF():
     Create a normalized log-transformed TFIDF-matrix from a sparse coo_matrix.
     """
 
-    files = sorted([f for f in os.listdir(_matrixDir+"/") if os.path.isfile(_matrixDir+"/" + f)])
+    files = IOmodule.getSortedFilelist(_matrixDir+'/')
+
+#    files = sorted([f for f in os.listdir(_matrixDir+"/") if os.path.isfile(_matrixDir+"/" + f)])
 
     for file in files:
 
