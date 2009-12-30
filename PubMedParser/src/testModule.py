@@ -333,8 +333,8 @@ def sanitizeMatrices():
         termHash=csr.getrow(0).data
         pmidHash=csc.getcol(0).data
 
-        m=len(termHash)
-        n=len(pmidHash)
+        m=len(pmidHash)
+        n=len(termHash)
 
         print "Dim("+str(m)+","+str(n)+")"
 
@@ -343,7 +343,7 @@ def sanitizeMatrices():
         print dense.shape
 
         toBeDeleted=[]
-        for i in range(1,m):
+        for i in range(1,n+1):
             term=revTermHashTable[dense[0,i]]
             if term in stopWordList:
                 toBeDeleted.append((i,term))
