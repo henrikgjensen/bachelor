@@ -29,7 +29,7 @@ def writeOutTxt(dir,filename,text,mode='w'):
     out.write(string)
     out.close()
 
-def pickleOut(dirname, filename, object):
+def pickleOut(dirname, filename, fileext, object):
 # writeOut Term Document Matrix
 # Where object = (Matrix, TermList, PmidList)
 
@@ -51,7 +51,7 @@ def pickleOut(dirname, filename, object):
     if not os.path.isdir(dirname):
         os.mkdir(dirname)
 
-    filepath=dirname+'/'+filename+'.btd' 
+    filepath=dirname+'/'+filename+'.'+fileext
     print filepath
     fd = open(filepath,'w')
     cPickle.dump(object,fd)
@@ -60,10 +60,11 @@ def pickleOut(dirname, filename, object):
 def pickleIn(dirname, filename):
 
     """
-    Loads a pickled (.btd) object.
+    Loads a pickled object. Remember to include file extension in the
+    filename. E.g. pickleIn('.../medline_records', 'diseaseHash.hash')
     """
 
-    return cPickle.load(open(dirname+"/"+filename+".btd"))
+    return cPickle.load(open(dirname+"/"+filename+'.btd'))
 
 
 def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
@@ -121,16 +122,6 @@ def getSortedFilelist(dir, startIndex=None, stopIndex=None):
 def evalIn(filename):
 
     fd = open(filename)
-
-    result = eval(fd.read())
-
-    fd.close()
-
-    return result
-
-def evalIn(dirname, filename):
-
-    fd = open(dirname, filename)
 
     result = eval(fd.read())
 

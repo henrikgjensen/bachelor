@@ -1,18 +1,23 @@
+from __future__ import division
 import DistanceMeasure
 reload(DistanceMeasure)
 from DistanceMeasure import sim_pearson as pearson
+from DistanceMeasure import cosine_measure as cosine
 from math import sqrt, pow, fabs
 import random
 from PIL import Image, ImageDraw
 import time
-from __future__ import division
-
+import cPickle
+import SearchTermDoc as STD
+from scipy import sparse
 
 def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
 
-    tiny_value = 0.0001
+    tiny_value = 0.999
 
     n = tdm.shape[0]
+
+    tdm = tdm.todense()
 
     # Are we able to save an if check if we just make the range run from range(1,n)
     if time_log:
@@ -20,23 +25,25 @@ def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
 
     print 'Calculating distance...'
 
-    realdist=[]
+    # This will not work as it does not produce a two dimensional
+    # distance list
+    # realdist=[]
 
-    for i in range(0,n):
-        # Should be a slight optimazation
-        row_i = tdm.getrow(i)[0,1:]
-        for j in range(0,n):
-            realdist.append(distance(row_i,tdm.getrow(j)[0,1:]))
+    # for i in range(0,n):
+    #     # Should be a slight optimazation
+    #     row_i = tdm.getrow(i)[0,1:]
+    #     for j in range(0,n):
+    #         realdist.append(distance(row_i,tdm.getrow(j)[0,1:]))
 
-#    realdist = [[distance(tdm.getrow(i)[0,1:], tdm.getrow(j)[0,1:])
-#                 for j in range(0, n)]
-#                for i in range(0, n)]
+    realdist = [[distance(tdm[i,1:], tdm[j,1:])
+                 for j in range(0, n)]
+                for i in range(0, n)]
 
     print
     print 'Distance calculations done.'
 
     if time_log:
-        print 'Time for distance calculations:', t1 - time.time()
+        print 'Time for distance calculations:', time.time() - t1
 
     outersum = 0.0
 
@@ -69,14 +76,14 @@ def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
                 if j == k: continue
                 # The error is percent difference between the
                 # distances, plus a tiny value to avoid division by zero
-                errorterm = (fakedist[j][k] - realdist[j][k]) / realdist[j][k] + tiny_value
+                errorterm = (fakedist[j][k] - realdist[j][k]) / (realdist[j][k] + tiny_value)
 
                 # Each point needs to be moved away from or towards the other
                 # point in proportion to how much error it has
                 grad[k][0]+=((loc[k][0] - loc[j][0]) / fakedist[j][k]) * errorterm
                 grad[k][1]+=((loc[k][1] - loc[j][1]) / fakedist[j][k]) * errorterm
                 
-            # Keep track of the total error
+                # Keep track of the total error
                 totalerror+=abs(errorterm)
                 
         print totalerror, 
@@ -94,26 +101,29 @@ def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
     print 'Done finding projected distances and moving points around.'
 
     if time_log:
-        'Time for iterating: ', t2 - time.time()
+        'Time for iterating: ', time.time() - t2
 
     return loc
     
-def draw2d(data, labels, jpeg = 'mds_2d.jpeg'):
+def draw2d(data, labels, jpeg = 'mds_2d.jpeg', colors={}):
 
     # Initialize a empty picture with white background.
     img = Image.new('RGB', (2000, 2000), (255, 255, 255))
     draw = ImageDraw.Draw(img)
-    
+
     for i in range(len(data)):
         x = (data[i][0] + 0.5) * 1000
         y = (data[i][1] + 0.5) * 1000
-        draw.text((x, y), str(labels[i]), (0, 0, 0))
+        if colors == {}:
+            draw.text((x, y), str(labels[i]), (0, 0, 0))
+        else:
+            draw.text((x, y), str(labels[i]), colors[str(labels[i])])
         #  ^ It could be really interesting to see colors on this plot
         #  accoring to how many diseases a pmid is on.
         
     img.save(jpeg, 'JPEG')
 
-def drawdendrogram(clust, jpeg = 'disease_cluster_dendro.jpg', width = 1200, heightmodifier=20):
+def drawdendrogram(clust, jpeg = 'disease_cluster_dendro.jpg', col={}, width = 1200, heightmodifier=20):
 
     # height and width
     h = getheight(clust) * heightmodifier
@@ -131,11 +141,11 @@ def drawdendrogram(clust, jpeg = 'disease_cluster_dendro.jpg', width = 1200, hei
     draw.line((0, h / 2, 10, h / 2), fill = (255, 0, 0))
 
     # Draw the first node
-    drawnode(draw, clust, 10, (h / 2), scaling)
+    drawnode(draw, clust, 10, (h / 2), scaling, col)
     img.save(jpeg,'JPEG')
 
 # The labels needs to be the pmids
-def drawnode(draw, clust, x, y, scaling):
+def drawnode(draw, clust, x, y, scaling, col={}):
 
     if clust.id < 0:
         h1 = getheight(clust.left) * 20
@@ -164,7 +174,10 @@ def drawnode(draw, clust, x, y, scaling):
         
     else:
         # If it is an end point, draw the item label
-        draw.text((x + 5, y - 7), str(clust.id), (0, 0, 0))
+        if col == {}:
+            draw.text((x + 5, y - 7), str(clust.id), (0, 0, 0))
+        else:
+            draw.text((x+5, y - 7), str(clust.id), col[str(clust.id)])
         #                          ^ Here!!!
         # We might want to get the real pmid label here, by a reverse
         # lookup or something like that, could be cool with a color
@@ -188,10 +201,17 @@ def getdepth(clust):
 
 # Need to send the tdm with, and extract all the rows. We don't use rows right now
 def hcluster(tdm, distance=pearson, time_log=False, time_total=False, print_remain=False):
+
+    """
+    Recieves an already cut matrix, that does not contain term hashes
+    """
+
     distances = {}
     currentclustid = -1
 
     n = tdm.shape[0]
+
+#    tdm = tdm.todense()
 
     print 'Start building clusters (clusters=' + str(n) + ')' 
 
@@ -204,7 +224,7 @@ def hcluster(tdm, distance=pearson, time_log=False, time_total=False, print_rema
     # use the disease name when doing global.
 
     # Clusters are initially just the rows of the tdm / len(tdm.shape[0])
-    clust=[bicluster(tdm.getrow(i)[0,1:], id = int(tdm.getrow(i)[0,0])) for i in range(1, n)]
+    clust=[bicluster(tdm.getrow(i)[0,1:], id = int(STD.getPMID(tdm.getrow(i)[0,0]))) for i in range(0, n)]
     #                               We had a tdm.getrow(i)[1:]
     #                               ^ This might take quite a while
     #                                 Consider alternative solution.
@@ -308,6 +328,72 @@ def getLabels(tdm):
     labels = [int(e[0]) for e in tdm[:rows, 0].data.tolist()]
 
     return labels
+
+def makeColorDictionary(pmidDuplicateList):
+
+    colors = {}
+    counter = 0
+
+    for label in pmidDuplicateList:
+        counter+=1
+        if counter % 50000 == 0:
+            print "Done with", counter
+        if pmidDuplicateList[label] <= 10:
+            colors[label] = (124,252,0)
+        elif pmidDuplicateList[label] <= 50:
+            colors[label] = (0,255,0)
+        elif pmidDuplicateList[label] <= 100:
+            colors[label] = (0,0,156)
+        elif pmidDuplicateList[label] <= 200:
+            colors[label] = (255,255,0)        
+        elif pmidDuplicateList[label] <= 350:
+            colors[label] = (255,127,0)
+        elif pmidDuplicateList[label] <= 500:
+            colors[label] = (255,0,0)
+
+            
+    return colors
+
+def loadColors(filename=''):
+    
+    if filename == '':
+        colors = cPickle.load('colorHash.col')
+    else:
+        colors = cPickle.load(filename)
+
+    return colors
+
+def cosineOutlierDetector(stdm, distance=cosine, threshold=0.5):
+
+    """
+    Recieves a coo matrix and calculates cosine similarity between all
+    rows.
+    """
+
+    stdmdense = stdm.todense()
+    stdmdense = stdmdense[1:,1:]
+
+    stdm = stdm.tolil()
+
+    stdm_csr = sparse.csr_matrix(stdmdense)
+    
+    n = stdm_csr.shape[0]
+
+    distance_matrix = sparse.lil_matrix((n,n))
+
+#    distances = [[distance(stdm.getrow(i), stdm.getrow(j))
+#                  for i in range(0,n)]
+#                 for j in range(0,n)]
+
+    
+    for i in range(0,n):
+        for j in range(0,n):
+            # As it is symmetric only calculate what is needed.
+            if distance_matrix[i,j] == 0:
+#                print 'found zero at', i, j
+                distance_matrix[i,j] = distance_matrix[j,i] = distance(stdm_csr.getrow(i), stdm_csr.getrow(j))
+
+    return distance_matrix
 
 class bicluster:
     def __init__(self, vec, left=None, right=None, distance=0.0, id=None):
