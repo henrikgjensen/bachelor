@@ -117,3 +117,23 @@ def getSortedFilelist(dir, startIndex=None, stopIndex=None):
     files=sorted([f for f in os.listdir(dir) if os.path.isfile(dir+f)])[startIndex:stopIndex]
 
     return files
+
+def evalIn(filename):
+
+    fd = open(filename)
+
+    result = eval(fd.read())
+
+    fd.close()
+
+    return result
+
+def evalIn(dirname, filename):
+
+    fd = open(dirname, filename)
+
+    result = eval(fd.read())
+
+    fd.close()
+
+    return result
