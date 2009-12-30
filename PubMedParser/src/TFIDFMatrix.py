@@ -12,8 +12,6 @@ _subFolder = _path+"/"+"term_doc"
 _hashTablePath = _subFolder+"/"+"hashTables"
 # Term-doc directory
 _termDocDir = _subFolder+"/"+"termDoc"
-# Take the log transform of the term frequency
-_logTransform=True
 
 
 ####################################################################
@@ -62,8 +60,6 @@ _CLHash = "CLHash_tfidf_stemmed"
 _vectorLength = IOmodule.pickleIn(_hashTablePath,_RLHash)
  # Load the precomputed length of each column in the stemmed term-doc matrix
 _termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
-# Do not take the log of the term frequency due to the preprocessing tfidf
-_logTransform=False
 
 ####################################################################
 
@@ -102,7 +98,7 @@ def _generateLogTFIDF(M_coo):
                 print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
                 raise Exception
 
-            if _logTransform: tf = math.log(1 + tf)
+            tf = math.log(1 + tf)
             
             idf = math.log(numberOfDocs / _termSum[col])
             

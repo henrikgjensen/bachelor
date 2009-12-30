@@ -249,25 +249,27 @@ def makehist():
     
     # TEST 1 : Found on our own from orpha.net#
 
-    #diseases=['Appar','Rubin','Aagen','Aase','Achon','Acalv','Acrod','Acrom','Bilia','Bronc','Chole']
+    diseases=['Appar','Rubin','Aagen','Aase','Achon','Acalv','Acrod','Acrom','Bilia','Bronc','Chole']
+    graphName="orphan_hist.png"
 
     # Not stemmed
-    #x1 = [4,725,75,37,38,85,68,1651,1,23,80]
+    x1 = [4,725,75,37,38,85,68,1651,1,23,80]
     # Stemmed
-    #x2 = [3,149,33,71,10,63,27,597,6,31,56]
+    x2 = [3,149,33,71,10,63,27,597,6,31,56]
     # Stemmed and tfidf-preprocessed
-    #x3 = [2,102,33,28,14,54,46,306,2,13,203]
+    x3 = [2,221,30,28,34,69,68,775,2,15,196]
 
     # TEST 2 : From BMJ #
 
-    diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    #graphName="bmj_hist.png"
 
     # Not stemmed
-    x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
+    #x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
     # Stemmed
-    x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
+    #x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
     # Stemmed and tfidf-preprocessed
-    x3 = [13,8,1394,722,196,48,87,2,7,0,2,8,2]
+    #x3 = [13,8,1394,722,196,48,87,2,7,0,2,8,2]
 
     x1_log=map(lambda x: math.log(x+1),x1)
     x2_log=map(lambda x: math.log(x+1),x2)
@@ -301,7 +303,7 @@ def makehist():
     ylabel('Log_score')
 
     show()
-    savefig("/home/henne/Documents/Projektet/bachelor/Grafer_og_tegninger/bmj_hist.png")
+    savefig("/home/henne/Documents/Projektet/bachelor/Grafer_og_tegninger/"+graphName)
 
 """
 from nltk import *
