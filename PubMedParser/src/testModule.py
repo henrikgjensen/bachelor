@@ -340,6 +340,8 @@ def sanitizeMatrices():
 
         dense=dense[:m+1,:n+1]
 
+        print dense.shape
+
         toBeDeleted=[]
         for i in range(1,m):
             term=revTermHashTable[dense[0,i]]
