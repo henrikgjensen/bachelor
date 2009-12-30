@@ -31,14 +31,14 @@ def _generateLogTFIDF(M_coo):
     tfidfMatrix=M_coo.tolil()
 
     # Use a dense matrix for constant time lookups
-    tempDenseMatrix=M_coo.todense()
+    #tempDenseMatrix=M_coo.todense()
 
     for row in range(1,numberOfDocs+1):
 
         for col in (tfidfMatrix.getrow(row).nonzero()[1])[1:]:
 
-            tf=tempDenseMatrix[row,col]
-            #tf=tfidfMatrix[row,col]
+            #tf=tempDenseMatrix[row,col]
+            tf=tfidfMatrix[row,col]
 
             if tf == 0:
                 print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
@@ -47,14 +47,14 @@ def _generateLogTFIDF(M_coo):
 
             idf = math.log(numberOfDocs / termSum[col])
 
-            #tfidfMatrix[row,col]=tf*idf
-            tempDenseMatrix[row,col]=tf*idf
+            tfidfMatrix[row,col]=tf*idf
+            #tempDenseMatrix[row,col]=tf*idf
 
-    return tempDenseMatrix,tfidfMatrix
-    #return tfidfMatrix
+    #return tempDenseMatrix,tfidfMatrix
+    return tfidfMatrix
 
 
-def _normalizeVectorLengths(M_dense,M_lil,filename):
+def _normalizeVectorLengths(M_lil,filename):
 
     """
     Normalize the length of a sparse lil_matrix.
@@ -66,8 +66,8 @@ def _normalizeVectorLengths(M_dense,M_lil,filename):
 
         norm=vectorLength[row]
         for col in (M_lil.getrow(row).nonzero()[1])[1:]:
-            #M_lil[row,col]=(M_lil[row,col])/norm
-            M_dense[row,col]=(M_dense[row,col])/norm
+            M_lil[row,col]=(M_lil[row,col])/norm
+            #M_dense[row,col]=(M_dense[row,col])/norm
 
     tfidfMatrix = sparse.coo_matrix(M_dense)
 
@@ -90,14 +90,14 @@ def runTFIDF():
         subM_coo=IOmodule.readInTDM(_matrixDir,file)
 
         t1=time.time()
-        #subTFIDFMatrix=_generateLogTFIDF(subM_coo)
-        dense,lil=_generateLogTFIDF(subM_coo)
+        subTFIDFMatrix=_generateLogTFIDF(subM_coo)
+        #dense,lil=_generateLogTFIDF(subM_coo)
         t2=time.time()
         print "Generated log_TFIDF in "+str(t2-t1)
 
         t1=time.time()
-        #_normalizeVectorLengths(subTFIDFMatrix,file)
-        _normalizeVectorLengths(dense,lil,file)
+        _normalizeVectorLengths(subTFIDFMatrix,file)
+        #_normalizeVectorLengths(dense,lil,file)
         t2=time.time()
         print "Normalized vector lengths in "+str(t2-t1)
 
