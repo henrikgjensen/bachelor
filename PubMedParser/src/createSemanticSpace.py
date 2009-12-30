@@ -97,9 +97,9 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
 
     print "Dimensions reduced: "+str(n)
     U=U[:,:-n]
-    print Sig.shape+" "+str(n)
+    print str(Sig.shape)+" "+str(n)
     Sig=Sig[:-n,:-n]
-    print Sig.shape+" "+str(n)
+    print str(Sig.shape)+" "+str(n)
     Vt=Vt[:-n,:]
     print "U",U.shape,", Sig",Sig.shape,", Vt",Vt.shape
 
