@@ -144,21 +144,23 @@ def runScoreTest2(M_lil, M_csc):
                 ("Brugada syndrome","cardiac arrest sleep")]
 
 
+    printout1=''
+    printout2=''
+
     for disease in diseaseList:
 
-        printout=''
+        printout1+=str(disease[0])[0:5]+","
 
-        printout+=str(disease[0])[0:5]+"\t\t\t"
+        symptoms=FilterInterface.stopwordRemover(disease[1])
 
-        for top in topList:
-            results=search(M_lil, M_csc, disease[1], top, AND=False)
+        results=search(M_lil, M_csc, symptoms, top, AND=False)
 
-            for result in results:
-                if result[0]==disease[0]:
-                    printout+="("+str(top)+"\t"+str(results.index(result))+"\t"+str(result[1])[0:5]+")\t\t"
-        
-        print printout
+        for result in results:
+            if result[0]==disease[0]:
+                printout2=str(results.index(result))+","
 
+    print printout1
+    print printout2
     print "TEST DONE"
 
 
