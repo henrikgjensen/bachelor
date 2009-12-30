@@ -2,6 +2,7 @@ import os
 import numpy as np
 #from matplotlib import pylab as pl
 import math
+import IOmodule
 
 def countRecordfield(directory,field):
 
@@ -17,12 +18,13 @@ def countRecordfield(directory,field):
     """
     
     fieldSum={}
-    files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])
+#    files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])
+    files = IOmodule.getSortedFilelist(directory+'/')
 
     counter=0
-    for file in files:
+    for f in files:
 
-        diseaseDic=eval(open(directory+file,'r').read())
+        diseaseDic=eval(open(directory+f,'r').read())
 
         medlineRecords=diseaseDic['records']
 
@@ -52,7 +54,9 @@ def getSortedValues(dic,option="small2large"):
 
 def countFields(directory, fields):
 
-        files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])
+        # files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])
+
+        files = IOmodule.getSortedFilelist(directory+'/')
         
         fieldSum={}
         counter=0
@@ -93,7 +97,8 @@ def countFields(directory, fields):
 
 def pmidDuplicateCounter(directory, number=None):
 
-        files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])[:number]
+        # files=sorted([f for f in os.listdir(directory) if os.path.isfile(directory+f)])[:number]
+        files = IOmodule.getSortedFilelist(directory+'/')
         
         pmidCount={}
         counter=0
