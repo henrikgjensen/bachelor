@@ -120,3 +120,5 @@ def runAndSaveMatrices():
         M_coo=sparse.coo_matrix(M_dense,_reduceBy)
         IOmodule.writeOutTDM(_newMatrixDir, file, M_coo)
 
+        print ''
+
