@@ -127,7 +127,7 @@ def runScoreTest1(M_lil, M_csc, queryString, diseaseName):
 
 def runScoreTest2(M_lil, M_csc):
 
-    topList=[3000]
+    top=3000
 
     diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
                 ("Cushing's syndrome","hypertension, adrenal, mass"),

@@ -128,7 +128,6 @@ def runAndSaveMatrices():
         M_dense=M_coo.todense()
 
         # Run SVD
-
         U,Sig,Vt=_svd(M_dense)
 
         # Get the reduced semantic space
