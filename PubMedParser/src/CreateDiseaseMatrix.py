@@ -35,7 +35,7 @@ def createLabelVector():
 
 def constructLabelMatrix():
 
-    listoffiles = getSortedFilelist('/root/The_Hive/data_acquisition/medline_records/'):    
+    listoffiles = IO.getSortedFilelist('/root/The_Hive/data_acquisition/medline_records/'):    
 
     listofpmids=[]
     for f in listoffiles:
