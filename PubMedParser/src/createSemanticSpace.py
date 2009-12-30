@@ -116,7 +116,9 @@ def runAndSaveMatrices():
     Transform a directory of matrices to a directory of decomposed matrices.
     """
 
-    files = sorted([f for f in os.listdir(_oldMatrixDir+"/") if os.path.isfile(_oldMatrixDir+"/" + f)])
+    files = IOmodule.getSortedFilelist(_oldMatrixDir+'/')
+
+#    files = sorted([f for f in os.listdir(_oldMatrixDir+"/") if os.path.isfile(_oldMatrixDir+"/" + f)])
 
     for file in files:
 
