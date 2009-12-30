@@ -157,7 +157,7 @@ def runScoreTest2(M_lil, M_csc):
 
         for result in results:
             if result[0]==disease[0]:
-                printout2=str(results.index(result))+","
+                printout2+=str(results.index(result))+","
 
     print printout1
     print printout2
@@ -193,7 +193,7 @@ def runScoreTest3(M_lil, M_csc):
 
         for result in results:
             if result[0]==disease[0]:
-                printout2=str(results.index(result))+","
+                printout2+=str(results.index(result))+","
 
     print printout1
     print printout2
