@@ -118,7 +118,7 @@ def runAndSaveMatrices():
 
     files = sorted([f for f in os.listdir(_oldMatrixDir+"/") if os.path.isfile(_oldMatrixDir+"/" + f)])
 
-    for file in files:
+    for file in files[16:]:
 
         M_coo=IOmodule.readInTDM(_oldMatrixDir,file)
 
@@ -130,6 +130,7 @@ def runAndSaveMatrices():
 
         # Run SVD
         U,Sig,Vt=_svd(M_dense)
+        print Sig.shape
 
         # Get the reduced semantic space
         S= _semanticSpace(U,Sig,Vt)
