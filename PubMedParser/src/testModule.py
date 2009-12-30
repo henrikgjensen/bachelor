@@ -350,8 +350,8 @@ def sanitizeMatrices():
 
         dense=delete(dense,toBeDeleted,1)
 
-        print ""
-
         coo=sparse.coo_matrix(dense)
 
         IOmodule.writeOutTDM(newMatrixDir,file[:-4],coo)
+
+        print ""
