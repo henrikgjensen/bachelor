@@ -341,14 +341,16 @@ def sanitizeMatrices():
         dense=dense[:m+1,:n+1]
 
         toBeDeleted=[]
-        for i in range(1,m+1):
+        for i in range(1,m):
             term=revTermHashTable[dense[0,i]]
             if term in stopWordList:
                 toBeDeleted.append((i,term))
-                
+
+        c=0
         for i in toBeDeleted:
-            dense=delete(dense,i[0],1)
+            dense=delete(dense,i[0]-c,1)
             print "Removed "+i[1]
+            c+=1
 
         print ""
 
