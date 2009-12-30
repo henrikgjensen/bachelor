@@ -1,15 +1,41 @@
 from __future__ import division
 import DistanceMeasure
 reload(DistanceMeasure)
-from DistanceMeasure import sim_pearson as pearson
-from DistanceMeasure import cosine_measure as cosine
-from math import sqrt, pow, fabs
+from DistanceMeasure import sim_pearson as pearson, cosine_measure as cosine, cosine_measure_dense as cosine_dense
+#from DistanceMeasure import cosine_measure as cosine
+from math import sqrt, pow, fabs, floor
 import random
 from PIL import Image, ImageDraw
 import time
 import cPickle
 import SearchTermDoc as STD
 from scipy import sparse
+from numpy import delete
+import os
+import IOmodule as IO
+
+# Main folder
+_mainFolder=os.getenv("HOME")+"/"+"The_Hive"
+# Phase subfolder
+_subFolder = _mainFolder+"/"+"term_doc"
+# Term-doc directory
+_termDocDir=_subFolder+"/"+"termDoc"
+# Term- and PMID-hash directory
+_hashTablesDir=_subFolder+"/"+"hashTables"
+# Disease label hash
+_labelHash="labelHash"
+
+
+
+_stemmed=False
+
+if not _stemmed:
+    _outlierRemoved='new_diseaseMatrices_outlierRemoved'
+
+else:
+    _outlierRemoved='new_diseaseMatrices_outlierRemoved_stemmed'
+
+outlierRemoved=_outlierRemoved
 
 def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
 
@@ -125,6 +151,14 @@ def draw2d(data, labels, jpeg = 'mds_2d.jpeg', colors={}):
 
 def drawdendrogram(clust, jpeg = 'disease_cluster_dendro.jpg', col={}, width = 1200, heightmodifier=20):
 
+    """
+    Recieves a cluster, filename, optional color dictionary, width of
+    picture and a heightmodifier.
+
+    Color dictionary contains: {'PMID_1' : (R, G, B) }
+    Which is standard RGB color in a tuple.
+    """
+
     # height and width
     h = getheight(clust) * heightmodifier
     w = width
@@ -146,6 +180,10 @@ def drawdendrogram(clust, jpeg = 'disease_cluster_dendro.jpg', col={}, width = 1
 
 # The labels needs to be the pmids
 def drawnode(draw, clust, x, y, scaling, col={}):
+
+    """
+    Figures out where to put the nodes of the clusters.
+    """
 
     if clust.id < 0:
         h1 = getheight(clust.left) * 20
@@ -203,7 +241,10 @@ def getdepth(clust):
 def hcluster(tdm, distance=pearson, time_log=False, time_total=False, print_remain=False):
 
     """
-    Recieves an already cut matrix, that does not contain term hashes
+    Recieves an already cut matrix, that does not contain term
+    hashes. Optionally a distance measuere, the default one being
+    pearson's correlation coefficient, time_log for see what takes the
+    time, print_remain to see how many clusters are left to merge.
     """
 
     distances = {}
@@ -293,11 +334,9 @@ def hcluster(tdm, distance=pearson, time_log=False, time_total=False, print_rema
 
     return clust[0]
 
-def cutMatrix(tdm, time_total=False):
+def cutMatrix(tdm, time_log=False):
 
     """
-    cutMatrix(tdm, time_total=False)
-
     Recieves a term document matrix, and returns a cut version of it,
     only having the dimensions required by the number of pmids and
     numbers of terms.
@@ -306,7 +345,7 @@ def cutMatrix(tdm, time_total=False):
     tdm into the right dimensions.
     """
 
-    if time_total:
+    if time_log:
         t1 = time.time()
     
     # Figure out where to cut by looking for non zero entries.
@@ -316,12 +355,17 @@ def cutMatrix(tdm, time_total=False):
     # We do not want the term hash row, but we do want the pmid row.
     tdm = tdm[1:rowcut, 0:colcut]
 
-    if time_total:
+    if time_log:
         print 'Time cutting matrix:', t1-time.time()
 
     return tdm
 
 def getLabels(tdm):
+
+    """
+    Recieves a term docement matrix, and return a list with the hashed
+    pmids, which can be used to reverse look up the real pmids later.
+    """
 
     rows = max(tdm.nonzero()[0]) + 1
 
@@ -330,6 +374,11 @@ def getLabels(tdm):
     return labels
 
 def makeColorDictionary(pmidDuplicateList):
+
+    '''
+    Recieves a dictionary with pmid\'s and their count, then assigns
+    colors to each of the pmids.
+    '''
 
     colors = {}
     counter = 0
@@ -351,10 +400,13 @@ def makeColorDictionary(pmidDuplicateList):
         elif pmidDuplicateList[label] <= 500:
             colors[label] = (255,0,0)
 
-            
     return colors
 
 def loadColors(filename=''):
+
+    """
+    For reading in a color dictionary
+    """
     
     if filename == '':
         colors = cPickle.load('colorHash.col')
@@ -363,17 +415,49 @@ def loadColors(filename=''):
 
     return colors
 
-def cosineOutlierDetector(stdm, distance=cosine, threshold=0.5):
+def runOutlierDetector(dir, distance=cosine_dense, removePercent=0.05, output=False, time_log=False):
+
+    files = IO.getSortedFilelist(dir+'/')
+
+    if output:
+        counter = 0
+
+    for f in files:
+        diseaseName = f[0:f.find('.mtx')]
+        subTermDoc = IO.readInTDM(dir, diseaseName)
+        if output:
+            counter += 1
+            print 'Count:', counter
+
+        # If sub term document matrix is empty, just skip it.
+        if subTermDoc.shape[0]==1 or subTermDoc.shape[1]==1:
+            continue
+
+        if time_log:
+            t1 = time.time()
+        subTermDoc = outlierDetector(subTermDoc, distance, removePercent, output, time_log)
+        if time_log:
+            print 'Time for outlier detection on', diseaseName, ':', str(time.time() -t1)[:4]
+
+        if output:
+            print 'Writing',
+
+        subTermDoc = sparse.coo_matrix(subTermDoc)
+            
+        IO.writeOutTDM(_subFolder+'/'+outlierRemoved+str(int(removePercent*100)), diseaseName, subTermDoc)
+        
+
+def outlierDetector(stdm, distance=cosine_dense, removePercent=0.05, output=False, time_log=False):
 
     """
     Recieves a coo matrix and calculates cosine similarity between all
     rows.
-    """
 
+    distance=pearson will not work as it is not yet able to work on
+    dense matrices
+    """
     stdmdense = stdm.todense()
     stdmdense = stdmdense[1:,1:]
-
-    stdm = stdm.tolil()
 
     stdm_csr = sparse.csr_matrix(stdmdense)
     
@@ -381,21 +465,62 @@ def cosineOutlierDetector(stdm, distance=cosine, threshold=0.5):
 
     distance_matrix = sparse.lil_matrix((n,n))
 
-#    distances = [[distance(stdm.getrow(i), stdm.getrow(j))
-#                  for i in range(0,n)]
-#                 for j in range(0,n)]
+    if time_log:
+        t1 = time.time()
 
-    
     for i in range(0,n):
         for j in range(0,n):
             # As it is symmetric only calculate what is needed.
             if distance_matrix[i,j] == 0:
-#                print 'found zero at', i, j
-                distance_matrix[i,j] = distance_matrix[j,i] = distance(stdm_csr.getrow(i), stdm_csr.getrow(j))
+#                distance_matrix[i,j] = distance_matrix[j,i] = distance(stdm_csr.getrow(i), stdm_csr.getrow(j))
+                distance_matrix[i,j] = distance_matrix[j,i] = distance(stdmdense[i,:], stdmdense[j,:])
 
-    return distance_matrix
+    if time_log:
+        print '\tTime for distance calculations', str(time.time() - t1)[:4]
+
+    # We need to do the outlier detection down here, but we need some
+    # clever way of doing it. Perhaps getting the average correlation
+    # for each vector with the others, and then using a threshold to
+    # remove those below.
+
+    stdm = stdm.todense()
+
+    distance_matrix = distance_matrix.todense()
+
+    numberToRemove = int(floor(removePercent * n))
+
+    if output:
+        print '\tNumber of rows to remove', numberToRemove, 'out of', n
+
+    if time_log:
+        t2 = time.time()
+    toBeDeleted=[]
+    listOfThings=[]
+    for i in range(0,n):
+        listOfThings.append(((distance_matrix[i,:].sum() / n), i))
+
+    listOfThings.sort()
+    
+    toBeDeleted = [item[1] for item in listOfThings[:numberToRemove]]
+
+    if output:
+        print '\tList of row indices to be removed as outliers:', toBeDeleted
+
+    stdm = delete(stdm, toBeDeleted, 0)
+
+    if time_log:
+        print '\tTime for finding and deleting outliers:', str(time.time() - t2)[:4]
+
+    stdm = sparse.lil_matrix(stdm)
+            
+    return stdm
 
 class bicluster:
+
+    """
+    A class represents the cluster.
+    """
+    
     def __init__(self, vec, left=None, right=None, distance=0.0, id=None):
         self.left = left
         self.right = right

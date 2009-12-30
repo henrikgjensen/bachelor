@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from matplotlib import pylab as pl
+#from matplotlib import pylab as pl
 import math
 
 def countRecordfield(directory,field):
@@ -112,39 +112,41 @@ def pmidDuplicateCounter(directory, number=None):
                 pmidCount[record['PMID']]+=1
 
             counter+=1
-            print "Files remaining:",(len(files)-counter)
+            if counter % 1000 == 0:
+                print counter
+#            print "Files remaining:",(len(files)-counter)
                 
         return pmidCount
 
-def makeHistogram(data, numberOfBins=None):
+# def makeHistogram(data, numberOfBins=None):
 
-    """
-    Recieves a list of the form: [1,1,2,3,5,2,6,7,3,2,1,2,3,...,]
+#     """
+#     Recieves a list of the form: [1,1,2,3,5,2,6,7,3,2,1,2,3,...,]
 
-    Makes a histogram of the different counts. This is very screwed as
-    we have some 602205 'unique' pmids with the count 1, and all the
-    uothers are insignificant in relation to that number.
-    """
+#     Makes a histogram of the different counts. This is very screwed as
+#     we have some 602205 'unique' pmids with the count 1, and all the
+#     uothers are insignificant in relation to that number.
+#     """
 
-    # Need to transform the dictionary into a list of single values
-#    data = [v for k,v in dictionaryToMakeHistogramFrom.items()]
+#     # Need to transform the dictionary into a list of single values
+# #    data = [v for k,v in dictionaryToMakeHistogramFrom.items()]
     
-    hN = pl.hist(data, bins=numberOfBins)
+#     hN = pl.hist(data, bins=numberOfBins)
 
-    xmin = min(hN[2])
-    xmin = math.floor(xmin)
+#     xmin = min(hN[2])
+#     xmin = math.floor(xmin)
 
-    xmax = max(hN[2])
-    xmax = math.ceil(xmax)
+#     xmax = max(hN[2])
+#     xmax = math.ceil(xmax)
 
-    range = xmax - xmin
+#     range = xmax - xmin
 
-    delta = 0.0 * range
-    print "Delta is",delta
+#     delta = 0.0 * range
+#     print "Delta is",delta
 
-    pl.xlim([xmin - delta, xmax + delta])
+#     pl.xlim([xmin - delta, xmax + delta])
 
-    pl.show()    
+#     pl.show()    
 #     hN = pl.hist(dataTwo, orientation='horizontal', normed=0, rwidth=0.8, label='ONE')
 #     hS = pl.hist(dataOne, bins=hN[1], orientation='horizontal', normed=0, 
 #                  rwidth=0.8, label='TWO')

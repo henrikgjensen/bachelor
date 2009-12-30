@@ -1,9 +1,8 @@
 import math
 from math import sqrt, pow, acos
 import numpy as np
-from numpy import linalg
+from numpy import linalg, dot
 from numpy.linalg import norm
-from numpy import dot
 
 # These should work independently from the term doc, as long as one
 # does not look for correlation between different sub term doc, as
@@ -60,7 +59,7 @@ def sim_pearson(v1, v2, output=False):
     simIndex.sort()
 
     if output:
-        print simIndex
+        print 'simIndex', simIndex
 
     # Number of sim non zero
     n = float(len(simIndex))
@@ -69,7 +68,8 @@ def sim_pearson(v1, v2, output=False):
         print "n =", n
 
     # If n is 0, no need to work anymore
-    if n == 0: return 0.0
+    if n == 0:
+        return 0.0
 
     # Sum up similar
     sum1 = 0.0
@@ -109,24 +109,37 @@ def sim_pearson(v1, v2, output=False):
         print 'num =', num
         print 'den =', den
 
-    if den == 0: return 0.0
+    if den == 0:
+        return 0.0
+
+    if output:
+        print 'r =', r
 
     r = num / den
 
     # Return pearsons correlations coefficient
     return float(r)
 
-def cosine_measure(v1,v2):
+def cosine_measure(v1,v2, output=False):
 
     """
     Takes two normalized vectors and returns the cosine score between
     them.
     """
 
-    v1 = v1[0,1:]
-    v2 = v2[0,1:].transpose()
-
     # As they have already been normalized, their norm is 1
-    rad_angle = (v1*v2) / (norm(v1) * norm(v2))
+    cos = (v1*v2.transpose()) / (norm(v1.data) * norm(v2.data))
 
-    return math.acos(rad_angle[0,0])
+    if output:
+        print 'Cos:', cos
+
+    return cos[0,0]
+
+def cosine_measure_dense(v1, v2, output=False):
+
+    cos = (v1 * v2.getT()) / (norm(v1) * norm(v2))
+
+    if output:
+        print 'Cos', cos
+
+    return cos[0,0]

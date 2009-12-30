@@ -4,134 +4,191 @@ from scipy import sparse
 from numpy import mat
 import time
 
+"""
+Module used for creating a document matrix over the diseases, either
+by summing or taking the average over the column of the sub disease
+matrices.
+"""
+
 # Main folder
 _mainFolder=os.getenv("HOME")+"/"+"The_Hive"
 # Phase subfolder
 _subFolder = _mainFolder+"/"+"term_doc"
-# MedLine record directory
-_medlineDir=_mainFolder+"/data_acquisition/"+"medline_records"
 # Term-doc directory
 _termDocDir=_subFolder+"/"+"termDoc"
 # Term- and PMID-hash directory
 _hashTablesDir=_subFolder+"/"+"hashTables"
-# Disease label hash
-_labelHash="labelHash"
 
-# names
-# pmid hash
-_pmidHash="pmidHash"
-# disease hash
+########################################################################
+#### Use only stopword-removal as filter: ##############################
+########################################################################
+
+_stemmer=False
+
+if not _stemmer:
+    # Sub-matrix directory
+    _subMatrixDir=_subFolder+"/"+"new_diseaseMatrices"
+    # Hashtable filenames:
+    _termHash="termHash"
+    _pmidHash="pmidHash"
+    _termDoc="TermDoc"
+    _label = 'LabelMatrix'
+
+########################################################################
+#### Use stopword-removal and Porter-stemming (english) as filters: ####
+########################################################################
+else:
+    # Stemmed sub-matrix directory
+    _subMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed"
+    # Stemmed hashtable filenames:
+    _termHash="termHash_stemmed"
+    _pmidHash="pmidHash_stemmed"
+    _termDoc="TermDoc_stemmed"
+    _label = 'LabelMatrix_stemmed'
+
+label=_label+'_tfidf'
+
+# Name of disease filename
 diseaseHash='diseaseHash'
-# labelMatrix
-label = 'LabelMatrix'
 
-def getRowIndices(file_content, pmidHashTable, output=False, time_log=False):
+def getColumnSum(subTermDoc, avg=False):
 
-    # Read through medline articles and get PMID to extract from
-    # complete term doc.
+    """
+    Recieves a sub term document matrix and optional flag for getting
+    average instead of sum.
+    """
 
-    pmids=[]
-    for i in range(len(file_content['records'])):
-        pmids.append(file_content['records'][i]['PMID'])
+    sumVector = sparse.lil_matrix((2,subTermDoc.shape[1]))
+    sumVector = sumVector.todense()
 
-    pmids=[pmidHashTable[pmid] for pmid in pmids]
+    if avg:
+        counter = 0
 
-    print 'PMIDs:', pmids
-
-    return pmids
-
-def createLabelVector(tdm, PMIDHashes, output=False, time_log=False):
-
-    # Sum over all columns and return a 1 x 456xxx vector
-
-    n = tdm.shape[1] - 1
-
-    labelVector = sparse.csr_matrix((1,n))
-    labelVector = labelVector.todense()
-
-    for pH in PMIDHashes:
-        row = tdm.getrow(pH)
+    for i in range(1, subTermDoc.shape[0]):
+        row = subTermDoc.getrow(i)
         row = row.todense()[0,1:]
 
-        labelVector += row
+        sumVector[1,1:] += row
 
-    return sparse.csr_matrix(labelVector)
+        if avg:
+            counter+=1
 
-def constructLabelMatrix(tdm, output=False, time_log=False):
+    if avg:
+        sumVector[1,1:]/=counter
+        
+    return sparse.lil_matrix(sumVector)
+
+def constructLabelMatrix(subMatrixDir, avg=False, output=False, time_log=False):
+
+    """
+    Recieves a subMatrixDir goes through all the files and sums up the
+    column of it, creating a single row vector containing the sum of
+    all column in the sub term doc matrix. It then proceeds to making
+    a disease term doc, based on these row vector
+
+    Optional flags are:
+
+    avg, takes the average over the columns of the sub matrices
+    instead of the sum.
+
+    output, makes the funtion produce additional output
+
+    time_log, makes the function print out how much time is spend on
+    what
+    """
 
     if output:
-        'Converting matrix to csr'
+        print 'Initialising...'
 
     if time_log:
         t1 = time.time()
 
-    tdm = tdm.tocsr()
+    files = IO.getSortedFilelist(subMatrixDir)
+
+    termHashTable = IO.pickleIn(_hashTablesDir, _termHash)
+    diseaseHashTable = IO.pickleIn(_hashTablesDir, diseaseHash)
+
+    labelMatrix=sparse.lil_matrix((len(files)+1,len(termHashTable)+1))
+
+    # Initialize subTermSum to something
+    subTermSum = sparse.lil_matrix((1,1))
+
+    if output:
+        print 'Done initialising label matrix of size', str((len(files)+1,len(termHashTable)+1))
+        count = 0
 
     if time_log:
-        print 'Time for matrix convertion', str(time.time() - t1)[:4]
-
-    files = IO.getSortedFilelist(_medlineDir+'/',stopIndex=1)
-
-    n = tdm.shape[1]
-
-    if output:
-        print 'Creating a ', str(len(files)+1)+'x'+str(n), 'label matrix'
-    
-    labelMatrix = sparse.lil_matrix((len(files)+1,n))
-
-    diseaseHashTable = IO.pickleIn(_hashTablesDir, diseaseHash+'.hash')
-
-    pmidHashTable=IO.pickleIn(_hashTablesDir, _pmidHash+'.btd')
-
-    if output:
-        counter = 0
+        print 'Time for initialization:', str(time.time() - t1)[:4]
 
     for f in files:
         if time_log:
             t2 = time.time()
-        diseaseName=f[0:f.find('.txt')]
+        diseaseName = f[0:f.find('.mtx')]
         if output:
-            counter+=1
-            print 'Processing', diseaseName, len(files)-counter, 'Numbers remaining',
-            
-        file_content = IO.evalIn(_medlineDir+'/'+f)
+            print 'Processing', diseaseName
+            count+=1
+            print 'Numbers remaining', len(files)-count
+
+        subTermDoc = IO.readInTDM(subMatrixDir, diseaseName)
+        subTermDoc = subTermDoc.tolil()
+
+        # If the subTermDoc contains nothing, just skip it
+        if(subTermDoc.shape[0] == 1 and subTermDoc.shape[1] == 1):
+            continue
         
-        pmidHashes=getRowIndices(file_content, pmidHashTable)
+        subTermSum = getColumnSum(subTermDoc,avg)
+        subTermSum[0,0] = diseaseHashTable[diseaseName]
+        subTermSum[0,:] = subTermDoc.getrow(0)
 
-        labelVector = createLabelVector(tdm, pmidHashes)
-
-        diseaseH = diseaseHashTable[diseaseName]
-
-        labelMatrix[diseaseH,0] = diseaseH
-
-        labelMatrix[diseaseH,1:] = labelVector
-
+        labelMatrix[diseaseHashTable[diseaseName],0] = diseaseHashTable[diseaseName]
+        
         if time_log:
-            print 'Process time:', str(time.time() - t2)[:4],
+            print 'Time for', diseaseName, str(time.time() - t2)[:4]
+            t3 = time.time()
 
-        print 
+        if output:
+            print 'Filling in values in label matrix for', diseaseName
+        for columnIndex in range(1,subTermSum.shape[1]):
+            labelMatrix[diseaseHashTable[diseaseName],subTermSum[0,columnIndex]] = subTermSum[1,columnIndex]
+        if time_log:
+            print 'Values filled into label matrix in', str(time.time() - t3)[:4]
+        if output:
+            print 'Completed filling in values.'
 
-    labelMatrix[0,:] = tdm.getrow(0)
-
+    # Hack way of making term hashes
+    labelMatrix[0,:] = range(0,len(termHashTable))
+    
     if output:
-        print 'Done making label matrix, writing to', _termDocDir+'/'+label,'...'
+        print 'Done making label matrix, writing to'
 
     IO.writeOutTDM(_termDocDir, label, labelMatrix)
 
     if output:
         print 'Done wrting label matrix.'
+        
+    return labelMatrix
 
-def createDiseaseHash(dir):
+def createDiseaseHash(dir,output=False):
+
+    """
+    Recieves a directory containing files to be hashed. It uses the
+    filename as a key. It requires the files to be in .mtx format. The
+    hashes starts from 1 ... number_of_files
+    """
 
     diseaseHashes={}
 
     files = IO.getSortedFilelist(dir)
     counter=0
     for f in files:
-        diseaseName=f[0:f.find('.txt')]
+        diseaseName=f[0:f.find('.mtx')]
+        stdm=IO.readInTDM(dir+'/'+f)
+        if stdm.shape[0]==1:
+            continue
         if diseaseName not in diseaseHashes.keys():
             counter+=1
-            print 'Created', diseaseName, 'with hash', counter
+            if output:
+                print 'Created', diseaseName, 'with hash', counter
             diseaseHashes[diseaseName]=counter
 
-    IO.pickleOut(_hashTablesDir, diseaseHash, 'hash', diseaseHashes)
+    IO.pickleOut(_hashTablesDir, diseaseHash, diseaseHashes)
