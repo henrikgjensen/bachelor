@@ -82,10 +82,10 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     U=U[:,:-n]
     Sig=Sig[:-n,:-n]
     Vt=Vt[:-n,:]
-    print "U",U.shape," Sig",Sig.shape," Vt",Vt.shape
+    print "U",U.shape,", Sig",Sig.shape,", Vt",Vt.shape
 
     U=sparse.csc_matrix(U)
-    Sig=Sig_csc
+    Sig=sparse.csc_matrix(Sig)
     Vt=sparse.csc_matrix(Vt)
 
     S=U*Sig*Vt
