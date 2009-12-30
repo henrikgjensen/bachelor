@@ -97,6 +97,7 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
 
     print "Dimensions reduced: "+str(n)
     U=U[:,:-n]
+    print Sig.shape
     Sig=Sig[:-n,:-n]
     Vt=Vt[:-n,:]
     print "U",U.shape,", Sig",Sig.shape,", Vt",Vt.shape
@@ -130,7 +131,6 @@ def runAndSaveMatrices():
 
         # Run SVD
         U,Sig,Vt=_svd(M_dense)
-        print Sig.shape
 
         # Get the reduced semantic space
         S= _semanticSpace(U,Sig,Vt)
