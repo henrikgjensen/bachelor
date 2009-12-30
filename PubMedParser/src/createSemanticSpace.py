@@ -78,7 +78,7 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
 
     counter=0
     n=0
-    for i in range(1,diagLen):
+    for i in range(1,diagLen+1):
 
         # Since the most interesting singular values are organised top-down
         # along the diagonal, we work our way bottom-up when reducing noisy
