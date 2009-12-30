@@ -352,7 +352,7 @@ def sanitizeMatrices():
         for i in toBeDeleted:
             dense=delete(dense,i[0]-c,1)
             print "Removed "+i[1]
-            print revTermHashTable[i[0]-c]
+            print revTermHashTable[dense[0,i[0]-c]]
             c+=1
 
         print ""
