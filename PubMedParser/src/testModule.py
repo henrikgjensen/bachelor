@@ -307,15 +307,15 @@ def makehist():
 from nltk import *
 from nltk.corpus import stopwords
 from scipy import sparse
-termHashTable=IOmodule.pickleIn("/root/The_Hive/term_doc/hashTables", "termHash_stemmed")
+termHashTable=IOmodule.pickleIn("/root/The_Hive/term_doc/hashTables", "termHash")
 revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
 from numpy import delete
 def sanitizeMatrices():
 
-    #oldMatrixDir="/root/The_Hive/term_doc/diseaseMatrices"
-    oldMatrixDir="/root/The_Hive/term_doc/diseaseMatrices_stemmed"
-    #newMatrixDir="/root/The_Hive/term_doc/new_diseaseMatrices"
-    newMatrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_stemmed"
+    oldMatrixDir="/root/The_Hive/term_doc/diseaseMatrices"
+    #oldMatrixDir="/root/The_Hive/term_doc/diseaseMatrices_stemmed"
+    newMatrixDir="/root/The_Hive/term_doc/new_diseaseMatrices"
+    #newMatrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_stemmed"
 
     stopWordList=stopwords.words("english")
 
