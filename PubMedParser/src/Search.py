@@ -164,7 +164,7 @@ def runScoreTest2(M_lil, M_csc):
 
 def runScoreTest3(M_lil, M_csc):
 
-    topList=[3000]
+    top=3000
 
     diseaseList=[('Apparent mineralocorticoid excess','early-onset, severe hypertension, associated, low renin levels, hypoaldosteronism'),
                 ('Rubinstein-Taybi syndrome','congenital anomalies, intellectual deficit, behavioural characteristics'),
@@ -178,23 +178,22 @@ def runScoreTest3(M_lil, M_csc):
                 ('Bronchiolitis obliterans with obstructive pulmonary disease','inflammatory and fibrosing thickening of bronchiolar walls, airflow obstruction'),
                 ('Cholera','severe diarrhea and vomiting')]
 
+    printout1=''
+    printout2=''
+
     for disease in diseaseList:
 
-        printout=''
+        printout1+=str(disease[0])[0:5]+","
 
-        printout+=str(disease[0])[0:5]+"\t\t\t"
+        symptoms=FilterInterface.stopwordRemover(disease[1])
 
-        for top in topList:
+        results=search(M_lil, M_csc, symptoms, top, AND=False)
 
-            symptoms=FilterInterface.stopwordRemover(disease[1])
+        for result in results:
+            if result[0]==disease[0]:
+                printout2=str(results.index(result))+","
 
-            results=search(M_lil, M_csc, symptoms, top, AND=False)
-
-            for result in results:
-                if result[0]==disease[0]:
-                    printout+="("+str(top)+"\t"+str(results.index(result))+"\t"+str(result[1])[0:5]+")\t\t"
-
-        print printout
-
+    print printout1
+    print printout2
     print "TEST DONE"
 

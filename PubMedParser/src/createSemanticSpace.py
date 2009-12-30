@@ -1,4 +1,4 @@
-from scipy import linalg, mat, sparse, array
+from scipy import linalg, mat, sparse
 import IOmodule
 import os
 
@@ -7,11 +7,15 @@ _path = os.getenv("HOME")+"/"+"The_Hive"
 # Sub folder
 _subFolder = _path+"/"+"term_doc"
 # Matrices folder (read in)
-_oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed"
+_oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed"
 # Matrices folder (write out)
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_5"
+#_reduceBy=5
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_50"
-_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_90"
+#_reduceBy=50
+_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed_reduced_90"
+_reduceBy=90
+
 
 def _svd(M_dense):
 
@@ -23,24 +27,31 @@ def _svd(M_dense):
     Returns left, right and singular values.
     """
 
-    X=M_dense
+    # Cut away the indices (row 0 and col 0)
+    M_dense = M_dense[1:,1:]
 
-    X = X[1:,1:]
+    # Calculate singular values
+    U, S, Vt = linalg.svd(M_dense)
 
-    U, S, Vt = linalg.svd(X)
+    # Get the dimensions of the matrix
+    M, N = M_dense.shape
 
-    M, N = X.shape
-
+    # Return the SVD matrices
     Sig = mat(linalg.diagsvd(S, M, N))
     U, Vt = mat(U), mat(Vt)
-
     return U,Sig,Vt
 
 
 def _semanticSpace(U,Sig,Vt,reduce=90):
 
     """
+    Create and return a reduced semantic space
+    from U, Sig and Vt given in svd above.
 
+    *Note that since its faster to multiply csc-
+    matrices (compared to dense-matrices), csc
+    and dense is used interchangeably for
+    improved speed.
     """
 
     Sig_csc=sparse.csc_matrix(Sig)
@@ -53,6 +64,9 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     n=0
     for i in range(1,diagLen):
 
+        # Since the most interesting singular values are organised top-down
+        # along the diagonal, we work our way bottom-up when reducing noisy
+        # dimensions.
         bottomUp=diagLen-i
 
         counter+=Sig[bottomUp,bottomUp]
@@ -61,6 +75,7 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
             n=i
             break
 
+    # Make sure there are at least 3 dimensions in the reduced matrix
     if n>diagLen-3: n=diagLen-3
 
     print "Dimensions reduced: "+str(n)
@@ -69,7 +84,7 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     Vt=Vt[:-n,:]
 
     U=sparse.csc_matrix(U)
-    Sig=sparse.csc_matrix(Sig)
+    Sig=Sig_csc
     Vt=sparse.csc_matrix(Vt)
 
     S=U*Sig*Vt
@@ -80,59 +95,26 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
 def runAndSaveMatrices():
 
     """
-    
+    Transform a directory of matrices to a directory of decomposed matrices.
     """
 
     files = sorted([f for f in os.listdir(_oldMatrixDir+"/") if os.path.isfile(_oldMatrixDir+"/" + f)])
 
-
     for file in files:
 
         M_coo=IOmodule.readInTDM(_oldMatrixDir,file)
+        M_dense=M_coo.todense()
 
-        X=M_coo.todense()
+        # Run SVD
+        U,Sig,Vt=_svd(M_dense)
 
-
-        U,Sig,Vt=_svd(X)
-
-
+        # Get the reduced semantic space
         S= _semanticSpace(U,Sig,Vt)
 
+        # Recombine the indices and the reduced matrix
+        M_dense[1:,1:]=S.todense()
 
-        X[1:,1:]=S.todense()
-
-
-        X=sparse.coo_matrix(X)
-
-
-        IOmodule.writeOutTDM(_newMatrixDir, file, S)
-
-
-
-
-
-"""
-    #termHashTable=IOmodule.pickleIn("/root/The_Hive/term_doc/hashTables", "termHash_stemmed")
-    #revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
-    #hashes=[]
-    #termHashes=array(X[0,1:])
-    #for termHash in termHashes[0]:
-    #    hashes.append(revTermHashTable[termHash])
-
-
-def topSemanticTerms(M_csc,hashes):
-
-    # Make magic...
-
-    l=[]
-
-    for col in range(M_csc.shape[1]):
-        l.append((sum(M_csc.getcol(col).data),hashes[col]))
-
-    l.sort()
-    l.reverse()
-
-    return l
-
-"""
+        # Save the matrix
+        M_coo=sparse.coo_matrix(M_dense,_reduceBy)
+        IOmodule.writeOutTDM(_newMatrixDir, file, M_coo)
 
