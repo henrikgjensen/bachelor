@@ -69,7 +69,8 @@ def _normalizeVectorLengths(M_lil,filename):
             M_lil[row,col]=(M_lil[row,col])/norm
             #M_dense[row,col]=(M_dense[row,col])/norm
 
-    tfidfMatrix = sparse.coo_matrix(M_dense)
+    #tfidfMatrix = sparse.coo_matrix(M_dense)
+    tfidfMatrix = M_lil
 
     # Save and overwrite the log_tfidf generated above
     IOmodule.writeOutTDM(_termDocDir,filename, tfidfMatrix)
