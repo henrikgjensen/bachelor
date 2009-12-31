@@ -70,6 +70,8 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     improved speed.
     """
 
+    print Sig
+
     Sig_csc=sparse.csc_matrix(Sig)
     eigSum = Sig_csc.sum()
     diagLen = Sig_csc.getnnz()
