@@ -125,7 +125,7 @@ def runAndSaveMatrices():
 
 #    files = sorted([f for f in os.listdir(_oldMatrixDir+"/") if os.path.isfile(_oldMatrixDir+"/" + f)])
 
-    for file in files[50:]:
+    for file in files[70:]:
 
         M_coo=IOmodule.readInTDM(_oldMatrixDir,file)
 
