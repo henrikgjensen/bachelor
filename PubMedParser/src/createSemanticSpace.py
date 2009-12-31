@@ -94,8 +94,6 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
             n=i
             break
 
-
-
     # Make sure there are at least 3 dimensions in the reduced matrix
     if n>diagLen-3:
         n=diagLen-3
@@ -128,7 +126,7 @@ def runAndSaveMatrices():
 
 #    files = sorted([f for f in os.listdir(_oldMatrixDir+"/") if os.path.isfile(_oldMatrixDir+"/" + f)])
 
-    for file in files[80:]:
+    for file in files:
 
         M_coo=IOmodule.readInTDM(_oldMatrixDir,file)
 
