@@ -51,7 +51,7 @@ _termDocDir = _subFolder+"/"+"termDoc"
 #######################################################################################
 
  # TFIDF-matrix file name
-_tfidfName = "nolog_TFIDFMatrix_tfidf_stemmed"
+_tfidfName = "TFIDFMatrix_tfidf_stemmed"
  # Vector-norm hash for then TFIDFMatrix
 _RLHash = "RLHash_tfidf_stemmed"
  # Hash for the number of documents each term occur in
