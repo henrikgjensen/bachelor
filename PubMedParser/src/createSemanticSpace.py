@@ -49,16 +49,19 @@ def _svd(M_dense):
     # Calculate singular values
     U, S, Vt = linalg.svd(M_dense)
 
-    print U
-    print S
-    print Vt
-
     # Get the dimensions of the matrix
     M, N = M_dense.shape
 
     # Return the SVD matrices
     Sig = mat(linalg.diagsvd(S, M, N))
     U, Vt = mat(U), mat(Vt)
+
+    print U
+    print Sig
+    print Vt
+
+    print sparse.csc_matrix(U)*sparse.csc_matrix(S)*sparse.csc_matrix(Vt)
+
     return U,Sig,Vt
 
 
