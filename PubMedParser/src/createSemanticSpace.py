@@ -145,13 +145,13 @@ def runAndSaveMatrices():
             U,Sig,Vt=_svd(M_dense)
 
             # Get the reduced semantic space
-            S= _semanticSpace(U,Sig,Vt)
+            S= _semanticSpace(U,Sig,Vt,_reduceBy)
 
             # Recombine the indices and the reduced matrix
             M_dense[1:,1:]=S.todense()
 
             # Save the matrix
-            M_coo=sparse.coo_matrix(M_dense,_reduceBy)
+            M_coo=sparse.coo_matrix(M_dense)
 
             IOmodule.writeOutTDM(_newMatrixDir, file, M_coo)
             print ''
