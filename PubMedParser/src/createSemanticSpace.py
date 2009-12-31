@@ -74,6 +74,9 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     eigSum = Sig_csc.sum()
     diagLen = Sig_csc.getnnz()
 
+    print "eigsum:"+str(eigSum)
+    print "diaglen:"+str(diagLen)
+
     percentReduce=(float(eigSum)/100)*reduce
 
     counter=0
