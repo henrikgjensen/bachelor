@@ -287,8 +287,8 @@ def createTermAndPmidHashes():
                 
         print str(termCounter)+" terms hashed. "+str(pmidCounter)+" pmids hashed."
 
-    IOmodule.pickleOut(hashTables, _termHash, termHashTable)
-    IOmodule.pickleOut(hashTables, _pmidHash, pmidHashTable)
+    IOmodule.pickleOut(hashTables, _termHash,"btd", termHashTable)
+    IOmodule.pickleOut(hashTables, _pmidHash,"btd", pmidHashTable)
 
     return termHashTable, pmidHashTable
 
@@ -328,7 +328,7 @@ def createDiseaseLabelHash():
 
     print 'Created disease label hash in:',str(t2-t1)
 
-    IOmodule.pickleOut(_hashTablesDir, _labelHash, labelHash)
+    IOmodule.pickleOut(_hashTablesDir, _labelHash,"btd", labelHash)
 
 
 def createTermDoc(refreshHash=False):

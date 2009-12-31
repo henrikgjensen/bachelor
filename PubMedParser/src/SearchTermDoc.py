@@ -128,7 +128,7 @@ def createRLHash(M_lil,filename,save_file=True):
         if save_file: print "Hashes created: "+str(count)
 
     if save_file:
-        IOmodule.pickleOut(_hashTablesDir, filename, RLHash)
+        IOmodule.pickleOut(_hashTablesDir, filename,"btd", RLHash)
     else:
         return RLHash
 
@@ -162,7 +162,7 @@ def createCLHash(M_coo,filename,save_file=True):
 
     if save_file:
         print "Created and saved ColumnLength-hash in: "+str(t2-t1)
-        IOmodule.pickleOut(_hashTablesDir, filename, CLHash)
+        IOmodule.pickleOut(_hashTablesDir, filename,"btd", CLHash)
     else:
         return CLHash
 

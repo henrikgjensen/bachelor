@@ -191,4 +191,4 @@ def createDiseaseHash(dir,output=False):
                 print 'Created', diseaseName, 'with hash', counter
             diseaseHashes[diseaseName]=counter
 
-    IO.pickleOut(_hashTablesDir, diseaseHash, diseaseHashes)
+    IO.pickleOut(_hashTablesDir, diseaseHash,"btd", diseaseHashes)

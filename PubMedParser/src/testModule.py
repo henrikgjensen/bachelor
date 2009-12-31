@@ -141,7 +141,7 @@ def createVLHash(M_lil):
     for pmidHash in range(M_lil.shape[0]):
         VLHash[pmidHash]=linalg.norm((M_lil.getrow(pmidHash).data[0])[1:])
 
-    IOmodule.pickleOut("/root/The_Hive/term_doc/hashTables", "VLHash", VLHash)
+    IOmodule.pickleOut("/root/The_Hive/term_doc/hashTables", "VLHash","btd", VLHash)
 
 
 #really fast elementwise stuff:
