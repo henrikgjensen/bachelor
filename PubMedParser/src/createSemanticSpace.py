@@ -150,20 +150,28 @@ def runAndSaveMatrices():
         if M_coo.shape[0]==1:
             continue
 
-        M_dense=M_coo.todense()
+        print "Shape:"+str(M_coo.shape)
 
-        # Run SVD
-        U,Sig,Vt=_svd(M_dense)
+        # SVD does not run well single dimenstion matrices
+        if M_coo.shape[0]>1:
+            M_dense=M_coo.todense()
 
-        # Get the reduced semantic space
-        S= _semanticSpace(U,Sig,Vt)
+            # Run SVD
+            U,Sig,Vt=_svd(M_dense)
 
-        # Recombine the indices and the reduced matrix
-        M_dense[1:,1:]=S.todense()
+            # Get the reduced semantic space
+            S= _semanticSpace(U,Sig,Vt)
 
-        # Save the matrix
-        M_coo=sparse.coo_matrix(M_dense,_reduceBy)
-        IOmodule.writeOutTDM(_newMatrixDir, file, M_coo)
+            # Recombine the indices and the reduced matrix
+            M_dense[1:,1:]=S.todense()
 
-        print ''
+            # Save the matrix
+            M_coo=sparse.coo_matrix(M_dense,_reduceBy)
+
+            IOmodule.writeOutTDM(_newMatrixDir, file, M_coo)
+            print ''
+        else:
+            print "Dimensionality too low for svd"
+            IOmodule.writeOutTDM(_newMatrixDir, file, M_coo)
+            print ''
 
