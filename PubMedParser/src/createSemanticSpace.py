@@ -46,8 +46,6 @@ def _svd(M_dense):
     # Cut away the indices (row 0 and col 0)
     M_dense = M_dense[1:,1:]
 
-    print M_dense
-
     # Calculate singular values
     U, S, Vt = linalg.svd(M_dense)
 
@@ -112,8 +110,8 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     # Make sure there are at least 3 dimensions in the reduced matrix
     if n>diagLen-3:
         n=diagLen-3
-    # If there are less than 3 or less dimensions, do not reduce dimensionality
-    if n<4:
+    # If there are 3 or less dimensions, do not reduce dimensionality
+    if diagLen<=3:
         n=(-diagLen)
 
     print "Dimensions reduced: "+str(n)
