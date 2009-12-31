@@ -46,6 +46,8 @@ def _svd(M_dense):
     # Cut away the indices (row 0 and col 0)
     M_dense = M_dense[1:,1:]
 
+    print M_dense
+
     # Calculate singular values
     U, S, Vt = linalg.svd(M_dense)
 
@@ -146,14 +148,15 @@ def runAndSaveMatrices():
 
         M_coo=IOmodule.readInTDM(_oldMatrixDir,file)
 
-        # Make sure the matrix contains information
+        # Make sure the matrix contains information (1-dim. is an empty matrix)
         if M_coo.shape[0]==1:
             continue
 
         print "Shape:"+str(M_coo.shape)
 
         # SVD does not run well single dimenstion matrices
-        if M_coo.shape[0]>1:
+        ## (remembering that the first dimension is indices and does not count)
+        if M_coo.shape[0]>2:
             M_dense=M_coo.todense()
 
             # Run SVD
