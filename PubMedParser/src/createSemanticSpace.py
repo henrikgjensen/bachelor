@@ -55,13 +55,6 @@ def _svd(M_dense):
     # Return the SVD matrices
     Sig = mat(linalg.diagsvd(S, M, N))
     U, Vt = mat(U), mat(Vt)
-
-    print U
-    print Sig
-    print Vt
-
-    print sparse.csc_matrix(U)*sparse.csc_matrix(S)*sparse.csc_matrix(Vt)
-
     return U,Sig,Vt
 
 
@@ -94,15 +87,11 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
         # along the diagonal, we work our way bottom-up when reducing noisy
         # dimensions.
         bottomUp=diagLen-i
-        print "bottomup:"+str(bottomUp)
 
         counter+=Sig[bottomUp,bottomUp]
 
-        print "counter:"+str(counter)
-
         if counter >= percentReduce:
             n=i
-            print "n:"+str(n)
             break
 
 
@@ -118,9 +107,6 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     U=U[:,:-n]
     Sig=Sig[:-n,:-n]
     Vt=Vt[:-n,:]
-
-    print ""
-
     print "U",U.shape,", Sig",Sig.shape,", Vt",Vt.shape
 
     U=sparse.csc_matrix(U)
