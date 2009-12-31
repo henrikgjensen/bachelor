@@ -42,6 +42,8 @@ def _svd(M_dense):
 
     Returns left, right and singular values.
     """
+    
+    print M_dense
 
     # Cut away the indices (row 0 and col 0)
     M_dense = M_dense[1:,1:]
@@ -69,8 +71,6 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     and dense is used interchangeably for
     improved speed.
     """
-
-    print Sig
 
     Sig_csc=sparse.csc_matrix(Sig)
     eigSum = Sig_csc.sum()
