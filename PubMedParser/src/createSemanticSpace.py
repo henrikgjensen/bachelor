@@ -84,11 +84,15 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
         # along the diagonal, we work our way bottom-up when reducing noisy
         # dimensions.
         bottomUp=diagLen-i
+        print "bottomup:"+str(bottomUp)
 
         counter+=Sig[bottomUp,bottomUp]
 
+        print "counter:"+str(counter)
+
         if counter >= percentReduce:
             n=i
+            print "n:"+str(n)
             break
 
 
