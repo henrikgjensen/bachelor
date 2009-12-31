@@ -42,14 +42,16 @@ def _svd(M_dense):
 
     Returns left, right and singular values.
     """
-    
-    print M_dense
 
     # Cut away the indices (row 0 and col 0)
     M_dense = M_dense[1:,1:]
 
     # Calculate singular values
     U, S, Vt = linalg.svd(M_dense)
+
+    print U
+    print S
+    print Vt
 
     # Get the dimensions of the matrix
     M, N = M_dense.shape
