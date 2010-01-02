@@ -79,8 +79,6 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     # Search-heuristic used to retrieve the list of results
     results=SearchInterface.cosineMeasureOR(M_lil, M_csc, queryString)
 
-    print results
-
     if AND: results=SearchInterface.cosineMeasureAND(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
@@ -90,6 +88,7 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     resultDic={}
     for item in results[:top]:
         pmid=item[1] #SearchTermDoc.getPMID(item[1])
+        print pmid
         labels=_labelHash[pmid]
         for label in labels:
             try:
