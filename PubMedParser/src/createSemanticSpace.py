@@ -101,10 +101,13 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     if diagLen<=3:
         n=(-diagLen)
 
-    print "Dimensions reduced: "+str(n)
-    U=U[:,:-n]
-    Sig=Sig[:-n,:-n]
-    Vt=Vt[:-n,:]
+#    print "Dimensions reduced: "+str(n)
+#    U=U[:,:-n]
+#    Sig=Sig[:-n,:-n]
+#    Vt=Vt[:-n,:]
+    U=U[:,1]
+    Sig=Sig[1,1]
+    Vt=Vt[1,1]
     print "U",U.shape,", Sig",Sig.shape,", Vt",Vt.shape
 
     U=sparse.csc_matrix(U)
