@@ -35,15 +35,13 @@ _termDocDir = _subFolder+"/"+"termDoc"
 ####################################################################
 
  # TFIDF-matrix file name
-#_tfidfName = "TFIDFMatrix_stemmed"
+_tfidfName = "TFIDFMatrix_stemmed"
  # Vector-norm hash for then TFIDFMatrix
-#_RLHash = "RLHash_stemmed"
+_RLHash = "RLHash_stemmed"
  # Hash for the number of documents each term occur in
-#_CLHash = "CLHash_stemmed"
- # Load the precomputed norm of each row-vector in the stemmed term-doc matrix.
-#_vectorLength = IOmodule.pickleIn(_hashTablePath,_RLHash)
+_CLHash = "CLHash_stemmed"
  # Load the precomputed length of each column in the stemmed term-doc matrix
-#_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
+_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 
 
 #######################################################################################
@@ -65,13 +63,13 @@ _termDocDir = _subFolder+"/"+"termDoc"
 #######################################################################################
 
  # TFIDF-matrix file name
-_tfidfName = "label_TFIDFMatrix"
+#_tfidfName = "label_TFIDFMatrix"
  # Vector-norm hash for then TFIDFMatrix
-_RLHash = "RLHash_tfidf_stemmed"
+#_RLHash = "RLHash_tfidf_stemmed"
  # Hash for the number of documents each term occur in
-_CLHash = "label_CLHash"
+#_CLHash = "label_CLHash"
  # Load the precomputed length of each column in the stemmed term-doc matrix
-_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
+#_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 
 ####################################################################
 
