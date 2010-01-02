@@ -97,6 +97,8 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     resultList=sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
 
+    print resultList
+
     return resultList
 
 def getScore(resultList,diseaseName):
