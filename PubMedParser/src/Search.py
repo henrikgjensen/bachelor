@@ -85,18 +85,22 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     results.sort()
     results.reverse()
 
+#    resultDic={}
+#    for item in results[:top]:
+#        pmid=item[1] #SearchTermDoc.getPMID(item[1])
+#        labels=_labelHash[pmid]
+#        for label in labels:
+#            try:
+#                resultDic[label]+=item[0]
+#            except:
+#                resultDic[label]=item[0]
+
     resultDic={}
     for item in results[:top]:
         pmid=item[1] #SearchTermDoc.getPMID(item[1])
-        labels=_labelHash[pmid]
-        for label in labels:
-            try:
-                resultDic[label]+=item[0]
-            except:
-                resultDic[label]=item[0]
-
-    print resultDic
-
+        label=_labelHash[pmid]
+        resultDic[label]=item[0]
+    
     resultList=sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
 
     return resultList
