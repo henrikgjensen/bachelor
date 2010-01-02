@@ -14,9 +14,19 @@ _hashTablePath = _subFolder+"/"+"hashTables"
 # Set True for Porter-stemming
 _stemmer=True
 
-# Disease label hash
-_labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
+############
+
+# Disease label hash (for pmid lookup)
+#_labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
+#print "Label hash loaded"
+
+############
+
+# Disease label hash (for label lookup)
+_labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash")
 print "Label hash loaded"
+
+############
 
 
 def search20(M_lil, M_csc, queryString, AND=False):
