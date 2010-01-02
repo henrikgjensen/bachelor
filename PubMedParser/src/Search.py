@@ -79,6 +79,8 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     # Search-heuristic used to retrieve the list of results
     results=SearchInterface.cosineMeasureOR(M_lil, M_csc, queryString)
 
+    print results
+
     if AND: results=SearchInterface.cosineMeasureAND(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
@@ -96,8 +98,6 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
                 resultDic[label]=item[0]
 
     resultList=sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
-
-    print resultList
 
     return resultList
 
