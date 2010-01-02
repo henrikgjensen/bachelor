@@ -56,6 +56,8 @@ _termDocDir = _subFolder+"/"+"termDoc"
 #_RLHash = "RLHash_tfidf_stemmed"
  # Hash for the number of documents each term occur in
 #_CLHash = "CLHash_tfidf_stemmed"
+ # Load the precomputed length of each column in the stemmed term-doc matrix
+#_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 
 
 #######################################################################################
@@ -68,6 +70,8 @@ _tfidfName = "TFIDFMatrix_tfidf_stemmed"
 _RLHash = "RLHash_tfidf_stemmed"
  # Hash for the number of documents each term occur in
 _CLHash = "CLHash_tfidf_stemmed"
+ # Load the precomputed length of each column in the stemmed term-doc matrix
+_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 
 ####################################################################
 
@@ -93,10 +97,6 @@ def _generateLogTFIDF(M_coo):
     t2=time.time()
     print "Matrix converted to lil in",(t2-t1)
 
-    # Load the precomputed length of each column in the stemmed term-doc matrix
-    termSum = SearchTermDoc.createCLHash(M_coo, _CLHash, False)
-
-
     t1=time.time()
 
     for row in range(1,numberOfDocs+1):
@@ -111,7 +111,7 @@ def _generateLogTFIDF(M_coo):
 
             tf = math.log(1 + tf)
             
-            idf = math.log(numberOfDocs / termSum[col])
+            idf = math.log(numberOfDocs / _termSum[col])
             
             tfidfMatrix[row,col]=tf*idf
         
@@ -136,7 +136,7 @@ def _normalizeVectorLengths(M_lil):
 
     t1=time.time()
 
-    # Create the norm of each row-vector in the stemmed term-doc matrix.
+    # Create a norm-hash of each row-vector in the stemmed term-doc matrix.
     vectorLength=SearchTermDoc.createRLHash(M_lil, _RLHash,False)
 
     for row in range(1,M_lil.shape[0]):
