@@ -1,5 +1,3 @@
-#! /usr/bin/python
-
 import SearchInterface
 import SearchTermDoc
 import FilterInterface
@@ -75,14 +73,6 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     # Sort the results and reverse to get the highest score first
     results.sort()
     results.reverse()
-
-    # Note: tror den her er unodvendig kompliceret.
-    #top100=[result for result in results[:100]]
-
-    # Retrieve the top 100 results as PMIDs
-    #pmidList=SearchTermDoc.getPMIDList(top100)
-
-    #print len(top100)
 
     resultDic={}
     for item in results[:top]:
