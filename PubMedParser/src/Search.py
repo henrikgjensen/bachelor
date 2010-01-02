@@ -89,12 +89,13 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     for item in results[:top]:
         pmid=item[1] #SearchTermDoc.getPMID(item[1])
         labels=_labelHash[pmid]
-        print labels
         for label in labels:
             try:
                 resultDic[label]+=item[0]
             except:
                 resultDic[label]=item[0]
+
+    print resultDic
 
     resultList=sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
 
