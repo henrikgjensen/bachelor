@@ -24,6 +24,7 @@ _stemmer=True
 
 # Disease label hash (for label lookup)
 _labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash")
+_labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
 print "Label hash loaded"
 
 ############
