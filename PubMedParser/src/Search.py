@@ -188,7 +188,6 @@ def runScoreTest3(M_lil, M_csc):
                 ('Cholera','severe diarrhea and vomiting'),
                 ('Choroideremia','progressive degeneration of the choroid, retinal pigment epithelium (RPE), and neural retina'),
                 ('Coats disease','abnormal development of retinal vessels (telangiectasia) with a progressive deposition of intraretinal or subretinal exudates'),
-                ('Pelviscapular dysplasia','pelviscapular dysplasia with epiphyseal abnormalities, congenital dwarfism and facial dysmorphism'),
                 ('Omphalocele cleft palate syndrome lethal','omphalocele and cleft palate'),
                 ('Darier disease','keratotic papules in seborrheic areas and specific nail anomalies'),
                 ('Ichthyosis hepatosplenomegaly cerebellar degeneration','ichthyosis, hepatosplenomegaly and late-onset cerebellar ataxia'),

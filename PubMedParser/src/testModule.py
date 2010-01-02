@@ -246,19 +246,23 @@ from pylab import *
 import math
 def makehist():
 
-    
+
+    ##########################################################################
+                                    #TermDoc#
+    ##########################################################################
+
     # TEST 1 : Found on our own from orpha.net#
 
-    diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Pe','Om','Da','Ic','Em','Co','Fi','De','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
+    #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','De','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
 
-    graphName="orphan_hist.png"
+    #graphName="orphan_hist.png"
 
     # Not stemmed
-    x1 = [4,725,75,37,38,85,68,1651,1,23,80]
+    #x1 = [4,725,75,37,38,85,68,1651,1,23,80]
     # Stemmed
-    x2 = [3,149,33,71,10,63,27,597,6,31,56]
+    #x2 = [3,149,33,71,10,63,27,597,6,31,56]
     # Stemmed and tfidf-preprocessed
-    x3 = [2,221,30,28,34,69,68,775,2,15,196]
+    #x3 = [2,221,30,28,34,69,68,775,2,15,196]
 
     # TEST 2 : From BMJ #
 
@@ -271,6 +275,50 @@ def makehist():
     #x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
     # Stemmed and tfidf-preprocessed
     #x3 = [13,8,1394,722,196,48,87,2,7,0,2,8,2]
+
+    ##########################################################################
+                                    #TermLabel#
+    ##########################################################################
+
+    # TEST 1 : Found on our own from orpha.net#
+
+    #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','De','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
+
+    #graphName="orphan_hist.png"
+
+     # Not stemmed
+    #x1 = [4,725,75,37,38,85,68,1651,1,23,80]
+     # Stemmed
+     ## Norm:
+    #x2 = [74,263,0,19,106,44,12,635,19,1,446,133,4,929,13,4,0,80,391,122,2137,74,54,12,2,30,1,99,30,162,0]
+     ## Not norm:
+    #x2 = []
+     # Stemmed and tfidf-preprocessed
+     ## Norm:
+    #x3 = [4,75,1031,273,3,98,383,88,220,6,94,2,0,194,526,0,376,1,1,0,2,0,4,1604,80,29,14,80,2,457]
+     ## Not norm:
+    #x3 = [38,144,0,4,50,5,0,480,127,0,272,78,0,788,169,1,0,19,118,20,26,20,6,8,24,0,24,24,15,0]
+
+    # TEST 2 : From BMJ #
+
+    #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    #graphName="bmj_hist.png"
+
+     # Not stemmed
+    #x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
+     # Stemmed
+     ## Norm:
+    #x2 = [25,37,748,1970,384,1053,25,2,0,1,102,68,30]
+     ## Not norm:
+    #x2 = []
+     # Stemmed and tfidf-preprocessed
+     ## Norm:
+    x3 = [8,19,1060,1831,136,698,11,1,0,9,18,42,15,]
+     ## Not norm:
+    # x3 = [9,3,826,785,19,370,2,0,3,3,2,13,1]
+
+    ##########################################################################
+
 
     x1_log=map(lambda x: math.log(x+1),x1)
     x2_log=map(lambda x: math.log(x+1),x2)
