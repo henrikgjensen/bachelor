@@ -51,15 +51,23 @@ _termDocDir = _subFolder+"/"+"termDoc"
 #######################################################################################
 
  # TFIDF-matrix file name
+#_tfidfName = "TFIDFMatrix_tfidf_stemmed"
+ # Vector-norm hash for then TFIDFMatrix
+#_RLHash = "RLHash_tfidf_stemmed"
+ # Hash for the number of documents each term occur in
+#_CLHash = "CLHash_tfidf_stemmed"
+
+
+#######################################################################################
+#### Use stopword-removed, Porter-stemmed (english) and TFIDF-prefiltered TermDoc: ####
+#######################################################################################
+
+ # TFIDF-matrix file name
 _tfidfName = "TFIDFMatrix_tfidf_stemmed"
  # Vector-norm hash for then TFIDFMatrix
 _RLHash = "RLHash_tfidf_stemmed"
  # Hash for the number of documents each term occur in
 _CLHash = "CLHash_tfidf_stemmed"
- # Load the precomputed norm of each row-vector in the stemmed term-doc matrix.
-_vectorLength = IOmodule.pickleIn(_hashTablePath,_RLHash)
- # Load the precomputed length of each column in the stemmed term-doc matrix
-_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 
 ####################################################################
 
@@ -85,6 +93,9 @@ def _generateLogTFIDF(M_coo):
     t2=time.time()
     print "Matrix converted to lil in",(t2-t1)
 
+    # Load the precomputed length of each column in the stemmed term-doc matrix
+    termSum = SearchTermDoc.createCLHash(M_coo, _CLHash, False)
+
 
     t1=time.time()
 
@@ -100,7 +111,7 @@ def _generateLogTFIDF(M_coo):
 
             tf = math.log(1 + tf)
             
-            idf = math.log(numberOfDocs / _termSum[col])
+            idf = math.log(numberOfDocs / termSum[col])
             
             tfidfMatrix[row,col]=tf*idf
         
@@ -125,11 +136,12 @@ def _normalizeVectorLengths(M_lil):
 
     t1=time.time()
 
-    SearchTermDoc.createRLHash(M_lil, _RLHash)
+    # Create the norm of each row-vector in the stemmed term-doc matrix.
+    vectorLength=SearchTermDoc.createRLHash(M_lil, _RLHash,False)
 
     for row in range(1,M_lil.shape[0]):
 
-        norm=_vectorLength[row]
+        norm=vectorLength[row]
         for col in (M_lil.getrow(row).nonzero()[1])[1:]:
             M_lil[row,col]=(M_lil[row,col])/norm
         print "Normalized:",row
