@@ -88,8 +88,8 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     resultDic={}
     for item in results[:top]:
         pmid=item[1] #SearchTermDoc.getPMID(item[1])
-        print pmid
         labels=_labelHash[pmid]
+        print labels
         for label in labels:
             try:
                 resultDic[label]+=item[0]
