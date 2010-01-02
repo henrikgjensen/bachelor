@@ -107,7 +107,7 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
 #    Vt=Vt[:-n,:]
     U=U[:,1]
     Sig=Sig[1,1]
-    Vt=Vt[1,1]
+    Vt=Vt[1,:]
     print "U",U.shape,", Sig",Sig.shape,", Vt",Vt.shape
 
     U=sparse.csc_matrix(U)
@@ -115,6 +115,8 @@ def _semanticSpace(U,Sig,Vt,reduce=90):
     Vt=sparse.csc_matrix(Vt)
 
     S=U*Sig*Vt
+
+    print "Number of elements: "+str(len(S.data))
 
     return S
 
