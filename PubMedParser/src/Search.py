@@ -17,15 +17,15 @@ _stemmer=False
 ############
 
 # Disease label hash (for pmid lookup)
-#_labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
-#print "Label hash loaded"
+_labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
+print "Label hash loaded"
 
 ############
 
 # Disease label hash (for label lookup)
-_labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash")
-_labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
-print "Label hash loaded"
+#_labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash")
+#_labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
+#print "Label hash loaded"
 
 ############
 
@@ -85,21 +85,21 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     results.sort()
     results.reverse()
 
-#    resultDic={}
-#    for item in results[:top]:
-#        pmid=item[1] #SearchTermDoc.getPMID(item[1])
-#        labels=_labelHash[pmid]
-#        for label in labels:
-#            try:
-#                resultDic[label]+=item[0]
-#            except:
-#                resultDic[label]=item[0]
-
     resultDic={}
     for item in results[:top]:
         pmid=item[1] #SearchTermDoc.getPMID(item[1])
-        label=_labelHash[pmid]
-        resultDic[label]=item[0]
+        labels=_labelHash[pmid]
+        for label in labels:
+            try:
+                resultDic[label]+=item[0]
+            except:
+                resultDic[label]=item[0]
+
+#    resultDic={}
+#    for item in results[:top]:
+#        pmid=item[1] #SearchTermDoc.getPMID(item[1])
+#        label=_labelHash[pmid]
+#        resultDic[label]=item[0]
     
     resultList=sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
 
