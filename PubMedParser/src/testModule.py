@@ -256,26 +256,26 @@ def makehist():
 
     #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
 
-    #graphName="orphan_hist.png"
+    #graphName="termDoc_orphan_hist_3000.png"
 
     # Not stemmed
     #x1 = [4,725,75,37,38,85,68,1651,1,23,80,15,0,26,2,218,3,13,2,3000,1,9,14,78,84,48,3,84,1,62]
     # Stemmed
-    #x2 = [3,149,33,71,10,63,27,597,6,31,56]
+    #x2 = [4,289,81,34,19,111,78,1355,1,26,187,18,0,27,2,215,3,12,4,3000,1,11,20,73,68,50,3,68,3,54]
     # Stemmed and tfidf-preprocessed
-    #x3 = [2,221,30,28,34,69,68,775,2,15,196]
+    #x3 = [2,221,30,28,34,69,68,775,2,15,196,12,0,24,1,222,0,11,3,3000,0,9,13,56,75,44,5,75,17,40]
 
     # TEST 2 : From BMJ #
 
-    diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
-    graphName="termDoc_bmj_hist_3000.png"
+    #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    #graphName="termDoc_bmj_hist_3000.png"
 
     # Not stemmed
-    x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
+    #x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
     # Stemmed
-    x2 = [29,1,71,623,402,119,154,10,64,0,3,43,6]
+    #x2 = [19,3,55,840,171,83,101,5,35,0,4,29,7]
     # Stemmed and tfidf-preprocessed
-    x3 = [13,8,1394,722,196,48,87,2,7,0,2,8,2]
+    #x3 = [13,8,1394,722,196,48,87,2,7,0,2,8,2]
 
     ##########################################################################
                                     #TermLabel#
@@ -285,7 +285,7 @@ def makehist():
 
     #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
 
-    #graphName="orphan_hist_NOTnorm_3000.png"
+    #graphName="orphan_hist_norm_3000.png"
 
      # Not stemmed
      ## Norm:
@@ -305,22 +305,22 @@ def makehist():
 
     # TEST 2 : From BMJ #
 
-    #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
-    #graphName="bmj_hist_NOTnorm_3000.png"
+    diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    graphName="bmj_hist_norm_3000.png"
 
      # Not stemmed
      ## Norm:
-    #x1 = [16,37,375,2001,270,1037,25,6,0,1,97,45,25]
+    x1 = [16,37,375,2001,270,1037,25,6,0,1,97,45,25]
      ## Not norm:
     #x1 = [13,2,389,1052,11,609,8,4,3,0,3,13,6]
      # Stemmed
      ## Norm:
-    #x2 = [25,37,748,1970,384,1053,25,2,0,1,102,68,30]
+    x2 = [25,37,748,1970,384,1053,25,2,0,1,102,68,30]
      ## Not norm:
     #x2 = [18,2,653,900,12,600,7,0,3,0,3,21,6]
      # Stemmed and tfidf-preprocessed
      ## Norm:
-    #x3 = [8,19,1060,1831,136,698,11,1,0,9,18,42,15,]
+    x3 = [8,19,1060,1831,136,698,11,1,0,9,18,42,15,]
      ## Not norm:
     #x3 = [9,3,826,785,19,370,2,0,3,3,2,13,1]
 
@@ -364,7 +364,7 @@ def makehist():
 
     ax.legend()
     ax.grid('.')
-    ax.set_title('Score (3000) test (Orhpanet) - term-doc matrix')
+    ax.set_title('Score (3000) test (BMJ) - disease matrix')
     ax.set_xlabel('Disease')
     ax.set_ylabel('Log_score')
 
