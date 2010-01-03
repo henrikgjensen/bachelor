@@ -227,7 +227,8 @@ def runScoreTest3(M_lil, M_csc):
                 printout2+=str(results.index(result))+","
                 found=True
         if not found:
-            printout2+=" ,"
+            printout1+="NotFound("+disease[0][:2]+"),"
+            printout2+=str(1)+","
 
     print printout1
     print printout2
