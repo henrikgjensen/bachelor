@@ -253,7 +253,7 @@ def makehist():
 
     # TEST 1 : Found on our own from orpha.net#
 
-    #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','De','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
+    #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
 
     #graphName="orphan_hist.png"
 
@@ -282,7 +282,7 @@ def makehist():
 
     # TEST 1 : Found on our own from orpha.net#
 
-    diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','De','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
+    diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
 
     graphName="orphan_hist_norm_3000.png"
 
