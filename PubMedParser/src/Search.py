@@ -163,9 +163,13 @@ def runScoreTest2(M_lil, M_csc):
 
         results=search(M_lil, M_csc, symptoms, top, AND=False)
 
+        found=False
         for result in results:
             if result[0]==disease[0]:
                 printout2+=str(results.index(result))+","
+                found=True
+            if not found:
+                printout2+=" ,"
 
     print printout1
     print printout2
@@ -220,9 +224,13 @@ def runScoreTest3(M_lil, M_csc):
 
         results=search(M_lil, M_csc, symptoms, top, AND=False)
 
+        found=False
         for result in results:
             if result[0]==disease[0]:
                 printout2+=str(results.index(result))+","
+                found=True
+            if not found:
+                printout2+=" ,"
 
     print printout1
     print printout2
