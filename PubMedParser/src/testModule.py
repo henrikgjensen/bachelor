@@ -282,80 +282,94 @@ def makehist():
 
     # TEST 1 : Found on our own from orpha.net#
 
-    #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','De','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
+    diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','De','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
 
-    #graphName="orphan_hist.png"
+    graphName="orphan_hist_norm_3000.png"
 
      # Not stemmed
      ## Norm:
-    #x1 = [76,257,0,20,122,41,9,1912,16,1,448,128,1,13,5,0,33,380,20,1687,39,47,26,4,33,1,83,33,46,0]
+    x1 = [76,257,0,20,122,41,9,1912,16,1,448,128,1,13,5,0,33,380,20,1687,39,47,26,4,33,1,83,33,46,0]
+    print len(x1)
      ## Not norm:
     #x1 = [8,108,1,12,4,79,120,563,5,6,82,8,0,1,0,22,0,3,0,0,5,14,328,30,2,4,30,0,45]
      # Stemmed
      ## Norm:
-    #x2 = [74,263,0,19,106,44,12,635,19,1,446,133,4,929,13,4,0,80,391,122,2137,74,54,12,2,30,1,99,30,162,0]
+    x2 = [74,263,0,19,106,44,12,635,19,1,446,133,4,929,13,4,0,80,391,122,2137,74,54,12,2,30,1,99,30,162,0]
+    print len(x2)
      ## Not norm:
     #x2 = [8,84,16,11,4,86,93,82,4,5,80,13,0,180,1,0,22,0,4,0,0,5,4,260,29,3,3,29,0,51]
      # Stemmed and tfidf-preprocessed
      ## Norm:
-    #x3 = [4,75,1031,273,3,98,383,88,220,6,94,2,0,194,526,0,376,1,1,0,2,0,4,1604,80,29,14,80,2,457]
+    x3 = [4,75,1031,273,3,98,383,88,220,6,94,2,0,194,526,0,376,1,1,0,2,0,4,1604,80,29,14,80,2,457]
+    print len(x3)
      ## Not norm:
     #x3 = [38,144,0,4,  50,5 ,0,480 ,127,0,272,78,0,788,169,1,0 ,19,118,20,26,20,6,8,24,0,24,24,15,0]
 
     # TEST 2 : From BMJ #
 
-    diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
-    graphName="bmj_hist_norm_3000.png"
+    #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    #graphName="bmj_hist_NOTnorm_3000.png"
 
      # Not stemmed
      ## Norm:
-    x1 = [16,37,375,2001,270,1037,25,6,0,1,97,45,25]
+    #x1 = [16,37,375,2001,270,1037,25,6,0,1,97,45,25]
      ## Not norm:
     #x1 = [13,2,389,1052,11,609,8,4,3,0,3,13,6]
      # Stemmed
      ## Norm:
-    x2 = [25,37,748,1970,384,1053,25,2,0,1,102,68,30]
+    #x2 = [25,37,748,1970,384,1053,25,2,0,1,102,68,30]
      ## Not norm:
     #x2 = [18,2,653,900,12,600,7,0,3,0,3,21,6]
      # Stemmed and tfidf-preprocessed
      ## Norm:
-    x3 = [8,19,1060,1831,136,698,11,1,0,9,18,42,15,]
+    #x3 = [8,19,1060,1831,136,698,11,1,0,9,18,42,15,]
      ## Not norm:
-    # x3 = [9,3,826,785,19,370,2,0,3,3,2,13,1]
+    #x3 = [9,3,826,785,19,370,2,0,3,3,2,13,1]
 
     ##########################################################################
 
+
+    fig=figure(figsize=(8,5))
+    ax=fig.add_subplot(1,1,1)
+
+    # Font size in legend
+    rc('legend', fontsize='small')
+
+    xlen=len(x1)*6
+    step=6
 
     x1_log=map(lambda x: math.log(x+1),x1)
     x2_log=map(lambda x: math.log(x+1),x2)
     x3_log=map(lambda x: math.log(x+1),x3)
 
-
-    xlen=len(x1)*6
-    step=6
-
-    bar(arange(0,xlen,step), x1_log, color='green', width=1, label='Not stemmed')
-    bar(arange(1,xlen,step), x2_log, color='red', width=1, label='Stemmed')
-    bar(arange(2,xlen,step), x3_log, color='blue', width=1, label='TFIDF-preprocessed and stemmed')
-
-    #x=linspace(1,xlen)
     y1=mean(x1_log)
     print y1
     y2=mean(x2_log)
     print y2
     y3=mean(x3_log)
     print y3
-    plot([0,xlen],[y1,y1],'g-',linewidth=2)
-    plot([0,xlen],[y2,y2],'r-',linewidth=2)
-    plot([0,xlen],[y3,y3],'b-',linewidth=2)
+    ax.plot([0,xlen],[y1,y1],'g-',linewidth=2)
+    ax.plot([0,xlen],[y2,y2],'r-',linewidth=2)
+    ax.plot([0,xlen],[y3,y3],'b-',linewidth=2)
 
-    xticks(range(1,len(x3)*6,6),diseases)
+    ax.bar(arange(0,xlen,step), x1_log, color='green', width=1, label='Not stemmed, mu='+str(math.exp(y1))[:4])
+    ax.bar(arange(1,xlen,step), x2_log, color='red', width=1, label='Stemmed, mu='+str(math.exp(y2))[:4])
+    ax.bar(arange(2,xlen,step), x3_log, color='blue', width=1, label='TFIDF-preprocessed and stemmed, mu='+str(math.exp(y3))[:4])
 
-    legend()
-    grid('.')
-    title('Score (3000) test (BMJ) - disease matrix')
-    xlabel('Disease')
-    ylabel('Log_score')
+    ax.set_xticks(range(1,len(x3)*6,6))
+    ax.set_xticklabels(diseases)
+    # Set font size for the disease-labels
+    for label in ax.get_xticklabels():
+        label.set_fontsize(10)
+
+    ax.legend()
+    ax.grid('.')
+    ax.set_title('Score (3000) test (BMJ) - disease matrix')
+    ax.set_xlabel('Disease')
+    ax.set_ylabel('Log_score')
+
+    # Rotate the disease labels
+    fig.autofmt_xdate()
 
     show()
     savefig("/home/henne/Documents/Projektet/bachelor/Grafer_og_tegninger/"+graphName)
