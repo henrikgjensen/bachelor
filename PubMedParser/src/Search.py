@@ -134,7 +134,8 @@ def runScoreTest1(M_lil, M_csc, queryString, diseaseName):
 
 def runScoreTest2(M_lil, M_csc):
 
-    top=3000
+    #top=3000
+    top=100
 
     diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
                 ("Cushing's syndrome","hypertension, adrenal, mass"),
@@ -173,7 +174,8 @@ def runScoreTest2(M_lil, M_csc):
 
 def runScoreTest3(M_lil, M_csc):
 
-    top=3000
+    #top=3000
+    top=100
 
     diseaseList=[('Apparent mineralocorticoid excess','early-onset, severe hypertension, associated, low renin levels, hypoaldosteronism'),
                 ('Rubinstein-Taybi syndrome','congenital anomalies, intellectual deficit, behavioural characteristics'),

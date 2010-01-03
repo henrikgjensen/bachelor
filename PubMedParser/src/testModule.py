@@ -287,7 +287,10 @@ def makehist():
     #graphName="orphan_hist.png"
 
      # Not stemmed
-    #x1 = [4,725,75,37,38,85,68,1651,1,23,80]
+     ## Norm:
+    #x1 = [76,257,0,20,122,41,9,1912,16,1,448,128,1,13,5,0,33,380,20,1687,39,47,26,4,33,1,83,33,46,0]
+     ## Not norm:
+    #x1 = [8,108,1,12,4,79,120,563,5,6,82,8,0,1,0,22,0,3,0,0,5,14,328,30,2,4,30,0,45]
      # Stemmed
      ## Norm:
     #x2 = [74,263,0,19,106,44,12,635,19,1,446,133,4,929,13,4,0,80,391,122,2137,74,54,12,2,30,1,99,30,162,0]
@@ -301,14 +304,17 @@ def makehist():
 
     # TEST 2 : From BMJ #
 
-    #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
-    #graphName="bmj_hist.png"
+    diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    graphName="bmj_hist_norm_3000.png"
 
      # Not stemmed
-    #x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
+     ## Norm:
+    x1 = [16,37,375,2001,270,1037,25,6,0,1,97,45,25]
+     ## Not norm:
+    #x1 = [13,2,389,1052,11,609,8,4,3,0,3,13,6]
      # Stemmed
      ## Norm:
-    #x2 = [25,37,748,1970,384,1053,25,2,0,1,102,68,30]
+    x2 = [25,37,748,1970,384,1053,25,2,0,1,102,68,30]
      ## Not norm:
     #x2 = [18,2,653,900,12,600,7,0,3,0,3,21,6]
      # Stemmed and tfidf-preprocessed
@@ -347,7 +353,7 @@ def makehist():
 
     legend()
     grid('.')
-    title('Score test (BMJ)')
+    title('Score (3000) test (BMJ) - disease matrix')
     xlabel('Disease')
     ylabel('Log_score')
 
