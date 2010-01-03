@@ -198,7 +198,6 @@ def runScoreTest3(M_lil, M_csc):
                 ('Emery-Dreifuss muscular dystrophy','muscular weakness and atrophy, with early contractures of the tendons and cardiomyopathy'),
                 ('Costello syndrome','postnatal growth retardation, coarse facies, intellectual deficit, skin anomalies and cardiac abnormalities'),
                 ('Fibrodysplasia ossificans progressiva','congenital malformation of great toes, progressive, disabling heterotopic osteogenesis in predictable anatomical patterns'),
-                ('Deafness skeletal dysplasia lip granuloma','deafness, intellectual deficit , facial dysmorphy, and skeletal abnormalities'),
                 ('Acropectorovertebral dysplasia','fusion of the carpal and tarsal bones, with complex anomalies of the fingers and toes'),
                 ('Osteogenesis imperfecta','increased bone fragility and low bone mass'),
                 ('Primary biliary cirrhosis','injury of the intrahepatic bile ducts'),
