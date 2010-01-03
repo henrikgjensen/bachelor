@@ -24,9 +24,9 @@ _subFolder = _path+"/"+"term_doc"
 # Matrices folder (read in)
 _oldMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed"
 # Matrices folder (write out)
-_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_10"
+_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed_reduced_10"
 _reduceBy=10
-#_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_50"
+#_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed_reduced_50"
 #_reduceBy=50
 #_newMatrixDir=_subFolder+"/"+"new_diseaseMatrices_tfidf_stemmed_reduced_90"
 #_reduceBy=90
