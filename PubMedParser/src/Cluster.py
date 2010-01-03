@@ -179,7 +179,7 @@ def drawdendrogram(clust, jpeg = 'disease_cluster_dendro.jpg', col={}, width = 1
     img.save(jpeg,'JPEG')
 
 # The labels needs to be the pmids
-def drawnode(draw, clust, x, y, scaling, col={}):
+def drawnode(draw, clust, x, y, scaling, col={}, label={}):
 
     """
     Figures out where to put the nodes of the clusters.
@@ -213,9 +213,9 @@ def drawnode(draw, clust, x, y, scaling, col={}):
     else:
         # If it is an end point, draw the item label
         if col == {}:
-            draw.text((x + 5, y - 7), str(clust.id), (0, 0, 0))
+            draw.text((x + 5, y - 7), label[clust.id], (0, 0, 0))
         else:
-            draw.text((x+5, y - 7), str(clust.id), col[str(clust.id)])
+            draw.text((x + 5, y - 7), label[clust.id], col[str(clust.id)])
         #                          ^ Here!!!
         # We might want to get the real pmid label here, by a reverse
         # lookup or something like that, could be cool with a color
@@ -265,7 +265,7 @@ def hcluster(tdm, distance=pearson, time_log=False, time_total=False, print_rema
     # use the disease name when doing global.
 
     # Clusters are initially just the rows of the tdm / len(tdm.shape[0])
-    clust=[bicluster(tdm.getrow(i)[0,1:], id = int(STD.getPMID(tdm.getrow(i)[0,0]))) for i in range(0, n)]
+    clust=[bicluster(tdm.getrow(i)[0,1:], id = tdm.getrow(i)[0,0]) for i in range(0, n)]
     #                               We had a tdm.getrow(i)[1:]
     #                               ^ This might take quite a while
     #                                 Consider alternative solution.
@@ -445,7 +445,6 @@ def runOutlierDetector(dir, distance=cosine_dense, removePercent=0.05, output=Fa
         subTermDoc = sparse.coo_matrix(subTermDoc)
             
         IO.writeOutTDM(_subFolder+'/'+outlierRemoved+str(int(removePercent*100)), diseaseName, subTermDoc)
-        
 
 def outlierDetector(stdm, distance=cosine_dense, removePercent=0.05, output=False, time_log=False):
 
