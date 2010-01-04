@@ -161,12 +161,18 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     resultList_median=sorted(resultDic2.items(), key=lambda(k,v):(v,k), reverse=True)
     resultList_max=sorted(resultDic3.items(), key=lambda(k,v):(v,k), reverse=True)
 
+    print resultList_max
+
+    print len(resultList_mean)
+    print len(resultList_median)
+    print len(resultList_max)
+
     return [resultList_mean,resultList_median,resultList_max]
 
 
 def runScoreTest2(M_lil, M_csc):
 
-    top=6000
+    top=3000
 
     diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
                 ("Cushing's syndrome","hypertension, adrenal, mass"),
@@ -211,7 +217,7 @@ def runScoreTest2(M_lil, M_csc):
 
 def runScoreTest3(M_lil, M_csc):
 
-    top=6000
+    top=3000
 
     diseaseList=[('Apparent mineralocorticoid excess','early-onset, severe hypertension, associated, low renin levels, hypoaldosteronism'),
                 ('Rubinstein-Taybi syndrome','congenital anomalies, intellectual deficit, behavioural characteristics'),
