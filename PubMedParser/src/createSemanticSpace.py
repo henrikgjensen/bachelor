@@ -176,6 +176,7 @@ def getSemanticKeywords(matrixDir,filename,top=20):
         term=revTermHashTable[M_csc[0,col]]
         termSum.append((sum(M_csc.getcol(col).data[:-1]),term))
 
-    termSum=sorted(termSum, key=lambda(k,v):(v,k), reverse=True)[:top]
+    termSum.sort()
+    termSum.reverse()
 
-    return termSum
+    return termSum[:top]
