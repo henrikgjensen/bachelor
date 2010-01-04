@@ -183,8 +183,8 @@ def getSemanticKeywords(top=20):
                 ("MELAS","seizure, confusion, dysphasia, T2, lesions"),
                 ("Brugada syndrome","cardiac arrest sleep")]
 
-    matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_90"
-    #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_10"
+    #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_90"
+    matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_10"
     #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced90_outlierRemoved5"
 
     scoreDic={}
