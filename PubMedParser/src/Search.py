@@ -1,5 +1,4 @@
 import SearchInterface
-import SearchTermDoc
 import FilterInterface
 import IOmodule
 import os
@@ -138,12 +137,12 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
 
     # Normalize the summed labels
-    for label in resultDic1.keys():
-        resultDic1[label]/=normDic1[label]
-    for label in resultDic2.keys():
-        resultDic2[label]/=normDic2[label]
-    for label in resultDic3.keys():
-        resultDic3[label]/=normDic3[label]
+    #for label in resultDic1.keys():
+    #    resultDic1[label]/=normDic1[label]
+    #for label in resultDic2.keys():
+    #    resultDic2[label]/=normDic2[label]
+    #for label in resultDic3.keys():
+    #    resultDic3[label]/=normDic3[label]
 
 
     ###########################################################################
@@ -203,7 +202,7 @@ def runScoreTest2(M_lil, M_csc):
                     found=True
             if not found:
                 printout2+=" ,"
-            printout2+='\n'
+        printout2+='\n'
 
     print printout1
     print printout2
@@ -264,7 +263,7 @@ def runScoreTest3(M_lil, M_csc):
                     found=True
             if not found:
                 printout2+=" ,"
-            printout2+='\n'
+        printout2+='\n'
 
     print printout1
     print printout2
