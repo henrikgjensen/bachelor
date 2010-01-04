@@ -107,7 +107,7 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
         if numOfScores>2:
             medianIndex=numOfScores/2
         else:
-            medianIndex=1
+            medianIndex=0
         resultDic[label]=sorted(labelList)[medianIndex]
 
     ##########
@@ -139,7 +139,6 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     # Normalize the summed labels
     #for label in resultDic.keys():
     #    resultDic[label]/=normDic[label]
-    #    print "Divided "+str(label)+" by "+str(normDic[label])
 
 
     ###########################################################################
