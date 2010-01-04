@@ -55,12 +55,37 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     results.sort()
     results.reverse()
 
-    ################################
-    ### For the term-doc matrix: ###
+    ###########################################################################
+    ### For the term-doc matrix: ##############################################
 
-    # Sum the labels
+    ###########
+    # 1: Mean #
+    ###########
+
+    # Get the sum cosine score the labels
     ## (normDic counts the number of times a label has been summed)
-    resultDic={}
+#    resultDic={}
+#    normDic={}
+#    for item in results[:top]:
+#        pmid=item[1]
+#        # Get the labels linked to the PMID
+#        ## (Several labels can be linked to one PMID)
+#        labels=_labelHash[pmid]
+#        for label in labels:
+#            try:
+#                resultDic[label]+=item[0]
+#                normDic[label]+=1
+#            except:
+#                resultDic[label]=item[0]
+#                normDic[label]=1
+
+    #############
+    # 2: Median #
+    #############
+
+    # Get the median cosine score of the labels
+    ## (normDic counts the number of times a label has been summed)
+    resultDicList={}
     normDic={}
     for item in results[:top]:
         pmid=item[1]
@@ -69,19 +94,56 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
         labels=_labelHash[pmid]
         for label in labels:
             try:
-                resultDic[label]+=item[0]
+                resultDicList[label].append(item[0])
                 normDic[label]+=1
             except:
-                resultDic[label]=item[0]
+                resultDicList[label]=[]
+                resultDicList[label].append(item[0])
                 normDic[label]=1
+    resultDic={}
+    for label in resultDicList.keys():
+        labelList=resultDicList[label]
+        numOfScores=len(labelList)
+        if numOfScores>2:
+            medianIndex=numOfScores/2
+        else:
+            medianIndex=1
+        resultDic[label]=sorted(labelList)[medianIndex]
+
+    ##########
+    # 3: Max #
+    ##########
+
+    # Get the max cosine score of labels
+    ## (normDic counts the number of times a label has been summed)
+#    resultDicList={}
+#    normDic={}
+#    for item in results[:top]:
+#        pmid=item[1]
+#        # Get the labels linked to the PMID
+#        ## (Several labels can be linked to one PMID)
+#        labels=_labelHash[pmid]
+#        for label in labels:
+#            try:
+#                resultDicList[label].append(item[0])
+#                normDic[label]+=1
+#            except:
+#                resultDicList[label]=[]
+#                resultDicList[label].append(item[0])
+#                normDic[label]=1
+#    resultDic={}
+#    for label in resultDicList.keys():
+#        labelList=resultDicList[label]
+#        resultDic[label]=max(labelList)
 
     # Normalize the summed labels
     #for label in resultDic.keys():
     #    resultDic[label]/=normDic[label]
     #    print "Divided "+str(label)+" by "+str(normDic[label])
 
-    #############################
-    ### For the label matrix: ###
+
+    ###########################################################################
+    ### For the label matrix: #################################################
 
 #    resultDic={}
 #    for item in results[:top]:
@@ -89,10 +151,10 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 #        label=_labelHash[pmid]
 #        resultDic[label]=item[0]
 
-    #################################
+    ###########################################################################
 
     # Reverse and sort the concensus list
-    resultList=sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
+    resultList=sorted(resultDicList.items(), key=lambda(k,v):(v,k), reverse=True)
 
     return resultList
 
