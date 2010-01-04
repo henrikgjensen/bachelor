@@ -203,7 +203,7 @@ def runScoreTest2(M_lil, M_csc):
                     found=True
             if not found:
                 printout2+=" ,"
-            printout2='\n'
+            printout2+='\n'
 
     print printout1
     print printout2
@@ -264,7 +264,7 @@ def runScoreTest3(M_lil, M_csc):
                     found=True
             if not found:
                 printout2+=" ,"
-            printout2='\n'
+            printout2+='\n'
 
     print printout1
     print printout2
