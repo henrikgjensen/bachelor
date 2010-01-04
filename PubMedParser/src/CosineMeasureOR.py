@@ -1,13 +1,12 @@
-
-import SearchTermDoc
+import SearchTermDoc 
 import math
 
-def cosineMeasureORwithMedian(M_lil, M_csc, queryString):
+def cosineMeasureOR(M_lil, M_csc, queryString):
 
     """
-    This function calculates the cosine score for each document containing one
-    or more of the query-terms in the query string (thereby the implicit 'or'
-    between each query-term).
+    This function calculates the square-root of the cosine score for each
+    document containing one or more of the query-terms in the query string
+    (thereby the implicit 'or' between each query-term).
 
     It returns a scored list of all the documents mentioned above.
     """

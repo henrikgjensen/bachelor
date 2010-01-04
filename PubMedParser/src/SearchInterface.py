@@ -1,28 +1,16 @@
 import CosineMeasureOR
 import CosineMeasureAND
 
-def cosineMeasureORwithSumSqrt(M_lil, M_csc, queryString):
+def cosineMeasureOR(M_lil, M_csc, queryString):
 
     """
-    Calculates the squared
+    Calculates the square-root of cosine measures.
 
     Returns a list of tuples on the form:
     [(angle in radians, pmidhash1),(angle in radians, pmidhash2),...]
     """
 
-    results = CosineMeasureOR.cosineMeasureORwithSumSqrt(M_lil, M_csc, queryString)
-
-    return results
-
-
-def cosineMeasureORwithMedian(M_lil, M_csc, queryString):
-
-    """
-    Returns a list of tuples on the form:
-    [(angle in radians, pmidhash1),(angle in radians, pmidhash2),...]
-    """
-
-    results = CosineMeasureOR.cosineMeasureORwithSumSqrt(M_lil, M_csc, queryString)
+    results = CosineMeasureOR.cosineMeasureOR(M_lil, M_csc, queryString)
 
     return results
 

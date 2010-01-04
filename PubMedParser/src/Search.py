@@ -47,7 +47,7 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     # CHOOSE HEURISTIC:
     # Search-heuristic used to retrieve the list of results
-    results=SearchInterface.cosineMeasureORwithSumSqrt(M_lil, M_csc, queryString)
+    results=SearchInterface.cosineMeasureOR(M_lil, M_csc, queryString)
 
     if AND: results=SearchInterface.cosineMeasureAND(M_lil, M_csc, queryString)
 
