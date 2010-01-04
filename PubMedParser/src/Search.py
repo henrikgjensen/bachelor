@@ -242,28 +242,30 @@ def runScoreTest3(M_lil, M_csc):
                 ('Multiple myeloma','overproduction of abnormal plasma cells in the bone marrow and manifested by skeletal destruction, bone pain, and presence of abnormous immunoglobulins'),
                 ('Trichodental syndrome','fine, dry and short hair with dental anomalies')]
 
-    printout1=''
-    printout2=''
+    printout1=[]
+    printout2=([],[],[])
 
     for disease in diseaseList:
 
-        printout1+=str(disease[0])[0:5]+","
+        printout1.append(disease[0][0:5])
 
         symptoms=FilterInterface.stopwordRemover(disease[1])
 
         resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
 
+        count=0
         for results in resultLists:
             found=False
             for result in results:
                 if result[0]==disease[0]:
-                    printout2+=str(results.index(result))+","
+                    printout2[count].append(results.index(result))
                     found=True
             if not found:
-                printout2+=" ,"
-        printout2+='\n'
+                printout2[count].append(str(top))
+            count+=1
 
     print printout1
-    print printout2
+    for list in printout2:
+        print list
     print "TEST DONE"
 
