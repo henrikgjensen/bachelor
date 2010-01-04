@@ -64,20 +64,20 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     # Get the sum cosine score the labels
     ## (normDic counts the number of times a label has been summed)
-#    resultDic={}
-#    normDic={}
-#    for item in results[:top]:
-#        pmid=item[1]
-#        # Get the labels linked to the PMID
-#        ## (Several labels can be linked to one PMID)
-#        labels=_labelHash[pmid]
-#        for label in labels:
-#            try:
-#                resultDic[label]+=item[0]
-#                normDic[label]+=1
-#            except:
-#                resultDic[label]=item[0]
-#                normDic[label]=1
+    resultDic1={}
+    normDic={}
+    for item in results[:top]:
+        pmid=item[1]
+        # Get the labels linked to the PMID
+        ## (Several labels can be linked to one PMID)
+        labels=_labelHash[pmid]
+        for label in labels:
+            try:
+                resultDic1[label]+=item[0]
+                normDic[label]+=1
+            except:
+                resultDic1[label]=item[0]
+                normDic[label]=1
 
     #############
     # 2: Median #
@@ -85,30 +85,30 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     # Get the median cosine score of the labels
     ## (normDic counts the number of times a label has been summed)
-#    resultDicList={}
-#    normDic={}
-#    for item in results[:top]:
-#        pmid=item[1]
-#        # Get the labels linked to the PMID
-#        ## (Several labels can be linked to one PMID)
-#        labels=_labelHash[pmid]
-#        for label in labels:
-#            try:
-#                resultDicList[label].append(item[0])
-#                normDic[label]+=1
-#            except:
-#                resultDicList[label]=[]
-#                resultDicList[label].append(item[0])
-#                normDic[label]=1
-#    resultDic={}
-#    for label in resultDicList.keys():
-#        labelList=resultDicList[label]
-#        numOfScores=len(labelList)
-#        if numOfScores>2:
-#            medianIndex=numOfScores/2
-#        else:
-#            medianIndex=0
-#        resultDic[label]=sorted(labelList)[medianIndex]
+    resultDicList={}
+    normDic={}
+    for item in results[:top]:
+        pmid=item[1]
+        # Get the labels linked to the PMID
+        ## (Several labels can be linked to one PMID)
+        labels=_labelHash[pmid]
+        for label in labels:
+            try:
+                resultDicList[label].append(item[0])
+                normDic[label]+=1
+            except:
+                resultDicList[label]=[]
+                resultDicList[label].append(item[0])
+               normDic[label]=1
+    resultDic2={}
+    for label in resultDicList.keys():
+        labelList=resultDicList[label]
+        numOfScores=len(labelList)
+        if numOfScores>2:
+            medianIndex=numOfScores/2
+        else:
+            medianIndex=0
+        resultDic2[label]=sorted(labelList)[medianIndex]
 
     ##########
     # 3: Max #
@@ -131,20 +131,11 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
                 resultDicList[label]=[]
                 resultDicList[label].append(item[0])
                 normDic[label]=1
-    resultDic={}
+    resultDic3={}
     for label in resultDicList.keys():
         labelList=resultDicList[label]
-        resultDic[label]=max(labelList)
+        resultDic3[label]=max(labelList)
 
-        numOfScores=len(labelList)
-        if numOfScores>2:
-            medianIndex=numOfScores/2
-        else:
-            medianIndex=0
-
-        print "Median index:",medianIndex
-        print "Median:",sorted(labelList)[medianIndex]
-        print "Max:",resultDic[label]
 
     # Normalize the summed labels
     #for label in resultDic.keys():
@@ -163,14 +154,16 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     ###########################################################################
 
     # Reverse and sort the concensus list
-    resultList=sorted(resultDicList.items(), key=lambda(k,v):(v,k), reverse=True)
+    resultList_mean=sorted(resultDic1.items(), key=lambda(k,v):(v,k), reverse=True)
+    resultList_median=sorted(resultDic2.items(), key=lambda(k,v):(v,k), reverse=True)
+    resultList_max=sorted(resultDic3.items(), key=lambda(k,v):(v,k), reverse=True)
 
-    return resultList
+    return [resultList_mean,resultList_median,resultList_max]
 
 
 def runScoreTest2(M_lil, M_csc):
 
-    top=3000
+    top=lil.shape[0]
 
     diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
                 ("Cushing's syndrome","hypertension, adrenal, mass"),
@@ -196,15 +189,16 @@ def runScoreTest2(M_lil, M_csc):
 
         symptoms=FilterInterface.stopwordRemover(disease[1])
 
-        results=search(M_lil, M_csc, symptoms, top, AND=False)
+        resultsLists=search(M_lil, M_csc, symptoms, top, AND=False)
 
-        found=False
-        for result in results:
-            if result[0]==disease[0]:
-                printout2+=str(results.index(result))+","
-                found=True
-        if not found:
-            printout2+=" ,"
+        for results in resultLists:
+            found=False
+            for result in results:
+                if result[0]==disease[0]:
+                    printout2+=str(results.index(result))+","
+                    found=True
+            if not found:
+                printout2+=" ,"
 
     print printout1
     print printout2
@@ -255,16 +249,16 @@ def runScoreTest3(M_lil, M_csc):
 
         symptoms=FilterInterface.stopwordRemover(disease[1])
 
-        results=search(M_lil, M_csc, symptoms, top, AND=False)
+        resultsLists=search(M_lil, M_csc, symptoms, top, AND=False)
 
-        found=False
-        for result in results:
-            if result[0]==disease[0]:
-                printout2+=str(results.index(result))+","
-                found=True
-        if not found:
-            printout1+="NotFound("+disease[0][:2]+"),"
-            printout2+=str(top)+","
+        for results in resultLists:
+            found=False
+            for result in results:
+                if result[0]==disease[0]:
+                    printout2+=str(results.index(result))+","
+                    found=True
+            if not found:
+                printout2+=" ,"
 
     print printout1
     print printout2
