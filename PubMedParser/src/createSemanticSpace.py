@@ -6,6 +6,8 @@ import os
 _path = os.getenv("HOME")+"/"+"The_Hive"
 # Sub folder
 _subFolder = _path+"/"+"term_doc"
+# Hash tables
+_hashTablesDir=_path+'/'+'term_doc'+'/'+"hashTables"
 
 #################
 
