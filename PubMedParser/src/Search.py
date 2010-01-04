@@ -137,8 +137,8 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
 
     # Normalize the summed labels
-    for label in resultDic1.keys():
-        resultDic1[label]/=normDic1[label]
+    #for label in resultDic1.keys():
+    #    resultDic1[label]/=normDic1[label]
 
 
     ###########################################################################
@@ -156,12 +156,6 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     resultList_mean=sorted(resultDic1.items(), key=lambda(k,v):(v,k), reverse=True)
     resultList_median=sorted(resultDic2.items(), key=lambda(k,v):(v,k), reverse=True)
     resultList_max=sorted(resultDic3.items(), key=lambda(k,v):(v,k), reverse=True)
-
-    print resultList_max
-
-    print len(resultList_mean)
-    print len(resultList_median)
-    print len(resultList_max)
 
     return [resultList_mean,resultList_median,resultList_max]
 
