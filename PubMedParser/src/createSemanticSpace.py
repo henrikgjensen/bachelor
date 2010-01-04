@@ -1,6 +1,8 @@
 from scipy import linalg, mat, sparse
 import IOmodule
+import FilterInterface
 import os
+import SearchTermDoc
 
 # Main folder
 _path = os.getenv("HOME")+"/"+"The_Hive"
@@ -165,7 +167,31 @@ def runAndSaveMatrices():
 
 termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
 revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
-def getSemanticKeywords(matrixDir,filename,top=20):
+def getSemanticKeywords(top=20):
+
+    diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
+                ("Cushing's syndrome","hypertension, adrenal, mass"),
+                ("Eosinophilic granuloma", "Hip, lesion, older, child"),
+                ("Ehrlichiosis","fever, bilateral, thigh, pain, weakness"),
+                ("Neurofibromatosis type 1","multiple, spinal, tumours, skin, tumours"),
+                ("Pheochromocytoma","hypertension, papilledema, headache, renal, mass, cafe, au, lait"),
+                ("Creutzfeldt-Jakob disease","ataxia, confusion, insomnia, death"),
+                ("Churg-Strauss syndrome","Wheeze, weight, loss, ANCA, haemoptysis, haematuria"),
+                ("Dermatomyositis","myopathy, neoplasia, dysphagia, rash, periorbital, swelling"),
+                ("Cat Scratch Disease","renal, transplant, fever, cat, lymphadenopathy"),
+                ("TEN","bullous, skin, conditions, respiratory, failure, carbamazepine"),
+                ("MELAS","seizure, confusion, dysphasia, T2, lesions"),
+                ("Brugada syndrome","cardiac arrest sleep")]
+
+    matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_90"
+    #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_10"
+    #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced90_outlierRemoved5"
+
+    filename=diseaseList[0][0]
+    symptoms=diseaseList[0][1]
+
+    symptoms=SearchTermDoc._modifySearchString(symptoms)
+    symptoms=map(FilterInterface.porterStemmer,symptoms)
 
     M_coo=IOmodule.readInTDM(matrixDir,filename)
 
@@ -179,4 +205,11 @@ def getSemanticKeywords(matrixDir,filename,top=20):
     termSum.sort()
     termSum.reverse()
 
-    return termSum[:top]
+    scoreDic={}
+    for item in termSum:
+        if item[1] in symptoms:
+            scoreDic[item[1]]=termSum.index(item)
+
+    #return termSum[:top]
+    return scoreDic
+    
