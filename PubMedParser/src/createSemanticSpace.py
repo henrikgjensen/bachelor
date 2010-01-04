@@ -160,3 +160,20 @@ def runAndSaveMatrices():
             IOmodule.writeOutTDM(_newMatrixDir, file, M_coo)
             print ''
 
+
+termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
+revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
+def getSemanticKeywords(matrixDir,filename,top=20):
+
+    M_coo=IOmodule.readInTDM(matrixDir,filename)
+
+    M_csc=M_coo.tocsc()
+    
+    termSum=[]
+    for col in range(1,M_coo.shape[1]):
+        term=revTermHashTable[M_coo[0,col]]
+        termSum.append((sum(M_csc.getCol(col).data[:-1]),term))
+
+    termSum=sorted(termSum.items(), key=lambda(k,v):(v,k), reverse=True)[:top]
+
+    return termSum
