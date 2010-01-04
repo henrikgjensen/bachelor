@@ -65,7 +65,7 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     # Get the sum cosine score the labels
     ## (normDic counts the number of times a label has been summed)
     resultDic1={}
-    normDic={}
+    normDic1={}
     for item in results[:top]:
         pmid=item[1]
         # Get the labels linked to the PMID
@@ -86,7 +86,7 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     # Get the median cosine score of the labels
     ## (normDic counts the number of times a label has been summed)
     resultDicList={}
-    normDic={}
+    normDic2={}
     for item in results[:top]:
         pmid=item[1]
         # Get the labels linked to the PMID
@@ -117,7 +117,7 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     # Get the max cosine score of labels
     ## (normDic counts the number of times a label has been summed)
     resultDicList={}
-    normDic={}
+    normDic3={}
     for item in results[:top]:
         pmid=item[1]
         # Get the labels linked to the PMID
@@ -138,8 +138,12 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
 
     # Normalize the summed labels
-    #for label in resultDic.keys():
-    #    resultDic[label]/=normDic[label]
+    for label in resultDic1.keys():
+        resultDic1[label]/=normDic1[label]
+    for label in resultDic2.keys():
+        resultDic2[label]/=normDic2[label]
+    for label in resultDic3.keys():
+        resultDic3[label]/=normDic3[label]
 
 
     ###########################################################################
