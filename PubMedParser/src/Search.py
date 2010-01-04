@@ -74,10 +74,10 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
         for label in labels:
             try:
                 resultDic1[label]+=item[0]
-                normDic[label]+=1
+                normDic1[label]+=1
             except:
                 resultDic1[label]=item[0]
-                normDic[label]=1
+                normDic1[label]=1
 
     #############
     # 2: Median #
@@ -95,11 +95,11 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
         for label in labels:
             try:
                 resultDicList[label].append(item[0])
-                normDic[label]+=1
+                normDic2[label]+=1
             except:
                 resultDicList[label]=[]
                 resultDicList[label].append(item[0])
-                normDic[label]=1
+                normDic2[label]=1
     resultDic2={}
     for label in resultDicList.keys():
         labelList=resultDicList[label]
@@ -126,11 +126,11 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
         for label in labels:
             try:
                 resultDicList[label].append(item[0])
-                normDic[label]+=1
+                normDic3[label]+=1
             except:
                 resultDicList[label]=[]
                 resultDicList[label].append(item[0])
-                normDic[label]=1
+                normDic3[label]=1
     resultDic3={}
     for label in resultDicList.keys():
         labelList=resultDicList[label]
