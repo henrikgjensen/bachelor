@@ -137,12 +137,8 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
 
     # Normalize the summed labels
-    #for label in resultDic1.keys():
-    #    resultDic1[label]/=normDic1[label]
-    #for label in resultDic2.keys():
-    #    resultDic2[label]/=normDic2[label]
-    #for label in resultDic3.keys():
-    #    resultDic3[label]/=normDic3[label]
+    for label in resultDic1.keys():
+        resultDic1[label]/=normDic1[label]
 
 
     ###########################################################################
@@ -189,29 +185,31 @@ def runScoreTest2(M_lil, M_csc):
                 ("Brugada syndrome","cardiac arrest sleep")]
 
 
-    printout1=''
-    printout2=''
+    printout1=[]
+    printout2=([],[],[])
 
     for disease in diseaseList:
 
-        printout1+=str(disease[0])[0:5]+","
+        printout1.append(disease[0][0:5])
 
         symptoms=FilterInterface.stopwordRemover(disease[1])
 
         resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
 
+        count=0
         for results in resultLists:
             found=False
             for result in results:
                 if result[0]==disease[0]:
-                    printout2+=str(results.index(result))+","
+                    printout2[count].append(results.index(result))
                     found=True
             if not found:
-                printout2+=" ,"
-        printout2+='\n'
+                printout2[count].append(" ")
+            count+=1
 
     print printout1
-    print printout2
+    for list in printout2:
+        print list
     print "TEST DONE"
 
 
