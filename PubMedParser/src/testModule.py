@@ -255,23 +255,29 @@ def makehist():
     # TEST 1 : Found on our own from orpha.net#
 
     #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
-
     #graphName="termDoc_orphan_hist_3000.png"
+    #title='Score (3000) test (Orphan) - term-doc matrix'
 
     # Not stemmed
     #x1 = [4,725,75,37,38,85,68,1651,1,23,80,15,0,26,2,218,3,13,2,3000,1,9,14,78,84,48,3,84,1,62]
     # Stemmed
     #x2 = [4,289,81,34,19,111,78,1355,1,26,187,18,0,27,2,215,3,12,4,3000,1,11,20,73,68,50,3,68,3,54]
     # Stemmed and tfidf-preprocessed
+    ## Mean:
     #x3 = [2,221,30,28,34,69,68,775,2,15,196,12,0,24,1,222,0,11,3,3000,0,9,13,56,75,44,5,75,17,40]
+    ## Median:
+    #x3 = [11,206,0,4,129,0,0,1399,13,20,79,22,0,12,0,1,15,0,3,3000,5,143,2,112,130,0,49,130,115,0]
+    ## Max:
+    #x3 = []
+
     ## Normed labels
-    ### Mean cosine score:
     #x3 = [289,371,6,152,705,8,26,1653,515,317,541,267,52,269,37,0,74,107,28,3000,285,539,42,650,431,31,201,431,634,27]
 
     # TEST 2 : From BMJ #
 
     #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
     #graphName="termDoc_bmj_hist_3000.png"
+    #title='Score (3000) test (BMJ) - term-doc matrix'
 
     # Not stemmed
     #x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
@@ -283,7 +289,7 @@ def makehist():
     ## Median:
     #x3 = [10,148,286,1954,141,423,238,83,8,0,125,62,54]
     ## Max:
-
+    #x3 = []
 
     ## Normed labels:
     #x3 = [185,478,74,2033,350,614,459,558,96,200,931,779,810]
@@ -296,6 +302,7 @@ def makehist():
 
     #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
     #graphName="diseaseMatrix_orphan_hist_NOTnorm_3000.png"
+    #title='Score (3000) test (Orphan) - disease matrix'
 
      # Not stemmed
      ## Norm:
@@ -317,6 +324,7 @@ def makehist():
 
     diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
     graphName="diseaseMatrix_bmj_hist_norm_3000.png"
+    title='Score (3000) test (BMJ) - disease matrix'
 
      # Not stemmed
      ## Norm:
@@ -374,7 +382,7 @@ def makehist():
 
     ax.legend()
     ax.grid('.')
-    ax.set_title('Score (3000) test (BMJ) - disease matrix')
+    ax.set_title(title)
     ax.set_xlabel('Disease')
     ax.set_ylabel('Log_score')
 
