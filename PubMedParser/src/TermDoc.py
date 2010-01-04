@@ -303,8 +303,6 @@ def createDiseaseLabelHash():
 
     files = IOmodule.getSortedFilelist(_subMatrixDir+'/')
 
-#    files = sorted([f for f in os.listdir(_subMatrixDir+"/") if os.path.isfile(_subMatrixDir+"/" + f)])
-
     labelHash={}
 
     fileCount=0

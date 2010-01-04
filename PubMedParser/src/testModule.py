@@ -284,8 +284,7 @@ def makehist():
     # TEST 1 : Found on our own from orpha.net#
 
     #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
-
-    #graphName="orphan_hist_norm_3000.png"
+    #graphName="diseaseMatrix_orphan_hist_NOTnorm_3000.png"
 
      # Not stemmed
      ## Norm:
@@ -306,7 +305,7 @@ def makehist():
     # TEST 2 : From BMJ #
 
     diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
-    graphName="bmj_hist_norm_3000.png"
+    graphName="diseaseMatrix_bmj_hist_norm_3000.png"
 
      # Not stemmed
      ## Norm:
