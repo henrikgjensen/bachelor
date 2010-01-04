@@ -85,37 +85,6 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     # Get the median cosine score of the labels
     ## (normDic counts the number of times a label has been summed)
-#    resultDicList={}
-#    normDic={}
-#    for item in results[:top]:
-#        pmid=item[1]
-#        # Get the labels linked to the PMID
-#        ## (Several labels can be linked to one PMID)
-#        labels=_labelHash[pmid]
-#        for label in labels:
-#            try:
-#                resultDicList[label].append(item[0])
-#                normDic[label]+=1
-#            except:
-#                resultDicList[label]=[]
-#                resultDicList[label].append(item[0])
-#                normDic[label]=1
-#    resultDic={}
-#    for label in resultDicList.keys():
-#        labelList=resultDicList[label]
-#        numOfScores=len(labelList)
-#        if numOfScores>2:
-#            medianIndex=numOfScores/2
-#        else:
-#            medianIndex=0
-#        resultDic[label]=sorted(labelList)[medianIndex]
-
-    ##########
-    # 3: Max #
-    ##########
-
-    # Get the max cosine score of labels
-    ## (normDic counts the number of times a label has been summed)
     resultDicList={}
     normDic={}
     for item in results[:top]:
@@ -134,7 +103,38 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     resultDic={}
     for label in resultDicList.keys():
         labelList=resultDicList[label]
-        resultDic[label]=max(labelList)
+        numOfScores=len(labelList)
+        if numOfScores>2:
+            medianIndex=numOfScores/2
+        else:
+            medianIndex=0
+        resultDic[label]=sorted(labelList)[medianIndex]
+
+    ##########
+    # 3: Max #
+    ##########
+
+    # Get the max cosine score of labels
+    ## (normDic counts the number of times a label has been summed)
+#    resultDicList={}
+#    normDic={}
+#    for item in results[:top]:
+#        pmid=item[1]
+#        # Get the labels linked to the PMID
+#        ## (Several labels can be linked to one PMID)
+#        labels=_labelHash[pmid]
+#        for label in labels:
+#            try:
+#                resultDicList[label].append(item[0])
+#                normDic[label]+=1
+#            except:
+#                resultDicList[label]=[]
+#                resultDicList[label].append(item[0])
+#                normDic[label]=1
+#    resultDic={}
+#    for label in resultDicList.keys():
+#        labelList=resultDicList[label]
+#        resultDic[label]=max(labelList)
 
     # Normalize the summed labels
     #for label in resultDic.keys():
