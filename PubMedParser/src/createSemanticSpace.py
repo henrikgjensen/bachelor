@@ -184,7 +184,7 @@ def getSemanticKeywords(top=20):
                 ("Brugada syndrome","cardiac arrest sleep")]
 
     #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_90"
-    matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_10"
+    matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed"
     #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced90_outlierRemoved5"
 
     scoreDic={}
@@ -214,5 +214,7 @@ def getSemanticKeywords(top=20):
                 scoreDic[filename][item[1]]=termSum.index(item)
 
     #return termSum[:top]
-    return scoreDic
+
+    for score in scoreDic.items():
+        print score
     
