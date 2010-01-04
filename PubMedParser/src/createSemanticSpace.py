@@ -187,28 +187,31 @@ def getSemanticKeywords(top=20):
     #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_10"
     #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced90_outlierRemoved5"
 
-    filename=diseaseList[0][0]
-    symptoms=diseaseList[0][1]
-
-    symptoms=SearchTermDoc._modifySearchString(symptoms)
-    symptoms=map(FilterInterface.porterStemmer,symptoms)
-
-    M_coo=IOmodule.readInTDM(matrixDir,filename)
-
-    M_csc=M_coo.tocsc()
-    
-    termSum=[]
-    for col in range(1,M_coo.shape[1]):
-        term=revTermHashTable[M_csc[0,col]]
-        termSum.append((sum(M_csc.getcol(col).data[:-1]),term))
-
-    termSum.sort()
-    termSum.reverse()
-
     scoreDic={}
-    for item in termSum:
-        if item[1] in symptoms:
-            scoreDic[item[1]]=termSum.index(item)
+    for disease in diseaseList:
+
+        filename=disease[0]
+        symptoms=disease[1]
+
+        symptoms=SearchTermDoc._modifySearchString(symptoms)
+        symptoms=map(FilterInterface.porterStemmer,symptoms)
+
+        M_coo=IOmodule.readInTDM(matrixDir,filename)
+
+        M_csc=M_coo.tocsc()
+    
+        termSum=[]
+        for col in range(1,M_coo.shape[1]):
+            term=revTermHashTable[M_csc[0,col]]
+            termSum.append((sum(M_csc.getcol(col).data[:-1]),term))
+
+        termSum.sort()
+        termSum.reverse()
+
+        scoreDic[filename]={}
+        for item in termSum:
+            if item[1] in symptoms:
+                scoreDic[filename][item[1]]=termSum.index(item)
 
     #return termSum[:top]
     return scoreDic
