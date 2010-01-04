@@ -189,7 +189,7 @@ def runScoreTest2(M_lil, M_csc):
 
         symptoms=FilterInterface.stopwordRemover(disease[1])
 
-        resultsLists=search(M_lil, M_csc, symptoms, top, AND=False)
+        resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
 
         for results in resultLists:
             found=False
@@ -249,7 +249,7 @@ def runScoreTest3(M_lil, M_csc):
 
         symptoms=FilterInterface.stopwordRemover(disease[1])
 
-        resultsLists=search(M_lil, M_csc, symptoms, top, AND=False)
+        resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
 
         for results in resultLists:
             found=False
