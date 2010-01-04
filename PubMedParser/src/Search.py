@@ -99,7 +99,7 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
             except:
                 resultDicList[label]=[]
                 resultDicList[label].append(item[0])
-               normDic[label]=1
+                normDic[label]=1
     resultDic2={}
     for label in resultDicList.keys():
         labelList=resultDicList[label]
@@ -163,7 +163,7 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
 def runScoreTest2(M_lil, M_csc):
 
-    top=lil.shape[0]
+    top=6000
 
     diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
                 ("Cushing's syndrome","hypertension, adrenal, mass"),
@@ -207,7 +207,7 @@ def runScoreTest2(M_lil, M_csc):
 
 def runScoreTest3(M_lil, M_csc):
 
-    top=3000
+    top=6000
 
     diseaseList=[('Apparent mineralocorticoid excess','early-onset, severe hypertension, associated, low renin levels, hypoaldosteronism'),
                 ('Rubinstein-Taybi syndrome','congenital anomalies, intellectual deficit, behavioural characteristics'),
