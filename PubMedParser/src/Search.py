@@ -76,9 +76,9 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
                 normDic[label]=1
 
     # Normalize the summed labels
-    for label in resultDic.keys():
-        resultDic[label]/=normDic[label]
-        print "Divided "+str(label)+" by "+str(normDic[label])
+    #for label in resultDic.keys():
+    #    resultDic[label]/=normDic[label]
+    #    print "Divided "+str(label)+" by "+str(normDic[label])
 
     #############################
     ### For the label matrix: ###
