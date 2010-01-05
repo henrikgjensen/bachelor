@@ -3,6 +3,7 @@ from math import sqrt, pow, acos
 import numpy as np
 from numpy import linalg, dot
 from numpy.linalg import norm
+import time
 
 # These should work independently from the term doc, as long as one
 # does not look for correlation between different sub term doc, as
@@ -26,7 +27,7 @@ from numpy.linalg import norm
 # sense, i.e. looking for correlation between different terms.
 #
 
-def sim_pearson(v1, v2, output=False):
+def sim_pearson(v1, v2, output=False, time_log=False):
 
     """
     Recieves two vectors coming from the same vector space, i.e. with
@@ -38,8 +39,13 @@ def sim_pearson(v1, v2, output=False):
 #     print v1
 #     print 'test'
     #print v2
+    if time_log:
+        t1 = time.time()
     v1nz = v1.nonzero()[1]
     v2nz = v2.nonzero()[1]
+
+    if time_log:
+        print '\tGetting row nonzero', str(time.time() - t1)
 
 #    v1 = v1[0,1:]
 #    v2 = v2[0,1:]
@@ -54,9 +60,19 @@ def sim_pearson(v1, v2, output=False):
         print v1nz
         print v2nz
 
+    if time_log:
+        t2 = time.time()
     simIndex = list(set.intersection(set(v1nz), set(v2nz)))
+    if time_log:
+        print '\tGetting similar index for for vectors', str(time.time() - t2)
+    
     # Sort the index for good order. :)
+    if time_log:
+        t3 = time.time()
     simIndex.sort()
+    if time_log:
+        print '\tSorting similar indices', str(time.time() - t3)
+
 
     if output:
         print 'simIndex', simIndex
@@ -80,6 +96,9 @@ def sim_pearson(v1, v2, output=False):
     # Product sum
     pSum = 0.0
 
+    if time_log:
+        t4 = time.time()
+
     # Only need to make one pass over the vectors.
     #
     # Do not know wether its faster to temporarily to the vector entry
@@ -93,6 +112,10 @@ def sim_pearson(v1, v2, output=False):
         sum1Sq += pow(v1[0, index], 2)
         sum2Sq += pow(v2[0, index], 2)
         pSum += v1[0, index] * v2[0, index]
+
+    if time_log:
+        print '\tTime for looping through similar indices:', str(time.time() - t4)
+
 
     if output:
         print
@@ -112,15 +135,15 @@ def sim_pearson(v1, v2, output=False):
     if den == 0:
         return 0.0
 
+    r = num / den
+
     if output:
         print 'r =', r
-
-    r = num / den
 
     # Return pearsons correlations coefficient
     return float(r)
 
-def cosine_measure(v1,v2, output=False):
+def cosine_measure(v1,v2, output=False, time_log=False):
 
     """
     Takes two normalized vectors and returns the cosine score between
