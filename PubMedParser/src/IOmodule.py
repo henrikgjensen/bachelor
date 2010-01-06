@@ -73,7 +73,7 @@ def writeOutTDM(dirname, filename, matrix, type='numpy.float32'):
     Receives a (full) directory name and a filename, a matrix and optional type,
     which is defined by numpy, and is e.g. numpy.float32, numpy.integer etc.
     
-    Uses mmwrite to write out matrices, saving them in Matrix Marked
+    Uses mmwrite to write out matrices, saving them in Matrix Market
     format which saves a lot of space 
     """
     

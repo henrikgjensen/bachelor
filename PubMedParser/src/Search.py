@@ -11,20 +11,20 @@ _subFolder = _path+"/"+"term_doc"
 # Hashtable directory
 _hashTablePath = _subFolder+"/"+"hashTables"
 # Set True for Porter-stemming
-_stemmer=False
+_stemmer=True
 
 ############
 
 # Disease label hash (for pmid lookup)
-_labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
-print "Label hash loaded"
+# _labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
+# print "Label hash loaded"
 
 ############
 
 # Disease label hash (for label lookup)
-#_labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash")
-#_labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
-#print "Label hash loaded"
+_labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash")
+_labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
+print "Label hash loaded"
 
 ############
 
@@ -54,110 +54,122 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     results.sort()
     results.reverse()
 
-    ###########################################################################
-    ### For the term-doc matrix: ##############################################
+    # ###########################################################################
+    # ### For the term-doc matrix: ##############################################
 
-    ###########
-    # 1: Mean #
-    ###########
+    # ###########
+    # # 1: Mean #
+    # ###########
 
-    # Get the sum cosine score the labels
-    ## (normDic counts the number of times a label has been summed)
-    resultDic1={}
-    normDic1={}
-    for item in results[:top]:
-        pmid=item[1]
-        # Get the labels linked to the PMID
-        ## (Several labels can be linked to one PMID)
-        labels=_labelHash[pmid]
-        for label in labels:
-            try:
-                resultDic1[label]+=item[0]
-                normDic1[label]+=1
-            except:
-                resultDic1[label]=item[0]
-                normDic1[label]=1
+    # # Get the sum cosine score the labels
+    # ## (normDic counts the number of times a label has been summed)
+    # resultDic1={}
+    # normDic1={}
+    # for item in results[:top]:
+    #     pmid=item[1]
+    #     # Get the labels linked to the PMID
+    #     ## (Several labels can be linked to one PMID)
+    #     labels=_labelHash[pmid]
+    #     for label in labels:
+    #         try:
+    #             resultDic1[label]+=item[0]
+    #             normDic1[label]+=1
+    #         except:
+    #             resultDic1[label]=item[0]
+    #             normDic1[label]=1
 
-    #############
-    # 2: Median #
-    #############
+    # #############
+    # # 2: Median #
+    # #############
 
-    # Get the median cosine score of the labels
-    ## (normDic counts the number of times a label has been summed)
-    resultDicList={}
-    normDic2={}
-    for item in results[:top]:
-        pmid=item[1]
-        # Get the labels linked to the PMID
-        ## (Several labels can be linked to one PMID)
-        labels=_labelHash[pmid]
-        for label in labels:
-            try:
-                resultDicList[label].append(item[0])
-                normDic2[label]+=1
-            except:
-                resultDicList[label]=[]
-                resultDicList[label].append(item[0])
-                normDic2[label]=1
-    resultDic2={}
-    for label in resultDicList.keys():
-        labelList=resultDicList[label]
-        numOfScores=len(labelList)
-        if numOfScores>2:
-            medianIndex=numOfScores/2
-        else:
-            medianIndex=0
-        resultDic2[label]=sorted(labelList)[medianIndex]
+    # # Get the median cosine score of the labels
+    # ## (normDic counts the number of times a label has been summed)
+    # resultDicList={}
+    # normDic2={}
+    # for item in results[:top]:
+    #     pmid=item[1]
+    #     # Get the labels linked to the PMID
+    #     ## (Several labels can be linked to one PMID)
+    #     labels=_labelHash[pmid]
+    #     for label in labels:
+    #         try:
+    #             resultDicList[label].append(item[0])
+    #             normDic2[label]+=1
+    #         except:
+    #             resultDicList[label]=[]
+    #             resultDicList[label].append(item[0])
+    #             normDic2[label]=1
+    # resultDic2={}
+    # for label in resultDicList.keys():
+    #     labelList=resultDicList[label]
+    #     numOfScores=len(labelList)
+    #     if numOfScores>2:
+    #         medianIndex=numOfScores/2
+    #     else:
+    #         medianIndex=0
+    #     resultDic2[label]=sorted(labelList)[medianIndex]
 
-    ##########
-    # 3: Max #
-    ##########
+    # ##########
+    # # 3: Max #
+    # ##########
 
-    # Get the max cosine score of labels
-    ## (normDic counts the number of times a label has been summed)
-    resultDicList={}
-    normDic3={}
-    for item in results[:top]:
-        pmid=item[1]
-        # Get the labels linked to the PMID
-        ## (Several labels can be linked to one PMID)
-        labels=_labelHash[pmid]
-        for label in labels:
-            try:
-                resultDicList[label].append(item[0])
-                normDic3[label]+=1
-            except:
-                resultDicList[label]=[]
-                resultDicList[label].append(item[0])
-                normDic3[label]=1
-    resultDic3={}
-    for label in resultDicList.keys():
-        labelList=resultDicList[label]
-        resultDic3[label]=max(labelList)
+    # # Get the max cosine score of labels
+    # ## (normDic counts the number of times a label has been summed)
+    # resultDicList={}
+    # normDic3={}
+    # for item in results[:top]:
+    #     pmid=item[1]
+    #     # Get the labels linked to the PMID
+    #     ## (Several labels can be linked to one PMID)
+    #     labels=_labelHash[pmid]
+    #     for label in labels:
+    #         try:
+    #             resultDicList[label].append(item[0])
+    #             normDic3[label]+=1
+    #         except:
+    #             resultDicList[label]=[]
+    #             resultDicList[label].append(item[0])
+    #             normDic3[label]=1
+    # resultDic3={}
+    # for label in resultDicList.keys():
+    #     labelList=resultDicList[label]
+    #     resultDic3[label]=max(labelList)
 
 
-    # Normalize the summed labels
-    #for label in resultDic1.keys():
-    #    resultDic1[label]/=normDic1[label]
+    # # Normalize the summed labels
+    # #for label in resultDic1.keys():
+    # #    resultDic1[label]/=normDic1[label]
 
 
     ###########################################################################
     ### For the label matrix: #################################################
 
-#    resultDic={}
-#    for item in results[:top]:
-#        pmid=item[1] #SearchTermDoc.getPMID(item[1])
-#        label=_labelHash[pmid]
-#        resultDic[label]=item[0]
+    resultDic={}
+    for item in results[:top]:
+        pmid=item[1] #SearchTermDoc.getPMID(item[1])
+        label=_labelHash[pmid]
+        resultDic[label]=item[0]
 
     ###########################################################################
 
-    # Reverse and sort the concensus list
-    resultList_mean=sorted(resultDic1.items(), key=lambda(k,v):(v,k), reverse=True)
-    resultList_median=sorted(resultDic2.items(), key=lambda(k,v):(v,k), reverse=True)
-    resultList_max=sorted(resultDic3.items(), key=lambda(k,v):(v,k), reverse=True)
+       ###################################
+       ####### return pmid results #######
 
-    return [resultList_mean,resultList_median,resultList_max]
+    # Reverse and sort the concensus list
+    # resultList_mean=sorted(resultDic1.items(), key=lambda(k,v):(v,k), reverse=True)
+    # resultList_median=sorted(resultDic2.items(), key=lambda(k,v):(v,k), reverse=True)
+    # resultList_max=sorted(resultDic3.items(), key=lambda(k,v):(v,k), reverse=True)
+
+
+    
+    # return [resultList_mean,resultList_median,resultList_max]
+
+    ################################
+    #### Return label results ######
+
+    resultLabelList = sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
+
+    return resultLabelList
 
 
 def runScoreTest2(M_lil, M_csc):
@@ -180,7 +192,9 @@ def runScoreTest2(M_lil, M_csc):
 
 
     printout1=[]
-    printout2=([],[],[])
+    # printout2=([],[],[])
+    # For label
+    printout2=[]
 
     for disease in diseaseList:
 
@@ -190,20 +204,27 @@ def runScoreTest2(M_lil, M_csc):
 
         resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
 
+        #        print resultLists
+        found=False
         count=0
-        for results in resultLists:
-            found=False
-            for result in results:
-                if result[0]==disease[0]:
-                    printout2[count].append(results.index(result))
-                    found=True
-            if not found:
-                printout2[count].append(" ")
-            count+=1
+        # for results in resultLists:
+        #     found=False
+        #     print results
+        # for result in results:
+        for result in resultLists:
+            if result[0]==disease[0]:
+                printout2.append(resultLists.index(result))
+                #                printout2[count].append(results.index(result))
+                found=True
+        if not found:
+            printout2.append(' ')
+                #                printout2[count].append(" ")
+                #            count+=1
 
     print printout1
-    for list in printout2:
-        print list
+    #    for list in printout2:
+    #        print list
+    print printout2
     print "TEST DONE"
 
 
@@ -243,7 +264,9 @@ def runScoreTest3(M_lil, M_csc):
                 ('Trichodental syndrome','fine, dry and short hair with dental anomalies')]
 
     printout1=[]
-    printout2=([],[],[])
+    # printout2=([],[],[])
+    # For label
+    printout2=[]
 
     for disease in diseaseList:
 
@@ -253,19 +276,26 @@ def runScoreTest3(M_lil, M_csc):
 
         resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
 
+        #        print resultLists
+        found=False
         count=0
-        for results in resultLists:
-            found=False
-            for result in results:
-                if result[0]==disease[0]:
-                    printout2[count].append(results.index(result))
-                    found=True
-            if not found:
-                printout2[count].append(str(top))
-            count+=1
+        # for results in resultLists:
+        #     found=False
+        #     print results
+        # for result in results:
+        for result in resultLists:
+            if result[0]==disease[0]:
+                printout2.append(resultLists.index(result))
+                #                printout2[count].append(results.index(result))
+                found=True
+        if not found:
+            printout2.append(' ')
+                #                printout2[count].append(" ")
+                #            count+=1
 
     print printout1
-    for list in printout2:
-        print list
+    #    for list in printout2:
+    #        print list
+    print printout2
     print "TEST DONE"
 

@@ -2,7 +2,6 @@ from __future__ import division
 import DistanceMeasure
 reload(DistanceMeasure)
 from DistanceMeasure import sim_pearson as pearson, cosine_measure as cosine, cosine_measure_dense as cosine_dense
-#from DistanceMeasure import cosine_measure as cosine
 from math import sqrt, pow, fabs, floor
 import random
 from PIL import Image, ImageDraw
@@ -25,8 +24,6 @@ _hashTablesDir=_subFolder+"/"+"hashTables"
 # Disease label hash
 _labelHash="labelHash"
 
-
-
 _stemmed=False
 
 if not _stemmed:
@@ -45,21 +42,10 @@ def scaledown(tdm, distance=pearson, rate=0.01, time_log=False):
 
     tdm = tdm.todense()
 
-    # Are we able to save an if check if we just make the range run from range(1,n)
     if time_log:
         t1 = time.time()
 
     print 'Calculating distance...'
-
-    # This will not work as it does not produce a two dimensional
-    # distance list
-    # realdist=[]
-
-    # for i in range(0,n):
-    #     # Should be a slight optimazation
-    #     row_i = tdm.getrow(i)[0,1:]
-    #     for j in range(0,n):
-    #         realdist.append(distance(row_i,tdm.getrow(j)[0,1:]))
 
     realdist = [[distance(tdm[i,1:], tdm[j,1:])
                  for j in range(0, n)]
@@ -149,7 +135,7 @@ def draw2d(data, labels, jpeg = 'mds_2d.jpeg', colors={}):
         
     img.save(jpeg, 'JPEG')
 
-def drawdendrogram(clust, jpeg = 'disease_cluster_dendro.jpg', col={}, width = 1200, heightmodifier=20):
+def drawdendrogram(clust, jpeg = 'disease_cluster_dendro.jpg', col={}, label={}, width = 1200, heightmodifier=20):
 
     """
     Recieves a cluster, filename, optional color dictionary, width of
@@ -175,7 +161,7 @@ def drawdendrogram(clust, jpeg = 'disease_cluster_dendro.jpg', col={}, width = 1
     draw.line((0, h / 2, 10, h / 2), fill = (255, 0, 0))
 
     # Draw the first node
-    drawnode(draw, clust, 10, (h / 2), scaling, col)
+    drawnode(draw, clust, 10, (h / 2), scaling, col, label)
     img.save(jpeg,'JPEG')
 
 # The labels needs to be the pmids
@@ -194,7 +180,10 @@ def drawnode(draw, clust, x, y, scaling, col={}, label={}):
         # Line length
         ll = fabs(clust.distance) * scaling
         #    ^ Necessary to because we might get a negative ll, which
-        #      results in labels being placed wrong.
+        #      results in labels being placed wrong. This is a product
+        #      of Pearson's correlation coeffiecient which ranges from
+        #      -1.0 to 1.0, one could consider making "negative" lines
+        #      another color to make sure of that fact.
 
         # Vertical line from this cluster to children
         draw.line((x, top + h1 / 2, x, bottom - h2 / 2), fill = (255, 0, 0))
@@ -207,8 +196,8 @@ def drawnode(draw, clust, x, y, scaling, col={}, label={}):
                   fill = (255, 0, 0))
 
         # Call the function to draw the left and right node
-        drawnode(draw, clust.left, x + ll, top + h1 / 2, scaling)
-        drawnode(draw, clust.right, x + ll, bottom - h2 / 2, scaling)
+        drawnode(draw, clust.left, x + ll, top + h1 / 2, scaling, col, label)
+        drawnode(draw, clust.right, x + ll, bottom - h2 / 2, scaling, col, label)
         
     else:
         # If it is an end point, draw the item label
@@ -238,7 +227,7 @@ def getdepth(clust):
     return max(getdepth(clust.left), getdepth(clust.right)) + clust.distance
 
 # Need to send the tdm with, and extract all the rows. We don't use rows right now
-def hcluster(tdm, distance=pearson, time_log=False, time_total=False, print_remain=False):
+def hcluster(tdm, distance=pearson, output=False, time_log=False, time_total=False, print_remain=False):
 
     """
     Recieves an already cut matrix, that does not contain term
@@ -254,7 +243,7 @@ def hcluster(tdm, distance=pearson, time_log=False, time_total=False, print_rema
 
 #    tdm = tdm.todense()
 
-    print 'Start building clusters (clusters=' + str(n) + ')' 
+    print 'Start building clusters (clusters=' + str(n) + ')'
 
     # Time for clustering building
     if time_log or time_total:
@@ -288,14 +277,17 @@ def hcluster(tdm, distance=pearson, time_log=False, time_total=False, print_rema
             t3 = time.time()
 
         lowestpair = (0, 1)
-        closest=distance(clust[0].vec, clust[1].vec)
+        closest=distance(clust[0].vec, clust[1].vec, output=output, time_log=time_log)
         
         # Loop through every pair looking for the smallest distance
         for i in range(len(clust)):
+            print 'Processing row', i
+            if output:
+                print 'Processing row', i
             for j in range(i + 1, len(clust)):
                 # distances is the cache of distance calculations
                 if (clust[i].id, clust[j].id) not in distances:
-                    distances[(clust[i].id, clust[j].id)] = distance(clust[i].vec, clust[j].vec)
+                    distances[(clust[i].id, clust[j].id)] = distance(clust[i].vec, clust[j].vec, output=output, time_log=time_log)
 
                 d = distances[(clust[i].id, clust[j].id)]
 
@@ -443,7 +435,7 @@ def runOutlierDetector(dir, distance=cosine_dense, removePercent=0.05, output=Fa
             print 'Writing',
 
         subTermDoc = sparse.coo_matrix(subTermDoc)
-            
+
         IO.writeOutTDM(_subFolder+'/'+outlierRemoved+str(int(removePercent*100)), diseaseName, subTermDoc)
 
 def outlierDetector(stdm, distance=cosine_dense, removePercent=0.05, output=False, time_log=False):
@@ -455,12 +447,10 @@ def outlierDetector(stdm, distance=cosine_dense, removePercent=0.05, output=Fals
     distance=pearson will not work as it is not yet able to work on
     dense matrices
     """
+    
+    n = stdm.shape[0] - 1
     stdmdense = stdm.todense()
     stdmdense = stdmdense[1:,1:]
-
-    stdm_csr = sparse.csr_matrix(stdmdense)
-    
-    n = stdm_csr.shape[0]
 
     distance_matrix = sparse.lil_matrix((n,n))
 
@@ -475,7 +465,7 @@ def outlierDetector(stdm, distance=cosine_dense, removePercent=0.05, output=Fals
                 distance_matrix[i,j] = distance_matrix[j,i] = distance(stdmdense[i,:], stdmdense[j,:])
 
     if time_log:
-        print '\tTime for distance calculations', str(time.time() - t1)[:4]
+        print '\tTime for distance calculations', str(time.time() - t1)
 
     # We need to do the outlier detection down here, but we need some
     # clever way of doing it. Perhaps getting the average correlation
@@ -499,12 +489,16 @@ def outlierDetector(stdm, distance=cosine_dense, removePercent=0.05, output=Fals
         listOfThings.append(((distance_matrix[i,:].sum() / n), i))
 
     listOfThings.sort()
-    
-    toBeDeleted = [item[1] for item in listOfThings[:numberToRemove]]
+
+    # As we have worked on a matrix missing first row and first
+    # column, we need to add one to the row index to convert it back
+    # to the original matrix.
+    toBeDeleted = [int(item[1])+1 for item in listOfThings[:numberToRemove]]
 
     if output:
         print '\tList of row indices to be removed as outliers:', toBeDeleted
 
+        
     stdm = delete(stdm, toBeDeleted, 0)
 
     if time_log:
