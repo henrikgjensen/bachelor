@@ -26,7 +26,7 @@ def cosineMeasureOR(M_lil, M_csc, queryString):
     for pmidHash in searchIndices:
         Sum=0
         for termHash in hashedSearchTerms:
-            Sum+=M_lil[pmidHash,termHash] / vectorLength[pmidHash]
+            Sum+=M_lil[pmidHash,termHash] #/ vectorLength[pmidHash]
         results.append((Sum,pmidHash))
 
     return results
