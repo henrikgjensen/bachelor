@@ -264,7 +264,9 @@ def runScoreTest3(M_lil, M_csc):
                 ('Trichodental syndrome','fine, dry and short hair with dental anomalies')]
 
     printout1=[]
-    printout2=([],[],[])
+    # printout2=([],[],[])
+    # For label
+    printout2=[]
 
     for disease in diseaseList:
 
@@ -274,19 +276,26 @@ def runScoreTest3(M_lil, M_csc):
 
         resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
 
+        #        print resultLists
+        found=False
         count=0
-        for results in resultLists:
-            found=False
-            for result in results:
-                if result[0]==disease[0]:
-                    printout2[count].append(results.index(result))
-                    found=True
-            if not found:
-                printout2[count].append(str(top))
-            count+=1
+        # for results in resultLists:
+        #     found=False
+        #     print results
+        # for result in results:
+        for result in resultLists:
+            if result[0]==disease[0]:
+                printout2.append(resultLists.index(result))
+                #                printout2[count].append(results.index(result))
+                found=True
+        if not found:
+            printout2.append(' ')
+                #                printout2[count].append(" ")
+                #            count+=1
 
     print printout1
-    for list in printout2:
-        print list
+    #    for list in printout2:
+    #        print list
+    print printout2
     print "TEST DONE"
 
