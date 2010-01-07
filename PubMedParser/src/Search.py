@@ -11,20 +11,21 @@ _subFolder = _path+"/"+"term_doc"
 # Hashtable directory
 _hashTablePath = _subFolder+"/"+"hashTables"
 # Set True for Porter-stemming
-_stemmer=True
+_stemmer=False
 
 ############
 
 # Disease label hash (for pmid lookup)
-# _labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
-# print "Label hash loaded"
+_labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
+print "Label hash loaded"
 
 ############
 
 # Disease label hash (for label lookup)
-_labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash")
-_labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
-print "Label hash loaded"
+# _labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash")
+# _labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
+# print "Disease hash loaded"
+
 
 ############
 
@@ -63,20 +64,20 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     # # Get the sum cosine score the labels
     # ## (normDic counts the number of times a label has been summed)
-    # resultDic1={}
-    # normDic1={}
-    # for item in results[:top]:
-    #     pmid=item[1]
-    #     # Get the labels linked to the PMID
-    #     ## (Several labels can be linked to one PMID)
-    #     labels=_labelHash[pmid]
-    #     for label in labels:
-    #         try:
-    #             resultDic1[label]+=item[0]
-    #             normDic1[label]+=1
-    #         except:
-    #             resultDic1[label]=item[0]
-    #             normDic1[label]=1
+    resultDic1={}
+    normDic1={}
+    for item in results[:top]:
+        pmid=item[1]
+        # Get the labels linked to the PMID
+        ## (Several labels can be linked to one PMID)
+        labels=_labelHash[pmid]
+        for label in labels:
+            try:
+                resultDic1[label]+=item[0]
+                normDic1[label]+=1
+            except:
+                resultDic1[label]=item[0]
+                normDic1[label]=1
 
     # #############
     # # 2: Median #
@@ -84,30 +85,30 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     # # Get the median cosine score of the labels
     # ## (normDic counts the number of times a label has been summed)
-    # resultDicList={}
-    # normDic2={}
-    # for item in results[:top]:
-    #     pmid=item[1]
-    #     # Get the labels linked to the PMID
-    #     ## (Several labels can be linked to one PMID)
-    #     labels=_labelHash[pmid]
-    #     for label in labels:
-    #         try:
-    #             resultDicList[label].append(item[0])
-    #             normDic2[label]+=1
-    #         except:
-    #             resultDicList[label]=[]
-    #             resultDicList[label].append(item[0])
-    #             normDic2[label]=1
-    # resultDic2={}
-    # for label in resultDicList.keys():
-    #     labelList=resultDicList[label]
-    #     numOfScores=len(labelList)
-    #     if numOfScores>2:
-    #         medianIndex=numOfScores/2
-    #     else:
-    #         medianIndex=0
-    #     resultDic2[label]=sorted(labelList)[medianIndex]
+    resultDicList2={}
+    normDic2={}
+    for item in results[:top]:
+        pmid=item[1]
+        # Get the labels linked to the PMID
+        ## (Several labels can be linked to one PMID)
+        labels=_labelHash[pmid]
+        for label in labels:
+            try:
+                resultDicList2[label].append(item[0])
+                normDic2[label]+=1
+            except:
+                resultDicList2[label]=[]
+                resultDicList2[label].append(item[0])
+                normDic2[label]=1
+    resultDic2={}
+    for label in resultDicList2.keys():
+        labelList=resultDicList2[label]
+        numOfScores=len(labelList)
+        if numOfScores>2:
+            medianIndex=numOfScores/2
+        else:
+            medianIndex=0
+        resultDic2[label]=sorted(labelList)[medianIndex]
 
     # ##########
     # # 3: Max #
@@ -115,25 +116,25 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     # # Get the max cosine score of labels
     # ## (normDic counts the number of times a label has been summed)
-    # resultDicList={}
-    # normDic3={}
-    # for item in results[:top]:
-    #     pmid=item[1]
-    #     # Get the labels linked to the PMID
-    #     ## (Several labels can be linked to one PMID)
-    #     labels=_labelHash[pmid]
-    #     for label in labels:
-    #         try:
-    #             resultDicList[label].append(item[0])
-    #             normDic3[label]+=1
-    #         except:
-    #             resultDicList[label]=[]
-    #             resultDicList[label].append(item[0])
-    #             normDic3[label]=1
-    # resultDic3={}
-    # for label in resultDicList.keys():
-    #     labelList=resultDicList[label]
-    #     resultDic3[label]=max(labelList)
+    resultDicList3={}
+    normDic3={}
+    for item in results[:top]:
+        pmid=item[1]
+        # Get the labels linked to the PMID
+        ## (Several labels can be linked to one PMID)
+        labels=_labelHash[pmid]
+        for label in labels:
+            try:
+                resultDicList3[label].append(item[0])
+                normDic3[label]+=1
+            except:
+                resultDicList3[label]=[]
+                resultDicList3[label].append(item[0])
+                normDic3[label]=1
+    resultDic3={}
+    for label in resultDicList3.keys():
+        labelList=resultDicList3[label]
+        resultDic3[label]=max(labelList)
 
 
     # # Normalize the summed labels
@@ -144,11 +145,11 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
     ###########################################################################
     ### For the label matrix: #################################################
 
-    resultDic={}
-    for item in results[:top]:
-        pmid=item[1] #SearchTermDoc.getPMID(item[1])
-        label=_labelHash[pmid]
-        resultDic[label]=item[0]
+    # resultDic={}
+    # for item in results[:top]:
+    #     pmid=item[1] SearchTermDoc.getPMID(item[1])
+    #     label=_labelHash[pmid]
+    #     resultDic[label]=item[0]
 
     ###########################################################################
 
@@ -156,21 +157,18 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
        ####### return pmid results #######
 
     # Reverse and sort the concensus list
-    # resultList_mean=sorted(resultDic1.items(), key=lambda(k,v):(v,k), reverse=True)
-    # resultList_median=sorted(resultDic2.items(), key=lambda(k,v):(v,k), reverse=True)
-    # resultList_max=sorted(resultDic3.items(), key=lambda(k,v):(v,k), reverse=True)
+    resultList_mean=sorted(resultDic1.items(), key=lambda(k,v):(v,k), reverse=True)
+    resultList_median=sorted(resultDic2.items(), key=lambda(k,v):(v,k), reverse=True)
+    resultList_max=sorted(resultDic3.items(), key=lambda(k,v):(v,k), reverse=True)
 
+    return [resultList_mean,resultList_median,resultList_max]
 
     
-    # return [resultList_mean,resultList_median,resultList_max]
+    # Return label results ######
 
-    ################################
-    #### Return label results ######
+    #    resultLabelList = sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
 
-    resultLabelList = sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
-
-    return resultLabelList
-
+    #    return resultLabelList
 
 def runScoreTest2(M_lil, M_csc):
 
@@ -192,9 +190,12 @@ def runScoreTest2(M_lil, M_csc):
 
 
     printout1=[]
-    # printout2=([],[],[])
+    printout2=([],[],[])
+    formatString = ['Mean:','Median:','Max:' ]
     # For label
-    printout2=[]
+#    printout2=[]
+
+    clusterThis = ([],[],[])
 
     for disease in diseaseList:
 
@@ -207,26 +208,31 @@ def runScoreTest2(M_lil, M_csc):
         #        print resultLists
         found=False
         count=0
-        # for results in resultLists:
-        #     found=False
-        #     print results
-        # for result in results:
-        for result in resultLists:
-            if result[0]==disease[0]:
-                printout2.append(resultLists.index(result))
-                #                printout2[count].append(results.index(result))
-                found=True
-        if not found:
-            printout2.append(' ')
-                #                printout2[count].append(" ")
-                #            count+=1
+        for results in resultLists:
+            found=False
+            #            print results
+            for result in results:
+                #    for result in resultLists:
+                if result[0]==disease[0]:
+                    # printout2.append(resultLists.index(result))
+                    printout2[count].append(results.index(result))
+                    found=True
+                    clusterThis[count].append(results[:50])
+                    count+=1
+            if not found:
+                # printout2.append(' ')
+                printout2[count].append(" ")
+                count+=1
 
     print printout1
-    #    for list in printout2:
-    #        print list
-    print printout2
+    cnt = 0
+    for list in printout2:
+        print formatString[cnt], list
+        cnt+=1
+        #    print printout2
     print "TEST DONE"
 
+    return clusterThis
 
 def runScoreTest3(M_lil, M_csc):
 
@@ -288,6 +294,7 @@ def runScoreTest3(M_lil, M_csc):
                 printout2.append(resultLists.index(result))
                 #                printout2[count].append(results.index(result))
                 found=True
+                #                clusterThis.append(resultLists[:50])
         if not found:
             printout2.append(' ')
                 #                printout2[count].append(" ")
@@ -299,3 +306,65 @@ def runScoreTest3(M_lil, M_csc):
     print printout2
     print "TEST DONE"
 
+    # for disease in diseaseList:
+
+    #     printout1.append(disease[0][0:5])
+
+    #     symptoms=FilterInterface.stopwordRemover(disease[1])
+
+    #     resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
+
+    #     #        print resultLists
+    #     found=False
+    #     count=0
+    #     # for results in resultLists:
+    #     #     found=False
+    #     #     print results
+    #     # for result in results:
+    #     for result in resultLists:
+    #         if result[0]==disease[0]:
+    #             printout2.append(resultLists.index(result))
+    #             #                printout2[count].append(results.index(result))
+    #             found=True
+    #     if not found:
+    #         printout2.append(' ')
+    #             #                printout2[count].append(" ")
+    #             #            count+=1
+
+    # print printout1
+    # #    for list in printout2:
+    # #        print list
+    # print printout2
+    # print "TEST DONE"
+
+def runScoreTest4(M_lil, M_csc):
+
+    top=3000
+
+    symptomList=[(""),
+                 (""),
+                 ("")]
+
+    formatString = ['Mean:','Median:','Max:' ]
+    printout2=([],[],[])
+
+    clusterThis = ([],[],[])
+
+    for symptoms in symptomList:
+
+        symptoms=FilterInterface.stopwordRemover(disease[0])
+
+        resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
+
+        count=0
+        for results in resultLists:
+            printout2[count].append(results[:20])
+            clusterThis[count].append(resultLists[:50])
+            count+=1
+    cnt = 0
+    for list in printout2:
+        print formatString[cnt], list
+        cnt+=1
+    print "TEST DONE"
+
+    return clusterThis
