@@ -11,7 +11,7 @@ _subFolder = _path+"/"+"term_doc"
 # Hashtable directory
 _hashTablePath = _subFolder+"/"+"hashTables"
 # Set True for Porter-stemming
-_stemmer=False
+_stemmer=True
 
 ############
 
