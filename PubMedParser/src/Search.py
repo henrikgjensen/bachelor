@@ -347,12 +347,17 @@ def runScoreTest4(M_lil, M_csc):
     return clusterThis
 
 
+def runScoreTest5(lil, csc):
 
-"""
-printout1=[]
+    symptomList=[(""),
+                 (""),
+                 ("")]
+
+    printout1=[]
     # printout2=([],[],[])
     # For label
     printout2=[]
+    clusterThis=[]
 
     for disease in diseaseList:
 
@@ -374,8 +379,8 @@ printout1=[]
                 printout2.append(resultLists.index(result))
                 #                printout2[count].append(results.index(result))
                 found=True
-                #                clusterThis.append(resultLists[:50])
-        if not found:
+                clusterThis.append(resultLists[:50])
+        If not found:
             printout2.append(' ')
                 #                printout2[count].append(" ")
                 #            count+=1
@@ -385,6 +390,8 @@ printout1=[]
     #        print list
     print printout2
     print "TEST DONE"
+
+    return clusterThis
 
     # for disease in diseaseList:
 
@@ -416,4 +423,4 @@ printout1=[]
     # #        print list
     # print printout2
     # print "TEST DONE"
-"""
+
