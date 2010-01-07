@@ -13,7 +13,7 @@ def cosineMeasureOR(M_lil, M_csc, queryString):
 
     ### TEMP ###
     # (Lav precomputed RL-hash for labelmatrices hvis noedvendigt)
-    vectorLength=SearchTermDoc.createRLHash(M_lil, None,False)
+    #vectorLength=SearchTermDoc.createRLHash(M_lil, None,False)
     ############
 
     # Extract the relevant indices of the row-vectors (pmid-hashes)
