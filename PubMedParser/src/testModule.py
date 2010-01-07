@@ -533,3 +533,39 @@ def sanitizeMatrices():
 
         print ""
 """
+
+"""
+============================================================================
+1) Dreng, normal ved fødslen bortset fra deformitet af begge storetæer (de
+manglede et led). Udvikler sig normalt efterfølgende. Ved 5 års alderen
+udvikler drengen i løbet af kort tid en hård tumor midt på ryggen ved siden
+af rygsøjlen. Rtg. viser, at tumor består af knogle. Der tages en biopsi,
+der viser knoglevæv uden malignitetstegn. Kort tid efter biopsien udvikles
+mere knoglevækst, præcis der hvor man har skåret.
+----------------------------------------------------------------------------
+System symptom query:
+Boy, normal birth, deformity of both big toes (missing joint),
+quick development of bone tumor near spine and osteogenesis at biopsy.
+============================================================================
+2) Normally developed boy until age 5, where he progressively developed the
+following symptoms: Talking difficulties, seizures, ataxia, adrenal
+insufficiency and  degeneration of visual and auditory functions.
+----------------------------------------------------------------------------
+System symptom query:
+Normally developed boy age 5, progessive development of talking difficulties,
+seizures, ataxia, adrenal insufficiency and  degeneration of visual and
+auditory functions
+============================================================================
+3) A boy age 14 comes to the doctor with yellow, keratotic plaques on the
+skin of his palms and soles going up onto the dorsal side. Both hands and
+feet are affected.
+
+He equally had swollen and very vulnerable gums since the age of 4 with loss
+of most of his permanent teeth.
+----------------------------------------------------------------------------
+System symptom query:
+Boy age 14, yellow, keratotic plaques on the
+skin of palms and soles going up onto the dorsal side. Both hands and feet are
+affected.
+============================================================================
+"""
