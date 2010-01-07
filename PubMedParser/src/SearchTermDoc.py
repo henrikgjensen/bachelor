@@ -18,7 +18,7 @@ _hashTablesDir=_path+'/'+'term_doc'+'/'+"hashTables"
 if not os.path.isdir(_path+'/'+subFolder):
     os.mkdir(_path+'/'+subFolder)
 
-_stemmer=False
+_stemmer=True
 
 ####################################################################
 #### Use stopword-removed TermDoc ##################################
