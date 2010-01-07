@@ -269,7 +269,87 @@ def runScoreTest3(M_lil, M_csc):
                 ('Multiple myeloma','overproduction of abnormal plasma cells in the bone marrow and manifested by skeletal destruction, bone pain, and presence of abnormous immunoglobulins'),
                 ('Trichodental syndrome','fine, dry and short hair with dental anomalies')]
 
-    printout1=[]
+        printout1=[]
+    printout2=([],[],[])
+    formatString = ['Mean:','Median:','Max:' ]
+    # For label
+#    printout2=[]
+
+    clusterThis = ([],[],[])
+
+    for disease in diseaseList:
+
+        printout1.append(disease[0][0:5])
+
+        symptoms=FilterInterface.stopwordRemover(disease[1])
+
+        resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
+
+        #        print resultLists
+        found=False
+        count=0
+        for results in resultLists:
+            found=False
+            #            print results
+            for result in results:
+                #    for result in resultLists:
+                if result[0]==disease[0]:
+                    # printout2.append(resultLists.index(result))
+                    printout2[count].append(results.index(result))
+                    found=True
+                    clusterThis[count].append(results[:50])
+                    count+=1
+            if not found:
+                # printout2.append(' ')
+                printout2[count].append(" ")
+                count+=1
+
+    print printout1
+    cnt = 0
+    for list in printout2:
+        print formatString[cnt], list
+        cnt+=1
+        #    print printout2
+    print "TEST DONE"
+
+    return clusterThis
+
+def runScoreTest4(M_lil, M_csc):
+
+    top=3000
+
+    symptomList=[(""),
+                 (""),
+                 ("")]
+
+    formatString = ['Mean:','Median:','Max:' ]
+    printout2=([],[],[])
+
+    clusterThis = ([],[],[])
+
+    for symptoms in symptomList:
+
+        symptoms=FilterInterface.stopwordRemover(disease[0])
+
+        resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
+
+        count=0
+        for results in resultLists:
+            printout2[count].append(results[:20])
+            clusterThis[count].append(resultLists[:50])
+            count+=1
+    cnt = 0
+    for list in printout2:
+        print formatString[cnt], list
+        cnt+=1
+    print "TEST DONE"
+
+    return clusterThis
+
+
+
+"""
+printout1=[]
     # printout2=([],[],[])
     # For label
     printout2=[]
@@ -336,35 +416,4 @@ def runScoreTest3(M_lil, M_csc):
     # #        print list
     # print printout2
     # print "TEST DONE"
-
-def runScoreTest4(M_lil, M_csc):
-
-    top=3000
-
-    symptomList=[(""),
-                 (""),
-                 ("")]
-
-    formatString = ['Mean:','Median:','Max:' ]
-    printout2=([],[],[])
-
-    clusterThis = ([],[],[])
-
-    for symptoms in symptomList:
-
-        symptoms=FilterInterface.stopwordRemover(disease[0])
-
-        resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
-
-        count=0
-        for results in resultLists:
-            printout2[count].append(results[:20])
-            clusterThis[count].append(resultLists[:50])
-            count+=1
-    cnt = 0
-    for list in printout2:
-        print formatString[cnt], list
-        cnt+=1
-    print "TEST DONE"
-
-    return clusterThis
+"""
