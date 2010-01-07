@@ -269,7 +269,7 @@ def runScoreTest3(M_lil, M_csc):
                 ('Multiple myeloma','overproduction of abnormal plasma cells in the bone marrow and manifested by skeletal destruction, bone pain, and presence of abnormous immunoglobulins'),
                 ('Trichodental syndrome','fine, dry and short hair with dental anomalies')]
 
-        printout1=[]
+    printout1=[]
     printout2=([],[],[])
     formatString = ['Mean:','Median:','Max:' ]
     # For label
