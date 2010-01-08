@@ -11,7 +11,7 @@ _subFolder = _path+"/"+"term_doc"
 # Hashtable directory
 _hashTablePath = _subFolder+"/"+"hashTables"
 # Set True for Porter-stemming
-_stemmer=False
+_stemmer=True
 
 ############
 
@@ -201,7 +201,7 @@ def runScoreTest2(M_lil, M_csc):
 
         symptoms=FilterInterface.stopwordRemover(disease[1])
 
-        resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
+        resultLists=search(M_lil, M_csc, symptoms, top)
 
         #        print resultLists
         found=False
@@ -281,7 +281,7 @@ def runScoreTest3(M_lil, M_csc):
 
         symptoms=FilterInterface.stopwordRemover(disease[1])
 
-        resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
+        resultLists=search(M_lil, M_csc, symptoms, top)
 
         #        print resultLists
         found=False
@@ -329,7 +329,7 @@ def runScoreTest4(M_lil, M_csc):
 
         symptoms=FilterInterface.stopwordRemover(disease[0])
 
-        resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
+        resultLists=search(M_lil, M_csc, symptoms, top)
 
         count=0
         for results in resultLists:
@@ -400,7 +400,7 @@ def runScoreTest5(lil, csc):
 
         symptoms=FilterInterface.stopwordRemover(queryString)
 
-        resultLists=searchLabel(lil, csc, symptoms, top, AND=False)
+        resultLists=searchLabel(lil, csc, symptoms, top)
 
         printout2[count].append(resultLists)
         clusterThis[count].append(resultLists)
@@ -414,7 +414,7 @@ def runScoreTest5(lil, csc):
     return clusterThis, printout2
 
 
-def searchLabel(M_lil, M_csc, queryString, top=20, AND=False):
+def searchLabel(M_lil, M_csc, queryString, top=20):
 
     """
     This function is still a work in progress..
@@ -429,8 +429,6 @@ def searchLabel(M_lil, M_csc, queryString, top=20, AND=False):
     # CHOOSE HEURISTIC:
     # Search-heuristic used to retrieve the list of results
     results=SearchInterface.cosineMeasureOR(M_lil, M_csc, queryString)
-
-    if AND: results=SearchInterface.cosineMeasureAND(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
     results.sort()
@@ -558,7 +556,7 @@ def searchLabel(M_lil, M_csc, queryString, top=20, AND=False):
 
     #     symptoms=FilterInterface.stopwordRemover(disease[1])
 
-    #     resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
+    #     resultLists=search(M_lil, M_csc, symptoms, top)
 
     #     #        print resultLists
     #     found=False
