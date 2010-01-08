@@ -1,7 +1,7 @@
-import CosineMeasureOR
-import CosineMeasureAND
+import CosineMeasure
+import SumMeasure
 
-def cosineMeasureOR(M_lil, M_csc, queryString):
+def cosineMeasure(M_lil, M_csc, queryString):
 
     """
     Calculates the square-root of cosine measures.
@@ -10,18 +10,18 @@ def cosineMeasureOR(M_lil, M_csc, queryString):
     [(angle in radians, pmidhash1),(angle in radians, pmidhash2),...]
     """
 
-    results = CosineMeasureOR.cosineMeasureOR(M_lil, M_csc, queryString)
+    results = CosineMeasure.cosineMeasure(M_lil, M_csc, queryString)
 
     return results
 
 
-def cosineMeasureAND(M_lil,M_csc,queryString):
+def sumMeasure(M_lil,M_csc,queryString):
 
     """
     Returns only rows that contain all the searched terms. In other words,
     there exists an implicit AND between each term in the query.
     """
 
-    results = CosineMeasureAND.cosineMeasureAND(M_lil,M_csc,queryString)
+    results = SumMeasure.sumMeasure(M_lil,M_csc,queryString)
 
     return results
