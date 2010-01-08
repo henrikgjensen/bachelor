@@ -226,8 +226,30 @@ def getdepth(clust):
     # its own distance
     return max(getdepth(clust.left), getdepth(clust.right)) + clust.distance
 
-# Need to send the tdm with, and extract all the rows. We don't use rows right now
-def hcluster(tdm, distance=pearson, output=False, time_log=False, time_total=False, print_remain=False):
+
+def drawDendrogram50(toptwentylist, csr_originalMatrix, namesHash):
+
+    print 'Construct top 50 dendrogram for', toptwentylist[0][0]
+
+    idsToCluster= []
+
+    for item in toptwentylist:
+        idsToCluster.append(namesHash[item[0]])
+
+    names_rev = dict(zip(namesHash.values(), namesHash.keys()))
+
+    clusterThese = constructTDMfromList(idsToCluster, csr_originalMatrix)
+
+    clusterThese = cutMatrix(clusterThese)
+
+    clust = hcluster(clusterThese, distance=cosine)
+
+    drawdendrogram(clust, jpeg=str(toptwentylist[0][0])+'.jpg', label=names_rev)
+    
+
+# Need to send the tdm with, and extract all the rows. We don't use
+# rows right now
+def hcluster(csr_tdm, distance=pearson, output=False, time_log=False, time_total=False, print_remain=False):
 
     """
     Recieves an already cut matrix, that does not contain term
@@ -239,7 +261,7 @@ def hcluster(tdm, distance=pearson, output=False, time_log=False, time_total=Fal
     distances = {}
     currentclustid = -1
 
-    n = tdm.shape[0]
+    n = csr_tdm.shape[0]
 
 #    tdm = tdm.todense()
 
@@ -253,13 +275,17 @@ def hcluster(tdm, distance=pearson, output=False, time_log=False, time_total=Fal
     # the cluster, when doing clustering on the sub term matrices. And
     # use the disease name when doing global.
 
+    for i in range(0, n):
+        if csr_tdm.getrow(i)[0,0] == 0:
+            print 'found zero at', i
+
     # Clusters are initially just the rows of the tdm / len(tdm.shape[0])
-    clust=[bicluster(tdm.getrow(i)[0,1:], id = tdm.getrow(i)[0,0]) for i in range(0, n)]
-    #                               We had a tdm.getrow(i)[1:]
+    clust=[bicluster(csr_tdm.getrow(i)[0,1:], id = csr_tdm.getrow(i)[0,0]) for i in range(0, n)]
+    #                               We had a csr_tdm.getrow(i)[1:]
     #                               ^ This might take quite a while
     #                                 Consider alternative solution.
 
-    print 'Done building', len(clust)+1, 'clusters.',
+    print 'Done building', len(clust), 'clusters.',
     
     if time_log:
         print 'Build time:', time.time() - t1,
@@ -277,14 +303,15 @@ def hcluster(tdm, distance=pearson, output=False, time_log=False, time_total=Fal
             t3 = time.time()
 
         lowestpair = (0, 1)
+
         closest=distance(clust[0].vec, clust[1].vec, output=output, time_log=time_log)
         
         # Loop through every pair looking for the smallest distance
-        for i in range(len(clust)):
-            print 'Processing row', i
+        for i in range(0, len(clust)):
             if output:
                 print 'Processing row', i
             for j in range(i + 1, len(clust)):
+#                print '('+str(clust[i].id)+', '+str(clust[j].id)+')'
                 # distances is the cache of distance calculations
                 if (clust[i].id, clust[j].id) not in distances:
                     distances[(clust[i].id, clust[j].id)] = distance(clust[i].vec, clust[j].vec, output=output, time_log=time_log)
@@ -326,7 +353,22 @@ def hcluster(tdm, distance=pearson, output=False, time_log=False, time_total=Fal
 
     return clust[0]
 
-def cutMatrix(tdm, time_log=False):
+def constructTDMfromList(listofthings, csr_originalMatrix):
+    
+    newMatrix = sparse.coo_matrix((len(listofthings)+1, csr_originalMatrix.shape[1]))
+
+    newMatrix = newMatrix.todense()
+    newMatrix[0,:] = csr_originalMatrix.getrow(0).todense()
+
+    counter = 0
+    for index in listofthings:
+        counter+=1
+        newMatrix[counter,:]=csr_originalMatrix.getrow(index).todense()
+        
+    return sparse.csr_matrix(newMatrix)
+    
+
+def cutMatrix(csr_tdm, time_log=False):
 
     """
     Recieves a term document matrix, and returns a cut version of it,
@@ -340,17 +382,13 @@ def cutMatrix(tdm, time_log=False):
     if time_log:
         t1 = time.time()
     
-    # Figure out where to cut by looking for non zero entries.
-    rowcut = max(tdm.nonzero()[0]) + 1
-    colcut = max(tdm.nonzero()[1]) + 1
-
     # We do not want the term hash row, but we do want the pmid row.
-    tdm = tdm[1:rowcut, 0:colcut]
+    csr_tdm = csr_tdm.todense()[1:, 0:]
 
     if time_log:
         print 'Time cutting matrix:', t1-time.time()
 
-    return tdm
+    return sparse.csr_matrix(csr_tdm)
 
 def getLabels(tdm):
 
@@ -406,107 +444,6 @@ def loadColors(filename=''):
         colors = cPickle.load(filename)
 
     return colors
-
-def runOutlierDetector(dir, distance=cosine_dense, removePercent=0.05, output=False, time_log=False):
-
-    files = IO.getSortedFilelist(dir+'/')
-
-    if output:
-        counter = 0
-
-    for f in files:
-        diseaseName = f[0:f.find('.mtx')]
-        subTermDoc = IO.readInTDM(dir, diseaseName)
-        if output:
-            counter += 1
-            print 'Count:', counter
-
-        # If sub term document matrix is empty, just skip it.
-        if subTermDoc.shape[0]==1 or subTermDoc.shape[1]==1:
-            continue
-
-        if time_log:
-            t1 = time.time()
-        subTermDoc = outlierDetector(subTermDoc, distance, removePercent, output, time_log)
-        if time_log:
-            print 'Time for outlier detection on', diseaseName, ':', str(time.time() -t1)[:4]
-
-        if output:
-            print 'Writing',
-
-        subTermDoc = sparse.coo_matrix(subTermDoc)
-
-        IO.writeOutTDM(_subFolder+'/'+outlierRemoved+str(int(removePercent*100)), diseaseName, subTermDoc)
-
-def outlierDetector(stdm, distance=cosine_dense, removePercent=0.05, output=False, time_log=False):
-
-    """
-    Recieves a coo matrix and calculates cosine similarity between all
-    rows.
-
-    distance=pearson will not work as it is not yet able to work on
-    dense matrices
-    """
-    
-    n = stdm.shape[0] - 1
-    stdmdense = stdm.todense()
-    stdmdense = stdmdense[1:,1:]
-
-    distance_matrix = sparse.lil_matrix((n,n))
-
-    if time_log:
-        t1 = time.time()
-
-    for i in range(0,n):
-        for j in range(0,n):
-            # As it is symmetric only calculate what is needed.
-            if distance_matrix[i,j] == 0:
-#                distance_matrix[i,j] = distance_matrix[j,i] = distance(stdm_csr.getrow(i), stdm_csr.getrow(j))
-                distance_matrix[i,j] = distance_matrix[j,i] = distance(stdmdense[i,:], stdmdense[j,:])
-
-    if time_log:
-        print '\tTime for distance calculations', str(time.time() - t1)
-
-    # We need to do the outlier detection down here, but we need some
-    # clever way of doing it. Perhaps getting the average correlation
-    # for each vector with the others, and then using a threshold to
-    # remove those below.
-
-    stdm = stdm.todense()
-
-    distance_matrix = distance_matrix.todense()
-
-    numberToRemove = int(floor(removePercent * n))
-
-    if output:
-        print '\tNumber of rows to remove', numberToRemove, 'out of', n
-
-    if time_log:
-        t2 = time.time()
-    toBeDeleted=[]
-    listOfThings=[]
-    for i in range(0,n):
-        listOfThings.append(((distance_matrix[i,:].sum() / n), i))
-
-    listOfThings.sort()
-
-    # As we have worked on a matrix missing first row and first
-    # column, we need to add one to the row index to convert it back
-    # to the original matrix.
-    toBeDeleted = [int(item[1])+1 for item in listOfThings[:numberToRemove]]
-
-    if output:
-        print '\tList of row indices to be removed as outliers:', toBeDeleted
-
-        
-    stdm = delete(stdm, toBeDeleted, 0)
-
-    if time_log:
-        print '\tTime for finding and deleting outliers:', str(time.time() - t2)[:4]
-
-    stdm = sparse.lil_matrix(stdm)
-            
-    return stdm
 
 class bicluster:
 
