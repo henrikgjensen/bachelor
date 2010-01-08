@@ -301,11 +301,11 @@ def makehist():
     #x2 =
 
     ## Mean not-norm (SUM):
-    #x2 =
+    #x2 = [6, 708, 644, 28, 97, 460, 170, 2522, 1, 30, 190, 58, 0, 43, 6, 136, 3, 39, 16, 2636, 0, 8, 50, 33, 115, 53, 31, 115, 121, 124]
     ## Median not-norm (SUM):
-    #x2 =
+    #x2 = [691, 1905, 143, 209, 1763, 684, 152, 2492, 1008, 1046, 1126, 321, 334, 865, 557, 1253, 567, 425, 399, 1310, 392, 262, 186, 913, 1903, 15, 675, 1903, 1910, 89]
     ## Max not-norm (SUM):
-    #x2 =
+    #x2 = [75, 2228, 638, 113, 993, 48, 171, 3281, 3, 131, 1194, 131, 7, 7, 3, 365, 7, 414, 3, 2242, 253, 0, 150, 188, 42, 4, 6, 42, 372, 55]
     #=========================================================================
 
     #~~~~~~~~~~~~~~~~~~~#
@@ -357,11 +357,11 @@ def makehist():
     #x2 =
     
     ## Mean not-norm (SUM):
-    #x2 = 
+    #x2 = [23, 3, 720, 746, 44, 60, 158, 1, 33, 0, 27, 88, 5]
     ## Median not-norm (SUM):
-    #x2 = 
+    #x2 = [161, 472, 1708, 1862, 405, 994, 789, 97, 1252, 907, 2135, 1079, 1095]
     ## Max not-norm (SUM):
-    #x2 =
+    #x2 = [120, 6, 10, 2374, 228, 360, 566, 62, 8, 7, 394, 496, 26]
     #=========================================================================
 
 
@@ -532,40 +532,4 @@ def sanitizeMatrices():
         IOmodule.writeOutTDM(newMatrixDir,file[:-4],coo)
 
         print ""
-"""
-
-"""
-============================================================================
-1) Dreng, normal ved fødslen bortset fra deformitet af begge storetæer (de
-manglede et led). Udvikler sig normalt efterfølgende. Ved 5 års alderen
-udvikler drengen i løbet af kort tid en hård tumor midt på ryggen ved siden
-af rygsøjlen. Rtg. viser, at tumor består af knogle. Der tages en biopsi,
-der viser knoglevæv uden malignitetstegn. Kort tid efter biopsien udvikles
-mere knoglevækst, præcis der hvor man har skåret.
-----------------------------------------------------------------------------
-System symptom query:
-Boy, normal birth, deformity of both big toes (missing joint),
-quick development of bone tumor near spine and osteogenesis at biopsy.
-============================================================================
-2) Normally developed boy until age 5, where he progressively developed the
-following symptoms: Talking difficulties, seizures, ataxia, adrenal
-insufficiency and  degeneration of visual and auditory functions.
-----------------------------------------------------------------------------
-System symptom query:
-Normally developed boy age 5, progessive development of talking difficulties,
-seizures, ataxia, adrenal insufficiency and  degeneration of visual and
-auditory functions
-============================================================================
-3) A boy age 14 comes to the doctor with yellow, keratotic plaques on the
-skin of his palms and soles going up onto the dorsal side. Both hands and
-feet are affected.
-
-He equally had swollen and very vulnerable gums since the age of 4 with loss
-of most of his permanent teeth.
-----------------------------------------------------------------------------
-System symptom query:
-Boy age 14, yellow, keratotic plaques on the
-skin of palms and soles going up onto the dorsal side. Both hands and feet are
-affected.
-============================================================================
 """
