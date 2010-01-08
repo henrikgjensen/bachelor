@@ -11,11 +11,11 @@ _subFolder = _path+"/"+"term_doc"
 # Hashtable directory
 _hashTablePath = _subFolder+"/"+"hashTables"
 # Set True for Porter-stemming
-_stemmer=True
+_stemmer=False
 
 ############
 
-# Disease label hash (for pmid lookup)
+#Disease label hash (for pmid lookup)
 _labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
 print "Label hash loaded"
 
@@ -30,7 +30,7 @@ print "Label hash loaded"
 ############
 
 
-def search(M_lil, M_csc, queryString, top=20, AND=False):
+def search(M_lil, M_csc, queryString, top=20):
 
     """
     This function is still a work in progress..
@@ -47,9 +47,7 @@ def search(M_lil, M_csc, queryString, top=20, AND=False):
 
     # CHOOSE HEURISTIC:
     # Search-heuristic used to retrieve the list of results
-    results=SearchInterface.cosineMeasureOR(M_lil, M_csc, queryString)
-
-    if AND: results=SearchInterface.cosineMeasureAND(M_lil, M_csc, queryString)
+    results=SearchInterface.cosineMeasure(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
     results.sort()
@@ -349,49 +347,210 @@ def runScoreTest4(M_lil, M_csc):
 
 def runScoreTest5(lil, csc):
 
-    symptomList=[(""),
-                 (""),
-                 ("")]
+    top=3000
 
-    printout1=[]
+    """
+    ============================================================================
+    1) Dreng, normal ved fdslen bortset fra deformitet af begge storeter (de
+    manglede et led). Udvikler sig normalt efterflgende. Ved 5 rs alderen
+
+
+    der viser knoglevv uden malignitetstegn. Kort tid efter biopsien udvikles
+    mere knoglevkst, prcis der hvor man har skret.
+    ----------------------------------------------------------------------------
+    System symptom query:
+    Boy, normal birth, deformity of both big toes (missing joint),
+    quick development of bone tumor near spine and osteogenesis at biopsy.
+    ============================================================================
+    2) Normally developed boy until age 5, where he progressively developed the
+    following symptoms: Talking difficulties, seizures, ataxia, adrenal
+    insufficiency and  degeneration of visual and auditory functions.
+    ----------------------------------------------------------------------------
+    System symptom query:
+    Normally developed boy age 5, progessive development of talking difficulties,
+    seizures, ataxia, adrenal insufficiency and  degeneration of visual and
+    auditory functions
+    ============================================================================
+    3) A boy age 14 comes to the doctor with yellow, keratotic plaques on the
+    skin of his palms and soles going up onto the dorsal side. Both hands and
+    feet are affected.
+    
+    He equally had swollen and very vulnerable gums since the age of 4 with loss
+    of most of his permanent teeth.
+    ----------------------------------------------------------------------------
+    System symptom query:
+    Boy age 14, yellow, keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected.
+    ============================================================================
+    """
+
+    diseaseList=[("Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine and osteogenesis at biopsy"),
+                 ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
+                 ("Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth.")]
+
     # printout2=([],[],[])
     # For label
-    printout2=[]
-    clusterThis=[]
+    printout2=[[],[],[]]
+    clusterThis=[[],[],[]]
 
+    sanitizer = TextCleaner.sanitizeString()
+    count=0
     for disease in diseaseList:
 
-        printout1.append(disease[0][0:5])
+        queryString=sanitizer.sub(' ', disease)
 
-        symptoms=FilterInterface.stopwordRemover(disease[1])
+        symptoms=FilterInterface.stopwordRemover(queryString)
 
-        resultLists=search(M_lil, M_csc, symptoms, top, AND=False)
+        resultLists=searchLabel(lil, csc, symptoms, top, AND=False)
 
-        #        print resultLists
-        found=False
-        count=0
-        # for results in resultLists:
-        #     found=False
-        #     print results
-        # for result in results:
-        for result in resultLists:
-            if result[0]==disease[0]:
-                printout2.append(resultLists.index(result))
-                #                printout2[count].append(results.index(result))
-                found=True
-                clusterThis.append(resultLists[:50])
-        If not found:
-            printout2.append(' ')
-                #                printout2[count].append(" ")
-                #            count+=1
+        printout2[count].append(resultLists)
+        clusterThis[count].append(resultLists)
+        count+=1
 
-    print printout1
-    #    for list in printout2:
-    #        print list
-    print printout2
+    for list in printout2:
+        print list
+        #    print printout2
     print "TEST DONE"
 
-    return clusterThis
+    return clusterThis, printout2
+
+
+def searchLabel(M_lil, M_csc, queryString, top=20, AND=False):
+
+    """
+    This function is still a work in progress..
+    """
+    # OPTIONAL:
+    # Stem the information
+    if _stemmer:
+        # Get the regex pattern that sanitizeses information and sanitize it
+        # Stem the information
+        queryString=FilterInterface.porterStemmer(queryString)
+
+    # CHOOSE HEURISTIC:
+    # Search-heuristic used to retrieve the list of results
+    results=SearchInterface.cosineMeasureOR(M_lil, M_csc, queryString)
+
+    if AND: results=SearchInterface.cosineMeasureAND(M_lil, M_csc, queryString)
+
+    # Sort the results and reverse to get the highest score first
+    results.sort()
+    results.reverse()
+
+    # ###########################################################################
+    # ### For the term-doc matrix: ##############################################
+
+    # ###########
+    # # 1: Mean #
+    # ###########
+
+    # # Get the sum cosine score the labels
+    # ## (normDic counts the number of times a label has been summed)
+    # resultDic1={}
+    # normDic1={}
+    # for item in results[:top]:
+    #     pmid=item[1]
+    #     # Get the labels linked to the PMID
+    #     ## (Several labels can be linked to one PMID)
+    #     labels=_labelHash[pmid]
+    #     for label in labels:
+    #         try:
+    #             resultDic1[label]+=item[0]
+    #             normDic1[label]+=1
+    #         except:
+    #             resultDic1[label]=item[0]
+    #             normDic1[label]=1
+
+    # # #############
+    # # # 2: Median #
+    # # #############
+
+    # # # Get the median cosine score of the labels
+    # # ## (normDic counts the number of times a label has been summed)
+    # resultDicList2={}
+    # normDic2={}
+    # for item in results[:top]:
+    #     pmid=item[1]
+    #     # Get the labels linked to the PMID
+    #     ## (Several labels can be linked to one PMID)
+    #     labels=_labelHash[pmid]
+    #     for label in labels:
+    #         try:
+    #             resultDicList2[label].append(item[0])
+    #             normDic2[label]+=1
+    #         except:
+    #             resultDicList2[label]=[]
+    #             resultDicList2[label].append(item[0])
+    #             normDic2[label]=1
+    # resultDic2={}
+    # for label in resultDicList2.keys():
+    #     labelList=resultDicList2[label]
+    #     numOfScores=len(labelList)
+    #     if numOfScores>2:
+    #         medianIndex=numOfScores/2
+    #     else:
+    #         medianIndex=0
+    #     resultDic2[label]=sorted(labelList)[medianIndex]
+
+    # # ##########
+    # # # 3: Max #
+    # # ##########
+
+    # # # Get the max cosine score of labels
+    # # ## (normDic counts the number of times a label has been summed)
+    # resultDicList3={}
+    # normDic3={}
+    # for item in results[:top]:
+    #     pmid=item[1]
+    #     # Get the labels linked to the PMID
+    #     ## (Several labels can be linked to one PMID)
+    #     labels=_labelHash[pmid]
+    #     for label in labels:
+    #         try:
+    #             resultDicList3[label].append(item[0])
+    #             normDic3[label]+=1
+    #         except:
+    #             resultDicList3[label]=[]
+    #             resultDicList3[label].append(item[0])
+    #             normDic3[label]=1
+    # resultDic3={}
+    # for label in resultDicList3.keys():
+    #     labelList=resultDicList3[label]
+    #     resultDic3[label]=max(labelList)
+
+
+    # # Normalize the summed labels
+    # #for label in resultDic1.keys():
+    # #    resultDic1[label]/=normDic1[label]
+
+
+    ###########################################################################
+    ### For the label matrix: #################################################
+
+    resultDic={}
+    for item in results[:top]:
+        pmid=item[1] #SearchTermDoc.getPMID(item[1])
+        label=_labelHash[pmid]
+        resultDic[label]=item[0]
+
+    ###########################################################################
+
+       ###################################
+       ####### return pmid results #######
+
+    # Reverse and sort the concensus list
+    # resultList_mean=sorted(resultDic1.items(), key=lambda(k,v):(v,k), reverse=True)
+    # resultList_median=sorted(resultDic2.items(), key=lambda(k,v):(v,k), reverse=True)
+    # resultList_max=sorted(resultDic3.items(), key=lambda(k,v):(v,k), reverse=True)
+
+    # return [resultList_mean,resultList_median,resultList_max]
+
+    
+    #    Return label results ######
+
+    resultLabelList = sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
+
+    return resultLabelList[:20]
+
 
     # for disease in diseaseList:
 
