@@ -11,11 +11,6 @@ def cosineMeasure(M_lil, M_csc, queryString):
     It returns a scored list of all the documents mentioned above.
     """
 
-    ### TEMP ###
-    # (Lav precomputed RL-hash for labelmatrices hvis noedvendigt)
-    #vectorLength=SearchTermDoc.createRLHash(M_lil, None,False)
-    ############
-
     # Extract the relevant indices of the row-vectors (pmid-hashes)
     searchIndices,hashedSearchTerms = SearchTermDoc.extractRowIndices(M_csc, queryString)
 
@@ -26,7 +21,7 @@ def cosineMeasure(M_lil, M_csc, queryString):
     for pmidHash in searchIndices:
         Sum=0
         for termHash in hashedSearchTerms:
-            Sum+=M_lil[pmidHash,termHash] #/ vectorLength[pmidHash]
+            Sum+=M_lil[pmidHash,termHash]
         results.append((Sum,pmidHash))
 
     return results
