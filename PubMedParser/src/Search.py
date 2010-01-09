@@ -11,7 +11,7 @@ _subFolder = _path+"/"+"term_doc"
 # Hashtable directory
 _hashTablePath = _subFolder+"/"+"hashTables"
 # Set True for Porter-stemming
-_stemmer=True
+_stemmer=False
 
 ############
 
@@ -35,19 +35,22 @@ def search(M_lil, M_csc, queryString, top=20):
     """
     This function is still a work in progress..
     """
+    
+    sanitizer = TextCleaner.sanitizeString()
+    queryString=sanitizer.sub(' ', queryString)
 
     # OPTIONAL:
     # Stem the information
     if _stemmer:
         # Get the regex pattern that sanitizeses information and sanitize it
-        sanitizer = TextCleaner.sanitizeString()
-        queryString=sanitizer.sub(' ', queryString)
         # Stem the information
         queryString=FilterInterface.porterStemmer(queryString)
 
     # CHOOSE HEURISTIC:
     # Search-heuristic used to retrieve the list of results
-    results=SearchInterface.cosineMeasure(M_lil, M_csc, queryString)
+
+    #    results=SearchInterface.cosineMeasure(M_lil, M_csc, queryString)
+    results=SearchInterface.sumMeasure(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
     results.sort()
@@ -159,7 +162,7 @@ def search(M_lil, M_csc, queryString, top=20):
     resultList_median=sorted(resultDic2.items(), key=lambda(k,v):(v,k), reverse=True)
     resultList_max=sorted(resultDic3.items(), key=lambda(k,v):(v,k), reverse=True)
 
-    return [resultList_mean,resultList_median,resultList_max]
+    return [resultList_mean[:top],resultList_median[:top],resultList_max[:top]]
 
     
     # Return label results ######
@@ -207,6 +210,7 @@ def runScoreTest2(M_lil, M_csc):
         found=False
         count=0
         for results in resultLists:
+
             found=False
             #            print results
             for result in results:
