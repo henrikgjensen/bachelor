@@ -140,8 +140,14 @@ def search(M_lil, M_csc, queryString, top=20):
 
 
     # # Normalize the summed labels
-    # #for label in resultDic1.keys():
-    # #    resultDic1[label]/=normDic1[label]
+    for label in resultDic1.keys():
+        resultDic1[label]/=normDic1[label]
+    for label in resultDic2.keys():
+        resultDic2[label]/=normDic2[label]
+    for label in resultDic3.keys():
+        resultDic3[label]/=normDic3[label]
+
+
 
 
     ###########################################################################
