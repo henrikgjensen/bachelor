@@ -41,7 +41,7 @@ def _readDiseases(indexStart=0,indexStop=None):
     path=_subFolder+"/"+diseaseFolder+'/'
 
     #    files=sorted([f for f in os.listdir(path) if os.path.isfile(path+f)])
-    files = IOmodules.getSortedFilelist(path, startIndex=indexStart, stopIndex=indexStop)
+    files = IOmodule.getSortedFilelist(path, startIndex=indexStart, stopIndex=indexStop)
 
     sortedcontents=[]
     for f in files:
