@@ -108,7 +108,7 @@ def _generateLogTFIDF(M_coo):
             #    raise Exception
             if tf <=0:
                 print tf
-                tf=0 # <---for svd
+                tf=0.000000000000001 # <---for svd
 
 
             try:
