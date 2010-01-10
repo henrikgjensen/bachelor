@@ -1,38 +1,105 @@
-\documentclass[a4paper, draft]{memoir}
-\usepackage{graphicx}
+\documentclass[a4paper, 10pt, english, draft]{report}
+
+%\usepackage{a4wide}
+\usepackage[draft]{fixme}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage{verbatim}
+
+
+%%%% MATH STUFF %%%%%%
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{ulem}
 \usepackage{mathrsfs}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[british]{babel}
-\let\newfloat\undefined
-\let\fref\undefined
-\let\Fref\undefined
-\usepackage{fancyref}
-%\usepackage{a4wide}
-\usepackage[draft]{fixme}
+
+%%%% GRAPHICS
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+
+\usepackage{float}
+\usepackage[small,bf]{caption}
+%\usepackage{xypic}
+\usepackage[table]{xcolor}
+\usepackage{subfig}
+%\usepackage{dirtree}
+\usepackage{ulem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% CONFIGURATIONS %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{language=Python, basicstyle=\scriptsize, showstringspaces=false, numbers=none, stepnumber=1, numberstyle=\tiny}
+\setcounter{tocdepth}{2}
+\hyphenation{mand-en} %%% Add here if something does not break right. Like this nu-clear-test-bomb-ing
+
 %\usepackage{nicefrac}
 \title{Bachelor project}
-\author{Henrik G. Jensen \\ Michael Andersen}
+\author{Henrik G. Jensen - insertmail \\
+Michael Andersen - Michael.blackplague.andersen@gmail.com \\
+\\
+Project supervisor \\ Ole Winther }
+\date{\today}
+
+\hypersetup{
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=black,% 
+bookmarksopen=false,
+pdftitle={This is our title},
+pdfauthor={Henrik G. Jensen and Michael Andersen},
+pdfsubject={Text mining},
+pdfkeywords={Diagnosing diseases, text mining}
+}
+
+
 \begin{document}
+
 \maketitle
-\newpage
+%\pagenumbering{roman}
+\thispagestyle{empty}
+
+
+\input{sections/abstract.tex}
+
+%\chapter*{Forord}
+%\addcontensline{toc}{chapter}{Forord}
+
 \tableofcontents
-\include{introduction}
 
-%% Uncomment and add more files here, remember not to include
-%% extension.
+\input{sections/introduction.tex}
 
-%\include{}
-%\include{}
-%\include{}
-%\include{}
-%\include{}
-%\include{}
-%\include{}
-%\include{}
-\include{literaturestudy}
+
+%\listoftables
+%\listoffigures
+
+%\parskip=8pt plus 2pt minus 4pt
+
+%\chapter{Background}
+\input{sections/background.tex}
+
+%\chapter{Methods}
+\input{sections/methods.tex}
+
+%\chapter{Experiments and results}
+\input{sections/experiments_results.tex}
+
+%\input{sections/conclusion.tex}
+
+%\chapter{Future works}
+%\input{sections/future_works.tex}
+
+%%% Research this
+\bibliographystyle{unsrt} % nat
+\bibliography{referencelist}
+%% 
+\addcontentsline{toc}{section}{Reference list}
+
+%\appendix
+%\input{sections/appendix.tex}
 
 \end{document} 
