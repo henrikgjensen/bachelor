@@ -77,24 +77,24 @@ Brugada syndrome & cardiac arrest sleep \\
 \end{tabular}
 \end{table}
 
-Orphanet
+\textbf{Orphanet}
 To examine significance of the test result, we have additionally selected some diseases at 'random' from Orpha.net. We require that the disease has a description on Orpha.net containing a sentence with 'characterized by'. Occationally we have meant that the 'characterized by' contained too many specific symptoms (e.g. derivatives of the name of the disease or a several sentences long list of symptoms) and have removed certain symptoms from the list. Examples of reductions would be\footnote{Note that this is based solely on our own judgement as non-physicians.} \\
 
-congenital anomalies (microcephaly, specific facial characteristics, broad thumbs and halluces and postnatal growth retardation), intellectual deficit and behavioural characteristics
+congenital anomalies (microcephaly, specific facial characteristics, broad thumbs and halluces and postnatal growth retardation), intellectual deficit and behavioural characteristics \\
 
-reduced to
+reduced to \\
 
-congenital anomalies, intellectual deficit, behavioural
+congenital anomalies, intellectual deficit, behavioural \\
 
-and 
+and  \\
 
-congenital malformations: hydrocephalus (due to Dandy-Walker anomaly), cleft palate, and severe joint contractures
+congenital malformations: hydrocephalus (due to Dandy-Walker anomaly), cleft palate, and severe joint contractures \\
 
-reduced to
+reduced to \\
 
-congenital malformations: hydrocephalus, cleft palate, severe joint contractures
+congenital malformations: hydrocephalus, cleft palate, severe joint contractures \\
 
-The test cases fetched from Orpha.net include the following 30 different diseases: \\
+The test cases fetched from Orpha.net include the following 30 different diseases: 
 
 \begin{table}[h]
 \caption{Disease / symptom list 2}
@@ -176,7 +176,7 @@ In addition to the BMJ and Oprhanet test cases, we have performed a blind test o
 
 \subsection{4.2 Scoring schemes}
 
-As mentioned in the previous chapters, we will employ two different kinds of scoring measures - the cosine and sum measure. The original idea, behind using a sum measure, was to test how much the cosine measure would outperform this simpler measure but as we shall see in \ref{TestingCosineSimilarity} and \ref{TestingSumSimilarity}, the cosine measure is actually outperformed itself by the sum measure. We will try to explain this 'oddity' in the given section and for now focus the way we use the two different kinds of measure. The following cosine and sum score measures are described in accordance to how they function on the term document matrix. The exception of the disease matrix is described at the end of this section.\\
+As mentioned in the previous chapters, we will employ two different kinds of scoring measures - the cosine and sum measure. The original idea, behind using a sum measure, was to test how much the cosine measure would outperform this simpler measure but as we shall see in \ref{TestingCosineSimilarity} and \ref{TestingSumSimilarity}, the cosine measure is actually outperformed itself by the sum measure. We will try to explain this 'oddity' in the given section and for now focus the way we use the two different kinds of measure. The following cosine and sum score measures are described in accordance to how they function on the term document matrix. The exception of the disease matrix is described at the end of this section.
 
 \subsubsection{4.2.1 The cosine score\label{CosineScore}}
 
@@ -212,15 +212,15 @@ $\mathbb{SL} = \left\{x_{\textrm{disease}_1},x_{\textrm{disease}_2},
 highest scoring is deemed the most likely to be the correct disease
 given the query vector. \\
 
-\textbf{Cosine median}
+\textbf{Cosine median} \\
 The median is calculated much like the mean, except for selecting the median of $\mathbb{x}_{\textrm{disease}_{1}} = \left\{x_2,x_7, x_i, \dots, x_j\right\}, \mathbb{x}_{\textrm{disease}_{2}} = \dots, \mathbb{x}_{\textrm{disease}_{n}}$, instead of summing the scores as we did above. \\
 
 \textbf{Cosine max} \\
-Does the same as above, just selects the maximum scoring in each disease lists and sort the resulting list and select the highest scoring as the most probable. \\
+Does the same as above, just selects the maximum scoring in each disease lists and sort the resulting list and select the highest scoring as the most probable.
 
 \subsubsection{4.2.2 The sum score}
 
-The sum measure works exactly like the cosine mean measure, except for running on non-normalized vectors. See \ref{VectorSimilarity} and \ref{SimpleSum} for further reasoning. \\
+The sum measure works exactly like the cosine mean measure, except for running on non-normalized vectors. See \ref{VectorSimilarity} and \ref{SimpleSum} for further reasoning.
 
 \subsubsection{4.2.3 The disease matrix exception}
 
@@ -238,12 +238,10 @@ The first test we run is on for the three different cosine scoring measures - me
         \caption{Test of non-stemmed mean, median and max using normalization and cosine}
         \label{termDoc_bmj_hist_3000_ns_mea_med_max_nc}
 \end{figure}
-
  
 Cosine: mean - Scores: [25, 2, 66, 692, 128, 139, 128, 3, 63, 0, 2, 52, 9] - In top 20: 5 \\
 Cosine: median - Scores: [123, 179, 1210, 1004, 665, 502, 76, 343, 455, 59, 392, 430, 464] - In top 20: 0 \\
-Cosine: max - Scores: [28, 7, 311, 1123, 166, 375, 109, 16, 21, 0, 39, 96, 47] - In top 20: 3 \\
-
+Cosine: max - Scores: [28, 7, 311, 1123, 166, 375, 109, 16, 21, 0, 39, 96, 47] - In top 20: 3
 
 \begin{figure}[h!]
         \begin{center}
@@ -272,7 +270,7 @@ We now continue testing the scoring measures, this time comparing the non-stemme
 Cosine: mean non-stemmed - Scores: [25, 2, 66, 692, 128, 139, 128, 3, 63, 0, 2, 52, 9] - In top 20: 5 \\
 Cosine: mean stemmed - Scores: [24, 2, 110, 710, 292, 113, 110, 3, 38, 0, 2, 51, 9] - In top 20: 5 \\
 Cosine: max non-stemmed - Scores: [28, 7, 311, 1123, 166, 375, 109, 16, 21, 0, 39, 96, 47] - In top 20: 3 \\
-Cosine: max stemmed - Scores [20, 11, 427, 1232, 210, 370, 108, 28, 22, 0, 62, 192, 56] - In top 20: 2 \\
+Cosine: max stemmed - Scores [20, 11, 427, 1232, 210, 370, 108, 28, 22, 0, 62, 192, 56] - In top 20: 2
 
 \begin{figure}[h!]
         \begin{center}
@@ -305,7 +303,7 @@ The tests are shown in the figures below, where we compare the best measures fro
 Cosine: mean non-stemmed - Scores: [25, 2, 66, 692, 128, 139, 128, 3, 63, 0, 2, 52, 9] - In top 20: 5 \\
 Cosine: mean stemmed sqrt - Scores: [19,3,22,1268,115,105,108,5,54,0,2,41,7] - In top 20: 6 \\
 Cosine: max non-stemmed - Scores: [20, 11, 427, 1232, 210, 370, 108, 28, 22, 0, 62, 192, 56] - In top 20: 2 \\
-Cosine: max stemmed - Scores: [2, 10, 136, 1123, 68, 249, 130, 44, 8, 0, 47, 65, 25] - in top 20: 4 \\
+Cosine: max stemmed - Scores: [2, 10, 136, 1123, 68, 249, 130, 44, 8, 0, 47, 65, 25] - in top 20: 4
 
 \begin{figure}[h!]
         \begin{center}
@@ -323,7 +321,7 @@ Cosine: max stemmed sqrt - Scores: [12, 145, 0, 0, 93, 6, 2, 1842, 6, 25, 44, 15
 
 These tests reveal some interesting results. Looking at the BMJ test set we see an overall improvement in the performance of the square root transformed measures. In Orpha.net test set there is an improvement in 'max stemmed' measure while a slight worsening of the 'mean non-stemmed' measure. However, there is no change in the number of top 20 results and the other measures shows a more significant improvement that the worsening of the last mentioned measure. Based on these results, we will not deny that the data in the TF-IDF matrices are not as optimized as could have been expected. But we can not say if these anomalies stem from the data or the calculations themselves. For now, we choose to view the square root transformation as a general improvement. \\
 
-In section \ref{DiseaseMatrix}, we will be using the best measure of the cosine scoring tests executed above - the 'mean stemmed sqrt' and the 'max stemmed sqrt' cosine similarity measures. \\
+In section \ref{DiseaseMatrix}, we will be using the best measure of the cosine scoring tests executed above - the 'mean stemmed sqrt' and the 'max stemmed sqrt' cosine similarity measures.
 
 \subsection{4.4 Testing the sum similarity measure\label{TestingSumSimilarity}}
 
@@ -428,7 +426,7 @@ Stemmed:
  
 Cosine stemmed - Scores: [37,63,872,1963,533,1198,93,4,18,9,230,221,91] - In top 20: 3 \\
 Cosine sqrt stemmed - Scores: [25,37,748,1970,384,1053,25,2, 0,1,102, 68,30] - In top 20: 3 \\
-Sum stemmed - Scores: [5,1,597,511,29,413,6,1,3,0,3,26,6] - In top 20: 8 \\
+Sum stemmed - Scores: [5,1,597,511,29,413,6,1,3,0,3,26,6] - In top 20: 8
 
 \begin{figure}[h!]
         \begin{center}
@@ -458,7 +456,7 @@ For the final test of measure and model, we compare the top results of the two m
 Sum: disease matrix - Scores: [ 6,1,323, 691,30,427,8,2,4,0,3,19,6] - In top 20: 9 \\
 Cosine: mean stemmed sqrt - Scores: [19,3,22,1268,115,105,108,5,54,0,2,41,7] - In top 20: 6 \\
 Cosine: max stemmed - Scores: [2, 10, 136, 1123, 68, 249, 130, 44, 8, 0, 47, 65, 25] - in top 20: 4 \\
-Sum: term-doc mean - Scores: [23, 3, 720, 746, 44, 60, 158, 1, 33, 0, 27, 88, 5] - In top 20: 4 \\
+Sum: term-doc mean - Scores: [23, 3, 720, 746, 44, 60, 158, 1, 33, 0, 27, 88, 5] - In top 20: 4
 
 \begin{figure}[h!]
         \begin{center}
@@ -471,7 +469,7 @@ Sum: term-doc mean - Scores: [23, 3, 720, 746, 44, 60, 158, 1, 33, 0, 27, 88, 5]
 Sum: disease matrix - Scores: [9,90,17, 9,4,86,79,105,2,7,64,16,0,2,1, 6,0,2,0,3000,1,9,3, 84,39,3,1,39,2,59] - In top 20: 20 \\
 Cosine: term-doc mean-sqrt - Scores: [4, 725, 75, 37, 38, 85, 68, 1651, 1, 23, 80, 15, 0, 26, 2, 218, 3, 13, 2, 3000, 1, 9, 14, 78, 84, 48, 3, 84, 1, 62] - In top 20: 13 \\
 Cosine: term-doc max-sqrt - Scores: [12, 145, 0, 0, 93, 6, 2, 1842, 6, 25, 44, 15, 0, 15, 1, 0, 10, 0, 3, 3000, 7, 46, 4, 128, 115, 1, 24, 115, 2, 1] - In top 20: 19 \\
-Sum: term-doc mean - Scores: [6, 708, 644, 28, 97, 460, 170, 2522, 1, 30, 190, 58, 0, 43, 6, 136, 3, 39, 16, 2636, 0, 8, 50, 33, 115, 53, 31, 115, 121, 124] - In top 20: 8 \\
+Sum: term-doc mean - Scores: [6, 708, 644, 28, 97, 460, 170, 2522, 1, 30, 190, 58, 0, 43, 6, 136, 3, 39, 16, 2636, 0, 8, 50, 33, 115, 53, 31, 115, 121, 124] - In top 20: 8
 
 Not only having the best average but also the right disease 9 out 13 (BMJ) and 20 out of 30 (Oprha.net) in the top 20 out of over 3000 diseases returned from a top 3000 document scores, using the simple sum similarity measure on a disease matrix seems to give both best recall and precision. This result is very interesting since the document-summed disease matrix was originally made as model for fast tests before implementation in the large term document matrix. This could imply that a summation of the document vectors for each individual disease seems to enchance the values of information carrying terms with the TF-IDF taking care of too common and non-information containing terms. The summation also efficiently eliminates the problem of noisy overview articles \ref{Overview}. \\
 
@@ -491,7 +489,7 @@ Currently we are only able to make clusters from disease matrices, we have chose
 
 
 %% \subsection{The reduced semantic space and keyword extraction}
-
+\\
 To be written...
 
 
