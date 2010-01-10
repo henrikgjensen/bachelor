@@ -155,7 +155,7 @@ def search(M_lil, M_csc, queryString, top=20):
 
     resultDic={}
     for item in results[:top]:
-        pmid=item[1] SearchTermDoc.getPMID(item[1])
+        pmid=item[1] #SearchTermDoc.getPMID(item[1])
         label=_labelHash[pmid]
         resultDic[label]=item[0]
 
