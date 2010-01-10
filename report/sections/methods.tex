@@ -17,7 +17,7 @@ In this section, we lay out the design of the prototype system. In
 3.1.2, we describe the different ways we have tried to structure the
 system. Finally, in 3.1.3, we mention how the applied filters have led
 to several different versions of the matrices that make up the heart
-of the system.
+of the system. For full overview see \ref{OverviewDiagram}
 
 \subsection{The first prototype}
 
@@ -66,7 +66,7 @@ modelling. (data modelling?!? data flow? data ???)
 
 A major branch in our design sprung when we realised the potential of building a disease matrix instead of a term document. Though severely simplifying our data, this model is a reduced version of the term document matrix and is a lot easier and faster to work with. It provides a testing environment and, as we shall see later (\fxnote{REF: til histogram-sammenlignings-tests af label og term-doc}), the disease matrix does not score that far from the more detailed term document matrix.
 
-The disease matrix is based on the same data as the term document matrix. It differs in the way that it contains all the information that we have about each disease from the MedLine records, summed into one vector describing the disease. The new matrix still needs to contain the same terms as the term document matrix but is now made of a disease vectors instead of document vectors. This makes the individual disease vector less sparse than a document vector. The same preprocessing options, as applied to the term document matrix, can be applied to the disease matrix just as easily.
+The disease matrix is based on the same data as the term document matrix. It differs in the way that it contains all the information that we have about each disease from the MedLine records, summed into one vector describing the disease. The new vmatrix still needs to contain the same terms as the term document matrix but is now made of a disease vectors instead of document vectors. This makes the individual disease vector less sparse than a document vector. The same preprocessing options, as applied to the term document matrix, can be applied to the disease matrix just as easily.
 
 \subsection{Filtering for new matrices}
 
@@ -85,7 +85,14 @@ Again we mention that filters and heuristics should be pretty easy to
 add since only the data formats in between the modules needs to be
 kept in order.
 
-<OVERALL-DIAGRAM goes here!>
+\begin{figure}[h!]
+        \begin{center}
+          \includegraphics[width=0.9\textwidth]{diagrammer/system_overview_rotate.png}
+        \end{center}
+        \caption{Overview diagram of the system}
+        \label{OverviewDiagram}
+\end{figure}
+
 
 \section{Modules}
 
@@ -107,7 +114,7 @@ purpose is to gather information about what to search for in PubMed.
 As described in \ref{Rarediseases_info}, Raredisease.info contains a
 list of rare diseases and a varying degree of information on each
 specific disease. We were referenced to the website by Dr. Henrik
-Jørgensen \fxnote{REF to the dude} and a crawler, to collect
+Jørgensen \cite{TheDude} and a crawler, to collect
 information from the site, was the first module to be made. The
 crawler goes through every disease from A to Z,0-49 and saves the name
 of the disease and (if any exist) the synonyms, the specialized search
