@@ -17,15 +17,15 @@ _stemmer=True
 ############
 
 #Disease label hash (for pmid lookup)
-_labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
-print "Label hash loaded"
+#_labelHash = IOmodule.pickleIn(_hashTablePath,"labelHash")
+#print "Label hash loaded"
 
 ############
 
 # Disease label hash (for label lookup)
-# _labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash")
-# _labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
-# print "Disease hash loaded"
+ _labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash")
+ _labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
+ print "Disease hash loaded"
 
 
 ############
