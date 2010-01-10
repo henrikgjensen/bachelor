@@ -24,7 +24,7 @@ if not os.path.isdir(_mainFolder):
 
 # Create sub folder if it doesn't already exist..
 if not os.path.isdir(_subFolder):
-        os.mkdir(_subFolder))
+        os.mkdir(_subFolder)
 
 def _readDiseases(indexStart=0,indexStop=None):
 
