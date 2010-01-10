@@ -104,7 +104,7 @@ def pmidDuplicateCounter(directory, number=None):
         counter=0
         for f in files:
             # Open file descriptor
-            fd = open(directory+f,'r')
+            fd = open(directory+'/'+f,'r')
             # Read in from file
             diseaseDic=eval(fd.read())
             # Close the file descriptor nicely again
