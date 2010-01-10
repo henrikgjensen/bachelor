@@ -29,6 +29,7 @@ def countRecordfield(directory,field):
         medlineRecords=diseaseDic['records']
 
         for record in medlineRecords:
+            print record
             item=record[field]
             fieldSum.setdefault(item,0)
             fieldSum[item]+=1
