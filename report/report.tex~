@@ -90,7 +90,7 @@ pdfkeywords={Diagnosing diseases, text mining}
 
 %\input{sections/conclusion.tex}
 
-%\chapter{Future works}
+\chapter{Future works}
 \input{sections/future_works.tex}
 
 %%% Research this

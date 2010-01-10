@@ -9,14 +9,12 @@ grows with over half a million citations per year}. Therefore
 it can be necessary to employ tools to help gather, structure, look
 for relations or hypothesis within the piles information. One very
 popular method of finding new relations in data is through the use of
-text mining.
+text mining.\\
 
-\begin{center}
 {\small``The whole is greater than the sum of its parts'' $\sim$ Aristotle
-(384--322 BC)} 
-\end{center}
+(384--322 BC)}\\
 
-Text mining refers to the automated search for meaningful patterns in
+\noindent Text mining refers to the automated search for meaningful patterns in
 structured or unstructured text documents stored in very large digital
 databases or distributed over the Web. A good example of this is
 D.R. Swanson, Fish oil, Raynaud's syndrome and undiscovered public
@@ -31,6 +29,7 @@ development of Raynaud's syndrome by looking at seemingly unrelated
 documents. This was done years before there were actually any
 scientific documents supporting this. \\
 
+\noindent{
 Over the recent years the use of text mining has grown
 tremendously. In the biomedical field, research is divided into highly
 specialized sections and subsections often too complex to make room
@@ -55,7 +54,7 @@ of rare diseases and synonyms acquired from rarediseases.info
 extract a series of MedLine records \cite{PubMedFactSheetMedline}
 using the python module Bio.Entrez \cite{EntrezProgUtil} and process
 the text for a more optimized search.
-
+}
 \section{Inspiration}
 
 The list of rare diseases counts over 6.000 individual cases and has 5
@@ -97,14 +96,16 @@ project.
 
 \section{Objectives}
 
-\textbf{Aim} \\
+\noindent\textbf{Aim} \\
+
 Our system will be based on machine learning concepts and will
 hopefully add something new to the arena of medical support decision
 systems. Testing various techniques to optimize our system, we aim to
 design a system that, if successful, also has the generic potential of
 being expanded to other domains than that of rare diseases.\\
 
-\textbf{Overall process} \\
+\noindent\textbf{Overall process} \\
+
 The list of rare disease names (along with synonyms and optional
 descriptions) will be mined from the Rarediseases.info website. Some
 of these diseases will have specialized PubMed search strings that we
@@ -132,7 +133,8 @@ Orpha.net website \cite{Orphanet}. The third and final set of test
 cases come from a blind test provided by Henrik L. Jørgensen
 \cite{TheDude}.\\
 
-\textbf{Primary tools} \\
+\noindent\textbf{Primary tools} \\
+
 We will be using Python 2.6.2 \cite{PythonLanguage} in this
 project. For access to PubMed, we use the python module Bio.Entrez
 \cite{EntrezProgUtil} while BeautifulSoup \cite{BS} is used for

@@ -133,7 +133,7 @@ retrieved but out of scope for the prototype
 system. \fxnote{Henvisning til implementerings afsnit i
   kap 3} \\
 
-As mentioned, Rarediseases.info is far from complete in its level of detail and is based solely on rare diseases by an American standard. Though focused on Europe and thereby perhaps incomparable, an alternative like Oprha.net seems to be containing more information per disease than Rarediseases.info and it contains a longer list of rare diseases.
+As mentioned, Rarediseases.info is far from complete in its level of detail and is based solely on rare diseases by an American standard. Though focused on Europe and thereby perhaps incomparable, an alternative like Oprha.net seems to be containing more information per disease than Rarediseases.info and it contains a longer list of rare diseases.\\
 
 \subsection{PubMed and Entrez\label{PubmedEntrez}}
 
@@ -203,7 +203,7 @@ The figure below show the structure of Entrez and visualize how many
 resources there is available at the different
 subcomponents \footnote{Go to
   \href{http://www.ncbi.nlm.nih.gov/Database/datamodel/index.html}{http://www.ncbi.nlm.nih.gov/Database/datamodel/index.html}
-  for an interactive model in Flash.}.
+  for an interactive model in Flash.}.\\
 
 %<Figure showing all components of Entrez and how much they contribute to the whole | http://www.ncbi.nlm.nih.gov/Database/Gifs/nodes_thumb_small.png>
 \fxnote{Insert figure showing all components of Entrez}
@@ -276,7 +276,7 @@ MeSH terms might not always be present. For an expansion of the
 prototype system, it would be natural to take in account the
 information given with potential keywords, publication dates, authors
 and other optional MedLine information. \fxnote{Henvisning til
-  ordentlig-syg implementerings afsnit i kap 3}
+  ordentlig-syg implementerings afsnit i kap 3}\\
 
 % <Figure/Table x.xx shows a typical Medline record. Some fields has been removed to improve overview. \ref{Full medline record}>
 \fxnote{InsertEither ref for appendix or a example of a medline record}
@@ -347,7 +347,7 @@ the recall of a search on the model. Lack of synonymy comprehension
 affects the precision of a seach. Some synonyms can be caught by
 stemming the terms, but far from all. We will also to create a
 semantic space using SVD \ref{LSA} to capture the
-most meaningful words.
+most meaningful words.\\
 
 \section{Applied heuristics}
 
@@ -356,7 +356,7 @@ used when dealing with term-document matrices and the vector space
 model. In this section, we will go through some of the most commonly
 used schemes for enhancing the performance (recall and precision) of a
 search in the model. We will also go through some less common schemes
-used for the prototype system and justify these decisions.
+used for the prototype system and justify these decisions.\\
 
 \subsection{Mitigating the problem of term burstiness\label{MitigatingBurstiness}}
 
@@ -368,7 +368,7 @@ likely to appear again. This assumption breaks with the independence
 assumption of the vector space model and a high raw count of a word
 often seem to exaggerate the significance of that word. Derived from
 \cite{ModelingWordBurstiness2005}, our first heuristic is the
-log-transformation of the term frequency:
+log-transformation of the term frequency:\\
 
 \[
 x_{dw}^{log} = \log{ 1 + x_{dw}}
@@ -376,7 +376,7 @@ x_{dw}^{log} = \log{ 1 + x_{dw}}
 
 Where $x_{dw}$ is the number of times the term $w$ appear in document
 $d$. This helps reduce the problem of burstiness by smoothing the term
-counts.
+counts.\\
 
 \subsection{Term Frequency - Inverse Document Frequency\label{TFIDF}}
 
@@ -384,7 +384,7 @@ This heuristic is commonly known under the acronym TF-IDF and is
 probably the most used heuristic in the vector space model and
 information retrieval in general. It looks as follows (note also the
 log-transformation of the term frequency from
-\ref{MitigatingBurstiness}):
+\ref{MitigatingBurstiness}):\\
 
 \[
 x_{ij}^{tfidf} = \log{ 1 + \sum_{d_j} w_i} * \log{ \frac{D}{\sum_{d\prime = 1}^{D}\delta_{d\prime w}}}
@@ -412,7 +412,7 @@ when dealing with large scale web search engines. It would be
 reasonable to assume that the same applies when dealing with large
 term document matrices and, due to the limited resources available in
 this project, we believe it is reason enough to only consider the
-relatively simple transformations.
+relatively simple transformations.\\
 
 \subsection{Normalization} 
 
@@ -420,7 +420,7 @@ After the TF-IDF transformation, there is a need to normalize the
 vectors, using L$_2$ normalization \footnote{Also known as the
   Euclidian norm} (\cite{ModelingWordBurstiness2005}). This makes all
 the document vectors have the same length, and therefore the same
-influence on the search result.
+influence on the search result.\\
 
 \[
 x_{dw}^{norm} = \frac{x_{dw}^{tfidf}}{\sqrt{\sum_{w\prime = 1}^{W} {x_{dw}^{tfidf}}^{2}}}
@@ -428,7 +428,7 @@ x_{dw}^{norm} = \frac{x_{dw}^{tfidf}}{\sqrt{\sum_{w\prime = 1}^{W} {x_{dw}^{tfid
 
 Where $\sqrt{\sum_{w\prime = 1}^{W} {x_{dw}^{tfidf}}^{2}}$ is the
 normalization factor of the $x_{dw}^{tfidf}$, using the usual vector
-normalization to make the length 1.
+normalization to make the length 1. \\
 
 \subsection{Square root transformation\label{SquareRoot}}
 
@@ -448,7 +448,7 @@ coming from the TF-IDF scheme. We will describe transformation in
 further detail in chapter \fxnote{REF: chapter on experimenting with
   sqrt}. For now, the basic idea is that if the TF-IDF works as
 supposed, a square root 'upping' of the lower data will result in
-poorer search results.
+poorer search results. \\
 
 \subsection{Stop word removal}
 
@@ -466,7 +466,7 @@ assigned very low weight by TF-IDF. Let us for instance say that the
 term 'a' was present in every document. The IDF-factor would be $\log
 1 = 0$ which results in $tf \times idf = tf \times 0 = 0$. The term
 will therefore be deemed irrelevant in relation to the information
-retrieval.
+retrieval. \\
 
 \subsection{Stemming}
 
@@ -486,7 +486,7 @@ stemmer could be to use a lemmatizer. A lemmatizer performs a full
 morphological analysis to accurately identify the lemma of a word. But
 as mentioned in \cite{IntroIR2009} performing lemmatization seems to
 have only very limited benefits for the retrieval. For the prototype
-system, we have chosen to stick with only testing stemming. 
+system, we have chosen to stick with only testing stemming. \\
 
 \subsection{Outlier detection}
 
@@ -539,7 +539,7 @@ remaining dimensions. Due to the reduction, the dimensions are now
 $U_{r}$ $m$ x $l$, $S_{r}$ is $l$ x $l$, and $V_{r}^{t}$ is $l$ x $n$. SVD, and the
 dimensionality reduction, is then followed by calculating the product
 of $U_{r}S_{r}V_{r}^{t}$ (where the subscribtion $_{r}$ means reduced),
-hence putting the three reformed pieces back together: 
+hence putting the three reformed pieces back together: \\
 
 \[
 X_{r} = U_{r}S_{r}V_{r}^{t}, \textrm{ where } X \textrm{ is } m \textrm{ x }n
@@ -562,7 +562,7 @@ can be thought of as the angle between two vectors (though the angle
 measure is only viable for up to three dimensions and can not readily
 be applied to the hyper dimensional space of the matrix), i.e. the
 angle between the query vector and the document vector. The usual
-equation for cosine similarity can then be used:
+equation for cosine similarity can then be used:\\
 
 \[
 \cos \theta_{D_j} = \frac{Q \cdot D_j}{|Q| \times |D_j|}
@@ -570,7 +570,7 @@ equation for cosine similarity can then be used:
 
 Where $D_j$ is document $j$ as a vector, $Q$ is the query vector and
 $\cos \theta_{D_{j}}$ is the cosine similarity between document $j$ and
-query $Q$. This can also be written as: 
+query $Q$. This can also be written as: \\
 
 \[
 \textrm{Sim}(Q,D_{j}) = \frac{\sum_{i}w_{Q,i} w_{D_{j},i}}{\sqrt{\sum_{i}w_{Q,i}^{2}} \sqrt{\sum_{i}w_{D_{j},i}^{2}}}
@@ -588,7 +588,7 @@ from the title, the abstract and the potential MeSH terms of a MedLine
 record. \\
 
 With a TF-IDF transformation and L$_2$ normalization the above
-calculation can be rewritten as follows: 
+calculation can be rewritten as follows: \\
 
 \[
 s_{j} = \frac{1}{|I|}\frac{1}{|d_{j}|} \sum_{i \in I} d_{i,j}
@@ -598,7 +598,7 @@ Where $s_{j}$ is the similarity score, $\frac{1}{|I|}$ is the length
 of the input query and $\frac{1}{|d|}$ is the length of the
 document. Due to the fact that the terms in the query vector all have
 the value 1, as we assume that they only appear in the query once, we
-can rewrite the formula to: 
+can rewrite the formula to: \\
 
 \[
 s_j =  \frac{\sum_{i \in I} d_{i,j}} {|d_{j}|}
@@ -611,7 +611,7 @@ normalization of the document corpus matrix, that we will be working
 on, can be preprocessed before the calculation of the cosine
 similarity. Assuming that the document vectors are on unit length, we
 can now rewrite the cosine similarity function to be on the simple
-form: 
+form: \\
 
 \[
 s_j =  \sum_{i \in I} d_{i,j}
@@ -640,7 +640,7 @@ terms were used to derive this score. \\
 
 The reasoning behind this is that the more terms from the query vector
 a document contains the relevant the document is. This reduces our
-similarity calculation to the following. 
+similarity calculation to the following. \\
 
 \[
 s_j = \frac{\sum_{i \in I} d_{i,j}}{|I|}

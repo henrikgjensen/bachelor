@@ -1,0 +1,242 @@
+\begin{thebibliography}{10}
+
+\bibitem{HangwiTang11102006}
+Tang Hangwi and Ng~Jennifer~Hwee Kwoon.
+\newblock {Googling for a diagnosis--use of Google as a diagnostic aid:
+  internet based study}.
+\newblock {\em BMJ}, page bmj.39003.640567.AE, {2006}.
+
+\bibitem{TheDude}
+Henrik L.~J\o rgensen.
+\newblock Chief Phycisian at Bispebjerg Hospital, Clinical Biochemistry
+  (Klinisk Biokemi).
+
+\bibitem{CitAddMedLine}
+{C}itations {A}dded to {M}ed{L}ine® by fiscal year.
+\newblock
+  \href{http://www.nlm.nih.gov/bsd/stats/cit\_added.html}{http://www.nlm.nih.g%
+ov/bsd/stats/cit\_added.html}.
+
+\bibitem{survey.biomed.text.cohen.2005}
+Aaron~M. Cohen and William~R. Hersh.
+\newblock A survey of current work in biomedical text mining.
+\newblock {\em Briefings in bioinformatics}, 6(1):57--71, March 2005.
+
+\bibitem{Rarediseases}
+{R}are{D}iseases.
+\newblock
+  \href{http://rarediseases.info.nih.gov/}{http://rarediseases.info.nih.gov/}.
+
+\bibitem{PubMedFactSheetMedline}
+{P}ub{M}ed {F}act {S}heets {M}edline.
+\newblock
+  \href{http://www.nlm.nih.gov/pubs/factsheets/medline.html}{http://www.nlm.ni%
+h.gov/pubs/factsheets/medline.html}.
+
+\bibitem{EntrezProgUtil}
+{E}ntrez {P}rogramming {U}tilities.
+\newblock
+  \href{http://eutils.ncbi.nlm.nih.gov/}{http://eutils.ncbi.nlm.nih.gov/}.
+
+\bibitem{AboutRareDiseasesOrphanet}
+{A}bout {R}are {D}iseases - at {O}rphanet.
+\newblock
+  \href{http://www.orpha.net/consor/cgi$-$bin/Education\_AboutRareDiseases.php%
+?lng$=$EN}{http://www.orpha.net/consor/cgi$-$bin/Education\_AboutRareDiseases.%
+php?lng$=$EN}.
+
+\bibitem{OrphanetEncyclopedia}
+{O}rphanet {E}ncyclopedia.
+\newblock
+  \href{http://www.orpha.net/consor/cgi$-$bin/Education\_AboutOrphanet.php?lng%
+$=$EN\&stapage$=$ST\_EDUCATION\_EDUCATION\_ABOUTORPHANET\_ORGANIS}{http://www.%
+orpha.net/consor/cgi$-$bin/Education\_AboutOrphanet.php?lng$=$EN\&stapage$=$ST%
+\_EDUCATION\_EDUCATION\_ABOUTORPHANET\_ORGANIS}.
+
+\bibitem{Orphanet}
+{O}rpha{N}et.
+\newblock \href{http://www.orpha.net}{http://www.orpha.net}.
+
+\bibitem{PythonLanguage}
+{Python Programming Language}.
+\newblock \href{http://www.python.org}{http://www.python.org}.
+
+\bibitem{BS}
+{BeautifulSoup}.
+\newblock
+  \href{http://www.crummy.com/software/BeautifulSoup/documentation.html}{http:%
+//www.crummy.com/software/BeautifulSoup/documentation.html}.
+
+\bibitem{UL2}
+{Urllib2}.
+\newblock
+  \href{http://docs.python.org/library/urllib2.html}{http://docs.python.org/li%
+brary/urllib2.html}.
+
+\bibitem{SciPy}
+Scipy.
+\newblock \href{www.scipy.org}{www.scipy.org}.
+
+\bibitem{NumPy}
+Numpy.
+\newblock \href{http://numpy.scipy.org/}{http://numpy.scipy.org/}.
+
+\bibitem{NIHOverview}
+{NIH} {O}verview.
+\newblock
+  \href{http://www.nih.gov/about/NIHoverview.html}{http://www.nih.gov/about/NI%
+Hoverview.html}.
+
+\bibitem{OMIM}
+{OMIM} - online mendelian inheritance in man.
+\newblock
+  \href{http://www.ncbi.nlm.nih.gov/sites/entrez?db=omim}{http://www.ncbi.nlm.%
+nih.gov/sites/entrez?db=omim}.
+
+\bibitem{RareDiseaseDef}
+{R}are {D}iseases {D}efinition and {L}ist.
+\newblock
+  \href{http://rarediseases.info.nih.gov/RareDiseaseList.aspx?PageID=1}{http:/%
+/rarediseases.info.nih.gov/RareDiseaseList.aspx?PageID=1}.
+
+\bibitem{PubMedHelpSearchFieldDescriptionsTags}
+{P}ubmed {H}elp {S}earch {F}ield {D}escriptions and {T}ags.
+\newblock
+  \href{http://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=helppubmed\&part=pu%
+bmedhelp\#pubmedhelp.Search\_Field\_Descrip}{http://www.ncbi.nlm.nih.gov/books%
+helf/br.fcgi?book=helppubmed\&part=pubmedhelp\#pubmedhelp.Search\_Field\_Descr%
+ip}.
+
+\bibitem{PubMedFactSheet}
+{P}ubmed {F}act {S}heet.
+\newblock
+  \href{http://www.nlm.nih.gov/pubs/factsheets/pubmed.html}{http://www.nlm.nih%
+.gov/pubs/factsheets/pubmed.html}.
+
+\bibitem{Entrez}
+{Entrez}.
+\newblock
+  \href{http://www.ncbi.nlm.nih.gov/Database/index.html}{http://www.ncbi.nlm.n%
+ih.gov/Database/index.html}.
+
+\bibitem{NCBIFactSheet}
+{F}act {S}heet the {N}ational {C}enter for {B}iotechnology {I}nformation
+  programs and activities.
+\newblock
+  \href{http://www.nlm.nih.gov/pubs/factsheets/ncbi.html}{http://www.nlm.nih.g%
+ov/pubs/factsheets/ncbi.html}.
+
+\bibitem{Chilibot}
+{Chilibot}.
+\newblock \href{http://www.chilibot.net/}{http://www.chilibot.net/}.
+
+\bibitem{IHOP}
+{iHOP}.
+\newblock
+  \href{http://www.ihop-net.org/UniPub/iHOP/}{http://www.ihop-net.org/UniPub/i%
+HOP/}.
+
+\bibitem{DiagnosingIschaemicHeartDiseaseML}
+Matjaz Kukar†, Ciril Groselj, Igor Kononenko, and Jure~J. Fettich.
+\newblock Diagnosing the ischaemic heart disease with machine learning.
+\newblock pages x--y.
+\newblock FIND CORRECT BIBTEX REFERENCE.
+
+\bibitem{SVMHeartDiseaseClassification}
+Sumit Bhatia, Praveen Prakash, and G.N. Pillai.
+\newblock Svm based decision support system for heart disease classification
+  with integer-coded genetic algorithm to select critical features.
+\newblock pages x--y.
+\newblock FIND CORRECT BIBTEX REFERENCE.
+
+\bibitem{Wang1999115}
+Xiao-Hui Wang, Bin Zheng, Walter~F. Good, Jill~L. King, and Yuan-Hsiang Chang.
+\newblock Computer-assisted diagnosis of breast cancer using a data-driven
+  bayesian belief network.
+\newblock {\em International Journal of Medical Informatics}, 54(2):115 -- 126,
+  1999.
+
+\bibitem{AutomatedMalignancyRecognition}
+Yang Jin, Ryan~T. McDonald, Kevin Lerman, Mark~A. Mandel, Steven Carroll,
+  Mark~Y. Liberman, Fernando~C. Pereira, and Raymond~S. Winters.
+\newblock Automated recognition of malignancy mentions in biomedical
+  literature.
+\newblock {\em BMC Bioinformatics}, 7:xxx, 2006.
+
+\bibitem{FactSheetMeSH}
+Fact sheet medical subject headings ({MeSH}).
+\newblock
+  \href{http://www.nlm.nih.gov/pubs/factsheets/mesh.html}{http://www.nlm.nih.g%
+ov/pubs/factsheets/mesh.html}.
+
+\bibitem{DataMiningBiomedicine}
+Panos~M. Pardalos, Vladimir~L. Boginski, and Alkis Vazacopoulos.
+\newblock {\em Data Mining in Biomedicine}.
+\newblock Springer Publishing Company, Incorporated, 2007.
+
+\bibitem{RetrievalEffectiveness}
+W.R. Hersh and D.H. Hickam.
+\newblock A comparison of retrieval effectiveness for 3 methods of indexing
+  medical literature.
+\newblock {\em The American Journal of the Medical Sciences}, 303, 1992.
+
+\bibitem{FDGPET}
+G.~Sophie Mijnhout, Lotty Hooft, Maurits~W. van Tulder, Walter~L.J.M. Devillé,
+  Gerrit~J.J. Teule, and Otto~S. Hoekstra.
+\newblock How to perform a comprehensive search for fdg-pet literature.
+\newblock {\em European Journal of Nuclear Medicine}, 27(1):91 -- 97, 2000.
+
+\bibitem{TheInternetforPhysicians}
+Roger~P. Smith.
+\newblock {\em The Internet for Physicians}, volume~3.
+\newblock Springer New York, 2002.
+
+\bibitem{ModelingWordBurstiness2005}
+Rasmus~E. Madsen, David Kauchak, and Charles Elkan.
+\newblock Modeling word burstiness using the dirichlet distribution.
+\newblock pages 545--552, 2005.
+
+\bibitem{UnderstandingTFIDF}
+Understanding tfidf, by e. garcia.
+\newblock
+  \href{http://irthoughts.wordpress.com/2008/07/07/understanding-tfidf/}{http:%
+//irthoughts.wordpress.com/2008/07/07/understanding-tfidf/}.
+
+\bibitem{IntroIR2009}
+Prabhakar Raghavan \& Hinrich~Schütze Christopher D.~Manning.
+\newblock {\em An Introduction to Information Retrieval}.
+\newblock Cambridge University Press, April 2009.
+\newblock Available at http://www.informationretrieval.org/.
+
+\bibitem{Kurz2002309}
+Thorsten Kurz and Kilian Stoffel.
+\newblock Going beyond stemming: creating concept signatures of complex medical
+  terms.
+\newblock {\em Knowledge-Based Systems}, 15(5-6):309 -- 313, 2002.
+
+\bibitem{MatrixMarket}
+Matrix market.
+\newblock
+  \href{http://math.nist.gov/MatrixMarket/formats.html}{http://math.nist.gov/M%
+atrixMarket/formats.html}.
+
+\bibitem{cPicklePython}
+{cPickle Python}.
+\newblock
+  \href{http://docs.python.org/library/pickle.html}{http://docs.python.org/lib%
+rary/pickle.html}.
+
+\bibitem{PubmedHelpSearch}
+Pubmed help search.
+\newblock
+  \href{http://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book$=$helppubmed\&part$%
+=$pubmedhelp\#pubmedhelp.Searching\_PubMed}{http://www.ncbi.nlm.nih.gov/booksh%
+elf/br.fcgi?book$=$helppubmed\&part$=$pubmedhelp\#pubmedhelp.Searching\_PubMed%
+}.
+
+\bibitem{CollectiveIntelligence}
+Toby Segaran.
+\newblock {\em Programming Collective Intelligence}.
+\newblock O'Reilly, 2007.
+
+\end{thebibliography}

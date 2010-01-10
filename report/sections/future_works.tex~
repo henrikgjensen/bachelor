@@ -28,7 +28,7 @@ What could be awesome for future versions of the system?\\
 
 \hline
 
-Disease name & Keywords & Score & PMIDs \\
+Disease name & Keywords & Score & PMIDs --> (Expandable to abstracts/keywords for each) Abstracts \\
 
 \hline
 
@@ -41,8 +41,6 @@ Disease$_1$ & "Cancer, lever, blood, aortic ..." & 0.8242 & $18134923$, \dots, $
 \hline
 
 Disease$_20$ & "Cancer, lever, blood, aortic ..." & 0.2412 & $17584932$, \dots, $16191394$ \\
-
-\hline
 
 \end{tabular}
   \end{itemize}
