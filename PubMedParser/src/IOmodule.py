@@ -115,7 +115,7 @@ def getSortedFilelist(dir, startIndex=None, stopIndex=None):
     E.g. only want first 10 file, just call getSortedFilelist(dir, 0, 10)
     """
     
-    files=sorted([f for f in os.listdir(dir) if os.path.isfile(dir+f)])[startIndex:stopIndex]
+    files=sorted([f for f in os.listdir(dir) if os.path.isfile(dir+"/"+f)])[startIndex:stopIndex]
 
     return files
 
