@@ -19,15 +19,15 @@ _termDocDir = _subFolder+"/"+"termDoc"
 ####################################################################
 
  # TFIDF-matrix file name
-_tfidfName = "TFIDFMatrix"
+#_tfidfName = "TFIDFMatrix"
  # Vector-norm hash for then TFIDFMatrix
-_RLHash = "RLHash"
+#_RLHash = "RLHash"
  # Hash for the number of documents each term occur in
-_CLHash = "CLHash"
+#_CLHash = "CLHash"
  # Load the precomputed norm of each row-vector in the term-doc matrix.
-_vectorLength = IOmodule.pickleIn(_hashTablePath,_RLHash)
+#_vectorLength = IOmodule.pickleIn(_hashTablePath,_RLHash)
  # Load the precomputed length of each column in the term-doc matrix
-_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
+#_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
  
 
 ####################################################################
@@ -63,13 +63,13 @@ _termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 #######################################################################################
 
  # TFIDF-matrix file name
-#_tfidfName = "label_TFIDFMatrix"
+_tfidfName = "label_TFIDFMatrix_reduced_90"
  # Vector-norm hash for then TFIDFMatrix
 #_RLHash = "RLHash_tfidf_stemmed"
  # Hash for the number of documents each term occur in
-#_CLHash = "label_CLHash"
+_CLHash = "label_CLHash"
  # Load the precomputed length of each column in the stemmed term-doc matrix
-#_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
+_termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 
 ####################################################################
 
@@ -103,11 +103,18 @@ def _generateLogTFIDF(M_coo):
             
             tf=tfidfMatrix[row,col]
 
-            if tf == 0:
-                print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
-                raise Exception
+            #if tf == 0:
+            #    print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
+            #    raise Exception
+            if tf <=0:
+                print tf
+                tf=0.000000000000001 # <---for svd
 
-            tf = math.log(1 + tf)
+
+            try:
+                tf = math.log(1 + tf)
+            except:
+                print tf
             
             idf = math.log(numberOfDocs / _termSum[col])
             

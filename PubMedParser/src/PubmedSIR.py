@@ -24,7 +24,7 @@ if not os.path.isdir(_mainFolder):
 
 # Create sub folder if it doesn't already exist..
 if not os.path.isdir(_subFolder):
-        os.mkdir(_subFolder))
+        os.mkdir(_subFolder)
 
 def _readDiseases(indexStart=0,indexStop=None):
 
@@ -41,12 +41,12 @@ def _readDiseases(indexStart=0,indexStop=None):
     path=_subFolder+"/"+diseaseFolder+'/'
 
     #    files=sorted([f for f in os.listdir(path) if os.path.isfile(path+f)])
-    files = IOmodules.getSortedFilelist(path, startIndex=indexStart, stopIndex=indexStop)
+    files = IOmodule.getSortedFilelist(path, startIndex=indexStart, stopIndex=indexStop)
 
     sortedcontents=[]
     for f in files:
         contents={}
-        diseaseName=f[0:file.find('.txt')]
+        diseaseName=f[0:f.find('.txt')]
         diseaseAttr=eval(open(path+f,'r').read())
         contents[diseaseName]=diseaseAttr
         sortedcontents.append(contents)
