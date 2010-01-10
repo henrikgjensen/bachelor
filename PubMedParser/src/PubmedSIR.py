@@ -46,7 +46,7 @@ def _readDiseases(indexStart=0,indexStop=None):
     sortedcontents=[]
     for f in files:
         contents={}
-        diseaseName=f[0:file.find('.txt')]
+        diseaseName=f[0:f.find('.txt')]
         diseaseAttr=eval(open(path+f,'r').read())
         contents[diseaseName]=diseaseAttr
         sortedcontents.append(contents)
