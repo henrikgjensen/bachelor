@@ -258,7 +258,7 @@ def makehist():
 
     #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
     #graphName="termDoc_orphan_hist_3000.png"
-    #title='Score (3000) test (Orphan) - term-doc matrix'
+    #title='Score test 3000 Orpha.net - term-doc matrix'
 
     # Not stemmed
     #=========================================================================
@@ -272,26 +272,23 @@ def makehist():
     ## Mean norm (COSINE - no sqrt):
     #x1 = [4, 664, 30, 47, 38, 85, 62, 1371, 1, 32, 83, 15, 0, 26, 2, 81, 3, 16, 2, 3000, 4, 10, 13, 24, 66, 35, 3, 66, 4, 34]
     ## Median norm (COSINE - no sqrt):
-    #x1 = [163, 357, 76, 240, 948, 4, 76, 141, 384, 314, 505, 211, 44, 181, 42, 773, 87, 169, 189, ' ', 179, 265, 21, 491, 692, 37, 435, 692, 358, 233]
+    #x1 = [163, 357, 76, 240, 948, 4, 76, 141, 384, 314, 505, 211, 44, 181, 42, 773, 87, 169, 189, 3000, 179, 265, 21, 491, 692, 37, 435, 692, 358, 233]
     ## Max norm (COSINE - no sqrt):
-    #x1 = [4, 858, 0, 10, 44, 15, 2, 541, 4, 116, 99, 18, 0, 6, 2, 0, 22, 0, 3, ' ', 9, 67, 5, 63, 201, 1, 8, 201, 9, 0]
-    
-    ## Mean not-norm (SUM):
-    #x1 = [6, 910, 917, 32, 122, 460, 145, 3119, 1, 21, 342, 50, 0, 45, 2, 137, 3, 44, 14, 2458, 0, 9, 36, 37, 132, 47, 26, 132, 37, 127]
-    ## Median not-norm (SUM):
+    #x1 = [4, 858, 0, 10, 44, 15, 2, 541, 4, 116, 99, 18, 0, 6, 2, 0, 22, 0, 3, 3000, 9, 67, 5, 63, 201, 1, 8, 201, 9, 0]
+
+
+    ## Mean not-norm (SUM)
+    #x1= [6, 910, 917, 32, 122, 460, 145, 3119, 1, 21, 342, 50, 0, 45, 2, 137, 3, 44, 14, 2458, 0, 9, 36, 37, 132, 47, 26, 132, 37, 127]
+    ## Median not-norm (SUM)
     #x1 = [626, 2814, 495, 219, 1232, 963, 182, 3590, 872, 1207, 1056, 595, 526, 940, 179, 1292, 503, 408, 304, 845, 320, 204, 143, 1165, 1763, 19, 467, 1763, 1532, 100]
-    ## Max not-norm (SUM):
+    ## Max not-norm (SUM)
     #x1 = [119, 2081, 611, 113, 1031, 48, 203, 3833, 7, 127, 1139, 109, 9, 7, 2, 357, 7, 401, 3, 1957, 13, 0, 102, 169, 260, 4, 198, 260, 72, 55]
+
     #=========================================================================
 
     # Stemmed
     #=========================================================================
     ## Mean norm-sqrt (COSINE):
-    #x2 = [4, 248, 29, 48, 23, 106, 64, 1436, 1, 34, 85, 16, 0, 26, 2, 81, 3, 15, 3, 3000, 4, 11, 11, 24, 60, 46, 3, 60, 7, 36]
-    #x2 = [146, 968, 15, 256, 503, 5, 53, 114, 403, 106, 440, 252, 39, 123, 59, 689, 94, 125, 132, 3000, 281, 256, 23, 511, 572, 38, 386, 572, 571, 15]
-    #x2 = [1, 677, 0, 3, 40, 8, 2, 462, 4, 75, 87, 31, 0, 8, 1, 0, 17, 0, 3, ' ', 10, 58, 5, 86, 162, 1, 24, 162, 9, 0]
-
-
     #x2 = [4,289,81,34,19,111,78,1355,1,26,187,18,0,27,2,215,3,12,4,3000,1,11,20,73,68,50,3,68,3,54]
     ## Median norm-sqrt (COSINE):
     #x2 = [139, 400, 53, 264, 850, 1, 32, 2304, 391, 318, 865, 237, 24, 37, 94, 0, 75, 134, 22, 3000, 175, 263, 21, 309, 406, 15, 433, 406, 451, 55]
@@ -317,9 +314,9 @@ def makehist():
     # TEST 2 : From BMJ #
     #~~~~~~~~~~~~~~~~~~~#
 
-    #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
-    #graphName="termDoc_bmj_hist_3000.png"
-    #title='Score (3000) test (BMJ) - term-doc matrix'
+    diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    graphName="termDoc_bmj_hist_3000.png"
+    title='Score test 3000 BMJ - term-doc matrix'
 
     # Not stemmed
     #=========================================================================
@@ -331,12 +328,10 @@ def makehist():
     #x1 = [5, 4, 383, 1021, 44, 241, 107, 37, 8, 0, 24, 19, 27]
     
     ## Mean norm (COSINE - no sqrt):
-    #x1 = [24, 2, 110, 710, 292, 113, 110, 3, 38, 0, 2, 51, 9]
+    #x1 = [25, 2, 66, 692, 128, 139, 128, 3, 63, 0, 2, 52, 9]
     ## Median norm (COSINE - no sqrt):
-    #x2 = [106, 252, 706, 1127, 532, 803, 179, 308, 751, 76, 472, 808, 473]
+    #x1 = [123, 179, 1210, 1004, 665, 502, 76, 343, 455, 59, 392, 430, 464]
     ## Max norm (COSINE - no sqrt):
-    #x3 = [20, 11, 427, 1232, 210, 370, 108, 28, 22, 0, 62, 192, 56]
-
     #x1 = [28, 7, 311, 1123, 166, 375, 109, 16, 21, 0, 39, 96, 47]
 
     ## Mean not-norm (SUM):
@@ -431,7 +426,7 @@ def makehist():
     # Stemmed
     #=========================================================================
     ## Norm (COSINE):
-    x2 = [25,37,748,1970,384,1053,25,2, 0,1,102, 68,30]
+    #x2 = [25,37,748,1970,384,1053,25,2, 0,1,102, 68,30]
 
     ## Norm (COSINE - no sqrt)
     #x2= [37,63,872,1963,533,1198,93,4,18,9,230,221,91]
@@ -446,29 +441,69 @@ def makehist():
     fig=figure(figsize=(8,5))
     ax=fig.add_subplot(1,1,1)
 
+    # for 3 bars
+#     cx1 = 'green'
+#     cx2 = 'red'
+#     cx3 = 'blue'
+
+    # for four bars
+    cx1 = '#29dbda'
+    cx2 = '#2943db'
+    cx3 = '#ec1008'
+    cx4 = '#f66b5a'
+
+    # for three bars
+#     lx1 = 'Mean'
+#     lx2 = 'Median'
+#     lx3 = 'Max'
+
+    # for four bars.
+    lx1 = 'Mean, non stemmed'
+    lx2 = 'Mean, stemmed'
+    lx3 = 'Max, non stemmed'
+    lx4 = 'Max, stemmed'
+
     # Font size in legend
     rc('legend', fontsize='small')
 
-    xlen=len(x1)*4
-    xlen=len(x2)*4
-    step=4
+    # For four bars
+    xlen=len(x1)*8
+    step = 8
+
+    # For three bars
+#     xlen=len(x1)*6
+#     step = 6
+    
+    # For two bars
+    #    xlen=len(x1)*4
+    #    step=4
 
     x1_log=map(lambda x: math.log(x+1),x1)
     x2_log=map(lambda x: math.log(x+1),x2)
+    x3_log=map(lambda x: math.log(x+1),x3)
+    x4_log=map(lambda x: math.log(x+1),x4)
 
     y1=mean(x1_log)
     print y1
     y2=mean(x2_log)
     print y2
-    ax.plot([0,xlen],[y1,y1],'g-',linewidth=2)
-    ax.plot([0,xlen],[y2,y2],'r-',linewidth=2)
+    y3=mean(x3_log)
+    print y3
+    y4=mean(x4_log)
+    print y4
+    ax.plot([0,xlen],[y1,y1],color=cx1,linewidth=2)
+    ax.plot([0,xlen],[y2,y2],color=cx2,linewidth=2)
+    ax.plot([0,xlen],[y3,y3],color=cx3,linewidth=2)
+    ax.plot([0,xlen],[y4,y4],color=cx4,linewidth=2)
+
+    
+    ax.bar(arange(0,xlen,step), x1_log, color=cx1, width=1, label=lx1+' avg='+str(y1)[:4])
+    ax.bar(arange(1,xlen,step), x2_log, color=cx2, width=1, label=lx2+' avg='+str(y2)[:4])
+    ax.bar(arange(2,xlen,step), x3_log, color=cx3, width=1, label=lx3+' avg='+str(y3)[:4])
+    ax.bar(arange(3,xlen,step), x4_log, color=cx4, width=1, label=lx4+' avg='+str(y4)[:4])
 
 
-    ax.bar(arange(0,xlen,step), x1_log, color='green', width=1, label='Not stemmed, avg='+str(y1)[:4])
-    ax.bar(arange(1,xlen,step), x2_log, color='red', width=1, label='Stemmed, avg='+str(y2)[:4])
-
-
-    ax.set_xticks(range(1,len(x2)*4,4))
+    ax.set_xticks(range(step/2,xlen,step))
     ax.set_xticklabels(diseases)
     # Set font size for the disease-labels
     for label in ax.get_xticklabels():
@@ -484,7 +519,9 @@ def makehist():
     fig.autofmt_xdate()
 
     show()
-    savefig("/home/henne/Documents/Projektet/bachelor/Grafer_og_tegninger/"+graphName)
+    print "Writing to "+graphName
+    savefig("/home/bp/brep/barcharts/"+graphName)
+    #    savefig("/home/henne/Documents/Projektet/bachelor/Grafer_og_tegninger/"+graphName)
 
 """
 from nltk import *
