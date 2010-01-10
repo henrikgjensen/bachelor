@@ -97,7 +97,7 @@ def _generateLogTFIDF(M_coo):
 
     t1=time.time()
 
-    for row in range(2000,numberOfDocs+1):
+    for row in range(1,numberOfDocs+1):
         
         for col in (tfidfMatrix.getrow(row).nonzero()[1])[1:]:
             
@@ -106,11 +106,15 @@ def _generateLogTFIDF(M_coo):
             #if tf == 0:
             #    print "Looked up zero-value at: "+str(docIndex)+" "+str(termVectorIndex)
             #    raise Exception
-            if tf <=0: tf=0 # <---for svd
+            if tf <=0:
+                print tf
+                tf=0 # <---for svd
 
 
-            print tf
-            tf = math.log(1 + tf)
+            try:
+                tf = math.log(1 + tf)
+            except:
+                print tf
             
             idf = math.log(numberOfDocs / _termSum[col])
             
