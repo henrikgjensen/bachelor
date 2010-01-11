@@ -423,7 +423,10 @@ def runScoreTest5(lil, csc):
     #             ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
     #             ("Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth.")]
 
-    diseaseList=[("Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and irritable when woken, highly increased sexual appetite and hunger")]
+    #diseaseList=[("Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and irritable when woken, highly increased sexual appetite and hunger")]
+
+    diseaseList=[("Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
+
 
     printout2=[[],[],[]]
     clusterThis=[[],[],[]]
