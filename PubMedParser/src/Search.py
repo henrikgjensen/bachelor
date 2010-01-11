@@ -405,11 +405,11 @@ def runScoreTest5(lil, csc):
     Boy age 14, yellow, keratotic plaques on the skin of palms and soles going
     up onto the dorsal side. Both hands and feet are affected.
     ============================================================================
-    4) 16-årig jødisk dreng har en til to gange om måneden anfald, hvor han
-    først og fremmest skal sove utroligt meget - ca. 18 timer om dagen.
-    Anfaldene varer ca en uges tid. Han ændrer karakter under anfaldene og
-    bliver irritabel og aggressiv, når han vækkes. Når han er vågen i
-    anfaldsperioden spiser han helt utroligt store mængder mad, og hans appetit
+    4) 16-aarig joedisk dreng har en til to gange om maaneden anfald, hvor han
+    foerst og fremmest skal sove utroligt meget - ca. 18 timer om dagen.
+    Anfaldene varer ca en uges tid. Han aendrer karakter under anfaldene og
+    bliver irritabel og aggressiv, når han vaekkes. Når han er vågen i
+    anfaldsperioden spiser han helt utroligt store maengder mad, og hans appetit
     på sex er endvidere abnormt stor.
     ----------------------------------------------------------------------------
     System symptom query:
