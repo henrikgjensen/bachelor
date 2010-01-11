@@ -274,8 +274,8 @@ def runScoreTest3(M_lil, M_csc):
     #diseaseList=[("Adrenoleukodystrophy  autosomal  neonatal form","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions"),
     #            ("Childhood-onset cerebral X-linked adrenoleukodystrophy","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
 
-    diseaseList=[("Adrenoleukodystrophy  autosomal  neonatal form","boy age 5 adrenal insufficiency and  degeneration of visual and auditory functions"),
-                ("Childhood-onset cerebral X-linked adrenoleukodystrophy","boy age 5 adrenal insufficiency and  degeneration of visual and auditory functions")]
+    diseaseList=[("boy age 5 adrenal insufficiency"),
+                ("Childhood-onset cerebral X-linked adrenoleukodystrophy","boy age 5 adrenal insufficiency")]
 
 
     printout1=[]
