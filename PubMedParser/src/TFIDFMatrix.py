@@ -116,7 +116,7 @@ def _generateLogTFIDF(M_coo):
             except:
                 print tf
 
-            if termSum[col]==0: continue
+            if _termSum[col]==0: continue
             idf = math.log(numberOfDocs / _termSum[col])
             
             tfidfMatrix[row,col]=tf*idf
