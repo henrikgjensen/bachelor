@@ -49,7 +49,7 @@ else:
 label=_label+'_tfidf'
 
 # Name of disease filename
-diseaseHash='diseaseHash'
+diseaseHash='diseaseHash_reduced'
 
 def getColumnSum(subTermDoc, avg=False):
 
