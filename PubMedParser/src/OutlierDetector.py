@@ -1,6 +1,26 @@
+from __future__ import division
+import DistanceMeasure
+reload(DistanceMeasure)
+from DistanceMeasure import sim_pearson as pearson, cosine_measure as cosine, cosine_measure_dense as cosine_dense
+from math import sqrt, pow, fabs, floor
+import random
+from PIL import Image, ImageDraw
+import time
+import cPickle
+import SearchTermDoc as STD
 from scipy import sparse
-import IOmodule
-from DistanceMeasure import cosine_dense
+from numpy import delete
+import os
+import IOmodule as IO
+
+# Main folder
+_mainFolder=os.getenv("HOME")+"/"+"The_Hive"
+# Phase subfolder
+_subFolder = _mainFolder+"/"+"term_doc"
+# Term-doc directory
+_termDocDir=_subFolder+"/"+"termDoc"
+# Term- and PMID-hash directory
+_hashTablesDir=_subFolder+"/"+"hashTables"
 
 _stemmed=False
 

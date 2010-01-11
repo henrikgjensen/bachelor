@@ -227,7 +227,7 @@ def getdepth(clust):
     return max(getdepth(clust.left), getdepth(clust.right)) + clust.distance
 
 
-def drawDendrogram50(toptwentylist, csr_originalMatrix, namesHash):
+def drawDendrogram20(toptwentylist, csr_originalMatrix, namesHash):
 
     print 'Construct top 50 dendrogram for', toptwentylist[0][0]
 
