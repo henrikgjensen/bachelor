@@ -454,7 +454,7 @@ def searchLabel(M_lil, M_csc, queryString, top=20):
 
     # CHOOSE HEURISTIC:
     # Search-heuristic used to retrieve the list of results
-    results=SearchInterface.cosineMeasureOR(M_lil, M_csc, queryString)
+    results=SearchInterface.cosineMeasure(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
     results.sort()
