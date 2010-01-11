@@ -410,7 +410,7 @@ def runScoreTest5(lil, csc):
     Anfaldene varer ca en uges tid. Han aendrer karakter under anfaldene og
     bliver irritabel og aggressiv, naar han vaekkes. Naar han er vaagen i
     anfaldsperioden spiser han helt utroligt store maengder mad, og hans appetit
-    på sex er endvidere abnormt stor.
+    paa sex er endvidere abnormt stor.
     ----------------------------------------------------------------------------
     System symptom query:
     Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and
