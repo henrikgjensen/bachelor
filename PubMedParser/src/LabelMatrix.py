@@ -49,7 +49,7 @@ else:
 label=_label+'_tfidf'
 
 # Name of disease filename
-diseaseHash='diseaseHash_reduced'
+diseaseHash='diseaseHash'
 
 def getColumnSum(subTermDoc, avg=False):
 
@@ -182,7 +182,7 @@ def createDiseaseHash(dir,output=False):
     counter=0
     for f in files:
         diseaseName=f[0:f.find('.mtx')]
-        stdm=IO.readInTDM(dir+'/'+f)
+        stdm=IO.readInTDM(dir,f)
         if stdm.shape[0]==1:
             continue
         if diseaseName not in diseaseHashes.keys():
