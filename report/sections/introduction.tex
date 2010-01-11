@@ -3,10 +3,10 @@
 Due to the vast amount of information available on the Internet today,
 it is near impossible for researchers to have an 'up-to-date'
 knowledge on everything but their own specific field. Even that seems
-to become more and more difficult as new information is added each day
-\cite{CitAddMedLine} \footnote{Take for instance the biomedical
+to become more and more difficult as new information is added each day\footnote{Take for instance the biomedical
   database MedLine that grows with over half a million citations per
-  year}. Therefore it can be necessary to employ tools to help gather,
+  year}
+\cite{CitAddMedLine}. Therefore it can be necessary to employ tools to help gather,
 structure, look for relations or hypothesis within the piles
 information. One very popular method of finding new relations in data
 is through the use of \textit{text mining}.
@@ -20,16 +20,15 @@ Text mining refers to the automated search for meaningful patterns in
 structured or unstructured text documents stored in very large digital
 databases or distributed over the Web. A good example of this is
 ``Fish oil, Raynaud's syndrome and undiscovered public knowledge'' by
-D.R. Swanson \fxnote{REF Don R. Swanson
-  -http://www.csd.uwo.ca/courses/CS9626a/papers\_files/Swanson.pdf}. Here
-Swanson was referring to published knowledge deeply buried in disjoint
-topical domains \footnote{Here 'disjoint' refers to articles written
-  by researchers unaware of each others work}. Swanson was one of the
-first to propose using text mining on biomedical literature. In 1986,
-he found evidence of a relation between the use of fish oil and the
-development of Raynaud's syndrome by looking at seemingly unrelated
-documents. This was done years before there were actually any
-scientific documents supporting this. \\
+D.R. Swanson \cite{DRSwanson}. Here Swanson was referring to published
+knowledge deeply buried in disjoint topical domains\footnote{Here
+  'disjoint' refers to articles written by researchers unaware of each
+  others work}. Swanson was one of the first to propose using text
+mining on biomedical literature. In 1986, he found evidence of a
+relation between the use of fish oil and the development of Raynaud's
+syndrome by looking at seemingly unrelated documents. This was done
+years before there were actually any scientific documents supporting
+this. \\
 
 Over the recent years the use of text mining has grown
 tremendously. In the biomedical field, research is divided into highly
@@ -60,10 +59,10 @@ the text for a more optimized search.
 
 The list of rare diseases counts over 6,000 individual cases and has 5
 added to it a week \cite{AboutRareDiseasesOrphanet}. A rare (or
-orphan) disease is classified by the Orphanet Encyclopedia
+orphan) disease is classified by the Orpha.net Encyclopedia
 \cite{OrphanetEncyclopedia} being a disease that affects 1 out of 2,000
 people in Europe and has severe chronic or terminal outcomes (or less
-than 200.000 affected in the USA by standard of
+than 200,000 affected in the USA by standard of
 Rarediseases.info \cite{Rarediseases}). Some
 of these diseases might not be fatal if treated in time but given the
 amount of knowledge your physician would need to carry around to make
@@ -78,13 +77,13 @@ experience with similar cases. Therefore it is important that the
 diagnosing physician has as much help at hand as possible in this
 intrinsic task.\\
 
-In a dialog with Henrik L. Jørgensen, chief physician at Bispeberg
-Hospital, we found that though many systems already exist to help
-physicians in their diagnosis, there seemed to be a lack of a system
-for specifically diagnosing rare diseases. Systems such as PubMed
-returns numerous results if the symptoms are slightly non-specific
-(more on this in the following chapters). The advantage of a
-specialized system for rare diseases would be that the physician,
+In a dialog with Henrik L. J\o rgensen \cite{TheDude}, chief physician
+at Bispebjerg Hospital, we found that though many systems already exist
+to help physicians in their diagnosis, there seemed to be a lack of a
+system for specifically diagnosing rare diseases. Systems such as
+PubMed returns numerous results if the symptoms are slightly
+non-specific (more on this in the following chapters). The advantage
+of a specialized system for rare diseases would be that the physician,
 being in doubt, would have a chance to make a quick symptom look-up
 before referring or dismissing the patient. According to Jørgensen,
 time is great a problem when treating patients and in the rare event
@@ -110,7 +109,7 @@ descriptions) will be mined from the Rarediseases.info website. Some
 of these diseases will have specialized PubMed search strings that we
 mine along with the names. Using these names, predefined search
 strings and synonyms, we search PubMed for a maximum of 500
-PMID's \footnote{PMID's are unique article identifiers used by PubMed}
+PMID's\footnote{PMID's are unique article identifiers used by PubMed}
 per disease, representing MedLine records containing an abstract. We
 then download the corresponding records.\\
 
@@ -129,17 +128,16 @@ of cases are derived from a subset of tests in the BMJ article
   run tests on the diseases present in our database} The second set of
 cases come from a random select of disease descriptions on the
 Orpha.net website \cite{Orphanet}. The third and final set of test
-cases come from a blind test provided by Henrik L. Jørgensen
-\cite{TheDude}.\\
+cases come from a blind test provided by Henrik L. J\o rgensen.\\
 
 \textbf{Primary tools} \\ We will be using Python 2.6.2
 \cite{PythonLanguage} in this project. For access to PubMed, we use
 the python module Bio.Entrez \cite{EntrezProgUtil} while BeautifulSoup
 \cite{BS} is used for parsing of HTML/XML combined with Urllib2
 \cite{UL2} these are used for crawling the websites. For construction
-of the term document matrix, we use the scipy package \cite{SciPy}
+of the term document matrix, we use the SciPy package \cite{SciPy}
 which supports sparse matrix structures. And for auxilliary vector
-functions we use package \cite{NumPy}.
+functions we use the Numpy package \cite{NumPy}.
 
 \section{Roadmap}
 
@@ -162,7 +160,17 @@ heuristics/filters to the data and the vector space. The chapter is
 rounded of with details of the data and technical conclusions of the
 implementation.\\
 
-Chapter \ref{ExperimentsResults} contains all the primary tests and results of the different schemes used to find the most efficient model for looking up rare diseases. The cosine similarity measure and the simple sum similarity measure are tests, measured and put up against each other to see which performs the best (returns most correct diseases in top 20 and has the best average score). This is done on both the classical term document matrix and on a document-summed version called the \textit{thedisease matrix}. Having found the best score, the following sections of this chapter deals with aspects and tests of clusterings, keyword extraction in a reduced semantic space and some of the potential noise in the data set.\\
+Chapter \ref{ExperimentsResults} contains all the primary tests and
+results of the different schemes used to find the most efficient model
+for looking up rare diseases. The cosine similarity measure and the
+simple sum similarity measure are tested, measured and put up against
+each other to see which performs the best (returns most correct
+diseases in top 20 and has the best average score). This is done on
+both the classical term document matrix and on a document-summed
+version called the \textit{disease matrix}. Having found the best
+score, the following sections of this chapter deals with aspects and
+tests of clusterings, keyword extraction in a reduced semantic space
+and some of the potential noise in the data set.\\
 
 Chapter \ref{Conclusion}
 
