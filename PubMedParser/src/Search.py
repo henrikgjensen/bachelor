@@ -52,7 +52,7 @@ def search(M_lil, M_csc, queryString, top=20):
     # Search-heuristic used to retrieve the list of results
 
     #    results=SearchInterface.cosineMeasure(M_lil, M_csc, queryString)
-    results=SearchInterface.cosineMeasure(M_lil, M_csc, queryString)
+    results=SearchInterface.sumMeasure(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
     results.sort()
@@ -271,11 +271,11 @@ def runScoreTest3(M_lil, M_csc):
 #                ('Multiple myeloma','overproduction of abnormal plasma cells in the bone marrow and manifested by skeletal destruction, bone pain, and presence of abnormous immunoglobulins'),
 #                ('Trichodental syndrome','fine, dry and short hair with dental anomalies')]
 
-    #diseaseList=[("Adrenoleukodystrophy  autosomal  neonatal form","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions"),
-    #            ("Childhood-onset cerebral X-linked adrenoleukodystrophy","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
+    diseaseList=[("Adrenoleukodystrophy  autosomal  neonatal form","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions"),
+                ("Childhood-onset cerebral X-linked adrenoleukodystrophy","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
 
-    diseaseList=[("Adrenoleukodystrophy  autosomal  neonatal form","Normally developed boy until age 5, where he progressively developed the following symptoms: Talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
-                ("Childhood-onset cerebral X-linked adrenoleukodystrophy","Normally developed boy until age 5, where he progressively developed the following symptoms: Talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions")]
+    
+
 
 
 
@@ -479,7 +479,7 @@ def searchLabel(M_lil, M_csc, queryString, top=20):
 
     # CHOOSE HEURISTIC:
     # Search-heuristic used to retrieve the list of results
-    results=SearchInterface.cosineMeasure(M_lil, M_csc, queryString)
+    results=SearchInterface.sumMeasure(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
     results.sort()
