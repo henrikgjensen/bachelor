@@ -427,13 +427,13 @@ def runScoreTest5(lil, csc):
     ============================================================================
     """
 
-    #diseaseList=[("Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine and osteogenesis at biopsy"),
-    #             ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
-    #             ("Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth.")]
+    diseaseList=[("Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine and osteogenesis at biopsy"),
+                 ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
+                 ("Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth.")]
 
     #diseaseList=[("Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and irritable when woken, highly increased sexual appetite and hunger")]
 
-    diseaseList=[("Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
+    #diseaseList=[("Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
 
 
     printout2=[[],[],[]]
@@ -510,8 +510,8 @@ def searchLabel(M_lil, M_csc, queryString, top=20):
 
     resultLabelList = sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
 
-    #return resultLabelList[:20]
-    return resultLabelList
+    return resultLabelList[:20]
+    #return resultLabelList
 
     # for disease in diseaseList:
 
