@@ -3,10 +3,19 @@
 %\usepackage{a4wide}
 \usepackage[draft]{fixme}
 
+
+
+
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+%\usepackage{garamond}
+%\renewcommand{\rmdefault}{ugm}
+%\usepackage[utf8]{inputenc}
 \usepackage[british]{babel}
 \usepackage{verbatim}
+
+\usepackage{palatino}              % font : garamond
+\linespread{1.05}                  % Palatino needs more leading (space between lines)
+\renewcommand{\ttdefault}{cmtt}    % alternative monospace font
 
 
 %%%% MATH STUFF %%%%%%
@@ -36,7 +45,7 @@
 \hyphenation{mand-en} %%% Add here if something does not break right. Like this nu-clear-test-bomb-ing
 
 %\usepackage{nicefrac}
-\title{Bachelor project}
+\title{Support decision system for diagnosing rare diseases using machine learning for medical text mining}
 \author{Henrik G. Jensen - henrikgjensen@gmail.com\\
 Michael Andersen - Michael.blackplague.andersen@gmail.com \\
 \\
@@ -50,7 +59,7 @@ filecolor=black,%
 linkcolor=black,%
 urlcolor=black,% 
 bookmarksopen=false,
-pdftitle={This is our title},
+pdftitle={Support decision system for diagnosing rare diseases using machine learning for medical text mining},
 pdfauthor={Henrik G. Jensen and Michael Andersen},
 pdfsubject={Text mining},
 pdfkeywords={Diagnosing diseases, text mining}
@@ -58,7 +67,7 @@ pdfkeywords={Diagnosing diseases, text mining}
 \setlength{\parindent}{0in}
 
 \begin{document}
-
+%\garamond
 \maketitle
 %\pagenumbering{roman}
 \thispagestyle{empty}
