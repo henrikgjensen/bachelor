@@ -67,7 +67,7 @@ _tfidfName = "label_TFIDFMatrix_reduced_90"
  # Vector-norm hash for then TFIDFMatrix
 #_RLHash = "RLHash_tfidf_stemmed"
  # Hash for the number of documents each term occur in
-_CLHash = "label_CLHash"
+_CLHash = "svdlabel_CLHash"
  # Load the precomputed length of each column in the stemmed term-doc matrix
 _termSum = IOmodule.pickleIn(_hashTablePath,_CLHash)
 
@@ -115,7 +115,8 @@ def _generateLogTFIDF(M_coo):
                 tf = math.log(1 + tf)
             except:
                 print tf
-            
+
+            if termSum[col]==0: continue
             idf = math.log(numberOfDocs / _termSum[col])
             
             tfidfMatrix[row,col]=tf*idf
