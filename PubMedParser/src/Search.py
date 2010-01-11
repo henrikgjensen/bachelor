@@ -409,6 +409,9 @@ def runScoreTest5(lil, csc):
                  ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
                  ("Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth.")]
 
+    diseaseList=[("Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine"),
+                ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency")]
+
     printout2=[[],[],[]]
     clusterThis=[[],[],[]]
 
