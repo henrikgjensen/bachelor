@@ -408,7 +408,7 @@ def runScoreTest5(lil, csc):
     4) 16-aarig joedisk dreng har en til to gange om maaneden anfald, hvor han
     foerst og fremmest skal sove utroligt meget - ca. 18 timer om dagen.
     Anfaldene varer ca en uges tid. Han aendrer karakter under anfaldene og
-    bliver irritabel og aggressiv, naar han vaekkes. Når han er vaagen i
+    bliver irritabel og aggressiv, naar han vaekkes. Naar han er vaagen i
     anfaldsperioden spiser han helt utroligt store maengder mad, og hans appetit
     på sex er endvidere abnormt stor.
     ----------------------------------------------------------------------------
