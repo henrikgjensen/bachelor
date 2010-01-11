@@ -3,13 +3,13 @@
 Due to the vast amount of information available on the Internet today,
 it is near impossible for researchers to have an 'up-to-date'
 knowledge on everything but their own specific field. Even that seems
-to become more and more difficult as new information is added each
-day \cite{CitAddMedLine} \footnote{Take for instance the biomedical database MedLine that
-grows with over half a million citations per year}. Therefore
-it can be necessary to employ tools to help gather, structure, look
-for relations or hypothesis within the piles information. One very
-popular method of finding new relations in data is through the use of
-text mining.
+to become more and more difficult as new information is added each day
+\cite{CitAddMedLine} \footnote{Take for instance the biomedical
+  database MedLine that grows with over half a million citations per
+  year}. Therefore it can be necessary to employ tools to help gather,
+structure, look for relations or hypothesis within the piles
+information. One very popular method of finding new relations in data
+is through the use of \textit{text mining}.
 
 \begin{center}
 {\small``The whole is greater than the sum of its parts'' $\sim$ Aristotle
@@ -19,8 +19,8 @@ text mining.
 Text mining refers to the automated search for meaningful patterns in
 structured or unstructured text documents stored in very large digital
 databases or distributed over the Web. A good example of this is
-D.R. Swanson, Fish oil, Raynaud's syndrome and undiscovered public
-knowledge \fxnote{REF Don R. Swanson
+``Fish oil, Raynaud's syndrome and undiscovered public knowledge'' by
+D.R. Swanson \fxnote{REF Don R. Swanson
   -http://www.csd.uwo.ca/courses/CS9626a/papers\_files/Swanson.pdf}. Here
 Swanson was referring to published knowledge deeply buried in disjoint
 topical domains \footnote{Here 'disjoint' refers to articles written
@@ -53,15 +53,15 @@ search of symptoms, environmental and/or human factors. We use a list
 of rare diseases and synonyms acquired from rarediseases.info
 \cite{Rarediseases}. Based on this, we
 extract a series of MedLine records \cite{PubMedFactSheetMedline}
-using the python module Bio.Entrez \cite{EntrezProgUtil} and process
+using the Python module Bio.Entrez \cite{EntrezProgUtil} and process
 the text for a more optimized search.
 
 \section{Inspiration}
 
-The list of rare diseases counts over 6.000 individual cases and has 5
+The list of rare diseases counts over 6,000 individual cases and has 5
 added to it a week \cite{AboutRareDiseasesOrphanet}. A rare (or
 orphan) disease is classified by the Orphanet Encyclopedia
-\cite{OrphanetEncyclopedia} being a disease that affects 1 out 2.000
+\cite{OrphanetEncyclopedia} being a disease that affects 1 out of 2,000
 people in Europe and has severe chronic or terminal outcomes (or less
 than 200.000 affected in the USA by standard of
 Rarediseases.info \cite{Rarediseases}). Some
@@ -132,15 +132,14 @@ Orpha.net website \cite{Orphanet}. The third and final set of test
 cases come from a blind test provided by Henrik L. Jørgensen
 \cite{TheDude}.\\
 
-\textbf{Primary tools} \\
-We will be using Python 2.6.2 \cite{PythonLanguage} in this
-project. For access to PubMed, we use the python module Bio.Entrez
-\cite{EntrezProgUtil} while BeautifulSoup \cite{BS} is used for
-parsing of html/xml combined with Urllib2 \cite{UL2} these are used
-for crawling the websites. For construction of the term document
-matrix, we use the scipy \cite{SciPy} package which supports sparse
-matrix structures. And for auxilliary vector functions we use
-\cite{NumPy} pakcage.
+\textbf{Primary tools} \\ We will be using Python 2.6.2
+\cite{PythonLanguage} in this project. For access to PubMed, we use
+the python module Bio.Entrez \cite{EntrezProgUtil} while BeautifulSoup
+\cite{BS} is used for parsing of HTML/XML combined with Urllib2
+\cite{UL2} these are used for crawling the websites. For construction
+of the term document matrix, we use the scipy package \cite{SciPy}
+which supports sparse matrix structures. And for auxilliary vector
+functions we use package \cite{NumPy}.
 
 \section{Roadmap}
 
