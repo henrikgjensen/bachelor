@@ -402,16 +402,28 @@ def runScoreTest5(lil, csc):
     of most of his permanent teeth.
     ----------------------------------------------------------------------------
     System symptom query:
-    Boy age 14, yellow, keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected.
+    Boy age 14, yellow, keratotic plaques on the skin of palms and soles going
+    up onto the dorsal side. Both hands and feet are affected.
+    ============================================================================
+    4) 16-årig jødisk dreng har en til to gange om måneden anfald, hvor han
+    først og fremmest skal sove utroligt meget - ca. 18 timer om dagen.
+    Anfaldene varer ca en uges tid. Han ændrer karakter under anfaldene og
+    bliver irritabel og aggressiv, når han vækkes. Når han er vågen i
+    anfaldsperioden spiser han helt utroligt store mængder mad, og hans appetit
+    på sex er endvidere abnormt stor.
+    ----------------------------------------------------------------------------
+    System symptom query:
+    Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and
+    irritable when woken, highly increased sexual appetite and hunger.
+
     ============================================================================
     """
 
-    diseaseList=[("Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine and osteogenesis at biopsy"),
-                 ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
-                 ("Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth.")]
+    #diseaseList=[("Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine and osteogenesis at biopsy"),
+    #             ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
+    #             ("Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth.")]
 
-    diseaseList=[("Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine"),
-                ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency")]
+    diseaseList=[("Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and irritable when woken, highly increased sexual appetite and hunger")]
 
     printout2=[[],[],[]]
     clusterThis=[[],[],[]]
