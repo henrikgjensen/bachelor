@@ -1,17 +1,24 @@
-Abstract:
-\fxnote{The abstract is still incomplete}
+\subsubsection*{Abstract:}
+        \fxnote{The abstract is still incomplete}
 
-Motivation (What the driving force behind the project?):
+It can be time consuming for a physician to diagnose a disease and
+even more so if the disease is rare. Many rare disease a high fatality
+rate so a quick diagnosis is vital to the health of the patient. We
+therefore propose a prototype support decision system for diagnosing
+rare diseases with a specialized database. For this we will be using a
+vector space model to look for similarity between input symptoms and
+gathered information. Given a list of symptoms, the system will
+calculate a similarity score between the search query and the
+documents in the matrix. \\
 
-It can be time consuming for a physician to diagnose a disease and even more so if the disease is rare. Many rare disease a high fatality rate so a quick diagnosis is vital to health of the patient. We aim to create a tool for helping the physician in diagnosing a potentially rare disease. Speeding up the process of making a correct diagnosis will save time for both patient and physician. \\
 
-We therefore propose a prototype support decision system for diagnosing rare diseases with a specialized dataset. For this we will be using a vector space model to look for similarity between input symptoms and gathered information. The information, coming from MedLine records, is transformed into preprocessed term document matrices. Given a list of symptoms, the system will calculate a cosine similarity between the search query and the documents in the matrix. We perform a number of transformations on the data to find the most qualified representation of the harvested data. The transformations includes stemming, stop word removal and term frequency - inverse document frequency (TF-IDF) processing. \\
+The system was tested using 13 test cases from
+BMJ \cite{HangwiTang11102006}, 30 test cases from Orpha.net and X fxnote{X}
+blind tests provided by chief physician Henrik Jørgensen and Lennart Y. \fxnote{Lennart?}
+In a top 20 the system succesfully returned 9 out of 13, 20 out of 30 
+and ``blindtest'' correct diseases.
 
-Results (What's the answer?):
-The system was tested using 13 test cases from \cite{HangwiTang11102006} and some more tests, where the test cases was selected ``randomly'' from Orpha.net and run on our disease list from Rarediseases.info.gov using the dataset from Pubmed. In addition to this, we made a blind test of the system, where we got a symptom list from Henrik \cite{TheDude} Many of the disease from the list gets ranked amongst top 20, which is very exciting and proves the possibilities of the system. Although more control over the initial information that the system gathers is needed. And there needs to be a threshold of the minimum number of Medline records per disease.\\
-
-Here be numbers!\\
-
-Conclusion:
-
-Coming up...
+, which is very exciting and proves the
+possibilities of the system. Although more control over the initial
+information that the system gathers is needed. And there needs to be a
+threshold of the minimum number of Medline records per disease.\\
