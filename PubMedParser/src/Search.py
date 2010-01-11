@@ -23,7 +23,7 @@ _stemmer=True
 ############
 
 # Disease label hash (for label lookup)
-_labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash_reduced90")
+_labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash_reduced")
 _labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
 print "Disease hash loaded"
 
@@ -51,7 +51,7 @@ def search(M_lil, M_csc, queryString, top=20):
     # Search-heuristic used to retrieve the list of results
 
     #    results=SearchInterface.cosineMeasure(M_lil, M_csc, queryString)
-    results=SearchInterface.cosineMeasure(M_lil, M_csc, queryString)
+    results=SearchInterface.sumMeasure(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
     results.sort()
@@ -270,6 +270,15 @@ def runScoreTest3(M_lil, M_csc):
                 ('Multiple myeloma','overproduction of abnormal plasma cells in the bone marrow and manifested by skeletal destruction, bone pain, and presence of abnormous immunoglobulins'),
                 ('Trichodental syndrome','fine, dry and short hair with dental anomalies')]
 
+    #diseaseList=[("Adrenoleukodystrophy  autosomal  neonatal form","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions"),
+    #            ("Childhood-onset cerebral X-linked adrenoleukodystrophy","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
+
+    
+
+
+
+
+
     printout1=[]
     printout2=[]
     #printout2=([],[],[])
@@ -401,13 +410,31 @@ def runScoreTest5(lil, csc):
     of most of his permanent teeth.
     ----------------------------------------------------------------------------
     System symptom query:
-    Boy age 14, yellow, keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected.
+    Boy age 14, yellow, keratotic plaques on the skin of palms and soles going
+    up onto the dorsal side. Both hands and feet are affected.
+    ============================================================================
+    4) 16-aarig joedisk dreng har en til to gange om maaneden anfald, hvor han
+    foerst og fremmest skal sove utroligt meget - ca. 18 timer om dagen.
+    Anfaldene varer ca en uges tid. Han aendrer karakter under anfaldene og
+    bliver irritabel og aggressiv, naar han vaekkes. Naar han er vaagen i
+    anfaldsperioden spiser han helt utroligt store maengder mad, og hans appetit
+    paa sex er endvidere abnormt stor.
+    ----------------------------------------------------------------------------
+    System symptom query:
+    Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and
+    irritable when woken, highly increased sexual appetite and hunger.
+
     ============================================================================
     """
 
     diseaseList=[("Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine and osteogenesis at biopsy"),
                  ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
                  ("Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth.")]
+
+    #diseaseList=[("Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and irritable when woken, highly increased sexual appetite and hunger")]
+
+    #diseaseList=[("Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
+
 
     printout2=[[],[],[]]
     clusterThis=[[],[],[]]
@@ -451,7 +478,7 @@ def searchLabel(M_lil, M_csc, queryString, top=20):
 
     # CHOOSE HEURISTIC:
     # Search-heuristic used to retrieve the list of results
-    results=SearchInterface.cosineMeasureOR(M_lil, M_csc, queryString)
+    results=SearchInterface.sumMeasure(M_lil, M_csc, queryString)
 
     # Sort the results and reverse to get the highest score first
     results.sort()
@@ -484,7 +511,7 @@ def searchLabel(M_lil, M_csc, queryString, top=20):
     resultLabelList = sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
 
     return resultLabelList[:20]
-
+    #return resultLabelList
 
     # for disease in diseaseList:
 

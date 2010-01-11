@@ -39,17 +39,17 @@ if not _stemmer:
 ########################################################################
 else:
     # Stemmed sub-matrix directory
-    _subMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed"
+    _subMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_90" #svd folder
     # Stemmed hashtable filenames:
     _termHash="termHash_stemmed"
     _pmidHash="pmidHash_stemmed"
     _termDoc="TermDoc_stemmed"
-    _label = 'LabelMatrix_stemmed'
+    _label = 'LabelMatrix_stemmed' #svd label
 
 label=_label+'_tfidf'
 
 # Name of disease filename
-diseaseHash='diseaseHash'
+diseaseHash='diseaseHash_reduced' #svd hash
 
 def getColumnSum(subTermDoc, avg=False):
 
@@ -182,7 +182,7 @@ def createDiseaseHash(dir,output=False):
     counter=0
     for f in files:
         diseaseName=f[0:f.find('.mtx')]
-        stdm=IO.readInTDM(dir+'/'+f)
+        stdm=IO.readInTDM(dir,f)
         if stdm.shape[0]==1:
             continue
         if diseaseName not in diseaseHashes.keys():
