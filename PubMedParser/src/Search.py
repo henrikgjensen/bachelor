@@ -271,7 +271,8 @@ def runScoreTest3(M_lil, M_csc):
 #                ('Multiple myeloma','overproduction of abnormal plasma cells in the bone marrow and manifested by skeletal destruction, bone pain, and presence of abnormous immunoglobulins'),
 #                ('Trichodental syndrome','fine, dry and short hair with dental anomalies')]
 
-    diseaseList=[("Adrenoleukodystrophy  autosomal  neonatal form","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
+    diseaseList=[("Adrenoleukodystrophy  autosomal  neonatal form","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions"),
+                ("Childhood-onset cerebral X-linked adrenoleukodystrophy","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
 
     printout1=[]
     printout2=[]
