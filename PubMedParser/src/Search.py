@@ -502,8 +502,8 @@ def searchLabel(M_lil, M_csc, queryString, top=20):
 
     resultLabelList = sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
 
-    return resultLabelList[:20]
-
+    #return resultLabelList[:20]
+    return resultLabelList
 
     # for disease in diseaseList:
 
