@@ -314,9 +314,9 @@ def makehist():
     # TEST 2 : From BMJ #
     #~~~~~~~~~~~~~~~~~~~#
 
-    diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
-    graphName="termDoc_bmj_hist_3000.png"
-    title='Score test BMJ - term-doc matrix'
+    #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    #graphName="termDoc_bmj_hist_3000.png"
+    #title='Score test BMJ - term-doc matrix'
 
     # Not stemmed
     #=========================================================================
@@ -345,11 +345,11 @@ def makehist():
     # Stemmed
     #=========================================================================
     ## Mean norm-sqrt (COSINE):
-    x2 = [19,3,55,840,171,83,101,5,35,0,4,29,7]
+    #x2 = [19,3,55,840,171,83,101,5,35,0,4,29,7]
     ## Median norm-sqrt (COSINE):
     #x2 = [89, 151, 800, 1103, 400, 491, 315, 842, 825, 51, 494, 681, 185]
     ## Max norm-sqrt (COSINE):
-    x3 = [2, 10, 136, 1123, 68, 249, 130, 44, 8, 0, 47, 65, 25]
+    #x3 = [2, 10, 136, 1123, 68, 249, 130, 44, 8, 0, 47, 65, 25]
     
     ## Mean norm (COSINE - no sqrt):
     #x2 = [24, 2, 110, 710, 292, 113, 110, 3, 38, 0, 2, 51, 9]
@@ -359,7 +359,7 @@ def makehist():
     #x3 = [20, 11, 427, 1232, 210, 370, 108, 28, 22, 0, 62, 192, 56]
     
     ## Mean not-norm (SUM):
-    x4 = [23, 3, 720, 746, 44, 60, 158, 1, 33, 0, 27, 88, 5]
+    #x4 = [23, 3, 720, 746, 44, 60, 158, 1, 33, 0, 27, 88, 5]
     ## Median not-norm (SUM):
     #x2 = [161, 472, 1708, 1862, 405, 994, 789, 97, 1252, 907, 2135, 1079, 1095]
     ## Max not-norm (SUM):
@@ -407,9 +407,9 @@ def makehist():
     # TEST 2 : From BMJ #
     #~~~~~~~~~~~~~~~~~~~#
 
-    #iseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
-    #raphName="diseaseMatrix_bmj_hist_norm_3000.png"
-    #itle='Score test BMJ - disease matrix'
+    #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
+    #graphName="diseaseMatrix_bmj_hist_norm_3000.png"
+    #title='Score test BMJ - disease matrix'
 
     # Not stemmed
     #=========================================================================
@@ -432,8 +432,21 @@ def makehist():
     #2 = [37,63,872,1963,533,1198,93,4,18,9,230,221,91]
 
     # Not norm (SUM)
-    x1 = [5,1,597,511,29,413,6,1,3,0,3,26,6]
+    #x1 = [5,1,597,511,29,413,6,1,3,0,3,26,6]
     #=========================================================================
+
+    ##########################################################################
+                            # TermLabel - Blind tests #
+    ##########################################################################
+
+    diseases=["Fibrodysplasia","Adrenoleukodystrophy","Papillon Lefevre","Kleine Levin","?"]
+    graphName=""
+    title=""
+
+    x1 = [20,'Not found',6,2,'?']
+
+    # "Adrenoleukodystrophy  autosomal  neonatal form" found at '1718'
+    # "Childhood-onset cerebral X-linked adrenoleukodystrophy" not found
 
     ##########################################################################
 
