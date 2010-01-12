@@ -23,7 +23,7 @@ _stemmer=True
 ############
 
 # Disease label hash (for label lookup)
-_labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash_reduced")
+_labelHash = IOmodule.pickleIn(_hashTablePath,"diseaseHash") #_reduced")
 _labelHash=dict(zip(_labelHash.values(),_labelHash.keys()))
 print "Disease hash loaded"
 
@@ -347,30 +347,48 @@ def runScoreTest4(M_lil, M_csc):
 
     top=3000
 
-    symptomList=[(""),
-                 (""),
-                 ("")]
+    diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
+                ("Cushing's syndrome","hypertension, adrenal, mass"),
+                ("Eosinophilic granuloma", "Hip, lesion, older, child"),
+                ("Ehrlichiosis","fever, bilateral, thigh, pain, weakness"),
+                ("Neurofibromatosis type 1","multiple, spinal, tumours, skin, tumours"),
+                ("Pheochromocytoma","hypertension, papilledema, headache, renal, mass, cafe, au, lait"),
+                ("Creutzfeldt-Jakob disease","ataxia, confusion, insomnia, death"),
+                ("Churg-Strauss syndrome","Wheeze, weight, loss, ANCA, haemoptysis, haematuria"),
+                ("Dermatomyositis","myopathy, neoplasia, dysphagia, rash, periorbital, swelling"),
+                ("Cat Scratch Disease","renal, transplant, fever, cat, lymphadenopathy"),
+                ("TEN","bullous, skin, conditions, respiratory, failure, carbamazepine"),
+                ("MELAS","seizure, confusion, dysphasia, T2, lesions"),
+                ("Brugada syndrome","cardiac arrest sleep")]
 
-    formatString = ['Mean:','Median:','Max:' ]
-    printout2=([],[],[])
+    printout1 = []
+    printout2=[]
 
-    clusterThis = ([],[],[])
+    clusterThis = []
 
-    for symptoms in symptomList:
 
-        symptoms=FilterInterface.stopwordRemover(disease[0])
 
-        resultLists=search(M_lil, M_csc, symptoms, top)
 
-        count=0
-        for results in resultLists:
-            printout2[count].append(results[:20])
-            clusterThis[count].append(resultLists[:50])
-            count+=1
-    cnt = 0
-    for list in printout2:
-        print formatString[cnt], list
-        cnt+=1
+    for disease in diseaseList:
+
+        printout1.append(disease[0][0:5])
+
+        symptoms=FilterInterface.stopwordRemover(disease[1])
+
+        resultList=searchLabel(M_lil, M_csc, symptoms, top)
+
+
+        found=False
+        for result in resultList:
+            if result[0]==disease[0]:
+                printout2.append(resultList.index(result))
+                found=True
+                clusterThis.append(resultList[:20])
+        if not found:
+            printout2.append(" ")
+
+    print printout1
+    print printout2
     print "TEST DONE"
 
     return clusterThis
@@ -484,63 +502,15 @@ def searchLabel(M_lil, M_csc, queryString, top=20):
     results.sort()
     results.reverse()
 
-    ###########################################################################
-    ### For the label matrix: #################################################
-
     resultDic={}
     for item in results[:top]:
         pmid=item[1]
         label=_labelHash[pmid]
         resultDic[label]=item[0]
 
-    ###########################################################################
 
-       ###################################
-       ####### return pmid results #######
+    resultList = sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
 
-    # Reverse and sort the concensus list
-    # resultList_mean=sorted(resultDic1.items(), key=lambda(k,v):(v,k), reverse=True)
-    # resultList_median=sorted(resultDic2.items(), key=lambda(k,v):(v,k), reverse=True)
-    # resultList_max=sorted(resultDic3.items(), key=lambda(k,v):(v,k), reverse=True)
+    return resultList
 
-    # return [resultList_mean,resultList_median,resultList_max]
-
-    
-    #    Return label results ######
-
-    resultLabelList = sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
-
-    return resultLabelList[:20]
-    #return resultLabelList
-
-    # for disease in diseaseList:
-
-    #     printout1.append(disease[0][0:5])
-
-    #     symptoms=FilterInterface.stopwordRemover(disease[1])
-
-    #     resultLists=search(M_lil, M_csc, symptoms, top)
-
-    #     #        print resultLists
-    #     found=False
-    #     count=0
-    #     # for results in resultLists:
-    #     #     found=False
-    #     #     print results
-    #     # for result in results:
-    #     for result in resultLists:
-    #         if result[0]==disease[0]:
-    #             printout2.append(resultLists.index(result))
-    #             #                printout2[count].append(results.index(result))
-    #             found=True
-    #     if not found:
-    #         printout2.append(' ')
-    #             #                printout2[count].append(" ")
-    #             #            count+=1
-
-    # print printout1
-    # #    for list in printout2:
-    # #        print list
-    # print printout2
-    # print "TEST DONE"
 
