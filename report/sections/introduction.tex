@@ -3,13 +3,13 @@
 Due to the vast amount of information available on the Internet today,
 it is near impossible for researchers to have an 'up-to-date'
 knowledge on everything but their own specific field. Even that seems
-to become more and more difficult as new information is added each day\footnote{Take for instance the biomedical
-  database MedLine that grows with over half a million citations per
-  year}
-\cite{CitAddMedLine}. Therefore it can be necessary to employ tools to help gather,
-structure and look for relations or hypothesis within the piles
-information. One very popular method of finding new relations in data
-is through the use of \textit{text mining}.
+to become more and more difficult as new information is added each
+day\footnote{Take for instance the biomedical database MedLine that
+  grows with over half a million citations per year}
+\cite{CitAddMedLine}. Therefore it can be necessary to employ tools to
+help gather, structure and look for relations or hypothesis within the
+piles information. One very popular method of finding new relations in
+data is through the use of \textit{text mining}.
 
 \begin{center}
 {\small``The whole is greater than the sum of its parts'' $\sim$ Aristotle
@@ -60,14 +60,14 @@ the text for a more optimized search.
 The list of rare diseases counts over 6,000 individual cases and has 5
 added to it a week \cite{AboutRareDiseasesOrphanet}. A rare (or
 orphan) disease is classified by the Orpha.net Encyclopedia
-\cite{OrphanetEncyclopedia} as being a disease that affects 1 out of 2,000
-people in Europe and has severe chronic or terminal outcomes (or less
-than 200,000 affected in the USA by standard of
-Rarediseases.info \cite{Rarediseases}). Some
-of these diseases might not be fatal if treated in time but given the
-amount of knowledge your physician would need to carry around to make
-a correct diagnosis (or correctly exclude other potentials), this is
-not always the case.\\
+\cite{OrphanetEncyclopedia} as being a disease that affects 1 out of
+2,000 people in Europe and has severe chronic or terminal outcomes (or
+less than 200,000 affected in the USA by standard of Rarediseases.info
+\cite{Rarediseases}). Some of these \fxnote{fix - some of these disases} diseases might not be fatal if
+treated in time. However, given the amount of knowledge your physician
+would need to carry around to make a correct diagnosis (or correctly
+exclude other potentials), a quick (and correct) treatment is not
+always the case.\\
 
 When being affected by a rare disease, the lack of a correct diagnosis
 --- or the delay spent going from one specialist to another --- will in
@@ -77,18 +77,18 @@ experience with similar cases. Therefore it is important that the
 diagnosing physician has as much help at hand as possible in this
 intrinsic task.\\
 
-In a dialog with Henrik L. J\o rgensen \cite{TheDude} --- chief physician
-at Bispebjerg Hospital --- we found that --- though many systems already exist
-to help physicians in their diagnosis --- there seemed to be a lack of a
-system for specifically diagnosing rare diseases. Systems such as
-PubMed returns numerous results if the symptoms are slightly
-non-specific (more on this in the following chapters). The advantage
-of a specialized system for rare diseases would be that the physician ---
-being in doubt --- would have a chance to make a quick symptom look-up
-before referring or dismissing the patient. According to Jørgensen,
-time is great a problem when treating patients and in the rare event
-of a patient being affected by something unknown, he or she is referred
-to a specialist.\\
+In a dialog with Henrik L. J\o rgensen \cite{TheDude} --- chief
+physician at Bispebjerg Hospital --- we found that --- even though many
+systems already exist to help physicians in their diagnosis --- there
+seemed to be a lack of a system for specifically diagnosing rare
+diseases. Systems such as PubMed returns numerous results if the
+symptoms are slightly non-specific (more on this in the following
+chapters). The advantage of a specialized system for rare diseases
+would be that the physician --- being in doubt --- would have a chance
+to make a quick symptom look-up before referring or dismissing the
+patient. According to Jørgensen, time is great a problem when treating
+patients and in the rare event of a patient being affected by
+something unknown, he or she is referred to a specialist.\\
 
 The inspiration of being able to create an efficient support decision
 system for diagnosing rare diseases was what drove us to initiate this
@@ -132,7 +132,7 @@ cases come from a blind test provided by Henrik L. J\o rgensen.\\ \fxnote{tilfoe
 
 \textbf{Primary tools} \\ 
 We will be using Python 2.6.2 \cite{PythonLanguage} in this project. For access to PubMed, we use
-the python module Bio.Entrez \cite{EntrezProgUtil} while BeautifulSoup
+the Python module Bio.Entrez \cite{EntrezProgUtil} while BeautifulSoup
 \cite{BS} is used for parsing of HTML/XML combined with Urllib2
 \cite{UL2} these are used for crawling the websites. For construction
 of the term document matrix, we use the SciPy package \cite{SciPy}
@@ -141,23 +141,23 @@ functions we use the Numpy package \cite{NumPy}.
 
 \section{Roadmap}
 
-Chapter \ref{Background} covers the different the areas that we harvest our
-data from and how we intend to model it. It provides a background on
-Rarediseases.info, on PubMed and on the MedLine database from where we
-get our primary data. It examines various advantages and
-disadvantages of the models and heuristics that we use, how we measure
-the similarities used to provide a disease score for queries. It also
-looks into the datatypes used to handle the large amounts of
-information. Lastly, it looks at an alternative that might be able to
-greatly expand the information that we have on each mined disease.\\
+Chapter \ref{Background} covers the different \fxnote{fix areas} areas
+that we harvest our data from and how we intend to \fxnote{Model
+  what?} model it. It provides a background on Rarediseases.info,
+PubMed and the MedLine database, our primary data sources. We examine
+various advantages and disadvantages of the models and heuristics that
+we use, how we measure the similarities used to provide a disease
+score for queries, we also look into the datatypes used to handle the
+large amounts of information. Lastly, we looks at an alternative that
+might be able to provide more information on each mined disease.\\
 
-Chapter \ref{Methods} deals with the methods that we have used to implement
-the first prototype and the following branches of the system. It gives
-an overview of the implementation and it amplifies the flexibility of the data
-exchange between the modules and how we have applied several
-heuristics/filters to the data and the vector space. The chapter is
-rounded of with details of the data and technical conclusions of the
-implementation.\\
+Chapter \ref{Methods} deals with the methods that we have used to
+implement the first prototype and the following branches of the
+system. We give an overview of the implementation and we amplify the
+flexibility of the data exchange between the modules and how we have
+applied several heuristics/filters to the data and the vector
+space. The chapter is \fxnote{The chapter is rounded of...} rounded of with details of the data and
+technical conclusions of the implementation.\\
 
 Chapter \ref{ExperimentsResults} contains all the primary tests and
 results of the different schemes used to find the most efficient model
