@@ -529,6 +529,6 @@ def searchLabel(M_lil, M_csc, queryString, top=20):
 
     resultList = sorted(resultDic.items(), key=lambda(k,v):(v,k), reverse=True)
 
-    return resultList
+    return resultList[:20]
 
 
