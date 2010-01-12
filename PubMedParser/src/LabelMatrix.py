@@ -23,7 +23,7 @@ _hashTablesDir=_subFolder+"/"+"hashTables"
 #### Use only stopword-removal as filter: ##############################
 ########################################################################
 
-_stemmer=False
+_stemmer=True
 
 if not _stemmer:
     # Sub-matrix directory
@@ -39,7 +39,7 @@ if not _stemmer:
 ########################################################################
 else:
     # Stemmed sub-matrix directory
-    _subMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed_reduced_90" #svd folder
+    _subMatrixDir=_subFolder+"/"+"new_diseaseMatrices_stemmed" #_reduced_90" #svd folder
     # Stemmed hashtable filenames:
     _termHash="termHash_stemmed"
     _pmidHash="pmidHash_stemmed"
@@ -49,7 +49,7 @@ else:
 label=_label+'_tfidf'
 
 # Name of disease filename
-diseaseHash='diseaseHash_reduced' #svd hash
+diseaseHash='diseaseHash' #_reduced' #svd hash
 
 def getColumnSum(subTermDoc, avg=False):
 
