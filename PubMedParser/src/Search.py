@@ -443,15 +443,33 @@ def runScoreTest5(lil, csc):
     irritable when woken, highly increased sexual appetite and hunger.
 
     ============================================================================
+    5) The patient is a male child presenting at birth with numerous
+    malformations. He had midfacial retraction with a deep groove under the
+    eyes, and hypertelorism. A short nose with a low nasal bridge and large
+    low-set ears were noted. He had a wide mouth and retrognathia.
+    Hypertrichosis with bright reddish hair and a median frontal cutaneous
+    angioma were present. The neck was short with redundant skin. Bilateral
+    inguinal hernias, hypospadias with a megameatus, and cryptorchidism were
+    noted.
+    ----------------------------------------------------------------------------
+    System symptom query:
+    Male child, malformations at birth, midfacial retraction with a deep groove
+    under the eyes, and hypertelorism, short nose with a low nasal bridge and
+    large low-set ears, wide mouth and retrognathia. Hypertrichosis with bright
+    reddish hair and a median frontal cutaneous angioma, short neck with
+    redundant skin, Bilateral inguinal hernias, hypospadias with a megameatus,
+    and cryptorchidism
+    ============================================================================
     """
 
-    diseaseList=[("Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine and osteogenesis at biopsy"),
-                 ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
-                 ("Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth.")]
+    #diseaseList=[("Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine and osteogenesis at biopsy"),
+    #             ("Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions"),
+    #             ("Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth.")]
 
     #diseaseList=[("Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and irritable when woken, highly increased sexual appetite and hunger")]
 
     #diseaseList=[("Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
+    diseaseList=[("Male child, malformations at birth, midfacial retraction with a deep groove under the eyes, and hypertelorism, short nose with a low nasal bridge and large low-set ears, wide mouth and retrognathia. Hypertrichosis with bright reddish hair and a median frontal cutaneous angioma, short neck with redundant skin, Bilateral inguinal hernias, hypospadias with a megameatus, and cryptorchidism")]
 
 
     printout2=[[],[],[]]
