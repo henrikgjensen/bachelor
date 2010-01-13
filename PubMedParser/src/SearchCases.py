@@ -14,7 +14,7 @@ _hashTablePath = _subFolder + "/" + "hashTables"
 # Set True for Porter-stemming
 _stemmer = True
 # For term document set to True, for DiseaseMatrix set to false.
-_termdocumentmatrix = True
+_termdocumentmatrix = False
 # Cosine measure = True, Sum measure = False
 _cosineMeasure = False
 ############
