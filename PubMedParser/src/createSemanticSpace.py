@@ -180,7 +180,7 @@ def getSemanticKeywords(top=20):
     #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced90_outlierRemoved5"
 
     scoreDic={}
-    totalTermDic=[]
+    totalTermDic={}
     for disease in diseaseList:
 
         filename=disease[0]
