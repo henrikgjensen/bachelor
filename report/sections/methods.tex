@@ -35,10 +35,10 @@ records per disease-search and a description if one is found (see
 section \ref{SIR}). This allows the third module \textit{TermDoc} to
 read in the data, convert all the disease to sub term document
 matrices and construct a large term document matrix from the data from
-the sub matrices, saving the term document matrix in Matrix Market
+the sub-matrices, saving the term document matrix in Matrix Market
 format (see section \ref{MatrixMarket}). As an option one can be include a filter
 just before the construction of the large term document matrix (or on
-the sub matrices), e.g. a stemmer and/or stop word remover or other
+the sub-matrices), e.g. a stemmer and/or stop word remover or other
 kinds of filters, like log-transformation of the term counts and the
 much used term frequency - inverse document frequency (TF-IDF). The
 resulting data from the TermDoc module can now be used for
@@ -54,7 +54,7 @@ MedLine record can be returned from different diseases). We then sum
 up the score from each MedLine record under the given disease names
 and sort the total scores. Those with the highest total score has the
 greatest correlation with the search query and therefore these are the
-most likely to be our disease.\\
+most likely to be our disease.
 
 The modular design of the prototype system allows the different
 modules to be replaced with more efficient modules or modules that
@@ -71,8 +71,8 @@ simplifying our data, this model is a reduced version of the term
 document matrix and is a lot easier and faster to work with. It
 provides a testing environment and, as we shall see later (Afsnit om
 histogrammer\fxnote{REF: til histogram-sammenlignings-tests af label
-  og term-doc}), the disease matrix does not score that far from the
-more detailed term document matrix.\\
+  og term-doc}), the disease matrix scores fairly close to the
+more detailed term document matrix.
 
 The disease matrix is based on the same data as the term document
 matrix. It differs in the way that it contains all the information
@@ -87,15 +87,15 @@ applied to the disease matrix just as easily.
 \subsection{Filtering for new matrices\label{FilteringMatrix}}
 
 Adding filters to the prototype system spawns new matrices to work on
-(as shown on in the figure below\fxnote{WHAT FIGURE???}). The sub matrices generated from the
+(as shown on in the figure below\fxnote{WHAT FIGURE???}). The sub-matrices generated from the
 MedLine records are generated both as stemmed on non-stemmed. From
 these, two large term document matrices are generated and two
 different disease matrices. Adding another heuristic, the large
-matrices are TF-IDF transformed (with and without normalization).\\
+matrices are TF-IDF transformed (with and without normalization).
 
-Yet another pool of sub matrices are created by SVD and dimensionality
+Yet another pool of sub-matrices are created by SVD and dimensionality
 reduction, leading to yet another large disease matrix to perform
-tests and potential keyword extractions on.\\
+tests and potential keyword extractions on.
 
 Again we mention that filters and heuristics should be pretty easy to
 add since only the data formats in between the modules needs to be
@@ -123,25 +123,25 @@ analysis.
 \subsubsection{Overview and Purpose}
 The crawler is the first step in creating a database of MedLine
 records, containing information about rare diseases, since its main
-purpose is to gather information about what to search for in PubMed.\\
+purpose is to gather information about what to search for in PubMed.
 
 As described in \ref{Rarediseases_info}, Raredisease.info contains a
 list of rare diseases and a varying degree of information on each
-specific disease. We were referenced to the website by Dr. Henrik
-Jørgensen \cite{TheDude}. A Crawler to collect information from the
+specific disease. We were referenced to the website by Henrik L.
+J\o rgensen \cite{TheDude}. A Crawler to collect information from the
 site, was the first module to be made. The crawler goes through every
 disease from A to Z and 0-49 and saves the names of the diseases and
 (if any exist) the synonyms, the specialized search string for PubMed
 and a description of the disease. This information is then used by a
-SIR-module which is described in the following section \ref{SIR}.\\
+SIR-module which is described in the following section \ref{SIR}.
 
 Our main module is named \textit{DiseaseCrawler}. It crawls the
 Rarediseases.info webpage and gathers information as described
 above. It is a rather large module since it has to take a series of
 anomalies into account when crawling Rarediseases.info (like
-disfunctional subpages, strange characters and unexpected
+dysfunctional subpages, strange characters and unexpected
 white-spaces). It utilizes the auxiliary modules \textit{TextCleaner}
-and \textit{IOmodule}, described in section \ref{AuxModules}.\\
+and \textit{IOmodule}, described in section \ref{AuxModules}.
 
 
 \subsubsection{Methods and data description}
@@ -175,29 +175,29 @@ pre-calculated pubmed searches.
 \subsection{SIR (Search and Information Retrieval)\label{SIR}}
 
 \subsubsection{Overview and Purpose}
-The SIR-module reads in the information saved by the crawler (or any
+The \textit{PubmedSIR}-module reads in the information saved by the crawler (or any
 other crawler). It uses Entrez for accessing, searching and retrieving
 MedLine records from PubMed. The information contained within the
 MedLine record represents our knowledge base about the diseases. The
-SIR-module is set to search in such a way that we hope to optimize
+\textit{PubmedSIR}-module is set to search in such a way that we hope to optimize
 getting records that are actually relevant to the given disease. A
 maximum of 500 Medline records are downloaded per disease using a two
-phase search, all containing an abstract. \\
+phase search, all containing an abstract.
 
 The main module is called \textit{PubmedSIR} and is used to search and
-retrieve MedLine records from the PubMed database.\\
+retrieve MedLine records from the PubMed database.
 
 As mentioned above the searching is split into two phases where it
 looks for at most 250 MedLine records in each phase. It first examines
 whether there is a handcrafted search string to search for or whether
 the disease has a PubMed or OMIM unique-id (uid). When searching for
-the handcrafted search string, PubmedSIR automatically adds the
-additional search options 'AND hasabstract[text]' to the string. This
+the handcrafted search string, \textit{PubmedSIR} automatically adds the
+additional search options ``AND hasabstract[text]'' to the string. This
 makes sure that all the MedLine records, that are returned, contains
 an abstract. This is unfortunately not possible when dealing with
 PubMed/OMIM uids which means that we have to employ other means to
 ensure that the returned MedLine records contains an abstract. This is
-done by the method \textit{getMedLineList} which takes a list of
+done by the method \texttt{getMedLineList} which takes a list of
 PMIDs, downloads them from PubMed and runs through all the MedLine
 records, selecting only those containing an abstract. Making a local
 cleaning to ensure that the MedLine records contain abstracts also
@@ -208,9 +208,15 @@ to continue with the information we have available. Alternatively
 additional search options could be to also include constraints for
 getting only abstracts in english, only records published after a
 certain date etc. For options see the site PubMed help search
-\cite{PubmedHelpSearch}\\
+\cite{PubmedHelpSearch}
 
-PubmedSIR relies primarily on the function \textit{getArticleIDsFromMultipleSources} for searching across the two major databases of Entrez - PubMed and OMIM. We have chosen not to remove duplicate MedLine records between the first and second phase of the search because it is our belief that if a record is present in both searches, the terms is worth counting twice. The searches are done as the described below. \\
+PubmedSIR relies primarily on the function
+\textit{getArticleIDsFromMultipleSources} for searching across the two
+major databases of Entrez - PubMed and OMIM. We have chosen not to
+remove duplicate MedLine records between the first and second phase of
+the search because it is our belief that if a record is present in
+both searches, the terms is worth counting twice. The searches are
+done as the described below.
 
 First phase of the search:
 \begin{itemize}
@@ -235,20 +241,24 @@ Second phase of the search:
 
 \item Calculate all possible combinations of the synonyms.
 
-\item Search for the combined synonym. If a combination returns 0 results then eliminate all future searches that contains this combination since pubmed put in 'AND' between search terms ( meaning that future searches containing this combination will also return 0 results).
+\item Search for the combined synonym. If a combination returns 0
+  results then eliminate all future searches that contains this
+  combination since pubmed put in 'AND' between search terms ( meaning
+  that future searches containing this combination will also return 0
+  results).
 
 \item Fill up until we get at most 500 MedLine records.
 
 \end{itemize}
 
 \subsubsection{Method and data description}
-The primary function of the module is \textit{gatherOfAllThings},
+The primary function of the module is \texttt{gatherOfAllThings},
 which reads in the information that were saved by the crawler. This
-information is passed onto \textit{getArticleIDs} that in turn calls
-\textit{getArticleIDsFromMultiSource} which searches the items
-specified within the disease dictionary. getArticleIDs is also the
+information is passed onto \texttt{getArticleIDs} that in turn calls
+\texttt{getArticleIDsFromMultiSource} which searches the items
+specified within the disease dictionary. \texttt{getArticleIDs} is also the
 function that keeps track of the number of MedLine records that are
-downloaded for each disease.\\
+downloaded for each disease.
 
 A typical dictionary read in from the crawler looks as follows:
 
@@ -261,7 +271,7 @@ A typical dictionary read in from the crawler looks as follows:
 }
 \end{center}
 
-gatherOfAllThings completes by performing a writeout of the MedLine
+\texttt{gatherOfAllThings} completes by performing a writeout of the MedLine
 records to the disk in the following format:
 
 \begin{center}
@@ -271,7 +281,7 @@ records to the disk in the following format:
 }
 \end{center}
 
-The SIR module uses the following auxillary modules (see
+The \textit{PubmedSIR} module uses the following auxillary modules (see
 section\ref{AuxModules}):
 \begin{itemize}
   \item \textit{SearchTermCombiner} which is a simple module that is used to
@@ -285,15 +295,15 @@ For more information about the gathered dataset, see section \ref{Database}.
 \subsection{TermDoc\label{TermDoc}}
 
 \subsubsection{Overview and purpose}
-The information gathered from the SIR-module now needs to be processed
-to allow queries to be made on it. An often used method in Information
-Retrieval (IR) is the vector space model \ref{VectorSpace} that
-represents the gathered information as document vectors (in a term
-document matrix). The result is that queries to the system can be made
-using a query vector, getting a similarity score/measure against all
-documents contained within the model. In the following, we will go
+The information gathered from the \textit{PubmedSIR}-module now needs to be
+processed to allow queries to be made on it. An often used method in
+Information Retrieval (IR) is the vector space model \ref{VectorSpace}
+that represents the gathered information as document vectors (in a
+term document matrix). The result is that queries to the system can be
+made using a query vector, getting a similarity score/measure against
+all documents contained within the model. In the following, we will go
 through the creation of the sub term document matrices, the large term
-document matrix and the compressed disease matrix.\\
+document matrix and the compressed disease matrix.
 
 We use a two-phase approach to construct the complete term document
 matrix.
@@ -308,10 +318,10 @@ two different terms). We keep single letters (except for 'a' which
 counts as a stop word), because many diseases contains single letters
 as identification of which type they are, e.g. 'Hemoglobin C
 disease'. It is an fault in our system that we do not keep 'a', but it
-was found to late. \\
+was found to late.
 
 The second phase simply goes through the sub term document matrices
-and fill the term count values into complete term document matrix.\\
+and fill the term count values into complete term document matrix.
 
 There are two main modules. The first, called \textit{TermDoc}, is
 able to make sub term document matrices from a folder containing
@@ -323,57 +333,61 @@ instead of document vectors.
 \subsubsection{Method and data describtion}
 The main function for creating the sub term document matrices from a
 folder containing MedLine records is
-\textit{medlineDir2MatrixDir}. This function requires a hash table
+\texttt{medlineDir2MatrixDir}. This function requires a hash table
 containing hashes for all the terms and pmids of the MedLine
 record. The need for hash tables comes from the fact that the data
 structures, we have chosen, does not support string entries. So hashes
-can be made by the \textit{createTermAndPmidHashes}. This function
+can be made by the \texttt{createTermAndPmidHashes}. This function
 goes through a folder containing MedLine records, while building a
-term and pmid hash table. When medlineDir2Matrix has read in the hash,
-it proceeds by calling \textit{gatherMatrixData} on each file within
-the MedLine record folder. gatherMatrixData extracts information from
-the file by the use of the auxillary module \textit{RecordHandler} (see section
-\ref{AuxModules}). The information can be specified by the user -
-title, abstract and MeSH terms are chosen by default, as these seem to
-give a good overall description of a disease. This is also the place
-to perform stop word removal and stemming. We have chosen to create
-both a stemmed and an unstemmed matrix in order to test what performs
-best. medlineDir2Matrix then calls \textit{populateMatrix} with the
-data from gatherMatrixData. This creates and returns a term document
-matrix. Last it calls IOmodule (see section \ref{AuxModules}) to write
+term and pmid hash table. When \texttt{medlineDir2Matrix} has read in
+the hash, it proceeds by calling \textit{gatherMatrixData} on each
+file within the MedLine record folder. \texttt{gatherMatrixData}
+extracts information from the file by the use of the auxillary module
+\textit{RecordHandler} (see section \ref{AuxModules}). The information
+can be specified by the user --- title, abstract and MeSH terms are
+chosen by default, as these seem to give a good overall description of
+a disease. This is also the place to perform stop word removal and
+stemming. We have chosen to create both a stemmed and an unstemmed
+matrix in order to test what performs best. \texttt{medlineDir2Matrix} then
+calls \texttt{populateMatrix} with the data from
+\texttt{gatherMatrixData}. This creates and returns a term document
+matrix. Last it calls \textit{IOmodule} (see section \ref{AuxModules}) to write
 the created term document matrix to the disk in Matrix Market format
-(see section \ref{MatrixMarket}).\\
+(see section \ref{MatrixMarket}).
 
 For creation of the large term document matrix, the function
-\textit{createTermDoc} is used. This goes through the folder containing
+\texttt{createTermDoc} is used. This goes through the folder containing
 the sub term matrices and places the term count for each of the
 MedLine records in the right place in the term document matrix. This
 is basically done by looking up in the hash table for were to place
 them. If the same MedLine record exists in two different diseases, the
 term counts are summed. When done, it is written to the disk in Matrix
-Market format.\\
+Market format.
 
 The disease matrix is created by calling
-\textit{constructDiseaseMatrix} with a folder of sub term document
+\texttt{constructDiseaseMatrix} with a folder of sub term document
 matrices as input. It then runs through every of the sub term document
-matrices and calls \textit{getColumnSum} for each of them. This sums
-the sub matrices to a single vector and returns one row for each of
-the diseases which can be used to represent it. getColumnSum has the
-option of making the average column sum instead of just summing
-them. This option can be used to normalize the disease vectors, should
-it be needed. The disease matrix is, like the term document matrix,
-based on hash tables. These can be created by running
-createDiseaseHash on a folder containing sub term document matrices.\\
+matrices and calls \texttt{getColumnSum} for each of them. This sums
+the sub-matrices to a single vector and returns one row for each of
+the diseases which can be used to represent it. \texttt{getColumnSum}
+has the option of making the average column sum instead of just
+summing them. This option can be used to normalize the disease
+vectors, should it be needed. The disease matrix is, like the term
+document matrix, based on hash tables. These can be created by running
+\texttt{createDiseaseHash} on a folder containing sub term document
+matrices.
 
-The TermDoc module uses the following auxillary modules (see section
-\ref{AuxModules}):
+The \textit{TermDoc} module uses the following auxillary modules (see
+section \ref{AuxModules}):
 
 \begin{itemize}
-  \item RecordHandler, which is used for extraction with the records contained
-within the MedLine records, e.g. 'AB' for abstract etc.
+  \item \textit{RecordHandler}, which is used for extraction with the
+    records contained within the MedLine records, e.g. 'AB' for
+    abstract etc.
   \item \textit{FilterInterface} used to get access to Porter stemmer and stop
 word removal of string.
-  \item IOmodule and TextCleaner as mentioned in the previous section.
+  \item \textit{IOmodule} and \textit{TextCleaner} as mentioned in the
+    previous section.
 \end{itemize}
 
 \fxnote{evt lidt statestik}
@@ -396,7 +410,7 @@ information\footnote{Using regular expression, it is possible to
   preserve the above string as: '1q42.4-qter', 'duplication' but we do
   not believe it important for the prototype}. The simple string
 cleaning also allows the user to use other notations for the same
-gene\footnote{'1q42.4-qter' and 1q42-4-qter amounts to the same}.\\
+gene\footnote{'1q42.4-qter' and 1q42-4-qter amounts to the same}.
 
 Another common technique in IR is to use stop word removal. This is
 because words like 'this', 'the' and 'a' are very common and thereby
@@ -405,17 +419,17 @@ model. In some circumstances it is also normal to remove single letter
 characters but as some diseases are characterized by having a special
 type (as mentioned in \ref{TermDoc}), we choose not to remove single
 letters. However, our stop word remover unfortunately does remove 'a'
-due to its frequency in the english language. As mentioned earlier we
-did not have time to correct this error.\\
+due to its frequency in the English language. As mentioned earlier we
+did not have time to correct this error.
 
 \fxnote{evt lidt statestik}
 
-\textit{Some numbers about filtering}\\
+\subsubsection{Some numbers about filtering}
 Making a 'raw' term document matrix, without any filtering results in
 1,945,966 terms. After sanitizing the information there are 465,220 terms 
 and after stemming there is a further reduction to 390,766 terms.
 There are a couple of modules involved with filtering. We have made a
-FilterInterface module to provide easy access to the different
+\textit{FilterInterface} module to provide easy access to the different
 filters.
 
 \subsubsection{FilterInterface}
@@ -430,15 +444,14 @@ modules \textit{StopwordRemover}, \textit{Stemmer} and
 The stop word remover allows for list of stop words to be supplied by
 the user. By default it uses the nltk.corpus.stopwords of english stop
 words which contains 127 stop words. There are other languages present
-in the stop word corpus for a total of 2431 words, e.g. german,
-danish, swedish norwegian and others. We do not know if any important
-words are removed due in a multi language stop word removal, and have
-therefore chosen not to remove anything but english stop words. We
-assume that most of our information is in english and have chosen only
-to remove english stop words. It is possible to setup additional
-options within the SIR (section \ref{SIR}) so that it will only gather
-MedLine records containing abstracts in english but this is preserved
-for a later version of the system.
+in the stop word corpus for a total of 2431 words, e.g. German,
+Danish, Swedish, Norwegian and others. We do not know if any important
+words are removed due in a multi language stop word removal. We assume
+that most of our information is in English and have chosen only to
+remove English stop words. It is possible to setup additional options
+within the \textit{PubmedSIR} module (section \ref{SIR}) so that it will
+only gather MedLine records containing abstracts in english but this
+is preserved for a later version of the system.
 
 \subsubsection{Stemmer}
 To preserve flexibility our system allows another stemmer to be sent
@@ -452,21 +465,21 @@ on 'this' results in 'thi' which is not included in the default stop
 word corpus.
 
 \subsubsection{TFIDFMatrix}
-The TFIDFMatrix module is used to perform the TF-IDF transformation of
-a term document matrix using the equation from section \ref{TFIDF}. It
-performs the transformation by reading the term frequency (tf) from an
-original matrix only containing term counts and then by making a
-log-transformation of the tf. For finding the inverse document
-frequency (IDF), we have made a precalculated hash table containing
-the number of documents that the different terms are present in such
-that $\mathit{idf} = \frac{D}{\sum_{d\prime = 1}\delta_{d\prime
-    w}}$. We then store the calculation of $\mathit{tf} \cdot
-\mathit{idf}$ at the terms position within the term document
-matrix. The transformed term document matrix is then saved to the
-disk. The module then performs normalization of the document vector to
-make sure that each document has the same influence on the result of a
-query (and is used for the enhancing the speed of the cosine
-similarity calculation described in section
+The \textit{TFIDFMatrix} module is used to perform the TF-IDF
+transformation of a term document matrix using the equation from
+section \ref{TFIDF}. It performs the transformation by reading the
+term frequency (tf) from an original matrix only containing term
+counts and then by making a log-transformation of the tf. For finding
+the inverse document frequency (IDF), we have made a precalculated
+hash table containing the number of documents that the different terms
+are present in such that $\mathit{idf} = \frac{D}{\sum_{d\prime =
+    1}\delta_{d\prime w}}$. We then store the calculation of
+$\mathit{tf} \cdot \mathit{idf}$ at the terms position within the term
+document matrix. The transformed term document matrix is then saved to
+the disk. The module then performs normalization of the document
+vector to make sure that each document has the same influence on the
+result of a query (and is used for the enhancing the speed of the
+cosine similarity calculation described in section
 \ref{VectorSimilarity}). The normalization is done as usual vector
 normalization $\frac{\overrightarrow{a}}{||a||}$.
 
@@ -479,12 +492,12 @@ or combining synonyms into search queries.
 \subsubsection{IOmodule}
 Performs various I/O function. For instance when a module is writing
 or reading objects like hash tables to/from the disk, it simply calls
-the \textit{pickleIn} or \textit{pickleOut} function with a path. The
+the \texttt{pickleIn} or \texttt{pickleOut} function with a path. The
 object is then written or read. It is also able to return a sorted
 list of file references from a folder which is very useful when one
 needs to keep track on how far the process has come. This module also
 allows for term document matrices to be written or read from the disk
-using the \textit{Matrix Market} format (see section\ref{MatrixMarket}).
+using the Matrix Market format (see section\ref{MatrixMarket}).
 
 \subsubsection{TextCleaner}
 This module performs string manipulation like removing tags from HTML
@@ -493,8 +506,8 @@ characters, decoding various HTML characters. Most of these task are
 obtained by return a regular expression for the specific task.
 
 \subsubsection{RecordHandler}
-The RecordHandler module is used to read information fields from
-MedLine records which it returns as a dictionary containing the
+The \textit{RecordHandler} module is used to read information fields
+from MedLine records which it returns as a dictionary containing the
 requested fields.
 
 \subsection{SearchInterface}
@@ -511,7 +524,7 @@ process a query.
 \subsubsection{SearchInterface}
 This is the simple search interface that allows the different search
 methods to be called, hence acting as a gateway like the
-FilterInterface described earlier.
+\textit{FilterInterface} described earlier.
 
 \subsubsection{CosineMeasure}
 This module is used to perform a search using the cosine measure for
@@ -523,7 +536,7 @@ should resemble usual cosine measuring between vector when performed
 on a pre-normalized vector space (see section \ref{VectorSimilarity}).
 
 \subsubsection{SumMeasure}
-The SumMeasure module is used to perform a different kind of
+The \textit{SumMeasure} module is used to perform a different kind of
 measure. It performs a summing of the entries in the in the document
 vector according to the terms of the query vector. It basically acts
 as the cosine measure but is used on a vector space that is not
@@ -546,24 +559,24 @@ can be used to get the total number of pmids including duplicates, the
 number of MedLine records containing a title or the number of diseases
 that contains a description. In addition to this, we made a module to
 perform hierarchical clustering of the diseases of top 20 results
-returned by our system.\\
+returned by our system.
 
 The modules, that are part of the data analysis suite, is
 \textit{Cluster} which performs the clustering,
 \textit{DistanceMeasure} which implements different
-distance/similarity measures to be used within Cluster and
+distance/similarity measures to be used within \textit{Cluster} and
 \textit{Stat} which is able to count various information fields
 contained within the MedLine records.
 
 \subsubsection{Cluster}
-The Cluster module contains various functions in relation to
+The \textit{Cluster} module contains various functions in relation to
 hierarchical clustering and drawing of dendrograms of the returned
 clusters. The hierarchical clusterings has unfortunately not been made
 as generic as it could be. For now, slight modifications are required
 between running either on a disease matrix / term document matrix or a
 sub term document matrix. We have no intentions of performing a full
 clustering on a term document matrix, as it simply contains too many
-entries to consider clustering -at least with the resources available
+entries to consider clustering - at least with the resources available
 currently. The hierarchical clustering and dendrogram functionalities
 are based on Collective Intelligence \cite{CollectiveIntelligence}
 with slight modification to adopt it for our data.
@@ -574,7 +587,7 @@ sparse and dense matrices.
 
 \subsubsection{Stat}
 This module is able to count the various different fields within the
-MedLine records, e.g. how many have a title, a MeSH, etc. It is also
+MedLine records, e.g. how many a title, a MeSH, etc. It is also
 able to count how many duplicate pmids there is.
 
 \section{The database\label{Database}}
@@ -586,11 +599,11 @@ Rarediseases.info. The files reside in a subfolder called
 one of these files it is possible to see exactly what information have
 been used to retrieve the medline records for a specific disease. The
 second part of our raw dataset is the information gathered from PubMed
-by the SIR module. This information can be find in the subfolder
+by the \textit{PubmedSIR} module. This information can be find in the subfolder
 \textit{medline\_records}. Again we have chosen to store it as plain
 text files which enable the use of GNU unix/linux command line tools
 for quick looks inside or using grep to look for specific words inside
-a disease file.\\
+a disease file.
 
 Due to the limit on 500 abstracts per disease and with a total of
 6,881 different rare diseases from Raredisease.info, the theoretical
@@ -609,7 +622,7 @@ though the diseases are rare) some of them will return a lot of
 information. Kidney cancer, though on the list of rare diseases, will
 return 51,393 hits (\date{January 3, 2010}) with a search on PubMed
 (only those with an abstract) and this is without considering any
-synonyms or possibly handcrafted search terms. \\
+synonyms or possibly handcrafted search terms.
 
 We have choosen to remove the 505 empty disease entries from our
 dataset because, without any information about these diseases, our
@@ -633,7 +646,7 @@ based on incomplete topics like rare diseases, its important to make
 proper error handling and logging which diseases were missed in the
 first run since errors are near certainty. As a sidenote on this, the
 BeautifulSoup module is a really useful tool when crawling HTML since
-it is able to correct and prettify many common website errors.\\
+it is able to correct and prettify many common website errors.
 
 Gathering data from PubMed was performed by the Entrez module which on
 several occasions crashed. This gave birth to the need to gather the
@@ -648,7 +661,7 @@ we broke any laws or rules but because most websites today protects
 themselves from harmful bots, replay attacks and other risks to the
 website. If you do not have permission to find information on the
 website, at least make sure you give your credentials, browser type,
-etc. with the crawler.\\
+etc. with the crawler.
 
 Constructing a term document matrix requires a sparse data structure
 for being stored on disk and in memory but when working with document
@@ -657,7 +670,7 @@ operations. Choosing to rewrite some of the more computational parts
 to a low level language like C would also increase performance. Saving
 intermediate steps along the way while making term document matrices
 also allows other preprocessing steps to be performed, if needed later
-in the project and is recommendable for large projects.\\
+in the project and is recommendable for large projects.
 
 When querying the matrices, it is important to try several different
 methods since the most well known or obvious one, might not be the

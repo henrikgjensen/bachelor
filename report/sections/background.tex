@@ -20,20 +20,20 @@ physician should not stand alone with this decision-making. If the
 symptoms of the patient seem strange or out of the ordinary, a quick
 list of qualified diagnostic guesses from a automated supporting
 decision-system would be able to help the physician in falsifying or
-justifying the diagnosis.\\
+justifying the diagnosis.
 
 Though already existing sources like Orpha.net\fxnote{REF 2.6 This is missing} and
 Rarediseases.info (see section \ref{Rarediseases_info}) aims to aid researchers and
 physicians in dealing with rare diseases, these sites are primarily
 based on human information retrieval. This gives them a higher
 accuracy but it also renders them unable to keep up with the growing
-amounts of research and information available.\\
+amounts of research and information available.
 
 PubMed (see section \ref{PubmedEntrez}) is today one of the largest and most used
 biomedical article database-interfaces. It provides access to millions
 of abstracts and citations. Though rich in information, this is
 also its Achilles heel when it comes to describing less popular
-subjects like rare diseases.\\
+subjects like rare diseases.
 
 The prototype of the supporting decision-system presented in this
 paper will be based on specialized database for rare diseases that
@@ -62,7 +62,7 @@ glossary, research, PubMed searches, OMIM (Online Mendelian
 Inheritance in Man \cite{OMIM} \fxnote{Might write OMIM twice})
 searches and a description of the disease. None of the resources are
 mandatory though, and in certain cases nearly all that is mentioned on
-a disease is its name.\\
+a disease is its name.
 
 The Rarediseases.info website contains --- at the time of writing --- a list
 of 6881 diseases classified as being rare. A rare disease is by
@@ -76,7 +76,7 @@ base for creating a database of rare diseases.
 \subsubsection{Database interface}
 There are two main types of links available at Rarediseases.info for
 use in relation to MedLine. The first is a handcrafted PubMed search
-string. An example of this is:\\
+string. An example of this is:
 
 {\small
 \href{http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&Cmd=DetailsSearch&Term=Ledderhose[All+Fields]+AND+("disease"[MeSH+Terms]+OR+"disease"[All+Fields])}{http://www.ncbi.nlm.nih.gov/sites/entrez?Db$=$pubmed\&Cmd$=$DetailsSearch\&Term$=$ Ledderhose[All$+$Fields]$+$AND$+$("disease"[MeSH$+$Terms]$+$OR$+$"disease"[All$+$Fields])} \\
@@ -89,21 +89,21 @@ and a condition being that either the MeSH-terms should contain
 (for a description of fields see
 \cite{PubMedHelpSearchFieldDescriptionsTags}). This type of link can
 return anything from zero to several thousand articles, based on the
-search within PubMed.\\
+search within PubMed.
 
 The second type of link is an OMIM link. These links only return one
 MedLine record and are primarily concerned with diseases linked to the
 human genome. They usually contain several links to gene sequences and
-literature references and are perhaps mostly research-oriented.\\
+literature references and are perhaps mostly research-oriented.
 
 Rarediseases.info also lists synonyms of the disease which can be used
 to search PubMed for more information on the disease. If a search on
 the disease name gives none or few results, there might be a chance
-that a search on its synonyms will.\\
+that a search on its synonyms will.
 
 Last, there is a handcrafted description of the disease which could be
 useful for later classification of the disease in a specialized
-database.\\
+database.
 
 Keeping in mind that none of the extra information above might be
 present, we will be using one of the available links and the name of
@@ -115,14 +115,16 @@ OMIM link, hoping these also will contain valuable information
 relevant to the disease. The handcrafted descriptions is retrieved,
 but currently not used in our system, though this could provide
 valuable informtion about the diseases. \fxnote{Henvisning til
-  implementerings afsnit i kap 3} \\
+  implementerings afsnit i kap 3}
 
 As mentioned, Rarediseases.info is far from complete in its level of
 detail and is based solely on rare diseases from an American
 view. Though focused on Europe and thereby perhaps incomparable, an
 alternative like Orpha.net (section \ref{Orphanet}) seems to be
 containing more information per disease than Rarediseases.info and it
-contains a longer list of rare diseases.
+contains a longer list of rare diseases. We do not use Orpha.net
+because we sought permission to text mining their site, but have
+recieved no answer to the request.
 
 \subsection{PubMed and Entrez\label{PubmedEntrez}}
 
@@ -130,7 +132,7 @@ contains a longer list of rare diseases.
 PubMed \cite{PubMedFactSheet} is the worlds largest resource of free
 information on biomedical literature, containing abstracts and
 citations of more than 19 million articles. This makes PubMed the
-ideal candidate for text mining biomedical research.\\
+ideal candidate for text mining biomedical research.
 
 Information is retrieved from PubMed through Entrez
 \cite{Entrez}. Entrez is provided by the National Center for
@@ -138,21 +140,21 @@ Biotechnology Information \cite{NCBIFactSheet} and is a text-based
 search and retrieval system providing access to services such as
 PubMed, nucleotide and protein sequences, protein structure, complete
 genomes, OMIM and many others (currently a total number of 35
-different databases).\\
+different databases).
 
-PubMed is a popular source of information when it comes to text
-mining and there are many projects that use the available information
-to extract knowledge and make relations. A good example is Chilibot
+PubMed is a popular source of information when it comes to text mining
+and there are many projects that use the available information to
+extract knowledge and make relations. A good example is Chilibot
 \cite{Chilibot} that can be used to extract relations between genes,
 proteins or keywords by searching through PubMed abstracts. Another
 example is iHOP \cite{IHOP} (information-Hyperlinked Over Proteins)
 that allows the user to search for protein-networks. In iHOP, the user
 types in a protein name and the system then searches PubMed for
-occurences of that name. A snippet of the found abstracts is returned to the
-user along with the information on where it was found and protein
-names are marked out. When marking the protein name, it provides a
-confidence level to the identified proteins names, based on evidence
-in relation to the protein name.\\
+occurences of that name. A snippet of the found abstracts is returned
+to the user along with the information on where it was found and
+protein names are marked out. When marking the protein name, it
+provides a confidence level to the identified proteins names, based on
+evidence in relation to the protein name.
 
 Since the human genome project, many text mining systems deals with
 mining or identifying gene or protein interactions. There exists some
@@ -164,19 +166,26 @@ Ischaemic heart disease using machine learning techniques on four
 diagnostic levels: ECG\footnote{electrocardiogram} at rest, sequential
 ECG during controlled exercise, myocardial scintigraphy and coronary
 angiography. Where the diagnosis is performed as 'heart disease'
-vs. 'no heart disease' \cite{SVMHeartDiseaseClassification}.\\
+vs. 'no heart disease' \cite{SVMHeartDiseaseClassification}.
 
 Most diagnosis systems that function well today are based on machine
-learning and image analysis. Wang et. al \cite{Wang1999115} looks at
-the performance of a system to diagnose breast canser using either
-image features, non-image features or both. The hybrid system
-combining both feature sets in diagnosis, performed the best.\\
+learning and image analysis. Wang et. al looks at the performance of a
+system to diagnose breast canser using either image features,
+non-image features or both. The hybrid system combining both feature
+sets in diagnosis, performed the best \cite{Wang1999115}.
 
-Text mining systems are systems concerned with hypothesis generation,
-building knowledge bases, identifying gene/proteins and their
-interaction or with identifying malignancy terms in MedLine records
-like \cite{AutomatedMalignancyRecognition} where this is done by
-structuring the information and looking for patterns within it.
+Text mining systems are concerned with hypothesis generation, building
+knowledge bases, identifying gene/proteins and their interaction or
+with identifying malignancy terms in MedLine records. All these things
+are done by structuring the information and looking for patterns
+within it.
+
+We have not been able to find other articles on the subject of
+automated diagnosis of rare diseases (i.e. many different rare
+diseases given a symptom list). There are system that deals with rare
+diseases, but these are specialized and only deal with a specific
+disease not multiple. And example of this is a system using neural
+network to diagnose Lyme borreliosis disease \cite{AutomatedNNLyme}
 
 \subsubsection{Database interface}
 Searching in PubMed is done by boolean queries using the keywords AND,
@@ -189,7 +198,7 @@ literature \cite{RapidClassification}. He remarks that the boolean
 search also presents a major problem when it comes to the amount of
 information returned. If a search is slightly inspecific, the results
 will tend to be numerous --- a problem when for example diagnosing a rare
-disease.\\
+disease.
 
 We use Entrez to search PubMed for article information
 represented as records from the MedLine database. These records
@@ -197,16 +206,21 @@ contain abstracts and other kinds of useful information and is
 described in the following section. The searches will be based on the
 retrieved information from Rarediseases.info
 (see section \ref{Rarediseases_info}). \fxnote{Henvisning til
-  implementerings afsnit i kap 3} \\
+  implementerings afsnit i kap 3} 
 
-The figure below show the structure of Entrez and visualize how many
-resources there are available at the different
+The figure \ref{EntrezDatamodel} shows the structure of Entrez and
+visualize how many resources there are available at the different
 subcomponents\footnote{Go to
   \href{http://www.ncbi.nlm.nih.gov/Database/datamodel/index.html}{http://www.ncbi.nlm.nih.gov/Database/datamodel/index.html}
   for an interactive model in Flash.}.
 
-%<Figure showing all components of Entrez and how much they contribute to the whole | http://www.ncbi.nlm.nih.gov/Database/Gifs/nodes_thumb_small.png>
-\fxnote{Insert figure showing all components of Entrez}
+\begin{figure}[H]
+        \begin{center}
+          \includegraphics[width=1.0\textwidth]{drawings/entrez_datamodel.png}
+        \end{center}
+        \caption{Shows the structure of the Entrez datamodel}
+        \label{EntrezDatamodel}
+\end{figure}
 
 \subsection{MedLine records and MeSH\label{MedLine_records_MeSH}}
 
@@ -217,7 +231,7 @@ Medicine's foremost bibliographic database, containing over 16 million
 references to journal articles from approximately 5,200 journals
 worldwide, dating from 1949 to the present. Since 2005 between
 2,000-4,000 references have been added each Tuesday through Sunday and
-over 670,000 references were added in 2007.\\
+over 670,000 references were added in 2007.
 
 MedLine records are built from various fields such as title, abstract,
 language, author, publication data and many others (for complete list
@@ -225,7 +239,7 @@ see \cite{PubMedHelpSearchFieldDescriptionsTags}). Using these search
 fields, it is possible to specify exactly what is to be searched
 for. As an example, the article could be one that needs to have an
 abstract, has to have a specific author and is dated from 2005 and
-later.\\
+later.
 
 The records of MedLine are indexed with Medical Subject Headings
 (MeSH) which is a controlled vocabulary thesaurus. MeSH describes a
@@ -246,14 +260,14 @@ Disease" returns 21,000 results according to Panos et. al
 divides MeSH into three categories, allowing multiple viewpoint \fxnote{daarlig formulering allowing multiple viewpoints} to
 information \cite{DataMiningBiomedicine}. They cluster the results by
 using a Self-Organizing Map thereby creating a concept hierarchy to
-improve information retrieval.\\
+improve information retrieval.
 
 There exists many different opinions when it comes to dealing with
 MeSH in the context of information retrieval. W.R. Hersh and
 D.H. Hickham found that text word indexing is more effective than MeSH
 term indexing \cite{RetrievalEffectiveness}, while G. Sophie et. al
 suggest that both MeSH and text search should be considered in the
-search strategy \cite{FDGPET}.\\
+search strategy \cite{FDGPET}.
 
 Roger P. Smith describes how MeSH can be used to explode searches and
 manipulate them to include the more specific sub levels of the
@@ -262,23 +276,46 @@ specific searches 'Ebola virus' and 'Marburg virus'. The system tries
 to correct user input errors through a system of mappings
 (e.g. ``adverse reaction'', ``side effects'' and ``un-desirable
 effects'' all map to ``adverse effects''). It is also possible to use
-simple patterns when searching on PubMed, for example 'bacter* '
+simple patterns when searching on PubMed, for example 'bacter*'
 searches for bacteria, bacterium, bacteriophage etc. When using
 truncation, the search will not find search strings containing
 white-space, for example a search for 'infection*' will find
-'infections', but not 'infection control'.\\
+'infections', but not 'infection control'.
 
-Though MedLine records are rich in information, we will in the
-prototype system be focusing on information given by the abstract,
-title and MeSH terms. We require the records to have an abstract but
-MeSH terms might not always be present. For an expansion of the
-prototype system, it would be natural to take in account the
-information given with potential keywords, publication dates, authors
-and other optional MedLine information. \fxnote{Henvisning til
-  ordentlig-syg implementerings afsnit i kap 3}
+Though MedLine records are rich in information, we will in the system
+be focusing on information given by the abstract, title and MeSH
+terms. We require the records to have an abstract but MeSH terms might
+not always be present. For an expansion of the prototype system, it
+would be natural to take in account the information given with
+potential keywords, publication dates, authors and other optional
+MedLine information. \fxnote{Henvisning til ordentlig-syg
+  implementerings afsnit i kap 3}
 
-% <Figure/Table x.xx shows a typical Medline record. Some fields has been removed to improve overview. \ref{Full medline record}>
+% <Figure/Table x.xx shows a typical Medline record>
 \fxnote{InsertEither ref for appendix or a example of a medline record}
+
+\subsection{Searching the information}
+Having gathered information about rare diseases, our system needs to
+be able to efficiently search and retrieve information given a query
+string. Various approaches to retrieve the information needed
+exists. A possibility is using boolean queries, where it is possible
+to use the standard operators like ``AND'', ``OR'' and ``NOT'' to
+perform queries a system --- this is the PubMed works. Many
+professional users prefer using boolean queries, because it offers
+them precise control over what is returned. Either a document matches
+or it does not. But this does not mean that using boolean queries are
+the most efficient, not even for professional searchers
+\ref{IntroIR2009}. A problem is that the use of the ``AND'' operator
+tends to produce high precision, but in turn lowers the recall of
+information \ref{IntroIR2009}. As the boolean query model only record
+term presence or absence, it lacks the ability to produce ranked
+ordered results. In order to rank the query results the different
+terms needs to be given a weight describing how important the term is
+to the document. In order to incorporate the use of term weights, we
+need to be able to calculate a relevans score for a document given a
+query. A very popular way of doing this, is to represent the query and
+documents in the collection as vectors. This leads us to choosing the
+vector space model to represent our gathered information.
 
 \section{The vector space model\label{VectorSpace}}
 
@@ -291,7 +328,7 @@ the prototype system), advantages and disadvantages.
 \subsubsection{Model description}
 The vector space model is a matrix representation of our
 information. As shown in the figure below, each row represents a
-document and each column a term.\\
+document and each column a term.
 
 % <Figure showing a term-doc matrix with no specific content>
 \fxnote{Insert figure showing a term-doc matrix with no specific content}
@@ -305,7 +342,7 @@ record. The choice of putting the title of the record together with
 its abstract is appropiate since these (often long) titles has a
 tendency of carrying a lot of information on the MedLine records. As
 described in section \ref{MedLine_records_MeSH}, the optional MeSH
-also contains valuable information on the record.\\
+also contains valuable information on the record.
 
 Note also that the first index of each of the term vectors is saved
 for the hash of the term.
@@ -325,14 +362,12 @@ improve performance by using precalculated hashes of vector norms, by
 stemming the terms and by removing outliers, but it still requires a
 lot of processing time. Furthermore --- when we use schemes like
 calculating the inverse document frequency --- updating the term space
-leads to a recalculation of the entire matrix.\\
+leads to a recalculation of the entire matrix.
 
 The matrix will also be very sparse, containing a lot more zeroes than
 term frequencies. We will try to improve computational time and memory
 by using data structures build for sparse matrices (see section
-\ref{SciPy_sparse}). \\ \fxnote{Unfortunely... why is this a problem?} Unfortunately, using these structures also mean
-using a great many lines of code changing from one optimized structure
-to the another, depending on the calculations performed.\\
+\ref{SciPy_sparse}). 
 
 Another main disadvantage of the vector space model is that it does
 not capture polysemy\footnote{Polysemy describes terms that can be
@@ -374,7 +409,7 @@ log-transformation of the term frequency:
 x_{dw}^{log} = \log{(1 + x_{dw})}
 \]
 
-Where $x_{dw}$ is the number of times the term $w$ appear in document
+Where $x_{dw}$ is the number of times the term $w$ appears in document
 $d$. This helps reduce the problem of burstiness by smoothing \fxnote{find other word than smoothing} the term
 counts.
 
@@ -387,17 +422,17 @@ log-transformation of the term frequency from
 section \ref{MitigatingBurstiness}):
 
 \[
-x_{ij}^{tfidf} = \log{(1 + x_{dw})} * \log{ \frac{D}{\sum_{d\prime = 1}^{D}\delta_{d\prime w}}}
+x_{ij}^{tfidf} = \log{(1 + x_{dw})} * \log{\frac{D}{\sum_{d\prime = 1}^{D}\delta_{d\prime w}} }
 \]
 
 Where $\delta_{dw}$ is $1$ if $w$ is present in document $d$ and $D$
-is the document corpus. Term frequency (TF) is also referred to as the
+is the document corpus. Term frequency ($\mathit{tf}$) is also referred to as the
 \textit{recall} component while the inverse document frequency (IDF)
 is the \textit{precision} component. In other words, IDF gives us a
 higher weight for rare terms and the log-transformation of IDF helps
 to smooth \fxnote{Find andet ord end to smooth} the data. With TF-IDF the importance increases
 proportionally to the number of times a term appears in the document
-but is offset by the frequency of the word in the corpus.\\
+but is offset by the frequency of the word in the corpus.
 
 One clear disadvantage of TF-IDF is its inability to capture the
 importance of a term. Though rare words a promoted, there is no real
@@ -435,12 +470,14 @@ Like the log-transformation in section \ref{MitigatingBurstiness}, the square
 root transformation represents a method for smoothing burstiness in
 data. The most important difference is that using the square root on
 data smoothes the data towards 1 as a contrast to the more aggresive
-log-transformation. Numbers of 1.00 and above behave differently than
-numbers between 0.00 and 0.99.  The square root of numbers above 1.00
-always become smaller, 1.00 and 0.00 remain constant, and numbers
+log-transformation. Numbers of 1 and above behave differently than
+numbers between 0.00 and 0.99. The square root of numbers above 1.00
+always become smaller, 1 and 0 remain constant, and numbers
 between 0.00 and 1.00 become larger (the square root of 4 is 2, but
-the square root of 0.40 is 0.63).  Thus the square root transformation
-should only be used on data that is either below or above 1.\\
+the square root of 0.40 is 0.63). Thus the square root transformation
+should only be used on data that is either below or above 1.
+
+\fxnote{make a figure of sqrt(x) and insert here.}
 
 We will be using the square root transformation to analyse the data
 coming from the TF-IDF scheme. We will describe transformation in
@@ -463,8 +500,8 @@ terms --- like 'and' or 'this' --- would be present in nearly all of
 the MedLine records and therefore be assigned very low weight by
 TF-IDF. Let us for instance say that the term 'a' was present in every
 document. The IDF-factor would be $\log 1 = 0$ which results in
-$\mathit{tf} \times \mathit{idf} = \mathit{tf} \times 0 = 0$. The term will
-therefore be deemed irrelevant in relation to the information
+$\mathit{tf} \times \mathit{idf} = \mathit{tf} \times 0 = 0$. The term
+will therefore be deemed irrelevant in relation to the information
 retrieval.
 
 \subsection{Stemming}
@@ -505,7 +542,7 @@ again using an appropriate distance measure like the cosine similarity
 (see section \ref{VectorSimilarity}). This is then followed by taking
 the sum of each document vector and removing the percentage that score
 the lowest, that is the ones that --- summed over all distances to
-every other document vector --- scores the lowest. \\
+every other document vector --- scores the lowest. 
 
 \fxnote{Do we do outlier detection, not yet!}  We will be
 experimenting with outlier detection but it is not a primary focus,
@@ -522,24 +559,27 @@ list describing each disease or summarizing the information we have
 available about the disease. The keyword list could then be used to
 provide the physician using the system with a more comprehensive list
 of characteristics for the most likely diseases, given the original
-symptoms. It could be used for later disease classification schemes. \\
+symptoms. It could be used for later disease classification schemes.
 
 LSA is done by performing Singular Value Decomposition (SVD). SVD
-decomposes the original matrix X, with shape $\mathit{m}$ x $\mathit{n}$, into a product of
-three new matrices $U$, $S$ and $V^{t}$. Here $U$ is an $\mathit{m}$ x $\mathit{n}$ matrix, $S$ is
-an $\mathit{n}$ x $\mathit{n}$ diagonal matrix and $V^{t}$ is an $\mathit{n}$ x $\mathit{n}$ matrix. The column of
-$U$ is called left singular vectors, and the rows of $V^{t}$ is called
-right singular vectors. The elements of $S$ are only nonzero on the
-diagonal and these are called singular values. The singular values are
-the square root of the eigenvalues of $X^{t}X$, arranged in decreasing
-order. A dimension reduction is performed by removing the $k$ least
-significant singular values, the $k$ last columns of $U$, and the $k$ last
-rows of $V^{t}$. The result is an $n - k = l$ matrix where $l$ is the
+decomposes the original matrix X, with shape $\mathit{m}$ x
+$\mathit{n}$, into a product of three new matrices $U$, $S$ and
+$V^{t}$. Here $U$ is an $\mathit{m}$ x $\mathit{n}$ matrix, $S$ is an
+$\mathit{n}$ x $\mathit{n}$ diagonal matrix and $V^{t}$ is an
+$\mathit{n}$ x $\mathit{n}$ matrix. The column of $U$ is called left
+singular vectors, and the rows of $V^{t}$ is called right singular
+vectors. The elements of $S$ are only nonzero on the diagonal and
+these are called singular values. The singular values are the square
+root of the eigenvalues of $X^{t}X$, arranged in decreasing order. A
+dimension reduction is performed by removing the $k$ least significant
+singular values, the $k$ last columns of $U$, and the $k$ last rows of
+$V^{t}$. The result is an $n - k = l$ matrix where $l$ is the
 remaining dimensions. Due to the reduction, the dimensions are now
-$U_{r}$ is $\mathit{m}$ x $\mathit{l}$, $S_{r}$ is $\mathit{l}$ x $\mathit{l}$, and $V_{r}^{t}$ is $\mathit{l}$ x $\mathit{n}$. SVD --- and the
-dimensionality reduction --- is then followed by calculating the product
-of $U_{r}S_{r}V_{r}^{t}$ (where the subscribtion $_{r}$ means reduced),
-hence putting the three reformed pieces back together: 
+$U_{r}$ is $\mathit{m}$ x $\mathit{l}$, $S_{r}$ is $\mathit{l}$ x
+$\mathit{l}$, and $V_{r}^{t}$ is $\mathit{l}$ x $\mathit{n}$. SVD ---
+and the dimensionality reduction --- is then followed by calculating
+the product of $U_{r}S_{r}V_{r}^{t}$ (where the subscribtion $_{r}$
+means reduced), hence putting the three reformed pieces back together:
 
 \[
 X_{r} = U_{r}S_{r}V_{r}^{t}, \textrm{ where } X \textrm{ is } m \textrm{ x }n
@@ -570,22 +610,16 @@ equation for cosine similarity can then be used:
 
 Where $D_j$ is document $j$ as a vector, $Q$ is the query vector and
 $\cos \theta_{D_{j}}$ is the cosine similarity between document $j$ and
-query $Q$. This can also be written as: 
+query $Q$.
 
-\[
-\textrm{Sim}(Q,D_{j}) = \frac{\sum_{i}w_{Qi} w_{D_{ji}}}{\sqrt{\sum_{i}w_{Qi}^{2}} \sqrt{\sum_{i}w_{D_{ji}}^{2}}}
-\]
-
-Where $Q$ is the query vector and $D_j$ is document $j$. $w_{Q,i}$ is
-word $i$ in the query vector. $w_{D_{j},i}$ is word $i$ of document
-$j$. Since we assume that no values in the vector space model are
+Since we assume that no values in the vector space model are
 below zero, this measure results in a value of 0 if the vectors have
 no terms in common and 1 if they are exactly like each other. The
 latter case is most improbable in our proposed system since the query
 vector usually consists of a limited list of symptoms, measured up
 against the document vector consisting of a long list of terms derived
 from the title, the abstract and the potential MeSH terms of a MedLine
-record. \\
+record.
 
 With a TF-IDF transformation and L$_2$ normalization the above
 calculation can be rewritten as follows: 
@@ -594,14 +628,17 @@ calculation can be rewritten as follows:
 \textrm{score}_{d} = \frac{1}{|I|}\frac{1}{|x_{d}|} \sum_{i \in I} x_{dw}
 \]
 
-Where $\textrm{score}_{d}$ is the similarity score, $\frac{1}{|I|}$ is the length
-of the input query and $\frac{1}{|x_{d}|}$ is the length of the
-document. Due to the fact that the terms in the query vector all have
-the value 1 --- as we assume that they only appear in the query once --- we
-can rewrite the formula to: 
+Where $\textrm{score}_{d}$ is the similarity score for document $d$,
+$\frac{1}{|I|}$ is the normalization factor of the query vector and
+$\frac{1}{|x_{d}|}$ is the normalization factor of the document
+vector. Due to the fact that length of the query vector is the same
+for all the document vectors in a given search, this acts as a scalar
+for all scores. Because of this we choose to disregard the
+$\frac{1}{|I|}$ factor in our system, meaning we can rewrite the
+formula to:
 
 \[
-\textrm{score}_{d} = \frac{\sum_{i \in I} x_{dw}} {|x_{d}|}
+\propto \frac{\sum_{i \in I} x_{dw}} {|x_{d}|}
 \]
 
 Since the denominator is the norm of the document vector, the division
@@ -614,42 +651,18 @@ can now rewrite the cosine similarity function to be on the simple
 form: 
 
 \[
-\textrm{score}_{d} =  \sum_{i \in I} x_{dw}
+\propto  \sum_{i \in I} \widehat{x_{dw}}
 \]
 
-Where the set $I$ is the set of indices where query vector and
-document vector overlap. By disregarding the factor $\frac{1}{|I|}$
-our system "up weights" documents that contain many of the query
-terms, e.g. if a query vector contained four symptoms and got a hit on
-a document vector in all four. Then using normalization with regards
-to the query vector would make the document count just as much as a
-document only matching on two of the terms. And if the document only
-matching the two has higher entry count, it dominates a more
-descriptive document vector which might lead to a wrong diagnosis.\\
+Where $I$ is the set of indices where query vector and document vector
+overlap. And $\widehat{x_{dw}}$ is the normalized version of $x_{dw}$
 
-Example: $Q =$ 'aortic systematic blood myeloblastic' and $D_{1}$
-contains all fours, with the following values $[0.37, 0.22, 0.48,
-  0.33]$ while $D_{2}$ contains only two of them (systematic and
-blood) but with much larger values $[0.63, 0.73]$. Then summing the
-values from $D_1 = 1.37$ and $D_2 = 1.36$ and using normalization on
-the number of terms in common with the query vector, would reduce $D_1
-= \frac{1.37}{4} = 0.3425$ and $D_2 = \frac{1.36}{2} = 0.68$ which
-means that it now scores higher than one containing more of the
-symptoms. But if there is a need to compare two searches, there is of
-course a need to normalize the search score dependent upon how many
-terms were used to derive this score. \\
+If there should arise the need to compare two searches, there is of
+course a need to normalize the search score in accordance to the
+length of the query vector.
 
-The reasoning behind this is that the more terms from the query vector
-a document contains the more relevant the document is. This reduces
-our similarity calculation to the following.
-
-\[
-s_j = \frac{\sum_{i \in I} x_{dw}}{|I|}
-\]
-
-Where $I$ is the same set as the above equation. \\
-
-How we use the cosine similarity measure to test and score our data will be described in chapter \ref{ExperimentsResults}.
+How we use the cosine similarity measure to test and score our data
+will be described in chapter \ref{ExperimentsResults}.
 
 \fxnote{REF: om scoring i experimental chap}
 
@@ -688,7 +701,7 @@ individual elements, it is advantagous to use the "dok" format which
 is a dictionary of keys. This allows O(1) time access to matrix
 elements. And the "csc" and "csr" formats can be used when dealing
 with arithmetic operations since these are efficient for column and
-row operations. \\
+row operations.
 
 Linked list matrices are slow when it comes to arithmetic
 operations but efficient when it comes to incrementally constructing
@@ -698,18 +711,18 @@ the usage of fancy slicing which makes manipulations of the content
 very flexible. When the construction is done, it can be converted to
 another format for efficient arithmetic operations (usually csc or
 csr). The lil format also tends to have a high memory usage than the
-other sparse matrix formats.\\
+other sparse matrix formats.
 
 Coordinate matrices are memory efficient but does not allow for
 direct access to the elements it contains. It is however possible to
 traverse over all the elements which is useful when constructing a
 term document matrix. This is especially fast when combined with the
-dok format which allows fast access for elements.\\
+dok format which allows fast access for elements.
 
 Compressed sparse row or column allows for fast matrix
 arithmetic operations like, addition, multiplication, matrix matrix
 product, vector matrix product and so on. The csr allow fast row
-slicing but is slow when column slicing and csc vice versa.\\
+slicing but is slow when column slicing and csc vice versa.
 
 The two remaining sparse matrix formats in SciPy are not relevant to the
 project.
@@ -749,7 +762,7 @@ focused on rare diseases in Europe.
 Orpha.net defines a rare disease as one that affects 1 person out of 
 every 2,000 in Europe and it lists 12,191 different rare diseases at 
 the time of writing. A quick overview suggests more of the detailed 
-describtions than Rarediseases.info and it has highlighted data such 
+descriptions than Rarediseases.info and it has highlighted data such 
 as "Prevalence of rare diseases" and "Age of onset" which could be very 
 useful for disease classification. Like Rarediseases.info it is 
 --- however --- variable in the amount of information per disease and 

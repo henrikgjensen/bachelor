@@ -27,9 +27,6 @@
 %%%% GRAPHICS
 \usepackage{graphicx}
 \usepackage{hyperref}
-
-\usepackage{url}
-
 \usepackage{listings}
 
 \usepackage{float}
@@ -47,12 +44,33 @@
 
 \hyphenation{mand-en} %%% Add here if something does not break right. Like this nu-clear-test-bomb-ing
 
-%\usepackage{nicefrac}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Kommandoer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{\old}[1]{\oldstylenums{#1}}
+%\newcommand{\old}[1]{{#1}}
+\newcommand{\mailto}[1]{\href{mailto:#1}{#1}}
+%\newcommand{\resume}[1]{\begin{abstract}{\sffamily #1}\end{abstract}}
+%\newcommand{\angles}[1]{\langle\textrm{#1}\rangle}
+%\newcommand{\colbox}[2]{\fcolorbox{black}{#1}{#2}}
+%\renewcommand{\thefigure}{\thechapter.\thesection.\arabic{figure}}
+%\renewcommand{\thetable}{\thechapter.\thesection.\arabic{table}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titel, forfatter og dato
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \title{Support decision system for diagnosing rare diseases using machine learning for medical text mining}
-\author{Henrik G. Jensen - henrikgjensen@gmail.com\\
-Michael Andersen - Michael.blackplague.andersen@gmail.com \\
+
+\author{Henrik G. Jensen - \mailto{henrikgjensen@gmail.com}\\
+  Michael Andersen - \mailto{michael.blackplague.andersen@gmail.com} \\
 \\
-Project supervisor \\ Ole Winther }
+Project supervisor \\ 
+Ole Winther - \mailto{owi@imm.dtu.dk} \\
+\\
+Co-supervisor \\ Henrik L. J\o rgensen - \mailto{hlj@dadlnet.dk}}
+
 \date{\today}
 
 \hypersetup{
@@ -60,24 +78,24 @@ colorlinks,%
 citecolor=black,%
 filecolor=black,%
 linkcolor=black,%
-urlcolor=black,% 
+urlcolor=black,%
 bookmarksopen=false,
 pdftitle={Support decision system for diagnosing rare diseases using machine learning for medical text mining},
 pdfauthor={Henrik G. Jensen and Michael Andersen},
-pdfsubject={Text mining},
-pdfkeywords={Diagnosing diseases, text mining}
+pdfsubject={Text mining, rare diseases},
+pdfkeywords={Diagnosing rare diseases, text mining}
 }
-\setlength{\parindent}{0in}
 
-\setcounter{tocdepth}{2}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Indhold
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-%\garamond
 \maketitle
+
 %\pagenumbering{roman}
 \thispagestyle{empty}
 
-
+\abstract
 \input{sections/abstract.tex}
 
 %\chapter*{Forord}
