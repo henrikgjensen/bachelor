@@ -11,16 +11,11 @@ disease, we do it by taking the top 3000\footnote{A number chosen at
   random in between our total number of different diseases} of the
 documents returned by the similarity measure and the
 \textit{SearchCases} module. Using the most efficient measure, we try
-to score 5 blind tests provided by a chief physician.
+to score 5 blind tests provided by a chief physician. 
 
-We provide a description of how clustering could be used to improve
-the system, by looking at clusters of diseased ranked far from top
-20. We then look at \ldots
-
-\fxnote{Skriv noget her} ... Note: semantic section are still to be written.
-
-Finally, we take discussion on the potential noise of overview
-articles and test the potential of consensus normalization.
+We also discuss clustering of the results, protein/gene filtering 
+improvements, the noise of overview atricles and the effect of 
+concensus normalization.
 
 \section{Test cases}
 
@@ -1048,7 +1043,6 @@ This is in order to ensure that the system will be able make a reasonable qualif
 on the disease.
 
 \subsubsection{Clustering of the results}
-\fxnote{Needs to be refined} 
 
 We perform a clustering of the top 20 results using hierarchical
 clustering. We have chosen to cluster the best disease from the sum
@@ -1059,11 +1053,11 @@ to each other. From figure
 \ref{sum_stem_top20_best_cat_scratch_disease}, it can be seen that
 \textit{Cat Scratch disease} (near the top) is clustered together with
 \textit{Cyclic Neutropenia} even though it is number 19 on the result
-list, this means these diseases are closest to each other in the list
+list. This means that these diseases are closest to each other in the list
 of 20 returned suggestions. And the disease ranked as number 2 is
 \textit{Kikuchi disease} which is 6 sub clusters away from \textit{Cat
-  Scratch disease} - meaning that it requires merging 6 sub clusters
-to get them into the same cluster, the merging is performed by
+  Scratch disease} - it requires merging 6 sub clusters
+to get them into the same cluster. The merging is performed by
 calculating a mean vector for the diseases (or sub clusters) being
 merged. The lowest ranking disease is \textit{Chediak-Higashi
   syndrome}. To get this into the same cluster as \textit{Cat Scratch}
@@ -1077,7 +1071,7 @@ requires the merging of the entire cluster.
   \label{sum_stem_top20_best_cat_scratch_disease}
 \end{figure}
 
-We have also chosen to cluster the disease where sum measure on the
+We have also chosen to cluster the diseases where the sum measure on the
 stemmed disease matrix produced the worst result. This is the test
 case \textit{Eosinophilic granuloma} where the correct disease was
 ranked as number 597. Therefore it is not possible to find it in the
@@ -1087,9 +1081,9 @@ present in the dendrogram
 \ref{sum_stem_top20_worst_developmental_dysplasia_of_hip} and
 comparing them to the correct diagnosis of the disease (if found)
 could provide helpful knowledge about why our system was so wrong in
-its suggestion of this disease, and might provides clues to correcting
-it. The problem might stem from bad or very noisy information about
-the correct disease, which therefore do not have enough similarity
+its suggestion of this disease and it might provide clues to correcting
+it. The problem might stem from poor or very noisy information about
+the correct disease which therefore do not have enough similarity
 with the query vector.
 
 \begin{figure}[H]
@@ -1309,13 +1303,6 @@ term document matrix, using the cosine measures, is seen in table \ref{ThisIsATa
   \caption{Show something something something}
   \label{ThisIsATable}
 \end{table}
-
-
-{\small
-\noindent Mean: [99, 210, 804, 1216, 507, 667, 167, 309, 502, 50, 330, 695, 424] \\
-Median: [1036, 989, 1432, 948, 668, 1301, 1315, 1687, 1429, 1233, 1696, 1494, 1322] \\
-Max: [1034, 989, 1447, 1084, 635, 1284, 1293, 1687, 1414, 1233, 1696, 1491, 1321] \\
-}
 
 It does not take a bar chart to see that these values are pretty off
 the top 20. The idea might be good enough but it would have to be on a
