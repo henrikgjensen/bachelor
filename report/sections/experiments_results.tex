@@ -1,17 +1,17 @@
 \chapter{Experiments and Results\label{ExperimentsResults}}
 
-In this section, we introduce the test cases we intend to use. We go
+In this section, we introduce the test cases that we intend to use. We go
 through the details of our cosine and sum measure scoring schemes that
 we will be using to test our systems ability to rank a correct disease
-given a list of symptoms. This is followed by various test results
-using different similarity measures and different matrix models. By
-comparing the individual top scores of each measure on a given matrix,
-stemmed or non-stemmed, we find the most efficient measure to score
+given a list of symptoms. By comparing the individual top scores of 
+each different measure tested on a given matrix
+(stemmed or non-stemmed), we find the most efficient measure to score
 data on our system. It should here be noted that each time we score a
 given disease, we do it by taking the top 3000\footnote{A number
   chosen at random in between our total number of different diseases}
 of the documents returned by the similarity measure and the Search
-module.
+module. Using the most efficient measure, we try to score 5
+blind tests provided by a chief physician.
 
 We then look at \fxnote{Skriv noget her} ... Note: cluster and
 semantic section are still to be written.
@@ -34,7 +34,7 @@ background (a respiratory and sleep physician and a rheumatologists)
 contrary to our computer science background. This means that we have
 no bias or knowledge about selecting symptoms and --- as they explain ---
 given some of the symptoms the correct diagnosis were evident to
-them. Note that we will --- in the following sections --- be referring to
+them. Note that we will (in the following sections) be referring to
 the subset of the test cases as BMJ since this is were it was
 found.
 
@@ -43,6 +43,7 @@ The subset of the BMJ test cases include the following 13 diseases (Table \ref{B
 \begin{table}[H]
   \caption{Disease / Symptoms list for the 13 BMJ cases}
   \label{BMJCases}
+  \begin{scriptsize}
   \begin{tabular}{|l|p{7cm}|}
     \hline
     Disease & Symptoms \\
@@ -74,6 +75,7 @@ The subset of the BMJ test cases include the following 13 diseases (Table \ref{B
     Brugada syndrome & cardiac arrest sleep \\
     \hline
   \end{tabular}
+  \end{scriptsize}
 \end{table}
 
 \subsubsection{Orpha.net}
@@ -115,7 +117,8 @@ found in table \ref{OrphanetCases1} and \ref{OrphanetCases2}.
 \begin{table}[H]
 \caption{Disease / symptom list for 30 Orpha.net test cases}
 \label{OrphanetCases1}
-\begin{tabular}{| p{6.5cm} | p{6.5cm} |}
+\begin{scriptsize}
+\begin{tabular}{| p{6cm} | p{6.5cm} |}
 \hline
 Disease name & Symptom list \\
 \hline
@@ -153,14 +156,6 @@ Ichthyosis hepatosplenomegaly cerebellar degeneration & ichthyosis, hepatospleno
 \hline
 Emery-Dreifuss muscular dystrophy & muscular weakness and atrophy, with early contractures of the tendons and cardiomyopathy \\
 \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\caption{Disease / symptom list for the 30 Orpha.net test cases, continued}
-\label{OrphanetCases2}
-\begin{tabular}{| p{6.5cm} | p{6.5cm}|}
-\hline
 Costello syndrome & postnatal growth retardation, coarse facies, intellectual deficit, skin anomalies and cardiac abnormalities \\
 \hline
 Fibrodysplasia ossificans progressiva & congenital malformation of great toes, progressive, disabling heterotopic osteogenesis in predictable anatomical patterns \\
@@ -186,12 +181,41 @@ Multiple myeloma & overproduction of abnormal plasma cells in the bone marrow an
 Trichodental syndrome & fine, dry and short hair with dental anomalies \\
 \hline
 \end{tabular}
+\end{scriptsize}
 \end{table}
 
 \subsubsection{Blind tests}
 In addition to the BMJ and Orpha.net test cases, we have performed a
-blind test on disease cases given by Henrik \cite{TheDude}.  >>Finish
-this section when ordentlig-syg results arrive!<<
+blind test on disease cases given by Henrik Jørgensen \cite{TheDude}. 
+Here, we were given 5 different test cases and the queries made are 
+based on symptoms extracted from the cases based on our own judgement.
+The test is done with the highest performing measure and matrix - determined
+by the tests run on the BMJ and Orpha.net test cases in section 
+\ref{TestingCosineSimilarity}. The results of the blind test can be found
+in section \ref{Blindtest}.
+
+\begin{table}[H]
+\label{blind_test_table}
+\caption{Disease / Give case / Used query for the 5 blind test cases}
+\begin{scriptsize}
+\label{OrphanetCases1}
+\begin{tabular}{| p{3cm} | p{4.5cm} | p{4.5cm} |}
+\hline
+Disease name & Given case & Used symptom query \\
+\hline
+Fibrodysplasia ossificans progressiva & Dreng, normal ved f\o dslen bortset fra deformitet af begge storeter (de manglede et led). Udvikler sig normalt efterfl\o gende. Ved 5 \aa rs alderen der viser knoglev\ae v uden malignitetstegn. Kort tid efter biopsien udvikles mere knoglev\ae kst, pr\ae cis der hvor man har sk\ae ret. & Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine and osteogenesis at biopsy.\\
+\hline
+Adrenoleukodystrophy autosomal neonatal form & Normally developed boy until age 5, where he progressively developed the following symptoms: Talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions.& Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and  degeneration of visual and auditory functions \\
+\hline
+Papillon Lefevre syndrome & A boy age 14 comes to the doctor with yellow, keratotic plaques on the skin of his palms and soles going up onto the dorsal side. Both hands and feet are affected. He equally had swollen and very vulnerable gums since the age of 4 with loss of most of his permanent teeth. & Boy age 14, yellow, keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected.\\
+\hline
+Kleine Levin Syndrome & 16-\aa rig j\o disk dreng har en til to gange om maaneden anfald, hvor han f\o rst og fremmest skal sove utroligt meget - ca. 18 timer om dagen. Anfaldene varer ca en uges tid. Han \ae ndrer karakter under anfaldene og bliver irritabel og aggressiv, n\aa r han v\ae kkes. N\aa r han er v\aa gen i anfaldsperioden spiser han helt utroligt store m\ae ngder mad, og hans appetit p\aa sex er endvidere abnormt stor. & Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and irritable when woken, highly increased sexual appetite and hunger.\\
+\hline
+Schinzel-Giedion Syndrome & The patient is a male child presenting at birth with numerous malformations. He had midfacial retraction with a deep groove under the eyes, and hypertelorism. A short nose with a low nasal bridge and large low-set ears were noted. He had a wide mouth and retrognathia. Hypertrichosis with bright reddish hair and a median frontal cutaneous angioma were present. The neck was short with redundant skin. Bilateral inguinal hernias, hypospadias with a megameatus, and cryptorchidism were noted. & Male child, malformations at birth, midfacial retraction with a deep groove under the eyes, and hypertelorism, short nose with a low nasal bridge and large low-set ears, wide mouth and retrognathia. Hypertrichosis with bright reddish hair and a median frontal cutaneous angioma, short neck with redundant skin, Bilateral inguinal hernias, hypospadias with a megameatus, and cryptorchidism \\
+\hline
+\end{tabular}
+\end{scriptsize}
+\end{table}
 
 \subsection{Scoring schemes}
 
@@ -1028,18 +1052,18 @@ on the disease.
 \subsubsection{Clustering of the results}
 \fxnote{Needs to be refined}
 We perform a clustering of the top 20 results using hierarchical
-clustering. We have chosen to cluster the best disease from sum,
-stemmed, non-normalized, which is the Cat Scratch disease. Remember
+clustering. We have chosen to cluster the best disease from the sum 
+similarity measure on the stemmed disease matrix which is the \textit{Cat Scratch disease}. Remember
 that the 20 diseases are chosen based on the similarity to the query
 vector, not how similar they are to each other. From figure
-\ref{sum_stem_top20_best_cat_scratch_disease} it can be seen that Cat
-Scratch disease near the top is clustered together with Cyclic
-Neutropenia even though it is number 19 on the result list. And the
-disease ranked as number 2 is Kikuchi disease which is 6
-sub clusters away from Cat Scratch disease. Meaning that it requires
+\ref{sum_stem_top20_best_cat_scratch_disease}, it can be seen that \textit{Cat
+Scratch disease} (near the top) is clustered together with \textit{Cyclic
+Neutropenia} even though it is number 19 on the result list. And the
+disease ranked as number 2 is \textit{Kikuchi disease} which is 6
+sub clusters away from \textit{Cat Scratch disease} - meaning that it requires
 merging 6 sub clusters to get them into the same cluster. The lowest
-ranking disease is Chediak-Higashi syndrome, to get this into the same
-cluster as Cat Scratch requires the merging of the entire cluster.
+ranking disease is \textit{Chediak-Higashi syndrome}. To get this into the same
+cluster as \textit{Cat Scratch} requires the merging of the entire cluster. \fxnote{kan skrives lidt bedre - fx hvad er 'merging'?}
 
 \begin{figure}[H]
   \begin{center}
@@ -1049,10 +1073,10 @@ cluster as Cat Scratch requires the merging of the entire cluster.
   \label{sum_stem_top20_best_cat_scratch_disease}
 \end{figure}
 
-We have also chosen to cluster the disease where sum, stemmed
-non-normalized produced the worst result. It is the test case
-Eosinophilic granuloma, where the right disease was ranked as number
-597. So it is not possible to find it in the dendrogram, our systems
+We have also chosen to cluster the disease where sum measure on the stemmed 
+disease matrix produced the worst result. This is the test case
+\textit{Eosinophilic granuloma} where the correct disease was ranked as number
+597. So it is not possible to find it in the dendrogram, our systems \fxnote{opremsning - So..,our..,done}
 best guess was Developmental Dysplasia of Hip. Investigation the
 diseases present in the dendrogram
 \ref{sum_stem_top20_worst_developmental_dysplasia_of_hip} could
@@ -1066,6 +1090,32 @@ disease.
   \caption{Hierarchical clustering of worst disease using sum, stemmed non-normalized}
   \label{sum_stem_top20_worst_developmental_dysplasia_of_hip}
 \end{figure}
+
+\subsection{Results of the blind tests (provided by Henrik L. J\o rgensen)\label{Blindtest}}
+
+Below are shown the results from from the blind tests described in table \ref{blind_test_table}.
+
+\begin{figure}[H]
+  \caption{Blind test of a stemmed disease matrix using the sum measure}
+  \begin{center}
+    \includegraphics[width=1\textwidth]{barcharts/blind_test.png}
+  \end{center}
+  \label{blind_test_barchart}
+\end{figure}
+
+\begin{table}[H]
+\begin{tiny}
+  \begin{tabular}{|l|r|r|r|r|r|r|r|}
+    \hline
+    Measure & Fibrodysplasia & Adrenoleukodystrophy & Papillon Lefevre & Kleine Levin & Schinzel-Giedion & \scriptsize{\textbf{\# in top 20}}\\
+    \hline
+    Sum: disease matrix & 19 & 1717 & 5 & 1 & 164 & \scriptsize{\textbf{3}} \\
+    \hline
+    \end{tabular}
+\end{tiny}
+\end{table}
+
+\noindent \small{\textit{*Note that the scores above are 0-indexed as in the previous sections.}}
 
 \subsection{On overview article noise and consensus normalization\label{Overview}}
 
@@ -1093,10 +1143,10 @@ top score of returned results, as labels being over-represented in for
 example the bottom of the top score list would be weighted down.
 However, as this might be a good theoretical idea, it did not quite
 amount to anything useful. The results for running this on the stemmed
-term document matrix, using the cosine measures, is:
+term document matrix, using the cosine measures, is:\\
 
 {\small
-Mean: [99, 210, 804, 1216, 507, 667, 167, 309, 502, 50, 330, 695, 424] \\
+\noindent Mean: [99, 210, 804, 1216, 507, 667, 167, 309, 502, 50, 330, 695, 424] \\
 Median: [1036, 989, 1432, 948, 668, 1301, 1315, 1687, 1429, 1233, 1696, 1494, 1322] \\
 Max: [1034, 989, 1447, 1084, 635, 1284, 1293, 1687, 1414, 1233, 1696, 1491, 1321] \\
 }
