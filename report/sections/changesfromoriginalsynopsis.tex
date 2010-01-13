@@ -1,0 +1,39 @@
+\chapter{Changes from original synopsis}
+
+The project has changed title from \textit{``Support decision system
+  for diagnosing rare diseases using machine learning for medical text
+  mining''} to \texttt{``Support decision system for diagnosing rare
+  diseases using vector space model and medical text mining''} this
+was because the original
+
+The original abstract has also been changed, the projects focus is no
+longer on clustering, but ranking diseases amongst a top 20 given a
+list of sympsoms. The reason for this is that the physicians would
+like a system that gave them disease suggestions instead of organized
+and structured information, which was the orignal though when
+clustering was mentioned. The result is that the system
+
+The system original success criterias has been changed from
+\begin{enumerate}
+\item The ability to correctly diagnose 50 rare diseases by search
+  terms pro- vided by doctor Henrik L. Jørgensen. A successful hit is
+  the correct diagnosis being among the top 20 search results.
+\item The use of as few references (clicks) as possible to narrow in
+  the search.  This should be 5 or less.
+\item The use of as few search terms as possible. This should be 5 or
+  less depending on the rarity of the disease.
+\item How quickly the physician can locate the correct article
+  compared to when using PubMed.
+\end{enumerate}
+
+This has been changed because we did not recieve the 50 golden
+standard diseases on which to test our system. We recieved 5 test
+cases on which we performed a blind test. The lack of test cases made
+us look into alternatives which we found in BMJ, and some randomly
+chosen strings characterizing symptoms from Orpha.net.
+
+The system is to deliver a suggestion list of top 20 diseases given a
+symptom list, therefore is does not make sense to talk about using as
+few references as possible.
+
+The use of as few symptoms as possible, is partially this in affect. We have misinterpreted few a whole lot. In table \ref{BlindTestDiseaseName} the symptoms we received 
