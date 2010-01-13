@@ -208,5 +208,5 @@ def getSemanticKeywords(top=20):
     #return termSum[:top]
 
     for score in scoreDic.items():
-        print score
+        print score[0]+'\t'+score[1]+'\n'
     
