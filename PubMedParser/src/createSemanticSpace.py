@@ -190,7 +190,7 @@ def getSemanticKeywords(top=20):
         symptoms=map(FilterInterface.porterStemmer,symptoms)
 
         M_coo=IOmodule.readInTDM(matrixDir,filename)
-        totalTermDic[filename]=(M_coo[1]-1)
+        totalTermDic[filename]=(M_coo.shape[1]-1)
 
         M_csc=M_coo.tocsc()
     
