@@ -19,14 +19,12 @@ diseases to gain a better overview of them.
 A term document matrix based on keywords extracted by LSA could prove
 most useful.
 
+Making a term
+
 \subsubsection{Improvement on queries}
 The possibility of comparing to queries to the system, could be useful
 to a phycisian. He would then be able compare the results from two
 slightly different queries, look for key differences.
-
-Addition query options like preference for author, year, journal
-etc. Could make it easier for a phycisian already knowing a bit about
-what he is about to find.
 
 Term mapping would be able to increase the recall of the system, this
 could help retrieve the right information. Mapping synonyms to
@@ -35,7 +33,8 @@ eachother and searching for these.
 Visual representation of disease cluster, including keyswords
 extracted by LSA.
 
-A visual representation of the results something like table
+\subsubsection{Graphical User Interface}
+A visual representation of the results something like the table
 \ref{FutureGUI}. Were ``Keywords'' are extracted those that best
 describe the disease, given the information we have about
 it. ``Score'' is the calculated score that the system has given the
@@ -48,36 +47,33 @@ record.
     \hline
     Disease name & Keywords & Score & PMIDs \\
     \hline
-    Disease$_1$ & "Cancer, lever, blood, aortic ..." & 0.8242 & $18134923$, \dots, $3289472$ \\
+    Disease$_1$ & ``Cancer, lever, aortic \ldots'' & 0.8242 & $18134923$, \dots, $3289472$ \\
     \hline
     {} & {} & {} & {} \\
     \hline
-    Disease$_20$ & "Cancer, lever, blood, aortic ..." & 0.2412 & $17584932$, \dots, $16191394$ \\
+    Disease$_2$ & ``Myeoblastic, fibrosis, oesteogenesis, \ldots'' & 0.2412 & $17584932$, \dots, $16191394$ \\
     \hline
   \end{tabular}
   \label{FutureGUI}
 \end{table}
 
 \subsubsection{Improvements regarding text / data retrieval}
-Locate more sources to gather information from, Orpha.net would be an ideal candidate. During the project we did also come across a rare diseases webpage from the Swedish Governments health care section, the page were unfortunenately down for maintanence
+Locate more sources to gather information from, Orpha.net would be an
+ideal candidate. During the project we did also come across a rare
+diseases web page from the Swedish Governments health care section,
+the page were unfortunenately down for maintanence and only contained
+247 diseases. But even a small contribution might be the determining
+factor for placing a disease within top 20.
 
-\begin{itemize}
-  \item Improvements involving queries / searches
-  \begin{itemize}
-    \item Possibility of querying sub a clusters of returned diseases
-    \item Improve the recall in the system by performing term mapping. Meaning a search term will be mapped to all its synonyms thereby hopefully improving the recall of information.
-  \end{itemize}
-  \item Visualization / GUI
-  \begin{itemize}
-    \item Visual representation of disease cluster, including keywords around a search query.
-    
-  \end{itemize}
-  \item Improvement regarding the text mining / data retrieval for the system
+The need for minimum amount of information gathered per rare disease,
+either as a minimum number of MedLine records attached to it or a
+special describtion containing a near complete symptom list.
+
+
   \begin{itemize}
     \item Incorporate multi disease database, e.g. mining from Orpha.net, and other sites like it. (Ask permission first)
     \item Implement a threshold for the minimum amount of information a disease should include to be part of the special gang.
-    \item A golden standard for each disease, thereby applying \fxnote{REF Poultry} classification algorithm to PubMed for each disease and thereby getting the most relevant Medline records for each disease. This could hopefully improve results greatly. Though acquiring a golden standard is resource intensive task, so this is probably not very likely to happen any day soon.
-    \item Implementin outlier detection: Examining how outlier removal affect the search result could be valuable. This process might concentrate the remaining information, thereby making it more likely to get the right information back. Therefore, it might be advantageous to perform a clustering on the abstracts and select some criteria on which to remove outlying abstracts. The criteria could be either removal based on some distance (threshold) to the cluster average or to remove some percentage of those abstract that lies farthest away from the cluster center. The latter of these seems to be the most fair one - mainly because it removes abstracts in proportion to the size of the cluster. One fact remains when it comes to outlier detection; care needs to be taken when removing outliers since one might just remove that single piece of correct information needed to identify the right disease.
+    
   \end{itemize}
    \item Redesign of the system, start using a database for storing and retrieving information, optimizing by rewriting ineffective code to C code. 
   
