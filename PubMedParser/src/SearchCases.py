@@ -655,7 +655,7 @@ def analyseDiseaseTerms(M_coo):
 
         printout1=[]
         for item in termList[:20]:
-            printout1.append[item[1]]
+            printout1.append(item[1])
         print 'Top 20 terms:'
         print '---------------------'
         print printout1
