@@ -655,7 +655,7 @@ def analyseDiseaseTerms(M_coo):
 
         printout1=[]
         for item in termList[:20]:
-            printout1.append[item[1]]
+            printout1.append(item[1])
         print 'Top 20 terms:'
         print '---------------------'
         print printout1
@@ -665,6 +665,10 @@ def analyseDiseaseTerms(M_coo):
         symptoms=listOfSymptoms[count]
         symptoms = sanitizer.sub(' ', symptoms)
         symptoms = FilterInterface.stopwordRemover(symptoms)
+        symptoms=FilterInterface.porterStemmer(symptoms)
+        symptoms=SearchTermDoc._modifySearchString(symptoms)
+        #print symptoms
+        count+=1
 
         for symptom in symptoms:
 
