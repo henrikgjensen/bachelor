@@ -1050,20 +1050,26 @@ This is in order to ensure that the system will be able make a reasonable qualif
 on the disease.
 
 \subsubsection{Clustering of the results}
-\fxnote{Needs to be refined}
+\fxnote{Needs to be refined} 
+
 We perform a clustering of the top 20 results using hierarchical
-clustering. We have chosen to cluster the best disease from the sum 
-similarity measure on the stemmed disease matrix which is the \textit{Cat Scratch disease}. Remember
-that the 20 diseases are chosen based on the similarity to the query
-vector, not how similar they are to each other. From figure
-\ref{sum_stem_top20_best_cat_scratch_disease}, it can be seen that \textit{Cat
-Scratch disease} (near the top) is clustered together with \textit{Cyclic
-Neutropenia} even though it is number 19 on the result list. And the
-disease ranked as number 2 is \textit{Kikuchi disease} which is 6
-sub clusters away from \textit{Cat Scratch disease} - meaning that it requires
-merging 6 sub clusters to get them into the same cluster. The lowest
-ranking disease is \textit{Chediak-Higashi syndrome}. To get this into the same
-cluster as \textit{Cat Scratch} requires the merging of the entire cluster. \fxnote{kan skrives lidt bedre - fx hvad er 'merging'?}
+clustering. We have chosen to cluster the best disease from the sum
+similarity measure on the stemmed disease matrix which is the
+\textit{Cat Scratch disease}. Remember that the 20 diseases are chosen
+based on the similarity to the query vector, not how similar they are
+to each other. From figure
+\ref{sum_stem_top20_best_cat_scratch_disease}, it can be seen that
+\textit{Cat Scratch disease} (near the top) is clustered together with
+\textit{Cyclic Neutropenia} even though it is number 19 on the result
+list, this means these diseases are clostest to each other in the list
+of 20 returned suggestions. And the disease ranked as number 2 is
+\textit{Kikuchi disease} which is 6 sub clusters away from \textit{Cat
+  Scratch disease} - meaning that it requires merging 6 sub clusters
+to get them into the same cluster, the merging is performed by
+calculating a mean vector for the diseases (or sub clusters) being
+merged. The lowest ranking disease is \textit{Chediak-Higashi
+  syndrome}. To get this into the same cluster as \textit{Cat Scratch}
+requires the merging of the entire cluster.
 
 \begin{figure}[H]
   \begin{center}
@@ -1073,15 +1079,20 @@ cluster as \textit{Cat Scratch} requires the merging of the entire cluster. \fxn
   \label{sum_stem_top20_best_cat_scratch_disease}
 \end{figure}
 
-We have also chosen to cluster the disease where sum measure on the stemmed 
-disease matrix produced the worst result. This is the test case
-\textit{Eosinophilic granuloma} where the correct disease was ranked as number
-597. So it is not possible to find it in the dendrogram, our systems \fxnote{opremsning - So..,our..,done}
-best guess was Developmental Dysplasia of Hip. Investigation the
-diseases present in the dendrogram
-\ref{sum_stem_top20_worst_developmental_dysplasia_of_hip} could
-provide helpful knowledge about why our system is so wrong about this
-disease.
+We have also chosen to cluster the disease where sum measure on the
+stemmed disease matrix produced the worst result. This is the test
+case \textit{Eosinophilic granuloma} where the correct disease was
+ranked as number 597. Therefore it is not possible to find it in the
+dendrogram. Our system suggested Developmental Dysplasia of Hip as
+prime candidate given the query vector. Investigating the diseases
+present in the dendrogram
+\ref{sum_stem_top20_worst_developmental_dysplasia_of_hip} and
+comparing them to the correct diagnosis of the disease (if found)
+could provide helpful knowledge about why our system was so wrong in
+its suggestion of this disease, and might provides clues to correcting
+it. The problem might stem from bad or very noisy information about
+the correct disease, which therefore do not provide enough similarity
+to the query vector.
 
 \begin{figure}[H]
   \begin{center}

@@ -1,7 +1,56 @@
 \chapter{Conclusion}
 
+We choose to use the vector space model because it gives a good base
+on which to perform different transformations on the data and performing
+similarity scores.
 
-, which is very exciting and proves the
-possibilities of the system. Although more control over the initial
-information that the system gathers is needed. And there needs to be a
-threshold of the minimum number of MedLine records per disease.\\
+When applying the square root transformation during calculation of
+similarity score on the TF-IDF matrix, our results improved, this
+suggests that other transformation to the data should be
+used. Unfortunately time did not allow us to perform test on other
+transformations.
+
+Our system correctly placed 8 out of 13 diseases among top 20 when
+using the test cases from BMJ using sum on the disease matrix. When
+running on the Orpha.net test cases our system placed 20 out of 29 in
+top 20 using sum on disease matrix. The Orpha.net result is closely
+follow by using cosine max, with square root transformation on a term
+document matrix, this method places 19 out of 29 in top 20.
+
+The blind tests provided by Henrik L. J\o rgensen were also tested
+using our system, and the system placed 3 out of 5 within top
+20. Though our system contains information about the two diseases not
+placed within top 20. We are unable to provide any explanation for
+this.
+
+The test results shows that the system correctly places $61.5\%$ of
+BMJ test cases, $68\%$ of Orpha.net and $60\%$ of the blind test cases
+in top 20.
+
+The elimination of overview article in the database could help reduce
+some of the noise found during testing the system. Combined with
+outlier detection this might improve the results to some degree.
+
+There is a clear need for more control over the information gather to
+describe the rare diseases in the database, this includes a lower
+bound on the information gather for a single disease. This is
+especially with Acropectorovertebral dysplasia in mind which never
+scores below 562 in any test, and in most cases is not even found
+among top 3000.
+
+We were unable to find any information about other system designed to
+perform automated diagnosis of rare diseases. And in that relation
+this system is --- yet --- unique. Hopefully other systems will be
+made to assist physicians in diagnosing rare diseases.
+
+We had a short correspondence with Henrik L. J\o rgensen about the
+usefulness of the system. His opinion was that the system could become a
+helpful tool for physician, because through their carrier they might
+only experience a single rare disease. So in case something did not
+quite fit with the diagnosis, they could type in a symptom list and
+receive a list of suggested diseases. Which would result in patients
+could be referred to the correct treatment.
+
+Considering the test results above this provides evidence that a
+system for providing support decision with respects to diagnosing rare
+disease have potential.
