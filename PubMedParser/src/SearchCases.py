@@ -24,8 +24,8 @@ if _termdocumentmatrix:
     print "Label hash loaded"
 else:
     # Disease label hash (for label lookup)
-    _labelHash = IOmodule.pickleIn(_hashTablePath, "diseaseHash") #_reduced")
-    _labelHash = dict(zip(_labelHash.values(), _labelHash.keys()))
+    _diseaseHash = IOmodule.pickleIn(_hashTablePath, "diseaseHash") #_reduced")
+    _labelHash = dict(zip(_diseaseHash.values(), _diseaseHash.keys()))
     print "Disease hash loaded"
 ############
 
@@ -626,3 +626,26 @@ def runScoreTestBlind_diseaseMatrix(lil, csc):
     print "TEST DONE"
 
     return clusterThis, printout2
+
+
+termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
+revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
+def analyseDiseaseTerms(listOfDiseases,M_coo):
+
+    M_lil=M_coo.tolil()
+
+
+    for disease in listOfDiseases:
+        rowIndex=_diseaseHash[disease]
+
+        termIndices=M_lil.getrow(rowIndex).nonzero()[1]
+
+        termList=[]
+        for colIndex in termIndices:
+            termList.append((M_lil(rowIndex,colIndex),revTermHashTable[colIndex]))
+
+        termList.sort()
+        termList.reverse()
+
+        print termList[:20]
+        print ''
