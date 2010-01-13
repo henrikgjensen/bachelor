@@ -659,7 +659,7 @@ def analyseDiseaseTerms(M_coo):
         count=0
         newTermList=[]
         for item in termList:
-            if len(item[1])>5: newTermList.append(item)
+            if len(item[1])>7: newTermList.append(item)
         for item in newTermList[:20]:
             printout1.append(item[1])
 
