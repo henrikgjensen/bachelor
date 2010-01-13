@@ -439,11 +439,11 @@ def makehist():
                             # TermLabel - Blind tests #
     ##########################################################################
 
-    #diseases=["Fibrodysplasia","Adrenoleukodystrophy","Papillon Lefevre","Kleine Levin","?"]
-    #graphName=""
-    #title=""
+    diseases=["Fibrodysplasia","Adrenoleukodystrophy","Papillon Lefevre","Kleine Levin","Schinzel-Giedion"]
+    graphName="blind_test.png"
+    title="Blind test of rare diseases"
 
-    #x1 = [20,'Not found',6,2,'?']
+    x1 = [20,1718,6,2,165]
 
     # "Adrenoleukodystrophy  autosomal  neonatal form" found at '1718'
     # "Childhood-onset cerebral X-linked adrenoleukodystrophy" not found
@@ -460,10 +460,12 @@ def makehist():
 #    cx3 = '#f5f525'
 
     # for four bars
-    cx1 = '#29dbda'
-    cx2 = '#2943db'
-    cx3 = '#ec1008'
-    cx4 = '#f66b5a'
+#    cx1 = '#29dbda'
+#    cx2 = '#2943db'
+#    cx3 = '#ec1008'
+#    cx4 = '#f66b5a'
+
+    cx1="blue"
 
     # for three bars
 #    lx1 = 'Cosine no sqrt,'
@@ -471,17 +473,19 @@ def makehist():
 #    lx3 = 'Sum,'
 
     # for four bars.
-    lx1 = 'Sum disease matrix,'
-    lx2 = 'Cosine mean term-doc,'
-    lx3 = 'Cosine max term-doc,'
-    lx4 = 'Sum mean term-doc,'
+#    lx1 = 'Sum disease matrix,'
+#    lx2 = 'Cosine mean term-doc,'
+#    lx3 = 'Cosine max term-doc,'
+#    lx4 = 'Sum mean term-doc,'
+
+    lx1 = 'Tests on the sum disease matrix'
 
     # Font size in legend
     rc('legend', fontsize='small')
 
     # For four bars
-    xlen=len(x1)*8
-    step = 8
+#    xlen=len(x1)*8
+#    step = 8
 
     # For three bars
 #    xlen=len(x1)*6
@@ -491,29 +495,32 @@ def makehist():
     #    xlen=len(x1)*4
     #    step=4
 
+    xlen=len(x1)*2
+    step=2
+
     x1_log=map(lambda x: math.log(x+1),x1)
-    x2_log=map(lambda x: math.log(x+1),x2)
-    x3_log=map(lambda x: math.log(x+1),x3)
-    x4_log=map(lambda x: math.log(x+1),x4)
+    #x2_log=map(lambda x: math.log(x+1),x2)
+    #x3_log=map(lambda x: math.log(x+1),x3)
+    #x4_log=map(lambda x: math.log(x+1),x4)
 
     y1=mean(x1_log)
     print y1
-    y2=mean(x2_log)
-    print y2
-    y3=mean(x3_log)
-    print y3
-    y4=mean(x4_log)
-    print y4
-    ax.plot([0,xlen],[y1,y1],color=cx1,linewidth=2)
-    ax.plot([0,xlen],[y2,y2],color=cx2,linewidth=2)
-    ax.plot([0,xlen],[y3,y3],color=cx3,linewidth=2)
-    ax.plot([0,xlen],[y4,y4],color=cx4,linewidth=2)
+    #y2=mean(x2_log)
+    #print y2
+    #y3=mean(x3_log)
+    #print y3
+    #y4=mean(x4_log)
+    #print y4
+    ax.plot([0,xlen],[y1,y1],color='red',linewidth=2)
+    #ax.plot([0,xlen],[y2,y2],color=cx2,linewidth=2)
+    #ax.plot([0,xlen],[y3,y3],color=cx3,linewidth=2)
+    #ax.plot([0,xlen],[y4,y4],color=cx4,linewidth=2)
 
     
     ax.bar(arange(0,xlen,step), x1_log, color=cx1, width=1, label=lx1+' avg='+str(y1)[:4])
-    ax.bar(arange(1,xlen,step), x2_log, color=cx2, width=1, label=lx2+' avg='+str(y2)[:4])
-    ax.bar(arange(2,xlen,step), x3_log, color=cx3, width=1, label=lx3+' avg='+str(y3)[:4])
-    ax.bar(arange(3,xlen,step), x4_log, color=cx4, width=1, label=lx4+' avg='+str(y4)[:4])
+    #ax.bar(arange(1,xlen,step), x2_log, color=cx2, width=1, label=lx2+' avg='+str(y2)[:4])
+    #ax.bar(arange(2,xlen,step), x3_log, color=cx3, width=1, label=lx3+' avg='+str(y3)[:4])
+    #ax.bar(arange(3,xlen,step), x4_log, color=cx4, width=1, label=lx4+' avg='+str(y4)[:4])
 
 
     ax.set_xticks(range(step/2,xlen,step))
