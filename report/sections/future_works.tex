@@ -1,50 +1,79 @@
 \chapter{Future Works\label{FutureWorks}}
 
-What could be awesome for future versions of the system?\\
+In this chapter we present some of the ideas for improvements that could be implemented into the system.
+
+\subsubsection{Statistical model}
+Gathering information about prior probabilities of the diseases could
+help produce better term weights for the term document matrix. The
+more information that could be found the more specific the
+model. Gathering information about age, gender, racial and location
+dependencies of the diseases should be able to improve the system
+ability to correctly find the right disease.
+
+Improved classifications of the diseases could help in clustering the
+diseases to gain a better overview of them.
+
+ ... \fxnote{Do not know what to write}
+
+\subsubsection{Construction of other term document matrices}
+A term document matrix based on keywords extracted by LSA could prove
+most useful.
+
+\subsubsection{Improvement on queries}
+The possibility of comparing to queries to the system, could be useful
+to a phycisian. He could then compare the results from two slightly
+different queries, and then inspect the returned results.
+
+Addition query options like preference for author, year, journal
+etc. Could make it easier for a phycisian already knowing a bit about
+what he is about to find.
+
+Term mapping would be able to increase the recall of the system, this
+could help retrieve the right information. Mapping synonyms to
+eachother and searching for these.
+
+Boolean searches, allowing the user that terms should be present and
+other should not.
+
+Visual representation of disease cluster, including keyswords
+extracted by LSA.
+
+A visual representation of the results something like table
+\ref{FutureGUI}. Were ``Keywords'' are extracted those that best
+describe the disease, given the information we have about
+it. ``Score'' is the calculated score that the system has given the
+query. And ``PMID'' is the list of PMID's that the score is derived
+from. It should be possible to expand the PMID's in different level to
+see title, then abstract and perhaps full informtion about the MedLine
+record.
+\begin{table}
+  \begin{tabular}{|r|r|r|r|}
+    \hline
+    Disease name & Keywords & Score & PMIDs \\
+    \hline
+    Disease$_1$ & "Cancer, lever, blood, aortic ..." & 0.8242 & $18134923$, \dots, $3289472$ \\
+    \hline
+    {} & {} & {} & {} \\
+    \hline
+    Disease$_20$ & "Cancer, lever, blood, aortic ..." & 0.2412 & $17584932$, \dots, $16191394$ \\
+    \hline
+  \end{tabular}
+  \label{FutureGUI}
+\end{table}
+
+\subsubsection{Improvements regarding text / data retrieval}
+Locate more sources to gather information from, Orpha.net would be an ideal candidate. During the project we did also come across a rare diseases webpage from the Swedish Governments health care section, the page were unfortunenately down for maintanence
 
 \begin{itemize}
-  \item Statistical model
-  \begin{itemize}
-    \item Prior probabilities about diseases, race, age, gender and location dependent. Building a statistical model, if enough information about the diseases can be located.
-    \item Improve the classification of diseases.
-  \end{itemize}
-  \item Construct other term document matrices
-  \begin{itemize}
-    \item Base a term document matrix keywords extracted at Medline record level, see how it performs.
-    \item Base a term document matrix on sub term document
-  \end{itemize}
   \item Improvements involving queries / searches
   \begin{itemize}
-    \item The possibility of comparing queries.
     \item Possibility of querying sub a clusters of returned diseases
-    \item Apply additional query options like Authors, year, journal etc.
     \item Improve the recall in the system by performing term mapping. Meaning a search term will be mapped to all its synonyms thereby hopefully improving the recall of information.
   \end{itemize}
   \item Visualization / GUI
   \begin{itemize}
     \item Visual representation of disease cluster, including keywords around a search query.
-    \item A visual representation of the results something like:
-    \item \begin{tabular}{|r|r|r|r|}
-
-\hline
-
-Disease name & Keywords & Score & PMIDs \\
-
-\hline
-
-Disease$_1$ & "Cancer, lever, blood, aortic ..." & 0.8242 & $18134923$, \dots, $3289472$ \\
-
-\hline
-
-{} & {} & {} & {} \\
-
-\hline
-
-Disease$_20$ & "Cancer, lever, blood, aortic ..." & 0.2412 & $17584932$, \dots, $16191394$ \\
-
-\hline
-
-\end{tabular}
+    
   \end{itemize}
   \item Improvement regarding the text mining / data retrieval for the system
   \begin{itemize}
