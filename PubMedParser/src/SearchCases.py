@@ -628,7 +628,7 @@ def runScoreTestBlind_diseaseMatrix(lil, csc):
     return clusterThis, printout2
 
 
-termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
+termHashTable=IOmodule.pickleIn(_hashTablePath, "termHash_stemmed")
 revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
 def analyseDiseaseTerms(listOfDiseases,M_coo):
 
