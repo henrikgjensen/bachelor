@@ -642,7 +642,7 @@ def analyseDiseaseTerms(listOfDiseases,M_coo):
 
         termList=[]
         for colIndex in termIndices:
-            termList.append((M_lil(rowIndex,colIndex),revTermHashTable[colIndex]))
+            termList.append((M_lil[rowIndex,colIndex],revTermHashTable[colIndex]))
 
         termList.sort()
         termList.reverse()
