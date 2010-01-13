@@ -1100,9 +1100,10 @@ with the query vector.
   \label{sum_stem_top20_worst_developmental_dysplasia_of_hip}
 \end{figure}
 
-\subsection{Results of the blind tests (provided by Henrik L. J\o rgensen)\label{Blindtest}}
+\subsection{Results and analysis of the blind tests (provided by Henrik L. J\o rgensen)\label{Blindtest}}
 
-Below are shown the results from from the blind tests described in figure \ref{blind_test_table}.
+Below are shown the results from from the blind tests described in figure \ref{blind_test_table} -
+note that the scores above are 0-indexed as in the previous sections. 
 
 \begin{figure}[H]
   \caption{Blind test of a stemmed disease matrix using the sum measure}
@@ -1124,7 +1125,130 @@ Below are shown the results from from the blind tests described in figure \ref{b
 \end{tiny}
 \end{table}
 
-\noindent \small{\textit{*Note that the scores above are 0-indexed as in the previous sections.}}
+As we see, \textit{Adrenoleukodystrophy autosomal neonatal form} has a surprisingly poor score despite the many symptoms used in the query.
+We will try to analyse how this can be by looking at the most describing terms of the disease, as according to the used 
+disease matrix. The disease matrix was TF-IDF transformed and thus the terms unique and classifying to the disease are those with a high term 
+frequency and occurs few times in the corpus of diseases (high inverse document frequency). In table \ref{toptermtable} below, we pull out the 
+top 20 terms of the disease vector describing the worst (\textit{Adrenoleukodystrophy autosomal neonatal form}) and the best (\textit{Kleine Levin syndrome}) 
+scored disease of the blind test.
+
+\begin{table}[H]
+\begin{tiny}
+\caption{Top 20 terms}
+\label{toptermtable}
+ \begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    \scriptsize{\textbf{Adrenoleukodystrophy}} & \scriptsize{\textbf{Kleine Levin}} \\
+\hline
+    pex26 &lein  \\
+\hline
+    pex1 &megaphagia \\
+\hline
+    pex13 &hypersomnia\\
+\hline
+    pex5 &levin\\
+\hline
+    nald &hypersomn\\
+\hline
+    pts1 &kl\\
+\hline
+    ldpex5 &hypersomniac\\
+\hline
+    pex12 &hypersexu \\
+\hline
+    pex5p &hypersomnol\\
+\hline
+    peroxin&asmp \\
+\hline
+    pex10 &narcolepsi\\
+\hline
+    zs &hypocretin\\
+\hline
+    pbd &mslt \\
+\hline
+    pex14 &hyperphagia\\
+\hline
+    g843d &pickwickian \\
+\hline
+    pex12p &somnol\\
+\hline
+    pex1p &ceretec\\
+\hline
+    ird &parasomnia\\
+\hline
+    pts1r &rem\\
+\hline
+    pts2 &smp\\
+    \hline
+    \end{tabular}
+\end{center}
+\end{tiny}
+\end{table}
+
+The top 20 terms on on the table above reveals a sginificant difference between the two diseases.
+\textit{Adrenoleukodystrophy} is mainly classified by what seems to be protein names while 
+\textit{Kleine Levin} is more defined by what could seem to be symptoms like the ones a physician
+could be thougt to use. Let us expand the analysis and look at the ranks (from highest document-term value to lowest) 
+of the symptoms that were actually used for the queries in the blind test. These are shown in table \ref{termranked} below.
+
+\begin{table}[H]
+\begin{tiny}
+\caption{Ranked quried symptoms}
+\label{termranked}
+ \begin{center}
+  \begin{tabular}{|p{6cm}|p{6cm}|}
+    \hline
+    \scriptsize{\textbf{Adrenoleukodystrophy}} & \scriptsize{\textbf{Kleine Levin}} \\
+  \hline
+  \end{tabular}
+  \\
+\begin{tabular}{|p{2.8cm}|p{2.8cm}|p{2.8cm}|p{2.8cm}|}
+\hline
+ \scriptsize{\textbf{Rank}} & \scriptsize{\textbf{Term}} & \scriptsize{\textbf{Rank}} & \scriptsize{\textbf{Term}} \\
+\hline
+  1367 & normal & 215 & jewish \\
+\hline
+   1668 & develop  &  1053 & boy \\
+\hline
+  1383 & boy  & 1585 & age \\
+\hline
+  1710 & age & 2247 & 16 \\
+\hline
+  1698 & 5 &  454 & seizur \\
+\hline
+  1668 & develop &  53 & sleep \\
+\hline
+  1891 & difficulti &  1771 & aggress \\
+\hline
+  440 & seizur &  389 & irrit \\
+\hline
+  524 & adren  & 1682 & highli \\
+\hline
+  1474 & insuffici &  1301 & increas \\
+\hline
+  861 & degener  & 202 & sexual \\
+\hline
+  1229 & visual &  83 & appetit \\
+\hline
+  731 & auditori &  172 & hunger \\
+\hline
+  1048 & function & & \\
+\hline
+\end{tabular}
+\end{center}
+\end{tiny}
+\end{table}
+
+Again we see a clear difference between the two diseases. \textit{Adrenoleukodystrophy}
+has none of the queried terms below 440 in rank and in general the queried terms are not
+ranked very highly in the \textit{Adrenoleukodystrophy} document. This could seem to indicate
+that the abstracts gathered for \textit{Adrenoleukodystrophy} use many synonyms for the
+general terms while they might use the same protein/gene names for the disease, thus giving
+these a high term frequency (recall) in the disease's corpus of abstracts. This problem
+could probably be solved using a list of protein/gene names to filter away these to construct
+a disease matrix that could allow physicians to enable/disable protein/gene names before a 
+query.
 
 \subsection{On overview article noise and consensus normalization\label{Overview}}
 

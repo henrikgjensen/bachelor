@@ -654,8 +654,15 @@ def analyseDiseaseTerms(M_coo):
         termList.reverse()
 
         printout1=[]
-        for item in termList[:20]:
+        #for item in termList[:20]
+        #    printout1.append(item[1])
+        count=0
+        newTermList=[]
+        for item in termList:
+            if len(item[1])>7: newTermList.append(item)
+        for item in newTermList[:20]:
             printout1.append(item[1])
+
         print 'Top 20 terms:'
         print '---------------------'
         print printout1
@@ -667,7 +674,6 @@ def analyseDiseaseTerms(M_coo):
         symptoms = FilterInterface.stopwordRemover(symptoms)
         symptoms=FilterInterface.porterStemmer(symptoms)
         symptoms=SearchTermDoc._modifySearchString(symptoms)
-        #print symptoms
         count+=1
 
         for symptom in symptoms:
