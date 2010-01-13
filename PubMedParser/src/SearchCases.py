@@ -665,7 +665,8 @@ def analyseDiseaseTerms(M_coo):
         symptoms=listOfSymptoms[count]
         symptoms = sanitizer.sub(' ', symptoms)
         symptoms = FilterInterface.stopwordRemover(symptoms)
-        print symptoms
+        symptoms=FilterInterface.porterStemmer(symptoms)
+        #print symptoms
         count+=1
 
         for symptom in symptoms:
