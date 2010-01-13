@@ -180,6 +180,7 @@ def getSemanticKeywords(top=20):
     #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced90_outlierRemoved5"
 
     scoreDic={}
+    totalTermDic=[]
     for disease in diseaseList:
 
         filename=disease[0]
@@ -189,6 +190,7 @@ def getSemanticKeywords(top=20):
         symptoms=map(FilterInterface.porterStemmer,symptoms)
 
         M_coo=IOmodule.readInTDM(matrixDir,filename)
+        totalTermDic[filename]=(M_coo[1]-1)
 
         M_csc=M_coo.tocsc()
     
@@ -208,5 +210,6 @@ def getSemanticKeywords(top=20):
     #return termSum[:top]
 
     for score in scoreDic.items():
-        print score[0]+'\t'+score[1]+'\n'
+        print "Total number of terms for the disease:",totalTermDic[score[0]]
+        print str(score[0])+'\t'+str(score[1])
     
