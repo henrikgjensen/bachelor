@@ -24,7 +24,7 @@ if _termdocumentmatrix:
     print "Label hash loaded"
 else:
     # Disease label hash (for label lookup)
-    _diseaseHash = IOmodule.pickleIn(_hashTablePath, "diseaseHash") #_reduced")
+    _diseaseHash = IOmodule.pickleIn(_hashTablePath, "diseaseHash_reduced")
     _labelHash = dict(zip(_diseaseHash.values(), _diseaseHash.keys()))
     print "Disease hash loaded"
 ############
