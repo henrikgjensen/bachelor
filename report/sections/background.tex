@@ -85,7 +85,7 @@ string. An example of this is:
 }
 
 Handcrafted search strings can be more or less specific. The one just
-examplified is rather standard - simply searching for the disease name
+exemplified is rather standard - simply searching for the disease name
 and a condition being that either the MeSH-terms should contain
 "disease" or that "disease" should be present in any of the fields
 (for a description of fields see
@@ -116,7 +116,7 @@ information to work with) we select all the related articles to the
 OMIM link, hoping these also will contain valuable information
 relevant to the disease. The handcrafted descriptions is retrieved,
 but currently not used in our system, though this could provide
-valuable informtion about the diseases. \fxnote{Henvisning til
+valuable information about the diseases. \fxnote{Henvisning til
   implementerings afsnit i kap 3}
 
 As mentioned, Rarediseases.info is far from complete in its level of
@@ -126,7 +126,7 @@ alternative like Orpha.net (section \ref{Orphanet}) seems to be
 containing more information per disease than Rarediseases.info and it
 contains a longer list of rare diseases. We do not use Orpha.net
 because we sought permission to text mining their site, but have
-recieved no answer to the request.
+received no answer to the request.
 
 \subsection{PubMed and Entrez\label{PubmedEntrez}}
 
@@ -152,7 +152,7 @@ proteins or keywords by searching through PubMed abstracts. Another
 example is iHOP \cite{IHOP} (information-Hyperlinked Over Proteins)
 that allows the user to search for protein-networks. In iHOP, the user
 types in a protein name and the system then searches PubMed for
-occurences of that name. A snippet of the found abstracts is returned
+occurrences of that name. A snippet of the found abstracts is returned
 to the user along with the information on where it was found and
 protein names are marked out. When marking the protein name, it
 provides a confidence level to the identified proteins names, based on
@@ -172,7 +172,7 @@ vs. 'no heart disease' \cite{SVMHeartDiseaseClassification}.
 
 Most diagnosis systems that function well today are based on machine
 learning and image analysis. Wang et. al looks at the performance of a
-system to diagnose breast canser using either image features,
+system to diagnose breast cancer using either image features,
 non-image features or both. The hybrid system combining both feature
 sets in diagnosis, performed the best \cite{Wang1999115}.
 
@@ -190,15 +190,15 @@ disease not multiple. And example of this is a system using neural
 network to diagnose Lyme borreliosis disease \cite{AutomatedNNLyme}
 
 \subsubsection{Database interface}
-Searching in PubMed is done by boolean queries using the keywords AND,
+Searching in PubMed is done by Boolean queries using the keywords AND,
 OR and NOT operators on record fields (see section
 \ref{MedLine_records_MeSH}) which provides a very powerful way to
 search since it's possible to retrieve any subset of the
 database. Graham L. Poulter has constructed a classifier that to ranks
 nearly 17 million documents from the MedLine database of biomedical
-literature \cite{RapidClassification}. He remarks that the boolean
+literature \cite{RapidClassification}. He remarks that the Boolean
 search also presents a major problem when it comes to the amount of
-information returned. If a search is slightly inspecific, the results
+information returned. If a search is slightly nonspecific, the results
 will tend to be numerous --- a problem when for example diagnosing a rare
 disease.
 
@@ -212,7 +212,7 @@ retrieved information from Rarediseases.info
 
 The figure \ref{EntrezDatamodel} shows the structure of Entrez and
 visualize how many resources there are available at the different
-subcomponents\footnote{Go to
+sub components\footnote{Go to
   \href{http://www.ncbi.nlm.nih.gov/Database/datamodel/index.html}{http://www.ncbi.nlm.nih.gov/Database/datamodel/index.html}
   for an interactive model in Flash.}.
 
@@ -220,7 +220,7 @@ subcomponents\footnote{Go to
         \begin{center}
           \includegraphics[width=1.0\textwidth]{drawings/entrez_datamodel.png}
         \end{center}
-        \caption{Shows the structure of the Entrez datamodel}
+        \caption{Shows the structure of the Entrez data model}
         \label{EntrezDatamodel}
 \end{figure}
 
@@ -357,16 +357,16 @@ SO  - Ophthalmic Surg Lasers Imaging. 2009 Jul-Aug;40(4):419-20.
 Having gathered information about rare diseases, our system needs to
 be able to efficiently search and retrieve information given a query
 string. Various approaches to retrieve the information needed
-exists. A possibility is using boolean queries, where it is possible
+exists. A possibility is using Boolean queries, where it is possible
 to use the standard operators like ``AND'', ``OR'' and ``NOT'' to
 perform queries a system --- this is the PubMed works. Many
-professional users prefer using boolean queries, because it offers
+professional users prefer using Boolean queries, because it offers
 them precise control over what is returned. Either a document matches
-or it does not. But this does not mean that using boolean queries are
+or it does not. But this does not mean that using Boolean queries are
 the most efficient, not even for professional searchers
 \cite{IntroIR2009}. A problem is that the use of the ``AND'' operator
 tends to produce high precision, but in turn lowers the recall of
-information \cite{IntroIR2009}. As the boolean query model only record
+information \cite{IntroIR2009}. As the Boolean query model only record
 term presence or absence, it lacks the ability to produce ranked
 ordered results. In order to rank the query results the different
 terms needs to be given a weight describing how important the term is
@@ -407,14 +407,14 @@ document and each column a term.
   \label{ExampleTermDoc}
 \end{figure}
 
-In our case, the abstract, MeSH terms and title of a MedLine record
+In our case, the abstract, MeSH terms and title of a Mealing record
 will represent a document vector in the model. The first index is
 saved for a hash of the document id (PMID) \fxnote{Hash of the
-  document id} while the remaining indices make up the term (or word)
+  document id} while the remaining India's make up the term (or word)
 frequencies of each term in the abstract, MeSH and title in the
 record. The choice of putting the title of the record together with
 its abstract is appropiate since these (often long) titles has a
-tendency of carrying a lot of information on the MedLine records. As
+tendency of carrying a lot of information on the Merlina records. As
 described in section \ref{MedLine_records_MeSH}, the optional MeSH
 also contains valuable information on the record.
 
@@ -467,10 +467,10 @@ used schemes for enhancing the performance (recall and precision) of a
 search in the model. We will also go through some less common schemes
 used for the prototype system and justify these decisions.
 
-\subsection{Mitigating the problem of term burstiness\label{MitigatingBurstiness}}
+\subsection{Mitigating the problem of term fustiness's\label{MitigatingBurstiness}}
 
 The term 'burstiness' describes the behavior of a rare word appearing
-many times in a single document according to Rasmus E. Madsen et. al
+many times in a single document according to REMs E. Madsen ed. al
 \cite{ModelingWordBurstiness2005}. This is under the general
 assumption that if a word appears once in a document, it is more
 likely to appear again. This assumption breaks with the independence
@@ -480,7 +480,7 @@ often seems to exaggerate the significance of that word. Derived from
 log-transformation of the term frequency:
 
 \[
-x_{dw}^{log} = \log{(1 + x_{dw})}
+x_{MW}^{log} = \log{(1 + x_{dw})}
 \]
 
 Where $x_{dw}$ is the number of times the term $w$ appears in document
@@ -496,11 +496,11 @@ log-transformation of the term frequency from
 section \ref{MitigatingBurstiness}):
 
 \[
-x_{ij}^{tfidf} = \log{(1 + x_{dw})} * \log{\frac{D}{\sum_{d\prime = 1}^{D}\delta_{d\prime w}} }
+x_{iv}^{tfidf} = \log{(1 + x_{dw})} * \log{\frac{D}{\sum_{d\prime = 1}^{D}\delta_{d\prime w}} }
 \]
 
 Where $\delta_{dw}$ is $1$ if $w$ is present in document $d$ and $D$
-is the document corpus. Term frequency ($\mathit{tf}$) is also referred to as the
+is the document corpus. Term frequency ($\mathit{TN}$) is also referred to as the
 \textit{recall} component while the inverse document frequency (IDF)
 is the \textit{precision} component. In other words, IDF gives us a
 higher weight for rare terms and the log-transformation of IDF helps
@@ -527,7 +527,7 @@ to only consider the relatively simple transformations.
 
 After the TF-IDF transformation, there is a need to normalize the
 vectors using L$_2$ normalization\footnote{Also known as the
-  Euclidian norm}. This makes all the document vectors have the same
+  Euclidean norm}. This makes all the document vectors have the same
 length and therefore the same influence on the search result.
 
 \[
@@ -543,8 +543,8 @@ normalization to make the length 1.
 Like the log-transformation in section \ref{MitigatingBurstiness}, the
 square root transformation represents a method for smoothing
 burstiness in data. The most important difference is that using the
-square root on data smoothes the data towards 1 as a contrast to the
-more aggresive log-transformation. Numbers of 1 and above behave
+square root on data smooths the data towards 1 as a contrast to the
+more aggressive log-transformation. Numbers of 1 and above behave
 differently than numbers between 0.00 and 0.99. The square root of
 numbers above 1 always become smaller, 1 and 0 remain constant, and
 numbers between 0.00 and 1.00 become larger (the square root of 4 is
@@ -570,7 +570,7 @@ result in poorer search results.
 
 \subsection{Stop word removal}
 
-We will be removing english stop words in the prototype to limit the
+We will be removing English stop words in the prototype to limit the
 number of too common words that interfere with searches. In recent
 years there has been a tendency to avoid using stop word removal due
 to the small impact that it has on a search \cite{IntroIR2009}. But
@@ -630,6 +630,23 @@ every other document vector --- scores the lowest.
 experimenting with outlier detection but it is not a primary focus,
 since --- without a classifier --- it is impossible to guarantee the
 removed documents are irrelevant.
+
+\subsection{Clustering}
+
+Performing clustering on the diseases within our database could
+provide valuable information to the physician using our system. Which
+diseases are similar to each other, which could easily be mistaken for
+one another. This is unfortunately very computationally intensive and
+is beyond the scope of this project. But performing clustering on a
+limited subset, such as the top 20 returned results is possible. This
+should reflect the diseases similarity to the query vector. A number
+of clustering algorithms exist, such as k-nearest neighbour (knn) or
+hierarchical clustering, the latter begin the most computational
+heavy, but tends to give better results than knn as it is not based on
+randomized centroids, such as those knn relies on. This means that
+every time a dendrogram is made, it looks the same. Because we only
+need to cluster 20 diseases, we have chosen to use hierarchical
+clustering.
 
 \subsection{Latent Semantic Analysis\label{LSA}}
 
@@ -779,7 +796,7 @@ cons. We primarily use the "lil" format, which is a sparse matrix
 using linked lists. For traversal through the matrix, we use the "coo"
 format which is coordinate format. coo matrices also facilitate fast
 conversion to the other matrix format. For a quick look-up of
-individual elements, it is advantagous to use the "dok" format which
+individual elements, it is advantageous to use the "dok" format which
 is a dictionary of keys. This allows O(1) time access to matrix
 elements. And the "csc" and "csr" formats can be used when dealing
 with arithmetic operations since these are efficient for column and
@@ -804,7 +821,7 @@ dok format which allows fast access for elements.
 Compressed sparse row or column allows for fast matrix
 arithmetic operations like, addition, multiplication, matrix matrix
 product, vector matrix product and so on. The csr allow fast row
-slicing but is slow when column slicing and csc vice versa.
+slicing but is slow when column slicing and csc vice verse.
 
 The two remaining sparse matrix formats in SciPy are not relevant to the
 project.
@@ -823,7 +840,7 @@ their website \cite{MatrixMarket}.
 \subsection{cPickle}
 
 cPickle is a standard Python module that is used for serializing
-Python objects. It can be used to save objects to the harddrive and
+Python objects. It can be used to save objects to the hard drive and
 later read them back into memory - without bothering with type
 transformations. cPickle has the unfortunate property that it saves
 all the zeroes that resides within the term document matrix which
@@ -856,3 +873,7 @@ the system to enhance the precision by defining the continental origin of
 the disease. It could also up the number of diseases with a description to 
 a large enough amount for a classifier to use them for priors in a 
 statistical model. 
+
+% LocalWords:  relevans PMID hemangioma intracranial MeSH appropiate TF IDF LSA
+% LocalWords:  precalculated polysemy Polysemy synonymity SVD burstiness Madsen
+% LocalWords:  al dw tfidf andet ord

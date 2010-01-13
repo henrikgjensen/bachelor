@@ -29,6 +29,7 @@
 \usepackage{hyperref}
 \usepackage{listings}
 
+
 \usepackage{float}
 \usepackage[small,bf]{caption}
 %\usepackage{xypic}
@@ -42,7 +43,7 @@
 %%%%% CONFIGURATIONS %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lstset{language=Python, basicstyle=\scriptsize, showstringspaces=false, numbers=none, stepnumber=1, numberstyle=\tiny}
-
+\setcounter{tocdepth}{2}
 \hyphenation{mand-en} %%% Add here if something does not break right. Like this nu-clear-test-bomb-ing
 
 
@@ -103,6 +104,7 @@ pdfkeywords={Diagnosing rare diseases, text mining}
 
 \tableofcontents
 
+\pagenumbering{arabic}
 \input{sections/introduction.tex}
 
 \input{sections/background.tex}
@@ -115,10 +117,10 @@ pdfkeywords={Diagnosing rare diseases, text mining}
 
 \input{sections/future_works.tex}
 
-\bibliographystyle{unsrt} % nat
+\bibliographystyle{unsrtnat} % nat
 \bibliography{referencelist}
 %% 
-\addcontentsline{toc}{section}{Reference list}
+\addcontentsline{toc}{chapter}{Reference list}
 
 \appendix
 \input{sections/appendix.tex}
