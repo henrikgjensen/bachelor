@@ -32,7 +32,7 @@ if not _stemmer:
     _termHash="termHash"
     _pmidHash="pmidHash"
     _termDoc="TermDoc"
-    _label = 'LabelMatrix'
+    _label = 'DiseaseMatrix'
 
 ########################################################################
 #### Use stopword-removal and Porter-stemming (english) as filters: ####
@@ -44,7 +44,7 @@ else:
     _termHash="termHash_stemmed"
     _pmidHash="pmidHash_stemmed"
     _termDoc="TermDoc_stemmed"
-    _label = 'LabelMatrix_stemmed' #svd label
+    _label = 'DiseaseMatrix_stemmed' #svd label
 
 label=_label+'_tfidf'
 
@@ -78,7 +78,7 @@ def getColumnSum(subTermDoc, avg=False):
         
     return sparse.lil_matrix(sumVector)
 
-def constructLabelMatrix(subMatrixDir, avg=False, output=False, time_log=False):
+def constructDiseaseMatrix(subMatrixDir, avg=False, output=False, time_log=False):
 
     """
     Recieves a subMatrixDir goes through all the files and sums up the
@@ -108,13 +108,13 @@ def constructLabelMatrix(subMatrixDir, avg=False, output=False, time_log=False):
     termHashTable = IO.pickleIn(_hashTablesDir, _termHash)
     diseaseHashTable = IO.pickleIn(_hashTablesDir, diseaseHash)
 
-    labelMatrix=sparse.lil_matrix((len(files)+1,len(termHashTable)+1))
+    diseaseMatrix=sparse.lil_matrix((len(files)+1,len(termHashTable)+1))
 
     # Initialize subTermSum to something
     subTermSum = sparse.lil_matrix((1,1))
 
     if output:
-        print 'Done initialising label matrix of size', str((len(files)+1,len(termHashTable)+1))
+        print 'Done initialising disease matrix of size', str((len(files)+1,len(termHashTable)+1))
         count = 0
 
     if time_log:
@@ -140,33 +140,33 @@ def constructLabelMatrix(subMatrixDir, avg=False, output=False, time_log=False):
         subTermSum[0,0] = diseaseHashTable[diseaseName]
         subTermSum[0,:] = subTermDoc.getrow(0)
 
-        labelMatrix[diseaseHashTable[diseaseName],0] = diseaseHashTable[diseaseName]
+        diseaseMatrix[diseaseHashTable[diseaseName],0] = diseaseHashTable[diseaseName]
         
         if time_log:
             print 'Time for', diseaseName, str(time.time() - t2)[:4]
             t3 = time.time()
 
         if output:
-            print 'Filling in values in label matrix for', diseaseName
+            print 'Filling in values in disease matrix for', diseaseName
         for columnIndex in range(1,subTermSum.shape[1]):
-            labelMatrix[diseaseHashTable[diseaseName],subTermSum[0,columnIndex]] = subTermSum[1,columnIndex]
+            diseaseMatrix[diseaseHashTable[diseaseName],subTermSum[0,columnIndex]] = subTermSum[1,columnIndex]
         if time_log:
-            print 'Values filled into label matrix in', str(time.time() - t3)[:4]
+            print 'Values filled into disease matrix in', str(time.time() - t3)[:4]
         if output:
             print 'Completed filling in values.'
 
     # Hack way of making term hashes
-    labelMatrix[0,:] = range(0,len(termHashTable))
+    diseaseMatrix[0,:] = range(0,len(termHashTable))
     
     if output:
-        print 'Done making label matrix, writing to'
+        print 'Done making disease matrix, writing to'
 
-    IO.writeOutTDM(_termDocDir, label, labelMatrix)
+    IO.writeOutTDM(_termDocDir, label, diseaseMatrix)
 
     if output:
-        print 'Done wrting label matrix.'
+        print 'Done writing disease matrix.'
         
-    return labelMatrix
+    return diseaseMatrix
 
 def createDiseaseHash(dir,output=False):
 
