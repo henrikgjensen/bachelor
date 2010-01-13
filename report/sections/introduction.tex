@@ -28,7 +28,7 @@ mining on biomedical literature. In 1986, he found evidence of a
 relation between the use of fish oil and the development of Raynaud's
 syndrome by looking at seemingly unrelated documents. This was done
 years before there were actually any scientific documents supporting
-this. \\
+this.
 
 Over the recent years the use of text mining has grown
 tremendously. In the biomedical field, research is divided into highly
@@ -42,7 +42,7 @@ mechanisms play a major role in the various branches of medicine
 these important connections in a world of increasing complexity and
 hidden patterns. This way of making new unseen discoveries also
 introduces text mining as a major potential aid in the diagnosis of
-rare or (to the physician) unknown diseases.\\
+rare or (to the physician) unknown diseases.
 
 This project aims to make it easier and more efficient for physicians
 in diagnosing rare diseases. Through the use of text mining,
@@ -57,17 +57,18 @@ the text for a more optimized search.
 
 \section{Inspiration}
 
-The list of rare diseases counts over 6,000 individual cases and has 5
+The list of rare diseases counts over 6,000 and has 5
 added to it a week \cite{AboutRareDiseasesOrphanet}. A rare (or
 orphan) disease is classified by the Orpha.net Encyclopedia
-\cite{OrphanetEncyclopedia} as being a disease that affects 1 out of
-2,000 people in Europe and has severe chronic or terminal outcomes (or
-less than 200,000 affected in the USA by standard of Rarediseases.info
-\cite{Rarediseases}). Some of these \fxnote{fix - some of these disases} diseases might not be fatal if
-treated in time. However, given the amount of knowledge your physician
-would need to carry around to make a correct diagnosis (or correctly
-exclude other potentials), a quick (and correct) treatment is not
-always the case.\\
+\cite{OrphanetEncyclopedia} as being a disease that affects less than
+1 out of 2,000 people in Europe and has severe chronic or terminal
+outcomes (or less than 200,000 affected in the USA by standard of
+Rarediseases.info \cite{Rarediseases}). Some of these \fxnote{fix -
+  some of these disases} diseases might not be fatal if treated in
+time. However, given the amount of knowledge your physician would need
+to carry around to make a correct diagnosis (or correctly exclude
+other potentials), a quick (and correct) treatment is not always the
+case.
 
 When being affected by a rare disease, the lack of a correct diagnosis
 --- or the delay spent going from one specialist to another --- will in
@@ -75,20 +76,20 @@ often lead to a fatal outcome. When it comes to rare and often
 dangerous diseases, the typical physician has little or none prior
 experience with similar cases. Therefore it is important that the
 diagnosing physician has as much help at hand as possible in this
-intrinsic task.\\
+intrinsic task.
 
-In a dialog with Henrik L. J\o rgensen \cite{TheDude} --- chief
-physician at Bispebjerg Hospital --- we found that --- even though many
-systems already exist to help physicians in their diagnosis --- there
-seemed to be a lack of a system for specifically diagnosing rare
+In a dialogue with Henrik L. J\o rgensen \cite{TheDude} --- chief
+physician at Bispebjerg Hospital --- we found that --- even though
+many systems already exist to help physicians in their diagnosis ---
+there seemed to be a lack of a system for specifically diagnosing rare
 diseases. Systems such as PubMed returns numerous results if the
 symptoms are slightly non-specific (more on this in the following
 chapters). The advantage of a specialized system for rare diseases
 would be that the physician --- being in doubt --- would have a chance
 to make a quick symptom look-up before referring or dismissing the
-patient. According to Jørgensen, time is great a problem when treating
-patients and in the rare event of a patient being affected by
-something unknown, he or she is referred to a specialist.\\
+patient. According to Henrik L. J\o rgensen, time is great a problem
+when treating patients and in the rare event of a patient being
+affected by something unknown, he or she is referred to a specialist.
 
 The inspiration of being able to create an efficient support decision
 system for diagnosing rare diseases was what drove us to initiate this
@@ -96,14 +97,14 @@ project.
 
 \section{Objectives}
 
-\textbf{Aim} \\
+\subsubsection{Aim}
 Our system will be based on machine learning concepts and will
 hopefully add something new to the arena of medical support decision
 systems. Testing various techniques to optimize our system, we aim to
 design a system that --- if successful --- also has the generic potential of
-being expanded to other domains than that of rare diseases.\\
+being expanded to other domains than that of rare diseases.
 
-\textbf{Overall process} \\
+\subsubsection{Overall process}
 The list of rare disease names (along with synonyms and optional
 descriptions) will be mined from the Rarediseases.info website. Some
 of these diseases will have specialized PubMed search strings that we
@@ -111,7 +112,7 @@ mine along with the names. Using these names, predefined search
 strings and synonyms, we search PubMed for a maximum of 500
 PMID's\footnote{PMID's are unique article identifiers used by PubMed}
 per disease, representing MedLine records containing an abstract. We
-then download the corresponding records.\\
+then download the corresponding records.
 
 The intention is to preprocess the data using a vector space model and
 various heuristics to optimize the probability of getting a correct
@@ -120,7 +121,7 @@ revolves mainly around the Term Frequency - Inverse Document Frequency
 (TF-IDF). Since a graphical user interface will not be made for the
 prototype system, a correct hit is as an article defining the disease
 being among the top 20 returned results from a given query of
-symptoms.\\
+symptoms.
 
 We will be running tests on three different test cases. The first set
 of cases are derived from a subset of tests in the BMJ article
@@ -128,9 +129,11 @@ of cases are derived from a subset of tests in the BMJ article
   run tests on the diseases present in our database} The second set of
 cases come from a random select of disease descriptions on the
 Orpha.net website \cite{Orphanet}. The third and final set of test
-cases come from a blind test provided by Henrik L. J\o rgensen.\\ \fxnote{tilfoej lennart hvis han kommer med noget}
+cases come from a blind test provided by Henrik L. J\o rgensen.
 
-\textbf{Primary tools} \\ 
+\fxnote{tilfoej lennart hvis han kommer med noget}
+
+\subsubsection{Primary tools}
 We will be using Python 2.6.2 \cite{PythonLanguage} in this project. For access to PubMed, we use
 the Python module Bio.Entrez \cite{EntrezProgUtil} while BeautifulSoup
 \cite{BS} is used for parsing of HTML/XML combined with Urllib2
@@ -141,15 +144,15 @@ functions we use the Numpy package \cite{NumPy}.
 
 \section{Roadmap}
 
-Chapter \ref{Background} covers the different \fxnote{fix areas} areas
-that we harvest our data from and how we intend to \fxnote{Model
-  what?} model it. It provides a background on Rarediseases.info,
-PubMed and the MedLine database, our primary data sources. We examine
-various advantages and disadvantages of the models and heuristics that
-we use, how we measure the similarities used to provide a disease
-score for queries, we also look into the datatypes used to handle the
-large amounts of information. Lastly, we looks at an alternative that
-might be able to provide more information on each mined disease.\\
+Chapter \ref{Background} covers the different databases that we
+harvest our data from and how we intend to model it the
+information. We provides a background on Rarediseases.info, PubMed and
+the MedLine database, our primary data sources. We examine various
+advantages and disadvantages of the models and heuristics that we use,
+how we measure the similarities used to provide a disease score for
+queries, we also look into the datatypes used to handle the large
+amounts of information. Lastly, we looks at an alternative that might
+be able to provide more information on each mined disease.
 
 Chapter \ref{Methods} deals with the methods that we have used to
 implement the first prototype and the following branches of the
@@ -157,7 +160,7 @@ system. We give an overview of the implementation and we amplify the
 flexibility of the data exchange between the modules and how we have
 applied several heuristics/filters to the data and the vector
 space. The chapter is \fxnote{The chapter is rounded of...} rounded of with details of the data and
-technical conclusions of the implementation.\\
+technical conclusions of the implementation.
 
 Chapter \ref{ExperimentsResults} contains all the primary tests and
 results of the different schemes used to find the most efficient model
@@ -167,7 +170,7 @@ each other to see which performs the best. This is done on
 both the classical term document matrix and on a document-summed
 version called the \textit{disease matrix}. It also with aspects and
 tests of clusterings, keyword extraction in a reduced semantic space
-and some of the potential noise in the data set.\\
+and some of the potential noise in the data set.
 
 Chapter \ref{Conclusion}
 

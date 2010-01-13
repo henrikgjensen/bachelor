@@ -22,12 +22,14 @@ list of qualified diagnostic guesses from a automated supporting
 decision-system would be able to help the physician in falsifying or
 justifying the diagnosis.
 
-Though already existing sources like Orpha.net\fxnote{REF 2.6 This is missing} and
-Rarediseases.info (see section \ref{Rarediseases_info}) aims to aid researchers and
-physicians in dealing with rare diseases, these sites are primarily
-based on human information retrieval. This gives them a higher
-accuracy but it also renders them unable to keep up with the growing
-amounts of research and information available.
+Though already existing sources like Orpha.net (see section
+\ref{Orphanet}) and Rarediseases.info (see section
+\ref{Rarediseases_info}) aims to aid researchers and physicians in
+dealing with rare diseases, these sites are primarily based on human
+information retrieval. This gives them a higher accuracy
+\fxnote{consider changing accuracy $\rightarrow$ precision} but it
+also renders them unable to keep up with the growing amounts of
+research and information available.
 
 PubMed (see section \ref{PubmedEntrez}) is today one of the largest and most used
 biomedical article database-interfaces. It provides access to millions
@@ -59,10 +61,9 @@ Rarediseases.info is a website from the National Institute of Health
 \cite{NIHOverview} that provides resources in relation to rare
 diseases. These resources include links to patient support groups,
 glossary, research, PubMed searches, OMIM (Online Mendelian
-Inheritance in Man \cite{OMIM} \fxnote{Might write OMIM twice})
-searches and a description of the disease. None of the resources are
-mandatory though, and in certain cases nearly all that is mentioned on
-a disease is its name.
+Inheritance in Man \cite{OMIM}) searches and a description of the
+disease. None of the resources are mandatory though, and in certain
+cases nearly all that is mentioned on a disease is its name.
 
 The Rarediseases.info website contains --- at the time of writing --- a list
 of 6881 diseases classified as being rare. A rare disease is by
@@ -78,6 +79,7 @@ There are two main types of links available at Rarediseases.info for
 use in relation to MedLine. The first is a handcrafted PubMed search
 string. An example of this is:
 
+\noindent
 {\small
 \href{http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&Cmd=DetailsSearch&Term=Ledderhose[All+Fields]+AND+("disease"[MeSH+Terms]+OR+"disease"[All+Fields])}{http://www.ncbi.nlm.nih.gov/sites/entrez?Db$=$pubmed\&Cmd$=$DetailsSearch\&Term$=$ Ledderhose[All$+$Fields]$+$AND$+$("disease"[MeSH$+$Terms]$+$OR$+$"disease"[All$+$Fields])} \\
 }
@@ -351,8 +353,6 @@ SO  - Ophthalmic Surg Lasers Imaging. 2009 Jul-Aug;40(4):419-20.
   \label{MedLineRecord}
 \end{figure}
 
-\fxnote{InsertEither ref for appendix or a example of a medline record}
-
 \subsection{Searching the information}
 Having gathered information about rare diseases, our system needs to
 be able to efficiently search and retrieve information given a query
@@ -364,9 +364,9 @@ professional users prefer using boolean queries, because it offers
 them precise control over what is returned. Either a document matches
 or it does not. But this does not mean that using boolean queries are
 the most efficient, not even for professional searchers
-\ref{IntroIR2009}. A problem is that the use of the ``AND'' operator
+\cite{IntroIR2009}. A problem is that the use of the ``AND'' operator
 tends to produce high precision, but in turn lowers the recall of
-information \ref{IntroIR2009}. As the boolean query model only record
+information \cite{IntroIR2009}. As the boolean query model only record
 term presence or absence, it lacks the ability to produce ranked
 ordered results. In order to rank the query results the different
 terms needs to be given a weight describing how important the term is
@@ -448,7 +448,7 @@ by using data structures build for sparse matrices (see section
 Another main disadvantage of the vector space model is that it does
 not capture polysemy\footnote{Polysemy describes terms that can be
   used to express different things in different contexts,
-  e.g. \textit{driving a car} and \textit{driving results}. } or
+  e.g. \textit{driving a car} and \textit{driving results}.} or
 synonymity, since every term is assumed independent. Thus some
 irrelevant documents have high similarities with a query because they
 share some words with the query (polysemy) while other relevant
@@ -486,8 +486,8 @@ x_{dw}^{log} = \log{(1 + x_{dw})}
 \]
 
 Where $x_{dw}$ is the number of times the term $w$ appears in document
-$d$. This helps reduce the problem of burstiness by smoothing \fxnote{find other word than smoothing} the term
-counts.
+$d$. This helps reduce the problem of burstiness by smoothing
+\fxnote{consider finding other word for smoothing} the term counts.
 
 \subsection{Term Frequency - Inverse Document Frequency\label{TFIDF}}
 
@@ -542,18 +542,26 @@ normalization to make the length 1.
 
 \subsection{Square root transformation\label{SquareRoot}}
 
-Like the log-transformation in section \ref{MitigatingBurstiness}, the square
-root transformation represents a method for smoothing burstiness in
-data. The most important difference is that using the square root on
-data smoothes the data towards 1 as a contrast to the more aggresive
-log-transformation. Numbers of 1 and above behave differently than
-numbers between 0.00 and 0.99. The square root of numbers above 1.00
-always become smaller, 1 and 0 remain constant, and numbers
-between 0.00 and 1.00 become larger (the square root of 4 is 2, but
-the square root of 0.40 is 0.63). Thus the square root transformation
-should only be used on data that is either below or above 1.
+Like the log-transformation in section \ref{MitigatingBurstiness}, the
+square root transformation represents a method for smoothing
+burstiness in data. The most important difference is that using the
+square root on data smoothes the data towards 1 as a contrast to the
+more aggresive log-transformation. Numbers of 1 and above behave
+differently than numbers between 0.00 and 0.99. The square root of
+numbers above 1 always become smaller, 1 and 0 remain constant, and
+numbers between 0.00 and 1.00 become larger (the square root of 4 is
+2, but the square root of 0.40 is 0.63). Thus the square root
+transformation should only be used on data that is either below or
+above 1. For illustration of square root transformation see figure
+\ref{SqrtTransformations}
 
-\fxnote{make a figure of sqrt(x) and insert here.}
+\begin{figure}[H]
+        \begin{center}
+          \includegraphics[width=1.0\textwidth]{barcharts/sqrt_graph.png}
+        \end{center}
+        \caption{Square root transformations}
+        \label{SqrtTransformations}
+\end{figure}
 
 We will be using the square root transformation to analyse the data
 coming from the TF-IDF scheme. We will describe transformation in
@@ -576,7 +584,7 @@ terms --- like 'and' or 'this' --- would be present in nearly all of
 the MedLine records and therefore be assigned very low weight by
 TF-IDF. Let us for instance say that the term 'a' was present in every
 document. The IDF-factor would be $\log 1 = 0$ which results in
-$\mathit{tf} \times \mathit{idf} = \mathit{tf} \times 0 = 0$. The term
+$\mathit{tf} \cdot \mathit{idf} = \mathit{tf} \cdot 0 = 0$. The term
 will therefore be deemed irrelevant in relation to the information
 retrieval.
 

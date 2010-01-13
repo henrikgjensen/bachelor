@@ -11,10 +11,10 @@ data on our system. It should here be noted that each time we score a
 given disease, we do it by taking the top 3000\footnote{A number
   chosen at random in between our total number of different diseases}
 of the documents returned by the similarity measure and the Search
-module. \\
+module.
 
 We then look at \fxnote{Skriv noget her} ... Note: cluster and
-semantic section are still to be written. \\
+semantic section are still to be written.
 
 Finally, we take discussion on the potential noise of overview
 articles and test the potential of concensus normalization.
@@ -36,44 +36,44 @@ no bias or knowledge about selecting symptoms and --- as they explain ---
 given some of the symptoms the correct diagnosis were evident to
 them. Note that we will --- in the following sections --- be referring to
 the subset of the test cases as BMJ since this is were it was
-found. \\
+found.
 
 The subset of the BMJ test cases include the following 13 diseases (Table \ref{BMJCases}):
 
-\begin{table}[!h]
-\caption{Disease / Symptoms list}
-\label{BMJCases}
-\begin{tabular}{|l|p{7cm}|}
-\hline
-Disease & Symptoms \\
-\hline
-Infective endocarditis & Acute, aortic,  regurgitation, depression,  abscess \\
-\hline
-Cushing's syndrome & hypertension, adrenal, mass \\
-\hline
-Eosinophilic granuloma & Hip, lesion, older, child \\
-\hline
-Ehrlichiosis & fever, bilateral, thigh, pain, weakness \\
-\hline
-Neurofibromatosis type 1 & multiple, spinal, tumours, skin, tumours \\
-\hline
-Pheochromocytoma & hypertension, papilledema, headache, renal, mass, cafe, au, lait \\
-\hline
-Creutzfeldt-Jakob disease & ataxia, confusion, insomnia, death \\
-\hline
-Churg-Strauss syndrome & Wheeze, weight, loss, ANCA, haemoptysis, haematuria \\
-\hline
-Dermatomyositis & myopathy, neoplasia, dysphagia, rash, periorbital, swelling \\
-\hline
-Cat Scratch Disease & renal, transplant, fever, cat, lymphadenopathy \\
-\hline
-TEN & bullous, skin, conditions, respiratory, failure, carbamazepine \\
-\hline
-MELAS & seizure, confusion, dysphasia, T2, lesions \\
-\hline
-Brugada syndrome & cardiac arrest sleep \\
-\hline
-\end{tabular}
+\begin{table}[H]
+  \caption{Disease / Symptoms list for the 13 BMJ cases}
+  \label{BMJCases}
+  \begin{tabular}{|l|p{7cm}|}
+    \hline
+    Disease & Symptoms \\
+    \hline
+    Infective endocarditis & Acute, aortic,  regurgitation, depression,  abscess \\
+    \hline
+    Cushing's syndrome & hypertension, adrenal, mass \\
+    \hline
+    Eosinophilic granuloma & Hip, lesion, older, child \\
+    \hline
+    Ehrlichiosis & fever, bilateral, thigh, pain, weakness \\
+    \hline
+    Neurofibromatosis type 1 & multiple, spinal, tumours, skin, tumours \\
+    \hline
+    Pheochromocytoma & hypertension, papilledema, headache, renal, mass, cafe, au, lait \\
+    \hline
+    Creutzfeldt-Jakob disease & ataxia, confusion, insomnia, death \\
+    \hline
+    Churg-Strauss syndrome & Wheeze, weight, loss, ANCA, haemoptysis, haematuria \\
+    \hline
+    Dermatomyositis & myopathy, neoplasia, dysphagia, rash, periorbital, swelling \\
+    \hline
+    Cat Scratch Disease & renal, transplant, fever, cat, lymphadenopathy \\
+    \hline
+    TEN & bullous, skin, conditions, respiratory, failure, carbamazepine \\
+    \hline
+    MELAS & seizure, confusion, dysphasia, T2, lesions \\
+    \hline
+    Brugada syndrome & cardiac arrest sleep \\
+    \hline
+  \end{tabular}
 \end{table}
 
 \subsubsection{Orpha.net}
@@ -85,7 +85,7 @@ by' contained too many specific symptoms (e.g. derivatives of the name
 of the disease or a several sentences long list of symptoms) and have
 removed certain symptoms from the list. Examples of reductions would
 be\footnote{Note that this is based solely on our own judgement as
-  non-physicians.}\\
+  non-physicians.}
 
 {\small
 \textit{congenital anomalies (microcephaly, specific facial characteristics, broad thumbs and halluces and postnatal growth retardation), intellectual deficit and behavioural characteristics}
@@ -109,10 +109,11 @@ has been reduced to \\
 \textit{congenital malformations: hydrocephalus, cleft palate, severe joint contractures}
 }\\
 
-The test cases from Orpha.net include 30 different diseases can be found in table \ref{OrphanetCases1} and \ref{OrphanetCases2}.
+The test cases from Orpha.net include 30 different diseases can be
+found in table \ref{OrphanetCases1} and \ref{OrphanetCases2}.
 
 \begin{table}[H]
-\caption{Disease / symptom list 2}
+\caption{Disease / symptom list for 30 Orpha.net test cases}
 \label{OrphanetCases1}
 \begin{tabular}{| p{6.5cm} | p{6.5cm} |}
 \hline
@@ -156,7 +157,7 @@ Emery-Dreifuss muscular dystrophy & muscular weakness and atrophy, with early co
 \end{table}
 
 \begin{table}[H]
-\caption{Disease / symptom list 2, continued}
+\caption{Disease / symptom list for the 30 Orpha.net test cases, continued}
 \label{OrphanetCases2}
 \begin{tabular}{| p{6.5cm} | p{6.5cm}|}
 \hline
@@ -220,7 +221,7 @@ returned many times when looking at a top score of document similarity
 measures produced by e.g. the cosine score. Therefore --- to give each
 disease a score --- we use a form of concensus method where we sum the
 scores of each document belonging to that disease. This produces a
-mean score of each disease. \\
+mean score of each disease.
 
 When the system (or more specifically the Query module) receives a
 query, it ranks the query vector of terms against all document vectors
@@ -234,7 +235,7 @@ diseases might have the sum of a single document added to its score
 $\mathbf{x}_{\textrm{disease}_{1}} = \left\{x_{\textrm{sum for} x_2,
   x_7, x_i, \dots, x_j}\right\}$, $\mathbf{x}_{\textrm{disease}_{2}} =
 \left\{x_{\textrm{sum for} x_1, x_2, x_9, \dots, x_47, x_n}\right\},
-\dots$.  Lastly, we evaluate the total ranking of each disease. We
+\dots$. Lastly, we evaluate the total ranking of each disease. We
 combine each $x_{\textrm{disease}_1}$, $x_{\textrm{disease}_2}$ into a
 list of all the returned disease $\mathbf{SL} =
 \left\{x_{\textrm{disease}_1},x_{\textrm{disease}_2}, \dots,
@@ -272,24 +273,27 @@ that contain the queried term(s).
 
 \subsection{Testing the cosine similarity measure\label{TestingCosineSimilarity}}
 
-The first test we run is on for the three different cosine scoring measures - mean, 
-median and max. On the two barcharts below \ref{termDoc_bmj_hist_3000_ns_mea_med_max_nc} 
-and \ref{termDoc_orphan_hist_3000_ns_mea_med_max_nc} the query scores of the BMJ 
-and the Orhpa.net test cases are shown. These are run on the non-stemmed term document matrix. 
-The scores a drawn on a logarithmic scale while the 'real' scores a shown below each chart. 
-Note that the values are 0-indexed(!) and all tests are performed on TF-IDF preprocessed matrices. \\
+The first test we run is on for the three different cosine scoring
+measures - mean, median and max. On the two barcharts below
+\ref{termDoc_bmj_hist_3000_ns_mea_med_max_nc} and
+\ref{termDoc_orphan_hist_3000_ns_mea_med_max_nc} the query scores of
+the BMJ and the Orhpa.net test cases are shown. These are run on the
+non-stemmed term document matrix. The scores a drawn on a logarithmic
+scale while the 'real' scores a shown below each chart. Note that the
+values are 0-indexed(!) and all tests are performed on TF-IDF
+preprocessed matrices.
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=1.0\textwidth]{barcharts/termDoc_bmj_hist_3000_ns_mea_med_max_nc.png}
-        \end{center}
-        \caption{Test for mean, median and max cosine measure on a non-stemmed term-doc}
-        \label{termDoc_bmj_hist_3000_ns_mea_med_max_nc}
+  \caption{Test for mean, median and max cosine measure on a non-stemmed term-doc}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_bmj_hist_3000_ns_mea_med_max_nc.png}
+  \end{center}
+  \label{termDoc_bmj_hist_3000_ns_mea_med_max_nc}
 \end{figure}
 
 \begin{table}[H]
   \begin{tiny}
-  \label{testResult}
+  \label{testResult_termDoc_bmj_hist_3000_ns_mea_med_max_nc}
   \begin{tabular}{|l|r|r|r|r|r|r|r|}
     \hline
     Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
@@ -317,39 +321,40 @@ Note that the values are 0-indexed(!) and all tests are performed on TF-IDF prep
 \end{table}
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=1.0\textwidth]{barcharts/termDoc_orphan_hist_3000_ns_mea_med_max_nc.png}
-        \end{center}
-        \caption{Test of mean, median and max cosine measure on a non-stemmed term-doc}
-        \label{termDoc_orphan_hist_3000_ns_mea_med_max_nc}
+  \caption{Test of mean, median and max cosine measure on a non-stemmed term-doc}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_orphan_hist_3000_ns_mea_med_max_nc.png}
+  \end{center}
+  \label{termDoc_orphan_hist_3000_ns_mea_med_max_nc}
 \end{figure}
 
 \begin{table}[H]
-\begin{tiny}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Ap&Ru&Aa&Aa&Ac&Ac&Ac&Ac&Bi&Br&Ch&Ch&Co&Om&Da\\
-    \hline
-    Cosine: mean & 4 & 664 & 30 & 47 & 38 & 85 & 62 & 1371 & 1 & 32 & 83 & 15 & 0 & 26 & 2 \\
-    \hline
-    Cosine: median & 163 & 357 & 76 & 240 & 948 & 4 & 76 & 141 & 384 & 314 & 505 & 211 & 44 & 181 & 42 \\
-    \hline
-    Cosine: max & 4 & 858 & 0 & 10 & 44 & 15 & 2 & 541 & 4 & 116 & 99 & 18 & 0 & 6 & 2\\
-    \hline
-    \multicolumn{16}{c}{} \\
+  \label{testResult_termDoc_orphan_hist_3000_ns_mea_med_max_nc}
+  \begin{tiny}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Ap&Ru&Aa&Aa&Ac&Ac&Ac&Ac&Bi&Br&Ch&Ch&Co&Om&Da\\
+      \hline
+      Cosine: mean & 4 & 664 & 30 & 47 & 38 & 85 & 62 & 1371 & 1 & 32 & 83 & 15 & 0 & 26 & 2 \\
+      \hline
+      Cosine: median & 163 & 357 & 76 & 240 & 948 & 4 & 76 & 141 & 384 & 314 & 505 & 211 & 44 & 181 & 42 \\
+      \hline
+      Cosine: max & 4 & 858 & 0 & 10 & 44 & 15 & 2 & 541 & 4 & 116 & 99 & 18 & 0 & 6 & 2\\
+      \hline
+      \multicolumn{16}{c}{} \\
     \end{tabular}
     \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
-    \hline
-     Measure &Ic&Em&Co&Fi&Ac&Os&Pr&He&Hy&Ja&Ja&Je&Ja&Mu&Tr &  \scriptsize{\textbf{\# in top 20}} \\
-    \hline
-     Cosine: mean & 81 & 3 & 16 & 2 & 3000 & 4 & 10 & 13 & 24 & 66 & 35 & 3 & 66 & 4 & 34 & \scriptsize{\textbf{13}} \\
-    \hline
-    Cosine: median & 773 & 87 & 169 & 189 & 3000 & 179 & 265 & 21 & 491 & 692 & 37 & 435 & 692 & 358 & 233 & \scriptsize{\textbf{1}} \\
-    \hline
-     Cosine: max  & 0 & 22 & 0 & 3 & 3000 & 9 & 67 & 5 & 63 & 201 & 1 & 8 & 201 & 9 & 0 & \scriptsize{\textbf{19}} \\
-     \hline
-  \end{tabular}
-\end{tiny}
+      \hline
+      Measure &Ic&Em&Co&Fi&Ac&Os&Pr&He&Hy&Ja&Ja&Je&Ja&Mu&Tr &  \scriptsize{\textbf{\# in top 20}} \\
+      \hline
+      Cosine: mean & 81 & 3 & 16 & 2 & 3000 & 4 & 10 & 13 & 24 & 66 & 35 & 3 & 66 & 4 & 34 & \scriptsize{\textbf{13}} \\
+      \hline
+      Cosine: median & 773 & 87 & 169 & 189 & 3000 & 179 & 265 & 21 & 491 & 692 & 37 & 435 & 692 & 358 & 233 & \scriptsize{\textbf{1}} \\
+      \hline
+      Cosine: max  & 0 & 22 & 0 & 3 & 3000 & 9 & 67 & 5 & 63 & 201 & 1 & 8 & 201 & 9 & 0 & \scriptsize{\textbf{19}} \\
+      \hline
+    \end{tabular}
+  \end{tiny}
 \end{table}
 
 As we see here, the mean cosine measure performs best in the BMJ test
@@ -364,7 +369,7 @@ happen that diseases are not found within the top 3000 documents that
 is returned. When this is the case --- to avoid confusion in the bar
 charts and statistics --- we simply set the score of any disease not
 found to the value 3000, representing a bad performance. Note also
-that a missing bar represents the top score 0. \\
+that a missing bar represents the top score 0.
 
 We now continue testing the scoring measures, this time comparing the
 non-stemmed and stemmed term document matrices. The results are shown
@@ -372,16 +377,16 @@ in the figures \ref{termDoc_bmj_hist_3000_ns_mea_s_mea_ns_max_s_max}
 and \ref{termDoc_orphan_hist_3000_ns_mea_s_mea_ns_max_s_max} below.
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/termDoc_bmj_hist_3000_ns_mea_s_mea_ns_max_s_max.png}
-        \end{center}
-        \caption{Comparison of mean and max cosine measure tests on non-stemmed and stemmed term-doc matrices}
-        \label{termDoc_bmj_hist_3000_ns_mea_s_mea_ns_max_s_max}
+  \caption{Comparison of mean and max cosine measure tests on non-stemmed and stemmed term-doc matrices}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_bmj_hist_3000_ns_mea_s_mea_ns_max_s_max.png}
+  \end{center}
+  \label{termDoc_bmj_hist_3000_ns_mea_s_mea_ns_max_s_max}
 \end{figure}
 
 \begin{table}[H]
   \begin{tiny}
-  \label{testResult}
+  \label{testResult_termDoc_bmj_hist_3000_ns_mea_s_mea_ns_max_s_max}
   \begin{tabular}{|l|r|r|r|r|r|r|r|}
     \hline
     Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
@@ -413,14 +418,15 @@ and \ref{termDoc_orphan_hist_3000_ns_mea_s_mea_ns_max_s_max} below.
 \end{table}
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/termDoc_orphan_hist_3000_ns_mea_s_mea_ns_max_s_max.png}
-        \end{center}
-        \caption{Comparison of mean and max cosine measure tests on non-stemmed and stemmed term-doc matrices}
-        \label{termDoc_orphan_hist_3000_ns_mea_s_mea_ns_max_s_max}
+  \caption{Comparison of mean and max cosine measure tests on non-stemmed and stemmed term-doc matrices}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_orphan_hist_3000_ns_mea_s_mea_ns_max_s_max.png}
+  \end{center}
+  \label{termDoc_orphan_hist_3000_ns_mea_s_mea_ns_max_s_max}
 \end{figure}
 
 \begin{table}[H]
+\label{testResult_termDoc_orphan_hist_3000_ns_mea_s_mea_ns_max_s_max}
 \begin{tiny}
   \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
     \hline
@@ -456,7 +462,7 @@ The two score tests just performed now presents us with a dilemma. In the BMJ te
 the 'mean stemmed' and 'non-stemmed' scores performs best while in the Orpha.net test set, 
 it is just the opposite. We have chosen to cope with this by taking out the top score 
 measure for each of the test sets - 'mean non-stemmed' from BMJ and 'max stemmed' from 
-the Orpha.net. \\
+the Orpha.net.
 
 The next step is to analyse our data a bit by performing a square root transformation 
 \ref{SquareRoot} of the TF-IDF preprocessed data above. Note that it is required that 
@@ -466,61 +472,62 @@ square root analysis is that it allows us to see whether the data has been corre
 weighted. The square root transformation raises small values by a greater degree than 
 it does large values. This means that if our scores improve, the information containing 
 terms in the term document matrix have not been given high enough values by the applied 
-heuristics. \\
+heuristics.
 
 The tests are shown in the figures below, where we compare the best measures from above 
 with their square root transformation.
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/termDoc_bmj_hist_3000_ns_mea_ns_mea_sqr_s_max_s_max_sqr.png}
-        \end{center}
-        \caption{Comparison of mean (non-stemmed term-doc) and max (stemmed term-doc) cosine measure tests with and without sqrt-transformation}
-        \label{termDoc_bmj_hist_3000_ns_mea_ns_mea_sqr_s_max_s_max_sqr}
+  \caption{Comparison of mean (non-stemmed term-doc) and max (stemmed term-doc) cosine measure tests with and without sqrt-transformation}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_bmj_hist_3000_ns_mea_ns_mea_sqr_s_max_s_max_sqr.png}
+  \end{center}
+  \label{termDoc_bmj_hist_3000_ns_mea_ns_mea_sqr_s_max_s_max_sqr}
 \end{figure}
 
 \begin{table}[H]
+  \label{testResult_termDoc_bmj_hist_3000_ns_mea_ns_mea_sqr_s_max_s_max_sqr}
   \begin{tiny}
-  \label{testResult}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
-    \hline
-    Cosine: mean non-stemmed no sqrt &25&2&66&692&128&139&128 \\
-    \hline
-    Cosine: mean non-stemmed sqrt &19&3&22&1268&115&105&108 \\
-    \hline
-    Cosine: max stemmed no sqrt &20&11&427&1232&210&370&108 \\
-    \hline
-    Cosine: max stemmed sqrt &2&10&136&1123&68&249&130 \\
-    \hline
-  \multicolumn{8}{c}{} \\
-  \end{tabular}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
-    \hline
-    Cosine: mean non-stemmed no sqrt &3&63&0&2&52&9 &\scriptsize{\textbf{5}} \\
-    \hline
-    Cosine: mean non-stemmed sqrt &5&54&0&2&41&7 &\scriptsize{\textbf{6}}\\
-    \hline
-    Cosine: max stemmed no sqrt &28&22&0&62&192&56 & \scriptsize{\textbf{2}} \\
-    \hline
-    Cosine: max stemmed sqrt &44&8&0&47&65&25 & \scriptsize{\textbf{4}} \\
-    \hline
-  \end{tabular}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
+      \hline
+      Cosine: mean non-stemmed no sqrt &25&2&66&692&128&139&128 \\
+      \hline
+      Cosine: mean non-stemmed sqrt &19&3&22&1268&115&105&108 \\
+      \hline
+      Cosine: max stemmed no sqrt &20&11&427&1232&210&370&108 \\
+      \hline
+      Cosine: max stemmed sqrt &2&10&136&1123&68&249&130 \\
+      \hline
+      \multicolumn{8}{c}{} \\
+    \end{tabular}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
+      \hline
+      Cosine: mean non-stemmed no sqrt &3&63&0&2&52&9 &\scriptsize{\textbf{5}} \\
+      \hline
+      Cosine: mean non-stemmed sqrt &5&54&0&2&41&7 &\scriptsize{\textbf{6}}\\
+      \hline
+      Cosine: max stemmed no sqrt &28&22&0&62&192&56 & \scriptsize{\textbf{2}} \\
+      \hline
+      Cosine: max stemmed sqrt &44&8&0&47&65&25 & \scriptsize{\textbf{4}} \\
+      \hline
+    \end{tabular}
   \end{tiny}
 \end{table}
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/termDoc_orphan_hist_3000_ns_mea_ns_mea_sqr_s_max_s_max_sqr.png}
-        \end{center}
-        \caption{Comparison of mean (non-stemmed term-doc) and max (stemmed term-doc) cosine measure tests with and without sqrt-transformation}
-        \label{termDoc_orphan_hist_3000_ns_mea_ns_mea_sqr_s_max_s_max_sqr}
+  \caption{Comparison of mean (non-stemmed term-doc) and max (stemmed term-doc) cosine measure tests with and without sqrt-transformation}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_orphan_hist_3000_ns_mea_ns_mea_sqr_s_max_s_max_sqr.png}
+  \end{center}  
+  \label{termDoc_orphan_hist_3000_ns_mea_ns_mea_sqr_s_max_s_max_sqr}
 \end{figure}
 
 \begin{table}[H]
+\label{testResult_termDoc_orphan_hist_3000_ns_mea_ns_mea_sqr_s_max_s_max_sqr}
 \begin{tiny}
   \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
     \hline
@@ -560,7 +567,7 @@ other measures shows a more significant improvement that the worsening of the la
 measure. Based on these results, we will not deny that the data in the TF-IDF matrices are 
 not as optimized as could have been expected. But we can not say if these anomalies stem from 
 the data or the calculations themselves. For now, we choose to view the square root 
-transformation as a general improvement. \\
+transformation as a general improvement.
 
 In section \ref{DiseaseMatrix}, we will be using the best measure of the cosine scoring tests 
 executed above - the 'mean stemmed sqrt' and the 'max stemmed sqrt' cosine similarity measures.
@@ -574,76 +581,77 @@ median and max sum measures on a TF-IDF non-normalized term document matrix. The
 shown on the figures \ref{termDoc_bmj_hist_3000_sum_mea_med_max} below. 
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/termDoc_bmj_hist_3000_sum_mea_med_max.png}
-        \end{center}
-        \caption{Test of mean, median and max sum measure on a non-stemmed term-doc matrix}
-        \label{termDoc_bmj_hist_3000_sum_mea_med_max}
+  \caption{Test of mean, median and max sum measure on a non-stemmed term-doc matrix}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_bmj_hist_3000_sum_mea_med_max.png}
+  \end{center}
+  \label{termDoc_bmj_hist_3000_sum_mea_med_max}
 \end{figure}
 
 \begin{table}[H]
   \begin{tiny}
-  \label{testResult}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
-    \hline
-    Sum: mean &23&3&362&772&35&76&144 \\
-    \hline
-    Sum: median &188&459&2150&1878&213&852&974 \\
-    \hline
-    Sum: max &54&10&344&2401&235&469&495  \\
-    \hline
-  \multicolumn{8}{c}{} \\
-  \end{tabular}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
-    \hline
-    Sum: mean non-stemmed &1&45&0&25&53&5& \scriptsize{\textbf{4}} \\
-    \hline
-    Sum: mean stemmed &83&1353&670&2193&689&1210 &  \scriptsize{\textbf{0}}\\
-    \hline
-    Sum: max non-stemmed &70&6&19&441&391&26 & \scriptsize{\textbf{3}} \\
-    \hline
-  \end{tabular}
+    \label{testResult_termDoc_bmj_hist_3000_sum_mea_med_max}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
+      \hline
+      Sum: mean &23&3&362&772&35&76&144 \\
+      \hline
+      Sum: median &188&459&2150&1878&213&852&974 \\
+      \hline
+      Sum: max &54&10&344&2401&235&469&495  \\
+      \hline
+      \multicolumn{8}{c}{} \\
+    \end{tabular}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
+      \hline
+      Sum: mean non-stemmed &1&45&0&25&53&5& \scriptsize{\textbf{4}} \\
+      \hline
+      Sum: mean stemmed &83&1353&670&2193&689&1210 &  \scriptsize{\textbf{0}}\\
+      \hline
+      Sum: max non-stemmed &70&6&19&441&391&26 & \scriptsize{\textbf{3}} \\
+      \hline
+    \end{tabular}
   \end{tiny}
 \end{table}
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/termDoc_orphan_hist_3000_ns_mea_med_max_sum.png}
-        \end{center}
-        \caption{Test of mean, median and max sum measure on a non-stemmed term-doc matrix}
-        \label{termDoc_orphan_hist_3000_ns_mea_med_max_sum}
+  \caption{Test of mean, median and max sum measure on a non-stemmed term-doc matrix}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_orphan_hist_3000_ns_mea_med_max_sum.png}
+  \end{center}
+  \label{termDoc_orphan_hist_3000_ns_mea_med_max_sum}
 \end{figure}
 
 \begin{table}[H]
-\begin{tiny}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Ap&Ru&Aa&Aa&Ac&Ac&Ac&Ac&Bi&Br&Ch&Ch&Co&Om&Da\\
-    \hline
-    Sum: mean &6&910&917&32&122&460&145&3119&1&21&342&50&0&45&2 \\
-    \hline
-    Sum: median &626&2814&495&219&1232&963&182&3590&872&1207&1056&595&526&940&179 \\
-    \hline
-    Sum: max &119&2081&611&113&1031&48&203&3833&7&127&1139&109&9&7&2\\
-    \hline
-    \multicolumn{16}{c}{} \\
+  \label{testResult_termDoc_orphan_hist_3000_ns_mea_med_max_sum}
+  \begin{tiny}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Ap&Ru&Aa&Aa&Ac&Ac&Ac&Ac&Bi&Br&Ch&Ch&Co&Om&Da\\
+      \hline
+      Sum: mean &6&910&917&32&122&460&145&3119&1&21&342&50&0&45&2 \\
+      \hline
+      Sum: median &626&2814&495&219&1232&963&182&3590&872&1207&1056&595&526&940&179 \\
+      \hline
+      Sum: max &119&2081&611&113&1031&48&203&3833&7&127&1139&109&9&7&2\\
+      \hline
+      \multicolumn{16}{c}{} \\
     \end{tabular}
     \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
-    \hline
-     Measure &Ic&Em&Co&Fi&Ac&Os&Pr&He&Hy&Ja&Ja&Je&Ja&Mu&Tr &  \scriptsize{\textbf{\# in top 20}} \\
-    \hline
-     Sum: mean &137&3&44&14&2458&0&9&36&37&132&47&26&132&37&127 & \scriptsize{\textbf{8}} \\
-    \hline
-    Sum: median &1292&503&408&304&845&320&204&143&1165&1763&19&467&1763&1532&100& \scriptsize{\textbf{1}} \\
-    \hline
-     Sum: max  &357&7&401&3&1957&13&0&102&169&260&4&198&260&72&55 & \scriptsize{\textbf{9}} \\
-     \hline
-  \end{tabular}
-\end{tiny}
+      \hline
+      Measure &Ic&Em&Co&Fi&Ac&Os&Pr&He&Hy&Ja&Ja&Je&Ja&Mu&Tr &  \scriptsize{\textbf{\# in top 20}} \\
+      \hline
+      Sum: mean &137&3&44&14&2458&0&9&36&37&132&47&26&132&37&127 & \scriptsize{\textbf{8}} \\
+      \hline
+      Sum: median &1292&503&408&304&845&320&204&143&1165&1763&19&467&1763&1532&100& \scriptsize{\textbf{1}} \\
+      \hline
+      Sum: max  &357&7&401&3&1957&13&0&102&169&260&4&198&260&72&55 & \scriptsize{\textbf{9}} \\
+      \hline
+    \end{tabular}
+  \end{tiny}
 \end{table}
 
 Like in the previous section, we again see the poor results given by the median measure and discards 
@@ -652,55 +660,56 @@ non-stemmed matrices. The tests are shown on the figures \ref{termDoc_bmj_hist_3
 and \ref{termDoc_orphan_hist_3000_ns_s_mea_max_sum}.
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/termDoc_bmj_hist_3000_ns_s_mea_max_sum.png}
-        \end{center}
-        \caption{Comparison of mean and max sum measure tests on non-stemmed and stemmed term-doc matrices}
-        \label{termDoc_bmj_hist_3000_ns_s_mea_max_sum}
+  \caption{Comparison of mean and max sum measure tests on non-stemmed and stemmed term-doc matrices}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_bmj_hist_3000_ns_s_mea_max_sum.png}
+  \end{center}
+  \label{termDoc_bmj_hist_3000_ns_s_mea_max_sum}
 \end{figure} 
 
 \begin{table}[H]
   \begin{tiny}
-  \label{testResult}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
-    \hline
-    Sum: mean non-stemmed &23&3&362&772&35&76&144 \\
-    \hline
-    Sum: mean stemmed &23&3&720&746&44&60&158 \\
-    \hline
-    Sum: max non-stemmed &54&10&344&2401&235&469&495 \\
-    \hline
-    Sum: max stemmed &120&6&10&2374&228&360&566 \\
-    \hline
-  \multicolumn{8}{c}{} \\
-  \end{tabular}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
-    \hline
-    Sum: mean non-stemmed &1&45&0&25&53&5 &\scriptsize{\textbf{4}} \\
-    \hline
-    Sum: mean stemmed &1&33&0&27&88&5 &\scriptsize{\textbf{4}}\\
-    \hline
-    Sum: max non-stemmed &70&6&19&441&391&26 & \scriptsize{\textbf{3}} \\
-    \hline
-    Sum: max stemmed &62&8&7&394&496&26 & \scriptsize{\textbf{4}} \\
-    \hline
-  \end{tabular}
+    \label{testResult_termDoc_bmj_hist_3000_ns_s_mea_max_sum}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
+      \hline
+      Sum: mean non-stemmed &23&3&362&772&35&76&144 \\
+      \hline
+      Sum: mean stemmed &23&3&720&746&44&60&158 \\
+      \hline
+      Sum: max non-stemmed &54&10&344&2401&235&469&495 \\
+      \hline
+      Sum: max stemmed &120&6&10&2374&228&360&566 \\
+      \hline
+      \multicolumn{8}{c}{} \\
+    \end{tabular}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
+      \hline
+      Sum: mean non-stemmed &1&45&0&25&53&5 &\scriptsize{\textbf{4}} \\
+      \hline
+      Sum: mean stemmed &1&33&0&27&88&5 &\scriptsize{\textbf{4}}\\
+      \hline
+      Sum: max non-stemmed &70&6&19&441&391&26 & \scriptsize{\textbf{3}} \\
+      \hline
+      Sum: max stemmed &62&8&7&394&496&26 & \scriptsize{\textbf{4}} \\
+      \hline
+    \end{tabular}
   \end{tiny}
 \end{table}
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/termDoc_orphan_hist_3000_ns_s_mea_max_sum.png}
-        \end{center}
-        \caption{Comparison of mean and max sum measure tests on non-stemmed and stemmed term-doc matrices}
-        \label{termDoc_orphan_hist_3000_ns_s_mea_max_sum}
+  \caption{Comparison of mean and max sum measure tests on non-stemmed and stemmed term-doc matrices}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_orphan_hist_3000_ns_s_mea_max_sum.png}
+  \end{center}
+  \label{termDoc_orphan_hist_3000_ns_s_mea_max_sum}
 \end{figure} 
 
 \begin{table}[H]
+\label{testResult_termDoc_orphan_hist_3000_ns_s_mea_max_sum}
 \begin{tiny}
   \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
     \hline
@@ -742,7 +751,7 @@ Now that we have found the results for the best measures to be used on
 the term document matrix, we focus our attention on the disease
 matrix. We will in the following be testing the sum and cosine measure
 on the disease matrix and --- in the end of the section --- compare these
-results to that of the term document. \\
+results to that of the term document.
 
 In the first test, we look at the performance of the cosine (mean),
 cosine-sqrt and the sum measure on the BMJ and Orpha-net test
@@ -752,162 +761,164 @@ stemmed. The results are shown on the figures
 \ref{diseaseMatrix_orphan_hist_NOTnorm_3000_ns_cos_sqrt_cos_sum_nn},
 \ref{diseaseMatrix_bmj_hist_norm_3000_s_cos_sqrt_cos_sum_nn} and
 \ref{diseaseMatrix_orphan_hist_NOTnorm_3000_s_cos_sqrt_cos_sum_nn}
-below: \\
+below:
 
 \textbf{Non-stemmed:}
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/diseaseMatrix_bmj_hist_norm_3000_ns_cos_sqrt_cos_sum_nn.png}
-        \end{center}
-        \caption{Test of cosine measure (with and without sqrt-transformation) and sum measure on a non-stemmed disease matrix}
-        \label{diseaseMatrix_bmj_hist_norm_3000_ns_cos_sqrt_cos_sum_nn}
+  \caption{Test of cosine measure (with and without sqrt-transformation) and sum measure on a non-stemmed disease matrix}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/diseaseMatrix_bmj_hist_norm_3000_ns_cos_sqrt_cos_sum_nn.png}
+  \end{center}
+  \label{diseaseMatrix_bmj_hist_norm_3000_ns_cos_sqrt_cos_sum_nn}
 \end{figure}
 
 \begin{table}[H]
   \begin{tiny}
-  \label{testResult}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
-    \hline
-    Cosine no sqrt non-stemmed &31&62&474&2220&377&1225&93 \\
-    \hline
-    Cosine sqrt non-stemmed &16&37&375&2001&270&1037&25 \\
-    \hline
-    Sum non-stemmed &6&1&323&691&30&427&8  \\
-    \hline
-  \multicolumn{8}{c}{} \\
-  \end{tabular}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
-    \hline
-    Cosine no sqrt non-stemmed &8&20&5&227&118&94 &\scriptsize{\textbf{2}} \\
-    \hline
-    Cosine sqrt non-stemmed &6&0&1&97&45&25 &  \scriptsize{\textbf{4}}\\
-    \hline
-    Sum non-stemmed &2&4&0&3&19&6 & \scriptsize{\textbf{9}} \\
-    \hline
-  \end{tabular}
+    \label{testResult_diseaseMatrix_bmj_hist_norm_3000_ns_cos_sqrt_cos_sum_nn}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
+      \hline
+      Cosine no sqrt non-stemmed &31&62&474&2220&377&1225&93 \\
+      \hline
+      Cosine sqrt non-stemmed &16&37&375&2001&270&1037&25 \\
+      \hline
+      Sum non-stemmed &6&1&323&691&30&427&8  \\
+      \hline
+      \multicolumn{8}{c}{} \\
+    \end{tabular}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
+      \hline
+      Cosine no sqrt non-stemmed &8&20&5&227&118&94 &\scriptsize{\textbf{2}} \\
+      \hline
+      Cosine sqrt non-stemmed &6&0&1&97&45&25 &  \scriptsize{\textbf{4}}\\
+      \hline
+      Sum non-stemmed &2&4&0&3&19&6 & \scriptsize{\textbf{9}} \\
+      \hline
+    \end{tabular}
   \end{tiny}
 \end{table}
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/diseaseMatrix_orphan_hist_NOTnorm_3000_ns_cos_sqrt_cos_sum_nn.png}
-        \end{center}
-        \caption{Test of cosine measure (with and without sqrt-transformation) and sum measure on a non-stemmed disease matrix}
-        \label{diseaseMatrix_orphan_hist_NOTnorm_3000_ns_cos_sqrt_cos_sum_nn}
+  \caption{Test of cosine measure (with and without sqrt-transformation) and sum measure on a non-stemmed disease matrix}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/diseaseMatrix_orphan_hist_NOTnorm_3000_ns_cos_sqrt_cos_sum_nn.png}
+  \end{center}
+  \label{diseaseMatrix_orphan_hist_NOTnorm_3000_ns_cos_sqrt_cos_sum_nn}
 \end{figure}
 
 \begin{table}[H]
-\begin{tiny}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Ap&Ru&Aa&Aa&Ac&Ac&Ac&Ac&Bi&Br&Ch&Ch&Co&Om&Da\\
-    \hline
-    Cosine no sqrt non-stemmed &95&599&0&76&307&99&47&2989&28&3&430&165&7&37&11 \\
-    \hline
-    Cosine sqrt non-stemmed &76&257&0&20&122&41&9&1912&16&1&448&128&1&13&5 \\
-    \hline
-    Sum non-stemmed &9&123&4&10&4&81&109&601&3&7&68&9&0&2&1\\
-    \hline
-    \multicolumn{16}{c}{} \\
+  \label{testResult_diseaseMatrix_orphan_hist_NOTnorm_3000_ns_cos_sqrt_cos_sum_nn}
+  \begin{tiny}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Ap&Ru&Aa&Aa&Ac&Ac&Ac&Ac&Bi&Br&Ch&Ch&Co&Om&Da\\
+      \hline
+      Cosine no sqrt non-stemmed &95&599&0&76&307&99&47&2989&28&3&430&165&7&37&11 \\
+      \hline
+      Cosine sqrt non-stemmed &76&257&0&20&122&41&9&1912&16&1&448&128&1&13&5 \\
+      \hline
+      Sum non-stemmed &9&123&4&10&4&81&109&601&3&7&68&9&0&2&1\\
+      \hline
+      \multicolumn{16}{c}{} \\
     \end{tabular}
     \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
-    \hline
-     Measure &Ic&Em&Co&Fi&Ac&Os&Pr&He&Hy&Ja&Ja&Je&Ja&Mu&Tr &  \scriptsize{\textbf{\# in top 20}} \\
-    \hline
-     Cosine no sqrt non-stemmed &7&97&717&150&562&74&64&31&5&89&1&75&89&222&1 & \scriptsize{\textbf{8}} \\
-    \hline
-     Cosine sqrt non-stemmed &0&33&380&20&1687&39&47&26&4&33&1&83&33&46&0 &\scriptsize{\textbf{11}} \\
-    \hline
-     Sum non-stemmed &6&0&3&0&3000&0&8&5&107&46&4&2&46&2&55 & \scriptsize{\textbf{20}} \\
-     \hline
-  \end{tabular}
-\end{tiny}
+      \hline
+      Measure &Ic&Em&Co&Fi&Ac&Os&Pr&He&Hy&Ja&Ja&Je&Ja&Mu&Tr &  \scriptsize{\textbf{\# in top 20}} \\
+      \hline
+      Cosine no sqrt non-stemmed &7&97&717&150&562&74&64&31&5&89&1&75&89&222&1 & \scriptsize{\textbf{8}} \\
+      \hline
+      Cosine sqrt non-stemmed &0&33&380&20&1687&39&47&26&4&33&1&83&33&46&0 &\scriptsize{\textbf{11}} \\
+      \hline
+      Sum non-stemmed &6&0&3&0&3000&0&8&5&107&46&4&2&46&2&55 & \scriptsize{\textbf{20}} \\
+      \hline
+    \end{tabular}
+  \end{tiny}
 \end{table}
 
 \textbf{Stemmed:}
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/diseaseMatrix_bmj_hist_norm_3000_s_cos_sqrt_cos_sum_nn.png}
-        \end{center}
-        \caption{Test of cosine measure (with and without sqrt-transformation) and sum measure on a stemmed disease matrix}
-        \label{diseaseMatrix_bmj_hist_norm_3000_s_cos_sqrt_cos_sum_nn}
+  \caption{Test of cosine measure (with and without sqrt-transformation) and sum measure on a stemmed disease matrix}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/diseaseMatrix_bmj_hist_norm_3000_s_cos_sqrt_cos_sum_nn.png}
+  \end{center}
+  \label{diseaseMatrix_bmj_hist_norm_3000_s_cos_sqrt_cos_sum_nn}
 \end{figure}
 
 \begin{table}[H]
   \begin{tiny}
-  \label{testResult}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
-    \hline
-    Cosine no sqrt stemmed &37&63&872&1963&533&1198&93 \\
-    \hline
-    Cosine sqrt stemmed &25&37&748&1970&384&1053&25 \\
-    \hline
-    Sum stemmed &5&1&597&511&29&413&6 \\
-    \hline
-  \multicolumn{8}{c}{} \\
-  \end{tabular}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
-    \hline
-    Cosine no sqrt stemmed &4&18&9&230&221&91 &\scriptsize{\textbf{3}} \\
-    \hline
-    Cosine sqrt stemmed &2&0&1&102&68&30 &  \scriptsize{\textbf{3}}\\
-    \hline
-    Sum stemmed &1&3&0&3&26&6 & \scriptsize{\textbf{8}} \\
-    \hline
-  \end{tabular}
+    \label{testResult_diseaseMatrix_bmj_hist_norm_3000_s_cos_sqrt_cos_sum_nn}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
+      \hline
+      Cosine no sqrt stemmed &37&63&872&1963&533&1198&93 \\
+      \hline
+      Cosine sqrt stemmed &25&37&748&1970&384&1053&25 \\
+      \hline
+      Sum stemmed &5&1&597&511&29&413&6 \\
+      \hline
+      \multicolumn{8}{c}{} \\
+    \end{tabular}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
+      \hline
+      Cosine no sqrt stemmed &4&18&9&230&221&91 &\scriptsize{\textbf{3}} \\
+      \hline
+      Cosine sqrt stemmed &2&0&1&102&68&30 &  \scriptsize{\textbf{3}}\\
+      \hline
+      Sum stemmed &1&3&0&3&26&6 & \scriptsize{\textbf{8}} \\
+      \hline
+    \end{tabular}
   \end{tiny}
 \end{table}
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/diseaseMatrix_orphan_hist_NOTnorm_3000_s_cos_sqrt_cos_sum_nn.png}
-        \end{center}
-        \caption{Test of cosine measure (with and without sqrt-transformation) and sum measure on a stemmed disease matrix}
-        \label{diseaseMatrix_orphan_hist_NOTnorm_3000_s_cos_sqrt_cos_sum_nn}
+  \caption{Test of cosine measure (with and without sqrt-transformation) and sum measure on a stemmed disease matrix}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/diseaseMatrix_orphan_hist_NOTnorm_3000_s_cos_sqrt_cos_sum_nn.png}
+  \end{center}
+  \label{diseaseMatrix_orphan_hist_NOTnorm_3000_s_cos_sqrt_cos_sum_nn}
 \end{figure}
 
 \begin{table}[H]
-\begin{tiny}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Ap&Ru&Aa&Aa&Ac&Ac&Ac&Ac&Bi&Br&Ch&Ch&Co&Om&Da\\
-    \hline
-    Cosine no sqrt stemmed &94&553&0&80&284&94&51&1454&32&1&433&181&10&33&18 \\
-    \hline
-    Cosine sqrt stemmed &74&263&0&19&106&44&12&635&19&1&446&133&4&13&4 \\
-    \hline
-    Sum stemmed &9&90&17&9&4&86&79&105&2&7&64&16&0&2&1\\
-    \hline
-    \multicolumn{16}{c}{} \\
+  \label{testResult_diseaseMatrix_orphan_hist_NOTnorm_3000_s_cos_sqrt_cos_sum_nn}
+  \begin{tiny}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Ap&Ru&Aa&Aa&Ac&Ac&Ac&Ac&Bi&Br&Ch&Ch&Co&Om&Da\\
+      \hline
+      Cosine no sqrt stemmed &94&553&0&80&284&94&51&1454&32&1&433&181&10&33&18 \\
+      \hline
+      Cosine sqrt stemmed &74&263&0&19&106&44&12&635&19&1&446&133&4&13&4 \\
+      \hline
+      Sum stemmed &9&90&17&9&4&86&79&105&2&7&64&16&0&2&1\\
+      \hline
+      \multicolumn{16}{c}{} \\
     \end{tabular}
     \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
-    \hline
-     Measure &Ic&Em&Co&Fi&Ac&Os&Pr&He&Hy&Ja&Ja&Je&Ja&Mu&Tr &  \scriptsize{\textbf{\# in top 20}} \\
-    \hline
-     Cosine no sqrt stemmed &7&169&710&334&704&167&65&26&8&74&1&83&74&468&1 & \scriptsize{\textbf{8}} \\
-    \hline
-     Cosine sqrt stemmed &0&80&391&122&2137&74&54&12&2&30&1&99&30&162&0 &\scriptsize{\textbf{13}} \\
-    \hline
-     Sum stemmed &6&0&2&0&3000&1&9&3&84&39&3&1&39&2&59 & \scriptsize{\textbf{20}} \\
-     \hline
-  \end{tabular}
-\end{tiny}
+      \hline
+      Measure &Ic&Em&Co&Fi&Ac&Os&Pr&He&Hy&Ja&Ja&Je&Ja&Mu&Tr &  \scriptsize{\textbf{\# in top 20}} \\
+      \hline
+      Cosine no sqrt stemmed &7&169&710&334&704&167&65&26&8&74&1&83&74&468&1 & \scriptsize{\textbf{8}} \\
+      \hline
+      Cosine sqrt stemmed &0&80&391&122&2137&74&54&12&2&30&1&99&30&162&0 &\scriptsize{\textbf{13}} \\
+      \hline
+      Sum stemmed &6&0&2&0&3000&1&9&3&84&39&3&1&39&2&59 & \scriptsize{\textbf{20}} \\
+      \hline
+    \end{tabular}
+  \end{tiny}
 \end{table}
 
 When it comes to scoring diseases on in the disease matrix, the sum measure greatly outrival the 
 cosine measure - with or without the square root transformation. If we look at the average values 
 of the returned results, it seems that the stemmed version of the disease matrix is the best choice 
-for optimized performance. \\
+for optimized performance.
 
 For the final test of measure and model, we compare the top results of the two matrices - term 
 document and disease matrix. We will compare the different scores from the stemmed version of 
@@ -917,55 +928,56 @@ both matrix types since this seems to provide the overall best performance. In t
 bar chart of the best scores found for the prototype system:
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/termDoc_bmj_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_td.png}
-        \end{center}
-        \caption{Comparison of the mean sum measure, and mean and max sqrt cosine measure, on a stemmed term-doc matrix, and of the sum measure on a stemmed disease matrix}
-        \label{termDoc_bmj_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_td}
+  \caption{Comparison of the mean sum measure, and mean and max sqrt cosine measure, on a stemmed term-doc matrix, and of the sum measure on a stemmed disease matrix}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_bmj_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_td.png}
+  \end{center}
+  \label{termDoc_bmj_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_td}
 \end{figure}
 
 \begin{table}[H]
   \begin{tiny}
-  \label{testResult}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
-    \hline
-    Sum: disease matrix &5&1&597&511&29&413&6 \\
-    \hline
-    Cosine: term-doc mean-sqrt &19&3&22&1268&115&105&108 \\
-    \hline
-    Cosine: term-doc max-sqrt &2&10&136&1123&68&249&130 \\
-    \hline
-    Sum: term-doc mean &23&3&720&746&44&60&158 \\
-    \hline
-  \multicolumn{8}{c}{} \\
-  \end{tabular}
-  \begin{tabular}{|l|r|r|r|r|r|r|r|}
-    \hline
-    Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
-    \hline
-    Sum: disease matrix &1&3&0&3&26&6 &\scriptsize{\textbf{8}} \\
-    \hline
-    Cosine: term-doc mean-sqrt &5&54&0&2&41&7 &\scriptsize{\textbf{6}}\\
-    \hline
-    Cosine: term-doc max-qrt &44&8&0&47&65&25 & \scriptsize{\textbf{4}} \\
-    \hline
-    Sum: term-doc mean &1&33&0&27&88&5 & \scriptsize{\textbf{4}} \\
-    \hline
-  \end{tabular}
+    \label{testResult_termDoc_bmj_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_td}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Infec&Cushi&Eosin&Ehrli&Neuro&Pheoc&Creut \\
+      \hline
+      Sum: disease matrix &5&1&597&511&29&413&6 \\
+      \hline
+      Cosine: term-doc mean-sqrt &19&3&22&1268&115&105&108 \\
+      \hline
+      Cosine: term-doc max-sqrt &2&10&136&1123&68&249&130 \\
+      \hline
+      Sum: term-doc mean &23&3&720&746&44&60&158 \\
+      \hline
+      \multicolumn{8}{c}{} \\
+    \end{tabular}
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+      \hline
+      Measure &Churg&Derma&Cat S&TEN&MELAS&Bruga& \scriptsize{\textbf{\# in top 20}} \\
+      \hline
+      Sum: disease matrix &1&3&0&3&26&6 &\scriptsize{\textbf{8}} \\
+      \hline
+      Cosine: term-doc mean-sqrt &5&54&0&2&41&7 &\scriptsize{\textbf{6}}\\
+      \hline
+      Cosine: term-doc max-qrt &44&8&0&47&65&25 & \scriptsize{\textbf{4}} \\
+      \hline
+      Sum: term-doc mean &1&33&0&27&88&5 & \scriptsize{\textbf{4}} \\
+      \hline
+    \end{tabular}
   \end{tiny}
 \end{table}
 
 \begin{figure}[H]
-        \begin{center}
-          \includegraphics[width=0.9\textwidth]{barcharts/termDoc_orphan_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_nn_td.png}
-        \end{center}
-        \caption{Comparison of the mean sum measure, and mean and max sqrt cosine measure, on a stemmed term-doc matrix, and of the sum measure on a stemmed disease matrix}
-        \label{termDoc_orphan_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_nn_td}
+  \caption{Comparison of the mean sum measure, and mean and max sqrt cosine measure, on a stemmed term-doc matrix, and of the sum measure on a stemmed disease matrix}
+  \begin{center}
+    \includegraphics[width=1.2\textwidth]{barcharts/termDoc_orphan_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_nn_td.png}
+  \end{center}
+  \label{termDoc_orphan_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_nn_td}
 \end{figure}
 
 \begin{table}[H]
+\label{testResult_termDoc_orphan_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_nn_td}
 \begin{tiny}
   \begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
     \hline
@@ -1004,7 +1016,7 @@ interesting since the document-summed disease matrix was originally made as mode
 implementation in the large term document matrix. This could imply that a summation of the document vectors 
 for each individual disease seems to enchance the values of information carrying terms with the TF-IDF taking 
 care of too common and non-information containing terms. The summation also efficiently eliminates the problem 
-of noisy overview articles \ref{Overview}. \\
+of noisy overview articles \ref{Overview}.
 
 One of the noteworthy things that can be learned from the bar charts made in this and 
 the two previous sections is that there should be a lower bound on the number of documents 
@@ -1013,16 +1025,53 @@ have a lower bound on the number of medline records that are gathered for each d
 This is in order to ensure that the system will be able make a reasonable qualified guess 
 on the disease.
 
-\subsection{Clustering of the results}
+\subsubsection{Clustering of the results}
 \fxnote{Needs to be refined}
-Currently we are only able to make clusters from disease matrices, we have chosen to make a cluster 
-of the top 20 diseases return to see how these lie in relation to each other. Of special interest is 
-Cat scratch disease which our system almost always lists correctly. 
+We perform a clustering of the top 20 results using hierarchical
+clustering. We have chosen to cluster the best disease from sum,
+stemmed, non-normalized, which is the Cat Scratch disease. Remember
+that the 20 diseases are chosen based on the similarity to the query
+vector, not how similar they are to eachother. From figure
+\ref{sum_stem_top20_best_cat_scratch_disease} it can be seen that Cat
+Scratch disease near the top is clustered together with Cyclic
+Neutropenia eventhough it is number 19 on the result list. And the
+disease ranked as number 2 is Kikuchi disease which is 3 (or 6)
+clusters away from Cat Scratch disease. Meaning that i requires the
+merge of 3 sub clusters to get them in the same cluster. The lowest
+ranking disease is Chediak-Higashi syndrome, to get this into the same
+cluster as Cat Scratch requires the mergning of the entire cluster.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=1.3\textwidth]{clusters/sum_stem_top20_best_cat_scratch_disease.jpg}
+  \end{center}
+  \caption{Hierarchical clustering of best disease using sum, stemmed non-normalized}
+  \label{sum_stem_top20_best_cat_scratch_disease}
+\end{figure}
+
+We have also chosen to cluster the disease where sum, stemmed
+non-normalized produced the worst result. It is the test case
+Eosinophilic granuloma, where the right disease was ranked as number
+597. So it is not possible to find it in the dendrogram, our systems
+best guess was Developmental Dysplasia of Hip. Investigation the
+diseases present in the dendrogram
+\ref{sum_stem_top20_worst_developmental_dysplasia_of_hip} could
+provide helpful knowledge about why our system is so wrong about this
+disease.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=1.3\textwidth]{clusters/sum_stem_top20_worst_developmental_dysplasia_of_hip.jpg}
+  \end{center}
+  \caption{Hierarchical clustering of worst disease using sum, stemmed non-normalized}
+  \label{sum_stem_top20_worst_developmental_dysplasia_of_hip}
+\end{figure} 
+
 %See dendrogram \ref{Dendro_cat_scratch_disease}, it can be seen how ...
 
 %% \begin{figure}[H]
 %%         \begin{center}
-%%           \includegraphics[width=0.9\textwidth]{barcharts/diseaseMatrix_orphan_hist_NOTnorm_3000_s_cos_sqrt_cos_sum_nn.png}
+%%           \includegraphics[width=1.1\textwidth]{barcharts/diseaseMatrix_orphan_hist_NOTnorm_3000_s_cos_sqrt_cos_sum_nn.png}
 %%         \end{center}
 %%         \caption{Test of non-stemmed mean, median and max using normalization and cosine}
 %%         \label{Dendro_cat_scratch_disease}
@@ -1030,30 +1079,41 @@ Cat scratch disease which our system almost always lists correctly.
 
 
 %% \subsection{The reduced semantic space and keyword extraction}
-To be written...
 
 \subsection{On overview article noise and concensus normalization\label{Overview}}
 
-\textbf{Overview articles}\\
-Unfortunately there is overview articles that can pollute the search results and if overview articles are 
-found in many of the top scoring diseases, it could present a problem. When we run the concensus method as 
-described in the \ref{CosineScore}, an overview article would potentially get an unfair high score since it 
-gets summed up to 240 times. Though overview articles represents an element of noise, the normalization of 
-the vectors in the vector space model should in theory down weight the highly summed documents. We also 
-tested to the most common overview article (240 occurrences) --- to see if it could be a problem --- using the 
-Orpha.net disease cases among top 3000 (documents). The overview article was present in less than 1 out of 
-8 searches which is not a significant amount. The disease matrix on the other hand is less prone to the same 
-problem, as it summarizes all information about a disease into one vector. \\
+\subsubsection{Overview articles}
+Unfortunately there is overview articles that can pollute the search
+results and if overview articles are found in many of the top scoring
+diseases, it could present a problem. When we run the concensus method
+as described in the \ref{CosineScore}, an overview article would
+potentially get an unfair high score since it gets summed up to 240
+times. Though overview articles represents an element of noise, the
+normalization of the vectors in the vector space model should in
+theory down weight the highly summed documents. We also tested to the
+most common overview article (240 occurrences) --- to see if it could
+be a problem --- using the Orpha.net disease cases among top 3000
+(documents). The overview article was present in less than 1 out of 8
+searches which is not a significant amount. The disease matrix on the
+other hand is less prone to the same problem, as it summarizes all
+information about a disease into one vector.
 
-\textbf{Concensus normalization} \\
-During a point in the testing of the term document matrices, we got the idea to try and divide each label with 
-the number of documents it had been summed over. This could in theory normalize the label in the top score of 
-returned results, as labels being over-represented in e.g. the bottom of the top score list would be weighted down. 
-However, as this might be a good theoretical idea, it did not quite amount ot anything useful. The results for 
-running this on the stemmed term document matrix, using the cosine measures, is: \\
+\subsubsection{Concensus normalization}
+During a point in the testing of the term document matrices, we got
+the idea to try and divide each label with the number of documents it
+had been summed over. This could in theory normalize the label in the
+top score of returned results, as labels being over-represented in
+e.g. the bottom of the top score list would be weighted down.
+However, as this might be a good theoretical idea, it did not quite
+amount ot anything useful. The results for running this on the stemmed
+term document matrix, using the cosine measures, is:
+
 {\small
 Mean: [99, 210, 804, 1216, 507, 667, 167, 309, 502, 50, 330, 695, 424] \\
 Median: [1036, 989, 1432, 948, 668, 1301, 1315, 1687, 1429, 1233, 1696, 1494, 1322] \\
 Max: [1034, 989, 1447, 1084, 635, 1284, 1293, 1687, 1414, 1233, 1696, 1491, 1321] \\
 }
-It does not take a bar chart to see that these values are pretty off the top 20. The idea might be good enough but it would have to be on a different model or data set than the one we use.
+
+It does not take a bar chart to see that these values are pretty off
+the top 20. The idea might be good enough but it would have to be on a
+different model or data set than the one we use.
