@@ -630,11 +630,17 @@ def runScoreTestBlind_diseaseMatrix(lil, csc):
 
 termHashTable=IOmodule.pickleIn(_hashTablePath, "termHash_stemmed")
 revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
-def analyseDiseaseTerms(listOfDiseases,M_coo):
+def analyseDiseaseTerms(M_coo):
+
+    listOfDiseases=["Adrenoleukodystrophy  autosomal  neonatal form","Kleine Levin Syndrome"]
+    listOfSymptoms=["Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions",
+                    "Jewish boy age 16, monthly seizures, sleep aggressive and irritable when woken, highly increased sexual appetite and hunger"]
+
+    sanitizer = TextCleaner.sanitizeString()
 
     M_lil=M_coo.tolil()
 
-
+    count=0
     for disease in listOfDiseases:
         rowIndex=_diseaseHash[disease]
 
@@ -647,5 +653,25 @@ def analyseDiseaseTerms(listOfDiseases,M_coo):
         termList.sort()
         termList.reverse()
 
-        print termList[:20]
+        printout1=[]
+        for item in termList[:20]:
+            printout1.append[item[1]]
+        print 'Top 20 terms:'
+        print '---------------------'
+        print printout1
+        print "====================="
+
+        printout2=[]
+        symptoms=listOfSymptoms[count]
+        symptoms = sanitizer.sub(' ', symptoms)
+        symptoms = FilterInterface.stopwordRemover(symptoms)
+
+        for symptom in symptoms:
+
+            for term in termList:
+                if term[1]==symptom: printout2.append((termList.index(term),symptom))
+        print 'Ranks of searched symptoms:'
+        print '---------------------'
+        print printout2
+        print "====================="
         print ''
