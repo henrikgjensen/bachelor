@@ -291,7 +291,66 @@ potential keywords, publication dates, authors and other optional
 MedLine information. \fxnote{Henvisning til ordentlig-syg
   implementerings afsnit i kap 3}
 
-% <Figure/Table x.xx shows a typical Medline record>
+\fxnote{Find some where to reference figure \ref{MedLineRecord}}
+
+\begin{figure}[H]
+  \caption{Example of a MedLine record for the disease Cerebral cavernous hemangioma}
+  \scriptsize{
+  \begin{verbatim}
+PMID- 19634751
+OWN - NLM
+STAT- MEDLINE
+DA  - 20090728
+DCOM- 20090914
+IS  - 1542-8877 (Print)
+IS  - 1542-8877 (Linking)
+VI  - 40
+IP  - 4
+DP  - 2009 Jul-Aug
+TI  - Labor-induced hemorrhage of a retinal cavernous hemangioma.
+PG  - 419-20
+AB  - The authors present a case of a previously undiagnosed retinal cavernous
+      hemangioma that hemorrhaged during labor. There are previous reports of
+      labor-induced intracranial hemorrhage from central nervous system vascular
+      malformations, but none have demonstrated intraocular hemorrhage during labor.
+      The case emphasizes a need to screen patients with retinal cavernous hemangioma
+      and to warn them of possible vision loss during Valsalva maneuvers such as labor.
+AD  - Barnes Retina Institute, Washington University School ofMedicine, Department of
+      Ophthalmology and Visual Sciences, St. Louis, Missouri, USA.
+FAU - Smith, Bradley T
+AU  - Smith BT
+FAU - Joseph, Daniel P
+AU  - Joseph DP
+LA  - eng
+PT  - Case Reports
+PT  - Journal Article
+PL  - United States
+TA  - Ophthalmic Surg Lasers Imaging
+JT  - Ophthalmic surgery, lasers & imaging : the official journal of the International 
+      Society for Imaging in the Eye
+JID - 101155780
+SB  - IM
+MH  - Female
+MH  - Fluorescein Angiography
+MH  - Hemangioma, Cavernous/*pathology
+MH  - Humans
+MH  - *Obstetric Labor Complications
+MH  - Pregnancy
+MH  - Retinal Hemorrhage/*diagnosis
+MH  - Retinal Neoplasms/*pathology
+MH  - Vision Disorders/etiology
+MH  - Young Adult
+EDAT- 2009/07/29 09:00
+MHDA- 2009/09/15 06:00
+CRDT- 2009/07/29 09:00
+PST - ppublish
+SO  - Ophthalmic Surg Lasers Imaging. 2009 Jul-Aug;40(4):419-20.
+
+  \end{verbatim}
+  }
+  \label{MedLineRecord}
+\end{figure}
+
 \fxnote{InsertEither ref for appendix or a example of a medline record}
 
 \subsection{Searching the information}
@@ -327,11 +386,28 @@ the prototype system), advantages and disadvantages.
 
 \subsubsection{Model description}
 The vector space model is a matrix representation of our
-information. As shown in the figure below, each row represents a
+information. As shown in figure \ref{ExampleTermDoc}, each row represents a
 document and each column a term.
 
 % <Figure showing a term-doc matrix with no specific content>
-\fxnote{Insert figure showing a term-doc matrix with no specific content}
+
+\begin{figure}[H]
+  \begin{center}
+    \begin{tabular}{|l|r|r|r|r|r|}
+      \hline
+      \backslashbox{PMID}{Terms} & hemangioma & hemorrhage &  cavernous & intracranial & blood \\
+      \hline
+      19634751 & 3 & 4 & 3 & 1 & 0 \\
+      \hline
+      17447932 & 0 & 5 & 0 & 0 & 4 \\
+      \hline
+      14838147 & 0 & 3 & 0 & 3 & 2 \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Example of term document matrix}
+  \label{ExampleTermDoc}
+\end{figure}
 
 In our case, the abstract, MeSH terms and title of a MedLine record
 will represent a document vector in the model. The first index is
