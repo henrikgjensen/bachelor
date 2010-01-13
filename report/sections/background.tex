@@ -389,8 +389,6 @@ The vector space model is a matrix representation of our
 information. As shown in figure \ref{ExampleTermDoc}, each row represents a
 document and each column a term.
 
-% <Figure showing a term-doc matrix with no specific content>
-
 \begin{figure}[H]
   \begin{center}
     \begin{tabular}{|l|r|r|r|r|r|}
@@ -516,14 +514,14 @@ guarantee that these words are as relevant and classifying for the
 document as one could hope. A lot of research have been laid into
 explaining the advantages and disadvantages of TF-IDF and there are
 many interesting discussions going on --- like the one at the blog
-\cite{UnderstandingTFIDF} --- in this discussion, it would make sense
-to work with some measure of the entropy of a term but --- as also
-noted --- such methods are computationally expensive, especially when
-dealing with large scale web search engines. It would be reasonable to
-assume that the same applies when dealing with large term document
-matrices and --- due to the limited resources available in this
-project --- we believe it is reason enough to only consider the
-relatively simple transformations.
+\cite{UnderstandingTFIDF} --- in this discussion, E. Garcia mentions
+that it would make sense to work with some measure of the entropy of a
+term but --- as also noted --- such methods are computationally
+expensive, especially when dealing with large scale web search
+engines. It would be reasonable to assume that the same applies when
+dealing with large term document matrices and --- due to the limited
+resources available in this project --- we believe it is reason enough
+to only consider the relatively simple transformations.
 
 \subsection{Normalization} 
 
@@ -684,7 +682,7 @@ measure.
 When using this measure, the resulting similarity score of two vectors
 can be thought of as the angle between two vectors (though the angle
 measure is only visible for up to three dimensions and can not readily
-be applied to the hyper dimensional space of the matrix), i.e. the
+be applied to the hyper dimensional space of the matrix), that is the
 angle between the query vector and the document vector. The usual
 equation for cosine similarity can then be used:
 
