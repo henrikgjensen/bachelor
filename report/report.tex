@@ -28,7 +28,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{listings}
-
+\usepackage{color}
 
 \usepackage{float}
 \usepackage[small,bf]{caption}
@@ -63,7 +63,7 @@
 % Titel, forfatter og dato
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Support decision system for diagnosing rare diseases using machine learning for medical text mining}
+\title{Support decision system for diagnosing rare diseases using vector space model and medical text mining}
 
 \author{Henrik G. Jensen - \mailto{henrikgjensen@gmail.com} \and
   Michael Andersen - \mailto{michael.blackplague.andersen@gmail.com} \\
@@ -88,6 +88,16 @@ pdfsubject={Text mining, rare diseases},
 pdfkeywords={Diagnosing rare diseases, text mining}
 }
 
+
+% How to change margins...
+% use voffset for vertical
+% use hoffset for horisontal
+%% \newenvironment{changemargin}[1]{
+%%   \begin{list}{}{
+%%       \setlength{\hoffset}{#1}
+%%     }
+%%   \item[]}{\end{list}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Indhold
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,6 +112,7 @@ pdfkeywords={Diagnosing rare diseases, text mining}
 \pagenumbering{arabic}
 \input{sections/acknowledgements.tex}
 
+\addcontentsline{toc}{chapter}{Changes from original synopsis}
 \input{sections/changesfromoriginalsynopsis.tex}
 \setcounter{tocdepth}{2}
 \tableofcontents
