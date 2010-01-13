@@ -638,7 +638,7 @@ def analyseDiseaseTerms(listOfDiseases,M_coo):
     for disease in listOfDiseases:
         rowIndex=_diseaseHash[disease]
 
-        termIndices=M_lil.getrow(rowIndex).nonzero()[1]
+        termIndices=M_lil.getrow(rowIndex).nonzero()[1][1:]
 
         termList=[]
         for colIndex in termIndices:
