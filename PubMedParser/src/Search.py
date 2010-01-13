@@ -468,8 +468,8 @@ def runScoreTest5(lil, csc):
     #diseaseList=[("Jewish boy age 16, monthly seizures, sleep deficiency, aggressive and irritable when woken, highly increased sexual appetite and hunger")]
 
     #diseaseList=[("Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
-    diseaseList=[("Male child, malformations at birth, midfacial retraction with a deep groove under the eyes, and hypertelorism, short nose with a low nasal bridge and large low-set ears, wide mouth and retrognathia. Hypertrichosis with bright reddish hair and a median frontal cutaneous angioma, short neck with redundant skin, Bilateral inguinal hernias, hypospadias with a megameatus, and cryptorchidism")]
-
+    #diseaseList=[("Male child, malformations at birth, midfacial retraction with a deep groove under the eyes, and hypertelorism, short nose with a low nasal bridge and large low-set ears, wide mouth and retrognathia. Hypertrichosis with bright reddish hair and a median frontal cutaneous angioma, short neck with redundant skin, Bilateral inguinal hernias, hypospadias with a megameatus, and cryptorchidism")]
+    diseaseList=[("Male child, malformations at birth, midfacial retraction, and hypertelorism, short nose with a low nasal bridge and large low-set ears, wide mouth and retrognathia. Hypertrichosis with bright reddish hair and a median frontal cutaneous angioma, short neck with redundant skin, Bilateral inguinal hernias, hypospadias with a megameatus, and cryptorchidism")]
 
     printout2=[[],[],[]]
     clusterThis=[[],[],[]]

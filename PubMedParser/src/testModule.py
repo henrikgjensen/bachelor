@@ -257,32 +257,32 @@ def makehist():
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
     #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
-    #graphName="termDoc_orphan_hist_3000.png"
-    #title='Score test Orpha.net - term-doc matrix'
+    #graphName="termDoc_orphan_hist_3000_ns_s_mea_max_sum.png"
+    #title='Orpha.net score test (Top 3000) - term-doc matrix'
 
     # Not stemmed
     #=========================================================================
     ## Mean norm-sqrt (COSINE):
     #x2 = [4,725,75,37,38,85,68,1651,1,23,80,15,0,26,2,218,3,13,2,3000,1,9,14,78,84,48,3,84,1,62]
     ## Median norm-sqrt (COSINE):
-    #x1 = [81, 261, 613, 222, 987, 4, 36, 446, 666, 263, 1388, 291, 41, 47, 30, 0, 71, 147, 35, 3000, 174, 237, 13, 382, 863, 12, 835, 863, 267, 44]
+    #x2 = [81, 261, 613, 222, 987, 4, 36, 446, 666, 263, 1388, 291, 41, 47, 30, 0, 71, 147, 35, 3000, 174, 237, 13, 382, 863, 12, 835, 863, 267, 44]
     ## Max norm-sqrt (COSINE):
-    #x1 = [6, 504, 0, 5, 108, 6, 2, 1079, 4, 52, 45, 7, 0, 13, 2, 0, 11, 0, 3, 3000, 6, 42, 4, 96, 434, 1, 8, 434, 14, 1]
+    #x3 = [6, 504, 0, 5, 108, 6, 2, 1079, 4, 52, 45, 7, 0, 13, 2, 0, 11, 0, 3, 3000, 6, 42, 4, 96, 434, 1, 8, 434, 14, 1]
 
     ## Mean norm (COSINE - no sqrt):
     #x1 = [4, 664, 30, 47, 38, 85, 62, 1371, 1, 32, 83, 15, 0, 26, 2, 81, 3, 16, 2, 3000, 4, 10, 13, 24, 66, 35, 3, 66, 4, 34]
     ## Median norm (COSINE - no sqrt):
     #x1 = [163, 357, 76, 240, 948, 4, 76, 141, 384, 314, 505, 211, 44, 181, 42, 773, 87, 169, 189, 3000, 179, 265, 21, 491, 692, 37, 435, 692, 358, 233]
     ## Max norm (COSINE - no sqrt):
-    #x1 = [4, 858, 0, 10, 44, 15, 2, 541, 4, 116, 99, 18, 0, 6, 2, 0, 22, 0, 3, 3000, 9, 67, 5, 63, 201, 1, 8, 201, 9, 0]
+    #x3 = [4, 858, 0, 10, 44, 15, 2, 541, 4, 116, 99, 18, 0, 6, 2, 0, 22, 0, 3, 3000, 9, 67, 5, 63, 201, 1, 8, 201, 9, 0]
 
 
     ## Mean not-norm (SUM)
-    #1= [6, 910, 917, 32, 122, 460, 145, 3119, 1, 21, 342, 50, 0, 45, 2, 137, 3, 44, 14, 2458, 0, 9, 36, 37, 132, 47, 26, 132, 37, 127]
+    #x1= [6, 910, 917, 32, 122, 460, 145, 3119, 1, 21, 342, 50, 0, 45, 2, 137, 3, 44, 14, 2458, 0, 9, 36, 37, 132, 47, 26, 132, 37, 127]
     ## Median not-norm (SUM)
-    #2 = [626, 2814, 495, 219, 1232, 963, 182, 3590, 872, 1207, 1056, 595, 526, 940, 179, 1292, 503, 408, 304, 845, 320, 204, 143, 1165, 1763, 19, 467, 1763, 1532, 100]
+    #x2 = [626, 2814, 495, 219, 1232, 963, 182, 3590, 872, 1207, 1056, 595, 526, 940, 179, 1292, 503, 408, 304, 845, 320, 204, 143, 1165, 1763, 19, 467, 1763, 1532, 100]
     ## Max not-norm (SUM)
-    #3 = [119, 2081, 611, 113, 1031, 48, 203, 3833, 7, 127, 1139, 109, 9, 7, 2, 357, 7, 401, 3, 1957, 13, 0, 102, 169, 260, 4, 198, 260, 72, 55]
+    #x3 = [119, 2081, 611, 113, 1031, 48, 203, 3833, 7, 127, 1139, 109, 9, 7, 2, 357, 7, 401, 3, 1957, 13, 0, 102, 169, 260, 4, 198, 260, 72, 55]
 
     #=========================================================================
 
@@ -315,24 +315,24 @@ def makehist():
     #~~~~~~~~~~~~~~~~~~~#
 
     #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
-    #graphName="termDoc_bmj_hist_3000.png"
-    #title='Score test BMJ - term-doc matrix'
+    #graphName="termDoc_bmj_hist_3000_ns_s_mea_max_sum.png"
+    #title='BMJ score test (Top 3000) - term-doc matrix'
 
     # Not stemmed
     #=========================================================================
     ## Mean norm-sqrt (COSINE):
-    #x2 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
+    #x1 = [19,3,22,1268,115,105,108,5,54,0,2,41,7]
     ## Median norm-sqrt (COSINE):
     #x1 = [128, 153, 819, 560, 612, 457, 204, 786, 81, 30, 603, 292, 184]
     ## Max norm-sqrt (COSINE):
-    #x1 = [5, 4, 383, 1021, 44, 241, 107, 37, 8, 0, 24, 19, 27]
+    #x3 = [5, 4, 383, 1021, 44, 241, 107, 37, 8, 0, 24, 19, 27]
     
     ## Mean norm (COSINE - no sqrt):
     #x1 = [25, 2, 66, 692, 128, 139, 128, 3, 63, 0, 2, 52, 9]
     ## Median norm (COSINE - no sqrt):
-    #x1 = [123, 179, 1210, 1004, 665, 502, 76, 343, 455, 59, 392, 430, 464]
+    #x2 = [123, 179, 1210, 1004, 665, 502, 76, 343, 455, 59, 392, 430, 464]
     ## Max norm (COSINE - no sqrt):
-    #x1 = [28, 7, 311, 1123, 166, 375, 109, 16, 21, 0, 39, 96, 47]
+    #x3 = [28, 7, 311, 1123, 166, 375, 109, 16, 21, 0, 39, 96, 47]
 
     ## Mean not-norm (SUM):
     #x1 = [23, 3, 362, 772, 35, 76, 144, 1, 45, 0, 25, 53, 5]
@@ -356,7 +356,7 @@ def makehist():
     ## Median norm (COSINE - no sqrt):
     #x2 = [106, 252, 706, 1127, 532, 803, 179, 308, 751, 76, 472, 808, 473]
     ## Max norm (COSINE - no sqrt):
-    #x3 = [20, 11, 427, 1232, 210, 370, 108, 28, 22, 0, 62, 192, 56]
+    #x4 = [20, 11, 427, 1232, 210, 370, 108, 28, 22, 0, 62, 192, 56]
     
     ## Mean not-norm (SUM):
     #x4 = [23, 3, 720, 746, 44, 60, 158, 1, 33, 0, 27, 88, 5]
@@ -376,16 +376,16 @@ def makehist():
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
     #diseases=['Ap','Ru','Aa','Aa','Ac','Ac','Ac','Ac','Bi','Br','Ch','Ch','Co','Om','Da','Ic','Em','Co','Fi','Ac','Os','Pr','He','Hy','Ja','Ja','Je','Ja','Mu','Tr']
-    #graphName="diseaseMatrix_orphan_hist_NOTnorm_3000.png"
-    #title='Score test Orphan.net - disease matrix'
+    #graphName="termDoc_orphan_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_nn_td.png"
+    #title='Orpha.net score test (Top 3000) - term-doc and disease matrix'
 
     # Not stemmed
     #=========================================================================
     ## Norm (COSINE sqrt):
-    #x1 = [76,257,0,20,122,41, 9,1912,16,1,448,128,1,13, 5,0,33,380, 20,1687,39,47,26,4,33,1,83,33, 46,0]
+    #x2 = [76,257,0,20,122,41, 9,1912,16,1,448,128,1,13, 5,0,33,380, 20,1687,39,47,26,4,33,1,83,33, 46,0]
 
     ## Norm (COSINE - no sqrt):
-    #x2 = [95,599,0,76,307,99,47,2989,28,3,430,165,7,37,11,7,97,717,150, 562,74,64,31,5,89,1,75,89,222,1]
+    #x1 = [95,599,0,76,307,99,47,2989,28,3,430,165,7,37,11,7,97,717,150, 562,74,64,31,5,89,1,75,89,222,1]
 
     ## Not norm (SUM)
     #x3 = [9,123,4,10,4,81,109,601,3,7,68,9,0,2,1, 6,0,3,0,3000,0,8, 5,107,46,4,2,46,2,55]
@@ -408,16 +408,16 @@ def makehist():
     #~~~~~~~~~~~~~~~~~~~#
 
     #diseases=['Infec','Cushi','Eosin','Ehrli','Neuro','Pheoc','Creut','Churg','Derma','Cat S','TEN','MELAS','Bruga']
-    #graphName="diseaseMatrix_bmj_hist_norm_3000.png"
-    #title='Score test BMJ - disease matrix'
+    #graphName="termDoc_bmj_hist_3000_sum_dm_mea_cos_sqrt_td_max_cos_sqrt_td_mea_sum_td.png"
+    #title='BMJ score test (Top 3000) - term-doc and disease matrix'
 
     # Not stemmed
     #=========================================================================
     ## Norm (COSINE):
-    #x1 = [16,37,375,2001,270,1037,25,6, 0,1, 97, 45,25]
+    #x2 = [16,37,375,2001,270,1037,25,6, 0,1, 97, 45,25]
 
     ## Norm (COSINE - no sqrt)
-    #x2 = [31,62,474,2220,377,1225,93,8,20,5,227,118,94]
+    #x1 = [31,62,474,2220,377,1225,93,8,20,5,227,118,94]
 
     ## Not norm (SUM)
     #x3 = [ 6,1,323, 691,30,427,8,2,4,0,3,19,6]
@@ -426,10 +426,10 @@ def makehist():
     # Stemmed
     #=========================================================================
     ## Norm (COSINE):
-    #1 = [25,37,748,1970,384,1053,25,2, 0,1,102, 68,30]
+    #x2 = [25,37,748,1970,384,1053,25,2, 0,1,102, 68,30]
 
     ## Norm (COSINE - no sqrt)
-    #2 = [37,63,872,1963,533,1198,93,4,18,9,230,221,91]
+    #x1 = [37,63,872,1963,533,1198,93,4,18,9,230,221,91]
 
     # Not norm (SUM)
     #x1 = [5,1,597,511,29,413,6,1,3,0,3,26,6]
@@ -439,11 +439,11 @@ def makehist():
                             # TermLabel - Blind tests #
     ##########################################################################
 
-    diseases=["Fibrodysplasia","Adrenoleukodystrophy","Papillon Lefevre","Kleine Levin","?"]
-    graphName=""
-    title=""
+    #diseases=["Fibrodysplasia","Adrenoleukodystrophy","Papillon Lefevre","Kleine Levin","?"]
+    #graphName=""
+    #title=""
 
-    x1 = [20,'Not found',6,2,'?']
+    #x1 = [20,'Not found',6,2,'?']
 
     # "Adrenoleukodystrophy  autosomal  neonatal form" found at '1718'
     # "Childhood-onset cerebral X-linked adrenoleukodystrophy" not found
@@ -455,9 +455,9 @@ def makehist():
     ax=fig.add_subplot(1,1,1)
 
     # for 3 bars
-#     cx1 = 'green'
-#     cx2 = 'red'
-#     cx3 = 'blue'
+#    cx1 = '#4d0162'
+#    cx2 = '#f6170c'
+#    cx3 = '#f5f525'
 
     # for four bars
     cx1 = '#29dbda'
@@ -466,15 +466,15 @@ def makehist():
     cx4 = '#f66b5a'
 
     # for three bars
-#     lx1 = 'Cosine, normalized, sqrt'
-#     lx2 = 'Cosine, normalized, no sqrt'
-#     lx3 = 'Sum, not normalized'
+#    lx1 = 'Cosine no sqrt,'
+#    lx2 = 'Cosine sqrt,'
+#    lx3 = 'Sum,'
 
     # for four bars.
-    lx1 = 'Sum - disease matrix'
-    lx2 = 'Mean - cosine, sqrt, Term document matrix'
-    lx3 = 'Max - cos, sqrt, Term document matrix'
-    lx4 = 'Mean sum - Term document matrix'
+    lx1 = 'Sum disease matrix,'
+    lx2 = 'Cosine mean term-doc,'
+    lx3 = 'Cosine max term-doc,'
+    lx4 = 'Sum mean term-doc,'
 
     # Font size in legend
     rc('legend', fontsize='small')
@@ -484,8 +484,8 @@ def makehist():
     step = 8
 
     # For three bars
-#     xlen=len(x1)*6
-#     step = 6
+#    xlen=len(x1)*6
+#    step = 6
     
     # For two bars
     #    xlen=len(x1)*4
@@ -533,8 +533,8 @@ def makehist():
 
     show()
     print "Writing to "+graphName
-    savefig("/home/bp/brep/barcharts/"+graphName)
-    #    savefig("/home/henne/Documents/Projektet/bachelor/Grafer_og_tegninger/"+graphName)
+    #savefig("/home/bp/brep/barcharts/"+graphName)
+    savefig("/home/henne/Documents/Projektet/bachelor/report/barcharts/"+graphName)
 
 """
 from nltk import *
@@ -590,3 +590,66 @@ def sanitizeMatrices():
 
         print ""
 """
+
+import numpy
+def makehist2():
+
+    graphName="sqrt_graph.png"
+    title="Square root transformation"
+
+    fig=figure(figsize=(8,5))
+    ax=fig.add_subplot(1,1,1)
+
+    x1 = numpy.arange(0,2,0.01)
+
+    # for four bars
+    cx1 = 'red'
+    cx2 = 'purple'
+    cx3 = 'yellow'
+    cx4 = 'blue'
+
+    # for four bars.
+    lx1 = 'Before sqrt-transform'
+    lx2 = 'After sqrt-transform'
+    lx3 = 'After double sqrt-transform'
+    lx4 = 'After triple sqrt-transform'
+
+    # Font size in legend
+    rc('legend', fontsize='small')
+
+    x2=map(lambda x: math.sqrt(x),x1)
+    
+    x3=x1
+    for i in range(2):
+        x3=map(lambda x: math.sqrt(x),x3)
+
+    x4=x1
+    for i in range(3):
+        x4=map(lambda x: math.sqrt(x),x4)
+
+    ax.plot(x1,x1,color=cx1,linewidth=2,label=lx1)
+    ax.plot(x1,x2,color=cx2,linewidth=2,label=lx2)
+    ax.plot(x1,x3,color=cx3,linewidth=2,label=lx3)
+    ax.plot(x1,x4,color=cx4,linewidth=2,label=lx4)
+
+
+    #ax.bar(arange(0,xlen,step), x1, color=cx1, width=1, label=lx1)
+    #ax.bar(arange(1,xlen,step), x2_sqrt, color=cx2, width=1, label=lx2)
+
+    # Set font size for the disease-labels
+    for label in ax.get_xticklabels():
+        label.set_fontsize(10)
+
+    ax.legend()
+    ax.grid('.')
+    ax.set_title(title)
+    ax.set_xlabel('x')
+    ax.set_ylabel('y')
+
+    # Rotate the disease labels
+    fig.autofmt_xdate()
+
+    show()
+    print "Writing to "+graphName
+    #savefig("/home/bp/brep/barcharts/"+graphName)
+    savefig("/home/henne/Documents/Projektet/bachelor/report/barcharts/"+graphName)
