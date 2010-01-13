@@ -43,7 +43,7 @@
 %%%%% CONFIGURATIONS %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lstset{language=Python, basicstyle=\scriptsize, showstringspaces=false, numbers=none, stepnumber=1, numberstyle=\tiny}
-\setcounter{tocdepth}{2}
+
 \hyphenation{mand-en} %%% Add here if something does not break right. Like this nu-clear-test-bomb-ing
 
 
@@ -95,13 +95,15 @@ pdfkeywords={Diagnosing rare diseases, text mining}
 \maketitle
 \pagenumbering{roman}
 \thispagestyle{empty}
-
 \abstract
 \input{sections/abstract.tex}
 
 \addcontentsline{toc}{chapter}{Acknowledgements}
-\input{sections/acknowledgements.tex}
 \pagenumbering{arabic}
+\input{sections/acknowledgements.tex}
+
+\input{sections/changesfromoriginalsynopsis.tex}
+\setcounter{tocdepth}{2}
 \tableofcontents
 
 \input{sections/introduction.tex}
