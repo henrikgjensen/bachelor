@@ -666,7 +666,7 @@ def analyseDiseaseTerms(M_coo):
         symptoms = sanitizer.sub(' ', symptoms)
         symptoms = FilterInterface.stopwordRemover(symptoms)
         symptoms=FilterInterface.porterStemmer(symptoms)
-        symptoms=SearchTermDoc._modifySearchString(searchString)
+        symptoms=SearchTermDoc._modifySearchString(symptoms)
         #print symptoms
         count+=1
 
