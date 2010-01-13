@@ -1,67 +1,58 @@
 \chapter{Conclusion\label{Conclusion}}
 
 We choose to use the vector space model because it gives a good base
-on which to perform different transformations on the data and performing
+on which to perform different transformations of the data and performing
 similarity scores.
 
 When applying the square root transformation during calculation of
-similarity score on the TF-IDF matrix, our results improved, this
-suggests that other transformation to the data should be
+similarity score on the TF-IDF matrix, our results improved. This
+suggests that other transformations to the data should be
 used. Unfortunately time did not allow us to perform test on other
 transformations.
 
-Our system correctly placed 8 out of 13 diseases among top 20 when
-using the test cases from BMJ using sum on the disease matrix. When
-running on the Orpha.net test cases our system placed 20 out of 29 in
-top 20 using sum on disease matrix. The Orpha.net result is closely
-follow by using cosine max, with square root transformation on a term
-document matrix, this method places 19 out of 29 in top 20.
-
-The blind tests provided by Henrik L. J\o rgensen were also tested
+Using a disease matrix instead of a term-document matrix gave us the best
+results on the BMJ ($61.5\%$ correct in top 20) and the Orpha.net ($68\%$ correct in top 20) 
+test cases. The blind tests provided by Henrik L. J\o rgensen were also tested
 using our system, and the system placed 3 out of 5 within top
-20. Though our system contains information about the two diseases not
-placed within top 20. We are unable to provide any explanation for
-this.
+20 ($60\%$). Further analysis of the blind tests indicate that protein/gene names
+can be a highly noisy factor, as it seemed to be in one of the blind
+tests.
 
-The test results shows that the system correctly places $61.5\%$ of
-BMJ test cases, $68\%$ of Orpha.net and $60\%$ of the blind test cases
-in top 20.
-
-The elimination of overview article in the database could help reduce
+The elimination of overview articles in the database could help reduce
 some of the noise found during testing the system. Combined with
-outlier detection this might improve the results to some degree.
+outlier detection this could improve the results to some degree.
+However, this was not tested.
 
-There is a clear need for more control over the information gather to
-describe the rare diseases in the database, this includes a lower
+There is a clear need for more control over the information gathered to
+describe the rare diseases in the database. This includes a lower
 bound on the information gather for a single disease. This is
-especially with Acropectorovertebral dysplasia in mind which never
-scores below 562 in any test, and in most cases is not even found
-among top 3000.
+especially with the disease \textit{Acropectorovertebral dysplasia} in mind which never
+scores below 562 in any test.
 
 We were unable to find any information about other system designed to
-perform automated diagnosis of rare diseases. And in that relation
-this system is --- yet --- unique. Hopefully other systems will be
+perform automated diagnosis of rare diseases. In this relation
+the system build is (yet!) unique. Hopefully other systems will be
 made to assist physicians in diagnosing rare diseases.
 
 When designing and testing a system for diagnosing rare diseases it is
 imperative to be able to draw on the knowledge and ideas of domain
-specialists. When testing the system against the Orpha.net cases we
+specialists. When testing the system against the Orpha.net cases, we
 choose the symptoms based on a strings from their web page described
-by ``characterized by'', a physician might not use the same
+by ``characterized by'' - a physician might not use the same
 description. The blind tests symptoms where received in Danish which
-meant that we had to translate it to English, and some information
-might have been lost in the translation. A physician have a domain
-knowledge and intuition about searching for diseases far exceeding
+meant that we had to translate it to English and some information
+might have been lost in the --- perhaps non-medicinal ---translation. A physician have a domain
+knowledge and intuition about searching for diseases that far exceeding
 that of computer scientists designing such a system.
 
 We had a short correspondence with Henrik L. J\o rgensen about the
 usefulness of the system. His opinion was that the system could become a
-helpful tool for physician, because through their carrier they might
+helpful tool for physician because --- through their carrier --- they might
 only experience a single rare disease. So in case something did not
 quite fit with the diagnosis, they could type in a symptom list and
-receive a list of suggested diseases. Which would result in patients
-could be referred to the correct treatment.
+receive a list of suggested diseases. This could result in more patients
+being given the correct treatment.
 
-Considering the test results above this provides evidence that a
+Considering the test results above, this provides evidence that a
 system for providing support decision with respects to diagnosing rare
-disease have potential.
+disease have high potential.
