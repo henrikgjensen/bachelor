@@ -29,6 +29,7 @@
 \usepackage{hyperref}
 \usepackage{listings}
 
+
 \usepackage{float}
 \usepackage[small,bf]{caption}
 %\usepackage{xypic}
@@ -42,7 +43,7 @@
 %%%%% CONFIGURATIONS %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lstset{language=Python, basicstyle=\scriptsize, showstringspaces=false, numbers=none, stepnumber=1, numberstyle=\tiny}
-
+\setcounter{tocdepth}{2}
 \hyphenation{mand-en} %%% Add here if something does not break right. Like this nu-clear-test-bomb-ing
 
 
@@ -64,7 +65,7 @@
 
 \title{Support decision system for diagnosing rare diseases using machine learning for medical text mining}
 
-\author{Henrik G. Jensen - \mailto{henrikgjensen@gmail.com}\\
+\author{Henrik G. Jensen - \mailto{henrikgjensen@gmail.com} \and
   Michael Andersen - \mailto{michael.blackplague.andersen@gmail.com} \\
 \\
 Project supervisor \\ 
@@ -92,18 +93,18 @@ pdfkeywords={Diagnosing rare diseases, text mining}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \maketitle
-
-%\pagenumbering{roman}
+\pagenumbering{roman}
 \thispagestyle{empty}
 
 \abstract
 \input{sections/abstract.tex}
 
-%\chapter*{Forord}
-%\addcontensline{toc}{chapter}{Forord}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\input{sections/acknowledgements.tex}
 
 \tableofcontents
 
+\pagenumbering{arabic}
 \input{sections/introduction.tex}
 
 \input{sections/background.tex}
@@ -116,10 +117,10 @@ pdfkeywords={Diagnosing rare diseases, text mining}
 
 \input{sections/future_works.tex}
 
-\bibliographystyle{unsrt} % nat
+\bibliographystyle{unsrtnat} % nat
 \bibliography{referencelist}
 %% 
-\addcontentsline{toc}{section}{Reference list}
+\addcontentsline{toc}{chapter}{Reference list}
 
 \appendix
 \input{sections/appendix.tex}

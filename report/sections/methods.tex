@@ -8,7 +8,7 @@ various heuristics applied to the data. We will go through the
 individual modules of the system and how they communicate through the
 data formats. After giving a thorough description on the data we work
 with in the system, we finally round off the chapter with some of the
-techincal conclusions that we got from building the system.
+technical conclusions that we got from building the system.
 
 \section{System overview and design\label{SystemOverviewAndDesign}}
 
@@ -23,12 +23,12 @@ the system. For full overview see figure \ref{OverviewDiagram}
 \subsection{The first prototype\label{FirstPrototype}}
 
 We have made a modular design that is divided into five major
-components representing our system. The first module is a webcrawler
+components representing our system. The first module is a web crawler
 called \textit{DiseaseCrawler}. It gathers preliminary data from
 Rarediseases.info and saves it in a specified data format on the disk
 (see section \ref{Crawler}), allowing the next module to read it in
 and process it. \textit{The Search and Information Retrieval} (SIR)
-module searches and retrieves MedLine records from Pubmed.org in
+module searches and retrieves MedLine records from PubMed.org in
 accordance to the data gathered in the crawler module. SIR saves its
 data in a file under the disease name, containing up 500 MedLine
 records per disease-search and a description if one is found (see
@@ -136,10 +136,10 @@ and a description of the disease. This information is then used by a
 SIR-module which is described in the following section \ref{SIR}.
 
 Our main module is named \textit{DiseaseCrawler}. It crawls the
-Rarediseases.info webpage and gathers information as described
+Rarediseases.info web page and gathers information as described
 above. It is a rather large module since it has to take a series of
 anomalies into account when crawling Rarediseases.info (like
-dysfunctional subpages, strange characters and unexpected
+dysfunctional sub pages, strange characters and unexpected
 white-spaces). It utilizes the auxiliary modules \textit{TextCleaner}
 and \textit{IOmodule}, described in section \ref{AuxModules}.
 
@@ -148,7 +148,7 @@ and \textit{IOmodule}, described in section \ref{AuxModules}.
 The crawler accepts a list of letter for which to gather information
 from, e.g. ['A'] means gather all diseases beginning with A. It
 utilizes the HTML parser library Beautifulsoup \cite{BS} to parse the
-webpages, looking for disease names, synonyms, handcrafted searches
+web pages, looking for disease names, synonyms, handcrafted searches
 and uids. The crawled data is all stored in database of dictionaries
 on the form:
 
@@ -158,7 +158,7 @@ on the form:
 }
 \end{center}
 
-The name of the file --- that each of the datasets are stored in --- is the
+The name of the file --- that each of the data sets are stored in --- is the
 name of the disease. The above shows a example for the disease 'Zori
 Stalker Williams syndrome'. The key 'terms' will contain the
 handcrafted search string for PubMed if one is found while 'desc'
@@ -170,28 +170,28 @@ the disease in Entrez, as described in the following section. 'syn' is
 a list containing the various synonyms associated with the disease and
 used for finding more relevant information about the disease. 'uid' is
 a unique identifier found on all OMIM links and in some cases on
-pre-calculated pubmed searches.
+pre-calculated PubMed searches.
 
 \subsection{SIR (Search and Information Retrieval)\label{SIR}}
 
 \subsubsection{Overview and Purpose}
-The \textit{PubmedSIR}-module reads in the information saved by the crawler (or any
+The \textit{PubMedSIR}-module reads in the information saved by the crawler (or any
 other crawler). It uses Entrez for accessing, searching and retrieving
 MedLine records from PubMed. The information contained within the
 MedLine record represents our knowledge base about the diseases. The
-\textit{PubmedSIR}-module is set to search in such a way that we hope to optimize
+\textit{PubMedSIR}-module is set to search in such a way that we hope to optimize
 getting records that are actually relevant to the given disease. A
-maximum of 500 Medline records are downloaded per disease using a two
+maximum of 500 MedLine records are downloaded per disease using a two
 phase search - all containing an abstract.
 
-The main module is called \textit{PubmedSIR} and is used to search and
+The main module is called \textit{PubMedSIR} and is used to search and
 retrieve MedLine records from the PubMed database.
 
 As mentioned above the searching is split into two phases where it
 looks for at most 250 MedLine records in each phase. It first examines
 whether there is a handcrafted search string to search for or whether
 the disease has a PubMed or OMIM unique-id (uid). When searching for
-the handcrafted search string, \textit{PubmedSIR} automatically adds the
+the handcrafted search string, \textit{PubMedSIR} automatically adds the
 additional search options ``AND hasabstract[text]'' to the string. This
 makes sure that all the MedLine records, that are returned, contains
 an abstract. This is unfortunately not possible when dealing with
@@ -206,12 +206,12 @@ even thought they are available. This is a minor fault in our system
 that should have been corrected if time allowed it but we have chosen
 to continue with the information we have available. Alternatively
 additional search options could be to also include constraints for
-getting only abstracts in english, only records published after a
+getting only abstracts in English, only records published after a
 certain date etc. For options see the site PubMed help search
-\cite{PubmedHelpSearch}
+\cite{PubMedHelpSearch}
 
-PubmedSIR relies primarily on the function
-\textit{getArticleIDsFromMultipleSources} for searching across the two
+\textit{PubMedSIR} relies primarily on the function
+\texttt{getArticleIDsFromMultipleSources} for searching across the two
 major databases of Entrez - PubMed and OMIM. We have chosen not to
 remove duplicate MedLine records between the first and second phase of
 the search because it is our belief that --- if a record is present in
@@ -223,13 +223,13 @@ First phase of the search:
 
 \item Search for term if it is present, OR
 
-\item Search for pubmed/omim uid.
+\item Search for PubMed/omim uid.
 
 \item If we have obtained less than 250 MedLine records,
   
 \begin{itemize}
 
-  \item Search for the disease name on pubmed.
+  \item Search for the disease name on PubMed.
 
   \item Eliminate duplicates.
 
@@ -243,7 +243,7 @@ Second phase of the search:
 
 \item Search for the combined synonym. If a combination returns 0
   results then eliminate all future searches that contains this
-  combination since pubmed put in 'AND' between search terms ( meaning
+  combination since PubMed put in 'AND' between search terms ( meaning
   that future searches containing this combination will also return 0
   results).
 
@@ -271,7 +271,7 @@ A typical dictionary read in from the crawler looks as follows:
 }
 \end{center}
 
-\texttt{gatherOfAllThings} completes by performing a writeout of the MedLine
+\texttt{gatherOfAllThings} completes by performing a write out of the MedLine
 records to the disk in the following format:
 
 \begin{center}
@@ -281,7 +281,7 @@ records to the disk in the following format:
 }
 \end{center}
 
-The \textit{PubmedSIR} module uses the following auxillary modules (see
+The \textit{PubMedSIR} module uses the following auxiliary modules (see
 section\ref{AuxModules}):
 \begin{itemize}
   \item \textit{SearchTermCombiner} which is a simple module that is used to
@@ -290,12 +290,12 @@ combine search terms in all of its possible unique combinations.
   \item \textit{TextCleaner} is used to sanitize the input strings.
 \end{itemize}
 
-For more information about the gathered dataset, see section \ref{Database}.
+For more information about the gathered data set, see section \ref{Database}.
 
 \subsection{TermDoc\label{TermDoc}}
 
 \subsubsection{Overview and purpose}
-The information gathered from the \textit{PubmedSIR}-module now needs to be
+The information gathered from the \textit{PubMedSIR}-module now needs to be
 processed to allow queries to be made on it. An often used method in
 Information Retrieval (IR) is the vector space model \ref{VectorSpace}
 that represents the gathered information as document vectors (in a
@@ -330,25 +330,25 @@ matrices into a complete term document matrix. The second one is
 called \textit{DiseaseMatrix} and makes a matrix with disease vectors
 instead of document vectors.
 
-\subsubsection{Method and data describtion}
+\subsubsection{Method and data description}
 The main function for creating the sub term document matrices from a
 folder containing MedLine records is
-\texttt{medlineDir2MatrixDir}. This function requires a hash table
+\texttt{MedLineDir2MatrixDir}. This function requires a hash table
 containing hashes for all the terms and pmids of the MedLine
 record. The need for hash tables comes from the fact that the data
 structures, we have chosen, does not support string entries. So hashes
 can be made by the \texttt{createTermAndPmidHashes}. This function
 goes through a folder containing MedLine records, while building a
-term and pmid hash table. When \texttt{medlineDir2Matrix} has read in
+term and pmid hash table. When \texttt{MedLineDir2Matrix} has read in
 the hash, it proceeds by calling \textit{gatherMatrixData} on each
 file within the MedLine record folder. \texttt{gatherMatrixData}
-extracts information from the file by the use of the auxillary module
+extracts information from the file by the use of the auxiliary module
 \textit{RecordHandler} (see section \ref{AuxModules}). The information
 can be specified by the user; title, abstract and MeSH terms are
 chosen by default, as these seem to give a good overall description of
 a disease. This is also the place to perform stop word removal and
 stemming. We have chosen to create both a stemmed and an unstemmed
-matrix in order to test what performs best. \texttt{medlineDir2Matrix} then
+matrix in order to test what performs best. \texttt{MedLineDir2Matrix} then
 calls \texttt{populateMatrix} with the data from
 \texttt{gatherMatrixData}. This creates and returns a term document
 matrix. Last it calls \textit{IOmodule} (see section \ref{AuxModules}) to write
@@ -377,7 +377,7 @@ document matrix) based on hash tables. These can be created by running
 \texttt{createDiseaseHash} on a folder containing sub term document
 matrices.
 
-The \textit{TermDoc} module uses the following auxillary modules (see
+The \textit{TermDoc} module uses the following auxiliary modules (see
 section \ref{AuxModules}):
 
 \begin{itemize}
@@ -400,11 +400,11 @@ there is a need to make some modifications to the data. We choose to
 sanitize the input information to our system by removal of
 punctuations, commas, etc. and by making every term lowercase. This
 helps reduce the number of different terms in the system. This has the
-side-effect that it also removes punctuations within describtion of
+side-effect that it also removes punctuations within description of
 e.g. chromosome errors. Taking an example, the string "1q42.4-qter
 duplication" will be split into '1q42', '4', 'qter' 'duplication'. We
 do, however, not consider this to be a problem since the query
-recieves the same preprocessing as the term document matrix and it
+receives the same preprocessing as the term document matrix and it
 should still be possible to retrieve the right
 information\footnote{Using regular expression, it is possible to
   preserve the above string as: '1q42.4-qter', 'duplication' but we do
@@ -442,16 +442,16 @@ modules \textit{StopwordRemover}, \textit{Stemmer} and
 
 \subsubsection{StopwordRemover}
 The stop word remover allows for list of stop words to be supplied by
-the user. By default it uses the nltk.corpus.stopwords of english stop
+the user. By default it uses the nltk.corpus.stopwords of English stop
 words which contains 127 stop words. There are other languages present
 in the stop word corpus for a total of 2431 words, e.g. German,
 Danish, Swedish, Norwegian and others. We do not know if any important
-words are removed due in a multi language stop word removal. We assume
-that most of our information is in English and have chosen only to
-remove English stop words. It is possible to setup additional options
-within the \textit{PubmedSIR} module (section \ref{SIR}) so that it will
-only gather MedLine records containing abstracts in english but this
-is preserved for a later version of the system.
+words are removed due in a multiple language stop word removal. We
+assume that most of our information is in English and have chosen only
+to remove English stop words. It is possible to setup additional
+options within the \textit{PubMedSIR} module (section \ref{SIR}) so
+that it will only gather MedLine records containing abstracts in
+English but this is preserved for a later version of the system.
 
 \subsubsection{Stemmer}
 To preserve flexibility our system allows another stemmer to be sent
@@ -483,9 +483,9 @@ cosine similarity calculation described in section
 \ref{VectorSimilarity}). The normalization is done as usual vector
 normalization $\frac{\overrightarrow{a}}{||a||}$.
 
-\subsection{Auxillary modules\label{AuxModules}}
+\subsection{Auxiliary modules\label{AuxModules}}
 
-Auxillary modules are used by the different modules to perform tasks
+Auxiliary modules are used by the different modules to perform tasks
 like input/output, stemming, stop word removing, cleaning text string
 or combining synonyms into search queries.
 
@@ -571,13 +571,13 @@ contained within the MedLine records.
 \subsubsection{Cluster}
 The \textit{Cluster} module contains various functions in relation to
 hierarchical clustering and drawing of dendrograms of the returned
-clusters. The hierarchical clusterings has unfortunately not been made
+clusters. The hierarchical clustering has unfortunately not been made
 as generic as it could be. For now, slight modifications are required
 between running either on a disease matrix / term document matrix or a
 sub term document matrix. We have no intentions of performing a full
 clustering on a term document matrix, as it simply contains too many
 entries to consider clustering - at least with the resources available
-currently. The hierarchical clustering and dendrogram functionalities
+currently. The hierarchical clustering and dendrogram functionality
 are based on Collective Intelligence \cite{CollectiveIntelligence}
 with slight modification to adopt it for our data.
 
@@ -592,15 +592,15 @@ able to count how many duplicate pmids there is.
 
 \section{The database\label{Database}}
 
-Our raw dataset consists mainly of two parts that are gathered
+Our raw data set consists mainly of two parts that are gathered
 independently. The first part is the information gathered from
-Rarediseases.info. The files reside in a subfolder called
+Rarediseases.info. The files reside in a sub folder called
 \textit{rarediseases\_info} containing 6881 text files. Looking into
 one of these files it is possible to see exactly what information have
-been used to retrieve the medline records for a specific disease. The
-second part of our raw dataset is the information gathered from PubMed
-by the \textit{PubmedSIR} module. This information can be find in the subfolder
-\textit{medline\_records}. Again we have chosen to store it as plain
+been used to retrieve the MedLine records for a specific disease. The
+second part of our raw data set is the information gathered from PubMed
+by the \textit{PubMedSIR} module. This information can be find in the sub folder
+\textit{MedLine\_records}. Again we have chosen to store it as plain
 text files which enable the use of GNU unix/linux command line tools
 for quick looks inside or using grep to look for specific words inside
 a disease file.
@@ -624,8 +624,8 @@ return 51,393 hits (\date{January 3, 2010}) with a search on PubMed
 (only those with an abstract) and this is without considering any
 synonyms or possibly handcrafted search terms.
 
-We have choosen to remove the 505 empty disease entries from our
-dataset because, without any information about these diseases, our
+We have chosen to remove the 505 empty disease entries from our
+data set because, without any information about these diseases, our
 system will be unable to find/diagnose them.
 
 \subsubsection{More statistics on the data}
@@ -635,7 +635,7 @@ although 924,026 has. This is 89.15\% of all the entries. \fxnote{This might
 be a bit misleading as it count the duplicate ones too, try to get
 count without duplicates.}
 
-\section{Techincal conclusions}
+\section{Technical conclusions}
 
 When performing text mining, a robust is needed to be able to handle
 various situations. This became apparent to us after having written
@@ -644,7 +644,7 @@ Rarediseases.info, it crashed every time that it ran into a new
 special case on Rarediseases.info. Therefore, when crawling website
 based on incomplete topics like rare diseases, its important to make
 proper error handling and logging which diseases were missed in the
-first run since errors are near certainty. As a sidenote on this, the
+first run since errors are near certainty. As a side note on this, the
 BeautifulSoup module is a really useful tool when crawling HTML since
 it is able to correct and prettify many common website errors.
 
