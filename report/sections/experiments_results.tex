@@ -1,20 +1,23 @@
 \chapter{Experiments and Results\label{ExperimentsResults}}
 
-In this section, we introduce the test cases that we intend to use. We go
-through the details of our cosine and sum measure scoring schemes that
-we will be using to test our systems ability to rank a correct disease
-given a list of symptoms. By comparing the individual top scores of 
-each different measure tested on a given matrix
-(stemmed or non-stemmed), we find the most efficient measure to score
-data on our system. It should here be noted that each time we score a
-given disease, we do it by taking the top 3000\footnote{A number
-  chosen at random in between our total number of different diseases}
-of the documents returned by the similarity measure and the Search
-module. Using the most efficient measure, we try to score 5
-blind tests provided by a chief physician.
+In this section, we introduce the test cases that we intend to use. We
+go through the details of our cosine and sum measure scoring schemes
+that we will be using to test our systems ability to rank a correct
+disease given a list of symptoms. By comparing the individual top
+scores of each different measure tested on a given matrix (stemmed or
+non-stemmed), we find the most efficient measure to score data on our
+system. It should here be noted that each time we score a given
+disease, we do it by taking the top 3000\footnote{A number chosen at
+  random in between our total number of different diseases} of the
+documents returned by the similarity measure and the
+\textit{SearchCases} module. Using the most efficient measure, we try
+to score 5 blind tests provided by a chief physician.
 
-We then look at \fxnote{Skriv noget her} ... Note: cluster and
-semantic section are still to be written.
+We provide a description of how clustering could be used to improve
+the system, by looking at clusters of diseased ranked far from top
+20. We then look at \ldots
+
+\fxnote{Skriv noget her} ... Note: semantic section are still to be written.
 
 Finally, we take discussion on the potential noise of overview
 articles and test the potential of consensus normalization.
@@ -254,14 +257,15 @@ of scores $\mathbf{x}_{\textrm{all diseases}} = \left\{x_1, x_2,
 \dots, x_n \right\}$. It then runs through every scored document and
 adds the score to the disease from which the document came (in
 accordance to the consensus method just described). Since some
-documents appear in more than one disease (\ref{Database}), several
-diseases might have the sum of a single document added to its score
-$\mathbf{x}_{\textrm{disease}_{1}} = \left\{x_{\textrm{sum for} x_2,
-  x_7, x_i, \dots, x_j}\right\}$, $\mathbf{x}_{\textrm{disease}_{2}} =
-\left\{x_{\textrm{sum for} x_1, x_2, x_9, \dots, x_47, x_n}\right\},
-\dots$. Lastly, we evaluate the total ranking of each disease. We
-combine each $x_{\textrm{disease}_1}$, $x_{\textrm{disease}_2}$ into a
-list of all the returned disease $\mathbf{SL} =
+documents appear in more than one disease (see section
+\ref{Database}), several diseases might have the sum of a single
+document added to its score $\mathbf{x}_{\textrm{disease}_{1}} =
+\left\{x_{\textrm{sum for} x_2, x_7, x_i, \dots, x_j}\right\}$,
+$\mathbf{x}_{\textrm{disease}_{2}} = \left\{x_{\textrm{sum for} x_1,
+  x_2, x_9, \dots, x_47, x_n}\right\}, \dots$. Lastly, we evaluate the
+total ranking of each disease. We combine each
+$x_{\textrm{disease}_1}$, $x_{\textrm{disease}_2}$ into a list of all
+the returned disease scores $\mathbf{\mathit{SL}} =
 \left\{x_{\textrm{disease}_1},x_{\textrm{disease}_2}, \dots,
 x_{\textrm{disease}_n}\right\}$. These are then sorted and the highest
 scoring is deemed the most likely to be the correct disease given the
@@ -287,12 +291,12 @@ reasoning.
 
 \subsubsection{The disease matrix exception}
 
-This is simply a short note on how we use the cosine and sum measures
+This is a short description on how we use the cosine and sum measures
 on the disease matrix. The disease matrix has no document vectors and
 is solely made up of summed disease vectors. This means that there is
 no point in using cosine mean, median or max, as there is no multiple
 label occurrences to run a consensus method over. Here the score is
-simply the cosine or sum measure calculated for each of the diseases
+either the cosine or sum measure calculated for each of the diseases
 that contain the queried term(s).
 
 \subsection{Testing the cosine similarity measure\label{TestingCosineSimilarity}}
@@ -488,7 +492,7 @@ it is just the opposite. We have chosen to cope with this by taking out the top 
 measure for each of the test sets - 'mean non-stemmed' from BMJ and 'max stemmed' from 
 the Orpha.net.
 
-The next step is to analyse our data a bit by performing a square root transformation 
+The next step is to analyse our data by performing a square root transformation 
 \ref{SquareRoot} of the TF-IDF preprocessed data above. Note that it is required that 
 all values transformed are between 0 and 1 which in our case is secured by the fact 
 that the matrices, we use for the cosine measure, are normalized. The reason for the 
@@ -587,7 +591,7 @@ These tests reveal some interesting results. Looking at the BMJ test set we see 
 improvement in the performance of the square root transformed measures. In Orpha.net test 
 set there is an improvement in 'max stemmed' measure while a slight worsening of the 'mean 
 non-stemmed' measure. However, there is no change in the number of top 20 results and the 
-other measures shows a more significant improvement that the worsening of the last mentioned 
+other measures shows a more significant improvement than the worsening of the last mentioned 
 measure. Based on these results, we will not deny that the data in the TF-IDF matrices are 
 not as optimized as could have been expected. But we can not say if these anomalies stem from 
 the data or the calculations themselves. For now, we choose to view the square root 
@@ -598,11 +602,14 @@ executed above - the 'mean stemmed sqrt' and the 'max stemmed sqrt' cosine simil
 
 \subsection{Testing the sum similarity measure\label{TestingSumSimilarity}}
 
-In this section, we perform the same tests as described in the previous section, except for the square 
-root transformation which makes no sense since we will be running on unnormalized data. Or in 
-other word on values above and below 1 \ref{SquareRoot}. The first test is run for the mean, 
-median and max sum measures on a TF-IDF non-normalized term document matrix. The results are 
-shown on the figures \ref{termDoc_bmj_hist_3000_sum_mea_med_max} below. 
+In this section, we perform the same tests as described in the
+previous section, except for the square root transformation which
+makes no sense since we will be running on unnormalized data. Or in
+other word on values above and below 1 (see section
+\ref{SquareRoot}). The first test is run for the mean, median and max
+sum measures on a TF-IDF non-normalized term document matrix. The
+results are shown on the figures
+\ref{termDoc_bmj_hist_3000_sum_mea_med_max} below.
 
 \begin{figure}[H]
   \caption{Test of mean, median and max sum measure on a non-stemmed term-doc matrix}
@@ -773,9 +780,9 @@ measure on and the term document and disease matrices.
 
 Now that we have found the results for the best measures to be used on
 the term document matrix, we focus our attention on the disease
-matrix. We will in the following be testing the sum and cosine measure
+matrix. We will in the following test the sum and cosine measure
 on the disease matrix and --- in the end of the section --- compare these
-results to that of the term document.
+results to that of the term document matrix.
 
 In the first test, we look at the performance of the cosine (mean),
 cosine-sqrt and the sum measure on the BMJ and Orpha.net test
@@ -1050,20 +1057,26 @@ This is in order to ensure that the system will be able make a reasonable qualif
 on the disease.
 
 \subsubsection{Clustering of the results}
-\fxnote{Needs to be refined}
+\fxnote{Needs to be refined} 
+
 We perform a clustering of the top 20 results using hierarchical
-clustering. We have chosen to cluster the best disease from the sum 
-similarity measure on the stemmed disease matrix which is the \textit{Cat Scratch disease}. Remember
-that the 20 diseases are chosen based on the similarity to the query
-vector, not how similar they are to each other. From figure
-\ref{sum_stem_top20_best_cat_scratch_disease}, it can be seen that \textit{Cat
-Scratch disease} (near the top) is clustered together with \textit{Cyclic
-Neutropenia} even though it is number 19 on the result list. And the
-disease ranked as number 2 is \textit{Kikuchi disease} which is 6
-sub clusters away from \textit{Cat Scratch disease} - meaning that it requires
-merging 6 sub clusters to get them into the same cluster. The lowest
-ranking disease is \textit{Chediak-Higashi syndrome}. To get this into the same
-cluster as \textit{Cat Scratch} requires the merging of the entire cluster. \fxnote{kan skrives lidt bedre - fx hvad er 'merging'?}
+clustering. We have chosen to cluster the best disease from the sum
+similarity measure on the stemmed disease matrix which is the
+\textit{Cat Scratch disease}. Remember that the 20 diseases are chosen
+based on the similarity to the query vector, not how similar they are
+to each other. From figure
+\ref{sum_stem_top20_best_cat_scratch_disease}, it can be seen that
+\textit{Cat Scratch disease} (near the top) is clustered together with
+\textit{Cyclic Neutropenia} even though it is number 19 on the result
+list, this means these diseases are closest to each other in the list
+of 20 returned suggestions. And the disease ranked as number 2 is
+\textit{Kikuchi disease} which is 6 sub clusters away from \textit{Cat
+  Scratch disease} - meaning that it requires merging 6 sub clusters
+to get them into the same cluster, the merging is performed by
+calculating a mean vector for the diseases (or sub clusters) being
+merged. The lowest ranking disease is \textit{Chediak-Higashi
+  syndrome}. To get this into the same cluster as \textit{Cat Scratch}
+requires the merging of the entire cluster.
 
 \begin{figure}[H]
   \begin{center}
@@ -1073,15 +1086,20 @@ cluster as \textit{Cat Scratch} requires the merging of the entire cluster. \fxn
   \label{sum_stem_top20_best_cat_scratch_disease}
 \end{figure}
 
-We have also chosen to cluster the disease where sum measure on the stemmed 
-disease matrix produced the worst result. This is the test case
-\textit{Eosinophilic granuloma} where the correct disease was ranked as number
-597. So it is not possible to find it in the dendrogram, our systems \fxnote{opremsning - So..,our..,done}
-best guess was Developmental Dysplasia of Hip. Investigation the
-diseases present in the dendrogram
-\ref{sum_stem_top20_worst_developmental_dysplasia_of_hip} could
-provide helpful knowledge about why our system is so wrong about this
-disease.
+We have also chosen to cluster the disease where sum measure on the
+stemmed disease matrix produced the worst result. This is the test
+case \textit{Eosinophilic granuloma} where the correct disease was
+ranked as number 597. Therefore it is not possible to find it in the
+dendrogram. Our system suggested Developmental Dysplasia of Hip as
+prime candidate given the query vector. Investigating the diseases
+present in the dendrogram
+\ref{sum_stem_top20_worst_developmental_dysplasia_of_hip} and
+comparing them to the correct diagnosis of the disease (if found)
+could provide helpful knowledge about why our system was so wrong in
+its suggestion of this disease, and might provides clues to correcting
+it. The problem might stem from bad or very noisy information about
+the correct disease, which therefore do not provide enough similarity
+to the query vector.
 
 \begin{figure}[H]
   \begin{center}
@@ -1122,8 +1140,8 @@ Below are shown the results from from the blind tests described in table \ref{bl
 \subsubsection{Overview articles}
 Unfortunately there is overview articles that can pollute the search
 results and if overview articles are found in many of the top scoring
-diseases, it could present a problem. When we run the concensus method
-as described in the \ref{CosineScore}, an overview article would
+diseases, it could present a problem. When we run the consensus method
+as described in section \ref{CosineScore}, an overview article would
 potentially get an unfair high score since it gets summed up to 240
 times. Though overview articles represents an element of noise, the
 normalization of the vectors in the vector space model should in
