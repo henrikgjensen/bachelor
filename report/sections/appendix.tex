@@ -1,0 +1,59 @@
+\chapter{Source Code}
+
+This is our source code and a plain text file containing all our test
+results written as python lists. The source code is arranged the way
+the system data flow is structured. The source code is also available
+at
+\href{git://github.com/hmbachelor/bachelor.git}{git://github.com/hmbachelor/bachelor.git}.
+But be warned, some of it is a mess. There is a lot of junk code,
+redundant code. It needs a spring cleaning, but that will have to
+wait.
+
+\subsection*{Disease Crawler}
+\lstinputlisting{../PubMedParser/src/DiseaseCrawler.py}
+
+\subsection*{PubmedSIR}
+\lstinputlisting{../PubMedParser/src/PubmedSIR.py}
+
+\subsection*{TermDoc}
+\lstinputlisting{../PubMedParser/src/TermDoc.py}
+
+\subsection*{DiseaseMatrix}
+\lstinputlisting{../PubMedParser/src/DiseaseMatrix.py}
+
+\subsection*{SearchTermDoc}
+\lstinputlisting{../PubMedParser/src/SearchTermDoc.py}
+
+\subsection*{Cluster}
+\lstinputlisting{../PubMedParser/src/Cluster.py}
+
+\subsection*{DistanceMeasures}
+\subsubsection{CosineMeasure}
+\lstinputlisting{../PubMedParser/src/CosineMeasure.py}
+\subsubsection{SumMeasure}
+\lstinputlisting{../PubMedParser/src/SumMeasure.py}
+
+\subsection*{SearchCases}
+\lstinputlisting{../PubMedParser/src/SearchCases.py}
+
+\subsection*{Interfaces}
+\subsubsection{FilterInterface}
+\lstinputlisting{../PubMedParser/src/FilterInterface.py}
+\subsubsection{SearchInterface}
+\lstinputlisting{../PubMedParser/src/SearchInterface.py}
+
+\subsection*{Auxilary modules}
+\subsubsection{IOmodule}
+\lstinputlisting{../PubMedParser/src/IOmodule.py}
+\subsubsection{TextCleaner}
+\lstinputlisting{../PubMedParser/src/TextCleaner.py}
+\subsubsection{RecordHanlder}
+\lstinputlisting{../PubMedParser/src/RecordHandler.py}
+\subsubsection{Stemmer}
+\lstinputlisting{../PubMedParser/src/Stemmer.py}
+\subsubsection{StopwordRemover}
+\lstinputlisting{../PubMedParser/src/StopwordRemover.py}
+\subsubsection{Stat}
+\lstinputlisting{../PubMedParser/src/Stat.py}
+\subsubsection{SearchTermCombiner}
+\lstinputlisting{../PubMedParser/src/SearchTermCombiner.py}
