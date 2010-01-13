@@ -443,7 +443,7 @@ def makehist():
     graphName="blind_test.png"
     title="Blind test of rare diseases"
 
-    x1 = [20,1718,6,2,165]
+    x1 = [19,1717,5,1,164]
 
     # "Adrenoleukodystrophy  autosomal  neonatal form" found at '1718'
     # "Childhood-onset cerebral X-linked adrenoleukodystrophy" not found

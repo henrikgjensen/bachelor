@@ -169,22 +169,14 @@ termHashTable=IOmodule.pickleIn(_hashTablesDir, "termHash_stemmed")
 revTermHashTable=dict(zip(termHashTable.values(),termHashTable.keys()))
 def getSemanticKeywords(top=20):
 
-    diseaseList=[("Infective endocarditis","Acute, aortic,  regurgitation, depression,  abscess "),
-                ("Cushing's syndrome","hypertension, adrenal, mass"),
-                ("Eosinophilic granuloma", "Hip, lesion, older, child"),
-                ("Ehrlichiosis","fever, bilateral, thigh, pain, weakness"),
-                ("Neurofibromatosis type 1","multiple, spinal, tumours, skin, tumours"),
-                ("Pheochromocytoma","hypertension, papilledema, headache, renal, mass, cafe, au, lait"),
-                ("Creutzfeldt-Jakob disease","ataxia, confusion, insomnia, death"),
-                ("Churg-Strauss syndrome","Wheeze, weight, loss, ANCA, haemoptysis, haematuria"),
-                ("Dermatomyositis","myopathy, neoplasia, dysphagia, rash, periorbital, swelling"),
-                ("Cat Scratch Disease","renal, transplant, fever, cat, lymphadenopathy"),
-                ("TEN","bullous, skin, conditions, respiratory, failure, carbamazepine"),
-                ("MELAS","seizure, confusion, dysphasia, T2, lesions"),
-                ("Brugada syndrome","cardiac arrest sleep")]
+    diseaseList=[("Fibrodysplasia ossificans progressiva","Boy, normal birth, deformity of both big toes (missing joint), quick development of bone tumor near spine and osteogenesis at biopsy"),
+                ("Adrenoleukodystrophy  autosomal  neonatal form","Normally developed boy age 5, progessive development of talking difficulties, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions"),
+                ("Papillon Lefevre syndrome","Boy age 14, yellow keratotic plaques on the skin of palms and soles going up onto the dorsal side. Both hands and feet are affected. swollen vulnerable gums, loss of permanent teeth"),
+                ("Kleine Levin Syndrome","Jewish boy age 16, monthly seizures, sleep aggressive and irritable when woken, highly increased sexual appetite and hunger"),
+                ("Schinzel Giedion syndrome","Male child, malformations at birth, midfacial retraction with a deep groove under the eyes, and hypertelorism, short nose with a low nasal bridge and large low-set ears, wide mouth and retrognathia. Hypertrichosis with bright reddish hair and a median frontal cutaneous angioma, short neck with redundant skin, Bilateral inguinal hernias, hypospadias with a megameatus, and cryptorchidism")]
 
-    #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_90"
-    matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced_10"
+    matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_stemmed_reduced_90"
+    #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_stemmed_reduced_10"
     #matrixDir="/root/The_Hive/term_doc/new_diseaseMatrices_tfidf_stemmed_reduced90_outlierRemoved5"
 
     scoreDic={}
