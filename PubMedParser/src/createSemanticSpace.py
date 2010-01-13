@@ -211,5 +211,6 @@ def getSemanticKeywords(top=20):
 
     for score in scoreDic.items():
         print "Total number of terms for the disease:",totalTermDic[score[0]]
-        print str(score[0])+'\t'+str(score[1])
+        print str(score[0])+'\t'+str(score[1].items())
+        print ''
     
