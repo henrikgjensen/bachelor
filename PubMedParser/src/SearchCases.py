@@ -663,8 +663,10 @@ def analyseDiseaseTerms(M_coo):
 
         printout2=[]
         symptoms=listOfSymptoms[count]
+        print symptoms
         symptoms = sanitizer.sub(' ', symptoms)
         symptoms = FilterInterface.stopwordRemover(symptoms)
+        count+=1
 
         for symptom in symptoms:
 
