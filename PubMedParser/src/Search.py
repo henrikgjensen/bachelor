@@ -270,10 +270,10 @@ def runScoreTest3(M_lil, M_csc):
 #                ('Multiple myeloma','overproduction of abnormal plasma cells in the bone marrow and manifested by skeletal destruction, bone pain, and presence of abnormous immunoglobulins'),
 #                ('Trichodental syndrome','fine, dry and short hair with dental anomalies')]
 
-    diseaseList=[("Adrenoleukodystrophy  autosomal  neonatal form","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions"),
-                ("Childhood-onset cerebral X-linked adrenoleukodystrophy","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
+    #diseaseList=[("Adrenoleukodystrophy  autosomal  neonatal form","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions"),
+    #            ("Childhood-onset cerebral X-linked adrenoleukodystrophy","Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
     
-
+    diseaseList=[("Schinzel Giedion syndrome","Male child, malformations at birth, midfacial retraction with a deep groove under the eyes, and hypertelorism, short nose with a low nasal bridge and large low-set ears, wide mouth and retrognathia. Hypertrichosis with bright reddish hair and a median frontal cutaneous angioma, short neck with redundant skin, Bilateral inguinal hernias, hypospadias with a megameatus, and cryptorchidism")]
 
 
 
@@ -469,7 +469,7 @@ def runScoreTest5(lil, csc):
 
     #diseaseList=[("Normally developed boy age 5, seizures, ataxia, adrenal insufficiency and degeneration of visual and auditory functions")]
     diseaseList=[("Male child, malformations at birth, midfacial retraction with a deep groove under the eyes, and hypertelorism, short nose with a low nasal bridge and large low-set ears, wide mouth and retrognathia. Hypertrichosis with bright reddish hair and a median frontal cutaneous angioma, short neck with redundant skin, Bilateral inguinal hernias, hypospadias with a megameatus, and cryptorchidism")]
-
+    
 
     printout2=[[],[],[]]
     clusterThis=[[],[],[]]
