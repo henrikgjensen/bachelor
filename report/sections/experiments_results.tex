@@ -182,11 +182,13 @@ found in table \ref{OrphanetCases1}.
       \hline
     \end{tabular}
   \end{scriptsize}
-  \caption{Disease / symptom list for 30 Orpha.net test cases}
+  \caption{Disease / symptom list for 29 Orpha.net test cases}
   \label{OrphanetCases1}
 \end{table}
 
-
+\textbf{Note}: In the tests that follows, the \textit{Jackson-Weiss syndrome} will occur twice in all the case - hence producing 30 instead of 29 diseases. 
+This error was discovered too late for a rerun of all the tests. However, \textit{Jackson-Weiss} does not score in top 20 at any point and should not 
+greatly affect the test results.
 
 \subsubsection{Blind Tests}
 In addition to the BMJ and Orpha.net test cases, we have performed a
@@ -221,7 +223,7 @@ results of the blind test can be found in section \ref{Blindtest}.
   \label{BlindTestDiseaseName}
 \end{table}
 
-\subsection{Scoring Schemes}
+\subsection{Scoring Schemes\label{ScoringSchemes}}
 
 As mentioned in the previous chapters, we will employ two different
 kinds of scoring measures - the cosine and sum measure. The original
