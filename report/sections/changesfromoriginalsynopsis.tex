@@ -1,54 +1,54 @@
-\chapter*{Changes from the original synopsis}
+\chapter*{Changes from Original Synopsis}
 
 The project has changed title from \textit{``Support decision system
   for diagnosing rare diseases using machine learning for medical text
   mining''} to \texttt{``Support decision system for diagnosing rare
   diseases using vector space model and \\ medical text
   mining''}. This was because the original project was focused on
-gathering and organizing information using clustering algorithms to
-help physicians locate the right PubMed article for identifying a
-disease. The new focus is to provide a list of 20 suggestions for
-possible diseases given a list of symptoms. This is done using
+gathering and organizing information using clustering algorithms, to
+help physicians locate the right PubMed article to identify a
+disease. The new focus was to providing a list of 20 suggestions for
+possible diseases given a list of symptoms, this was best carried out using
 information retrieval techniques such as the vector space model.
 
-The system original success criteria was:
+The system original success criteria were
 \begin{enumerate}
 \item The ability to correctly diagnose 50 rare diseases by search
   terms provided by chief physician Henrik L. J\o rgensen. A
   successful hit is the correct diagnosis being among the top 20
   search results.
 \item The use of as few references (clicks) as possible to narrow in
-  the search.  This should be 5 or less.
+  the search. This should be 5 or fewer.
 \item The use of as few search terms as possible. This should be 5 or
-  less depending on the rarity of the disease.
+  fewer depending on the rarity of the disease.
 \item How quickly the physician can locate the correct article
   compared to when using PubMed.
 \end{enumerate}
 
-Reasons for changing them:
+Reasons for changing the success critera
 \begin{itemize}
 \item[Ad 1.] This has been changed because we did not receive the 50 golden
 standard diseases on which to test our system. We received 5 test
-cases on which we performed a blind test. The lack of test cases made
+cases upon which we performed a blind test. The lack of test cases made
 us look into alternatives which we found in BMJ, and some randomly
 chosen strings characterizing symptoms from Orpha.net.
 
 \item[Ad 2.] The system is to deliver a suggestion list of top 20 diseases given a
-symptom list. Therefore is does not make sense to talk about using as
+symptom list, therefore is does not make sense to talk about using as
 few references as possible.
 
-\item[Ad 3.] The use of as few symptoms as possible is partially still in affect
+\item[Ad 3.] The use of as few symptoms as possible, is partially still in effect,
 though we have misinterpreted the word few. The symptoms lists we
-received for a blind test from Henrik L. J\o rgensen can be seen in
-table \ref{BlindTestDiseaseName}. They are comprehensive - so the
-phrase few symptoms are relative to the observer.
+received for blind test from Henrik L. J\o rgensen can be seen in
+table \ref{BlindTestDiseaseName}. These are comprehensive. So the
+phrase ``few symptoms'' is relative to the observer.
 
 \item[Ad 4.] Our system never reached a state where it was possible for the
-physicians to test it. Therefore the last of the original success
-criteria was not meet.
+physicians to test it, therefore the last of the original success
+criteria was not met.
 \end{itemize}
 
-A single success criteria has been made for the revised
-edition and that is the systems ability to correctly place rare
-diseases amongst a top 20 returned diseases given a symptom list - 
-which is the main focus of the project.
+Therefore only a single success criteria has been specified for the revised
+edition, and that is the system's ability to correctly place rare
+diseases amongst top 20, given a symptom list, which will be the main
+focus of the project.
