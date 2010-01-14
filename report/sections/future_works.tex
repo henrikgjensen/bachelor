@@ -1,87 +1,108 @@
 \chapter{Future Works\label{FutureWorks}}
 
-In this chapter we present some of the ideas for improvements that could be implemented into the system.
+In this chapter, we present some ideas for improvements that 
+could be implemented into the system.
 
-\subsubsection{Statistical model}
+\subsubsection{Statistical Model}
 Gathering information about prior probabilities of the diseases could
 help produce better term weights for the term document matrix. The
-more information that could be found the more specific the
-model. Gathering information about age, gender, racial and location
-dependencies of the diseases should be able to improve the system
-ability to correctly find the right disease.
+more information that could be found, the more specific the
+model. Also, gathering information about age, gender, racial and location
+dependencies of the diseases should be able to improve the systems
+ability to correctly find the correct disease. Further, it would present
+the physician with extra filtering options for a query.
 
-Improved classifications of the diseases could help in clustering the
-diseases to gain a better overview of them.
+Improved classification of the diseases. To begin with, one could use 
+the MeSH term hierachy for a prior clustering of the diseases and --- for
+better classification --- remove outlier documents from each disease.
 
- ... \fxnote{Do not know what to write}
+The outlier removal process might concentrate the remaining information, 
+thereby making it more likely that the correct information is returned. 
+Therefore, it might be advantageous to perform a clustering upon the
+abstracts and select some criteria upon which to remove outlying abstracts.
+The criteria could be either removal based on some distance (threshold) 
+to the cluster average, or removal of some percentage of those abstracts
+that lie farthest away from the cluster center. The latter seems to be 
+the most fair option - mainly because it removes abstracts in proportion to 
+the size of the cluster. One fact that remains when it comes to outlier 
+detection; care needs to be taken when removing outliers, as one might just 
+remove that single piece of correct information needed to identify the right disease.
 
-\subsubsection{Construction of other term document matrices}
-A term document matrix based on keywords extracted by LSA could prove
-most useful.
+It could also be possible to strengthen a classifier by gathering disease
+domain keywords (e.g. coronary diseases), either from pre-existing lists or by text 
+mining. The domain keywords have the strength that they can come from
+more common and well-described diseases. They can all-in-all be described as
+and expanded MeSH list to classify by.
 
-Making a term
+Methods for keyword extraction --- like LSA --- should be tested.
 
-\subsubsection{Improvement on queries}
-The possibility of comparing to queries to the system, could be useful
-to a phycisian. He would then be able compare the results from two
-slightly different queries, look for key differences.
+\subsubsection{Construction of Other Term Document Matrices}
+Using SVD (LSA) to reduce noise and construct a term document matrix
+based on a semantic space.
 
-Term mapping would be able to increase the recall of the system, this
-could help retrieve the right information. Mapping synonyms to
-eachother and searching for these.
+Constructing a protein/gene name free matrix for a query based on general describing
+terms/symptoms. This would be most useful if the physician could enable/disable this 
+functionality
 
-Visual representation of disease cluster, including keyswords
-extracted by LSA.
+Redesign of the storage and retrieval system. A database for storing and retrieving 
+information that is more efficient than the current I/O that the system use. Much
+could probably be improved by writing certain data structures and methods in C - 
+for instance the ones dealing with the large matrices.
 
-\subsubsection{Graphical User Interface}
-A visual representation of the results something like the table
-\ref{FutureGUI}. Were ``Keywords'' are extracted those that best
-describe the disease, given the information we have about
-it. ``Score'' is the calculated score that the system has given the
-query. And ``PMID'' is the list of PMID's that the score is derived
-from. It should be possible to expand the PMID's in different level to
-see title, then abstract and perhaps full informtion about the MedLine
+\subsubsection{Improvements upon Queries}
+The possibility of comparing two queries in the system could be useful
+for a physician. He could then compare the results from two slightly
+different queries and inspect the returned results. This functionality
+could be implemented with a cosine measure that L$_2$ normalizes the query
+vector.
+
+Additional query options, like preferences for author, year, journal
+etc. could make it easier for a physician who has a small amount of prior knowledge as to 
+what he is about to find.
+
+Term mapping would be able to increase the recall of the system and help retrieve the 
+correct information. Term mapping is the idea of mapping synonyms to each other 
+include these in a query. This approach would most likely work best on a disease 
+matrix to avoid overview articles that, for instance, contain many synonyms.
+
+Boolean searches, allowing the physician to determine that some terms should be present and
+others should not. It could also be used to link certain terms together, like ``adrenal
+insufficiency'' that is split in two in the current system, thereby ensuring either both
+terms occur in a document or none does.
+
+Visual representation of disease cluster, including keyswords extracted by LSA.
+
+Visual representation of the results, perhaps like table
+\ref{FutureGUI} below. Here those terms that best
+describe the disease (``Keywords'') are presented to the physician to give him or her
+and idea of what the disease is dealing with. ``Keyword'' could also be related terms
+to the query terms themselves. ``Score'' is the calculated score that the system has given the
+query, and ``PMID'' is the list of PMIDs that the score is derived
+from. It should be possible to expand the PMIDs on different levels to
+see title, the abstract and perhaps the full information about the MedLine
 record.
 \begin{table}
+\begin{tiny}
   \begin{tabular}{|r|r|r|r|}
     \hline
     Disease name & Keywords & Score & PMIDs \\
     \hline
-    Disease$_1$ & ``Cancer, lever, aortic \ldots'' & 0.8242 & $18134923$, \dots, $3289472$ \\
+    Disease$_1$ & "Cancer, liver, blood, pressure ..." & 0.8242 & $18134923$, \dots, $3289472$ \\
     \hline
     {} & {} & {} & {} \\
     \hline
-    Disease$_2$ & ``Myeoblastic, fibrosis, oesteogenesis, \ldots'' & 0.2412 & $17584932$, \dots, $16191394$ \\
+    Disease$_20$ & "Cancer, coronary, blood, aortic ..." & 0.2412 & $17584932$, \dots, $16191394$ \\
     \hline
   \end{tabular}
+  \end{tiny}
   \label{FutureGUI}
 \end{table}
 
-\subsubsection{Improvements regarding text / data retrieval}
-Locate more sources to gather information from, Orpha.net would be an
-ideal candidate. During the project we did also come across a rare
-diseases web page from the Swedish Governments health care section,
-the page were unfortunenately down for maintanence and only contained
-247 diseases. But even a small contribution might be the determining
-factor for placing a disease within top 20.
+\subsubsection{Improvements Regarding Text/Data Retrieval}
+Locate more sources to gather information from. Orpha.net could be an ideal candidate. Furthermore,
+during the project, we also came across a rare diseases webpage from the Swedish 
+Government's health care system, but the page was unfortunately unaccessable due to maintanence.\fxnote{swedish homepage}
 
-The need for minimum amount of information gathered per rare disease,
-either as a minimum number of MedLine records attached to it or a
-special describtion containing a near complete symptom list.
-
-
-  \begin{itemize}
-    \item Incorporate multi disease database, e.g. mining from Orpha.net, and other sites like it. (Ask permission first)
-    \item Implement a threshold for the minimum amount of information a disease should include to be part of the special gang.
-    
-  \end{itemize}
-   \item Redesign of the system, start using a database for storing and retrieving information, optimizing by rewriting ineffective code to C code. 
-  
-\end{itemize}
-
-
-
-
-
-
-
+During this project, we also found that much of the data on the diseases were inadequate. Many diseases are only represented
+by one or a few more abstracts. Though these moght be correct, they do not contain enough synonyms and decribing terms to
+be hit by most queries. Therefore there should be a lower bound on the number of abstracts per disease.
