@@ -14,7 +14,7 @@ documents returned by the similarity measure and the
 to score 5 blind tests provided by a chief physician. 
 
 We also discuss clustering of the results, protein/gene filtering 
-improvements, the noise of overview \fxnote{Ida: overview->summary?} articles and the effect of 
+improvements, the noise of overview articles and the effect of 
 concensus normalization.
 
 \section{Test cases}
@@ -391,7 +391,7 @@ set. The median measure has an overall low score and running some
 quick tests on the different matrices quickly reveals that median is
 not well suited as a measure to be taken into consideration. Therefore we
 will not be carrying out further testing on the cosine median score and continues
-with the two remaining scores from here on. Note that the score that \fxnote{Ida: hvad betyder ``Note that the score that''?}
+with the two remaining scores from here on. Note the score that
 has the worst performance in the Orpha.net test. It can and will
 happen that diseases are not found within the top 3000 documents that
 are returned. When this is the case --- to avoid confusion in the bar
@@ -786,9 +786,9 @@ stemmed. The results are shown on the figures
 \ref{diseaseMatrix_orphan_hist_NOTnorm_3000_ns_cos_sqrt_cos_sum_nn},
 \ref{diseaseMatrix_bmj_hist_norm_3000_s_cos_sqrt_cos_sum_nn} and
 \ref{diseaseMatrix_orphan_hist_NOTnorm_3000_s_cos_sqrt_cos_sum_nn}
-below:
+below:\\
 
-\textbf{Non-stemmed:}
+\noindent \textbf{Non-stemmed:}
 
 \begin{figure}[H]
   \caption{Test of cosine measure (with and without sqrt-transformation) and sum measure on a non-stemmed disease matrix}
@@ -862,7 +862,7 @@ below:
   \end{tiny}
 \end{table}
 
-\textbf{Stemmed:}
+\noindent \textbf{Stemmed:}
 
 \begin{figure}[H]
   \caption{Test of cosine measure (with and without sqrt-transformation) and sum measure on a stemmed disease matrix}
@@ -1099,8 +1099,8 @@ with the query vector.
 \subsection{Results of the Blind Tests (provided by Henrik L. J\o rgensen)\label{Blindtest}}
 
 Shown below are the results of the blind tests described in figure \ref{blind_test_table}.
+Note that the scores below are 0-indexed as in the previous sections.
 
-\noindent \small{\textit{*Note that the scores below are 0-indexed as in the previous sections.}}
 \begin{figure}[H]
   \caption{Blind test of a stemmed disease matrix using the sum measure}
   \begin{center}
