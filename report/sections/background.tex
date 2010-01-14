@@ -22,14 +22,12 @@ list of qualified diagnostic guesses from an automated supporting
 decision-system would be able to help the physician in contradicting or
 justifying the diagnosis.
 
-Though existing sources like Orpha.net (see section
-\ref{Orphanet}) and Rarediseases.info (see section
-\ref{Rarediseases_info}) aims to aid researchers and physicians in
-dealing with rare diseases, these sites are primarily based on human
-information retrieval. This gives them a higher accuracy
-\fxnote{consider changing accuracy $\rightarrow$ precision} but it
-also renders them unable to keep up with the growing amounts of
-research and information available.
+Though existing sources like Orpha.net (see section \ref{Orphanet})
+and Rarediseases.info (see section \ref{Rarediseases_info}) aims to
+aid researchers and physicians in dealing with rare diseases, these
+sites are primarily based on human information retrieval. This gives
+them a higher accuracy but it also renders them unable to keep up with
+the growing amounts of research and information available.
 
 Today, PubMed (see section \ref{PubmedEntrez}) is one of the largest and most used
 biomedical article database-interfaces. It provides access to millions
@@ -111,13 +109,12 @@ Keeping in mind that none of the extra information above might be
 present, we will be using one of the available links and the name of
 the disease for primary information retrieval, and the synonyms of the
 disease in a secondary information retrieval. Since the OMIM link only
-links to one article, in 3.2.1 \fxnote{REF 3.2.1 ???} (in order to get more
+links to one article, (in order to get more
 information to work with) we select all the related articles to the
-OMIM link, hoping these also will contain valuable information
+OMIM link (See section \ref{SIR}), hoping these also will contain valuable information
 relevant to the disease. The handcrafted descriptions are retrieved,
 but are not currently used in our system, though this could provide
-valuable information about the diseases. \fxnote{Henvisning til
-  implementerings afsnit i kap 3}
+valuable information about the diseases.
 
 As mentioned, Rarediseases.info is far from complete in its level of
 detail and is based solely on rare diseases from an American
@@ -207,8 +204,7 @@ represented as records from the MedLine database. These records
 contain abstracts and other kinds of useful information and are
 described in the following section. The searches will be based on the
 retrieved information from Rarediseases.info
-(see section \ref{Rarediseases_info}). \fxnote{Henvisning til
-  implementerings afsnit i kap 3} 
+(see section \ref{Rarediseases_info}). 
 
 The figure \ref{EntrezDatamodel} shows the structure of Entrez and
 visualize how many resources there are available at the different
@@ -250,7 +246,6 @@ levels of specificity. MeSH descriptors are very general at the
 top-level (such as 'anatomy' or 'mental disorder') and gradually
 become more and more specific when moving down its 11 levels (for
 more information see their fact sheet on MeSH \cite{FactSheetMeSH}).
-\fxnote{Der savnes et stoerre eksempel omkring MeSH records}
 
 \subsubsection{Database Interface}
 When MeSH is used by experienced users, it can be a powerful tool to
@@ -259,10 +254,10 @@ experienced users, these tend to get long lists of hits, which results
 in an overload of information. For instance, a search on ``Parkinson's
 Disease'' returns 21,000 results according to Panos et. al
 \cite{DataMiningBiomedicine}. Panos et. al proposes a system that
-divides MeSH into three categories, allowing multiple viewpoint \fxnote{daarlig formulering allowing multiple viewpoints} to
-information \cite{DataMiningBiomedicine}. They cluster the results by
-using a Self-Organizing Map thereby creating a concept hierarchy to
-improve information retrieval.
+divides MeSH into three categories, allowing the information to be
+view from different perspectives \cite{DataMiningBiomedicine}. They
+cluster the results by using a Self-Organizing Map thereby creating a
+concept hierarchy to improve information retrieval.
 
 Many different opinions exist when it comes to dealing with
 MeSH in the context of information retrieval. W.R. Hersh and
@@ -290,10 +285,7 @@ terms. We require the records to have an abstract but MeSH terms might
 not always be present. For an expansion of the prototype system, it
 would be natural to take in account the information given with
 potential keywords, publication dates, authors and other optional
-MedLine information. \fxnote{Henvisning til ordentlig-syg
-  implementerings afsnit i kap 3}
-
-\fxnote{Find some where to reference figure \ref{MedLineRecord}}
+MedLine information (And example of a MedLine record can be seen in figure \ref{MedLineRecord}).
 
 \begin{figure}[H]
   \caption{Example of a MedLine record for the disease Cerebral cavernous hemangioma}
@@ -409,14 +401,13 @@ document and each column a term.
 
 In our case, the abstract, MeSH terms and title of a Mealing record
 will represent a document vector in the model. The first index is
-saved for a hash of the document id (PMID) \fxnote{Hash of the
-  document id} while the remaining India's make up the term (or word)
-frequencies of each term in the abstract, MeSH and title in the
-record. The choice of putting the title of the record together with
-its abstract is appropiate, as these (often long) titles has a
-tendency of containing a lot of information in the MedLine records. As
-described in section \ref{MedLine_records_MeSH}, the optional MeSH
-also contains valuable information on the record.
+saved for a hash of the document id (PMID) while the remaining India's
+make up the term (or word) frequencies of each term in the abstract,
+MeSH and title in the record. The choice of putting the title of the
+record together with its abstract is appropiate, as these (often long)
+titles has a tendency of containing a lot of information in the
+MedLine records. As described in section \ref{MedLine_records_MeSH},
+the optional MeSH also contains valuable information on the record.
 
 Note also that the first index of each of the term vectors is saved
 for the hash of the term.
@@ -467,7 +458,7 @@ used schemes for enhancing the performance (recall and precision) of a
 search in the model. We will also go through some less common schemes
 used for the prototype system and justify these decisions.
 
-\subsection{Mitigating the problem of term fustiness's\label{MitigatingBurstiness}}
+\subsection{Mitigating the Problem of Term Burstiness's\label{MitigatingBurstiness}}
 
 The term 'burstiness' describes the behavior of a rare word appearing
 many times in a single document according to REMs E. Madsen ed. al
@@ -484,8 +475,8 @@ x_{MW}^{log} = \log{(1 + x_{dw})}
 \]
 
 Where $x_{dw}$ is the number of times the term $w$ appears in document
-$d$. This helps reduce the problem of burstiness by smoothing
-\fxnote{consider finding other word for smoothing} the term counts.
+$d$. This helps reduce the problem of burstiness by smoothing the term
+counts.
 
 \subsection{Term Frequency - Inverse Document Frequency\label{TFIDF}}
 
@@ -504,7 +495,7 @@ are the document corpus. Term frequency (TF) is also referred to as the
 \textit{recall} component while the inverse document frequency (IDF)
 is the \textit{precision} component. In other words, IDF gives us a
 higher weight for rare terms and the log-transformation of IDF helps
-to smooth \fxnote{Find andet ord end to smooth} the data. With TF-IDF the importance increases
+to smooth the data. With TF-IDF the importance increases
 proportionally to the number of times a term appears in the document
 but is offset by the frequency of the word in the corpus.
 
@@ -563,8 +554,7 @@ above 1. For illustration of square root transformation see figure
 
 We will be using the square root transformation to analyse the data
 coming from the TF-IDF scheme. We will describe transformation in
-further detail in chapter \ref{ExperimentsResults} \fxnote{Might want
-  to ref to section}. For now, the basic idea is that --- if the TF-IDF
+further detail in chapter \ref{ExperimentsResults}. For now, the basic idea is that --- if the TF-IDF
 works as supposed --- a square root 'upping' of the lower data will
 result in poorer search results.
 
@@ -606,7 +596,7 @@ lemmatization seems to have only very limited benefits for the
 retrieval \cite{IntroIR2009}. For our system, we have chosen to stick with only
 testing stemming.
 
-\subsection{Outlier detection}
+\subsection{Outlier Detection}
 
 Outlier detection on the retrieved information of each disease could
 concentrate the knowledge that we have on the disease. But care needs
@@ -758,14 +748,11 @@ length of the query vector.
 How we use the cosine similarity measure to test and score our data
 will be described in chapter \ref{ExperimentsResults}.
 
-\fxnote{REF: om scoring i experimental chap}
-
 \subsubsection{The Simple Sum Measure\label{SimpleSum}}
 When using this measure, we simply sum the vectors values returned by
 a query. In other words, this works like the cosine measure described
 above but it deals with non-normalized vector spaces as opposed to
-the cosine measure. This will also be described in chapter
-\fxnote{REF: om scoring i experimental chap.}.
+the cosine measure. This will also be described in \ref{ScoringSchemes}
 
 \section{Data Structures}
 
