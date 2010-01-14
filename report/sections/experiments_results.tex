@@ -2,7 +2,7 @@
 
 In this section, we introduce the test cases that we intend to use. We
 go through the details of our cosine and sum measure scoring schemes
-that we will be using to test our systems ability to rank a correct
+that we will be using to test our system's ability to rank a correct
 disease given a list of symptoms. By comparing the individual top
 scores of each different measure tested on a given matrix (stemmed or
 non-stemmed), we find the most efficient measure to score data on our
@@ -14,13 +14,13 @@ documents returned by the similarity measure and the
 to score 5 blind tests provided by a chief physician. 
 
 We also discuss clustering of the results, protein/gene filtering 
-improvements, the noise of overview atricles and the effect of 
+improvements, the noise of overview \fxnote{Ida: overview->summary?} articles and the effect of 
 concensus normalization.
 
 \section{Test cases}
 
 \subsubsection{BMJ}
-In order to test our system we need to find some suitable test cases
+In order to test our system we must find some suitable test cases
 that are not biased towards our own system. We have chosen to first of
 all test our system against a subset of the disease cases in BMJ
 \cite{HangwiTang11102006}, that is disease cases which can be found in
@@ -31,7 +31,7 @@ conducted by the people behind the BMJ article - they have a medical
 background (a respiratory and sleep physician and a rheumatologists)
 contrary to our computer science background. This means that we have
 no bias or knowledge about selecting symptoms and --- as they explain ---
-given some of the symptoms the correct diagnosis were evident to
+given some of the symptoms, the correct diagnosis was evident to
 them. Note that we will (in the following sections) be referring to
 the subset of the test cases as BMJ since this is were it was
 found.
@@ -111,7 +111,7 @@ has been reduced to \\
 \textit{congenital malformations: hydrocephalus, cleft palate, severe joint contractures}
 }\\
 
-The test cases from Orpha.net include 30 different diseases can be
+The test cases from Orpha.net, which includes 29 different diseases, can be
 found in table \ref{OrphanetCases1}.
 
 
@@ -188,12 +188,12 @@ found in table \ref{OrphanetCases1}.
 
 
 
-\subsubsection{Blind tests}
+\subsubsection{Blind Tests}
 In addition to the BMJ and Orpha.net test cases, we have performed a
 blind test on disease cases given by Henrik J\o rgensen
 \cite{TheDude}, disease name and symptoms can be in table
 \ref{BlindTestDiseaseName}. Here, we were given 5 different test cases
-and the queries made are based on symptoms extracted from the cases
+and the queries made are based upon symptoms extracted from the cases
 based on our own judgement.  The test is done with the highest
 performing measure and matrix - determined by the tests run on the BMJ
 and Orpha.net test cases in section \ref{TestingCosineSimilarity}. The
@@ -221,32 +221,32 @@ results of the blind test can be found in section \ref{Blindtest}.
   \label{BlindTestDiseaseName}
 \end{table}
 
-\subsection{Scoring schemes}
+\subsection{Scoring Schemes}
 
 As mentioned in the previous chapters, we will employ two different
 kinds of scoring measures - the cosine and sum measure. The original
-idea --- behind using a sum measure --- was to test how much the cosine
-measure would outperform this simpler measure but as we shall see in
+idea behind using a sum measure was to test how much the cosine
+measure would outperform this simpler measure, but as we shall see in
 section \ref{TestingCosineSimilarity} and section
 \ref{TestingSumSimilarity}, the cosine measure is actually
 outperformed itself by the sum measure. We will try to explain this
-'oddity' in the given section and for now focus the way we use the two
+anomoly in the given section and for now focus the way we use the two
 different kinds of measure. The following cosine and sum score
-measures are described in accordance to how they function on the term
+measures are described in accordance with how they function on the term
 document matrix. The exception of the disease matrix is described at
 the end of this section.
 
-\subsubsection{The cosine score\label{CosineScore}}
+\subsubsection{The Cosine Score\label{CosineScore}}
 
 We will be testing the following three different approaches to using
 the cosine similarity measure: cosine mean, cosine median and cosine
 max.
 
-\subsubsection{Cosine mean}
+\subsubsection{Cosine Mean}
 Every disease has one or more documents attached to it (as described
 in section \ref{Database}). This means that the same disease might be
 returned many times when looking at a top score of document similarity
-measures produced by for example the cosine score. Therefore --- to
+measures produced by, for example, the cosine score. Therefore --- to
 give each disease a score --- we use a form of consensus method where
 we sum the scores of each document belonging to that disease. This
 produces a mean score of each disease.
@@ -257,9 +257,9 @@ in which one or more of the terms has appeared. This results in a list
 of scores $\mathbf{x}_{\textrm{all diseases}} = \left\{x_1, x_2,
 \dots, x_n \right\}$. It then runs through every scored document and
 adds the score to the disease from which the document came (in
-accordance to the consensus method just described). Since some
+accordance with the consensus method just described). Since some
 documents appear in more than one disease (see section
-\ref{Database}), several diseases might have the sum of a single
+\ref{Database}), several diseases may have the sum of a single
 document added to its score $\mathbf{x}_{\textrm{disease}_{1}} =
 \left\{x_{\textrm{sum for} x_2, x_7, x_i, \dots, x_j}\right\}$,
 $\mathbf{x}_{\textrm{disease}_{2}} = \left\{x_{\textrm{sum for} x_1,
@@ -269,41 +269,41 @@ $x_{\textrm{disease}_1}$, $x_{\textrm{disease}_2}$ into a list of all
 the returned disease scores $\mathbf{\mathit{SL}} =
 \left\{x_{\textrm{disease}_1},x_{\textrm{disease}_2}, \dots,
 x_{\textrm{disease}_n}\right\}$. These are then sorted and the highest
-scoring is deemed the most likely to be the correct disease given the
+scoring is deemed to be the most likely to be the correct disease given the
 query vector.
 
-\subsubsection{Cosine median}
-The median is calculated much like the mean, except for selecting the
+\subsubsection{Cosine Median}
+The median is calculated much like the mean, apart from selecting the
 median of $\mathbf{x}_{\textrm{disease}_{1}} = \left\{x_2,x_7, x_i,
 \dots, x_j\right\}, \mathbf{x}_{\textrm{disease}_{2}}, \dots,
 \mathbf{x}_{\textrm{disease}_{n}}$, instead of summing the scores as
 we did above.
 
-\subsubsection{Cosine max}
+\subsubsection{Cosine Max}
 Does the same as above, except that it selects the maximum scoring in each
-disease lists and sort the resulting list and select the highest
+disease list and sorts the resulting list, selecting the highest
 scoring as the most probable.
 
-\subsubsection{The sum score}
+\subsubsection{The Sum Score}
 
 The sum measure works exactly like the cosine mean measure, except for
 running on non-normalized vectors. See \ref{VectorSimilarity} for
 reasoning.
 
-\subsubsection{The disease matrix exception}
+\subsubsection{The Disease Matrix Exception}
 
-This is a short description on how we use the cosine and sum measures
+This is a short description of how we use the cosine and sum measures
 on the disease matrix. The disease matrix has no document vectors and
 is solely made up of summed disease vectors. This means that there is
-no point in using cosine mean, median or max, as there is no multiple
+no point in using cosine mean, median or max, as there are no multiple
 label occurrences to run a consensus method over. Here the score is
 either the cosine or sum measure calculated for each of the diseases
 that contain the queried term(s).
 
-\subsection{Testing the cosine similarity measure\label{TestingCosineSimilarity}}
+\subsection{Testing the Sosine Similarity Measure\label{TestingCosineSimilarity}}
 
-The first test we run is on for the three different cosine scoring
-measures - mean, median and max. On the two bar charts below
+The first test we run is on the three different cosine scoring
+measures - mean, median and max. In the two bar charts below
 \ref{termDoc_bmj_hist_3000_ns_mea_med_max_nc} and
 \ref{termDoc_orphan_hist_3000_ns_mea_med_max_nc} the query scores of
 the BMJ and the Orhpa.net test cases are shown. These are run on the
@@ -386,18 +386,18 @@ preprocessed matrices.
 \end{table}
 
 As we see here, the mean cosine measure performs best in the BMJ test
-set while the max cosine measure scores best in the Orpha.net test
+set, while the max cosine measure scores best in the Orpha.net test
 set. The median measure has an overall low score and running some
-quick tests on the different matrices, quickly reveals that median is
+quick tests on the different matrices quickly reveals that median is
 not well suited as a measure to take into consideration. Therefore we
-will not be testing further on the cosine median score and continues
-with the two remaining scores from here on. Note that the score that
+will not be carrying out further testing on the cosine median score and continues
+with the two remaining scores from here on. Note that the score that \fxnote{Ida: hvad betyder ``Note that the score that''?}
 has the worst performance in the Orpha.net test. It can and will
 happen that diseases are not found within the top 3000 documents that
-is returned. When this is the case --- to avoid confusion in the bar
+are returned. When this is the case --- to avoid confusion in the bar
 charts and statistics --- we simply set the score of any disease not
 found to the value 3000, representing a bad performance. Note also
-that a missing bar represents the top score 0.
+that a missing bar represents the top score of 0.
 
 We now continue testing the scoring measures, this time comparing the
 non-stemmed and stemmed term document matrices. The results are shown
@@ -485,15 +485,15 @@ and \ref{termDoc_orphan_hist_3000_ns_mea_s_mea_ns_max_s_max} below.
 \end{table}
 
 The two score tests just performed now presents us with a dilemma. In the BMJ test set 
-the 'mean stemmed' and 'non-stemmed' scores performs best while in the Orpha.net test set, 
+the 'mean stemmed' and 'non-stemmed' scores perform best, while in the Orpha.net test set, 
 it is just the opposite. We have chosen to cope with this by taking out the top score 
 measure for each of the test sets - 'mean non-stemmed' from BMJ and 'max stemmed' from 
 the Orpha.net.
 
 The next step is to analyse our data by performing a square root transformation 
 \ref{SquareRoot} of the TF-IDF preprocessed data above. Note that it is required that 
-all values transformed are between 0 and 1 which in our case is secured by the fact 
-that the matrices, we use for the cosine measure, are normalized. The reason for the 
+all values transformed are between 0 and 1, which in our case is guarenteed by the fact 
+that the matrices we use for the cosine measure are normalized. The reason for the 
 square root analysis is that it allows us to see whether the data has been correctly 
 weighted. The square root transformation raises small values by a greater degree than 
 it does large values. This means that if our scores improve, the information containing 
@@ -583,11 +583,11 @@ with their square root transformation.
 \end{tiny}
 \end{table}
 
-These tests reveal some interesting results. Looking at the BMJ test set we see an overall 
+These tests reveal some interesting results. Looking at the BMJ test set, we see an overall 
 improvement in the performance of the square root transformed measures. In Orpha.net test 
-set there is an improvement in 'max stemmed' measure while a slight worsening of the 'mean 
-non-stemmed' measure. However, there is no change in the number of top 20 results and the 
-other measures shows a more significant improvement than the worsening of the last mentioned 
+set there is an improvement in 'max stemmed' measure, while a slight worsening of the 'mean 
+non-stemmed' measure is seen. However, there is no change in the number of top 20 results and the 
+other measures show a more significant improvement than the worsening of the last mentioned 
 measure. Based on these results, we will not deny that the data in the TF-IDF matrices are 
 not as optimized as could have been expected. But we can not say if these anomalies stem from 
 the data or the calculations themselves. For now, we choose to view the square root 
@@ -596,11 +596,11 @@ transformation as a general improvement.
 In section \ref{DiseaseMatrix}, we will be using the best measure of the cosine scoring tests 
 executed above - the 'mean stemmed sqrt' and the 'max stemmed sqrt' cosine similarity measures.
 
-\subsection{Testing the sum similarity measure\label{TestingSumSimilarity}}
+\subsection{Testing the Sum Similarity Measure\label{TestingSumSimilarity}}
 
 In this section, we perform the same tests as described in the
 previous section, except for the square root transformation which
-makes no sense since we will be running on non-normalized data. Or in
+would no sense, as we will be running on non-normalized data. Or in
 other word on values above and below 1 (see section
 \ref{SquareRoot}). The first test is run for the mean, median and max
 sum measures on a TF-IDF non-normalized term document matrix. The
@@ -679,10 +679,12 @@ results are shown on the figures
   \end{tiny}
 \end{table}
 
-Like in the previous section, we again see the poor results given by the median measure and discards 
-this for further testing. In the next tests, we compare the mean and sum measure in the stemmed and 
-non-stemmed matrices. The tests are shown on the figures \ref{termDoc_bmj_hist_3000_ns_s_mea_max_sum} 
-and \ref{termDoc_orphan_hist_3000_ns_s_mea_max_sum}.
+Like in the previous section, we again see the poor results given by
+the median measure and discard this for further testing. In the next
+tests, we compare the mean and sum measure in the stemmed and
+non-stemmed matrices. The tests are shown in the figures
+\ref{termDoc_bmj_hist_3000_ns_s_mea_max_sum} and
+\ref{termDoc_orphan_hist_3000_ns_s_mea_max_sum}.
 
 \begin{figure}[H]
   \caption{Comparison of mean and max sum measure tests on non-stemmed and stemmed term-doc matrices}
@@ -766,15 +768,15 @@ and \ref{termDoc_orphan_hist_3000_ns_s_mea_max_sum}.
 
 We see here that the 'mean sum' similarity measure clearly outperforms the 'max sum'. 
 In section \ref{DiseaseMatrix}, we compare this measure with the best of the cosine 
-measure on and the term document and disease matrices.
+measure on both term document and the disease matrix.
 
-\subsection{Disease and term document matrix - cosine, and sum and final result}
+\subsection{Disease and Term Document Matrix - Cosine, and Sum and Final result}
 
 Now that we have found the results for the best measures to be used on
 the term document matrix, we focus our attention on the disease
 matrix. We will in the following test the sum and cosine measure
-on the disease matrix and --- in the end of the section --- compare these
-results to that of the term document matrix.
+on the disease matrix and --- at the end of the section --- compare these
+results to those of the term document matrix.
 
 In the first test, we look at the performance of the cosine (mean),
 cosine-sqrt and the sum measure on the BMJ and Orpha.net test
@@ -934,7 +936,7 @@ below:
   \end{tiny}
 \end{table}
 
-When it comes to scoring diseases on in the disease matrix, the sum measure greatly out rival the 
+When it comes to scoring diseases on in the disease matrix, the sum measure greatly outrivals the 
 cosine measure - with or without the square root transformation. If we look at the average values 
 of the returned results, it seems that the stemmed version of the disease matrix is the best choice 
 for optimized performance.
@@ -1026,7 +1028,7 @@ bar chart of the best scores found for the prototype system:
 \end{tiny}
 \end{table}
 
-Not only having the best average but also the right disease 9 out 13 (BMJ) and 20 out of 30 (Oprha.net) 
+Not only having the best average, but also the right disease 9 out 13 (BMJ) and 20 out of 29 (Oprha.net) 
 in the top 20 out of over 3000 diseases returned from a top 3000 document scores, using the simple sum 
 similarity measure on a disease matrix seems to give both best recall and precision. This result is very 
 interesting since the document-summed disease matrix was originally made as model for fast tests before 
@@ -1037,7 +1039,7 @@ of noisy overview articles \ref{Overview}.
 
 One of the noteworthy things that can be learned from the bar charts made in this and 
 the two previous sections is that there should be a lower bound on the number of documents 
-per disease. Acropectorovertebral dysplasia is a premium example that the system needs to 
+per disease. Acropectorovertebral dysplasia is a prime example that the system needs to 
 have a lower bound on the number of MedLine records that are gathered for each disease. 
 This is in order to ensure that the system will be able make a reasonable qualified guess 
 on the disease.
@@ -1053,11 +1055,11 @@ to each other. From figure
 \ref{sum_stem_top20_best_cat_scratch_disease}, it can be seen that
 \textit{Cat Scratch disease} (near the top) is clustered together with
 \textit{Cyclic Neutropenia} even though it is number 19 on the result
-list. This means that these diseases are closest to each other in the list
+list, this means these diseases are closest to each other in the list
 of 20 returned suggestions. And the disease ranked as number 2 is
 \textit{Kikuchi disease} which is 6 sub clusters away from \textit{Cat
-  Scratch disease} - it requires merging 6 sub clusters
-to get them into the same cluster. The merging is performed by
+  Scratch disease} - meaning that it requires merging 6 sub clusters
+to get them into the same cluster, the merging is performed by
 calculating a mean vector for the diseases (or sub clusters) being
 merged. The lowest ranking disease is \textit{Chediak-Higashi
   syndrome}. To get this into the same cluster as \textit{Cat Scratch}
@@ -1071,7 +1073,7 @@ requires the merging of the entire cluster.
   \label{sum_stem_top20_best_cat_scratch_disease}
 \end{figure}
 
-We have also chosen to cluster the diseases where the sum measure on the
+We have also chosen to cluster the disease where the sum measure on the
 stemmed disease matrix produced the worst result. This is the test
 case \textit{Eosinophilic granuloma} where the correct disease was
 ranked as number 597. Therefore it is not possible to find it in the
@@ -1081,9 +1083,9 @@ present in the dendrogram
 \ref{sum_stem_top20_worst_developmental_dysplasia_of_hip} and
 comparing them to the correct diagnosis of the disease (if found)
 could provide helpful knowledge about why our system was so wrong in
-its suggestion of this disease and it might provide clues to correcting
-it. The problem might stem from poor or very noisy information about
-the correct disease which therefore do not have enough similarity
+its suggestion of this disease, and might provide clues to correcting
+it. The problem might stem from bad or very noisy information about
+the correct disease, which therefore do not have enough similarity
 with the query vector.
 
 \begin{figure}[H]
@@ -1094,11 +1096,11 @@ with the query vector.
   \label{sum_stem_top20_worst_developmental_dysplasia_of_hip}
 \end{figure}
 
-\subsection{Results and analysis of the blind tests (provided by Henrik L. J\o rgensen)\label{Blindtest}}
+\subsection{Results of the Blind Tests (provided by Henrik L. J\o rgensen)\label{Blindtest}}
 
-Below are shown the results from from the blind tests described in figure \ref{blind_test_table} -
-note that the scores above are 0-indexed as in the previous sections. 
+Shown below are the results of the blind tests described in figure \ref{blind_test_table}.
 
+\noindent \small{\textit{*Note that the scores below are 0-indexed as in the previous sections.}}
 \begin{figure}[H]
   \caption{Blind test of a stemmed disease matrix using the sum measure}
   \begin{center}
@@ -1118,6 +1120,8 @@ note that the scores above are 0-indexed as in the previous sections.
     \end{tabular}
 \end{tiny}
 \end{table}
+
+
 
 As we see, \textit{Adrenoleukodystrophy autosomal neonatal form} has a surprisingly poor score despite the many symptoms used in the query.
 We will try to analyse how this can be by looking at the most describing terms of the disease, as according to the used 
@@ -1244,17 +1248,17 @@ could probably be solved using a list of protein/gene names to filter away these
 a disease matrix that could allow physicians to enable/disable protein/gene names before a 
 query.
 
-\subsection{On overview article noise and consensus normalization\label{Overview}}
+\subsection{On Overview Article Noise and Consensus Normalization\label{Overview}}
 
-\subsubsection{Overview articles}
-Unfortunately there is overview articles that can pollute the search
+\subsubsection{Overview Articles}
+Unfortunately there are overview articles that can pollute the search
 results and if overview articles are found in many of the top scoring
 diseases, it could present a problem. When we run the consensus method
 as described in section \ref{CosineScore}, an overview article would
-potentially get an unfair high score since it gets summed up to 240
+potentially get an unfairly high score since it gets summed up to 240
 times. Though overview articles represents an element of noise, the
 normalization of the vectors in the vector space model should in
-theory down weight the highly summed documents. We also tested to the
+theory downweight the highly summed documents. We also tested to the
 most common overview article (240 occurrences) --- to see if it could
 be a problem --- using the Orpha.net disease cases among top 3000
 (documents). The overview article was present in less than 1 out of 8
@@ -1262,15 +1266,16 @@ searches which is not a significant amount. The disease matrix on the
 other hand is less prone to the same problem, as it summarizes all
 information about a disease into one vector.
 
-\subsubsection{Consensus normalization}
-During a point in the testing of the term document matrices, we got
-the idea to try and divide each label with the number of documents it
-had been summed over. This could in theory normalize the label in the
-top score of returned results, as labels being over-represented in for
-example the bottom of the top score list would be weighted down.
-However, as this might be a good theoretical idea, it did not quite
-amount to anything useful. The results for running this on the stemmed
-term document matrix, using the cosine measures, is seen in table \ref{ThisIsATable}.
+\subsubsection{Consensus Normalization}
+While testing of the term document matrices, we got the idea to try
+and divide each label with the number of documents it had been summed
+over. This could in theory normalize the label in the top score of
+returned results, as labels being over-represented in, for example, the
+bottom of the top score list would be weighted down.  However, as this
+might be a good theoretical idea, it did not quite amount to anything
+useful. The results for running this on the stemmed term document
+matrix, using the cosine measures, is seen in table
+\ref{ThisIsATable}.
 
 \begin{table}[H]
   \begin{tiny}
@@ -1304,6 +1309,6 @@ term document matrix, using the cosine measures, is seen in table \ref{ThisIsATa
   \label{ThisIsATable}
 \end{table}
 
-It does not take a bar chart to see that these values are pretty off
-the top 20. The idea might be good enough but it would have to be on a
+It does not take a bar chart to see that these values are pretty far off
+the top 20. The idea might be good enough, but it would have to be on a
 different model or data set than the one we use.
