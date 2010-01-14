@@ -3,12 +3,12 @@
 Due to the vast amount of information available on the Internet today,
 it is near impossible for researchers to have an 'up-to-date'
 knowledge on everything but their own specific field. Even that seems
-to become more and more difficult as new information is added each
+to become more and more difficult, as new information is added each
 day\footnote{Take for instance the biomedical database MedLine that
   grows with over half a million citations per year}
 \cite{CitAddMedLine}. Therefore it can be necessary to employ tools to
-help gather, structure and look for relations or hypothesis within the
-piles information. One very popular method of finding new relations in
+help gather, structure and look for relations or hypotheses within the
+masses of information. One very popular method of finding new relations in
 data is through the use of \textit{text mining}.
 
 \begin{center}
@@ -17,37 +17,37 @@ data is through the use of \textit{text mining}.
 \end{center}
 
 Text mining refers to the automated search for meaningful patterns in
-structured or unstructured text documents stored in very large digital
+structured or unstructured text documents, stored in very large digital
 databases or distributed over the Web. A good example of this is
 ``Fish oil, Raynaud's syndrome and undiscovered public knowledge'' by
 D.R. Swanson \cite{DRSwanson}. Here Swanson was referring to published
-knowledge deeply buried in disjoint topical domains\footnote{Here
+knowledge buried deeply in disjoint topical domains\footnote{Here
   'disjoint' refers to articles written by researchers unaware of each
   others work}. Swanson was one of the first to propose using text
 mining on biomedical literature. In 1986, he found evidence of a
 relation between the use of fish oil and the development of Raynaud's
-syndrome by looking at seemingly unrelated documents. This was done
-years before there were actually any scientific documents supporting
+syndrome, by looking at seemingly unrelated documents. This was done
+years before there actually were any scientific documents supporting
 this.
 
-Over the recent years the use of text mining has grown
+Throughout recent years, the use of text mining has grown
 tremendously. In the biomedical field, research is divided into highly
-specialized sections and subsections often too complex to make room
-for interdisciplinary work. For instance, the recent sequencing of the
-human genome have introduced a whole new level of detail to genetic
+specialized sections and subsections often too complex to enable
+interdisciplinary work. For instance, the recent sequencing of the
+human genome has introduced a whole new level of detail to genetic
 research. It is likely that new discoveries in this area could affect
-other areas concerned with health and diseases since genomic
+other areas concerned with health and diseases, as genomic
 mechanisms play a major role in the various branches of medicine
 \cite{survey.biomed.text.cohen.2005}. Text mining is a way of making
 these important connections in a world of increasing complexity and
-hidden patterns. This way of making new unseen discoveries also
+hidden patterns. This method of making new, unseen discoveries also
 introduces text mining as a major potential aid in the diagnosis of
 rare or (to the physician) unknown diseases.
 
 This project aims to make it easier and more efficient for physicians
-in diagnosing rare diseases. Through the use of text mining,
+to diagnose rare diseases. Through the use of text mining,
 clustering and machine learning algorithms, it is an attempt to
-increase the likelihood of getting the correct article based on a
+increase the likelihood of getting the correct article based upon a
 search of symptoms, environmental and/or human factors. We use a list
 of rare diseases and synonyms acquired from Rarediseases.info
 \cite{Rarediseases}. Based on this, we
@@ -57,23 +57,22 @@ the text for a more optimized search.
 
 \section{Inspiration}
 
-The list of rare diseases counts over 6,000 and has 5
-added to it a week \cite{AboutRareDiseasesOrphanet}. A rare (or
-orphan) disease is classified by the Orpha.net Encyclopedia
-\cite{OrphanetEncyclopedia} as being a disease that affects less than
-1 out of 2,000 people in Europe and has severe chronic or terminal
-outcomes (or less than 200,000 affected in the USA by standard of
-Rarediseases.info \cite{Rarediseases}). Some of these \fxnote{fix -
-  some of these diseases} diseases might not be fatal if treated in
-time. However, given the amount of knowledge your physician would need
-to carry around to make a correct diagnosis (or correctly exclude
-other potentials), a quick (and correct) treatment is not always the
-case.
+The list of rare diseases numbers over 6,000 and increases by 5 each
+week \cite{AboutRareDiseasesOrphanet}. A rare (or orphan) disease is
+classified by the Orpha.net Encyclopedia \cite{OrphanetEncyclopedia}
+as being a disease that affects less than 1 out of 2,000 people in
+Europe, and which has severe chronic or terminal outcomes (or less
+than 200,000 affected in the USA by standard of Rarediseases.info
+\cite{Rarediseases}). Some of these \fxnote{fix - some of these
+  diseases} diseases may not be fatal if treated promptly. However,
+given the amount of knowledge your physician would need to carry
+around to make a correct diagnosis (or correctly exclude other
+potential candidates), a quick (and correct) treatment isn't always the case.
 
-When being affected by a rare disease, the lack of a correct diagnosis
---- or the delay spent going from one specialist to another --- will in
-often lead to a fatal outcome. When it comes to rare and often
-dangerous diseases, the typical physician has little or none prior
+When affected by a rare disease, the lack of a correct diagnosis
+--- or the delay spent going from one specialist to another --- will
+often lead to a fatal outcome. When it comes to rare, and often
+dangerous diseases, the typical physician has little or no prior
 experience with similar cases. Therefore it is important that the
 diagnosing physician has as much help at hand as possible in this
 intrinsic task.
@@ -83,12 +82,12 @@ physician at Bispebjerg Hospital --- we found that --- even though
 many systems already exist to help physicians in their diagnosis ---
 there seemed to be a lack of a system for specifically diagnosing rare
 diseases. Systems such as PubMed returns numerous results if the
-symptoms are slightly non-specific (more on this in the following
+symptoms are even slightly non-specific (more on this in the following
 chapters). The advantage of a specialized system for rare diseases
-would be that the physician --- being in doubt --- would have a chance
-to make a quick symptom look-up before referring or dismissing the
+would be that the physician --- when in doubt --- would have a chance
+to quickly look the symptoms up, before referring or discharging the
 patient. According to Henrik L. J\o rgensen, time is great a problem
-when treating patients and in the rare event of a patient being
+when treating patients and, in the rare event of a patient being
 affected by something unknown, he or she is referred to a specialist.
 
 The inspiration of being able to create an efficient support decision
@@ -115,12 +114,12 @@ per disease, representing MedLine records containing an abstract. We
 then download the corresponding records.
 
 The intention is to preprocess the data using a vector space model and
-various heuristics to optimize the probability of getting a correct
+various heuristics in order to optimize the probability of getting a correct
 hit. The heuristics are described in the following chapter but
-revolves mainly around the Term Frequency - Inverse Document Frequency
+revolve mainly around the Term Frequency - Inverse Document Frequency
 (TF-IDF). Since a graphical user interface will not be made for the
-prototype system, a correct hit is as an article defining the disease
-being among the top 20 returned results from a given query of
+prototype system, a correct hit is when an article defining the disease
+is among the top 20 returned results from a given query of
 symptoms.
 
 We will be running tests on three different test cases. The first set
@@ -139,27 +138,27 @@ the Python module Bio.Entrez \cite{EntrezProgUtil} while BeautifulSoup
 \cite{BS} is used for parsing of HTML/XML combined with Urllib2
 \cite{UL2} these are used for crawling the websites. For construction
 of the term document matrix, we use the SciPy package \cite{SciPy}
-which supports sparse matrix structures. And for auxiliary vector
+which supports sparse matrix structures. For auxiliary vector
 functions we use the Numpy package \cite{NumPy}.
 
 \section{Roadmap}
 
 Chapter \ref{Background} covers the different databases that we
-harvest our data from and how we intend to model it the
+harvest our data from, and how we intend to model the
 information. We provides a background on Rarediseases.info, PubMed and
 the MedLine database, our primary data sources. We examine various
 advantages and disadvantages of the models and heuristics that we use,
 how we measure the similarities used to provide a disease score for
 queries, we also look into the data types used to handle the large
-amounts of information. Lastly, we looks at an alternative that might
+amounts of information. Lastly, we look at an alternative that may
 be able to provide more information on each mined disease.
 
 Chapter \ref{Methods} deals with the methods that we have used to
 implement the first prototype and the following branches of the
-system. We give an overview of the implementation and we increase the
-flexibility of the data exchange between the modules and how we have
+system. We give an overview of the implementation and we amplify the
+flexibility of the data exchange between the modules, and how we have
 applied several heuristics/filters to the data and the vector
-space. The chapter is \fxnote{The chapter is rounded of...} rounded of
+space. The chapter is \fxnote{The chapter is rounded of...} finishes
 with details of the data and technical conclusions of the
 implementation.
 
@@ -172,9 +171,9 @@ classical term document matrix and on a document-summed version called
 the \textit{disease matrix}. It also deals with aspects and tests of
 clustering and some of the potential noise in the data set.
 
-Chapter \ref{Conclusion} is the conclusion of the project. It contains
-a summary of the results along with comments on the usefulness of
-a system from by Henrik L. J\o rgensen.
+Chapter \ref{Conclusion} is the conclusion of the project, it contains
+a summary of the results, along with some comment on the usefulness of
+a system such as this from Henrik L. J\o rgensen.
 
 
 Chapter \ref{FutureWorks} contains future perspectives of the project,
