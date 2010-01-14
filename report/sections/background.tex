@@ -18,11 +18,11 @@ physician may have very little time per patient and --- when in doubt
 judgement. But with the tremendous amount of knowledge available today, the
 physician should not stand alone with this decision-making. If the
 symptoms of the patient seem strange or out of the ordinary, a quick
-list of qualified diagnostic guesses from a automated supporting
+list of qualified diagnostic guesses from an automated supporting
 decision-system would be able to help the physician in contradicting or
 justifying the diagnosis.
 
-Though already existing sources like Orpha.net (see section
+Though existing sources like Orpha.net (see section
 \ref{Orphanet}) and Rarediseases.info (see section
 \ref{Rarediseases_info}) aims to aid researchers and physicians in
 dealing with rare diseases, these sites are primarily based on human
@@ -31,14 +31,14 @@ information retrieval. This gives them a higher accuracy
 also renders them unable to keep up with the growing amounts of
 research and information available.
 
-PubMed (see section \ref{PubmedEntrez}) is today one of the largest and most used
+Today, PubMed (see section \ref{PubmedEntrez}) is one of the largest and most used
 biomedical article database-interfaces. It provides access to millions
 of abstracts and citations. Though rich in information, this is
-also its Achilles heel when it comes to describing less popular
+also its Achilles heel when it comes to describing less common
 subjects like rare diseases.
 
 The prototype of the supporting decision-system presented in this
-paper will be based on specialized database for rare diseases that
+paper will be based on a specialized database for rare diseases that
 harvests its information from MedLine (see section
 \ref{MedLine_records_MeSH}) by using information gathered from the
 Rarediseases.info. It will be easily extendable to other sources (like
@@ -51,7 +51,7 @@ list of highly potential diagnoses given a list of symptoms.
 In the following, we will go through the main sources of information
 that we intend to retrieve data from. We will be looking at advantages
 and disadvantages of each system and how we might use them. We also
-describe Orpha.net that --- as mentioned above --- is an obvious source of
+describe Orpha.net which --- as mentioned above --- is an obvious source of
 additional data.
 
 \subsection{Rarediseases.info\label{Rarediseases_info}}
@@ -62,17 +62,17 @@ Rarediseases.info is a website from the National Institute of Health
 diseases. These resources include links to patient support groups,
 glossary, research, PubMed searches, OMIM (Online Mendelian
 Inheritance in Man \cite{OMIM}) searches and a description of the
-disease. None of the resources are mandatory though, and in certain
-cases nearly all that is mentioned on a disease is its name.
+disease. However, none of the resources are mandatory, and in
+certain cases nearly all that is mentioned on a disease is its name.
 
-The Rarediseases.info website contains --- at the time of writing --- a list
-of 6881 diseases classified as being rare. A rare disease is by
-Rarediseases.info defined as one that is prevalent in fewer than
-200,000 individuals in the United States \cite{RareDiseaseDef}. This
-also means that diseases such as malaria are included on the list,
-even though it might not be considered rare other places in the world,
-for example in Africa. Sites such as Rarediseases.info provide an excellent
-base for creating a database of rare diseases.
+The Rarediseases.info website contains --- at the time of writing ---
+a list of 6881 diseases classified as being rare. It defines a rare
+disease as one that is prevalent in fewer than 200,000 individuals in
+the United States \cite{RareDiseaseDef}. This also means that diseases
+such as malaria are included on the list, even though it might not be
+considered rare in other places in the world, say, Africa. Sites such
+as Rarediseases.info provide an excellent base for creating a database
+of rare diseases.
 
 \subsubsection{Database Interface}
 There are two main types of links available at Rarediseases.info for
@@ -96,7 +96,7 @@ search within PubMed.
 The second type of link is an OMIM link. These links only return one
 MedLine record and are primarily concerned with diseases linked to the
 human genome. They usually contain several links to gene sequences and
-literature references and are perhaps mostly research-oriented.
+literature references and are mostly research-oriented.
 
 Rarediseases.info also lists synonyms of the disease which can be used
 to search PubMed for more information on the disease. If a search on
