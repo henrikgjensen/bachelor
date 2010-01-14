@@ -51,7 +51,7 @@ list of highly potential diagnoses given a list of symptoms.
 In the following, we will go through the main sources of information
 that we intend to retrieve data from. We will be looking at advantages
 and disadvantages of each system and how we might use them. We also
-describe Orpha.net that (as mentioned above) is an obvious source of
+describe Orpha.net that --- as mentioned above --- is an obvious source of
 additional data.
 
 \subsection{Rarediseases.info\label{Rarediseases_info}}
@@ -86,8 +86,8 @@ string. An example of this is:
 
 Handcrafted search strings can be more or less specific. The given
 example is rather standard - simply searching for the disease name and
-a condition being that either the MeSH-terms should contain "disease"
-or that "disease" should be present in any of the fields (for a
+a condition being that either the MeSH-terms should contain ``disease''
+or that ``disease'' should be present in any of the fields (for a
 description of fields see
 \cite{PubMedHelpSearchFieldDescriptionsTags}). This type of link can
 return anything from zero to several thousand articles, based on the
@@ -100,7 +100,7 @@ literature references and are perhaps mostly research-oriented.
 
 Rarediseases.info also lists synonyms of the disease which can be used
 to search PubMed for more information on the disease. If a search on
-the disease name gives none or few results, there might be a chance
+the disease name gives no or few results, there might be a chance
 that a search on its synonyms will.
 
 Last, there is a handcrafted description of the disease which could be
@@ -125,7 +125,7 @@ view. Though focused on Europe and thereby perhaps incomparable, an
 alternative such as Orpha.net (section \ref{Orphanet}) seems to be
 containing more information per disease than Rarediseases.info and it
 contains a longer list of rare diseases. We do not use Orpha.net
-as we sought permission to text mining their site, but have
+as we sought permission to text mine their site, but have
 received no answer to the request.
 
 \subsection{PubMed and Entrez\label{PubmedEntrez}}
@@ -186,7 +186,7 @@ We have not been able to find other articles on the subject of
 automated diagnosis of rare diseases (i.e. many different rare
 diseases given a symptom list). There are systems that deals with rare
 diseases, but these are specialized and only deal with a specific
-disease, not multiple. And example of this is a system using neural
+disease, not multiple. An example of this is a system using neural
 network to diagnose Lyme borreliosis disease \cite{AutomatedNNLyme}
 
 \subsubsection{Database Interface}
@@ -199,7 +199,7 @@ nearly 17 million documents from the MedLine database of biomedical
 literature \cite{RapidClassification}. He remarks that the Boolean
 search also presents a major problem when it comes to the amount of
 information returned. If a search is even slightly non--specific, the
-results will tend to be numerous - a problem when --- for example ---
+results will tend to be numerous --- a problem when, for example,
 diagnosing a rare disease.
 
 We use Entrez to search PubMed for article information
@@ -224,7 +224,7 @@ sub components\footnote{Go to
         \label{EntrezDatamodel}
 \end{figure}
 
-\subsection{MedLine records and MeSH\label{MedLine_records_MeSH}}
+\subsection{MedLine Records and MeSH\label{MedLine_records_MeSH}}
 
 \subsubsection{Overview}
 MedLine (Medical Literature Analysis and Retrieval System Online)
@@ -256,8 +256,8 @@ more information see their fact sheet on MeSH \cite{FactSheetMeSH}).
 When MeSH is used by experienced users, it can be a powerful tool to
 extract information on a specific subject. But when used by less
 experienced users, these tend to get long lists of hits, which results
-in an overload of information. For instance, a search on "Parkinson's
-Disease" returns 21,000 results according to Panos et. al
+in an overload of information. For instance, a search on ``Parkinson's
+Disease'' returns 21,000 results according to Panos et. al
 \cite{DataMiningBiomedicine}. Panos et. al proposes a system that
 divides MeSH into three categories, allowing multiple viewpoint \fxnote{daarlig formulering allowing multiple viewpoints} to
 information \cite{DataMiningBiomedicine}. They cluster the results by
@@ -414,7 +414,7 @@ saved for a hash of the document id (PMID) \fxnote{Hash of the
 frequencies of each term in the abstract, MeSH and title in the
 record. The choice of putting the title of the record together with
 its abstract is appropiate, as these (often long) titles has a
-tendency of containing a lot of information on the MedLine records. As
+tendency of containing a lot of information in the MedLine records. As
 described in section \ref{MedLine_records_MeSH}, the optional MeSH
 also contains valuable information on the record.
 
@@ -543,7 +543,7 @@ normalization to make the length 1.
 Like the log-transformation in section \ref{MitigatingBurstiness}, the
 square root transformation represents a method for smoothing
 burstiness in data. The most important difference is that using the
-square root on data smooths the data towards 1 oppsed to the
+square root on data smooths the data towards 1 opposed to the
 more aggressive log-transformation. Numbers of 1 and above behave
 differently than numbers between 0.00 and 0.99. The square root of
 numbers above 1 always become smaller, 1 and 0 remain constant, and
@@ -787,13 +787,13 @@ The SciPy.sparse module is used to make sparse matrices. It offers
 seven different forms of data structures to represent sparse matrices
 - the interested reader can have a look at the SciPy documentation
 accessible on their website \cite{SciPy}. The different types each have pros and
-cons. We primarily use the "lil" format, which is a sparse matrix
-using linked lists. For traversal through the matrix, we use the "coo"
+cons. We primarily use the ``lil'' format, which is a sparse matrix
+using linked lists. For traversal through the matrix, we use the ``coo''
 format which is coordinate format. Coo matrices also facilitate fast
 conversion to the other matrix format. For a quick look-up of
-individual elements, it is advantageous to use the "dok" format which
+individual elements, it is advantageous to use the ``dok'' format which
 is a dictionary of keys. This allows O(1) time access to matrix
-elements. And the "csc" and "csr" formats can be used when dealing
+elements. And the ``csc'' and ``csr'' formats can be used when dealing
 with arithmetic operations, since these are efficient for column and
 row operations.
 
@@ -825,10 +825,10 @@ project.
 
 Revisiting the discussion on how to save the term document matrix, the
 Scipy package \cite{SciPy} offers an I/O-module that allows matrices
-to be exported to "Matrix Market" (MM) format. MM only saves
+to be exported to ``Matrix Market'' (MM) format. MM only saves
 non-zero entries via coordinate/value. When reading from an MM
 file, the matrix is read in is in coo format for obvious
-reasons\footnote{The exception being the "dense" format, which is
+reasons\footnote{The exception being the ``dense'' format, which is
   similar NumPy's matrix format.}. More information can be found at
 their website \cite{MatrixMarket}.
 
