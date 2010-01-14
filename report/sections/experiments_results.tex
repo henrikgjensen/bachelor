@@ -296,11 +296,11 @@ This is a short description of how we use the cosine and sum measures
 on the disease matrix. The disease matrix has no document vectors and
 is solely made up of summed disease vectors. This means that there is
 no point in using cosine mean, median or max, as there are no multiple
-label occurrences to run a consensus method over. Here the score is
+label occurrences to run a consensus method over. Here, the score is
 either the cosine or sum measure calculated for each of the diseases
 that contain the queried term(s).
 
-\subsection{Testing the Sosine Similarity Measure\label{TestingCosineSimilarity}}
+\subsection{Testing the Cosine Similarity Measure\label{TestingCosineSimilarity}}
 
 The first test we run is on the three different cosine scoring
 measures - mean, median and max. In the two bar charts below
@@ -389,7 +389,7 @@ As we see here, the mean cosine measure performs best in the BMJ test
 set, while the max cosine measure scores best in the Orpha.net test
 set. The median measure has an overall low score and running some
 quick tests on the different matrices quickly reveals that median is
-not well suited as a measure to take into consideration. Therefore we
+not well suited as a measure to be taken into consideration. Therefore we
 will not be carrying out further testing on the cosine median score and continues
 with the two remaining scores from here on. Note that the score that \fxnote{Ida: hvad betyder ``Note that the score that''?}
 has the worst performance in the Orpha.net test. It can and will
@@ -600,7 +600,7 @@ executed above - the 'mean stemmed sqrt' and the 'max stemmed sqrt' cosine simil
 
 In this section, we perform the same tests as described in the
 previous section, except for the square root transformation which
-would no sense, as we will be running on non-normalized data. Or in
+would make no sense, as we will be running on non-normalized data. Or in
 other word on values above and below 1 (see section
 \ref{SquareRoot}). The first test is run for the mean, median and max
 sum measures on a TF-IDF non-normalized term document matrix. The
@@ -1073,7 +1073,7 @@ requires the merging of the entire cluster.
   \label{sum_stem_top20_best_cat_scratch_disease}
 \end{figure}
 
-We have also chosen to cluster the disease where the sum measure on the
+We have also chosen to cluster the disease where sum measure on the
 stemmed disease matrix produced the worst result. This is the test
 case \textit{Eosinophilic granuloma} where the correct disease was
 ranked as number 597. Therefore it is not possible to find it in the
@@ -1083,7 +1083,7 @@ present in the dendrogram
 \ref{sum_stem_top20_worst_developmental_dysplasia_of_hip} and
 comparing them to the correct diagnosis of the disease (if found)
 could provide helpful knowledge about why our system was so wrong in
-its suggestion of this disease, and might provide clues to correcting
+its suggestion of this disease, and might provides clues to correcting
 it. The problem might stem from bad or very noisy information about
 the correct disease, which therefore do not have enough similarity
 with the query vector.
@@ -1256,7 +1256,7 @@ results and if overview articles are found in many of the top scoring
 diseases, it could present a problem. When we run the consensus method
 as described in section \ref{CosineScore}, an overview article would
 potentially get an unfairly high score since it gets summed up to 240
-times. Though overview articles represents an element of noise, the
+times. Though overview articles represent an element of noise, the
 normalization of the vectors in the vector space model should in
 theory downweight the highly summed documents. We also tested to the
 most common overview article (240 occurrences) --- to see if it could
@@ -1310,5 +1310,5 @@ matrix, using the cosine measures, is seen in table
 \end{table}
 
 It does not take a bar chart to see that these values are pretty far off
-the top 20. The idea might be good enough, but it would have to be on a
+the top 20. The idea might be good enough, but it would have to be a
 different model or data set than the one we use.
