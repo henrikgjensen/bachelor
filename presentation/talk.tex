@@ -1,0 +1,128 @@
+\documentclass[a4paper, 10pt, english, final]{report}
+%\usepackage[utf8]{inputenc}
+%\usepackage{a4wide}
+
+%e\usepackage[draft]{fixme}
+
+
+
+%%%%% TYPE SETTING %%%%%
+\usepackage[T1]{fontenc}
+%\usepackage{garamond}
+%\renewcommand{\rmdefault}{ugm}
+
+\usepackage[british]{babel}
+\usepackage{verbatim}
+
+\usepackage{palatino}              % font : garamond
+\linespread{1.05}                  % Palatino needs more leading (space between lines)
+\renewcommand{\ttdefault}{cmtt}    % alternative monospace font
+
+%%%% MATH STUFF %%%%%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{ulem}
+\usepackage{mathrsfs}
+
+%%%% GRAPHICS
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{float}
+\usepackage[small,bf]{caption}
+%\usepackage{xypic}
+\usepackage[table]{xcolor}
+\usepackage{subfig}
+%\usepackage{dirtree}
+\usepackage{ulem}
+\usepackage{slashbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% CONFIGURATIONS %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{language=Python, basicstyle=\scriptsize, showstringspaces=false, numbers=none, stepnumber=1, numberstyle=\tiny}
+
+\hyphenation{mand-en} %%% Add here if something does not break right. Like this nu-clear-test-bomb-ing
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Kommandoer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{\old}[1]{\oldstylenums{#1}}
+%\newcommand{\old}[1]{{#1}}
+\newcommand{\mailto}[1]{\href{mailto:#1}{#1}}
+%\newcommand{\resume}[1]{\begin{abstract}{\sffamily #1}\end{abstract}}
+%\newcommand{\angles}[1]{\langle\textrm{#1}\rangle}
+%\newcommand{\colbox}[2]{\fcolorbox{black}{#1}{#2}}
+%\renewcommand{\thefigure}{\thechapter.\thesection.\arabic{figure}}
+%\renewcommand{\thetable}{\thechapter.\thesection.\arabic{table}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titel, forfatter og dato
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=black,%
+bookmarksopen=false,
+pdftitle={Support decision system for diagnosing rare diseases using machine learning for medical text mining},
+pdfauthor={Henrik G. Jensen and Michael Andersen},
+pdfsubject={Text mining, rare diseases},
+pdfkeywords={Diagnosing rare diseases, text mining}
+}
+
+
+% How to change margins...
+% use voffset for vertical
+% use hoffset for horisontal
+%% \newenvironment{changemargin}[1]{
+%%   \begin{list}{}{
+%%       \setlength{\hoffset}{#1}
+%%     }
+%%   \item[]}{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Indhold
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{itemize}
+  \item Behovet?
+    \begin{itemize}
+      \item L\ae ger kan umuligt vide altid, \ldots.
+      \item L\ae ger har ofte kun en begr\ae nset m\ae ngde tid per
+        patient, s\aa\ hvis l\ae gen kan hj\ae lpes, s\aa\ b\o r han
+        hj\ae lpes.
+      \item M\ae ngden af information omkring sygdomme \o ges hver
+        dag, derfor kan det v\ae re sv\ae rt at f\o lge med.
+
+    \end{itemize}
+
+  \item Behovet 2?
+    \begin{itemize}
+      \item 
+      \item Globalisering, sygdomme er ikke l\ae ngere begr\ae nset i
+        deres position, de kan nu sprede sig over gr\ae nser uden
+        frygt for at skulle vise pas.
+      \item Lokation: en sj\ae lden sygdom et sted er ikke n\o
+        dvendigvis sj\ae lden alle steder, grundet ovenst\aa ende.
+
+    \end{itemize}
+  \item L\o sningen!
+
+    \begin{itemize}
+
+      \item 1
+
+      \item 2
+
+    \end{itemize}
+
+\end{itemize}
+
+\end{document} 
