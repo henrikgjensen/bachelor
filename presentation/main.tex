@@ -16,6 +16,8 @@
 
 \section{Oversigt}
 
+\subsection*{}
+
 %% \begin{frame}
 
 %%     \frametitle{\ }
@@ -32,10 +34,6 @@
 
 % Begin actual slides
 % 1
-\section{Diagnosticering af sjældne sygdomme ???}
-
-% 1.1
-\subsection*{}
 
 \begin{frame}
 
@@ -87,7 +85,7 @@
 
       \item Konstruer speciel database
       \item V\ae gtning af termer
-      \item Vektor rums modellen
+      \item Vector space model
       \item Udregning af score for s\o gning
       \item Forsl\aa\ top 20 sygdomme.
     \end{itemize}
@@ -111,11 +109,19 @@
 
 \end{frame}
 
+\section{Systemet}
+
+% 1.1
+\subsection*{}
+
+
 \begin{frame}
 
   \frametitle{Oversigt over systemet}
 
-  Inds\ae t overview diagram over systemet
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{diagram/system_overview}
+  \end{center}
 
 \end{frame}
 
@@ -155,7 +161,15 @@
 
 \begin{frame}
 
-  \frametitle{Vector rums modellen}
+  \frametitle{Vector space model - Term doc matrix}
+
+  inds\ae t et lille term doc eksempel.
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Vector space model - Cosine}
 
   Udregning af vinkel mellem en symptom liste og et document:
   
@@ -179,21 +193,31 @@
 
 \begin{frame}
 
+  \frametitle{Outlier detection}
+
+  Hvor fungere outlier detection??? Kan man goere det anderledes
+
+\end{frame}
+
+\begin{frame}
+
   \frametitle{Udregning af score for en sygdom}
   
+  $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
+
   \begin{itemize}
     \item Cosine Mean
       \begin{itemize}
-        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
-        \visible<2->{\item final score: $\textrm{disease}_j = \textrm{mean}(\{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \}) $}
+%        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
+        \visible<1->{\item $\textrm{disease}_j = \textrm{mean}(\{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \}) $}
       \end{itemize}
     \item Cosine Median
       \begin{itemize}
-        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \only<1-2>{\textrm{d2}_{score}} \only<3->{\textbf{d2}_{\mathbf{score}}}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
+        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \only<1>{\textrm{d2}_{score}} \only<2->{\textbf{d2}_{\mathbf{score}}}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
       \end{itemize}
     \item Cosine Max
       \begin{itemize}
-        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \only<1-3>{\textrm{d4}_{score}} \only<4->{\textbf{d4}_{\mathbf{score}}} \} $
+        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \only<1-2>{\textrm{d4}_{score}} \only<3->{\textbf{d4}_{\mathbf{score}}} \} $
       \end{itemize}
     \item Sum (P\aa\ disease matrix)
       \begin{itemize}
@@ -247,6 +271,17 @@
 
 \end{frame}
 
+\begin{frame}
+
+  \frametitle{Clustering af resultater}
+
+  Inds\ae t billede af clustering.
+
+  Hvorfor er det en god ide at cluster resultaterne, man kan se hvilke
+  af de fundne sygdomme der minder om hinanden.
+
+\end{frame}
+
 \section{Fremtidige muligheder}
 
 \subsection*{}
@@ -256,7 +291,6 @@
   \frametitle{Udvidelser}
 
 \end{frame}
-
 
 % 1.2
 
@@ -270,9 +304,7 @@
 %%     \item 
 %%     \item
 %%   \end{itemize}
-  
 
 %% \end{frame}
-
 
 \end{document}
