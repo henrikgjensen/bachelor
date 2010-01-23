@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {danish}
+\beamer@sectionintoc {2}{Det gyldne snit}{3}{0}{1}
+\beamer@sectionintoc {3}{Det gyldne snit i malerkunsten}{7}{0}{2}
+\beamer@sectionintoc {4}{Malerier}{16}{0}{3}
