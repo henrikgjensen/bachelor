@@ -15,53 +15,323 @@
 \end{frame}
 
 \section{Oversigt}
-\begin{frame}
 
-    \frametitle{\ }
+\subsection*{}
 
-      \begin{itemize}
-	  \item Motivation
-	  \item Strukturering af information
-	  \item Resultater
-	  \item Fremtidige forbedringer /  udviddelser ??? 
-      \end{itemize}
+%% \begin{frame}
 
-\end{frame}
+%%     \frametitle{\ }
+
+%%       \begin{itemize}
+%% 	  \item Motivation
+%% %%	  \item Strukturering af information
+%%           \item Midlet
+%% 	  \item Resultater
+%% 	  \item Fremtidige forbedringer /  udviddelser ??? 
+%%       \end{itemize}
+
+%% \end{frame}
 
 % Begin actual slides
 % 1
-\section{Diagnosticering af sjældne sygdomme ???}
+
+\begin{frame}
+
+  \frametitle{Motivation}
+
+  \visible<1->{
+  \begin{block}{Problemet}
+
+    \begin{itemize}
+      \item L\ae ger har stor viden, men \ldots
+      \item L\ae ger har begr\ae nset tid per patient
+      \item Sj\ae ldne sygdomme drukner i informations m\ae ngden.
+    \end{itemize}
+    
+  \end{block}
+  }
+
+  \visible<2->{
+  \begin{block}{Behovet}
+
+    \begin{itemize}
+
+      \item Der findes mange specifikke systemer, som bestemmer enkelt sygdomme, intet der rammer flere sygdomme.
+      \item Giver foreslag til sygdomme, som hurtigt kan kontrolleres.
+
+    \end{itemize}
+    
+  \end{block}
+  }
+
+%%% RODDET!!! %%%
+%%   \begin{itemize}
+%%     \item <1> Lægen ved ikke alt
+%%     \item <1> Manglende tid
+%%     \item <1> Mængden af information
+%%     \item <1> Globalisering
+%%   \end{itemize}
+%%%%%%%%%%%%%%%%%%
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Midlet}
+
+  \begin{block}{L\o sningen, systemet}
+
+    \begin{itemize}
+
+      \item Konstruer speciel database
+      \item V\ae gtning af termer
+      \item Vector space model
+      \item Udregning af score for s\o gning
+      \item Forsl\aa\ top 20 sygdomme.
+    \end{itemize}
+
+  \end{block}
+
+  \begin{block}{Resultater}
+
+    \begin{itemize}
+
+      \item BMJ test sager
+      \item Orpha.net test sager
+      \item Blind testen
+    \end{itemize}
+
+  \end{block}
+
+  \begin{itemize}
+    \item Fremtids muligheder
+  \end{itemize}
+
+\end{frame}
+
+\section{Systemet}
 
 % 1.1
 \subsection*{}
 
+
 \begin{frame}
 
-  \frametitle{Er der et behov?}
+  \frametitle{Oversigt over systemet: Crawler}
+
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{system_overview1}
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Oversigt over systemet: MedLine}
+
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{system_overview2}
+  \end{center}
+
+\end{frame}
+  
+\begin{frame}
+
+  \frametitle{Oversigt over systemet: TermDoc}
+
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{system_overview3}
+  \end{center}
+  
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Konstruktion af databasen}
+
+  Inds\ae t tegning af interaktion mellem vores system og rarediseases, samt vores system og pubmed, endende med Medline Records.
+
+  (evt. se figur 2.2 side 17)
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{V\ae gtning af term}
+
+  Log-transformation af ord antallet:
+
+  \[
+  x_{dw}^{log} = \log{(1 + x_{dw})}
+  \]
+
+  Der bruges TF-IDF til v\ae gtning af termer, dette er for at fremh\ae ve term som sj\ae lendt optr\ae der og nedv\ae gte ofte forekommende ord:
+
+  \[
+  x_{dw}^{tfidf} = x_{dw}^{log} \cdot \log{\frac{D}{\sum_{d\prime = 1}^{D}\delta_{d\prime w}}}
+  \]
+
+  Afslutningsvis normaliseres dokument vektoren for at sikre de har ens indflydelse p\aa\ s\o geresultatet:
+
+  \[
+  x_{dw}^{norm} = \frac{x_{dw}^{tfidf}}{\sqrt{\sum_{w\prime = 1}^{W} {x_{dw}^{tfidf}}^{2}}}
+  \]
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Vector space model - Term doc matrix}
+
+  Syntes denne skal op f\o r TF-IDF, da det ikke mening at snakke om
+  TF-IDF uden f\o rst at have en term-doc matrix.
+
+  \begin{center}
+    \includegraphics[width=0.40\textwidth]{diagram/termdoc}
+  \end{center}
+
+  $d_j$ hvor er en transponeret s\o jle vektor.
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Vector space model - Cosine score}
+
+  Udregning af vinkel mellem en symptom liste og et document:
+  
+  \[
+  \cos \theta_{D_j} = \frac{Q \circ D_j}{|Q| \cdot |D_j|}
+  \]
+  
+  Ovenst\aa ende svarer til
+  
+  \[
+  \textrm{score}_{d} = \frac{1}{|I|}\frac{1}{|x_{d}|} \sum_{i \in I} x_{dw}
+  \]
+  
+  Hvis der p\aa\ forh\aa nd er foretaget normalisering af dokument vektoren:
+  
+  \[
+  \propto  \sum_{i \in I} \widehat{x_{dw}}
+  \]
+  
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Outlier detection}
+
+  Hvor fungere outlier detection??? Kan man goere det anderledes
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Udregning af score for en sygdom}
+  
+  $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
 
   \begin{itemize}
-    \item <1> Lægen ved ikke alt
-    \item <1> Manglende tid
-    \item <1> Mængden af information
-    \item <1> Globalisering
+    \item Cosine Mean
+      \begin{itemize}
+%        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
+        \visible<1->{\item $\textrm{disease}_j = \textrm{mean}(\{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \}) $}
+      \end{itemize}
+    \item Cosine Median
+      \begin{itemize}
+        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \only<1>{\textrm{d2}_{score}} \only<2->{\textbf{d2}_{\mathbf{score}}}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
+      \end{itemize}
+    \item Cosine Max
+      \begin{itemize}
+        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \only<1-2>{\textrm{d4}_{score}} \only<3->{\textbf{d4}_{\mathbf{score}}} \} $
+      \end{itemize}
+    \item Sum (P\aa\ disease matrix)
+      \begin{itemize}
+        \item final score: $\textrm{disease}_j \sum_{i \in I} t_{ji} $
+      \end{itemize}
   \end{itemize}
-  
+
+\end{frame}
+
+\section{Resultater}
+
+\subsection*{}
+
+\begin{frame}
+
+  \frametitle{BMJ Resultater}
+
+  Inds\ae t nogle af de gode resultater, evt. nogle af de d\aa rlige.
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Orpha.net Resultater}
+
+  Inds\ae t nogle af de gode resultater, evt. nogle af de d\aa rlige.
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Blind tests Resultater}
+
+  Inds\ae t nogle af de gode resultater, evt. nogle af de d\aa rlige.
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Forkerte forslag}
+
+  Inds\ae t noget om keywords
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Forkerte forslag 2}
+
+  Vi har for lidt information om den enkelte sygdom, den ``drukner'' i symptomerne p\aa\ andre sygdomme.
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Clustering af resultater}
+
+  Inds\ae t billede af clustering.
+
+  Hvorfor er det en god ide at cluster resultaterne, man kan se hvilke
+  af de fundne sygdomme der minder om hinanden.
+
+\end{frame}
+
+\section{Fremtidige muligheder}
+
+\subsection*{}
+
+\begin{frame}
+
+  \frametitle{Udvidelser}
+
 \end{frame}
 
 % 1.2
 
-\subsection*{}
-\begin{frame}
+%% \subsection*{}
+%% \begin{frame}
 
-  \frametitle{Sjældne sygdomme}
+%%   \frametitle{Sjældne sygdomme}
 
-  \begin{itemize}
-    \item 
-    \item
-  \end{itemize}
-  
+%%   % Evt ledt videre fra 'globalisering'?
+%%   \begin{itemize}
+%%     \item 
+%%     \item
+%%   \end{itemize}
 
-\end{frame}
-
+%% \end{frame}
 
 \end{document}

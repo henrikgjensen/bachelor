@@ -1,4 +1,6 @@
 \beamer@endinputifotherversion {3.07pt}
 \select@language {danish}
 \beamer@sectionintoc {1}{Oversigt}{2}{0}{1}
-\beamer@sectionintoc {2}{Diagnosticering af sj\IeC {\ae }ldne sygdomme ???}{3}{0}{2}
+\beamer@sectionintoc {2}{Systemet}{5}{0}{2}
+\beamer@sectionintoc {3}{Resultater}{18}{0}{3}
+\beamer@sectionintoc {4}{Fremtidige muligheder}{24}{0}{4}

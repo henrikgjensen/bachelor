@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.6.16)  23 JAN 2010 14:24
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.6.16)  23 JAN 2010 22:47
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -1085,6 +1085,130 @@ LaTeX Info: Redefining \selectfont on input line 125.
 ] [4
 
 ]
+<system_overview1.png, id=280, 1316.92pt x 667.49374pt>
+File: system_overview1.png Graphic file (type png)
+
+<use system_overview1.png> [5
+
+ <./system_overview1.png>]
+<system_overview2.png, id=329, 1316.92pt x 667.49374pt>
+File: system_overview2.png Graphic file (type png)
+
+<use system_overview2.png> [6
+
+ <./system_overview2.png (PNG copy)>]
+<system_overview3.png, id=376, 1316.92pt x 667.49374pt>
+File: system_overview3.png Graphic file (type png)
+
+<use system_overview3.png> [7
+
+ <./system_overview3.png (PNG copy)>]
+<system_overview4.png, id=424, 1316.92pt x 667.49374pt>
+File: system_overview4.png Graphic file (type png)
+
+<use system_overview4.png> [8
+
+ <./system_overview4.png (PNG copy)>]
+<system_overview5.png, id=471, 1316.92pt x 667.49374pt>
+File: system_overview5.png Graphic file (type png)
+
+<use system_overview5.png> [9
+
+ <./system_overview5.png (PNG copy)>] [10
+
+]
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 196.
+
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2007/01/14 v1.3 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 196
+.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2007/01/14 v1.3 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 196
+.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2007/01/14 v1.3 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 196.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 196.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 196.
+LaTeX Font Info:    Try loading font information for U+msa on input line 196.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 196.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 196.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 196.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 196.
+ [11
+
+]
+<diagram/termdoc.png, id=618, 223.83624pt x 132.495pt>
+File: diagram/termdoc.png Graphic file (type png)
+
+<use diagram/termdoc.png> [12
+
+ <./diagram/termdoc.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 235.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
+) [13
+
+] [14
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 271.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 271.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 271.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 271.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 271.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 271.
+ [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+]
+[20
+
+] [21
+
+] [22
+
+] [23
+
+] [24
+
+]
 \tf@nav=\write5
 \openout5 = `main.nav'.
 
@@ -1096,21 +1220,29 @@ LaTeX Info: Redefining \selectfont on input line 125.
 
  (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 13836 strings out of 94834
- 236796 string characters out of 1179181
- 315672 words of memory out of 1500000
- 16658 multiletter control sequences out of 10000+50000
- 24740 words of font info for 24 fonts, out of 1200000 for 2000
+ 14163 strings out of 94834
+ 242925 string characters out of 1179181
+ 325672 words of memory out of 1500000
+ 16888 multiletter control sequences out of 10000+50000
+ 93523 words of font info for 75 fonts, out of 1200000 for 2000
  212 hyphenation exceptions out of 8191
- 55i,20n,57p,312b,735s stack positions out of 5000i,500n,6000p,200000b,5000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf
-/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss1
-2.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
->
-Output written on main.pdf (4 pages, 128121 bytes).
+ 55i,20n,58p,312b,741s stack positions out of 5000i,500n,6000p,200000b,5000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/t
+exmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathi
+t.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-texl
+ive/fonts/type1/bluesky/cm/cmss10.pfb></usr/share/texmf-texlive/fonts/type1/blu
+esky/cm/cmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss
+8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on main.pdf (24 pages, 637605 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 131072)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1291 PDF objects out of 1440 (max. 8388607)
+ 53 named destinations out of 1000 (max. 131072)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
