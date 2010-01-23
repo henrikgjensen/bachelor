@@ -151,7 +151,7 @@
   x_{dw}^{tfidf} = x_{dw}^{log} \cdot \log{\frac{D}{\sum_{d\prime = 1}^{D}\delta_{d\prime w}}}
   \]
 
-  Afslutningsvis normaliseres dokument vektoren for at sikre de har ens indflydelse p\aa\ s\o geresultatet.
+  Afslutningsvis normaliseres dokument vektoren for at sikre de har ens indflydelse p\aa\ s\o geresultatet:
 
   \[
   x_{dw}^{norm} = \frac{x_{dw}^{tfidf}}{\sqrt{\sum_{w\prime = 1}^{W} {x_{dw}^{tfidf}}^{2}}}
@@ -163,11 +163,14 @@
 
   \frametitle{Vector space model - Term doc matrix}
 
-  Syntes denne skal op f\o r TF-IDF
+  Syntes denne skal op f\o r TF-IDF, da det ikke mening at snakke om
+  TF-IDF uden f\o rst at have en term-doc matrix.
 
+  \begin{center}
+    \includegraphics[width=0.70\textwidth]{diagram/termdoc}
+  \end{center}
 
-
-  inds\ae t et lille term doc eksempel.
+  $d_j$ hvor er en transponeret s\o jle vektor.
 
 \end{frame}
 
