@@ -116,7 +116,9 @@
 
 \begin{frame}
 
-  \frametitle{Oversigt over systemet: \only<1>{Crawler}\only<2>{MedLine}\only<3>{TermDoc}\only<4>{TermDoc / DiseaseMatrix}\only<5>{TF-IDF}}
+  \frametitle{Oversigt over systemet:
+    \only<1>{Crawler}\only<2>{MedLine}\only<3>{TermDoc}\only<4>{TermDoc
+      / DiseaseMatrix}\only<5>{TF-IDF}\only<6>{Heuristikker}\only<7>{Outlier detection}\only<8>{LSA}\only<9>{Yderligere informationskilder}}
 
   \begin{center}
     \only<1>{\includegraphics[width=1.0\textwidth]{diagram/system_overview1}}
@@ -124,6 +126,10 @@
     \only<3>{\includegraphics[width=1.0\textwidth]{diagram/system_overview3}}
     \only<4>{\includegraphics[width=1.0\textwidth]{diagram/system_overview4}}
     \only<5>{\includegraphics[width=1.0\textwidth]{diagram/system_overview5}}
+    \only<6>{\includegraphics[width=1.0\textwidth]{diagram/system_overview6}}
+    \only<7>{\includegraphics[width=1.0\textwidth]{diagram/system_overview7}}
+    \only<8>{\includegraphics[width=1.0\textwidth]{diagram/system_overview8}}
+    \only<9>{\includegraphics[width=1.0\textwidth]{diagram/system_overview9}}    
   \end{center}
 
 \end{frame}
@@ -300,14 +306,22 @@
 
   \frametitle{Udvidelser}
 
+  \begin{itemize}
+    \item Statistisk model
+    \item Tilf\o jelse af andre heuristikker.
+    \item Keyword extraction fra sygdomme
+    \item Udvidet mulighed for s\o gning, f.eks. sammenligning af s\o
+      gninger, boolske operatorer.
+  \end{itemize}
+
 \end{frame}
 
 \begin{frame}
 
   \frametitle{Outlier detection}
 
-  \begin{multicols}{2}
-    {\scriptsize
+%  \begin{multicols}{2}
+  \begin{center}
     \begin{tabular}{|l|r|r|r|r|r|}
       \hline
       DM    & D$_1$ & D$_2$ & D$_3$ & D$_4$ & DTO \\
@@ -320,14 +334,13 @@
       \hline
       D$_4$ &   0.8 &   0.6 &   0.3 &   1.0 & 2.7 \\
       \hline
-    \end{tabular} \\
-    }
-    
-    \begin{center}
-      Inds\ae t tegning af centroid outlier detection
-    \end{center}
+    \end{tabular}
+  \end{center}
 
-  \end{multicols}
+%  \end{multicols}
+
+  Andre methoder, f.eks. afstand fra middel vektor, outlier
+  via K-means clustering.
 
 \end{frame}
 
