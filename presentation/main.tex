@@ -114,60 +114,42 @@
 % 1.1
 \subsection*{}
 
-
 \begin{frame}
 
-  \frametitle{Oversigt over systemet: Crawler}
+  \frametitle{Oversigt over systemet: \only<1>{Crawler}\only<2>{MedLine}\only<3>{TermDoc}\only<4>{TermDoc / DiseaseMatrix}\only<5>{TF-IDF}}
 
   \begin{center}
-    \includegraphics[width=1.0\textwidth]{system_overview1}
+    \only<1>{\includegraphics[width=1.0\textwidth]{diagram/system_overview1}}
+    \only<2>{\includegraphics[width=1.0\textwidth]{diagram/system_overview2}}
+    \only<3>{\includegraphics[width=1.0\textwidth]{diagram/system_overview3}}
+    \only<4>{\includegraphics[width=1.0\textwidth]{diagram/system_overview4}}
+    \only<5>{\includegraphics[width=1.0\textwidth]{diagram/system_overview5}}
   \end{center}
 
 \end{frame}
+
+%% \begin{frame}
+
+%%   \frametitle{Konstruktion af databasen}
+
+%%   Inds\ae t tegning af interaktion mellem vores system og rarediseases, samt vores system og pubmed, endende med Medline Records.
+
+%%   (evt. se figur 2.2 side 17)
+
+%% \end{frame}
+
 \begin{frame}
 
-  \frametitle{Oversigt over systemet: MedLine}
+  \frametitle{Vector space model - Term doc matrix}
+
+%%   Syntes denne skal op f\o r TF-IDF, da det ikke mening at snakke om
+%%   TF-IDF uden f\o rst at have en term-doc matrix.
 
   \begin{center}
-    \includegraphics[width=1.0\textwidth]{system_overview2}
+    \includegraphics[width=0.40\textwidth]{diagram/termdoc}
   \end{center}
 
-\end{frame}
-\begin{frame}
-
-  \frametitle{Oversigt over systemet: TermDoc}
-
-  \begin{center}
-    \includegraphics[width=1.0\textwidth]{system_overview3}
-  \end{center}
-  
-\end{frame}
-\begin{frame}
-
-  \frametitle{Oversigt over systemet: TermDoc / DiseaseMatrix}
-
-  \begin{center}
-    \includegraphics[width=1.0\textwidth]{system_overview4}
-  \end{center}
-  
-\end{frame}
-\begin{frame}
-
-  \frametitle{Oversigt over systemet: TF-IDF}
-
-  \begin{center}
-    \includegraphics[width=1.0\textwidth]{system_overview5}
-  \end{center}
-  
-\end{frame}
-
-\begin{frame}
-
-  \frametitle{Konstruktion af databasen}
-
-  Inds\ae t tegning af interaktion mellem vores system og rarediseases, samt vores system og pubmed, endende med Medline Records.
-
-  (evt. se figur 2.2 side 17)
+  $d_j$ hvor er en transponeret s\o jle vektor.
 
 \end{frame}
 
@@ -197,24 +179,9 @@
 
 \begin{frame}
 
-  \frametitle{Vector space model - Term doc matrix}
-
-  Syntes denne skal op f\o r TF-IDF, da det ikke mening at snakke om
-  TF-IDF uden f\o rst at have en term-doc matrix.
-
-  \begin{center}
-    \includegraphics[width=0.40\textwidth]{diagram/termdoc}
-  \end{center}
-
-  $d_j$ hvor er en transponeret s\o jle vektor.
-
-\end{frame}
-
-\begin{frame}
-
   \frametitle{Vector space model - Cosine score}
 
-  Udregning af vinkel mellem en symptom liste og et document:
+  Udregning af vinkel mellem en symptom liste og et dokument:
   
   \[
   \cos \theta_{D_j} = \frac{Q \circ D_j}{|Q| \cdot |D_j|}
@@ -236,35 +203,36 @@
 
 \begin{frame}
 
-  \frametitle{Outlier detection}
-
-  Hvor fungere outlier detection??? Kan man goere det anderledes
-
-\end{frame}
-
-\begin{frame}
-
   \frametitle{Udregning af score for en sygdom}
   
-  $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
+  $\textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score},
+  \textrm{d3}_{score}, \textrm{d4}_{score} \}$
 
   \begin{itemize}
-    \item Cosine Mean
+    \item Cosine ``Mean'' (Sum normaliseret)
       \begin{itemize}
 %        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
-        \visible<1->{\item $\textrm{disease}_j = \textrm{mean}(\{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \}) $}
+        \visible<1->{\item $\textrm{disease}_j =
+          \{\textrm{d1}_{score}, \textrm{d2}_{score},
+          \textrm{d3}_{score}, \textrm{d4}_{score} \}$}
       \end{itemize}
     \item Cosine Median
       \begin{itemize}
-        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \only<1>{\textrm{d2}_{score}} \only<2->{\textbf{d2}_{\mathbf{score}}}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
+        \visible<1->\item $ \textrm{disease}_j =
+        \{\textrm{d1}_{score}, \only<1>{\textrm{d2}_{score}}
+        \only<2->{\textbf{d2}_{\mathbf{score}}}, \textrm{d3}_{score},
+        \textrm{d4}_{score} \}$
       \end{itemize}
     \item Cosine Max
       \begin{itemize}
-        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \only<1-2>{\textrm{d4}_{score}} \only<3->{\textbf{d4}_{\mathbf{score}}} \} $
+        \visible<1->\item $ \textrm{disease}_j =
+        \{\textrm{d1}_{score}, \textrm{d2}_{score},
+        \textrm{d3}_{score}, \only<1-2>{\textrm{d4}_{score}}
+        \only<3->{\textbf{d4}_{\mathbf{score}}} \}$
       \end{itemize}
-    \item Sum (P\aa\ disease matrix)
+    \item Sum unormaliseret (P\aa\ disease matrix)
       \begin{itemize}
-        \item final score: $\textrm{disease}_j \sum_{i \in I} t_{ji} $
+        \item $\textrm{disease}_j = \sum_{i \in I} t_{ji}$
       \end{itemize}
   \end{itemize}
 
@@ -318,10 +286,9 @@
 
   \frametitle{Clustering af resultater}
 
-  Inds\ae t billede af clustering.
-
-  Hvorfor er det en god ide at cluster resultaterne, man kan se hvilke
-  af de fundne sygdomme der minder om hinanden.
+  \begin{center}
+    \includegraphics[width=0.90\textwidth]{diagram/cluster_cat_scratch.jpg}
+  \end{center}
 
 \end{frame}
 
@@ -332,6 +299,35 @@
 \begin{frame}
 
   \frametitle{Udvidelser}
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Outlier detection}
+
+  \begin{multicols}{2}
+    {\scriptsize
+    \begin{tabular}{|l|r|r|r|r|r|}
+      \hline
+      DM    & D$_1$ & D$_2$ & D$_3$ & D$_4$ & DTO \\
+      \hline
+      D$_1$ &   1.0 &   0.3 &   0.7 &   0.8 & 2.8 \\
+      \hline
+      D$_2$ &   0.3 &   1.0 &   0.5 &   0.6 & 2.4 \\
+      \hline
+      D$_3$ &   0.7 &   0.5 &   1.0 &   0.3 & 2.5 \\
+      \hline
+      D$_4$ &   0.8 &   0.6 &   0.3 &   1.0 & 2.7 \\
+      \hline
+    \end{tabular} \\
+    }
+    
+    \begin{center}
+      Inds\ae t tegning af centroid outlier detection
+    \end{center}
+
+  \end{multicols}
 
 \end{frame}
 
