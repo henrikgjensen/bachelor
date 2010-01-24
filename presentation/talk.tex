@@ -92,35 +92,78 @@ pdfkeywords={Diagnosing rare diseases, text mining}
 \begin{document}
 
 \begin{itemize}
-  \item Behovet?
+
+  \item Systemet
     \begin{itemize}
-      \item L\ae ger kan umuligt vide altid, \ldots.
-      \item L\ae ger har ofte kun en begr\ae nset m\ae ngde tid per
-        patient, s\aa\ hvis l\ae gen kan hj\ae lpes, s\aa\ b\o r han
-        hj\ae lpes.
-      \item M\ae ngden af information omkring sygdomme \o ges hver
-        dag, derfor kan det v\ae re sv\ae rt at f\o lge med.
+      \item Oversigt
+        \begin{itemize}
+          \item Data fra raredisease list, crawler $->$ SIR som henter MedLine Records (Stopword removal)
+          \item Konstruktion af Term-Doc i stemmed og ikke stemmed udgave
+          \item Konstruktion af Disease matrix i stemmed og ikke stemmed udgave
+          \item TF-IDF transformation af indgangene i Term-Doc og Disease matrix.
+          \item Heuristikkerne
+          \item Hvad er der nu af muligheder? Outlier detection
+          \item Hvad mere? LSA, lav en Term-Doc baseret p\aa\ det semantiske rum.
+          \item Kan der g\o res mere? Tilf\o jelse af flere information kilder.
+        \end{itemize}
+      \item Vector space model - \textbf{Term-Doc}, hvad er det?
+        \begin{itemize}
+          \item En matrix, hvor en r\ae kke er et dokument og s\o jlerne udg\o r de forskellige termer.
+        \end{itemize}
+      \item TF-IDF, v\ae gtning af termer
+        \begin{itemize}
+          \item Der foretages f\o rst $\log$ transformation af term frekvensen
+          \item Der ganges nu den inverse dokument frekvensens p\aa\ .
+          \item Dokument vektoren normaliseres nu.
+        \end{itemize}
+      \item Vector space model - \textbf{Cosine score}
+        \begin{itemize}
+          \item Standard cosine mellem to vektorer
+          \item Det svarer ogs\aa\ til \ldots
+          \item Allerede normaliseret dokument vektor?, proportionalt
+            med, ser bort fra $\frac{1}{I}$, da i er den samme for
+            alle dokumenterne, denne fungere s\aa\ ledes som en
+            skalar.
+        \end{itemize}
+      \item Scor en sygdom
+        \begin{itemize}
+          \item Cosine 'mean', it not really a mean value, it is normalized sum, for real mean see table 4.6
+          \item Cosine median, v\ae lger median score i listen.
+          \item Cosine max, v\ae lger max score i listen.
+          \item Sum, summer dokument v\ae rdierne unormaliseret.
+        \end{itemize}
+      \item BMJ Cases
 
-    \end{itemize}
+      \item Orpha.net
 
-  \item Behovet 2?
-    \begin{itemize}
-      \item 
-      \item Globalisering, sygdomme er ikke l\ae ngere begr\ae nset i
-        deres position, de kan nu sprede sig over gr\ae nser uden
-        frygt for at skulle vise pas.
-      \item Lokation: en sj\ae lden sygdom et sted er ikke n\o
-        dvendigvis sj\ae lden alle steder, grundet ovenst\aa ende.
+      \item Blind test
 
-    \end{itemize}
-  \item L\o sningen!
+      \item Forkerte forslag
 
-    \begin{itemize}
+      \item Forkerte forslag 2
 
-      \item 1
-
-      \item 2
-
+      \item Clustering
+        \begin{itemize}
+          \item Cat scratch nummer 1
+          \item Find laveste sygdom.            
+        \end{itemize}
+      \item Udvidelser
+        \begin{itemize}
+          \item Statistisk model, prior probability for sygdomme,
+            probability bestemt efter lokation, evt. \aa rstid, k\o n,
+            race osv.
+          \item Tilf\o jelse af andre heuristikker, andre
+            transformationer af term frekvensen.
+          \item Udtr\ae k af n\o gle ord for sygdomme evt. ved at
+            bruge LSA
+          \item Sammenligninger af s\o gninger, boolske operatorer til
+            s\o gning.
+          \item Outlier detection, hvordan kan man g\o re det? Vi
+            bruger distance matrix, man kunne ogs\aa\ udregne en
+            middelvektor, kan bruge K-means clustering (baseret
+            p\aa\ tilf\ae ldige punkter, virker ikke n\o dvendigvis
+            s\ae rligt godt)
+        \end{itemize}
     \end{itemize}
 
 \end{itemize}
