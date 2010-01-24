@@ -18,65 +18,9 @@
 \linespread{1.05}                  % Palatino needs more leading (space between lines)
 \renewcommand{\ttdefault}{cmtt}    % alternative monospace font
 
-%%%% MATH STUFF %%%%%%
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{ulem}
-\usepackage{mathrsfs}
 
-%%%% GRAPHICS
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{listings}
-\usepackage{color}
-
-\usepackage{float}
-\usepackage[small,bf]{caption}
-%\usepackage{xypic}
-\usepackage[table]{xcolor}
-\usepackage{subfig}
-%\usepackage{dirtree}
-\usepackage{ulem}
-\usepackage{slashbox}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% CONFIGURATIONS %%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lstset{language=Python, basicstyle=\scriptsize, showstringspaces=false, numbers=none, stepnumber=1, numberstyle=\tiny}
-
-\hyphenation{mand-en} %%% Add here if something does not break right. Like this nu-clear-test-bomb-ing
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Kommandoer
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\newcommand{\old}[1]{\oldstylenums{#1}}
-%\newcommand{\old}[1]{{#1}}
-\newcommand{\mailto}[1]{\href{mailto:#1}{#1}}
-%\newcommand{\resume}[1]{\begin{abstract}{\sffamily #1}\end{abstract}}
-%\newcommand{\angles}[1]{\langle\textrm{#1}\rangle}
-%\newcommand{\colbox}[2]{\fcolorbox{black}{#1}{#2}}
-%\renewcommand{\thefigure}{\thechapter.\thesection.\arabic{figure}}
-%\renewcommand{\thetable}{\thechapter.\thesection.\arabic{table}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Titel, forfatter og dato
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\hypersetup{
-colorlinks,%
-citecolor=black,%
-filecolor=black,%
-linkcolor=black,%
-urlcolor=black,%
-bookmarksopen=false,
-pdftitle={Support decision system for diagnosing rare diseases using machine learning for medical text mining},
-pdfauthor={Henrik G. Jensen and Michael Andersen},
-pdfsubject={Text mining, rare diseases},
-pdfkeywords={Diagnosing rare diseases, text mining}
-}
-
-
+\usepackage{a4wide}
+\usepackage[left=1cm,top=1cm,right=1cm,nohead,nofoot]{geometry}
 % How to change margins...
 % use voffset for vertical
 % use hoffset for horisontal
@@ -91,13 +35,15 @@ pdfkeywords={Diagnosing rare diseases, text mining}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
+%\setlength{\hoffset}{-3cm}
+
 \begin{itemize}
 
   \item Systemet
     \begin{itemize}
       \item Oversigt
         \begin{itemize}
-          \item Data fra raredisease list, crawler $->$ SIR som henter MedLine Records (Stopword removal)
+          \item Data fra raredisease list, crawler til SIR som henter MedLine Records (Stopword removal)
           \item Konstruktion af Term-Doc i stemmed og ikke stemmed udgave
           \item Konstruktion af Disease matrix i stemmed og ikke stemmed udgave
           \item TF-IDF transformation af indgangene i Term-Doc og Disease matrix.
@@ -121,9 +67,7 @@ pdfkeywords={Diagnosing rare diseases, text mining}
           \item Standard cosine mellem to vektorer
           \item Det svarer ogs\aa\ til \ldots
           \item Allerede normaliseret dokument vektor?, proportionalt
-            med, ser bort fra $\frac{1}{I}$, da i er den samme for
-            alle dokumenterne, denne fungere s\aa\ ledes som en
-            skalar.
+            med, ser bort fra $\frac{1}{I}$ fungere som en skalar.
         \end{itemize}
       \item Scor en sygdom
         \begin{itemize}
@@ -133,36 +77,63 @@ pdfkeywords={Diagnosing rare diseases, text mining}
           \item Sum, summer dokument v\ae rdierne unormaliseret.
         \end{itemize}
       \item BMJ Cases
-
+        \begin{itemize}
+          \item Sum-disease matrix 8 ud af 13.
+          \item Cosine-mean sqrt term doc 6 ud af 13.
+          \item Cosine max term doc 4 ud af 13.
+          \item Cosine mean term doc 4 ud af 13.
+          \item Se figur 4.15 side 62
+        \end{itemize}
       \item Orpha.net
-
+        \begin{itemize}
+          \item Sum-disease matrix 20 ud af 29.
+          \item Cosine-mean sqrt term doc 13 ud af 20.
+          \item Cosine max term doc 19 ud af 20.
+          \item Cosine mean term doc 8 ud af 29.
+          \item Se figur 4.16 side 63
+        \end{itemize}
       \item Blind test
-
+        \begin{itemize}
+          \item Sum-disease matrix 3 ud af 5.
+          \item Har kun testet sum med disease matrix, da vi kun
+            leverede et svar tilbage til Henrik L. J\o rgensen.
+          \item Se figur 4.19, side 66.
+        \end{itemize}
       \item Forkerte forslag
-
+        \begin{itemize}
+          \item Protein / Gene termer har f\aa et for meget v\ae gt.
+          \item Hvorfor
+        \end{itemize}
       \item Forkerte forslag 2
-
+        \begin{itemize}
+          \item Visse sygdomme er baseret p\aa\ information fra
+            f\aa\ MedLine Records.
+          \item Mangler diversitet i informationen, mangler synonymer
+            for symptomerne.
+          \item Informationen fra f\o rste 500 MedLine records. Alt:
+            v\ae lg ligefordelt.
+        \end{itemize}
       \item Clustering
         \begin{itemize}
-          \item Cat scratch nummer 1
-          \item Find laveste sygdom.            
+          \item Clustering er baseret p\aa\ hvad systemet giver tilbage, alts\aa\ hvad det placerer i top 20.
+          \item Cluster sygdommene mod hinanden, p\aa\ trods af at de
+            ligger f.eks. nummer 1 og nummer 19 godt minde om
+            hinanden, top 20, baseret p\aa\ f\aa\ symptomer,
+            informationen er \emph{dybere} end 8-10 termer som udg\o r
+            query vektoren.
         \end{itemize}
       \item Udvidelser
         \begin{itemize}
           \item Statistisk model, prior probability for sygdomme,
-            probability bestemt efter lokation, evt. \aa rstid, k\o n,
-            race osv.
+            probability bestemt efter lokation, k\o n, race osv.
           \item Tilf\o jelse af andre heuristikker, andre
             transformationer af term frekvensen.
           \item Udtr\ae k af n\o gle ord for sygdomme evt. ved at
             bruge LSA
           \item Sammenligninger af s\o gninger, boolske operatorer til
             s\o gning.
-          \item Outlier detection, hvordan kan man g\o re det? Vi
-            bruger distance matrix, man kunne ogs\aa\ udregne en
-            middelvektor, kan bruge K-means clustering (baseret
-            p\aa\ tilf\ae ldige punkter, virker ikke n\o dvendigvis
-            s\ae rligt godt)
+          \item Outlier detection, Vi bruger distance matrix. Alt:
+            udregne en middelvektor, kan bruge K-means clustering (Random)
         \end{itemize}
     \end{itemize}
 

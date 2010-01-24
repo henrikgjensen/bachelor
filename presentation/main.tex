@@ -43,8 +43,8 @@
   \begin{block}{Problemet}
 
     \begin{itemize}
-      \item Begr\ae nset tid per patient
-      \item Ukendte symptomer / læge i tvivl
+      \item Begr\ae nset tid per patient.
+      \item Ukendte symptomer / læge i tvivl.
       \item Sj\ae ldne sygdomme drukner i m\ae ngden af information.
     \end{itemize}
     
@@ -56,9 +56,9 @@
 
     \begin{itemize}
     
-      \item System specifikt for sjældne sygdomme
-      \item System til hurtige nemme opslag for lægen i tvivl
-      \item System som er up-to-date og informations-rigt
+      \item System specifikt for sjældne sygdomme.
+      \item System til hurtige nemme opslag for lægen i tvivl.
+      \item System som er up-to-date og informations-rigt.
 
     \end{itemize}
     
@@ -84,10 +84,10 @@
 
     \begin{itemize}
 
-      \item Konstruer speciel database
-      \item V\ae gtning af termer
-      \item Vector space model
-      \item Udregning af score for s\o gning
+      \item Konstruer speciel database.
+      \item V\ae gtning af termer.
+      \item Vector space model.
+      \item Udregning af score for s\o gning.
       \item Forsl\aa\ top 20 sygdomme.
 
     \end{itemize}
@@ -143,7 +143,7 @@
     \only<2>{\includegraphics[width=0.65\textwidth]{diagram/termdoc2}}
   \end{center}
 
-  $d_j$ hvor er en transponeret s\o jle vektor.
+  $d_j$ hvor er en transponeret s\o jle vektor og $t_i$ er en term vektor.
 
 \end{frame}
 
@@ -181,7 +181,7 @@
   \cos \theta_{D_j} = \frac{Q \circ D_j}{|Q| \cdot |D_j|}
   \]
   
-  Ovenst\aa ende svarer til
+  Ovenst\aa ende svarer til:
   
   \[
   \textrm{score}_{D} = \frac{1}{|I|}\frac{1}{|x_{dw}|} \sum_{i \in I} x_{dw}
@@ -332,11 +332,11 @@
 
   \frametitle{Forkerte forslag 2}
   \begin{itemize}
-    \item\visible<1->{Acropectorovertebral dysplasia information er baseret p\aa\ en MedLine Record.}
+    \item\visible<1->{Sygdommen \emph{Acropectorovertebral dysplasia}'s information er baseret p\aa\ en MedLine Record.}
 
-    \item\visible<2->{Der er brug for mere diversitet i termerne / flere synonymer for symptomer}
+    \item\visible<2->{Der er brug for mere diversitet i termerne / flere synonymer for symptomer.}
 
-    \item\visible<3->{Der mangler noget her!!!}
+    \item\visible<3->{Informationen er baseret p\aa\ h\o jest 500 MedLine Records.}
   \end{itemize}
 
 \end{frame}
@@ -362,9 +362,9 @@
   \frametitle{Udvidelser}
 
   \begin{itemize}
-    \item Statistisk model
+    \item Statistisk model.
     \item Tilf\o jelse af andre heuristikker.
-    \item Keyword extraction fra sygdomme
+    \item Keyword extraction fra sygdomme.
     \item Udvidet mulighed for s\o gning, f.eks. sammenligning af s\o
       gninger, boolske operatorer.
   \end{itemize}
@@ -375,7 +375,7 @@
 
   \frametitle{Outlier detection}
 
-  Afstands matrix hvor cosine er brugt som afstandsm\aa l. Sidste s\o
+  Afstandsmatrix hvor cosine er brugt som afstandsm\aa l. Sidste s\o
   jle beskriver mean distance to others.
 
 %  \begin{multicols}{2}
