@@ -166,7 +166,7 @@
   Udregning af vinkel mellem en symptom liste og et dokument:
   
   \[
-  \cos \theta_{D_j} = \frac{Q \circ D_j}{|Q| \cdot |D_j|}
+  \cos \theta_{D_d} = \frac{Q \circ D_d}{|Q| \cdot |D_d|}
   \]
   
   Ovenst\aa ende svarer til:
@@ -188,31 +188,27 @@
   \frametitle{Udregning af score for en sygdom}
   Score for sygdom j:
   $\textrm{disease}_j = \{\textrm{d}_1, \textrm{d}_2,
-  \textrm{d}_3, \textrm{d}_4 \}$
+  \textrm{d}_3, \textrm{d}_4 \}$, hvor $d_i$ er dokument $i$.
 
   \begin{itemize}
     \item Cosine Median
       \begin{itemize}
-        \visible<1->\item $ \textrm{disease}_j =
+        \item $ \textrm{disease}_j =
         \{\textrm{d}_1, \only<1>{\textrm{d}_2}
         \only<2->{\textbf{d}_{\mathbf{2}}}, \textrm{d}_3,
         \textrm{d}_{4} \}$
       \end{itemize}
     \item Cosine Max
       \begin{itemize}
-        \visible<1->\item $ \textrm{disease}_j =
+        \item $ \textrm{disease}_j =
         \{\textrm{d}_{1}, \textrm{d}_{2},
         \textrm{d}_{3}, \only<1-2>{\textrm{d}_{4}}
         \only<3->{\textbf{d}_{\mathbf{4}}} \}$
       \end{itemize}
     \item Cosine ``Mean'' (Sum normaliseret)
       \begin{itemize}
-%        \visible<1->\item $ \textrm{disease}_j = \{\textrm{d1}_{score}, \textrm{d2}_{score}, \textrm{d3}_{score}, \textrm{d4}_{score} \} $
-        \visible<1->{\item $\textrm{disease}_j = \sum_{i \in I}
-          \{\textrm{d}_1, \textrm{d}_2, \textrm{d}_3,
-          \textrm{d}_4 \}$}
-%%           \{\textrm{d1}_{score}, \textrm{d2}_{score},
-%%           \textrm{d3}_{score}, \textrm{d4}_{score} \}$}
+        \item $\textrm{disease}_j = \sum_{i \in I} \{\textrm{d}_1,
+          \textrm{d}_2, \textrm{d}_3, \textrm{d}_4 \}$
       \end{itemize}
     \item Sum unormaliseret (P\aa\ disease matrix)
       \begin{itemize}
@@ -225,6 +221,48 @@
 \section{Resultater}
 
 \subsection*{}
+
+\begin{frame}
+
+  \frametitle{Diagnosticering af Sygdomme}
+
+  \begin{itemize}
+    \visible<1->\item Hvordan testes systemet? Eksempler:
+  \end{itemize}
+
+  \visible<2->{
+  \begin{tabular}{|l|p{5cm}|}
+    \hline
+    Infective endocarditis & Acute, aortic, regurgitation, depression,
+    abscess \\
+    \hline
+  \end{tabular}
+  }
+  
+  \hspace*{4mm}
+
+  \visible<3->{
+  \begin{tabular}{|l|p{5cm}|}
+    \hline
+    Cholera \quad & severe diarrhea and vomiting \\
+    \hline
+  \end{tabular}
+  }
+
+  \hspace*{4mm}
+
+  \visible<4->{
+  \begin{tabular}{|l|p{5cm}|}
+    \hline
+    Kleine Levin Syndrome & Jewish boy age 16, monthly seizures, sleep
+    deficiency, aggressive and irritable when woken, highly increased
+    sexual appetite and hunger \\
+    \hline
+  \end{tabular}
+  }
+
+
+\end{frame}
 
 \begin{frame}
 
@@ -334,7 +372,6 @@
   \frametitle{Clustering af resultater}
 
   \begin{center}
-%\includegraphics[width=0.90\textwidth]{diagram/cluster_cat_scratch.jpg}
      \only<1>{\includegraphics[width=0.90\textwidth]{diagram/cluster_cat_scratch.jpg}}
      \only<2>{\includegraphics[width=0.90\textwidth]{diagram/cluster_cat_scratch2.jpg}}
   \end{center}
@@ -390,19 +427,12 @@
 
 \end{frame}
 
-% 1.2
+\section{Konklusion}
 
-%% \subsection*{}
-%% \begin{frame}
+\begin{frame}
 
-%%   \frametitle{Sjældne sygdomme}
+  \frametitle{Konklusion}
 
-%%   % Evt ledt videre fra 'globalisering'?
-%%   \begin{itemize}
-%%     \item 
-%%     \item
-%%   \end{itemize}
-
-%% \end{frame}
+\end{frame}
 
 \end{document}
