@@ -145,7 +145,7 @@
   x_{dw}^{log} = \log{(1 + x_{dw})}
   \]
 
-  Der bruges TF-IDF til v\ae gtning af termer, dette er for at fremh\ae ve term som sj\ae lendt optr\ae der og nedv\ae gte ofte forekommende ord:
+  Der bruges TF-IDF til v\ae gtning af termer. Dette er for at fremh\ae ve term som sj\ae dldent optr\ae der og nedv\ae gte ofte forekommende ord:
 
   \[
   x_{dw}^{tfidf} = x_{dw}^{log} \cdot \log{\frac{D}{\sum_{d\prime = 1}^{D}\delta_{d\prime w}}}
@@ -163,16 +163,16 @@
 
   \frametitle{Vector space model - Cosine score}
 
-  Udregning af vinkel mellem en symptom liste og et dokument:
+  Udregning af vinkel mellem en søgevektor og et dokument:
   
   \[
-  \cos \theta_{D_d} = \frac{Q \circ D_d}{|Q| \cdot |D_d|}
+  \cos \theta_{d} = \frac{\overrightarrow{q} \circ \overrightarrow{d}}{|\overrightarrow{q}| \cdot |\overrightarrow{d}|}
   \]
   
   Ovenst\aa ende svarer til:
   
   \[
-  \textrm{score}_{D_d} = \frac{1}{|I|}\frac{1}{|x_{dw}|} \sum_{i \in I} x_{dw}
+  \textrm{score}_{d} = \frac{1}{|I|}\frac{1}{|x_{dw}|} \sum_{i \in I} x_{dw}
   \]
   
   Hvis der p\aa\ forh\aa nd er foretaget normalisering af dokument vektoren:
