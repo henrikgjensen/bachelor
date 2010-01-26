@@ -1,0 +1,84 @@
+\documentclass[a4paper, 10pt, english, final]{report}
+%\usepackage[utf8]{inputenc}
+%\usepackage{a4wide}
+
+%e\usepackage[draft]{fixme}
+
+
+
+%%%%% TYPE SETTING %%%%%
+\usepackage[T1]{fontenc}
+%\usepackage{garamond}
+%\renewcommand{\rmdefault}{ugm}
+
+\usepackage[british]{babel}
+\usepackage{verbatim}
+
+\usepackage{palatino}              % font : garamond
+\linespread{1.05}                  % Palatino needs more leading (space between lines)
+\renewcommand{\ttdefault}{cmtt}    % alternative monospace font
+
+
+\usepackage{a4wide}
+\usepackage[left=1cm,top=1cm,right=1cm,nohead,nofoot]{geometry}
+% How to change margins...
+% use voffset for vertical
+% use hoffset for horisontal
+%% \newenvironment{changemargin}[1]{
+%%   \begin{list}{}{
+%%       \setlength{\hoffset}{#1}
+%%     }
+%%   \item[]}{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Indhold
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%\setlength{\hoffset}{-3cm}
+
+\begin{itemize}
+
+  \item \textbf{L\o sningen:} Derfor har vi valgt at pr\o ve at l\o se problemet med diagnosticering af sj\ae ldne sygdome. Dette g\o r vi ved at lave en special database som indeholder information kun omkring sj\ae ldne sygdomme. Informationen arrangere i en vector space model, i form af en term document matrix (mere om dette senere). For ikke at visse termer f\aa r for h\o j v\ae gt skal der benyttes v\ae gtning af termerne, her bruges TF-IDF (mere senere). Systemet skal nu v\ae re i stand til at give en sygdom en score s\aa ledes at forskellige sygdomme, til dette udnyttes egenskaberne ved vector space modellen, som g\o r at man kan udregne score som man udregner vinkel mellem to vektorer. Systemeet foresl\aa r de 20 h\o jest scorende sygdomme.
+
+    \item \textbf{PubMedSIR:} SIR module tager nu informationerne fra Crawler modulet og s\o ger p\aa\ PubMed udfra de informationer som er tilg\ae ngelige, dette er f.eks. h\aa ndlavet s\o gestreng, PubMed eller OMIM link uid eller sygdomsnavnet. Der er ligeledes plads til s\o gning p\aa\ synonymer. Henter kun med abstract, medmindre uid link, s\aa\ skal der foretages en lokal rensning, hvilket g\o r at vi ikke n\o dvendigvis f\aa r 500 artikler per sygdom.
+
+    \item \textbf{DiseaseMatrix:} Som et alternativ til Term Doc Matricen har vi valgt ogs\aa\ at lave en Disease Matrix, som best\aa r af informationerne fra sub matricerne summeret til en enkelt vektor som udg\o r informationen vi har omkring den enkelte vektor. \textbf{TF-IDF:} Der foretages nu TF-IDF transformation af b\aa de term doc og disease matricen, dette er en meget brugt transformation indenfor IR, selvom mange andre ogs\aa\ eksistere (mere om dette senere). For at mindske st\o jen i databasen ville det v\ae re fordelagtigt at k\o re \textbf{outlier detection} p\aa\ databasen, vi har lavet et modul til dette, men n\aa ede desv\ae rre ikke at teste dette, vi vender tilbage til dette senere.
+
+    \item \textbf{TermDoc:} er simpelt en matrice hvor dokumenterne svarer til r\ae kke vektorer og termerne udg\o r s\o jle vektorer og engangene svarer til ordantallet i dokument$_j$ og term $_i$. F\o rste r\ae kke og s\o jle bliver brugt til dokumenthash og termhash. I en senere udgave vil det g\o re det enkelere at tage hashene ud af selve matricen.
+
+    \item \textbf{Cosine measure:} Ved benyttelse af vector space modellen kan der bruges normal vektor matematik til at udregne hvor meget en s\o ge vektor minder om et dokument i databasen. Ovenst\aa ende kan omskrives til f\o lgende summering over termerne i dokument vektoren, hvor $\frac{1}{|I|}$ er normalisering i forhold til s\o ge vektoren og $\frac{1}{|x_{dw}|}$ er term $w$ i dokument $d$. Da vores system ikke skal sammen ligne forskellige s\o ge vektorer mod dokumenter og vores dokument vektorer i forvejen er normaliseret er dette proportionalt med den nederste formel. Faktoren $\frac{1}{|I|}$ svarer med andre ord til en skalar af scoren.
+
+    \item \textbf{DiseaseMatrix:} Som et alternativ til Term Doc Matricen har vi valgt ogs\aa\ at lave en Disease Mat
+rix, som best\aa r af informationerne fra sub matricerne summeret til en enkelt vektor som udg\o r informationen vi har omkring den enkelte vektor. \textbf{TF-IDF:} Der foretages nu TF-IDF transformation af b\aa de term doc og diseas\
+ matricen, dette er en meget brugt transformation indenfor IR, selvom mange andre ogs\aa\ eksistere (mere om dette senere). For at mindske st\o jen i databasen ville det v\ae re fordelagtigt at k\o re \textbf{outlier detection} p\aa\\
+databasen, vi har lavet et modul til dette, men n\aa ede desv\ae rre ikke at teste dette, vi vender tilbage til dette
+ senere.
+
+    \item \textbf{TermDoc:} er simpelt en matrice hvor dokumenterne svarer til r\ae kke vektorer og termerne udg\o r\
+s\o jle vektorer og engangene svarer til ordantallet i dokument$_j$ og term $_i$. F\o rste r\ae kke og s\o jle blive\
+ brugt til dokumenthash og termhash. I en senere udgave vil det g\o re det enkelere at tage hashene ud af selve matricen.
+
+    \item \textbf{Cosine measure:} Ved benyttelse af vector space modellen kan der bruges normal vektor matematik ti\
+ at udregne hvor meget en s\o ge vektor minder om et dokument i databasen. Ovenst\aa ende kan omskrives til f\o lgen\
+e summering over termerne i dokument vektoren, hvor $\frac{1}{|I|}$ er normalisering i forhold til s\o ge vektoren o\
+ $\frac{1}{|x_{dw}|}$ er term $w$ i dokument $d$. Da vores system ikke skal sammen ligne forskellige s\o ge vektorer\
+mod dokumenter og vores dokument vektorer i forvejen er normaliseret er dette proportionalt med den nederste formel.\
+Faktoren $\frac{1}{|I|}$ svarer med andre ord til en skalar af scoren.
+
+    \item \textbf{Resultat introduktion:} Hvordan tester vi s\aa\ vores system? Vi har pr\o vet at finde test sager som ikke er biased i forhold til vores system. Vi har derfor valgt at bruger 13 test sager fra Googling for a Diagnosis, 29 test sager som vi har valgt udfra Orpha.net webside hvor vi har taget hvad der st\aa r efter ``characterized by'' i nogle tilf\ae lde har vi reduceret s\o gevektoren, se eksempel fra rapporten. Her kommer tre eksempler, en fra hver test.
+
+    \item \textbf{Resultater} BMJ: Sum-disease matrix: 8 / 13, Cosine-mean sqrt term doc: 6 / 13 Cosine max term doc 4 / 13, Cosine mean term doc: 4 / 13, Se figur 4.15 side 62
+      Orpha.net: Sum-disease matrix: 20 / 29, Cosine-mean sqrt term doc: 13 / 29, Cosine max term doc: 19 / 29, Cosine mean term doc: 8 / 29, Se figur 4.16 side 63
+      Blind test: Sum-disease matrix: 3 / 5, har kun testet sum med disease matrix, da vi kun leverede et svar tilbage til Henrik L. J\o rgensen, se figur 4.19, side 66.
+
+    \item \textbf{Clustering:} Sygdommene som bliver valgt bliver valgt udfra deres lighed med s\o ge vektoren og ikke med hinanden, herefter clusteres sygdommene mod hinanden, og det er muligt at se at selvom sygdomme bliver givet vidt forskellige placeringer indenfor top 20, s\aa\ kan sygdommene godt minde om hinanden. F.eks. bliver Cat scratch disease placeret i samme cluster som Cyclic neutropenia dette viser at clusteringen er foretaget p\aa\ alt informationen omkring sygdommene og ikke kun termerne indeholdt i s\o ge vektoren. Cat scratch disease ligger relativt t\ae t p\aa\ sygdom nummer 2 som er Kikuchi disease, samtidigt ligger den relativt langt fra Chediak-Higashi syndrome som bliver placeret som nummer 20.
+
+    \item \textbf{Outlier detection:} Den implementerede outlier detection fungere ved at udregne middel afstanden mellem samtlige dokument vektorer og s\aa\ fjerne den procent del der scorer lavest i forhold til de andre. Andre m\aa der at g\o re det p\aa\ er f.eks. ved at udregne middel vektoreren og s\aa\ sammenligne alle dokument vektorer til denne (giver samme resultatet som vores metode, er mindre beregningsm\ae ssig tung), bruge k-nearest neighbour.
+
+    \item \textbf{Konklusion:} Det ville v\ae re oplagt at afpr\o ve andre transformationer til v\ae gtning af termerne, dette kunne f.eks. v\ae re <Find andre transformation i IR-bogen>.
+      Vores system rammer konsistent omkring 60\% af sygdommene i top 20, dette er ikke state of the art, men systemet er ogs\aa\ mere t\ae nkt et prototype system som mere skulle vise at det ikke var h\aa bl\o st at fors\o ge at lave et s\aa dan system.
+
+\end{itemize}
+
+\end{document} 
