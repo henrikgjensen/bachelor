@@ -68,6 +68,131 @@
 \end{frame}
 
 \begin{frame}
+  
+  \only<1>{Hvad gik blind testen ud p\aa ?}
+  
+  \begin{scriptsize}
+    
+    \only<2>{
+
+      \hspace*{4mm}
+
+      \begin{tabular}{| p{5cm} | p{5cm} |}
+        \hline
+        
+        Dreng, normal ved f\o dslen bortset fra deformitet af begge
+        storet\ae er (de manglede et led). Udvikler sig normalt efterfl\o
+        gende. Ved 5 \aa rs alderen der viser knoglev\ae v uden
+        malignitetstegn. Kort tid efter biopsien udvikles mere
+        knoglev\ae kst, pr\ae cis der hvor man har sk\ae ret. & Boy,
+        normal birth, deformity of both big toes (missing joint),
+        quick development of bone tumor near spine and osteogenesis at
+        biopsy.\\
+
+        \hline
+        
+        Normally developed boy until age 5, where he progressively
+        developed the following symptoms: Talking difficulties, seizures,
+        ataxia, adrenal insufficiency and degeneration of visual and
+        auditory functions.& Normally developed boy age 5, progessive
+        development of talking difficulties, seizures, ataxia, adrenal
+        insufficiency and degeneration of visual and auditory functions \\
+        
+        \hline
+        
+        A boy age 14 comes to the doctor with yellow, keratotic plaques on
+        the skin of his palms and soles going up onto the dorsal
+        side. Both hands and feet are affected. He equally had swollen and
+        very vulnerable gums since the age of 4 with loss of most of his
+        permanent teeth. & Boy age 14, yellow, keratotic plaques on the
+        skin of palms and soles going up onto the dorsal side. Both hands
+        and feet are affected.\\
+        
+        \hline
+        
+      \end{tabular}
+    }
+
+
+    \only<3>{
+
+      \hspace*{4mm}
+
+      \begin{tabular}{| p{5cm} | p{5cm} |}
+        
+        \hline
+        
+        16-\aa rig j\o disk dreng har en til to gange om m\aa neden anfald,
+        hvor han f\o rst og fremmest skal sove utroligt meget - ca. 18
+        timer om dagen. Anfaldene varer ca en uges tid. Han \ae ndrer
+        karakter under anfaldene og bliver irritabel og aggressiv, n\aa r
+        han v\ae kkes. N\aa r han er v\aa gen i anfaldsperioden spiser han
+        helt utroligt store m\ae ngder mad, og hans appetit p\aa\ sex er
+        endvidere abnormt stor. & Jewish boy age 16, monthly seizures,
+        sleep deficiency, aggressive and irritable when woken, highly
+        increased sexual appetite and hunger.\\
+        
+        \hline
+        
+        The patient is a male child presenting at birth with numerous
+        malformations. He had midfacial retraction with a deep groove
+        under the eyes, and hypertelorism. A short nose with a low nasal
+        bridge and large low-set ears were noted. He had a wide mouth and
+        retrognathia. Hypertrichosis with bright reddish hair and a median
+        frontal cutaneous angioma were present. The neck was short with
+        redundant skin. Bilateral inguinal hernias, hypospadias with a
+        megameatus, and cryptorchidism were noted. & Male child,
+        malformations at birth, midfacial retraction with a deep groove
+        under the eyes, and hypertelorism, short nose with a low nasal
+        bridge and large low-set ears, wide mouth and
+        retrognathia. Hypertrichosis with bright reddish hair and a median
+        frontal cutaneous angioma, short neck with redundant skin,
+        Bilateral inguinal hernias, hypospadias with a megameatus, and
+        cryptorchidism \\
+        
+        \hline
+        
+      \end{tabular}
+    }      
+      
+      \only<4->{
+        \begin{tabular}{| p{5cm} | p{5cm} |}
+          
+          \hline
+          
+          16-\aa rig j\o disk dreng har en til to gange om m\aa neden anfald,
+          hvor han f\o rst og fremmest skal sove utroligt meget - ca. 18
+          timer om dagen. Anfaldene varer ca en uges tid. Han \ae ndrer
+          karakter under anfaldene og bliver irritabel og aggressiv, n\aa r
+          han v\ae kkes. N\aa r han er v\aa gen i anfaldsperioden spiser han
+          helt utroligt store m\ae ngder mad, og hans appetit p\aa\ sex er
+          endvidere abnormt stor. & Jewish boy age 16, monthly \only<5->\textbf{seizures},
+          \only<5->\textbf{sleep deficiency}, \only<5->\textbf{aggressive} and \only<5->\textbf{irritable} when woken, highly
+          \only<5->\textbf{increased sexual appetite} and \only<5->\textbf{hunger}.\\
+          
+          \hline
+          
+        \end{tabular}
+        
+      }
+
+  \end{scriptsize}
+
+  \hspace*{4mm}
+
+  \visible<6->{Hvad er det for en sygdom?}
+
+  \hspace*{4mm}
+
+  \visible<7->{
+    \begin{center}
+      \textbf{Kleine Levin syndrome}
+    \end{center}
+  }
+
+\end{frame}
+
+\begin{frame}
 
   \frametitle{Midlet}
 
@@ -131,7 +256,7 @@
     \only<2>{\includegraphics[width=0.65\textwidth]{diagram/termdoc2}}
   \end{center}
 
-  $d_j$ hvor er en transponeret s\o jle vektor og $t_i$ er en term vektor.
+  $d_j = (x_{j1}, \ldots, x_{jm})^t$ er en transponeret s\o jle vektor og $t_i = (x_{1i}, \ldots, x_{ni})$ er en term vektor.
 
 \end{frame}
 
@@ -145,7 +270,7 @@
   x_{dw}^{log} = \log{(1 + x_{dw})}
   \]
 
-  Der bruges TF-IDF til v\ae gtning af termer. Dette er for at fremh\ae ve term som sj\ae dldent optr\ae der og nedv\ae gte ofte forekommende ord:
+  Der bruges TF-IDF til v\ae gtning af termer. Dette er for at fremh\ae ve term som sj\ae lent optr\ae der og nedv\ae gte ofte forekommende ord:
 
   \[
   x_{dw}^{tfidf} = x_{dw}^{log} \cdot \log{\frac{D}{\sum_{d\prime = 1}^{D}\delta_{d\prime w}}}
@@ -172,13 +297,13 @@
   Ovenst\aa ende svarer til:
   
   \[
-  \textrm{score}_{d} = \frac{1}{|I|}\frac{1}{|x_{dw}|} \sum_{i \in I} x_{dw}
+  S_{d} = \frac{1}{|\overrightarrow{q}|}\frac{1}{|\overrightarrow{d}|} \sum_{w|w \in \overrightarrow{q}} x_{dw}
   \]
   
   Hvis der p\aa\ forh\aa nd er foretaget normalisering af dokument vektoren:
   
   \[
-  \propto  \sum_{i \in I} \widehat{x_{dw}}
+  \propto  \sum_{w|w \in \overrightarrow{q}} \widehat{x_{dw}}
   \]
   
 \end{frame}
@@ -187,32 +312,31 @@
 
   \frametitle{Udregning af score for en sygdom}
   Score for sygdom j:
-  $\textrm{disease}_j = \{\textrm{d}_1, \textrm{d}_2,
-  \textrm{d}_3, \textrm{d}_4 \}$, hvor $d_i$ er dokument $i$.
+  $\textrm{disease}_j = \{\textrm{S}_{d_{1j}}, \ldots, 
+  \textrm{S}_{d_{(n-1)j}}, \textrm{S}_{d_nj} \}$, hvor $d_i$ er dokument $i$.
 
   \begin{itemize}
     \item Cosine Median
       \begin{itemize}
         \item $ \textrm{disease}_j =
-        \{\textrm{d}_1, \only<1>{\textrm{d}_2}
-        \only<2->{\textbf{d}_{\mathbf{2}}}, \textrm{d}_3,
-        \textrm{d}_{4} \}$
+        \{\textrm{S}_{1j}, \only<1>{\textrm{S}_{2j}}
+        \only<2->{\textbf{S}_{\mathbf{2j}}}, \textrm{S}_{3j},
+        \textrm{S}_{4j} \}$
       \end{itemize}
     \item Cosine Max
       \begin{itemize}
         \item $ \textrm{disease}_j =
-        \{\textrm{d}_{1}, \textrm{d}_{2},
-        \textrm{d}_{3}, \only<1-2>{\textrm{d}_{4}}
-        \only<3->{\textbf{d}_{\mathbf{4}}} \}$
+        \{\textrm{S}_{1j}, \textrm{S}_{2j},
+        \textrm{S}_{3j}, \only<1-2>{\textrm{S}_{4j}}
+        \only<3->{\textbf{S}_{\mathbf{4j}}} \}$
       \end{itemize}
-    \item Cosine ``Mean'' (Sum normaliseret)
+    \item Cosine / Sum normaliseret
       \begin{itemize}
-        \item $\textrm{disease}_j = \sum_{i \in I} \{\textrm{d}_1,
-          \textrm{d}_2, \textrm{d}_3, \textrm{d}_4 \}$
+        \item \[ \textrm{disease}_j = \sum_{d | d \in \textrm{disease}_j} \sum_{w|w \in \overrightarrow{q}} \widehat{x_{dw}} \]
       \end{itemize}
     \item Sum unormaliseret (P\aa\ disease matrix)
       \begin{itemize}
-        \item $\textrm{disease}_j = \sum_{i \in I} \widetilde{x_{dw}}$
+        \item \[ \textrm{disease}_j = \sum_{w|w \in \overrightarrow{q}} \widetilde{x_{dw}} \]
       \end{itemize}
   \end{itemize}
 
