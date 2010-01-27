@@ -166,7 +166,7 @@
           karakter under anfaldene og bliver irritabel og aggressiv, n\aa r
           han v\ae kkes. N\aa r han er v\aa gen i anfaldsperioden spiser han
           helt utroligt store m\ae ngder mad, og hans appetit p\aa\ sex er
-          endvidere abnormt stor. & Jewish boy age 16, monthly \only<5->\textbf{seizures},
+          endvidere abnormt stor. & \only<5->\textbf{Jewish} boy age 16, monthly \only<5->\textbf{seizures},
           \only<5->\textbf{sleep deficiency}, \only<5->\textbf{aggressive} and \only<5->\textbf{irritable} when woken, highly
           \only<5->\textbf{increased sexual appetite} and \only<5->\textbf{hunger}.\\
           
@@ -201,9 +201,9 @@
     \begin{itemize}
 
       \item Konstruer speciel database.
-      \item V\ae gtning af termer.
       \item Vector space model.
-      \item Udregning af score for s\o gning.
+      \item V\ae gtning af termer.
+      \item Udregning af sygdoms-score.
       \item Forsl\aa\ top 20 sygdomme.
 
     \end{itemize}
@@ -270,7 +270,7 @@
   x_{dw}^{log} = \log{(1 + x_{dw})}
   \]
 
-  Der bruges TF-IDF til v\ae gtning af termer. Dette er for at fremh\ae ve term som sj\ae lent optr\ae der og nedv\ae gte ofte forekommende ord:
+  Der bruges TF-IDF til v\ae gtning af termer. Dette er for at fremh\ae ve term som sj\ae ldent optr\ae der og nedv\ae gte ofte forekommende ord:
 
   \[
   x_{dw}^{tfidf} = x_{dw}^{log} \cdot \log{\frac{D}{\sum_{d\prime = 1}^{D}\delta_{d\prime w}}}
@@ -515,7 +515,7 @@
     \item Tilf\o jelse af andre heuristikker.
     \item Keyword extraction fra sygdomme.
     \item Udvidet mulighed for s\o gning, f.eks. sammenligning af s\o
-      gninger, boolske operatorer.
+      gninger og termer ved brug af boolske operatorer.
   \end{itemize}
 
 \end{frame}
@@ -546,7 +546,7 @@
 
 %  \end{multicols}
 
-  Andre metoder, f.eks. afstand fra middel vektor, K-means
+  Andre metoder, f.eks. afstand fra middel vektor, KNN
   clustering.
 
 \end{frame}
@@ -558,11 +558,11 @@
   \frametitle{Konklusion}
 
   \begin{itemize}
-    \visible<1->{\item Andre transformation b\o r afpr\o ves}
     \visible<2->{\item Rammer omkring 60\%}
-    \visible<3->{\item Minimum gr\ae nse for information per sygdom}
-    \visible<4->{\item St\o j reduktion n\o dvendigt}
-    \visible<5->{\item Medicinsk dom\ae ne viden n\o dvendigt}
+    \visible<3->{\item Andre transformation b\o r afpr\o ves}
+    \visible<4->{\item Minimum gr\ae nse for information per sygdom}
+    \visible<5->{\item St\o j reduktion n\o dvendigt}
+    \visible<6->{\item Medicinsk dom\ae ne viden n\o dvendigt}
   \end{itemize}
 
   \hspace*{1cm}
